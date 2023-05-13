@@ -83,3 +83,40 @@
 [2023-05-14 00:08:05] INFO root fetch - main [MainThread]: End processing [representty]: success
 [2023-05-14 00:08:05] INFO root fetch - main [MainThread]: End processing [ejtraderCT]: success
 [2023-05-14 00:08:05] INFO root fetch - main [MainThread]: Store serial: [18093373]
+[2023-05-14 00:13:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093373]
+[2023-05-14 00:13:14] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-14 00:13:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SeisMonitor
+[2023-05-14 00:13:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: publish-to-zhihu
+[2023-05-14 00:13:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: clean-ioc
+[2023-05-14 00:13:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: evadb
+[2023-05-14 00:13:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: qcontext
+[2023-05-14 00:13:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: devblaze
+[2023-05-14 00:13:14] INFO root fetch - processPackages [clean-ioc]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-14 00:13:14] INFO root fetch - processPackages [qcontext]: New version: [1.1.0] Old Version: [1.0.9]
+[2023-05-14 00:13:14] INFO root fetch - processPackages [publish-to-zhihu]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-14 00:13:14] INFO root fetch - processPackages [evadb]: New version: [0.2.3.post0] Old Version: [0.2.3]
+[2023-05-14 00:13:14] INFO root fetch - processPackages [SeisMonitor]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 00:13:14] WARNING root fetch - processPackages [devblaze]: Skipping, unable to determine old version
+[2023-05-14 00:13:14] INFO root fetch - main [MainThread]: End processing [devblaze] error
+[2023-05-14 00:13:14] INFO root fetch - processPackages [SeisMonitor]: executing diffoscope
+[2023-05-14 00:13:14] INFO root fetch - processPackages [SeisMonitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SeisMonitor-0.0.8.tar.gz tmp/SeisMonitor-0.0.9.tar.gz --markdown 20230514/S/SeisMonitor/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 00:13:14] INFO root fetch - processPackages [clean-ioc]: Downloading https://files.pythonhosted.org/packages/11/21/d19c85350269df6b75d4089bf2c5f3be75cc6bd0094d54d24cbce4410739/clean_ioc-0.0.3.tar.gz
+[2023-05-14 00:13:14] INFO root fetch - processPackages [evadb]: Downloading https://files.pythonhosted.org/packages/f7/51/b14bb1559a55b45295cbe9568e8fe408d1eef0afb31b172d8c603ced81e7/evadb-0.2.3.tar.gz
+[2023-05-14 00:13:14] INFO root fetch - processPackages [qcontext]: Downloading https://files.pythonhosted.org/packages/27/21/c044693b34845498d747477671e9b09d19811a4dc5eef1a777a5c6286840/qcontext-1.1.0.tar.gz
+[2023-05-14 00:13:14] INFO root fetch - processPackages [publish-to-zhihu]: Downloading https://files.pythonhosted.org/packages/b8/f9/4ee842f5f7b441ce49a5279aeb7a775cf63b0f9a55d60922afcf7bd5ad34/publish_to_zhihu-0.1.2.tar.gz
+[2023-05-14 00:13:14] INFO root fetch - processPackages [qcontext]: executing diffoscope
+[2023-05-14 00:13:14] INFO root fetch - processPackages [qcontext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qcontext-1.0.9.tar.gz tmp/qcontext-1.1.0.tar.gz --markdown 20230514/q/qcontext/1.0.9-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 00:13:15] INFO root fetch - processPackages [publish-to-zhihu]: executing diffoscope
+[2023-05-14 00:13:15] INFO root fetch - processPackages [publish-to-zhihu]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/publish_to_zhihu-0.1.1.tar.gz tmp/publish_to_zhihu-0.1.2.tar.gz --markdown 20230514/p/publish-to-zhihu/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-14 00:13:15] INFO root fetch - processPackages [clean-ioc]: Downloading https://files.pythonhosted.org/packages/b6/36/f9c92e64386a6a7b90085c33ee05cd03521743909e5db4536e829d8aeec6/clean_ioc-0.0.4.tar.gz
+[2023-05-14 00:13:15] INFO root fetch - processPackages [evadb]: Downloading https://files.pythonhosted.org/packages/ca/d4/3316bc141be4c71dd3e68436049529a7b6b76f003add95889e1bcc4a748e/evadb-0.2.3.post0.tar.gz
+[2023-05-14 00:13:15] INFO root fetch - processPackages [clean-ioc]: executing diffoscope
+[2023-05-14 00:13:15] INFO root fetch - processPackages [clean-ioc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clean_ioc-0.0.3.tar.gz tmp/clean_ioc-0.0.4.tar.gz --markdown 20230514/c/clean-ioc/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-14 00:13:15] INFO root fetch - processPackages [evadb]: executing diffoscope
+[2023-05-14 00:13:15] INFO root fetch - processPackages [evadb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/evadb-0.2.3.tar.gz tmp/evadb-0.2.3.post0.tar.gz --markdown 20230514/e/evadb/0.2.3-0.2.3.post0/diff.md --exclude *.pyd
+[2023-05-14 00:13:16] INFO root fetch - main [MainThread]: End processing [publish-to-zhihu]: success
+[2023-05-14 00:13:16] INFO root fetch - main [MainThread]: End processing [SeisMonitor]: success
+[2023-05-14 00:13:16] INFO root fetch - main [MainThread]: End processing [clean-ioc]: success
+[2023-05-14 00:13:18] INFO root fetch - main [MainThread]: End processing [qcontext]: success
+[2023-05-14 00:13:18] INFO root fetch - main [MainThread]: End processing [evadb]: success
+[2023-05-14 00:13:18] INFO root fetch - main [MainThread]: Store serial: [18093402]
