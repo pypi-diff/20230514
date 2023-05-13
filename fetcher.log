@@ -59,3 +59,27 @@
 [2023-05-14 00:02:54] INFO root fetch - main [MainThread]: End processing [Tailbone]: success
 [2023-05-14 00:02:55] INFO root fetch - main [MainThread]: End processing [rattail]: success
 [2023-05-14 00:02:55] INFO root fetch - main [MainThread]: Store serial: [18093355]
+[2023-05-14 00:07:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093355]
+[2023-05-14 00:08:04] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-14 00:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: representty
+[2023-05-14 00:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ejtraderCT
+[2023-05-14 00:08:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mrfix
+[2023-05-14 00:08:04] INFO root fetch - processPackages [representty]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-14 00:08:04] INFO root fetch - processPackages [mrfix]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-14 00:08:04] INFO root fetch - processPackages [ejtraderCT]: New version: [1.1.1a0] Old Version: [1.1.0]
+[2023-05-14 00:08:04] INFO root fetch - processPackages [ejtraderCT]: Downloading https://files.pythonhosted.org/packages/09/a8/b14502cfe578454e97ddfe322e5f47039617e95a5101e0ec897000f4cc4e/ejtraderCT-1.1.0.tar.gz
+[2023-05-14 00:08:04] INFO root fetch - processPackages [representty]: Downloading https://files.pythonhosted.org/packages/70/a8/cc9729d3371ddee7d895b24ecf8e35a8267396641969932753104ef37ca2/representty-0.1.3.tar.gz
+[2023-05-14 00:08:04] INFO root fetch - processPackages [mrfix]: Downloading https://files.pythonhosted.org/packages/5a/57/27e2a6e35d75d07dcf871b18a41699c2d719375b9ef01518d918b3051710/mrfix-1.0.4.tar.gz
+[2023-05-14 00:08:04] INFO root fetch - processPackages [ejtraderCT]: Downloading https://files.pythonhosted.org/packages/18/ce/586851a303cc2d44fe43beb36345ee739321ab7315d84b151f6bacc20398/ejtraderCT-1.1.1a0.tar.gz
+[2023-05-14 00:08:04] INFO root fetch - processPackages [mrfix]: Downloading https://files.pythonhosted.org/packages/ea/c1/43b3e1838f57545bc80b8e521f2e3a37b0f989845fab2e9428aa206eb388/mrfix-1.0.5.tar.gz
+[2023-05-14 00:08:04] INFO root fetch - processPackages [representty]: Downloading https://files.pythonhosted.org/packages/35/8e/9693ebf9a504a7970cbcb011d5ac34fcb61a44cf0d680e7d7752d8cd6d24/representty-0.1.4.tar.gz
+[2023-05-14 00:08:04] INFO root fetch - processPackages [ejtraderCT]: executing diffoscope
+[2023-05-14 00:08:04] INFO root fetch - processPackages [ejtraderCT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ejtraderCT-1.1.0.tar.gz tmp/ejtraderCT-1.1.1a0.tar.gz --markdown 20230514/e/ejtraderCT/1.1.0-1.1.1a0/diff.md --exclude *.pyd
+[2023-05-14 00:08:04] INFO root fetch - processPackages [representty]: executing diffoscope
+[2023-05-14 00:08:04] INFO root fetch - processPackages [representty]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/representty-0.1.3.tar.gz tmp/representty-0.1.4.tar.gz --markdown 20230514/r/representty/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-14 00:08:04] INFO root fetch - processPackages [mrfix]: executing diffoscope
+[2023-05-14 00:08:04] INFO root fetch - processPackages [mrfix]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mrfix-1.0.4.tar.gz tmp/mrfix-1.0.5.tar.gz --markdown 20230514/m/mrfix/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-14 00:08:05] INFO root fetch - main [MainThread]: End processing [mrfix]: success
+[2023-05-14 00:08:05] INFO root fetch - main [MainThread]: End processing [representty]: success
+[2023-05-14 00:08:05] INFO root fetch - main [MainThread]: End processing [ejtraderCT]: success
+[2023-05-14 00:08:05] INFO root fetch - main [MainThread]: Store serial: [18093373]
