@@ -533,3 +533,47 @@
 [2023-05-14 01:18:16] INFO root fetch - processPackages [calapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calapy-0.1.8.tar.gz tmp/calapy-0.1.9.tar.gz --markdown 20230514/c/calapy/0.1.8-0.1.9/diff.md --exclude *.pyd
 [2023-05-14 01:18:18] INFO root fetch - main [MainThread]: End processing [calapy]: success
 [2023-05-14 01:18:18] INFO root fetch - main [MainThread]: Store serial: [18093661]
+[2023-05-14 01:23:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093661]
+[2023-05-14 01:23:27] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 01:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airoboros
+[2023-05-14 01:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: heaserver
+[2023-05-14 01:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aqimon
+[2023-05-14 01:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chatcmd
+[2023-05-14 01:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sphinx-datatables
+[2023-05-14 01:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: adamr
+[2023-05-14 01:23:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: siobrultech-protocols
+[2023-05-14 01:23:27] INFO root fetch - processPackages [airoboros]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-14 01:23:27] INFO root fetch - processPackages [aqimon]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-14 01:23:27] INFO root fetch - processPackages [chatcmd]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-14 01:23:27] WARNING root fetch - processPackages [sphinx-datatables]: Skipping, unable to determine old version
+[2023-05-14 01:23:27] INFO root fetch - processPackages [adamr]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 01:23:27] INFO root fetch - processPackages [heaserver]: New version: [1.0.0a99] Old Version: [1.0.0a98]
+[2023-05-14 01:23:27] INFO root fetch - main [MainThread]: End processing [sphinx-datatables] error
+[2023-05-14 01:23:27] INFO root fetch - processPackages [siobrultech-protocols]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-14 01:23:27] INFO root fetch - processPackages [heaserver]: executing diffoscope
+[2023-05-14 01:23:27] INFO root fetch - processPackages [heaserver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-1.0.0a98.tar.gz tmp/heaserver-1.0.0a99.tar.gz --markdown 20230514/h/heaserver/1.0.0a98-1.0.0a99/diff.md --exclude *.pyd
+[2023-05-14 01:23:28] INFO root fetch - processPackages [aqimon]: Downloading https://files.pythonhosted.org/packages/09/80/ef15faaf55434455742aa0447021898241e690a04669d228d073d781d01e/aqimon-0.4.0.tar.gz
+[2023-05-14 01:23:28] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/3a/d2/d6dafdb1c10bd5859099bd230c8dee48187c43c3a13349cb43fd22c947a5/chatcmd-1.0.3.tar.gz
+[2023-05-14 01:23:28] INFO root fetch - processPackages [adamr]: Downloading https://files.pythonhosted.org/packages/49/7e/51f6a38949fd65e89f0215ea79ad7288abb0333cd885815f5f2ab90e5c60/adamr-0.0.1.tar.gz
+[2023-05-14 01:23:28] INFO root fetch - processPackages [siobrultech-protocols]: Downloading https://files.pythonhosted.org/packages/ce/6f/862fb999d3c2bbd758bfe69bb8368f4c5d56f848faf99170ba6ec2c67f1b/siobrultech-protocols-0.8.0.tar.gz
+[2023-05-14 01:23:28] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-14 01:23:28] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.2-py3-none-any.whl.zip tmp/chatcmd-1.0.3.tar.gz --markdown 20230514/c/chatcmd/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-14 01:23:28] INFO root fetch - processPackages [airoboros]: Downloading https://files.pythonhosted.org/packages/3e/07/1d42179a16c9fddfb49d9328182c5e595a7469337dfa61025b5f1210b3e3/airoboros-0.2.6.tar.gz
+[2023-05-14 01:23:28] INFO root fetch - processPackages [airoboros]: executing diffoscope
+[2023-05-14 01:23:28] INFO root fetch - processPackages [airoboros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airoboros-0.2.5.tar.gz tmp/airoboros-0.2.6.tar.gz --markdown 20230514/a/airoboros/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-14 01:23:28] INFO root fetch - processPackages [aqimon]: Downloading https://files.pythonhosted.org/packages/60/2e/f96009e506988fe32f4ab9d85ca99dca9050206556fa863e2bce80d2e113/aqimon-0.5.0.tar.gz
+[2023-05-14 01:23:28] INFO root fetch - processPackages [adamr]: Downloading https://files.pythonhosted.org/packages/70/c7/cfa5365a9de0267cb210c756cf2707198cc30f99751bbbe22693e4845ed5/adamr-0.0.2.tar.gz
+[2023-05-14 01:23:28] INFO root fetch - processPackages [adamr]: executing diffoscope
+[2023-05-14 01:23:28] INFO root fetch - processPackages [adamr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/adamr-0.0.1.tar.gz tmp/adamr-0.0.2.tar.gz --markdown 20230514/a/adamr/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 01:23:28] INFO root fetch - processPackages [aqimon]: executing diffoscope
+[2023-05-14 01:23:28] INFO root fetch - processPackages [aqimon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aqimon-0.4.0.tar.gz tmp/aqimon-0.5.0.tar.gz --markdown 20230514/a/aqimon/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-14 01:23:28] INFO root fetch - processPackages [siobrultech-protocols]: Downloading https://files.pythonhosted.org/packages/aa/13/296b80566bf4218f8762d5d4d37f2e24bed2b013af60af4cd2aebce1f3b4/siobrultech-protocols-0.9.0.tar.gz
+[2023-05-14 01:23:28] INFO root fetch - processPackages [siobrultech-protocols]: executing diffoscope
+[2023-05-14 01:23:28] INFO root fetch - processPackages [siobrultech-protocols]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/siobrultech-protocols-0.8.0.tar.gz tmp/siobrultech-protocols-0.9.0.tar.gz --markdown 20230514/s/siobrultech-protocols/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 01:23:29] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-14 01:23:29] INFO root fetch - main [MainThread]: End processing [airoboros]: success
+[2023-05-14 01:23:29] INFO root fetch - main [MainThread]: End processing [adamr]: success
+[2023-05-14 01:23:29] INFO root fetch - main [MainThread]: End processing [aqimon]: success
+[2023-05-14 01:23:29] INFO root fetch - main [MainThread]: End processing [siobrultech-protocols]: success
+[2023-05-14 01:23:31] INFO root fetch - main [MainThread]: End processing [heaserver]: success
+[2023-05-14 01:23:31] INFO root fetch - main [MainThread]: Store serial: [18093686]
