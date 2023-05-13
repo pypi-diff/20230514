@@ -710,3 +710,52 @@
 [2023-05-14 01:54:31] INFO root fetch - main [MainThread]: End processing [dan-build]: success
 [2023-05-14 01:54:32] INFO root fetch - main [MainThread]: End processing [validmind]: success
 [2023-05-14 01:54:32] INFO root fetch - main [MainThread]: Store serial: [18093865]
+[2023-05-14 01:59:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093865]
+[2023-05-14 01:59:40] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 01:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cynthia-language
+[2023-05-14 01:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: redco
+[2023-05-14 01:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dr-import
+[2023-05-14 01:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: apidevtools
+[2023-05-14 01:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: attune-project-api
+[2023-05-14 01:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: geocontour
+[2023-05-14 01:59:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: osintbuddy
+[2023-05-14 01:59:40] INFO root fetch - processPackages [redco]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-14 01:59:40] INFO root fetch - processPackages [dr-import]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-14 01:59:40] INFO root fetch - processPackages [cynthia-language]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-14 01:59:40] INFO root fetch - processPackages [geocontour]: New version: [1.3.0] Old Version: [1.2.2]
+[2023-05-14 01:59:40] INFO root fetch - processPackages [osintbuddy]: New version: [0.0.2rc23.post1] Old Version: [0.0.2rc16.post1]
+[2023-05-14 01:59:40] INFO root fetch - processPackages [apidevtools]: New version: [3.3.0] Old Version: [3.2.9]
+[2023-05-14 01:59:40] INFO root fetch - processPackages [attune-project-api]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-14 01:59:40] INFO root fetch - processPackages [attune-project-api]: executing diffoscope
+[2023-05-14 01:59:40] INFO root fetch - processPackages [attune-project-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/attune-project-api-0.9.8.tar.gz tmp/attune-project-api-0.9.9.tar.gz --markdown 20230514/a/attune-project-api/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-14 01:59:41] INFO root fetch - processPackages [cynthia-language]: Downloading https://files.pythonhosted.org/packages/87/b1/2ec648d405055580c6c546833a189ecb58969e6d9d02cfcdd0da8d70a0ee/cynthia_language-0.1.2.tar.gz
+[2023-05-14 01:59:41] INFO root fetch - processPackages [osintbuddy]: Downloading https://files.pythonhosted.org/packages/aa/39/3af61566f73f12dd05bc4b20cc1978d2a327e3687efc7f6efd4cb45b81bc/osintbuddy-0.0.2rc16.post1.tar.gz
+[2023-05-14 01:59:41] INFO root fetch - processPackages [redco]: Downloading https://files.pythonhosted.org/packages/2b/93/9bb247a44efd4fed9ed7ac1ce97f31fcc8a32b3d306733ddd6087d881cea/redco-0.4.0.tar.gz
+[2023-05-14 01:59:41] INFO root fetch - processPackages [geocontour]: Downloading https://files.pythonhosted.org/packages/7e/8e/c5ed23f921a8a58f60057b0a7905b0a73d6b9ebae19c144b917d2842580a/geocontour-1.2.2.tar.gz
+[2023-05-14 01:59:41] INFO root fetch - processPackages [apidevtools]: Downloading https://files.pythonhosted.org/packages/f4/3c/14867a33124f06d11dd03d2e3f2f49e999701a5d8fe3be0531e62ac62bdd/apidevtools-3.3.0.tar.gz
+[2023-05-14 01:59:41] INFO root fetch - processPackages [dr-import]: Downloading https://files.pythonhosted.org/packages/f0/a1/8765ac847a97c16ad6959ac77eca3a4efe506112571a39cc19411b176af3/dr_import-0.2.8-py3-none-any.whl
+[2023-05-14 01:59:41] INFO root fetch - processPackages [osintbuddy]: Downloading https://files.pythonhosted.org/packages/73/06/05d5aa4377424038388e5a8cc1a66509522390a4758fa1d50ece02740c91/osintbuddy-0.0.2rc23.post1.tar.gz
+[2023-05-14 01:59:41] INFO root fetch - processPackages [redco]: Downloading https://files.pythonhosted.org/packages/00/f4/4895dd2d160e4f2f0c85abf80cd3dfddd15a572c0dafbfd504d69c082e95/redco-0.4.1.tar.gz
+[2023-05-14 01:59:41] INFO root fetch - processPackages [cynthia-language]: Downloading https://files.pythonhosted.org/packages/2f/8b/16da4c7a9c4df914325b4d207ba7a496d9bdb5ee8b7f4ac35a47c5f7a63d/cynthia_language-0.1.3.tar.gz
+[2023-05-14 01:59:41] INFO root fetch - processPackages [apidevtools]: executing diffoscope
+[2023-05-14 01:59:41] INFO root fetch - processPackages [apidevtools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/apidevtools-3.2.9.tar.gz tmp/apidevtools-3.3.0.tar.gz --markdown 20230514/a/apidevtools/3.2.9-3.3.0/diff.md --exclude *.pyd
+[2023-05-14 01:59:41] INFO root fetch - processPackages [cynthia-language]: executing diffoscope
+[2023-05-14 01:59:41] INFO root fetch - processPackages [cynthia-language]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cynthia_language-0.1.2.tar.gz tmp/cynthia_language-0.1.3.tar.gz --markdown 20230514/c/cynthia-language/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-14 01:59:41] INFO root fetch - processPackages [dr-import]: Downloading https://files.pythonhosted.org/packages/cc/4d/777f7b14d8ff812e34be596626b422e1496e901a5b5b53e3e60ec4ea9c40/dr_import-0.2.9-py3-none-any.whl
+[2023-05-14 01:59:41] INFO root fetch - processPackages [geocontour]: Downloading https://files.pythonhosted.org/packages/d1/7d/360d79f81fdff8c45599755c8b769ae6c08084ac0f028f042efbcfc30490/geocontour-1.3.0.tar.gz
+[2023-05-14 01:59:41] INFO root fetch - processPackages [osintbuddy]: executing diffoscope
+[2023-05-14 01:59:41] INFO root fetch - processPackages [osintbuddy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osintbuddy-0.0.2rc16.post1.tar.gz tmp/osintbuddy-0.0.2rc23.post1.tar.gz --markdown 20230514/o/osintbuddy/0.0.2rc16.post1-0.0.2rc23.post1/diff.md --exclude *.pyd
+[2023-05-14 01:59:41] INFO root fetch - processPackages [redco]: executing diffoscope
+[2023-05-14 01:59:41] INFO root fetch - processPackages [redco]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redco-0.4.0.tar.gz tmp/redco-0.4.1.tar.gz --markdown 20230514/r/redco/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-14 01:59:41] INFO root fetch - processPackages [dr-import]: executing diffoscope
+[2023-05-14 01:59:41] INFO root fetch - processPackages [dr-import]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dr_import-0.2.8-py3-none-any.whl.zip tmp/dr_import-0.2.9-py3-none-any.whl.zip --markdown 20230514/d/dr-import/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-14 01:59:41] INFO root fetch - processPackages [geocontour]: executing diffoscope
+[2023-05-14 01:59:41] INFO root fetch - processPackages [geocontour]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/geocontour-1.2.2.tar.gz tmp/geocontour-1.3.0.tar.gz --markdown 20230514/g/geocontour/1.2.2-1.3.0/diff.md --exclude *.pyd
+[2023-05-14 01:59:42] INFO root fetch - main [MainThread]: End processing [apidevtools]: success
+[2023-05-14 01:59:42] INFO root fetch - main [MainThread]: End processing [cynthia-language]: success
+[2023-05-14 01:59:42] INFO root fetch - main [MainThread]: End processing [dr-import]: success
+[2023-05-14 01:59:42] INFO root fetch - main [MainThread]: End processing [redco]: success
+[2023-05-14 01:59:42] INFO root fetch - main [MainThread]: End processing [osintbuddy]: success
+[2023-05-14 01:59:42] INFO root fetch - main [MainThread]: End processing [attune-project-api]: success
+[2023-05-14 01:59:45] INFO root fetch - main [MainThread]: End processing [geocontour]: success
+[2023-05-14 01:59:45] INFO root fetch - main [MainThread]: Store serial: [18093884]
