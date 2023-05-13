@@ -611,3 +611,27 @@
 [2023-05-14 01:33:48] INFO root fetch - main [MainThread]: End processing [ksconf]: success
 [2023-05-14 01:33:48] INFO root fetch - main [MainThread]: End processing [komm]: success
 [2023-05-14 01:33:48] INFO root fetch - main [MainThread]: Store serial: [18093698]
+[2023-05-14 01:38:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093698]
+[2023-05-14 01:38:57] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-14 01:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: guppy3
+[2023-05-14 01:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyresidfp
+[2023-05-14 01:38:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: annoworkapi
+[2023-05-14 01:38:57] INFO root fetch - processPackages [guppy3]: New version: [3.1.3] Old Version: [3.1.2]
+[2023-05-14 01:38:57] INFO root fetch - processPackages [annoworkapi]: New version: [3.0.2] Old Version: [3.0.1]
+[2023-05-14 01:38:57] INFO root fetch - processPackages [pyresidfp]: New version: [0.6.5] Old Version: [0.6.4]
+[2023-05-14 01:38:57] INFO root fetch - processPackages [guppy3]: Downloading https://files.pythonhosted.org/packages/89/3f/20b34899b9e29465525f0ed45812ad2c0e71ec329b62f416df3131a154e2/guppy3-3.1.2.tar.gz
+[2023-05-14 01:38:57] INFO root fetch - processPackages [annoworkapi]: Downloading https://files.pythonhosted.org/packages/62/52/ab40efe6bc7dbbacdbe71e5d8d678fd6f82619802dc74080cad4cddf4b64/annoworkapi-3.0.1.tar.gz
+[2023-05-14 01:38:57] INFO root fetch - processPackages [pyresidfp]: Downloading https://files.pythonhosted.org/packages/c6/13/e79534734355f5c1551966678c5e6a116e38bf76943fadd1a6cadb609697/pyresidfp-0.6.4.tar.gz
+[2023-05-14 01:38:57] INFO root fetch - processPackages [annoworkapi]: Downloading https://files.pythonhosted.org/packages/86/a4/e6ec91f554045a07e0669a98b62c9d99cbe99eeab44dcfb44c1c75edac48/annoworkapi-3.0.2.tar.gz
+[2023-05-14 01:38:57] INFO root fetch - processPackages [pyresidfp]: Downloading https://files.pythonhosted.org/packages/db/ba/6849b363fd050cf2a9d3d28acf8e985c68076c96cbe5091a03b6ef9cd835/pyresidfp-0.6.5.tar.gz
+[2023-05-14 01:38:57] INFO root fetch - processPackages [annoworkapi]: executing diffoscope
+[2023-05-14 01:38:57] INFO root fetch - processPackages [annoworkapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/annoworkapi-3.0.1.tar.gz tmp/annoworkapi-3.0.2.tar.gz --markdown 20230514/a/annoworkapi/3.0.1-3.0.2/diff.md --exclude *.pyd
+[2023-05-14 01:38:57] INFO root fetch - processPackages [guppy3]: Downloading https://files.pythonhosted.org/packages/69/05/533f8782076694ace7785d26c2090665e0f73661292b14422a350ea46f14/guppy3-3.1.3.tar.gz
+[2023-05-14 01:38:57] INFO root fetch - processPackages [pyresidfp]: executing diffoscope
+[2023-05-14 01:38:57] INFO root fetch - processPackages [pyresidfp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyresidfp-0.6.4.tar.gz tmp/pyresidfp-0.6.5.tar.gz --markdown 20230514/p/pyresidfp/0.6.4-0.6.5/diff.md --exclude *.pyd
+[2023-05-14 01:38:58] INFO root fetch - processPackages [guppy3]: executing diffoscope
+[2023-05-14 01:38:58] INFO root fetch - processPackages [guppy3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/guppy3-3.1.2.tar.gz tmp/guppy3-3.1.3.tar.gz --markdown 20230514/g/guppy3/3.1.2-3.1.3/diff.md --exclude *.pyd
+[2023-05-14 01:38:58] INFO root fetch - main [MainThread]: End processing [annoworkapi]: success
+[2023-05-14 01:38:59] INFO root fetch - main [MainThread]: End processing [pyresidfp]: success
+[2023-05-14 01:39:00] INFO root fetch - main [MainThread]: End processing [guppy3]: success
+[2023-05-14 01:39:00] INFO root fetch - main [MainThread]: Store serial: [18093827]
