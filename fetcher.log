@@ -658,3 +658,29 @@
 [2023-05-14 01:44:10] INFO root fetch - main [MainThread]: End processing [databend-py]: success
 [2023-05-14 01:44:11] INFO root fetch - main [MainThread]: End processing [browsr]: success
 [2023-05-14 01:44:11] INFO root fetch - main [MainThread]: Store serial: [18093840]
+[2023-05-14 01:49:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093840]
+[2023-05-14 01:49:19] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 01:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: siobrultech-protocols
+[2023-05-14 01:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xklb
+[2023-05-14 01:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xhs-2-album
+[2023-05-14 01:49:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: revshell-generator
+[2023-05-14 01:49:19] INFO root fetch - processPackages [revshell-generator]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-14 01:49:19] INFO root fetch - processPackages [xhs-2-album]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 01:49:19] INFO root fetch - processPackages [siobrultech-protocols]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-14 01:49:19] INFO root fetch - processPackages [xklb]: New version: [1.26.31] Old Version: [1.26.30]
+[2023-05-14 01:49:19] INFO root fetch - processPackages [siobrultech-protocols]: executing diffoscope
+[2023-05-14 01:49:19] INFO root fetch - processPackages [siobrultech-protocols]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/siobrultech-protocols-0.8.0.tar.gz tmp/siobrultech-protocols-0.9.0.tar.gz --markdown 20230514/s/siobrultech-protocols/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 01:49:19] INFO root fetch - processPackages [xhs-2-album]: Downloading https://files.pythonhosted.org/packages/1d/f6/292a7b06a9e9e23ef1323baaff871beeb78afafdc239cae74060c93f2c79/xhs_2_album-0.0.1.tar.gz
+[2023-05-14 01:49:19] INFO root fetch - processPackages [xklb]: Downloading https://files.pythonhosted.org/packages/12/4e/8f5c8955d7fbfc41625190410a8079b8ea1dfa91b3ef6956e51b99c741c9/xklb-1.26.31.tar.gz
+[2023-05-14 01:49:20] INFO root fetch - processPackages [revshell-generator]: executing diffoscope
+[2023-05-14 01:49:20] INFO root fetch - processPackages [revshell-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revshell-generator-1.0.6.tar.gz tmp/revshell-generator-1.0.7.tar.gz --markdown 20230514/r/revshell-generator/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-14 01:49:20] INFO root fetch - processPackages [xklb]: executing diffoscope
+[2023-05-14 01:49:20] INFO root fetch - processPackages [xklb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xklb-1.26.30.tar.gz tmp/xklb-1.26.31.tar.gz --markdown 20230514/x/xklb/1.26.30-1.26.31/diff.md --exclude *.pyd
+[2023-05-14 01:49:20] INFO root fetch - processPackages [xhs-2-album]: Downloading https://files.pythonhosted.org/packages/b7/7e/47f199a8c08c548acfb93eba21c4c04b45c2bf9db9e42cb8e68bd53c6125/xhs_2_album-0.0.2.tar.gz
+[2023-05-14 01:49:20] INFO root fetch - processPackages [xhs-2-album]: executing diffoscope
+[2023-05-14 01:49:20] INFO root fetch - processPackages [xhs-2-album]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xhs_2_album-0.0.1.tar.gz tmp/xhs_2_album-0.0.2.tar.gz --markdown 20230514/x/xhs-2-album/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 01:49:20] INFO root fetch - main [MainThread]: End processing [revshell-generator]: success
+[2023-05-14 01:49:21] INFO root fetch - main [MainThread]: End processing [siobrultech-protocols]: success
+[2023-05-14 01:49:21] INFO root fetch - main [MainThread]: End processing [xhs-2-album]: success
+[2023-05-14 01:49:21] INFO root fetch - main [MainThread]: End processing [xklb]: success
+[2023-05-14 01:49:21] INFO root fetch - main [MainThread]: Store serial: [18093852]
