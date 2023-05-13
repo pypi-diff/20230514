@@ -311,3 +311,39 @@
 [2023-05-14 00:44:28] INFO root fetch - main [MainThread]: End processing [picopt]: success
 [2023-05-14 00:44:28] INFO root fetch - main [MainThread]: End processing [geoluminate]: success
 [2023-05-14 00:44:28] INFO root fetch - main [MainThread]: Store serial: [18093537]
+[2023-05-14 00:49:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093537]
+[2023-05-14 00:49:37] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 00:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cshelph
+[2023-05-14 00:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: contextualized-ml
+[2023-05-14 00:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mpl-markers
+[2023-05-14 00:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyrecdp
+[2023-05-14 00:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: plugnplai
+[2023-05-14 00:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vegafusion-python-embed
+[2023-05-14 00:49:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyGenieScript
+[2023-05-14 00:49:37] INFO root fetch - processPackages [cshelph]: New version: [2.6.0] Old Version: [2.5.0]
+[2023-05-14 00:49:37] INFO root fetch - processPackages [plugnplai]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-14 00:49:37] INFO root fetch - processPackages [pyrecdp]: New version: [1.0.1b202305133] Old Version: [1.0.1b202305132]
+[2023-05-14 00:49:37] INFO root fetch - processPackages [contextualized-ml]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-14 00:49:37] INFO root fetch - processPackages [plugnplai]: executing diffoscope
+[2023-05-14 00:49:37] INFO root fetch - processPackages [plugnplai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/plugnplai-0.0.5.tar.gz tmp/plugnplai-0.0.6.tar.gz --markdown 20230514/p/plugnplai/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-14 00:49:37] WARNING root fetch - processPackages [mpl-markers]: Skipping, unable to determine old version
+[2023-05-14 00:49:37] INFO root fetch - main [MainThread]: End processing [mpl-markers] error
+[2023-05-14 00:49:37] INFO root fetch - processPackages [pyGenieScript]: New version: [0.0.0b9] Old Version: [0.0.0b8]
+[2023-05-14 00:49:37] INFO root fetch - processPackages [cshelph]: executing diffoscope
+[2023-05-14 00:49:37] INFO root fetch - processPackages [cshelph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cshelph-2.5.0.tar.gz tmp/cshelph-2.6.0.tar.gz --markdown 20230514/c/cshelph/2.5.0-2.6.0/diff.md --exclude *.pyd
+[2023-05-14 00:49:37] INFO root fetch - processPackages [pyrecdp]: executing diffoscope
+[2023-05-14 00:49:37] INFO root fetch - processPackages [pyrecdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrecdp-1.0.1b202305132.tar.gz tmp/pyrecdp-1.0.1b202305133.tar.gz --markdown 20230514/p/pyrecdp/1.0.1b202305132-1.0.1b202305133/diff.md --exclude *.pyd
+[2023-05-14 00:49:37] INFO root fetch - processPackages [vegafusion-python-embed]: New version: [1.3.0rc1] Old Version: [1.2.4]
+[2023-05-14 00:49:37] INFO root fetch - processPackages [contextualized-ml]: Downloading https://files.pythonhosted.org/packages/96/37/f92289aecfea7293d7c9b4fcec45ef5e4278722331813af9ca8a3c881de1/contextualized_ml-0.2.5.tar.gz
+[2023-05-14 00:49:37] WARNING root fetch - processPackages [contextualized-ml]: Skipping package: exceeds size limit 17367373>=10485760
+[2023-05-14 00:49:37] INFO root fetch - main [MainThread]: End processing [contextualized-ml] error
+[2023-05-14 00:49:37] INFO root fetch - processPackages [pyGenieScript]: executing diffoscope
+[2023-05-14 00:49:37] INFO root fetch - processPackages [pyGenieScript]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyGenieScript-0.0.0b8.tar.gz tmp/pyGenieScript-0.0.0b9.tar.gz --markdown 20230514/p/pyGenieScript/0.0.0b8-0.0.0b9/diff.md --exclude *.pyd
+[2023-05-14 00:49:38] INFO root fetch - processPackages [vegafusion-python-embed]: Downloading https://files.pythonhosted.org/packages/59/82/092ccd2df67ad4bbb08413cd05a3e4e296ea5c59ea7b51b106cc2b752616/vegafusion_python_embed-1.3.0_rc1-cp39-none-win_amd64.whl
+[2023-05-14 00:49:38] WARNING root fetch - processPackages [vegafusion-python-embed]: Skipping package: exceeds size limit 17028440>=10485760
+[2023-05-14 00:49:38] INFO root fetch - main [MainThread]: End processing [vegafusion-python-embed] error
+[2023-05-14 00:49:38] INFO root fetch - main [MainThread]: End processing [plugnplai]: success
+[2023-05-14 00:49:38] INFO root fetch - main [MainThread]: End processing [cshelph]: success
+[2023-05-14 00:49:39] INFO root fetch - main [MainThread]: End processing [pyrecdp]: success
+[2023-05-14 00:49:39] INFO root fetch - main [MainThread]: End processing [pyGenieScript]: success
+[2023-05-14 00:49:39] INFO root fetch - main [MainThread]: Store serial: [18093567]
