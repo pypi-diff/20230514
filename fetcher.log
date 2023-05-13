@@ -400,3 +400,86 @@
 [2023-05-14 00:54:49] INFO root fetch - main [MainThread]: End processing [rattail-mailchimp]: success
 [2023-05-14 00:57:14] INFO root fetch - main [MainThread]: End processing [vegafusion-jupyter]: success
 [2023-05-14 00:57:14] INFO root fetch - main [MainThread]: Store serial: [18093602]
+[2023-05-14 01:02:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093602]
+[2023-05-14 01:02:37] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-14 01:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sds011lib
+[2023-05-14 01:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kiwis-pie
+[2023-05-14 01:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ksconf
+[2023-05-14 01:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kintyre-splunk-conf
+[2023-05-14 01:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: chatcmd
+[2023-05-14 01:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: linqex
+[2023-05-14 01:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: chatcmd
+[2023-05-14 01:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: revshell-generator
+[2023-05-14 01:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: chatcmd
+[2023-05-14 01:02:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: hordelib
+[2023-05-14 01:02:37] INFO root fetch - processPackages [hordelib]: New version: [0.9.5] Old Version: [0.9.2]
+[2023-05-14 01:02:37] INFO root fetch - processPackages [sds011lib]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-14 01:02:37] INFO root fetch - processPackages [chatcmd]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-14 01:02:37] INFO root fetch - processPackages [chatcmd]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-14 01:02:37] INFO root fetch - processPackages [chatcmd]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-14 01:02:37] INFO root fetch - processPackages [linqex]: New version: [1.6] Old Version: [1.5]
+[2023-05-14 01:02:37] INFO root fetch - processPackages [ksconf]: New version: [0.10.2a2] Old Version: [0.10.2a1]
+[2023-05-14 01:02:37] INFO root fetch - processPackages [kiwis-pie]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-14 01:02:37] INFO root fetch - processPackages [revshell-generator]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-14 01:02:37] INFO root fetch - processPackages [kintyre-splunk-conf]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-14 01:02:37] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-05-14 01:02:37] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-0.9.2.tar.gz tmp/hordelib-0.9.5.tar.gz --markdown 20230514/h/hordelib/0.9.2-0.9.5/diff.md --exclude *.pyd
+[2023-05-14 01:02:37] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/e9/38/c81faa89d6618a5a3543590beb6496d6ed0245c1837ac09e2d56c8257be4/chatcmd-1.0.1-py3-none-any.whl
+[2023-05-14 01:02:37] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/e9/38/c81faa89d6618a5a3543590beb6496d6ed0245c1837ac09e2d56c8257be4/chatcmd-1.0.1-py3-none-any.whl
+[2023-05-14 01:02:37] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/e9/38/c81faa89d6618a5a3543590beb6496d6ed0245c1837ac09e2d56c8257be4/chatcmd-1.0.1-py3-none-any.whl
+[2023-05-14 01:02:37] INFO root fetch - processPackages [linqex]: Downloading https://files.pythonhosted.org/packages/91/41/97dd5051f40a9bf19856939e8e799157169255e522002e2fd3e7e237396f/linqex-1.5.tar.gz
+[2023-05-14 01:02:37] INFO root fetch - processPackages [kiwis-pie]: Downloading https://files.pythonhosted.org/packages/22/ed/bc8e2cdee3eb63273289f1575ef0dfcf3bc74076d1cf0fb61782d0ecbc6f/kiwis-pie-0.8.0.tar.gz
+[2023-05-14 01:02:38] INFO root fetch - processPackages [revshell-generator]: Downloading https://files.pythonhosted.org/packages/1a/d0/9029a5fd6717ccc79903d88892daa2d8334924155fe6a66073a4f6470b54/revshell-generator-1.0.6.tar.gz
+[2023-05-14 01:02:38] INFO root fetch - processPackages [sds011lib]: Downloading https://files.pythonhosted.org/packages/6b/26/0e351d00cf8b3bf5cc952b369aea96abc84915e04a4acffdb60c624515d5/sds011lib-0.3.1.tar.gz
+[2023-05-14 01:02:38] INFO root fetch - processPackages [ksconf]: executing diffoscope
+[2023-05-14 01:02:38] INFO root fetch - processPackages [ksconf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ksconf-0.10.2a1.tar.gz tmp/ksconf-0.10.2a2.tar.gz --markdown 20230514/k/ksconf/0.10.2a1-0.10.2a2/diff.md --exclude *.pyd
+[2023-05-14 01:02:38] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/85/74/57c4816cb343597908240fe8afe1830a67263eb8d741a801e1509ab58d22/chatcmd-1.0.2-py3-none-any.whl
+[2023-05-14 01:02:38] INFO root fetch - processPackages [sds011lib]: executing diffoscope
+[2023-05-14 01:02:38] INFO root fetch - processPackages [sds011lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sds011lib-0.3.0.tar.gz tmp/sds011lib-0.3.1.tar.gz --markdown 20230514/s/sds011lib/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-14 01:02:38] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/85/74/57c4816cb343597908240fe8afe1830a67263eb8d741a801e1509ab58d22/chatcmd-1.0.2-py3-none-any.whl
+[2023-05-14 01:02:38] INFO root fetch - processPackages [chatcmd]: Downloading https://files.pythonhosted.org/packages/85/74/57c4816cb343597908240fe8afe1830a67263eb8d741a801e1509ab58d22/chatcmd-1.0.2-py3-none-any.whl
+[2023-05-14 01:02:38] INFO root fetch - processPackages [linqex]: Downloading https://files.pythonhosted.org/packages/c4/63/590d4f9343ba246bab60aeead1e19cd83af3957add58ac51c7451a9c1a25/linqex-1.6.tar.gz
+[2023-05-14 01:02:38] INFO root fetch - processPackages [kintyre-splunk-conf]: executing diffoscope
+[2023-05-14 01:02:38] INFO root fetch - processPackages [kintyre-splunk-conf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kintyre-splunk-conf-0.9.2.tar.gz tmp/kintyre-splunk-conf-0.9.3.tar.gz --markdown 20230514/k/kintyre-splunk-conf/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-14 01:02:38] INFO root fetch - processPackages [kiwis-pie]: Downloading https://files.pythonhosted.org/packages/1f/64/37505f08f6b95df4f53f3268dbb8b6ed6922ec535aedbc06cb2d6691401e/kiwis-pie-0.9.0.tar.gz
+[2023-05-14 01:02:38] INFO root fetch - processPackages [revshell-generator]: Downloading https://files.pythonhosted.org/packages/46/c4/1a56f67b25518ba0b3432bb4cf5fadca9441ae0a43df8458bf2b8f4af40a/revshell-generator-1.0.7.tar.gz
+[2023-05-14 01:02:38] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-14 01:02:38] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-14 01:02:38] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.1-py3-none-any.whl.zip tmp/chatcmd-1.0.2-py3-none-any.whl.zip --markdown 20230514/c/chatcmd/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-14 01:02:38] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.1-py3-none-any.whl.zip tmp/chatcmd-1.0.2-py3-none-any.whl.zip --markdown 20230514/c/chatcmd/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-14 01:02:38] INFO root fetch - processPackages [chatcmd]: executing diffoscope
+[2023-05-14 01:02:38] INFO root fetch - processPackages [chatcmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chatcmd-1.0.1-py3-none-any.whl.zip tmp/chatcmd-1.0.2-py3-none-any.whl.zip --markdown 20230514/c/chatcmd/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-14 01:02:38] INFO root fetch - processPackages [linqex]: executing diffoscope
+[2023-05-14 01:02:38] INFO root fetch - processPackages [linqex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linqex-1.5.tar.gz tmp/linqex-1.6.tar.gz --markdown 20230514/l/linqex/1.5-1.6/diff.md --exclude *.pyd
+[2023-05-14 01:02:38] INFO root fetch - processPackages [revshell-generator]: executing diffoscope
+[2023-05-14 01:02:38] INFO root fetch - processPackages [revshell-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revshell-generator-1.0.6.tar.gz tmp/revshell-generator-1.0.7.tar.gz --markdown 20230514/r/revshell-generator/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-14 01:02:38] INFO root fetch - processPackages [kiwis-pie]: executing diffoscope
+[2023-05-14 01:02:38] INFO root fetch - processPackages [kiwis-pie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kiwis-pie-0.8.0.tar.gz tmp/kiwis-pie-0.9.0.tar.gz --markdown 20230514/k/kiwis-pie/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 01:02:39] INFO root fetch - processPackages [sds011lib]: Start processing: branch-time
+[2023-05-14 01:02:39] INFO root fetch - main [MainThread]: End processing [sds011lib]: success
+[2023-05-14 01:02:39] INFO root fetch - processPackages [branch-time]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-14 01:02:39] INFO root fetch - processPackages [chatcmd]: Start processing: imsholcal
+[2023-05-14 01:02:39] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-14 01:02:39] INFO root fetch - processPackages [chatcmd]: Start processing: tmnt-cu101
+[2023-05-14 01:02:39] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-14 01:02:39] INFO root fetch - processPackages [imsholcal]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-14 01:02:39] INFO root fetch - processPackages [tmnt-cu101]: New version: [0.7.0b20230512] Old Version: [0.7.0b20230511]
+[2023-05-14 01:02:39] INFO root fetch - main [MainThread]: End processing [chatcmd]: success
+[2023-05-14 01:02:39] INFO root fetch - processPackages [branch-time]: Downloading https://files.pythonhosted.org/packages/7e/39/ab17b3a7b0e15c6aee0556b9fa1e08cac9c33a1117e15be7eccd583230fc/branch_time-0.1.3.tar.gz
+[2023-05-14 01:02:39] INFO root fetch - processPackages [imsholcal]: executing diffoscope
+[2023-05-14 01:02:39] INFO root fetch - processPackages [imsholcal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imsholcal-1.1.1.tar.gz tmp/imsholcal-1.1.2.tar.gz --markdown 20230514/i/imsholcal/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-14 01:02:39] INFO root fetch - processPackages [tmnt-cu101]: executing diffoscope
+[2023-05-14 01:02:39] INFO root fetch - processPackages [tmnt-cu101]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-cu101-0.7.0b20230511.tar.gz tmp/tmnt-cu101-0.7.0b20230512.tar.gz --markdown 20230514/t/tmnt-cu101/0.7.0b20230511-0.7.0b20230512/diff.md --exclude *.pyd
+[2023-05-14 01:02:39] INFO root fetch - main [MainThread]: End processing [linqex]: success
+[2023-05-14 01:02:40] INFO root fetch - main [MainThread]: End processing [revshell-generator]: success
+[2023-05-14 01:02:40] INFO root fetch - main [MainThread]: End processing [kintyre-splunk-conf]: success
+[2023-05-14 01:02:40] INFO root fetch - main [MainThread]: End processing [kiwis-pie]: success
+[2023-05-14 01:02:40] INFO root fetch - processPackages [branch-time]: Downloading https://files.pythonhosted.org/packages/df/0e/2f071cb0b7f144dde14c933899ef7ea55e765889c834f471949c00ccb864/branch_time-0.1.4.tar.gz
+[2023-05-14 01:02:40] INFO root fetch - processPackages [branch-time]: executing diffoscope
+[2023-05-14 01:02:40] INFO root fetch - processPackages [branch-time]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/branch_time-0.1.3.tar.gz tmp/branch_time-0.1.4.tar.gz --markdown 20230514/b/branch-time/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-14 01:02:40] INFO root fetch - main [MainThread]: End processing [imsholcal]: success
+[2023-05-14 01:02:40] INFO root fetch - main [MainThread]: End processing [ksconf]: success
+[2023-05-14 01:02:41] INFO root fetch - main [MainThread]: End processing [tmnt-cu101]: success
+[2023-05-14 01:02:41] INFO root fetch - main [MainThread]: End processing [branch-time]: success
+[2023-05-14 01:02:49] INFO root fetch - main [MainThread]: End processing [hordelib]: success
+[2023-05-14 01:02:49] INFO root fetch - main [MainThread]: Store serial: [18093638]
