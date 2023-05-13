@@ -520,3 +520,16 @@
 [2023-05-14 01:08:00] INFO root fetch - main [MainThread]: End processing [mojo-networking]: success
 [2023-05-14 01:08:00] INFO root fetch - main [MainThread]: End processing [text2text]: success
 [2023-05-14 01:08:00] INFO root fetch - main [MainThread]: Store serial: [18093653]
+[2023-05-14 01:13:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093653]
+[2023-05-14 01:13:10] INFO root fetch - main [MainThread]: No changed packages found
+[2023-05-14 01:18:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093653]
+[2023-05-14 01:18:16] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-14 01:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: axia
+[2023-05-14 01:18:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: calapy
+[2023-05-14 01:18:16] INFO root fetch - processPackages [calapy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 01:18:16] WARNING root fetch - processPackages [axia]: Skipping, unable to determine old version
+[2023-05-14 01:18:16] INFO root fetch - main [MainThread]: End processing [axia] error
+[2023-05-14 01:18:16] INFO root fetch - processPackages [calapy]: executing diffoscope
+[2023-05-14 01:18:16] INFO root fetch - processPackages [calapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/calapy-0.1.8.tar.gz tmp/calapy-0.1.9.tar.gz --markdown 20230514/c/calapy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 01:18:18] INFO root fetch - main [MainThread]: End processing [calapy]: success
+[2023-05-14 01:18:18] INFO root fetch - main [MainThread]: Store serial: [18093661]
