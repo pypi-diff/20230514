@@ -483,3 +483,40 @@
 [2023-05-14 01:02:41] INFO root fetch - main [MainThread]: End processing [branch-time]: success
 [2023-05-14 01:02:49] INFO root fetch - main [MainThread]: End processing [hordelib]: success
 [2023-05-14 01:02:49] INFO root fetch - main [MainThread]: Store serial: [18093638]
+[2023-05-14 01:07:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093638]
+[2023-05-14 01:07:58] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 01:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wagtail-resume
+[2023-05-14 01:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tmnt
+[2023-05-14 01:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xspf-lib
+[2023-05-14 01:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mojo-networking
+[2023-05-14 01:07:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: text2text
+[2023-05-14 01:07:58] INFO root fetch - processPackages [xspf-lib]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-14 01:07:58] INFO root fetch - processPackages [wagtail-resume]: New version: [2.2.0] Old Version: [2.1.1]
+[2023-05-14 01:07:58] INFO root fetch - processPackages [mojo-networking]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-14 01:07:58] INFO root fetch - processPackages [tmnt]: New version: [0.7.0b20230513] Old Version: [0.7.0b20230512]
+[2023-05-14 01:07:58] INFO root fetch - processPackages [text2text]: New version: [1.0.0] Old Version: [0.9.9]
+[2023-05-14 01:07:58] INFO root fetch - processPackages [xspf-lib]: Downloading https://files.pythonhosted.org/packages/b8/97/368a8254324ac62fc2d722743e27794341cd01a8fc0f2a2a1bc19fa43731/xspf-lib-0.2.0.tar.gz
+[2023-05-14 01:07:59] INFO root fetch - processPackages [mojo-networking]: Downloading https://files.pythonhosted.org/packages/4e/8d/16aa4ec0e01f2c4b1dcfa4dbc6bec7f03c710a974bbc18078f3cf8135ba9/mojo_networking-0.0.4.tar.gz
+[2023-05-14 01:07:59] INFO root fetch - processPackages [wagtail-resume]: Downloading https://files.pythonhosted.org/packages/aa/28/0aba426de3315e40cd3f264cdfa58ac0842c30e1e89488bbc2ffc251a31c/wagtail-resume-2.1.1.tar.gz
+[2023-05-14 01:07:59] INFO root fetch - processPackages [tmnt]: Downloading https://files.pythonhosted.org/packages/06/ff/84f89765cadc49a694b74b907eaec294b41f3c92706cda426d70386d2d3c/tmnt-0.7.0b20230513.tar.gz
+[2023-05-14 01:07:59] INFO root fetch - processPackages [text2text]: Downloading https://files.pythonhosted.org/packages/3d/c1/e4afe88aedf20854bb4089f3c057470edb40aa2c3daba7d4e623be02196c/text2text-0.9.9.tar.gz
+[2023-05-14 01:07:59] INFO root fetch - processPackages [tmnt]: executing diffoscope
+[2023-05-14 01:07:59] INFO root fetch - processPackages [tmnt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmnt-0.7.0b20230512.tar.gz tmp/tmnt-0.7.0b20230513.tar.gz --markdown 20230514/t/tmnt/0.7.0b20230512-0.7.0b20230513/diff.md --exclude *.pyd
+[2023-05-14 01:07:59] INFO root fetch - processPackages [xspf-lib]: Downloading https://files.pythonhosted.org/packages/79/c1/9ebe363a4741bc715b865824c62e6602a42b234c655b722a626037e53e5d/xspf-lib-0.3.0.tar.gz
+[2023-05-14 01:07:59] INFO root fetch - processPackages [mojo-networking]: Downloading https://files.pythonhosted.org/packages/9c/64/83e415d18ebedf91ac7656fbc357c657078ec09005da44d504e3d3a81a86/mojo-networking-0.0.5.tar.gz
+[2023-05-14 01:07:59] INFO root fetch - processPackages [wagtail-resume]: Downloading https://files.pythonhosted.org/packages/df/b9/c1e8acef32d06ce1b8d8742e3185d1e82bdf7c253ba06331b928bf260277/wagtail_resume-2.2.0.tar.gz
+[2023-05-14 01:07:59] INFO root fetch - processPackages [wagtail-resume]: executing diffoscope
+[2023-05-14 01:07:59] INFO root fetch - processPackages [wagtail-resume]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wagtail-resume-2.1.1.tar.gz tmp/wagtail_resume-2.2.0.tar.gz --markdown 20230514/w/wagtail-resume/2.1.1-2.2.0/diff.md --exclude *.pyd
+[2023-05-14 01:07:59] INFO root fetch - processPackages [xspf-lib]: executing diffoscope
+[2023-05-14 01:07:59] INFO root fetch - processPackages [xspf-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xspf-lib-0.2.0.tar.gz tmp/xspf-lib-0.3.0.tar.gz --markdown 20230514/x/xspf-lib/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-14 01:07:59] INFO root fetch - processPackages [text2text]: Downloading https://files.pythonhosted.org/packages/dd/bc/0d76b7edda99d3f7ead835d94c080c8b050c2feebd706fa7fd9e20c9bb88/text2text-1.0.0.tar.gz
+[2023-05-14 01:07:59] INFO root fetch - processPackages [mojo-networking]: executing diffoscope
+[2023-05-14 01:07:59] INFO root fetch - processPackages [mojo-networking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mojo_networking-0.0.4.tar.gz tmp/mojo-networking-0.0.5.tar.gz --markdown 20230514/m/mojo-networking/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-14 01:07:59] INFO root fetch - processPackages [text2text]: executing diffoscope
+[2023-05-14 01:07:59] INFO root fetch - processPackages [text2text]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/text2text-0.9.9.tar.gz tmp/text2text-1.0.0.tar.gz --markdown 20230514/t/text2text/0.9.9-1.0.0/diff.md --exclude *.pyd
+[2023-05-14 01:08:00] INFO root fetch - main [MainThread]: End processing [tmnt]: success
+[2023-05-14 01:08:00] INFO root fetch - main [MainThread]: End processing [xspf-lib]: success
+[2023-05-14 01:08:00] INFO root fetch - main [MainThread]: End processing [wagtail-resume]: success
+[2023-05-14 01:08:00] INFO root fetch - main [MainThread]: End processing [mojo-networking]: success
+[2023-05-14 01:08:00] INFO root fetch - main [MainThread]: End processing [text2text]: success
+[2023-05-14 01:08:00] INFO root fetch - main [MainThread]: Store serial: [18093653]
