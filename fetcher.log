@@ -1,0 +1,61 @@
+[2023-05-14 00:02:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093321]
+[2023-05-14 00:02:50] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-14 00:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rattail
+[2023-05-14 00:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: wom-py
+[2023-05-14 00:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wot-datfile-parser-py
+[2023-05-14 00:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Tailbone
+[2023-05-14 00:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aioxlsxstream
+[2023-05-14 00:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rhyton
+[2023-05-14 00:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: savic
+[2023-05-14 00:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: rsync-time-machine
+[2023-05-14 00:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: rhyton
+[2023-05-14 00:02:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: aioxlsxstream
+[2023-05-14 00:02:50] INFO root fetch - processPackages [aioxlsxstream]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-14 00:02:50] WARNING root fetch - processPackages [savic]: Skipping, unable to determine old version
+[2023-05-14 00:02:50] INFO root fetch - main [MainThread]: End processing [savic] error
+[2023-05-14 00:02:50] INFO root fetch - processPackages [rhyton]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 00:02:50] INFO root fetch - processPackages [rhyton]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 00:02:50] INFO root fetch - processPackages [wom-py]: New version: [0.4.0] Old Version: [0.3.3]
+[2023-05-14 00:02:50] INFO root fetch - processPackages [rattail]: New version: [0.9.99] Old Version: [0.9.98]
+[2023-05-14 00:02:50] INFO root fetch - processPackages [wot-datfile-parser-py]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-14 00:02:50] WARNING root fetch - processPackages [rsync-time-machine]: Skipping, unable to determine old version
+[2023-05-14 00:02:50] INFO root fetch - main [MainThread]: End processing [rsync-time-machine] error
+[2023-05-14 00:02:50] INFO root fetch - processPackages [aioxlsxstream]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-14 00:02:50] INFO root fetch - processPackages [Tailbone]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-14 00:02:50] INFO root fetch - processPackages [rhyton]: Downloading https://files.pythonhosted.org/packages/ad/8a/79bd130d532714ac6f5838e8d8e3dcd1c04307a99cc587047dd63f746a79/rhyton-0.0.1.tar.gz
+[2023-05-14 00:02:50] INFO root fetch - processPackages [aioxlsxstream]: Downloading https://files.pythonhosted.org/packages/58/94/4e3057ba1a1837907e0ee73a139e6be4c86ed528cf1ae2aff115daa4b7a0/aioxlsxstream-1.0.1.tar.gz
+[2023-05-14 00:02:50] INFO root fetch - processPackages [aioxlsxstream]: Downloading https://files.pythonhosted.org/packages/58/94/4e3057ba1a1837907e0ee73a139e6be4c86ed528cf1ae2aff115daa4b7a0/aioxlsxstream-1.0.1.tar.gz
+[2023-05-14 00:02:50] INFO root fetch - processPackages [rhyton]: Downloading https://files.pythonhosted.org/packages/ad/8a/79bd130d532714ac6f5838e8d8e3dcd1c04307a99cc587047dd63f746a79/rhyton-0.0.1.tar.gz
+[2023-05-14 00:02:50] INFO root fetch - processPackages [wot-datfile-parser-py]: Downloading https://files.pythonhosted.org/packages/39/24/297f917ea9a3af7d80f37b59400d4dbabb01e3a509b2ad12eb9af7b1f419/wot_datfile_parser_py-0.2.0.tar.gz
+[2023-05-14 00:02:50] INFO root fetch - processPackages [wom-py]: Downloading https://files.pythonhosted.org/packages/41/f7/38936aa74e0869021abf26bbf98b724c8e98edd3243d4b23f338a0eec976/wom_py-0.3.3.tar.gz
+[2023-05-14 00:02:50] INFO root fetch - processPackages [rhyton]: Downloading https://files.pythonhosted.org/packages/3e/b0/b8f4ef00033c22f91d35beed4fc06591784f1f25e2f728df14b5a8b0e97f/rhyton-0.0.2.tar.gz
+[2023-05-14 00:02:50] INFO root fetch - processPackages [rhyton]: Downloading https://files.pythonhosted.org/packages/3e/b0/b8f4ef00033c22f91d35beed4fc06591784f1f25e2f728df14b5a8b0e97f/rhyton-0.0.2.tar.gz
+[2023-05-14 00:02:50] INFO root fetch - processPackages [Tailbone]: executing diffoscope
+[2023-05-14 00:02:50] INFO root fetch - processPackages [Tailbone]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Tailbone-0.9.8.tar.gz tmp/Tailbone-0.9.9.tar.gz --markdown 20230514/T/Tailbone/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-14 00:02:50] INFO root fetch - processPackages [rhyton]: executing diffoscope
+[2023-05-14 00:02:50] INFO root fetch - processPackages [rhyton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rhyton-0.0.1.tar.gz tmp/rhyton-0.0.2.tar.gz --markdown 20230514/r/rhyton/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 00:02:50] INFO root fetch - processPackages [rhyton]: executing diffoscope
+[2023-05-14 00:02:50] INFO root fetch - processPackages [rhyton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rhyton-0.0.1.tar.gz tmp/rhyton-0.0.2.tar.gz --markdown 20230514/r/rhyton/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 00:02:50] INFO root fetch - processPackages [aioxlsxstream]: Downloading https://files.pythonhosted.org/packages/67/34/e830d5449ed80de69171750a254bf287070f9c5554a65c60457c910dd08e/aioxlsxstream-1.0.2.tar.gz
+[2023-05-14 00:02:50] INFO root fetch - processPackages [aioxlsxstream]: Downloading https://files.pythonhosted.org/packages/67/34/e830d5449ed80de69171750a254bf287070f9c5554a65c60457c910dd08e/aioxlsxstream-1.0.2.tar.gz
+[2023-05-14 00:02:50] INFO root fetch - processPackages [rattail]: executing diffoscope
+[2023-05-14 00:02:50] INFO root fetch - processPackages [rattail]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rattail-0.9.98.tar.gz tmp/rattail-0.9.99.tar.gz --markdown 20230514/r/rattail/0.9.98-0.9.99/diff.md --exclude *.pyd
+[2023-05-14 00:02:50] INFO root fetch - processPackages [aioxlsxstream]: executing diffoscope
+[2023-05-14 00:02:50] INFO root fetch - processPackages [aioxlsxstream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioxlsxstream-1.0.1.tar.gz tmp/aioxlsxstream-1.0.2.tar.gz --markdown 20230514/a/aioxlsxstream/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-14 00:02:50] INFO root fetch - processPackages [aioxlsxstream]: executing diffoscope
+[2023-05-14 00:02:50] INFO root fetch - processPackages [aioxlsxstream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioxlsxstream-1.0.1.tar.gz tmp/aioxlsxstream-1.0.2.tar.gz --markdown 20230514/a/aioxlsxstream/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-14 00:02:50] INFO root fetch - processPackages [wom-py]: Downloading https://files.pythonhosted.org/packages/cf/3c/5e6d5ca34f1f5e36e7d0ea93222ccfa65c25b3b93bdde37971ea35a68bf6/wom_py-0.4.0.tar.gz
+[2023-05-14 00:02:51] INFO root fetch - processPackages [wom-py]: executing diffoscope
+[2023-05-14 00:02:51] INFO root fetch - processPackages [wom-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wom_py-0.3.3.tar.gz tmp/wom_py-0.4.0.tar.gz --markdown 20230514/w/wom-py/0.3.3-0.4.0/diff.md --exclude *.pyd
+[2023-05-14 00:02:51] INFO root fetch - processPackages [wot-datfile-parser-py]: Downloading https://files.pythonhosted.org/packages/71/02/413ccad9b01685bd75e7c9d396b7c3daae7a58c09b77bbe4bd999836e729/wot_datfile_parser_py-0.2.1.tar.gz
+[2023-05-14 00:02:51] INFO root fetch - processPackages [wot-datfile-parser-py]: executing diffoscope
+[2023-05-14 00:02:51] INFO root fetch - processPackages [wot-datfile-parser-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wot_datfile_parser_py-0.2.0.tar.gz tmp/wot_datfile_parser_py-0.2.1.tar.gz --markdown 20230514/w/wot-datfile-parser-py/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-14 00:02:52] INFO root fetch - main [MainThread]: End processing [aioxlsxstream]: success
+[2023-05-14 00:02:52] INFO root fetch - main [MainThread]: End processing [aioxlsxstream]: success
+[2023-05-14 00:02:52] INFO root fetch - main [MainThread]: End processing [rhyton]: success
+[2023-05-14 00:02:52] INFO root fetch - main [MainThread]: End processing [rhyton]: success
+[2023-05-14 00:02:52] INFO root fetch - main [MainThread]: End processing [wom-py]: success
+[2023-05-14 00:02:53] INFO root fetch - main [MainThread]: End processing [wot-datfile-parser-py]: success
+[2023-05-14 00:02:54] INFO root fetch - main [MainThread]: End processing [Tailbone]: success
+[2023-05-14 00:02:55] INFO root fetch - main [MainThread]: End processing [rattail]: success
+[2023-05-14 00:02:55] INFO root fetch - main [MainThread]: Store serial: [18093355]
