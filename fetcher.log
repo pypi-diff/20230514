@@ -120,3 +120,40 @@
 [2023-05-14 00:13:18] INFO root fetch - main [MainThread]: End processing [qcontext]: success
 [2023-05-14 00:13:18] INFO root fetch - main [MainThread]: End processing [evadb]: success
 [2023-05-14 00:13:18] INFO root fetch - main [MainThread]: Store serial: [18093402]
+[2023-05-14 00:18:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093402]
+[2023-05-14 00:18:27] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-14 00:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: MyConnect-SQL
+[2023-05-14 00:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: MyConnect-SQL
+[2023-05-14 00:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: airlift
+[2023-05-14 00:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cynthia-language
+[2023-05-14 00:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: circuitpython-simple-gyro
+[2023-05-14 00:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pydeps
+[2023-05-14 00:18:27] INFO root fetch - processPackages [MyConnect-SQL]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-14 00:18:27] WARNING root fetch - processPackages [airlift]: Skipping, unable to determine old version
+[2023-05-14 00:18:27] INFO root fetch - main [MainThread]: End processing [airlift] error
+[2023-05-14 00:18:27] INFO root fetch - processPackages [MyConnect-SQL]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-14 00:18:27] INFO root fetch - processPackages [cynthia-language]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-14 00:18:27] ERROR root fetch - processPackages [circuitpython-simple-gyro]: Unable to get metadata: No such project 'circuitpython-simple-gyro'
+[2023-05-14 00:18:27] INFO root fetch - main [MainThread]: End processing [circuitpython-simple-gyro] error
+[2023-05-14 00:18:27] INFO root fetch - processPackages [MyConnect-SQL]: Downloading https://files.pythonhosted.org/packages/e2/05/0af3090108d04257771479d9307f8474d82829ad26605b3ec5a127be969e/MyConnect%20-%20SQL-1.0.7.tar.gz
+[2023-05-14 00:18:27] INFO root fetch - processPackages [pydeps]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-14 00:18:27] INFO root fetch - processPackages [MyConnect-SQL]: Downloading https://files.pythonhosted.org/packages/e2/05/0af3090108d04257771479d9307f8474d82829ad26605b3ec5a127be969e/MyConnect%20-%20SQL-1.0.7.tar.gz
+[2023-05-14 00:18:27] INFO root fetch - processPackages [cynthia-language]: Downloading https://files.pythonhosted.org/packages/02/24/35848132210e991696ceca2b201d4ef1a6a63298713cf1369e7bde977ea8/cynthia_language-0.1.0.tar.gz
+[2023-05-14 00:18:27] INFO root fetch - processPackages [pydeps]: Downloading https://files.pythonhosted.org/packages/ce/1e/1988b89b44ebad8aa4e95f90570ac9c28954fdda26b8acefa1e013a3fb3f/pydeps-1.9.8.tar.gz
+[2023-05-14 00:18:28] INFO root fetch - processPackages [MyConnect-SQL]: Downloading https://files.pythonhosted.org/packages/e2/c0/a595dd9915c160ba3af6516add12cbea1003191e337cdbc82f74769fb82a/MyConnect%20-%20SQL-1.0.8.tar.gz
+[2023-05-14 00:18:28] INFO root fetch - processPackages [MyConnect-SQL]: Downloading https://files.pythonhosted.org/packages/e2/c0/a595dd9915c160ba3af6516add12cbea1003191e337cdbc82f74769fb82a/MyConnect%20-%20SQL-1.0.8.tar.gz
+[2023-05-14 00:18:28] INFO root fetch - processPackages [cynthia-language]: Downloading https://files.pythonhosted.org/packages/cb/40/e9e8447ba65545b142dbc42e93355bcc838317ff21d5893cc7c671cc6350/cynthia_language-0.1.1.tar.gz
+[2023-05-14 00:18:28] INFO root fetch - processPackages [cynthia-language]: executing diffoscope
+[2023-05-14 00:18:28] INFO root fetch - processPackages [cynthia-language]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cynthia_language-0.1.0.tar.gz tmp/cynthia_language-0.1.1.tar.gz --markdown 20230514/c/cynthia-language/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-14 00:18:28] INFO root fetch - processPackages [MyConnect-SQL]: executing diffoscope
+[2023-05-14 00:18:28] INFO root fetch - processPackages [MyConnect-SQL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MyConnect - SQL-1.0.7.tar.gz tmp/MyConnect - SQL-1.0.8.tar.gz --markdown 20230514/M/MyConnect-SQL/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-14 00:18:28] INFO root fetch - processPackages [MyConnect-SQL]: executing diffoscope
+[2023-05-14 00:18:28] INFO root fetch - processPackages [MyConnect-SQL]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/MyConnect - SQL-1.0.7.tar.gz tmp/MyConnect - SQL-1.0.8.tar.gz --markdown 20230514/M/MyConnect-SQL/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-14 00:18:28] INFO root fetch - processPackages [pydeps]: Downloading https://files.pythonhosted.org/packages/54/58/de7146f26af679bee4beb60206ce1b275bad50d608b6895ab83c7b5fdde2/pydeps-1.9.9.tar.gz
+[2023-05-14 00:18:28] INFO root fetch - processPackages [pydeps]: executing diffoscope
+[2023-05-14 00:18:28] INFO root fetch - processPackages [pydeps]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydeps-1.9.8.tar.gz tmp/pydeps-1.9.9.tar.gz --markdown 20230514/p/pydeps/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-14 00:18:29] INFO root fetch - main [MainThread]: End processing [cynthia-language]: success
+[2023-05-14 00:18:29] INFO root fetch - main [MainThread]: End processing [MyConnect-SQL]: success
+[2023-05-14 00:18:29] INFO root fetch - main [MainThread]: End processing [MyConnect-SQL]: success
+[2023-05-14 00:18:29] INFO root fetch - main [MainThread]: End processing [pydeps]: success
+[2023-05-14 00:18:29] INFO root fetch - main [MainThread]: Store serial: [18093433]
