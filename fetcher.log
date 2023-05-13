@@ -204,3 +204,48 @@
 [2023-05-14 00:28:50] INFO root fetch - main [MainThread]: End processing [reytool]: success
 [2023-05-14 00:28:50] INFO root fetch - main [MainThread]: End processing [browsr]: success
 [2023-05-14 00:28:50] INFO root fetch - main [MainThread]: Store serial: [18093461]
+[2023-05-14 00:33:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093461]
+[2023-05-14 00:33:59] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-14 00:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyrecdp
+[2023-05-14 00:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: devblaze
+[2023-05-14 00:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-05-14 00:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-05-14 00:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: colortag
+[2023-05-14 00:33:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gytmdl
+[2023-05-14 00:33:59] INFO root fetch - processPackages [gytmdl]: New version: [1.5] Old Version: [1.4]
+[2023-05-14 00:33:59] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1684017109] Old Version: [0.1.1684017101]
+[2023-05-14 00:33:59] INFO root fetch - processPackages [devblaze]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 00:33:59] INFO root fetch - processPackages [colortag]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 00:33:59] INFO root fetch - processPackages [pyrecdp]: New version: [1.0.1b202305133] Old Version: [1.0.1b202305132]
+[2023-05-14 00:33:59] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1684017109] Old Version: [0.1.1684017101]
+[2023-05-14 00:33:59] INFO root fetch - processPackages [colortag]: Downloading https://files.pythonhosted.org/packages/aa/4d/c3670cc96a3e3e361c72b36a131c31f9adcb535e76da7e69e019b9a19eae/colortag-0.0.1.tar.gz
+[2023-05-14 00:33:59] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/c0/e0/2f71f0dd92b644f6e9f974f81e34e42c3599eece4b91eb4e1d4bac381eb8/eia-odin-pkg-rioatmadja2018-0.1.1684017101.tar.gz
+[2023-05-14 00:33:59] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/c0/e0/2f71f0dd92b644f6e9f974f81e34e42c3599eece4b91eb4e1d4bac381eb8/eia-odin-pkg-rioatmadja2018-0.1.1684017101.tar.gz
+[2023-05-14 00:33:59] INFO root fetch - processPackages [gytmdl]: Downloading https://files.pythonhosted.org/packages/32/17/d3f087a92b6ab1aac2d48c40313baf1c310cf69c1f2c7c0c0587c8553867/gytmdl-1.4.tar.gz
+[2023-05-14 00:33:59] INFO root fetch - processPackages [devblaze]: Downloading https://files.pythonhosted.org/packages/a3/2c/3f05b1ec9faabd6e072e425a3e6dec4d7bab67d731bf5e22e6f1ab5fdc38/devblaze-0.0.1.tar.gz
+[2023-05-14 00:33:59] INFO root fetch - processPackages [pyrecdp]: Downloading https://files.pythonhosted.org/packages/63/b2/c8fff43ae9c80612372d15ede760f31d2ed68690beb3b2a35ca932e1166e/pyrecdp-1.0.1b202305132.tar.gz
+[2023-05-14 00:33:59] INFO root fetch - processPackages [colortag]: Downloading https://files.pythonhosted.org/packages/93/04/86cc368f1714fcdb5bc63b44bbbc337cb9a8cbaf4664a7c9196f313aeec7/colortag-0.0.2.tar.gz
+[2023-05-14 00:33:59] INFO root fetch - processPackages [gytmdl]: Downloading https://files.pythonhosted.org/packages/0f/c1/15cb1795a7d43b93d1009010f826d3cacfa15a62210611f23b720ffe873e/gytmdl-1.5.tar.gz
+[2023-05-14 00:34:00] INFO root fetch - processPackages [devblaze]: Downloading https://files.pythonhosted.org/packages/bb/1f/1029e9eee0d5e0d674fd4b094107d84e716cedc0099ae157f31a5ac92a5b/devblaze-0.0.2.tar.gz
+[2023-05-14 00:34:00] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/2e/5e/61911ce6e2b69b6731ab3585bca8478e347f835420be3e393d8ce145bccb/eia_odin_pkg_rioatmadja2018-0.1.1684017109-py3-none-any.whl
+[2023-05-14 00:34:00] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/2e/5e/61911ce6e2b69b6731ab3585bca8478e347f835420be3e393d8ce145bccb/eia_odin_pkg_rioatmadja2018-0.1.1684017109-py3-none-any.whl
+[2023-05-14 00:34:00] INFO root fetch - processPackages [colortag]: executing diffoscope
+[2023-05-14 00:34:00] INFO root fetch - processPackages [colortag]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colortag-0.0.1.tar.gz tmp/colortag-0.0.2.tar.gz --markdown 20230514/c/colortag/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 00:34:00] INFO root fetch - processPackages [pyrecdp]: Downloading https://files.pythonhosted.org/packages/9b/c4/96c8e267b8afd76d734a6cf91ec128676ef42f65ca9af674df39c339dabb/pyrecdp-1.0.1b202305133.tar.gz
+[2023-05-14 00:34:00] INFO root fetch - processPackages [devblaze]: executing diffoscope
+[2023-05-14 00:34:00] INFO root fetch - processPackages [devblaze]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devblaze-0.0.1.tar.gz tmp/devblaze-0.0.2.tar.gz --markdown 20230514/d/devblaze/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 00:34:00] INFO root fetch - processPackages [gytmdl]: executing diffoscope
+[2023-05-14 00:34:00] INFO root fetch - processPackages [gytmdl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gytmdl-1.4.tar.gz tmp/gytmdl-1.5.tar.gz --markdown 20230514/g/gytmdl/1.4-1.5/diff.md --exclude *.pyd
+[2023-05-14 00:34:00] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-05-14 00:34:00] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1684017101.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1684017109-py3-none-any.whl.zip --markdown 20230514/e/eia-odin-pkg-rioatmadja2018/0.1.1684017101-0.1.1684017109/diff.md --exclude *.pyd
+[2023-05-14 00:34:00] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-05-14 00:34:00] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1684017101.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1684017109-py3-none-any.whl.zip --markdown 20230514/e/eia-odin-pkg-rioatmadja2018/0.1.1684017101-0.1.1684017109/diff.md --exclude *.pyd
+[2023-05-14 00:34:00] INFO root fetch - processPackages [pyrecdp]: executing diffoscope
+[2023-05-14 00:34:00] INFO root fetch - processPackages [pyrecdp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrecdp-1.0.1b202305132.tar.gz tmp/pyrecdp-1.0.1b202305133.tar.gz --markdown 20230514/p/pyrecdp/1.0.1b202305132-1.0.1b202305133/diff.md --exclude *.pyd
+[2023-05-14 00:34:01] INFO root fetch - main [MainThread]: End processing [colortag]: success
+[2023-05-14 00:34:01] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-05-14 00:34:01] INFO root fetch - main [MainThread]: End processing [gytmdl]: success
+[2023-05-14 00:34:01] INFO root fetch - main [MainThread]: End processing [devblaze]: success
+[2023-05-14 00:34:01] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-05-14 00:34:02] INFO root fetch - main [MainThread]: End processing [pyrecdp]: success
+[2023-05-14 00:34:02] INFO root fetch - main [MainThread]: Store serial: [18093482]
