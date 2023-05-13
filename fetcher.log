@@ -249,3 +249,25 @@
 [2023-05-14 00:34:01] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
 [2023-05-14 00:34:02] INFO root fetch - main [MainThread]: End processing [pyrecdp]: success
 [2023-05-14 00:34:02] INFO root fetch - main [MainThread]: Store serial: [18093482]
+[2023-05-14 00:39:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093482]
+[2023-05-14 00:39:13] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 00:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cynthia-language
+[2023-05-14 00:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tap-totango
+[2023-05-14 00:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-software-project-estimator
+[2023-05-14 00:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyOceanopticsSpectrometer
+[2023-05-14 00:39:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: aocref
+[2023-05-14 00:39:13] WARNING root fetch - processPackages [tap-totango]: Skipping, unable to determine old version
+[2023-05-14 00:39:13] INFO root fetch - main [MainThread]: End processing [tap-totango] error
+[2023-05-14 00:39:13] INFO root fetch - processPackages [cynthia-language]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-14 00:39:13] WARNING root fetch - processPackages [pyOceanopticsSpectrometer]: Skipping, unable to determine old version
+[2023-05-14 00:39:13] INFO root fetch - main [MainThread]: End processing [pyOceanopticsSpectrometer] error
+[2023-05-14 00:39:13] WARNING root fetch - processPackages [python-software-project-estimator]: Skipping, unable to determine old version
+[2023-05-14 00:39:13] INFO root fetch - main [MainThread]: End processing [python-software-project-estimator] error
+[2023-05-14 00:39:13] INFO root fetch - processPackages [aocref]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-14 00:39:13] INFO root fetch - processPackages [cynthia-language]: executing diffoscope
+[2023-05-14 00:39:13] INFO root fetch - processPackages [cynthia-language]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cynthia_language-0.1.0.tar.gz tmp/cynthia_language-0.1.1.tar.gz --markdown 20230514/c/cynthia-language/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-14 00:39:13] INFO root fetch - processPackages [aocref]: executing diffoscope
+[2023-05-14 00:39:13] INFO root fetch - processPackages [aocref]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aocref-2.0.8.tar.gz tmp/aocref-2.0.9.tar.gz --markdown 20230514/a/aocref/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-14 00:39:14] INFO root fetch - main [MainThread]: End processing [cynthia-language]: success
+[2023-05-14 00:39:14] INFO root fetch - main [MainThread]: End processing [aocref]: success
+[2023-05-14 00:39:14] INFO root fetch - main [MainThread]: Store serial: [18093508]
