@@ -577,3 +577,37 @@
 [2023-05-14 01:23:29] INFO root fetch - main [MainThread]: End processing [siobrultech-protocols]: success
 [2023-05-14 01:23:31] INFO root fetch - main [MainThread]: End processing [heaserver]: success
 [2023-05-14 01:23:31] INFO root fetch - main [MainThread]: Store serial: [18093686]
+[2023-05-14 01:28:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093686]
+[2023-05-14 01:28:41] INFO root fetch - main [MainThread]: No changed packages found
+[2023-05-14 01:33:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093686]
+[2023-05-14 01:33:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 01:33:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: komm
+[2023-05-14 01:33:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ksconf
+[2023-05-14 01:33:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kintyre-splunk-conf
+[2023-05-14 01:33:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ecida
+[2023-05-14 01:33:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: revshell-generator
+[2023-05-14 01:33:46] INFO root fetch - processPackages [revshell-generator]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-14 01:33:46] INFO root fetch - processPackages [ecida]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-14 01:33:46] INFO root fetch - processPackages [ksconf]: New version: [0.11.0] Old Version: [0.10.2a2]
+[2023-05-14 01:33:46] INFO root fetch - processPackages [komm]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-05-14 01:33:46] INFO root fetch - processPackages [kintyre-splunk-conf]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-14 01:33:47] INFO root fetch - processPackages [kintyre-splunk-conf]: executing diffoscope
+[2023-05-14 01:33:47] INFO root fetch - processPackages [kintyre-splunk-conf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kintyre-splunk-conf-0.9.2.tar.gz tmp/kintyre-splunk-conf-0.9.3.tar.gz --markdown 20230514/k/kintyre-splunk-conf/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-14 01:33:47] INFO root fetch - processPackages [revshell-generator]: executing diffoscope
+[2023-05-14 01:33:47] INFO root fetch - processPackages [revshell-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revshell-generator-1.0.6.tar.gz tmp/revshell-generator-1.0.7.tar.gz --markdown 20230514/r/revshell-generator/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-14 01:33:47] INFO root fetch - processPackages [ksconf]: Downloading https://files.pythonhosted.org/packages/cf/cc/50b754913aaed93512b8a471008cb9a50eb45a810ddb152583b054fc3438/ksconf-0.11.0.tar.gz
+[2023-05-14 01:33:47] INFO root fetch - processPackages [komm]: Downloading https://files.pythonhosted.org/packages/82/04/84feeedc76030c680b0dcc8ea968f3356bd3539639642b44feac3d304c93/komm-0.7.1.tar.gz
+[2023-05-14 01:33:47] INFO root fetch - processPackages [ksconf]: executing diffoscope
+[2023-05-14 01:33:47] INFO root fetch - processPackages [ksconf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ksconf-0.10.2a2.tar.gz tmp/ksconf-0.11.0.tar.gz --markdown 20230514/k/ksconf/0.10.2a2-0.11.0/diff.md --exclude *.pyd
+[2023-05-14 01:33:47] INFO root fetch - processPackages [ecida]: Downloading https://files.pythonhosted.org/packages/ce/81/85397265bd0ecf3c28c9bfe4a7f4a0bd8785fb1648030da0c66158209aa2/ecida-0.0.5.tar.gz
+[2023-05-14 01:33:47] INFO root fetch - processPackages [ecida]: executing diffoscope
+[2023-05-14 01:33:47] INFO root fetch - processPackages [ecida]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecida-0.0.4.tar.gz tmp/ecida-0.0.5.tar.gz --markdown 20230514/e/ecida/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-14 01:33:47] INFO root fetch - processPackages [komm]: Downloading https://files.pythonhosted.org/packages/de/e0/377e1ffd545a2f4a0a78b1f787cd753c5ac72a45d44b3326a7bb37574d15/komm-0.7.2.tar.gz
+[2023-05-14 01:33:47] INFO root fetch - processPackages [komm]: executing diffoscope
+[2023-05-14 01:33:47] INFO root fetch - processPackages [komm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/komm-0.7.1.tar.gz tmp/komm-0.7.2.tar.gz --markdown 20230514/k/komm/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-05-14 01:33:48] INFO root fetch - main [MainThread]: End processing [revshell-generator]: success
+[2023-05-14 01:33:48] INFO root fetch - main [MainThread]: End processing [ecida]: success
+[2023-05-14 01:33:48] INFO root fetch - main [MainThread]: End processing [kintyre-splunk-conf]: success
+[2023-05-14 01:33:48] INFO root fetch - main [MainThread]: End processing [ksconf]: success
+[2023-05-14 01:33:48] INFO root fetch - main [MainThread]: End processing [komm]: success
+[2023-05-14 01:33:48] INFO root fetch - main [MainThread]: Store serial: [18093698]
