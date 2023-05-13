@@ -347,3 +347,56 @@
 [2023-05-14 00:49:39] INFO root fetch - main [MainThread]: End processing [pyrecdp]: success
 [2023-05-14 00:49:39] INFO root fetch - main [MainThread]: End processing [pyGenieScript]: success
 [2023-05-14 00:49:39] INFO root fetch - main [MainThread]: Store serial: [18093567]
+[2023-05-14 00:54:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093567]
+[2023-05-14 00:54:47] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-14 00:54:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: grad-info-opt
+[2023-05-14 00:54:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: rattail-mailchimp
+[2023-05-14 00:54:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aihandler
+[2023-05-14 00:54:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vegafusion
+[2023-05-14 00:54:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vegafusion-jupyter
+[2023-05-14 00:54:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: asyncio-task-logger
+[2023-05-14 00:54:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sds011lib
+[2023-05-14 00:54:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: imsholcal
+[2023-05-14 00:54:47] WARNING root fetch - processPackages [grad-info-opt]: Skipping, unable to determine old version
+[2023-05-14 00:54:47] INFO root fetch - main [MainThread]: End processing [grad-info-opt] error
+[2023-05-14 00:54:47] INFO root fetch - processPackages [rattail-mailchimp]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-14 00:54:47] INFO root fetch - processPackages [sds011lib]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-05-14 00:54:47] INFO root fetch - processPackages [asyncio-task-logger]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 00:54:47] INFO root fetch - processPackages [imsholcal]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-14 00:54:47] INFO root fetch - processPackages [aihandler]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-14 00:54:47] INFO root fetch - processPackages [vegafusion-jupyter]: New version: [1.3.0rc1] Old Version: [1.2.4]
+[2023-05-14 00:54:47] INFO root fetch - processPackages [vegafusion]: New version: [1.3.0rc1] Old Version: [1.2.4]
+[2023-05-14 00:54:48] INFO root fetch - processPackages [asyncio-task-logger]: Downloading https://files.pythonhosted.org/packages/29/47/ff3e64e3fc56f7d078d741669f208820106f976f69705f8c71cf97e1102e/asyncio_task_logger-0.0.1.tar.gz
+[2023-05-14 00:54:48] INFO root fetch - processPackages [aihandler]: Downloading https://files.pythonhosted.org/packages/5f/59/0f3fec3d9c2165b2534eebc579ad40951d28dd76a141ee0517afca3f1a84/aihandler-1.9.8.tar.gz
+[2023-05-14 00:54:48] INFO root fetch - processPackages [imsholcal]: Downloading https://files.pythonhosted.org/packages/b2/db/4d2b268fcf2ca39bbf35f1f1ba4445c9f2cc9c56e15ec0385538427b5b23/imsholcal-1.1.1.tar.gz
+[2023-05-14 00:54:48] INFO root fetch - processPackages [sds011lib]: Downloading https://files.pythonhosted.org/packages/0d/2f/1f0fd3ff6e75733a84559b86f699cda530b3a19f9012810e55d61145d915/sds011lib-0.2.2.tar.gz
+[2023-05-14 00:54:48] INFO root fetch - processPackages [rattail-mailchimp]: Downloading https://files.pythonhosted.org/packages/2d/11/19c141b55d1dd59c750452b413f4db96ff447240bfdd54a3d512c26066c5/rattail-mailchimp-0.1.2.tar.gz
+[2023-05-14 00:54:48] INFO root fetch - processPackages [vegafusion]: Downloading https://files.pythonhosted.org/packages/36/b4/394c783a4944aae5d512f609b54296341e96cc4fda14dd39116bc6218ff7/vegafusion-1.3.0rc1.tar.gz
+[2023-05-14 00:54:48] INFO root fetch - processPackages [asyncio-task-logger]: Downloading https://files.pythonhosted.org/packages/e6/4c/acd30c074f1a4ab4be55d64b849a5ea7cd1f96c8ceee709fe410890635b4/asyncio_task_logger-0.0.2.tar.gz
+[2023-05-14 00:54:48] INFO root fetch - processPackages [vegafusion-jupyter]: Downloading https://files.pythonhosted.org/packages/0d/e3/e8650157faa79af5328dd2fc92ce973cab34b47d5ccf4f22b048653da956/vegafusion-jupyter-1.3.0rc1.tar.gz
+[2023-05-14 00:54:48] INFO root fetch - processPackages [aihandler]: Downloading https://files.pythonhosted.org/packages/b3/c7/544c990d7d396289c416e3676f2fdf02804edee7d23e678081cc4c761c29/aihandler-1.9.9.tar.gz
+[2023-05-14 00:54:48] INFO root fetch - processPackages [sds011lib]: Downloading https://files.pythonhosted.org/packages/6d/56/245e4fe1517ee1371f4790120bcb97b1b64f4a7d4d873a8f469ca5d64be4/sds011lib-0.3.0.tar.gz
+[2023-05-14 00:54:48] INFO root fetch - processPackages [imsholcal]: Downloading https://files.pythonhosted.org/packages/af/c0/be0da681b687c17b54b184b8ed89001ba7190a8d7feb65626d83536594ec/imsholcal-1.1.2.tar.gz
+[2023-05-14 00:54:48] INFO root fetch - processPackages [aihandler]: executing diffoscope
+[2023-05-14 00:54:48] INFO root fetch - processPackages [aihandler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aihandler-1.9.8.tar.gz tmp/aihandler-1.9.9.tar.gz --markdown 20230514/a/aihandler/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-14 00:54:48] INFO root fetch - processPackages [vegafusion]: executing diffoscope
+[2023-05-14 00:54:48] INFO root fetch - processPackages [vegafusion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vegafusion-1.2.4.tar.gz tmp/vegafusion-1.3.0rc1.tar.gz --markdown 20230514/v/vegafusion/1.2.4-1.3.0rc1/diff.md --exclude *.pyd
+[2023-05-14 00:54:48] INFO root fetch - processPackages [rattail-mailchimp]: Downloading https://files.pythonhosted.org/packages/85/48/4ac11d9352e1f2434caffae1cd0db21a67e452d8b0c9995f6e84bfc16910/rattail-mailchimp-0.1.3.tar.gz
+[2023-05-14 00:54:48] INFO root fetch - processPackages [asyncio-task-logger]: executing diffoscope
+[2023-05-14 00:54:48] INFO root fetch - processPackages [asyncio-task-logger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/asyncio_task_logger-0.0.1.tar.gz tmp/asyncio_task_logger-0.0.2.tar.gz --markdown 20230514/a/asyncio-task-logger/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 00:54:48] INFO root fetch - processPackages [sds011lib]: executing diffoscope
+[2023-05-14 00:54:48] INFO root fetch - processPackages [sds011lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sds011lib-0.2.2.tar.gz tmp/sds011lib-0.3.0.tar.gz --markdown 20230514/s/sds011lib/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-05-14 00:54:48] INFO root fetch - processPackages [imsholcal]: executing diffoscope
+[2023-05-14 00:54:48] INFO root fetch - processPackages [imsholcal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/imsholcal-1.1.1.tar.gz tmp/imsholcal-1.1.2.tar.gz --markdown 20230514/i/imsholcal/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-14 00:54:48] INFO root fetch - processPackages [rattail-mailchimp]: executing diffoscope
+[2023-05-14 00:54:48] INFO root fetch - processPackages [rattail-mailchimp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rattail-mailchimp-0.1.2.tar.gz tmp/rattail-mailchimp-0.1.3.tar.gz --markdown 20230514/r/rattail-mailchimp/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-14 00:54:49] INFO root fetch - processPackages [vegafusion-jupyter]: executing diffoscope
+[2023-05-14 00:54:49] INFO root fetch - processPackages [vegafusion-jupyter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vegafusion-jupyter-1.2.4.tar.gz tmp/vegafusion-jupyter-1.3.0rc1.tar.gz --markdown 20230514/v/vegafusion-jupyter/1.2.4-1.3.0rc1/diff.md --exclude *.pyd
+[2023-05-14 00:54:49] INFO root fetch - main [MainThread]: End processing [sds011lib]: success
+[2023-05-14 00:54:49] INFO root fetch - main [MainThread]: End processing [vegafusion]: success
+[2023-05-14 00:54:49] INFO root fetch - main [MainThread]: End processing [aihandler]: success
+[2023-05-14 00:54:49] INFO root fetch - main [MainThread]: End processing [imsholcal]: success
+[2023-05-14 00:54:49] INFO root fetch - main [MainThread]: End processing [asyncio-task-logger]: success
+[2023-05-14 00:54:49] INFO root fetch - main [MainThread]: End processing [rattail-mailchimp]: success
+[2023-05-14 00:57:14] INFO root fetch - main [MainThread]: End processing [vegafusion-jupyter]: success
+[2023-05-14 00:57:14] INFO root fetch - main [MainThread]: Store serial: [18093602]
