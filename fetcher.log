@@ -635,3 +635,26 @@
 [2023-05-14 01:38:59] INFO root fetch - main [MainThread]: End processing [pyresidfp]: success
 [2023-05-14 01:39:00] INFO root fetch - main [MainThread]: End processing [guppy3]: success
 [2023-05-14 01:39:00] INFO root fetch - main [MainThread]: Store serial: [18093827]
+[2023-05-14 01:44:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093827]
+[2023-05-14 01:44:09] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 01:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: revshell-generator
+[2023-05-14 01:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: browsr
+[2023-05-14 01:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: databend-py
+[2023-05-14 01:44:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aping-cli
+[2023-05-14 01:44:09] INFO root fetch - processPackages [revshell-generator]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-14 01:44:09] WARNING root fetch - processPackages [aping-cli]: Skipping, unable to determine old version
+[2023-05-14 01:44:09] INFO root fetch - processPackages [browsr]: New version: [1.5.0] Old Version: [1.4.0]
+[2023-05-14 01:44:09] INFO root fetch - main [MainThread]: End processing [aping-cli] error
+[2023-05-14 01:44:09] INFO root fetch - processPackages [databend-py]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-14 01:44:09] INFO root fetch - processPackages [revshell-generator]: executing diffoscope
+[2023-05-14 01:44:09] INFO root fetch - processPackages [revshell-generator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/revshell-generator-1.0.6.tar.gz tmp/revshell-generator-1.0.7.tar.gz --markdown 20230514/r/revshell-generator/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-14 01:44:09] INFO root fetch - processPackages [browsr]: Downloading https://files.pythonhosted.org/packages/b5/6b/d9b637ee3e28216c99308f340999588da108275a249d4b3c2f5ce78c13bb/browsr-1.5.0.tar.gz
+[2023-05-14 01:44:09] INFO root fetch - processPackages [databend-py]: Downloading https://files.pythonhosted.org/packages/16/69/9e77ce60523ec5c3a90d073784bb47fea4edd70c93faed9003055ba8d170/databend_py-0.4.1-py3-none-any.whl
+[2023-05-14 01:44:09] INFO root fetch - processPackages [browsr]: executing diffoscope
+[2023-05-14 01:44:09] INFO root fetch - processPackages [browsr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/browsr-1.4.0.tar.gz tmp/browsr-1.5.0.tar.gz --markdown 20230514/b/browsr/1.4.0-1.5.0/diff.md --exclude *.pyd
+[2023-05-14 01:44:09] INFO root fetch - processPackages [databend-py]: executing diffoscope
+[2023-05-14 01:44:09] INFO root fetch - processPackages [databend-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databend_py-0.4.0-py3-none-any.whl.zip tmp/databend_py-0.4.1-py3-none-any.whl.zip --markdown 20230514/d/databend-py/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-14 01:44:10] INFO root fetch - main [MainThread]: End processing [revshell-generator]: success
+[2023-05-14 01:44:10] INFO root fetch - main [MainThread]: End processing [databend-py]: success
+[2023-05-14 01:44:11] INFO root fetch - main [MainThread]: End processing [browsr]: success
+[2023-05-14 01:44:11] INFO root fetch - main [MainThread]: Store serial: [18093840]
