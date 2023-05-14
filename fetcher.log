@@ -9388,3 +9388,94 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 20:27:50] INFO root fetch - main [MainThread]: End processing [anutils]: success
 [2023-05-14 20:28:26] INFO root fetch - main [MainThread]: End processing [aleksis-app-dashboardfeeds]: success
 [2023-05-14 20:28:26] INFO root fetch - main [MainThread]: Store serial: [18099087]
+[2023-05-14 20:33:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18099087]
+[2023-05-14 20:33:35] INFO root fetch - main [MainThread]: Found 16 changed packages
+[2023-05-14 20:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odin-format
+[2023-05-14 20:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: imaginepy
+[2023-05-14 20:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: p4p
+[2023-05-14 20:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Artur-serializer
+[2023-05-14 20:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: CoLT5-attention
+[2023-05-14 20:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aihandler
+[2023-05-14 20:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pipsqlitelib
+[2023-05-14 20:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mathsym-adasneves
+[2023-05-14 20:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: validmind
+[2023-05-14 20:33:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: LasBuildSeg
+[2023-05-14 20:33:35] WARNING root fetch - processPackages [odin-format]: Skipping, unable to determine old version
+[2023-05-14 20:33:35] INFO root fetch - processPackages [odin-format]: Start processing: cluedin
+[2023-05-14 20:33:35] INFO root fetch - main [MainThread]: End processing [odin-format] error
+[2023-05-14 20:33:35] INFO root fetch - processPackages [pipsqlitelib]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-14 20:33:35] INFO root fetch - processPackages [mathsym-adasneves]: New version: [0.0.36] Old Version: [0.0.35]
+[2023-05-14 20:33:35] WARNING root fetch - processPackages [Artur-serializer]: Skipping, unable to determine old version
+[2023-05-14 20:33:35] INFO root fetch - processPackages [Artur-serializer]: Start processing: pipsqlitelib
+[2023-05-14 20:33:35] INFO root fetch - main [MainThread]: End processing [Artur-serializer] error
+[2023-05-14 20:33:35] INFO root fetch - processPackages [validmind]: New version: [1.9.7] Old Version: [1.9.6]
+[2023-05-14 20:33:35] INFO root fetch - processPackages [LasBuildSeg]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 20:33:35] INFO root fetch - processPackages [aihandler]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-14 20:33:35] INFO root fetch - processPackages [CoLT5-attention]: New version: [0.7.2] Old Version: [0.7.1]
+[2023-05-14 20:33:35] INFO root fetch - processPackages [cluedin]: New version: [2.0.0rc1] Old Version: [1.0.0]
+[2023-05-14 20:33:35] INFO root fetch - processPackages [p4p]: New version: [4.1.6a1] Old Version: [4.1.6]
+[2023-05-14 20:33:35] INFO root fetch - processPackages [pipsqlitelib]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-14 20:33:35] WARNING root fetch - processPackages [imaginepy]: Skipping, unable to determine old version
+[2023-05-14 20:33:35] INFO root fetch - processPackages [imaginepy]: Start processing: mathsym-adasneves
+[2023-05-14 20:33:35] INFO root fetch - main [MainThread]: End processing [imaginepy] error
+[2023-05-14 20:33:35] INFO root fetch - processPackages [mathsym-adasneves]: New version: [0.0.36] Old Version: [0.0.35]
+[2023-05-14 20:33:35] INFO root fetch - processPackages [aihandler]: executing diffoscope
+[2023-05-14 20:33:35] INFO root fetch - processPackages [aihandler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aihandler-1.9.8.tar.gz tmp/aihandler-1.9.9.tar.gz --markdown 20230514/a/aihandler/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-14 20:33:35] INFO root fetch - processPackages [pipsqlitelib]: Downloading https://files.pythonhosted.org/packages/da/24/90b2f2bf5d200014eeba08521ab9e8346d3f96bf3d95401d089d6b46c065/pipsqlitelib-1.0.0.tar.gz
+[2023-05-14 20:33:35] INFO root fetch - processPackages [pipsqlitelib]: Downloading https://files.pythonhosted.org/packages/da/24/90b2f2bf5d200014eeba08521ab9e8346d3f96bf3d95401d089d6b46c065/pipsqlitelib-1.0.0.tar.gz
+[2023-05-14 20:33:35] INFO root fetch - processPackages [cluedin]: Downloading https://files.pythonhosted.org/packages/67/da/ef5639b686afcce0316e9d520e13a888ff33a73c613a32e273a8c2607095/cluedin-1.0.0.tar.gz
+[2023-05-14 20:33:35] INFO root fetch - processPackages [mathsym-adasneves]: Downloading https://files.pythonhosted.org/packages/a7/0f/c2f2b5afed0d6a1439509ba6e726f6f62f4acda9d8943f74191ee6fb3136/mathsym_adasneves-0.0.35.tar.gz
+[2023-05-14 20:33:35] INFO root fetch - processPackages [validmind]: Downloading https://files.pythonhosted.org/packages/0a/05/25046b967e5dc51dd5ae20bd6ba3dffd981fbc355bbcbfb62d98c651d5b6/validmind-1.9.7.tar.gz
+[2023-05-14 20:33:35] INFO root fetch - processPackages [p4p]: Downloading https://files.pythonhosted.org/packages/81/8a/fcbaffc32b6c42ba46c7562a2ec27dfa59e85d48e9b9acd2aa166af75969/p4p-4.1.6.tar.gz
+[2023-05-14 20:33:35] INFO root fetch - processPackages [LasBuildSeg]: Downloading https://files.pythonhosted.org/packages/35/6e/e088d3e722f467aaf2a5b2a5fe406b88f0ef7307666235f5dd90171dd78f/LasBuildSeg-0.0.8.tar.gz
+[2023-05-14 20:33:35] INFO root fetch - processPackages [mathsym-adasneves]: Downloading https://files.pythonhosted.org/packages/a7/0f/c2f2b5afed0d6a1439509ba6e726f6f62f4acda9d8943f74191ee6fb3136/mathsym_adasneves-0.0.35.tar.gz
+[2023-05-14 20:33:35] INFO root fetch - processPackages [CoLT5-attention]: Downloading https://files.pythonhosted.org/packages/32/17/828f94fdf860455200752883aaf71cf3f7c90cab8a4aa8b3448269644e78/CoLT5-attention-0.7.2.tar.gz
+[2023-05-14 20:33:35] INFO root fetch - processPackages [validmind]: executing diffoscope
+[2023-05-14 20:33:35] INFO root fetch - processPackages [validmind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/validmind-1.9.6.tar.gz tmp/validmind-1.9.7.tar.gz --markdown 20230514/v/validmind/1.9.6-1.9.7/diff.md --exclude *.pyd
+[2023-05-14 20:33:35] INFO root fetch - processPackages [cluedin]: Downloading https://files.pythonhosted.org/packages/49/8f/7bc91b1d2d723ffcdd6a2bd1f84547246d310ae606f23fb93baf220eb9ed/cluedin-2.0.0rc1.tar.gz
+[2023-05-14 20:33:35] INFO root fetch - processPackages [pipsqlitelib]: Downloading https://files.pythonhosted.org/packages/ed/a3/39a9a87a27d64fa7eae94ee5e6590377707696b67f4e90c5577e2cb3720e/pipsqlitelib-1.1.0.tar.gz
+[2023-05-14 20:33:35] INFO root fetch - processPackages [pipsqlitelib]: Downloading https://files.pythonhosted.org/packages/ed/a3/39a9a87a27d64fa7eae94ee5e6590377707696b67f4e90c5577e2cb3720e/pipsqlitelib-1.1.0.tar.gz
+[2023-05-14 20:33:35] INFO root fetch - processPackages [mathsym-adasneves]: Downloading https://files.pythonhosted.org/packages/56/00/62a988b49f4ec8090a1882be7b770c053616bb85e4c669a7679cff3f4f65/mathsym_adasneves-0.0.36.tar.gz
+[2023-05-14 20:33:35] INFO root fetch - processPackages [CoLT5-attention]: executing diffoscope
+[2023-05-14 20:33:35] INFO root fetch - processPackages [CoLT5-attention]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CoLT5-attention-0.7.1.tar.gz tmp/CoLT5-attention-0.7.2.tar.gz --markdown 20230514/C/CoLT5-attention/0.7.1-0.7.2/diff.md --exclude *.pyd
+[2023-05-14 20:33:35] INFO root fetch - processPackages [LasBuildSeg]: Downloading https://files.pythonhosted.org/packages/1b/6b/b09f70da3517385883f0c428729a593814f24914abeae28199fb86c460b2/LasBuildSeg-0.0.9.tar.gz
+[2023-05-14 20:33:35] INFO root fetch - processPackages [cluedin]: executing diffoscope
+[2023-05-14 20:33:35] INFO root fetch - processPackages [cluedin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cluedin-1.0.0.tar.gz tmp/cluedin-2.0.0rc1.tar.gz --markdown 20230514/c/cluedin/1.0.0-2.0.0rc1/diff.md --exclude *.pyd
+[2023-05-14 20:33:35] INFO root fetch - processPackages [mathsym-adasneves]: Downloading https://files.pythonhosted.org/packages/56/00/62a988b49f4ec8090a1882be7b770c053616bb85e4c669a7679cff3f4f65/mathsym_adasneves-0.0.36.tar.gz
+[2023-05-14 20:33:36] INFO root fetch - processPackages [LasBuildSeg]: executing diffoscope
+[2023-05-14 20:33:36] INFO root fetch - processPackages [LasBuildSeg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/LasBuildSeg-0.0.8.tar.gz tmp/LasBuildSeg-0.0.9.tar.gz --markdown 20230514/L/LasBuildSeg/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 20:33:36] INFO root fetch - processPackages [p4p]: executing diffoscope
+[2023-05-14 20:33:36] INFO root fetch - processPackages [p4p]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p4p-4.1.6.tar.gz tmp/p4p-4.1.6a1.tar.gz --markdown 20230514/p/p4p/4.1.6-4.1.6a1/diff.md --exclude *.pyd
+[2023-05-14 20:33:36] INFO root fetch - processPackages [pipsqlitelib]: executing diffoscope
+[2023-05-14 20:33:36] INFO root fetch - processPackages [pipsqlitelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipsqlitelib-1.0.0.tar.gz tmp/pipsqlitelib-1.1.0.tar.gz --markdown 20230514/p/pipsqlitelib/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 20:33:36] INFO root fetch - processPackages [pipsqlitelib]: executing diffoscope
+[2023-05-14 20:33:36] INFO root fetch - processPackages [pipsqlitelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipsqlitelib-1.0.0.tar.gz tmp/pipsqlitelib-1.1.0.tar.gz --markdown 20230514/p/pipsqlitelib/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 20:33:36] INFO root fetch - processPackages [mathsym-adasneves]: executing diffoscope
+[2023-05-14 20:33:36] INFO root fetch - processPackages [mathsym-adasneves]: executing diffoscope
+[2023-05-14 20:33:36] INFO root fetch - processPackages [mathsym-adasneves]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mathsym_adasneves-0.0.35.tar.gz tmp/mathsym_adasneves-0.0.36.tar.gz --markdown 20230514/m/mathsym-adasneves/0.0.35-0.0.36/diff.md --exclude *.pyd
+[2023-05-14 20:33:36] INFO root fetch - processPackages [mathsym-adasneves]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mathsym_adasneves-0.0.35.tar.gz tmp/mathsym_adasneves-0.0.36.tar.gz --markdown 20230514/m/mathsym-adasneves/0.0.35-0.0.36/diff.md --exclude *.pyd
+[2023-05-14 20:33:37] INFO root fetch - processPackages [CoLT5-attention]: Start processing: be-micropython-nextion
+[2023-05-14 20:33:37] INFO root fetch - main [MainThread]: End processing [CoLT5-attention]: success
+[2023-05-14 20:33:37] INFO root fetch - processPackages [be-micropython-nextion]: New version: [0.15.1] Old Version: [0.15.0]
+[2023-05-14 20:33:37] INFO root fetch - processPackages [cluedin]: Start processing: ragas
+[2023-05-14 20:33:37] INFO root fetch - main [MainThread]: End processing [cluedin]: success
+[2023-05-14 20:33:37] WARNING root fetch - processPackages [ragas]: Skipping, unable to determine old version
+[2023-05-14 20:33:37] INFO root fetch - processPackages [ragas]: Start processing: arithmetica-py
+[2023-05-14 20:33:37] INFO root fetch - main [MainThread]: End processing [ragas] error
+[2023-05-14 20:33:37] INFO root fetch - processPackages [arithmetica-py]: New version: [1.0.204] Old Version: [1.0.203]
+[2023-05-14 20:33:37] INFO root fetch - main [MainThread]: End processing [LasBuildSeg]: success
+[2023-05-14 20:33:37] INFO root fetch - main [MainThread]: End processing [aihandler]: success
+[2023-05-14 20:33:37] INFO root fetch - processPackages [arithmetica-py]: executing diffoscope
+[2023-05-14 20:33:37] INFO root fetch - processPackages [arithmetica-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arithmetica-py-1.0.203.tar.gz tmp/arithmetica-py-1.0.204.tar.gz --markdown 20230514/a/arithmetica-py/1.0.203-1.0.204/diff.md --exclude *.pyd
+[2023-05-14 20:33:37] INFO root fetch - main [MainThread]: End processing [pipsqlitelib]: success
+[2023-05-14 20:33:37] INFO root fetch - processPackages [be-micropython-nextion]: Downloading https://files.pythonhosted.org/packages/e8/68/2c713e4fe443d4df91e89f4f3398e2a7218a4e7e5399076a7f30e0220422/be-micropython-nextion-0.15.1.tar.gz
+[2023-05-14 20:33:37] INFO root fetch - main [MainThread]: End processing [validmind]: success
+[2023-05-14 20:33:37] INFO root fetch - main [MainThread]: End processing [mathsym-adasneves]: success
+[2023-05-14 20:33:37] INFO root fetch - main [MainThread]: End processing [pipsqlitelib]: success
+[2023-05-14 20:33:37] INFO root fetch - processPackages [be-micropython-nextion]: executing diffoscope
+[2023-05-14 20:33:37] INFO root fetch - processPackages [be-micropython-nextion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/be-micropython-nextion-0.15.0.tar.gz tmp/be-micropython-nextion-0.15.1.tar.gz --markdown 20230514/b/be-micropython-nextion/0.15.0-0.15.1/diff.md --exclude *.pyd
+[2023-05-14 20:33:37] INFO root fetch - main [MainThread]: End processing [mathsym-adasneves]: success
+[2023-05-14 20:33:38] INFO root fetch - main [MainThread]: End processing [arithmetica-py]: success
+[2023-05-14 20:33:38] INFO root fetch - main [MainThread]: End processing [be-micropython-nextion]: success
+[2023-05-14 20:33:39] INFO root fetch - main [MainThread]: End processing [p4p]: success
+[2023-05-14 20:33:39] INFO root fetch - main [MainThread]: Store serial: [18099165]
