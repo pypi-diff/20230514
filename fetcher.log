@@ -2792,3 +2792,24 @@
 [2023-05-14 07:20:49] INFO root fetch - main [MainThread]: End processing [heaserver-folders-aws-s3]: success
 [2023-05-14 07:20:49] INFO root fetch - main [MainThread]: End processing [rapidpe-rift-pipe]: success
 [2023-05-14 07:20:49] INFO root fetch - main [MainThread]: Store serial: [18095089]
+[2023-05-14 07:25:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095089]
+[2023-05-14 07:25:58] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 07:25:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tnsgrt
+[2023-05-14 07:25:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: configzen
+[2023-05-14 07:25:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: turtle-help
+[2023-05-14 07:25:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: woodwhalehack114
+[2023-05-14 07:25:58] INFO root fetch - processPackages [tnsgrt]: New version: [0.3] Old Version: [0.2]
+[2023-05-14 07:25:58] INFO root fetch - processPackages [configzen]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-14 07:25:58] WARNING root fetch - processPackages [turtle-help]: Skipping, unable to determine old version
+[2023-05-14 07:25:58] INFO root fetch - main [MainThread]: End processing [turtle-help] error
+[2023-05-14 07:25:58] WARNING root fetch - processPackages [woodwhalehack114]: Skipping, unable to determine old version
+[2023-05-14 07:25:58] INFO root fetch - main [MainThread]: End processing [woodwhalehack114] error
+[2023-05-14 07:25:58] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/08/33/71e373caaed4e4967858bc3368b422fded628423278eeccdf76df2aa20e3/configzen-0.1.6.tar.gz
+[2023-05-14 07:25:58] INFO root fetch - processPackages [tnsgrt]: Downloading https://files.pythonhosted.org/packages/5b/5b/521c1af5c62d05caded6b41e7b30f442d99c9e3088ae6c4fd2e9a87ac51f/tnsgrt-0.3.tar.gz
+[2023-05-14 07:25:58] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-14 07:25:58] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.5.tar.gz tmp/configzen-0.1.6.tar.gz --markdown 20230514/c/configzen/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-14 07:25:58] INFO root fetch - processPackages [tnsgrt]: executing diffoscope
+[2023-05-14 07:25:58] INFO root fetch - processPackages [tnsgrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tnsgrt-0.2.tar.gz tmp/tnsgrt-0.3.tar.gz --markdown 20230514/t/tnsgrt/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-14 07:25:59] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-14 07:25:59] INFO root fetch - main [MainThread]: End processing [tnsgrt]: success
+[2023-05-14 07:25:59] INFO root fetch - main [MainThread]: Store serial: [18095103]
