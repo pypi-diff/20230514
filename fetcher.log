@@ -8104,3 +8104,58 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 18:10:18] INFO root fetch - main [MainThread]: End processing [tiktokapipy]: success
 [2023-05-14 18:10:19] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
 [2023-05-14 18:10:19] INFO root fetch - main [MainThread]: Store serial: [18098303]
+[2023-05-14 18:15:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098303]
+[2023-05-14 18:15:29] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-14 18:15:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: parserllm
+[2023-05-14 18:15:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: test-helper-vbot3
+[2023-05-14 18:15:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: projectrexa
+[2023-05-14 18:15:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hyperparameters
+[2023-05-14 18:15:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shellinspector
+[2023-05-14 18:15:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kiwi-booster
+[2023-05-14 18:15:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: emi-calculator
+[2023-05-14 18:15:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ipfindx
+[2023-05-14 18:15:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: rofunc
+[2023-05-14 18:15:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: SantorinAI
+[2023-05-14 18:15:29] WARNING root fetch - processPackages [parserllm]: Skipping, unable to determine old version
+[2023-05-14 18:15:29] INFO root fetch - main [MainThread]: End processing [parserllm] error
+[2023-05-14 18:15:29] INFO root fetch - processPackages [projectrexa]: New version: [0.0.0.4] Old Version: [0.0.0.3]
+[2023-05-14 18:15:29] INFO root fetch - processPackages [test-helper-vbot3]: New version: [1.1] Old Version: [1.0]
+[2023-05-14 18:15:29] INFO root fetch - processPackages [SantorinAI]: New version: [1.2.0] Old Version: [1.1.3]
+[2023-05-14 18:15:29] INFO root fetch - processPackages [hyperparameters]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-14 18:15:29] WARNING root fetch - processPackages [ipfindx]: Skipping, unable to determine old version
+[2023-05-14 18:15:29] INFO root fetch - main [MainThread]: End processing [ipfindx] error
+[2023-05-14 18:15:29] INFO root fetch - processPackages [shellinspector]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-14 18:15:29] WARNING root fetch - processPackages [emi-calculator]: Skipping, unable to determine old version
+[2023-05-14 18:15:29] INFO root fetch - main [MainThread]: End processing [emi-calculator] error
+[2023-05-14 18:15:29] INFO root fetch - processPackages [kiwi-booster]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-14 18:15:29] INFO root fetch - processPackages [rofunc]: New version: [0.0.1b0] Old Version: [0.0.1.5]
+[2023-05-14 18:15:29] INFO root fetch - processPackages [projectrexa]: Downloading https://files.pythonhosted.org/packages/ad/d9/d658ccd97ddb82665b406247750abaca284363f1b3de5fa6407655e8cbe2/projectrexa-0.0.0.3-py3-none-any.whl
+[2023-05-14 18:15:29] INFO root fetch - processPackages [test-helper-vbot3]: Downloading https://files.pythonhosted.org/packages/b0/77/9f28205a4898cfb1517931dc8c6540a5ff37c7cce27a113d952c2fddeb9f/test_helper_vbot3-1.0.tar.gz
+[2023-05-14 18:15:29] INFO root fetch - processPackages [hyperparameters]: Downloading https://files.pythonhosted.org/packages/b0/b7/337f673a56217140fb3a592fce2afef7aae8b0f7a8250de46c5155eb9505/hyperparameters-0.2.1.tar.gz
+[2023-05-14 18:15:29] INFO root fetch - processPackages [SantorinAI]: Downloading https://files.pythonhosted.org/packages/5d/46/85a1eeac3e0ac61f2cd31a6bc3612c1d329c143e6fb677fb7a6503bf403d/SantorinAI-1.2.0.tar.gz
+[2023-05-14 18:15:29] INFO root fetch - processPackages [hyperparameters]: executing diffoscope
+[2023-05-14 18:15:29] INFO root fetch - processPackages [hyperparameters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperparameters-0.2.0.tar.gz tmp/hyperparameters-0.2.1.tar.gz --markdown 20230514/h/hyperparameters/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-14 18:15:29] INFO root fetch - processPackages [rofunc]: Downloading https://files.pythonhosted.org/packages/ce/c9/bf4ba6c1a41f1504d5c5d741d9e8b6bff60361b7f68625999c2d4cdc74d9/rofunc-0.0.1.5.tar.gz
+[2023-05-14 18:15:29] INFO root fetch - processPackages [kiwi-booster]: Downloading https://files.pythonhosted.org/packages/59/73/95e407cfa513fb8e81f2eca654ed8fdbb84d57506ef0d49a3327afe95d98/kiwi_booster-0.1.0.tar.gz
+[2023-05-14 18:15:29] INFO root fetch - processPackages [SantorinAI]: executing diffoscope
+[2023-05-14 18:15:29] INFO root fetch - processPackages [SantorinAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SantorinAI-1.1.3.tar.gz tmp/SantorinAI-1.2.0.tar.gz --markdown 20230514/S/SantorinAI/1.1.3-1.2.0/diff.md --exclude *.pyd
+[2023-05-14 18:15:29] INFO root fetch - processPackages [test-helper-vbot3]: Downloading https://files.pythonhosted.org/packages/c3/96/9f17579dde8b9927000277a4655b65b9820927de1c3023f5b5bdeea6683f/test_helper_vbot3-1.1.tar.gz
+[2023-05-14 18:15:29] INFO root fetch - processPackages [shellinspector]: executing diffoscope
+[2023-05-14 18:15:29] INFO root fetch - processPackages [shellinspector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shellinspector-0.8.0.tar.gz tmp/shellinspector-0.9.0.tar.gz --markdown 20230514/s/shellinspector/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 18:15:29] INFO root fetch - processPackages [projectrexa]: Downloading https://files.pythonhosted.org/packages/21/2d/cfa9991ccd278dcc4c19c488616a9c6245e28740bc7391ed2553cbad3c0d/projectrexa-0.0.0.4-py3-none-any.whl
+[2023-05-14 18:15:29] INFO root fetch - processPackages [kiwi-booster]: Downloading https://files.pythonhosted.org/packages/c1/64/9345922a048934437d6883ef1b99b9c6f859a7f35802ddbf8f32746b2df6/kiwi_booster-0.2.0.tar.gz
+[2023-05-14 18:15:29] WARNING root fetch - processPackages [rofunc]: Skipping package: exceeds size limit 98920370>=10485760
+[2023-05-14 18:15:29] INFO root fetch - main [MainThread]: End processing [rofunc] error
+[2023-05-14 18:15:29] INFO root fetch - processPackages [test-helper-vbot3]: executing diffoscope
+[2023-05-14 18:15:29] INFO root fetch - processPackages [test-helper-vbot3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/test_helper_vbot3-1.0.tar.gz tmp/test_helper_vbot3-1.1.tar.gz --markdown 20230514/t/test-helper-vbot3/1.0-1.1/diff.md --exclude *.pyd
+[2023-05-14 18:15:30] INFO root fetch - processPackages [projectrexa]: executing diffoscope
+[2023-05-14 18:15:30] INFO root fetch - processPackages [projectrexa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projectrexa-0.0.0.3-py3-none-any.whl.zip tmp/projectrexa-0.0.0.4-py3-none-any.whl.zip --markdown 20230514/p/projectrexa/0.0.0.3-0.0.0.4/diff.md --exclude *.pyd
+[2023-05-14 18:15:30] INFO root fetch - processPackages [kiwi-booster]: executing diffoscope
+[2023-05-14 18:15:30] INFO root fetch - processPackages [kiwi-booster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kiwi_booster-0.1.0.tar.gz tmp/kiwi_booster-0.2.0.tar.gz --markdown 20230514/k/kiwi-booster/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-14 18:15:30] INFO root fetch - main [MainThread]: End processing [hyperparameters]: success
+[2023-05-14 18:15:30] INFO root fetch - main [MainThread]: End processing [SantorinAI]: success
+[2023-05-14 18:15:31] INFO root fetch - main [MainThread]: End processing [shellinspector]: success
+[2023-05-14 18:15:31] INFO root fetch - main [MainThread]: End processing [test-helper-vbot3]: success
+[2023-05-14 18:15:31] INFO root fetch - main [MainThread]: End processing [projectrexa]: success
+[2023-05-14 18:16:06] INFO root fetch - main [MainThread]: End processing [kiwi-booster]: success
+[2023-05-14 18:16:06] INFO root fetch - main [MainThread]: Store serial: [18098341]
