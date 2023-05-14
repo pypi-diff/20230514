@@ -1281,3 +1281,27 @@
 [2023-05-14 02:52:40] INFO root fetch - main [MainThread]: End processing [osintbuddy]: success
 [2023-05-14 02:52:41] INFO root fetch - main [MainThread]: End processing [scikit-base]: success
 [2023-05-14 02:52:41] INFO root fetch - main [MainThread]: Store serial: [18094178]
+[2023-05-14 02:57:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094178]
+[2023-05-14 02:57:49] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 02:57:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: projen
+[2023-05-14 02:57:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: osintbuddy
+[2023-05-14 02:57:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bioversions
+[2023-05-14 02:57:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aind-segmentation-evaluation
+[2023-05-14 02:57:49] INFO root fetch - processPackages [osintbuddy]: New version: [0.0.2rc25.post1] Old Version: [0.0.2rc24.post1]
+[2023-05-14 02:57:49] INFO root fetch - processPackages [bioversions]: New version: [0.5.99] Old Version: [0.5.98]
+[2023-05-14 02:57:49] INFO root fetch - processPackages [aind-segmentation-evaluation]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 02:57:49] INFO root fetch - processPackages [projen]: New version: [0.71.9] Old Version: [0.71.8]
+[2023-05-14 02:57:50] INFO root fetch - processPackages [projen]: executing diffoscope
+[2023-05-14 02:57:50] INFO root fetch - processPackages [projen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projen-0.71.8.tar.gz tmp/projen-0.71.9.tar.gz --markdown 20230514/p/projen/0.71.8-0.71.9/diff.md --exclude *.pyd
+[2023-05-14 02:57:50] INFO root fetch - processPackages [osintbuddy]: Downloading https://files.pythonhosted.org/packages/d9/8b/4fb72de10afe3185a7ae162abf67472fa23446ff2ba8d8db5398fa0ecf7a/osintbuddy-0.0.2rc25.post1.tar.gz
+[2023-05-14 02:57:50] INFO root fetch - processPackages [osintbuddy]: executing diffoscope
+[2023-05-14 02:57:50] INFO root fetch - processPackages [osintbuddy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osintbuddy-0.0.2rc24.post1.tar.gz tmp/osintbuddy-0.0.2rc25.post1.tar.gz --markdown 20230514/o/osintbuddy/0.0.2rc24.post1-0.0.2rc25.post1/diff.md --exclude *.pyd
+[2023-05-14 02:57:50] INFO root fetch - processPackages [aind-segmentation-evaluation]: executing diffoscope
+[2023-05-14 02:57:50] INFO root fetch - processPackages [aind-segmentation-evaluation]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aind_segmentation_evaluation-0.1.8.tar.gz tmp/aind_segmentation_evaluation-0.1.9.tar.gz --markdown 20230514/a/aind-segmentation-evaluation/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 02:57:50] INFO root fetch - processPackages [bioversions]: executing diffoscope
+[2023-05-14 02:57:50] INFO root fetch - processPackages [bioversions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioversions-0.5.98.tar.gz tmp/bioversions-0.5.99.tar.gz --markdown 20230514/b/bioversions/0.5.98-0.5.99/diff.md --exclude *.pyd
+[2023-05-14 02:57:51] INFO root fetch - main [MainThread]: End processing [osintbuddy]: success
+[2023-05-14 02:57:52] INFO root fetch - main [MainThread]: End processing [projen]: success
+[2023-05-14 02:57:54] INFO root fetch - main [MainThread]: End processing [aind-segmentation-evaluation]: success
+[2023-05-14 02:58:10] INFO root fetch - main [MainThread]: End processing [bioversions]: success
+[2023-05-14 02:58:10] INFO root fetch - main [MainThread]: Store serial: [18094191]
