@@ -5955,3 +5955,75 @@
 [2023-05-14 14:48:48] INFO root fetch - main [MainThread]: End processing [litestar]: success
 [2023-05-14 14:48:48] INFO root fetch - main [MainThread]: End processing [syft]: success
 [2023-05-14 14:48:48] INFO root fetch - main [MainThread]: Store serial: [18097044]
+[2023-05-14 14:53:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18097044]
+[2023-05-14 14:53:57] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-14 14:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: secureid
+[2023-05-14 14:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: CADET-Process
+[2023-05-14 14:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pythonsqladdonV2
+[2023-05-14 14:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pysyncon
+[2023-05-14 14:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: easybio
+[2023-05-14 14:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: booking-gauger-dashapp
+[2023-05-14 14:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pythonsqladdonV2
+[2023-05-14 14:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: SantoriAI
+[2023-05-14 14:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyphetools
+[2023-05-14 14:53:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: kappaschedules
+[2023-05-14 14:53:57] INFO root fetch - processPackages [CADET-Process]: New version: [0.7.1] Old Version: [0.7.0]
+[2023-05-14 14:53:57] INFO root fetch - processPackages [pythonsqladdonV2]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-14 14:53:57] INFO root fetch - processPackages [pythonsqladdonV2]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-14 14:53:57] WARNING root fetch - processPackages [SantoriAI]: Skipping, unable to determine old version
+[2023-05-14 14:53:57] INFO root fetch - processPackages [SantoriAI]: Start processing: pureml
+[2023-05-14 14:53:57] INFO root fetch - processPackages [secureid]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-14 14:53:57] INFO root fetch - main [MainThread]: End processing [SantoriAI] error
+[2023-05-14 14:53:57] INFO root fetch - processPackages [easybio]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-14 14:53:57] INFO root fetch - processPackages [pyphetools]: New version: [0.2.9] Old Version: [0.2.7]
+[2023-05-14 14:53:57] WARNING root fetch - processPackages [booking-gauger-dashapp]: Skipping, unable to determine old version
+[2023-05-14 14:53:57] INFO root fetch - main [MainThread]: End processing [booking-gauger-dashapp] error
+[2023-05-14 14:53:57] INFO root fetch - processPackages [kappaschedules]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 14:53:57] INFO root fetch - processPackages [pysyncon]: New version: [1.0.0] Old Version: [0.2.1]
+[2023-05-14 14:53:57] INFO root fetch - processPackages [pureml]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-05-14 14:53:57] INFO root fetch - processPackages [easybio]: Downloading https://files.pythonhosted.org/packages/12/ff/53ebb48c4ea4950fa9fb9604a0c3cd1095ef4d5fe5b1ce2a1aa6c7bf9580/easybio-0.3.1.tar.gz
+[2023-05-14 14:53:57] INFO root fetch - processPackages [pythonsqladdonV2]: Downloading https://files.pythonhosted.org/packages/9a/eb/8c986fe4d602498d50c55f5255ff8219591791eb000fd7cd78e7e0e7a483/pythonsqladdonV2-1.0.0.tar.gz
+[2023-05-14 14:53:57] INFO root fetch - processPackages [CADET-Process]: Downloading https://files.pythonhosted.org/packages/a3/4d/c416f8eb8ef8d5d944bcd1da4213d7c13e4f44106e40d07d9a01c40bcd02/CADET-Process-0.7.0.tar.gz
+[2023-05-14 14:53:57] INFO root fetch - processPackages [pythonsqladdonV2]: Downloading https://files.pythonhosted.org/packages/9a/eb/8c986fe4d602498d50c55f5255ff8219591791eb000fd7cd78e7e0e7a483/pythonsqladdonV2-1.0.0.tar.gz
+[2023-05-14 14:53:57] INFO root fetch - processPackages [kappaschedules]: Downloading https://files.pythonhosted.org/packages/80/d3/59917bee87db2d991ac28ee5406bce08f6bd5fb9607f27c6adf8e1104bb5/kappaschedules-0.0.8.tar.gz
+[2023-05-14 14:53:57] INFO root fetch - processPackages [secureid]: Downloading https://files.pythonhosted.org/packages/f4/a1/89d410410b861adc1ecdf972f0c854ceec5a29ff8bbb103804a557929a6c/secureid-1.0.0-py3-none-any.whl
+[2023-05-14 14:53:57] INFO root fetch - processPackages [pysyncon]: Downloading https://files.pythonhosted.org/packages/84/8e/e59eb708fa918726b15b79a4af6f8da7b9cfa77264bc845ea3ed57c75841/pysyncon-0.2.1.tar.gz
+[2023-05-14 14:53:57] INFO root fetch - processPackages [pyphetools]: Downloading https://files.pythonhosted.org/packages/2f/3e/df3eb7e5c259a4839e4410adaf9d3ab35029f958296bf4d375fc5dbad9af/pyphetools-0.2.7.tar.gz
+[2023-05-14 14:53:57] INFO root fetch - processPackages [pureml]: Downloading https://files.pythonhosted.org/packages/4a/19/308394ffface55d1e3159a8a1be6d3135ef4750c3b8cf19abdda1d5cc98f/pureml-0.3.7.tar.gz
+[2023-05-14 14:53:59] INFO root fetch - processPackages [pureml]: Downloading https://files.pythonhosted.org/packages/b1/90/a38b8700f2c5a4d38e65fbaaa34d70f56a811ef59cbe09df14a583c3fcb4/pureml-0.3.8.tar.gz
+[2023-05-14 14:53:59] INFO root fetch - processPackages [CADET-Process]: Downloading https://files.pythonhosted.org/packages/42/52/4efe5a48c1c1c448517f409a29a899e4d9dc45738be1f35670eb1c7ef81b/CADET-Process-0.7.1.tar.gz
+[2023-05-14 14:53:59] INFO root fetch - processPackages [easybio]: Downloading https://files.pythonhosted.org/packages/6e/9d/5639e199c3cfbd624171082c4b87c63c0c0e1a0da6136cdc2119c56af57e/easybio-0.3.2.tar.gz
+[2023-05-14 14:53:59] INFO root fetch - processPackages [kappaschedules]: Downloading https://files.pythonhosted.org/packages/23/c2/e9e2653e206134d160cab76dea124544a616ea8484276c686372afdd7bb6/kappaschedules-0.0.9.tar.gz
+[2023-05-14 14:53:59] INFO root fetch - processPackages [secureid]: Downloading https://files.pythonhosted.org/packages/df/b5/f32520433816455d4f2b849e6aa6d4048d72ed514a8752e0724dc28a4237/secureid-1.0.1-py3-none-any.whl
+[2023-05-14 14:53:59] INFO root fetch - processPackages [pysyncon]: Downloading https://files.pythonhosted.org/packages/f5/94/e74a0867b1f5f7a0a523379bda7c93ac6eda36d36f3686147d36ced3d862/pysyncon-1.0.0.tar.gz
+[2023-05-14 14:53:59] INFO root fetch - processPackages [pythonsqladdonV2]: Downloading https://files.pythonhosted.org/packages/3e/f6/5fac78e5e44d84a1a92cbb1b6588c8df111f8c9b6d77e4499636a05778d3/pythonsqladdonV2-1.1.0.tar.gz
+[2023-05-14 14:53:59] INFO root fetch - processPackages [pythonsqladdonV2]: Downloading https://files.pythonhosted.org/packages/3e/f6/5fac78e5e44d84a1a92cbb1b6588c8df111f8c9b6d77e4499636a05778d3/pythonsqladdonV2-1.1.0.tar.gz
+[2023-05-14 14:53:59] INFO root fetch - processPackages [CADET-Process]: executing diffoscope
+[2023-05-14 14:53:59] INFO root fetch - processPackages [CADET-Process]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/CADET-Process-0.7.0.tar.gz tmp/CADET-Process-0.7.1.tar.gz --markdown 20230514/C/CADET-Process/0.7.0-0.7.1/diff.md --exclude *.pyd
+[2023-05-14 14:53:59] INFO root fetch - processPackages [pyphetools]: Downloading https://files.pythonhosted.org/packages/a0/09/c043bb89e8451345bc5af62e161c70bf3f9b43e8e2887f9b5a02998acc48/pyphetools-0.2.9.tar.gz
+[2023-05-14 14:53:59] INFO root fetch - processPackages [pureml]: executing diffoscope
+[2023-05-14 14:53:59] INFO root fetch - processPackages [pureml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pureml-0.3.7.tar.gz tmp/pureml-0.3.8.tar.gz --markdown 20230514/p/pureml/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-05-14 14:53:59] INFO root fetch - processPackages [secureid]: executing diffoscope
+[2023-05-14 14:53:59] INFO root fetch - processPackages [secureid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/secureid-1.0.0-py3-none-any.whl.zip tmp/secureid-1.0.1-py3-none-any.whl.zip --markdown 20230514/s/secureid/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-14 14:53:59] INFO root fetch - processPackages [pyphetools]: executing diffoscope
+[2023-05-14 14:53:59] INFO root fetch - processPackages [pyphetools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyphetools-0.2.7.tar.gz tmp/pyphetools-0.2.9.tar.gz --markdown 20230514/p/pyphetools/0.2.7-0.2.9/diff.md --exclude *.pyd
+[2023-05-14 14:53:59] INFO root fetch - processPackages [easybio]: executing diffoscope
+[2023-05-14 14:53:59] INFO root fetch - processPackages [easybio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/easybio-0.3.1.tar.gz tmp/easybio-0.3.2.tar.gz --markdown 20230514/e/easybio/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-14 14:53:59] INFO root fetch - processPackages [kappaschedules]: executing diffoscope
+[2023-05-14 14:53:59] INFO root fetch - processPackages [kappaschedules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kappaschedules-0.0.8.tar.gz tmp/kappaschedules-0.0.9.tar.gz --markdown 20230514/k/kappaschedules/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 14:53:59] INFO root fetch - processPackages [pythonsqladdonV2]: executing diffoscope
+[2023-05-14 14:53:59] INFO root fetch - processPackages [pythonsqladdonV2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythonsqladdonV2-1.0.0.tar.gz tmp/pythonsqladdonV2-1.1.0.tar.gz --markdown 20230514/p/pythonsqladdonV2/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 14:53:59] INFO root fetch - processPackages [pythonsqladdonV2]: executing diffoscope
+[2023-05-14 14:53:59] INFO root fetch - processPackages [pythonsqladdonV2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythonsqladdonV2-1.0.0.tar.gz tmp/pythonsqladdonV2-1.1.0.tar.gz --markdown 20230514/p/pythonsqladdonV2/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 14:53:59] INFO root fetch - processPackages [pysyncon]: executing diffoscope
+[2023-05-14 14:53:59] INFO root fetch - processPackages [pysyncon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysyncon-0.2.1.tar.gz tmp/pysyncon-1.0.0.tar.gz --markdown 20230514/p/pysyncon/0.2.1-1.0.0/diff.md --exclude *.pyd
+[2023-05-14 14:54:00] INFO root fetch - main [MainThread]: End processing [secureid]: success
+[2023-05-14 14:54:00] INFO root fetch - main [MainThread]: End processing [pyphetools]: success
+[2023-05-14 14:54:01] INFO root fetch - main [MainThread]: End processing [pysyncon]: success
+[2023-05-14 14:54:01] INFO root fetch - main [MainThread]: End processing [pythonsqladdonV2]: success
+[2023-05-14 14:54:01] INFO root fetch - main [MainThread]: End processing [CADET-Process]: success
+[2023-05-14 14:54:01] INFO root fetch - main [MainThread]: End processing [pythonsqladdonV2]: success
+[2023-05-14 14:54:01] INFO root fetch - main [MainThread]: End processing [kappaschedules]: success
+[2023-05-14 14:54:01] INFO root fetch - main [MainThread]: End processing [easybio]: success
+[2023-05-14 14:54:02] INFO root fetch - main [MainThread]: End processing [pureml]: success
+[2023-05-14 14:54:02] INFO root fetch - main [MainThread]: Store serial: [18097082]
