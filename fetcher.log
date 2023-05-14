@@ -3151,3 +3151,56 @@
 [2023-05-14 08:24:39] INFO root fetch - main [MainThread]: End processing [Range-Announcer]: success
 [2023-05-14 08:24:41] INFO root fetch - main [MainThread]: End processing [nicegui]: success
 [2023-05-14 08:24:41] INFO root fetch - main [MainThread]: Store serial: [18095315]
+[2023-05-14 08:29:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095315]
+[2023-05-14 08:29:50] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-14 08:29:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: annoworkapi
+[2023-05-14 08:29:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fake-bpy-module-latest
+[2023-05-14 08:29:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: checkify
+[2023-05-14 08:29:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: PySciMath
+[2023-05-14 08:29:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: starbot-bilibili
+[2023-05-14 08:29:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ykenan-fragments
+[2023-05-14 08:29:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: azazazabc
+[2023-05-14 08:29:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyvantage
+[2023-05-14 08:29:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: datasette-sqlite-vss
+[2023-05-14 08:29:50] INFO root fetch - processPackages [annoworkapi]: New version: [3.0.3] Old Version: [3.0.2]
+[2023-05-14 08:29:50] INFO root fetch - processPackages [checkify]: New version: [0.6] Old Version: [0.5]
+[2023-05-14 08:29:50] INFO root fetch - processPackages [pyvantage]: New version: [0.0.48] Old Version: [0.0.47]
+[2023-05-14 08:29:50] WARNING root fetch - processPackages [azazazabc]: Skipping, unable to determine old version
+[2023-05-14 08:29:50] INFO root fetch - main [MainThread]: End processing [azazazabc] error
+[2023-05-14 08:29:50] INFO root fetch - processPackages [PySciMath]: New version: [1.5.1] Old Version: [1.5.0]
+[2023-05-14 08:29:50] INFO root fetch - processPackages [ykenan-fragments]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-14 08:29:50] INFO root fetch - processPackages [starbot-bilibili]: New version: [2.0.0] Old Version: [1.0.6]
+[2023-05-14 08:29:50] INFO root fetch - processPackages [datasette-sqlite-vss]: New version: [0.1.0a1] Old Version: [0.1.0]
+[2023-05-14 08:29:50] INFO root fetch - processPackages [fake-bpy-module-latest]: New version: [20230514] Old Version: [20230513]
+[2023-05-14 08:29:50] INFO root fetch - processPackages [pyvantage]: executing diffoscope
+[2023-05-14 08:29:50] INFO root fetch - processPackages [pyvantage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvantage-0.0.47.tar.gz tmp/pyvantage-0.0.48.tar.gz --markdown 20230514/p/pyvantage/0.0.47-0.0.48/diff.md --exclude *.pyd
+[2023-05-14 08:29:50] INFO root fetch - processPackages [datasette-sqlite-vss]: Downloading https://files.pythonhosted.org/packages/3e/17/39aa5771b6dfbbc053213cd3b4a5bbe339902bc8d6d2c6ae994e3b76bf46/datasette_sqlite_vss-0.1.0-py3-none-any.whl
+[2023-05-14 08:29:50] INFO root fetch - processPackages [PySciMath]: Downloading https://files.pythonhosted.org/packages/a4/c3/aa589e4e4f9e26544f761dbff664ce0f0b3bf18bcee54de31d1e12c82da8/PySciMath-1.5.0.tar.gz
+[2023-05-14 08:29:50] INFO root fetch - processPackages [fake-bpy-module-latest]: Downloading https://files.pythonhosted.org/packages/35/ee/cddacec5c135a9af3215c570de31394d845fcbaf48eab5a6174f53a588a7/fake-bpy-module-latest-20230514.tar.gz
+[2023-05-14 08:29:50] INFO root fetch - processPackages [starbot-bilibili]: Downloading https://files.pythonhosted.org/packages/97/ed/4b3acf1b24a1ba1d809ac17533a0a2dae7450c0ac9fbe0467568d3fc67ee/starbot-bilibili-1.0.6.tar.gz
+[2023-05-14 08:29:50] INFO root fetch - processPackages [checkify]: Downloading https://files.pythonhosted.org/packages/40/3f/aea6a9a4e1c6b5f4b2cf4fdba39ee125edced6d005c5c8bf46aed57212f2/checkify-0.6.tar.gz
+[2023-05-14 08:29:50] WARNING root fetch - processPackages [starbot-bilibili]: Skipping package: exceeds size limit 20885831>=10485760
+[2023-05-14 08:29:50] INFO root fetch - main [MainThread]: End processing [starbot-bilibili] error
+[2023-05-14 08:29:50] INFO root fetch - processPackages [annoworkapi]: Downloading https://files.pythonhosted.org/packages/05/f3/2589da721c9e5d90e7a18ecca5f208a2efba450462bd79817ac133fc780a/annoworkapi-3.0.3.tar.gz
+[2023-05-14 08:29:50] INFO root fetch - processPackages [ykenan-fragments]: executing diffoscope
+[2023-05-14 08:29:50] INFO root fetch - processPackages [ykenan-fragments]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ykenan_fragments-1.2.8.tar.gz tmp/ykenan_fragments-1.2.9.tar.gz --markdown 20230514/y/ykenan-fragments/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-14 08:29:50] INFO root fetch - processPackages [checkify]: executing diffoscope
+[2023-05-14 08:29:50] INFO root fetch - processPackages [checkify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkify-0.5.tar.gz tmp/checkify-0.6.tar.gz --markdown 20230514/c/checkify/0.5-0.6/diff.md --exclude *.pyd
+[2023-05-14 08:29:51] INFO root fetch - processPackages [PySciMath]: Downloading https://files.pythonhosted.org/packages/6a/cb/06fbaf064898a91325351ebec7599a5c72737620254ad6747a4f454ed946/PySciMath-1.5.1.tar.gz
+[2023-05-14 08:29:51] INFO root fetch - processPackages [datasette-sqlite-vss]: Downloading https://files.pythonhosted.org/packages/1e/61/d776cad409b4a162e7ee5ba5af2c31399b9c8ce3ee49ed085d94f472b710/datasette_sqlite_vss-0.1.0a1-py3-none-any.whl
+[2023-05-14 08:29:51] INFO root fetch - processPackages [fake-bpy-module-latest]: executing diffoscope
+[2023-05-14 08:29:51] INFO root fetch - processPackages [fake-bpy-module-latest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fake-bpy-module-latest-20230513.tar.gz tmp/fake-bpy-module-latest-20230514.tar.gz --markdown 20230514/f/fake-bpy-module-latest/20230513-20230514/diff.md --exclude *.pyd
+[2023-05-14 08:29:51] INFO root fetch - processPackages [annoworkapi]: executing diffoscope
+[2023-05-14 08:29:51] INFO root fetch - processPackages [annoworkapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/annoworkapi-3.0.2.tar.gz tmp/annoworkapi-3.0.3.tar.gz --markdown 20230514/a/annoworkapi/3.0.2-3.0.3/diff.md --exclude *.pyd
+[2023-05-14 08:29:51] INFO root fetch - processPackages [datasette-sqlite-vss]: executing diffoscope
+[2023-05-14 08:29:51] INFO root fetch - processPackages [datasette-sqlite-vss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette_sqlite_vss-0.1.0-py3-none-any.whl.zip tmp/datasette_sqlite_vss-0.1.0a1-py3-none-any.whl.zip --markdown 20230514/d/datasette-sqlite-vss/0.1.0-0.1.0a1/diff.md --exclude *.pyd
+[2023-05-14 08:29:51] INFO root fetch - processPackages [PySciMath]: executing diffoscope
+[2023-05-14 08:29:51] INFO root fetch - processPackages [PySciMath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySciMath-1.5.0.tar.gz tmp/PySciMath-1.5.1.tar.gz --markdown 20230514/P/PySciMath/1.5.0-1.5.1/diff.md --exclude *.pyd
+[2023-05-14 08:29:51] INFO root fetch - main [MainThread]: End processing [pyvantage]: success
+[2023-05-14 08:29:52] INFO root fetch - main [MainThread]: End processing [checkify]: success
+[2023-05-14 08:29:52] INFO root fetch - main [MainThread]: End processing [ykenan-fragments]: success
+[2023-05-14 08:29:52] INFO root fetch - main [MainThread]: End processing [annoworkapi]: success
+[2023-05-14 08:29:52] INFO root fetch - main [MainThread]: End processing [PySciMath]: success
+[2023-05-14 08:29:52] INFO root fetch - main [MainThread]: End processing [datasette-sqlite-vss]: success
+[2023-05-14 08:29:59] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
+[2023-05-14 08:29:59] INFO root fetch - main [MainThread]: Store serial: [18095337]
