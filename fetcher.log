@@ -3908,3 +3908,39 @@
 [2023-05-14 10:21:35] INFO root fetch - main [MainThread]: End processing [arkdata]: success
 [2023-05-14 10:22:32] INFO root fetch - main [MainThread]: End processing [nvfuser-cu117]: success
 [2023-05-14 10:22:32] INFO root fetch - main [MainThread]: Store serial: [18095729]
+[2023-05-14 10:27:45] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095729]
+[2023-05-14 10:27:50] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-14 10:27:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spotPython
+[2023-05-14 10:27:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nvfuser-cu118
+[2023-05-14 10:27:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mod9-asr
+[2023-05-14 10:27:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nvfuser-cu121
+[2023-05-14 10:27:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: local-recruitment-employer-python-backend
+[2023-05-14 10:27:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Inputbetter
+[2023-05-14 10:27:50] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-05-14 10:27:50] INFO root fetch - processPackages [spotPython]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 10:27:50] INFO root fetch - processPackages [nvfuser-cu118]: New version: [0.0.9.dev20230514] Old Version: [0.0.9.dev20230509]
+[2023-05-14 10:27:50] INFO root fetch - processPackages [nvfuser-cu121]: New version: [0.0.9.dev20230514] Old Version: [0.0.9.dev20230509]
+[2023-05-14 10:27:50] WARNING root fetch - processPackages [Inputbetter]: Skipping, unable to determine old version
+[2023-05-14 10:27:50] INFO root fetch - main [MainThread]: End processing [Inputbetter] error
+[2023-05-14 10:27:50] INFO root fetch - processPackages [mod9-asr]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-14 10:27:51] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/56/dd/67bace54fe26f2c836c66c27db65d1b9b6172b8051b3a8c7c4e3f6859160/nvfuser_cu118-0.0.9.dev20230509-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-14 10:27:51] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: Downloading https://files.pythonhosted.org/packages/b5/61/131525e9245cd0d00ad83cc7c1dbb0efa82b00e0b99f69d2e1144be62a59/local-recruitment-employer-python-backend-0.0.9.tar.gz
+[2023-05-14 10:27:51] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/0a/ad/0efcd72350bdd4c8d167915f5f5c10bf37b670f20880e0ff6f7974550ea6/nvfuser_cu121-0.0.9.dev20230509-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-14 10:27:51] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: executing diffoscope
+[2023-05-14 10:27:51] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local-recruitment-employer-python-backend-0.0.7.tar.gz tmp/local-recruitment-employer-python-backend-0.0.9.tar.gz --markdown 20230514/l/local-recruitment-employer-python-backend/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 10:27:51] INFO root fetch - processPackages [mod9-asr]: executing diffoscope
+[2023-05-14 10:27:51] INFO root fetch - processPackages [mod9-asr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mod9-asr-1.8.0.tar.gz tmp/mod9-asr-1.9.0.tar.gz --markdown 20230514/m/mod9-asr/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-14 10:27:51] INFO root fetch - processPackages [spotPython]: executing diffoscope
+[2023-05-14 10:27:51] INFO root fetch - processPackages [spotPython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotPython-0.0.8.tar.gz tmp/spotPython-0.0.9.tar.gz --markdown 20230514/s/spotPython/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 10:27:51] INFO root fetch - processPackages [nvfuser-cu121]: Downloading https://files.pythonhosted.org/packages/b3/bf/667bd4aad6c776a5e62ad2f63da6dd5bb51f013f1ff3284d04efbf109991/nvfuser_cu121-0.0.9.dev20230514-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-14 10:27:51] INFO root fetch - processPackages [nvfuser-cu118]: Downloading https://files.pythonhosted.org/packages/4b/cd/4c428ce97d9be97932eb85eb49ce89f8833a6daf4081080607d7a4dd07d9/nvfuser_cu118-0.0.9.dev20230514-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-14 10:27:52] INFO root fetch - main [MainThread]: End processing [local-recruitment-employer-python-backend]: success
+[2023-05-14 10:27:52] INFO root fetch - main [MainThread]: End processing [mod9-asr]: success
+[2023-05-14 10:27:52] INFO root fetch - processPackages [nvfuser-cu121]: executing diffoscope
+[2023-05-14 10:27:52] INFO root fetch - processPackages [nvfuser-cu121]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu121-0.0.9.dev20230509-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/nvfuser_cu121-0.0.9.dev20230514-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230514/n/nvfuser-cu121/0.0.9.dev20230509-0.0.9.dev20230514/diff.md --exclude *.pyd
+[2023-05-14 10:27:52] INFO root fetch - processPackages [nvfuser-cu118]: executing diffoscope
+[2023-05-14 10:27:52] INFO root fetch - processPackages [nvfuser-cu118]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nvfuser_cu118-0.0.9.dev20230509-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/nvfuser_cu118-0.0.9.dev20230514-cp310-cp310-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230514/n/nvfuser-cu118/0.0.9.dev20230509-0.0.9.dev20230514/diff.md --exclude *.pyd
+[2023-05-14 10:27:53] INFO root fetch - main [MainThread]: End processing [spotPython]: success
+[2023-05-14 10:28:48] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
+[2023-05-14 10:28:48] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
+[2023-05-14 10:28:48] INFO root fetch - main [MainThread]: Store serial: [18095746]
