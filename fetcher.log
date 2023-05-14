@@ -10259,3 +10259,76 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 21:48:27] INFO root fetch - main [MainThread]: End processing [hordelib]: success
 [2023-05-14 21:48:51] INFO root fetch - main [MainThread]: End processing [xtrack]: success
 [2023-05-14 21:48:51] INFO root fetch - main [MainThread]: Store serial: [18099620]
+[2023-05-14 21:53:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18099620]
+[2023-05-14 21:54:00] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-14 21:54:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: async-websocket-client
+[2023-05-14 21:54:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cwsearch-utils
+[2023-05-14 21:54:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lilit
+[2023-05-14 21:54:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bytez
+[2023-05-14 21:54:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: devgoldyutils
+[2023-05-14 21:54:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odin-format
+[2023-05-14 21:54:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kynaylibs
+[2023-05-14 21:54:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: xklb
+[2023-05-14 21:54:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: accurating
+[2023-05-14 21:54:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: xmlable
+[2023-05-14 21:54:00] INFO root fetch - processPackages [bytez]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 21:54:00] INFO root fetch - processPackages [async-websocket-client]: New version: [0.0.0a6] Old Version: [0.0.0a5]
+[2023-05-14 21:54:00] INFO root fetch - processPackages [cwsearch-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 21:54:00] INFO root fetch - processPackages [lilit]: New version: [1.2.2] Old Version: [1.2.1]
+[2023-05-14 21:54:00] INFO root fetch - processPackages [odin-format]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-14 21:54:00] INFO root fetch - processPackages [kynaylibs]: New version: [7.0.4] Old Version: [7.0.3]
+[2023-05-14 21:54:00] INFO root fetch - processPackages [devgoldyutils]: New version: [2.5] Old Version: [2.4.3]
+[2023-05-14 21:54:00] INFO root fetch - processPackages [accurating]: New version: [0.4.8] Old Version: [0.4.7]
+[2023-05-14 21:54:00] WARNING root fetch - processPackages [xmlable]: Skipping, unable to determine old version
+[2023-05-14 21:54:00] INFO root fetch - processPackages [xmlable]: Start processing: pysyn-data
+[2023-05-14 21:54:00] INFO root fetch - main [MainThread]: End processing [xmlable] error
+[2023-05-14 21:54:00] INFO root fetch - processPackages [xklb]: New version: [1.27.4] Old Version: [1.27.3]
+[2023-05-14 21:54:00] INFO root fetch - processPackages [pysyn-data]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-14 21:54:00] INFO root fetch - processPackages [cwsearch-utils]: executing diffoscope
+[2023-05-14 21:54:00] INFO root fetch - processPackages [cwsearch-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cwsearch_utils-0.1.8-py3-none-any.whl.zip tmp/cwsearch_utils-0.1.9-py3-none-any.whl.zip --markdown 20230514/c/cwsearch-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 21:54:00] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-14 21:54:00] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.8.tar.gz tmp/bytez-0.1.9.tar.gz --markdown 20230514/b/bytez/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 21:54:00] INFO root fetch - processPackages [kynaylibs]: Downloading https://files.pythonhosted.org/packages/e5/8d/8d37a062abfe28d8a957722bb63c98721e78d1e9df6e05d3783574d80748/kynaylibs-7.0.3.tar.gz
+[2023-05-14 21:54:00] INFO root fetch - processPackages [odin-format]: Downloading https://files.pythonhosted.org/packages/f6/6e/1eff398b8949cc8194f96962bbbac1a65ee742ecb83f15543e6de758f65b/odin_format-0.1.1.tar.gz
+[2023-05-14 21:54:00] INFO root fetch - processPackages [accurating]: Downloading https://files.pythonhosted.org/packages/ac/db/ea847853cd8932a2ae68cd8766fc3fd82bde6ac35cf67f1634df39ab7ed4/accurating-0.4.7.tar.gz
+[2023-05-14 21:54:00] INFO root fetch - processPackages [lilit]: Downloading https://files.pythonhosted.org/packages/34/44/445f5705781078fce6c79781a1f2bcc93198670ad8e9976632bad06e0b82/lilit-1.2.2.tar.gz
+[2023-05-14 21:54:00] INFO root fetch - processPackages [xklb]: Downloading https://files.pythonhosted.org/packages/d2/8c/ebe4a974fbd02d91ca9e3d7d5d02acb2281d4ad357fa84078ceb8e9b1537/xklb-1.27.4.tar.gz
+[2023-05-14 21:54:00] INFO root fetch - processPackages [devgoldyutils]: Downloading https://files.pythonhosted.org/packages/1a/39/4a2b9b354202d3a887f69876dd01d23f20661ff927a5b37d3f16d6131a7f/devgoldyutils-2.4.3.tar.gz
+[2023-05-14 21:54:00] INFO root fetch - processPackages [async-websocket-client]: executing diffoscope
+[2023-05-14 21:54:00] INFO root fetch - processPackages [async-websocket-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_websocket_client-0.0.0a5.tar.gz tmp/async_websocket_client-0.0.0a6.tar.gz --markdown 20230514/a/async-websocket-client/0.0.0a5-0.0.0a6/diff.md --exclude *.pyd
+[2023-05-14 21:54:00] INFO root fetch - processPackages [pysyn-data]: Downloading https://files.pythonhosted.org/packages/cd/22/fdec28e055bffecdd0a30f005b26e08aae17fd2c108483588119a60c3b75/pysyn_data-0.3.2-py3-none-any.whl
+[2023-05-14 21:54:00] INFO root fetch - processPackages [xklb]: executing diffoscope
+[2023-05-14 21:54:00] INFO root fetch - processPackages [xklb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xklb-1.27.3.tar.gz tmp/xklb-1.27.4.tar.gz --markdown 20230514/x/xklb/1.27.3-1.27.4/diff.md --exclude *.pyd
+[2023-05-14 21:54:00] INFO root fetch - processPackages [odin-format]: Downloading https://files.pythonhosted.org/packages/a6/4d/1fa33380c1f7a8ae6f3e3ddf943676d8f12dd0412c350526434f45dbc280/odin_format-0.1.2.tar.gz
+[2023-05-14 21:54:00] INFO root fetch - processPackages [lilit]: executing diffoscope
+[2023-05-14 21:54:00] INFO root fetch - processPackages [lilit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lilit-1.2.1.tar.gz tmp/lilit-1.2.2.tar.gz --markdown 20230514/l/lilit/1.2.1-1.2.2/diff.md --exclude *.pyd
+[2023-05-14 21:54:01] INFO root fetch - processPackages [pysyn-data]: executing diffoscope
+[2023-05-14 21:54:01] INFO root fetch - processPackages [odin-format]: executing diffoscope
+[2023-05-14 21:54:01] INFO root fetch - processPackages [odin-format]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odin_format-0.1.1.tar.gz tmp/odin_format-0.1.2.tar.gz --markdown 20230514/o/odin-format/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-14 21:54:01] INFO root fetch - processPackages [pysyn-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysyn_data-0.3.1.tar.gz tmp/pysyn_data-0.3.2-py3-none-any.whl.zip --markdown 20230514/p/pysyn-data/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-14 21:54:01] INFO root fetch - processPackages [kynaylibs]: Downloading https://files.pythonhosted.org/packages/ca/62/b0a1b11df9c258e0695b84cf318f20e475023e08b48c3c4cee559b4b16b2/kynaylibs-7.0.4.tar.gz
+[2023-05-14 21:54:01] INFO root fetch - processPackages [accurating]: Downloading https://files.pythonhosted.org/packages/19/a7/6869524afe9a2268cd08c1f3cc6bfab25e59d4f41001a268e01f7356bc53/accurating-0.4.8.tar.gz
+[2023-05-14 21:54:01] INFO root fetch - processPackages [devgoldyutils]: Downloading https://files.pythonhosted.org/packages/ad/cb/8214f4c092dc547802f66d68fb123108060a49c4c8e773cff9677eae7b03/devgoldyutils-2.5.tar.gz
+[2023-05-14 21:54:01] INFO root fetch - processPackages [kynaylibs]: executing diffoscope
+[2023-05-14 21:54:01] INFO root fetch - processPackages [kynaylibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kynaylibs-7.0.3.tar.gz tmp/kynaylibs-7.0.4.tar.gz --markdown 20230514/k/kynaylibs/7.0.3-7.0.4/diff.md --exclude *.pyd
+[2023-05-14 21:54:01] INFO root fetch - processPackages [accurating]: executing diffoscope
+[2023-05-14 21:54:01] INFO root fetch - processPackages [accurating]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/accurating-0.4.7.tar.gz tmp/accurating-0.4.8.tar.gz --markdown 20230514/a/accurating/0.4.7-0.4.8/diff.md --exclude *.pyd
+[2023-05-14 21:54:01] INFO root fetch - processPackages [devgoldyutils]: executing diffoscope
+[2023-05-14 21:54:01] INFO root fetch - processPackages [devgoldyutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/devgoldyutils-2.4.3.tar.gz tmp/devgoldyutils-2.5.tar.gz --markdown 20230514/d/devgoldyutils/2.4.3-2.5/diff.md --exclude *.pyd
+[2023-05-14 21:54:01] INFO root fetch - processPackages [cwsearch-utils]: Start processing: cast-bootstrap5
+[2023-05-14 21:54:01] INFO root fetch - main [MainThread]: End processing [cwsearch-utils]: success
+[2023-05-14 21:54:02] INFO root fetch - processPackages [cast-bootstrap5]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-14 21:54:02] INFO root fetch - main [MainThread]: End processing [async-websocket-client]: success
+[2023-05-14 21:54:02] INFO root fetch - processPackages [cast-bootstrap5]: Downloading https://files.pythonhosted.org/packages/0f/90/c733fdb0df1fc9b2035d9f2918db4c3b1c4410cf36c26ac7c0f56de2efc9/cast_bootstrap5-0.0.5.tar.gz
+[2023-05-14 21:54:02] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-14 21:54:02] INFO root fetch - main [MainThread]: End processing [odin-format]: success
+[2023-05-14 21:54:02] INFO root fetch - processPackages [cast-bootstrap5]: executing diffoscope
+[2023-05-14 21:54:02] INFO root fetch - processPackages [cast-bootstrap5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cast_bootstrap5-0.0.4.tar.gz tmp/cast_bootstrap5-0.0.5.tar.gz --markdown 20230514/c/cast-bootstrap5/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-14 21:54:02] INFO root fetch - main [MainThread]: End processing [pysyn-data]: success
+[2023-05-14 21:54:02] INFO root fetch - main [MainThread]: End processing [lilit]: success
+[2023-05-14 21:54:02] INFO root fetch - main [MainThread]: End processing [xklb]: success
+[2023-05-14 21:54:02] INFO root fetch - main [MainThread]: End processing [accurating]: success
+[2023-05-14 21:54:02] INFO root fetch - main [MainThread]: End processing [devgoldyutils]: success
+[2023-05-14 21:54:03] INFO root fetch - main [MainThread]: End processing [kynaylibs]: success
+[2023-05-14 21:54:06] INFO root fetch - main [MainThread]: End processing [cast-bootstrap5]: success
+[2023-05-14 21:54:06] INFO root fetch - main [MainThread]: Store serial: [18099656]
