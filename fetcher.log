@@ -10532,3 +10532,46 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 22:17:54] INFO root fetch - main [MainThread]: End processing [arkdata]: success
 [2023-05-14 22:18:00] INFO root fetch - main [MainThread]: End processing [aim]: success
 [2023-05-14 22:18:00] INFO root fetch - main [MainThread]: Store serial: [18099775]
+[2023-05-14 22:23:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18099775]
+[2023-05-14 22:23:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 22:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dvc-data
+[2023-05-14 22:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: resqpy
+[2023-05-14 22:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: spanishconjugator
+[2023-05-14 22:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: spanishconjugator
+[2023-05-14 22:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: enochecker3
+[2023-05-14 22:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: kynaylibs
+[2023-05-14 22:23:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: PatryksAutoAI
+[2023-05-14 22:23:12] INFO root fetch - processPackages [dvc-data]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-14 22:23:12] INFO root fetch - processPackages [kynaylibs]: New version: [7.0.4] Old Version: [7.0.3]
+[2023-05-14 22:23:12] INFO root fetch - processPackages [PatryksAutoAI]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-14 22:23:12] INFO root fetch - processPackages [enochecker3]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-05-14 22:23:12] INFO root fetch - processPackages [resqpy]: New version: [4.8.5] Old Version: [4.8.4]
+[2023-05-14 22:23:12] INFO root fetch - processPackages [kynaylibs]: executing diffoscope
+[2023-05-14 22:23:12] INFO root fetch - processPackages [kynaylibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kynaylibs-7.0.3.tar.gz tmp/kynaylibs-7.0.4.tar.gz --markdown 20230514/k/kynaylibs/7.0.3-7.0.4/diff.md --exclude *.pyd
+[2023-05-14 22:23:12] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-14 22:23:12] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-14 22:23:12] INFO root fetch - processPackages [resqpy]: Downloading https://files.pythonhosted.org/packages/5f/9a/70310eff4e603a68908176920df3e1fce4c1f32e95ca7c69fdd6d2f15895/resqpy-4.8.4.tar.gz
+[2023-05-14 22:23:12] INFO root fetch - processPackages [PatryksAutoAI]: executing diffoscope
+[2023-05-14 22:23:12] INFO root fetch - processPackages [PatryksAutoAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PatryksAutoAI-0.6.0.tar.gz tmp/PatryksAutoAI-0.6.1.tar.gz --markdown 20230514/P/PatryksAutoAI/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-14 22:23:12] INFO root fetch - processPackages [dvc-data]: Downloading https://files.pythonhosted.org/packages/03/d5/0752bbc3e82edd356b4f0c69a11c9711eb09deabd1a6a8f948e2da46818d/dvc-data-0.8.0.tar.gz
+[2023-05-14 22:23:12] INFO root fetch - processPackages [enochecker3]: Downloading https://files.pythonhosted.org/packages/cd/f9/f9ba78bcf81d3a170b72ed6136a5725ac9f9ff9ae14a8a9c7d28bd56842c/enochecker3-0.8.1.tar.gz
+[2023-05-14 22:23:12] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-14 22:23:12] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230514/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-14 22:23:12] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-14 22:23:12] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230514/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-14 22:23:12] INFO root fetch - processPackages [resqpy]: Downloading https://files.pythonhosted.org/packages/4f/d3/37c53d288732597be0459d554f12c7e781e6622337b6589ca7225552f1a2/resqpy-4.8.5.tar.gz
+[2023-05-14 22:23:12] INFO root fetch - processPackages [enochecker3]: executing diffoscope
+[2023-05-14 22:23:12] INFO root fetch - processPackages [enochecker3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enochecker3-0.8.0.tar.gz tmp/enochecker3-0.8.1.tar.gz --markdown 20230514/e/enochecker3/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-05-14 22:23:12] INFO root fetch - processPackages [dvc-data]: Downloading https://files.pythonhosted.org/packages/8c/65/1d133c2ce7da48539e36d2edda0ae3f74534e639f26efaef0c696860e8c2/dvc-data-0.9.0.tar.gz
+[2023-05-14 22:23:13] INFO root fetch - processPackages [dvc-data]: executing diffoscope
+[2023-05-14 22:23:13] INFO root fetch - processPackages [dvc-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dvc-data-0.8.0.tar.gz tmp/dvc-data-0.9.0.tar.gz --markdown 20230514/d/dvc-data/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 22:23:13] INFO root fetch - processPackages [resqpy]: executing diffoscope
+[2023-05-14 22:23:13] INFO root fetch - processPackages [resqpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/resqpy-4.8.4.tar.gz tmp/resqpy-4.8.5.tar.gz --markdown 20230514/r/resqpy/4.8.4-4.8.5/diff.md --exclude *.pyd
+[2023-05-14 22:23:13] INFO root fetch - main [MainThread]: End processing [kynaylibs]: success
+[2023-05-14 22:23:14] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-14 22:23:14] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
+[2023-05-14 22:23:14] INFO root fetch - main [MainThread]: End processing [enochecker3]: success
+[2023-05-14 22:23:14] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-14 22:23:15] INFO root fetch - main [MainThread]: End processing [dvc-data]: success
+[2023-05-14 22:23:15] INFO root fetch - main [MainThread]: End processing [resqpy]: success
+[2023-05-14 22:23:15] INFO root fetch - main [MainThread]: Store serial: [18099802]
