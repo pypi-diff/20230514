@@ -10162,3 +10162,29 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 21:37:49] INFO root fetch - processPackages [stock-market-bytetheory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stock_market_bytetheory-1.0.2.tar.gz tmp/stock_market_bytetheory-1.0.3.tar.gz --markdown 20230514/s/stock-market-bytetheory/1.0.2-1.0.3/diff.md --exclude *.pyd
 [2023-05-14 21:37:50] INFO root fetch - main [MainThread]: End processing [stock-market-bytetheory]: success
 [2023-05-14 21:37:50] INFO root fetch - main [MainThread]: Store serial: [18099560]
+[2023-05-14 21:42:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18099560]
+[2023-05-14 21:43:00] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 21:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: airlift
+[2023-05-14 21:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mocksafe
+[2023-05-14 21:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nglui
+[2023-05-14 21:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: commitguard
+[2023-05-14 21:43:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: experimenthq
+[2023-05-14 21:43:00] INFO root fetch - processPackages [nglui]: New version: [2.9.0] Old Version: [2.8.1]
+[2023-05-14 21:43:00] INFO root fetch - processPackages [airlift]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-14 21:43:00] WARNING root fetch - processPackages [commitguard]: Skipping, unable to determine old version
+[2023-05-14 21:43:00] INFO root fetch - main [MainThread]: End processing [commitguard] error
+[2023-05-14 21:43:00] WARNING root fetch - processPackages [mocksafe]: Skipping, unable to determine old version
+[2023-05-14 21:43:00] INFO root fetch - main [MainThread]: End processing [mocksafe] error
+[2023-05-14 21:43:00] WARNING root fetch - processPackages [experimenthq]: Skipping, unable to determine old version
+[2023-05-14 21:43:00] INFO root fetch - main [MainThread]: End processing [experimenthq] error
+[2023-05-14 21:43:00] INFO root fetch - processPackages [airlift]: Downloading https://files.pythonhosted.org/packages/d6/a1/93f639b92cb8bfda794d3b4226d8ea205f72f8c44f788e4d29cd5c00e521/airlift-0.1.0.tar.gz
+[2023-05-14 21:43:00] INFO root fetch - processPackages [nglui]: Downloading https://files.pythonhosted.org/packages/46/20/43f98596161a40d958b69e2da65a399dfc24cbe523b925da3b6c0b931da9/nglui-2.8.1.tar.gz
+[2023-05-14 21:43:02] INFO root fetch - processPackages [airlift]: Downloading https://files.pythonhosted.org/packages/63/04/849390aaa5b464efe62a2ff625cf55d81da5959a2996445887bd71946dde/airlift-0.1.1.tar.gz
+[2023-05-14 21:43:02] INFO root fetch - processPackages [nglui]: Downloading https://files.pythonhosted.org/packages/07/74/c06ebea991b36bd7b20eab2c7fa39467670c748feffc81060df607ab3fb4/nglui-2.9.0.tar.gz
+[2023-05-14 21:43:02] INFO root fetch - processPackages [airlift]: executing diffoscope
+[2023-05-14 21:43:02] INFO root fetch - processPackages [airlift]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/airlift-0.1.0.tar.gz tmp/airlift-0.1.1.tar.gz --markdown 20230514/a/airlift/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-14 21:43:02] INFO root fetch - processPackages [nglui]: executing diffoscope
+[2023-05-14 21:43:02] INFO root fetch - processPackages [nglui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nglui-2.8.1.tar.gz tmp/nglui-2.9.0.tar.gz --markdown 20230514/n/nglui/2.8.1-2.9.0/diff.md --exclude *.pyd
+[2023-05-14 21:43:03] INFO root fetch - main [MainThread]: End processing [airlift]: success
+[2023-05-14 21:43:04] INFO root fetch - main [MainThread]: End processing [nglui]: success
+[2023-05-14 21:43:04] INFO root fetch - main [MainThread]: Store serial: [18099582]
