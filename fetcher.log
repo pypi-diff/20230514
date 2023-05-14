@@ -1646,3 +1646,32 @@
 [2023-05-14 03:42:56] INFO root fetch - main [MainThread]: End processing [django-gesha]: success
 [2023-05-14 03:42:56] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
 [2023-05-14 03:42:56] INFO root fetch - main [MainThread]: Store serial: [18094375]
+[2023-05-14 03:48:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094375]
+[2023-05-14 03:48:05] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 03:48:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: proactive-jupyter-kernel
+[2023-05-14 03:48:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nbdev-apl
+[2023-05-14 03:48:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hypofuzz
+[2023-05-14 03:48:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-lambda-layer-wget
+[2023-05-14 03:48:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyfragments
+[2023-05-14 03:48:06] INFO root fetch - processPackages [hypofuzz]: New version: [23.5.1] Old Version: [23.4.1]
+[2023-05-14 03:48:06] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.771] Old Version: [0.0.770]
+[2023-05-14 03:48:06] INFO root fetch - processPackages [proactive-jupyter-kernel]: New version: [13.1.1.2212191832.dev0] Old Version: [13.1.1.2212191149.dev0]
+[2023-05-14 03:48:06] INFO root fetch - processPackages [cdk-lambda-layer-wget]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-14 03:48:06] WARNING root fetch - processPackages [pyfragments]: Skipping, unable to determine old version
+[2023-05-14 03:48:06] INFO root fetch - main [MainThread]: End processing [pyfragments] error
+[2023-05-14 03:48:06] INFO root fetch - processPackages [hypofuzz]: Downloading https://files.pythonhosted.org/packages/18/2e/e92af790a592cc02645264fc4559d4d58e38ea7fab90127994eeffad9189/hypofuzz-23.4.1.tar.gz
+[2023-05-14 03:48:06] INFO root fetch - processPackages [cdk-lambda-layer-wget]: executing diffoscope
+[2023-05-14 03:48:06] INFO root fetch - processPackages [cdk-lambda-layer-wget]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-wget-2.0.98.tar.gz tmp/cdk-lambda-layer-wget-2.0.99.tar.gz --markdown 20230514/c/cdk-lambda-layer-wget/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-14 03:48:06] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/a0/4d/05302d31991322d66cdf386f04a20cb5adc13e58d787d63fa97b12ac4f4b/nbdev-apl-0.0.771.tar.gz
+[2023-05-14 03:48:06] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-05-14 03:48:06] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.770.tar.gz tmp/nbdev-apl-0.0.771.tar.gz --markdown 20230514/n/nbdev-apl/0.0.770-0.0.771/diff.md --exclude *.pyd
+[2023-05-14 03:48:06] INFO root fetch - processPackages [proactive-jupyter-kernel]: executing diffoscope
+[2023-05-14 03:48:06] INFO root fetch - processPackages [proactive-jupyter-kernel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/proactive-jupyter-kernel-13.1.1.2212191149.dev0.zip tmp/proactive-jupyter-kernel-13.1.1.2212191832.dev0.zip --markdown 20230514/p/proactive-jupyter-kernel/13.1.1.2212191149.dev0-13.1.1.2212191832.dev0/diff.md --exclude *.pyd
+[2023-05-14 03:48:06] INFO root fetch - processPackages [hypofuzz]: Downloading https://files.pythonhosted.org/packages/55/6c/5931f26f3157ffdfbda1fb73aac860dcae63eb6adf7b10bb76041999d858/hypofuzz-23.5.1.tar.gz
+[2023-05-14 03:48:06] INFO root fetch - processPackages [hypofuzz]: executing diffoscope
+[2023-05-14 03:48:06] INFO root fetch - processPackages [hypofuzz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypofuzz-23.4.1.tar.gz tmp/hypofuzz-23.5.1.tar.gz --markdown 20230514/h/hypofuzz/23.4.1-23.5.1/diff.md --exclude *.pyd
+[2023-05-14 03:48:07] INFO root fetch - main [MainThread]: End processing [proactive-jupyter-kernel]: success
+[2023-05-14 03:48:07] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-05-14 03:48:07] INFO root fetch - main [MainThread]: End processing [hypofuzz]: success
+[2023-05-14 03:48:07] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
+[2023-05-14 03:48:07] INFO root fetch - main [MainThread]: Store serial: [18094393]
