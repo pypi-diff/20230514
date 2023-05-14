@@ -4233,3 +4233,64 @@
 [2023-05-14 11:05:43] INFO root fetch - main [MainThread]: End processing [tarvis-btb]: success
 [2023-05-14 11:05:44] INFO root fetch - main [MainThread]: End processing [autogluon.cloud]: success
 [2023-05-14 11:05:44] INFO root fetch - main [MainThread]: Store serial: [18095907]
+[2023-05-14 11:10:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095907]
+[2023-05-14 11:10:54] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-14 11:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: polar-api
+[2023-05-14 11:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: validmind
+[2023-05-14 11:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: always-updates
+[2023-05-14 11:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: always-updates
+[2023-05-14 11:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Inputbetter
+[2023-05-14 11:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: snakifyer
+[2023-05-14 11:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dify-client
+[2023-05-14 11:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dify-client
+[2023-05-14 11:10:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sneakpeek-py
+[2023-05-14 11:10:54] INFO root fetch - processPackages [polar-api]: New version: [2.0.0] Old Version: [1.0.2]
+[2023-05-14 11:10:54] INFO root fetch - processPackages [snakifyer]: New version: [2.0.0] Old Version: [1.0.2]
+[2023-05-14 11:10:54] INFO root fetch - processPackages [Inputbetter]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-14 11:10:54] INFO root fetch - processPackages [validmind]: New version: [1.9.6] Old Version: [1.9.5]
+[2023-05-14 11:10:54] INFO root fetch - processPackages [dify-client]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-14 11:10:54] INFO root fetch - processPackages [dify-client]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-14 11:10:54] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-05-14 11:10:54] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-05-14 11:10:54] INFO root fetch - processPackages [sneakpeek-py]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-14 11:10:54] INFO root fetch - processPackages [polar-api]: Downloading https://files.pythonhosted.org/packages/9b/cd/9624def8d6b2064add855af878c928d5b1324b1c058e9a2bb2b85bd9c49a/polar_api-1.0.2.tar.gz
+[2023-05-14 11:10:54] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-05-14 11:10:54] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230514/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-05-14 11:10:54] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-05-14 11:10:54] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230514/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-05-14 11:10:54] INFO root fetch - processPackages [dify-client]: Downloading https://files.pythonhosted.org/packages/53/d8/dfa347b97d642134e50a824df68e932ca2081877b4c4464aa591a73f7ad5/dify-client-0.1.6.tar.gz
+[2023-05-14 11:10:54] INFO root fetch - processPackages [dify-client]: Downloading https://files.pythonhosted.org/packages/53/d8/dfa347b97d642134e50a824df68e932ca2081877b4c4464aa591a73f7ad5/dify-client-0.1.6.tar.gz
+[2023-05-14 11:10:54] INFO root fetch - processPackages [Inputbetter]: Downloading https://files.pythonhosted.org/packages/bf/48/800d31ce5b3d054dc5814f104765141272d8cf3598279a62b0411afae31b/Inputbetter-0.4.0-py3-none-any.whl
+[2023-05-14 11:10:54] INFO root fetch - processPackages [validmind]: Downloading https://files.pythonhosted.org/packages/ed/ce/adf7f62f3d547ced88429192d1a2292e2b1bf09bac7213e98aaa83dbafff/validmind-1.9.6.tar.gz
+[2023-05-14 11:10:54] INFO root fetch - processPackages [snakifyer]: Downloading https://files.pythonhosted.org/packages/53/5f/dbdf2c04e65545cafe95332c629bdaf5a0ce3a52abc875c3046431cb7aa8/snakifyer-1.0.2.tar.gz
+[2023-05-14 11:10:54] INFO root fetch - processPackages [sneakpeek-py]: Downloading https://files.pythonhosted.org/packages/da/94/1ed0686750f25e665e3ceb7b0a8da3d67aa5163353e44ef53df6b0fcc67f/sneakpeek_py-0.1.6.tar.gz
+[2023-05-14 11:10:54] INFO root fetch - processPackages [validmind]: executing diffoscope
+[2023-05-14 11:10:54] INFO root fetch - processPackages [validmind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/validmind-1.9.5.tar.gz tmp/validmind-1.9.6.tar.gz --markdown 20230514/v/validmind/1.9.5-1.9.6/diff.md --exclude *.pyd
+[2023-05-14 11:10:54] INFO root fetch - processPackages [polar-api]: Downloading https://files.pythonhosted.org/packages/05/7f/31763f063f3499fe1ef01933e66f88968ea74c0659a5f82e5d23e75452a6/polar_api-2.0.0.tar.gz
+[2023-05-14 11:10:55] INFO root fetch - processPackages [Inputbetter]: Downloading https://files.pythonhosted.org/packages/23/27/bfee53a81b4679b790978340c2ce80d3bd7d9e97da325626b05b253ca4b7/Inputbetter-0.5.0-py3-none-any.whl
+[2023-05-14 11:10:55] INFO root fetch - processPackages [snakifyer]: Downloading https://files.pythonhosted.org/packages/4d/43/6e5c111bdf9ab394a94fff153f4412502c1d6c56eea1724524e99e7da171/snakifyer-2.0.0.tar.gz
+[2023-05-14 11:10:55] INFO root fetch - processPackages [dify-client]: Downloading https://files.pythonhosted.org/packages/0a/36/8bf2c3fa95d41a33383d7205184aafc029bb54ab5dd15012e2c3f3e519af/dify-client-0.1.7.tar.gz
+[2023-05-14 11:10:55] INFO root fetch - processPackages [polar-api]: executing diffoscope
+[2023-05-14 11:10:55] INFO root fetch - processPackages [polar-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polar_api-1.0.2.tar.gz tmp/polar_api-2.0.0.tar.gz --markdown 20230514/p/polar-api/1.0.2-2.0.0/diff.md --exclude *.pyd
+[2023-05-14 11:10:55] INFO root fetch - processPackages [dify-client]: Downloading https://files.pythonhosted.org/packages/0a/36/8bf2c3fa95d41a33383d7205184aafc029bb54ab5dd15012e2c3f3e519af/dify-client-0.1.7.tar.gz
+[2023-05-14 11:10:55] INFO root fetch - processPackages [snakifyer]: executing diffoscope
+[2023-05-14 11:10:55] INFO root fetch - processPackages [snakifyer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snakifyer-1.0.2.tar.gz tmp/snakifyer-2.0.0.tar.gz --markdown 20230514/s/snakifyer/1.0.2-2.0.0/diff.md --exclude *.pyd
+[2023-05-14 11:10:55] INFO root fetch - processPackages [dify-client]: executing diffoscope
+[2023-05-14 11:10:55] INFO root fetch - processPackages [dify-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dify-client-0.1.6.tar.gz tmp/dify-client-0.1.7.tar.gz --markdown 20230514/d/dify-client/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-14 11:10:55] INFO root fetch - processPackages [dify-client]: executing diffoscope
+[2023-05-14 11:10:55] INFO root fetch - processPackages [dify-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dify-client-0.1.6.tar.gz tmp/dify-client-0.1.7.tar.gz --markdown 20230514/d/dify-client/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-14 11:10:55] INFO root fetch - processPackages [Inputbetter]: executing diffoscope
+[2023-05-14 11:10:55] INFO root fetch - processPackages [Inputbetter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Inputbetter-0.4.0-py3-none-any.whl.zip tmp/Inputbetter-0.5.0-py3-none-any.whl.zip --markdown 20230514/I/Inputbetter/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-14 11:10:55] INFO root fetch - processPackages [sneakpeek-py]: Downloading https://files.pythonhosted.org/packages/75/05/59a8cf6b76bb26c5f8c0d4655bfca1756372e87becd75ec2cffe5095aee6/sneakpeek_py-0.1.7.tar.gz
+[2023-05-14 11:10:55] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-05-14 11:10:55] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-05-14 11:10:56] INFO root fetch - main [MainThread]: End processing [polar-api]: success
+[2023-05-14 11:10:56] INFO root fetch - main [MainThread]: End processing [Inputbetter]: success
+[2023-05-14 11:10:56] INFO root fetch - main [MainThread]: End processing [snakifyer]: success
+[2023-05-14 11:10:56] INFO root fetch - main [MainThread]: End processing [dify-client]: success
+[2023-05-14 11:10:56] INFO root fetch - main [MainThread]: End processing [dify-client]: success
+[2023-05-14 11:10:56] INFO root fetch - main [MainThread]: End processing [validmind]: success
+[2023-05-14 11:10:58] INFO root fetch - processPackages [sneakpeek-py]: executing diffoscope
+[2023-05-14 11:10:58] INFO root fetch - processPackages [sneakpeek-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sneakpeek_py-0.1.6.tar.gz tmp/sneakpeek_py-0.1.7.tar.gz --markdown 20230514/s/sneakpeek-py/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-14 11:11:22] INFO root fetch - main [MainThread]: End processing [sneakpeek-py]: success
+[2023-05-14 11:11:22] INFO root fetch - main [MainThread]: Store serial: [18095948]
