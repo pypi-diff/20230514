@@ -4009,3 +4009,20 @@
 [2023-05-14 10:39:27] INFO root fetch - main [MainThread]: End processing [dify-client]: success
 [2023-05-14 10:39:28] INFO root fetch - main [MainThread]: End processing [tf-estimator-nightly]: success
 [2023-05-14 10:39:28] INFO root fetch - main [MainThread]: Store serial: [18095787]
+[2023-05-14 10:44:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095787]
+[2023-05-14 10:44:36] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-14 10:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lumigo-tracer
+[2023-05-14 10:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Inputbetter
+[2023-05-14 10:44:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: oobabot
+[2023-05-14 10:44:36] WARNING root fetch - processPackages [Inputbetter]: Skipping, unable to determine old version
+[2023-05-14 10:44:36] INFO root fetch - main [MainThread]: End processing [Inputbetter] error
+[2023-05-14 10:44:36] INFO root fetch - processPackages [oobabot]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-14 10:44:36] INFO root fetch - processPackages [lumigo-tracer]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-05-14 10:44:36] INFO root fetch - processPackages [lumigo-tracer]: executing diffoscope
+[2023-05-14 10:44:36] INFO root fetch - processPackages [lumigo-tracer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lumigo_tracer-1.1.98-py3-none-any.whl.zip tmp/lumigo_tracer-1.1.99-py3-none-any.whl.zip --markdown 20230514/l/lumigo-tracer/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-05-14 10:44:36] INFO root fetch - processPackages [oobabot]: Downloading https://files.pythonhosted.org/packages/b0/ac/59f2c2c1c577a8052b4deb4effe3cb498759269abd84c5f94a61f393384b/oobabot-0.1.6.tar.gz
+[2023-05-14 10:44:37] INFO root fetch - processPackages [oobabot]: executing diffoscope
+[2023-05-14 10:44:37] INFO root fetch - processPackages [oobabot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oobabot-0.1.5.tar.gz tmp/oobabot-0.1.6.tar.gz --markdown 20230514/o/oobabot/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-14 10:44:37] INFO root fetch - main [MainThread]: End processing [lumigo-tracer]: success
+[2023-05-14 10:44:38] INFO root fetch - main [MainThread]: End processing [oobabot]: success
+[2023-05-14 10:44:38] INFO root fetch - main [MainThread]: Store serial: [18095804]
