@@ -1505,3 +1505,43 @@
 [2023-05-14 03:29:58] INFO root fetch - main [MainThread]: End processing [lmo]: success
 [2023-05-14 03:30:34] INFO root fetch - main [MainThread]: End processing [django-q2]: success
 [2023-05-14 03:30:34] INFO root fetch - main [MainThread]: Store serial: [18094296]
+[2023-05-14 03:35:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094296]
+[2023-05-14 03:35:42] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 03:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sweetrpg-web-core
+[2023-05-14 03:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bioregistry
+[2023-05-14 03:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-rq
+[2023-05-14 03:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-wordpress
+[2023-05-14 03:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nbdev-stdlib
+[2023-05-14 03:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sweetrpg-model-core
+[2023-05-14 03:35:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nbdev-numpy
+[2023-05-14 03:35:42] INFO root fetch - processPackages [sweetrpg-model-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-14 03:35:42] INFO root fetch - processPackages [django-rq]: New version: [2.8.1] Old Version: [2.8.0]
+[2023-05-14 03:35:42] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-14 03:35:42] INFO root fetch - processPackages [cdk-wordpress]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-14 03:35:42] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-14 03:35:42] INFO root fetch - processPackages [bioregistry]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-14 03:35:42] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-14 03:35:43] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-05-14 03:35:43] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230514/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-14 03:35:43] INFO root fetch - processPackages [cdk-wordpress]: executing diffoscope
+[2023-05-14 03:35:43] INFO root fetch - processPackages [cdk-wordpress]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-wordpress-0.0.98.tar.gz tmp/cdk-wordpress-0.0.99.tar.gz --markdown 20230514/c/cdk-wordpress/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-14 03:35:43] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-05-14 03:35:43] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230514/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-14 03:35:43] INFO root fetch - processPackages [django-rq]: Downloading https://files.pythonhosted.org/packages/a3/8a/d5b3eefc4ffbb97476ae913dcbb5a4529d5ef7dce45f0bad56f436d0bbd8/django-rq-2.8.0.tar.gz
+[2023-05-14 03:35:43] INFO root fetch - processPackages [bioregistry]: executing diffoscope
+[2023-05-14 03:35:43] INFO root fetch - processPackages [bioregistry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bioregistry-0.9.8.tar.gz tmp/bioregistry-0.9.9.tar.gz --markdown 20230514/b/bioregistry/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-14 03:35:43] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2023-05-14 03:35:43] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20230514/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-14 03:35:43] INFO root fetch - processPackages [django-rq]: Downloading https://files.pythonhosted.org/packages/b5/c9/477aed6f6ca29dc8d5beafa1ad1d1f71def9f63d4d90d17a41b730bfcb32/django-rq-2.8.1.tar.gz
+[2023-05-14 03:35:43] INFO root fetch - processPackages [sweetrpg-model-core]: executing diffoscope
+[2023-05-14 03:35:43] INFO root fetch - processPackages [sweetrpg-model-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-model-core-0.0.98.tar.gz tmp/sweetrpg-model-core-0.0.99.tar.gz --markdown 20230514/s/sweetrpg-model-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-14 03:35:43] INFO root fetch - processPackages [django-rq]: executing diffoscope
+[2023-05-14 03:35:43] INFO root fetch - processPackages [django-rq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-rq-2.8.0.tar.gz tmp/django-rq-2.8.1.tar.gz --markdown 20230514/d/django-rq/2.8.0-2.8.1/diff.md --exclude *.pyd
+[2023-05-14 03:35:44] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-05-14 03:35:44] INFO root fetch - main [MainThread]: End processing [cdk-wordpress]: success
+[2023-05-14 03:35:44] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2023-05-14 03:35:44] INFO root fetch - main [MainThread]: End processing [sweetrpg-model-core]: success
+[2023-05-14 03:35:45] INFO root fetch - main [MainThread]: End processing [django-rq]: success
+[2023-05-14 03:35:45] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-05-14 03:37:41] INFO root fetch - main [MainThread]: End processing [bioregistry]: success
+[2023-05-14 03:37:41] INFO root fetch - main [MainThread]: Store serial: [18094318]
