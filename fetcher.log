@@ -3673,3 +3673,13 @@
 [2023-05-14 09:39:13] INFO root fetch - main [MainThread]: End processing [BDXConverter]: success
 [2023-05-14 09:39:13] INFO root fetch - main [MainThread]: End processing [DSMLTF]: success
 [2023-05-14 09:39:13] INFO root fetch - main [MainThread]: Store serial: [18095567]
+[2023-05-14 09:44:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095567]
+[2023-05-14 09:44:22] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-14 09:44:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pycrashreport
+[2023-05-14 09:44:22] INFO root fetch - processPackages [pycrashreport]: New version: [1.0.7] Old Version: [1.0.6]
+[2023-05-14 09:44:22] INFO root fetch - processPackages [pycrashreport]: Downloading https://files.pythonhosted.org/packages/59/b4/b519b3d819416e395fa766ee959ea61bd0ad03a2bca7029c15e2e95a7c54/pycrashreport-1.0.6.tar.gz
+[2023-05-14 09:44:22] INFO root fetch - processPackages [pycrashreport]: Downloading https://files.pythonhosted.org/packages/fb/9b/6b6a660300dabeb8af94bf8e265156f81b419381880fad5e010871f4becb/pycrashreport-1.0.7.tar.gz
+[2023-05-14 09:44:23] INFO root fetch - processPackages [pycrashreport]: executing diffoscope
+[2023-05-14 09:44:23] INFO root fetch - processPackages [pycrashreport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycrashreport-1.0.6.tar.gz tmp/pycrashreport-1.0.7.tar.gz --markdown 20230514/p/pycrashreport/1.0.6-1.0.7/diff.md --exclude *.pyd
+[2023-05-14 09:44:24] INFO root fetch - main [MainThread]: End processing [pycrashreport]: success
+[2023-05-14 09:44:24] INFO root fetch - main [MainThread]: Store serial: [18095573]
