@@ -1379,3 +1379,40 @@
 [2023-05-14 03:08:40] INFO root fetch - main [MainThread]: End processing [langflow]: success
 [2023-05-14 03:09:11] INFO root fetch - main [MainThread]: End processing [bhv]: success
 [2023-05-14 03:09:11] INFO root fetch - main [MainThread]: Store serial: [18094223]
+[2023-05-14 03:14:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094223]
+[2023-05-14 03:14:21] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 03:14:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tnsgrt
+[2023-05-14 03:14:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pynau7802
+[2023-05-14 03:14:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: embedin
+[2023-05-14 03:14:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pytreeclass
+[2023-05-14 03:14:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ebtorch
+[2023-05-14 03:14:21] INFO root fetch - processPackages [tnsgrt]: New version: [0.2] Old Version: [0.1]
+[2023-05-14 03:14:21] INFO root fetch - processPackages [pynau7802]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-14 03:14:21] INFO root fetch - processPackages [ebtorch]: New version: [0.8.5] Old Version: [0.8.4]
+[2023-05-14 03:14:21] INFO root fetch - processPackages [embedin]: New version: [0.2.0] Old Version: [0.1.3]
+[2023-05-14 03:14:21] INFO root fetch - processPackages [pytreeclass]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-05-14 03:14:21] INFO root fetch - processPackages [tnsgrt]: Downloading https://files.pythonhosted.org/packages/da/11/19d29be8d86997305e07ef2b1746c7dd8d9ae52148bcdf4d3461df167658/tnsgrt-0.1.tar.gz
+[2023-05-14 03:14:21] INFO root fetch - processPackages [ebtorch]: Downloading https://files.pythonhosted.org/packages/75/c2/7a21bb8e6df5165e07b7e0eae5a522f8dd369c4b55353aa48b973765636f/ebtorch-0.8.4.tar.gz
+[2023-05-14 03:14:21] INFO root fetch - processPackages [embedin]: Downloading https://files.pythonhosted.org/packages/99/28/6ded6fb4692079acb3024d192db168ada6f3dd66c11b64cd72fc93e3fa1d/embedin-0.1.3.tar.gz
+[2023-05-14 03:14:21] INFO root fetch - processPackages [pynau7802]: Downloading https://files.pythonhosted.org/packages/1b/b4/d4fa93a30852f1833bf1a1d3ba947f239870ff804f879ce8702721686909/PyNAU7802-0.2.1.tar.gz
+[2023-05-14 03:14:22] INFO root fetch - processPackages [pytreeclass]: Downloading https://files.pythonhosted.org/packages/7c/ea/b5bb8ce22859b72e432975146556f8770f45f3dc8dd96f74dd116b602191/pytreeclass-0.3.5.tar.gz
+[2023-05-14 03:14:22] INFO root fetch - processPackages [ebtorch]: Downloading https://files.pythonhosted.org/packages/4b/8d/64c9dbcc493d95a4a030520a1a11d81530dae1ac839addb546e270626bb0/ebtorch-0.8.5.tar.gz
+[2023-05-14 03:14:22] INFO root fetch - processPackages [tnsgrt]: Downloading https://files.pythonhosted.org/packages/d6/b8/1a18be168040d87ee568a438a6f03857f54fe4bac3384bb2dfba683c6167/tnsgrt-0.2.tar.gz
+[2023-05-14 03:14:22] INFO root fetch - processPackages [pynau7802]: Downloading https://files.pythonhosted.org/packages/2a/6c/bc6d974cb25d9f82b42789214f8dccb8710b1c98fddf99943cec1d88c56b/pynau7802-0.2.2.tar.gz
+[2023-05-14 03:14:22] INFO root fetch - processPackages [embedin]: Downloading https://files.pythonhosted.org/packages/bb/f8/62880e069e4c52e9a4f4796f8b29dc66e7f51f4d3d308a81cf3d47b523a5/embedin-0.2.0.tar.gz
+[2023-05-14 03:14:22] INFO root fetch - processPackages [pytreeclass]: executing diffoscope
+[2023-05-14 03:14:22] INFO root fetch - processPackages [pytreeclass]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytreeclass-0.3.4.tar.gz tmp/pytreeclass-0.3.5.tar.gz --markdown 20230514/p/pytreeclass/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-05-14 03:14:22] INFO root fetch - processPackages [tnsgrt]: executing diffoscope
+[2023-05-14 03:14:22] INFO root fetch - processPackages [tnsgrt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tnsgrt-0.1.tar.gz tmp/tnsgrt-0.2.tar.gz --markdown 20230514/t/tnsgrt/0.1-0.2/diff.md --exclude *.pyd
+[2023-05-14 03:14:22] INFO root fetch - processPackages [ebtorch]: executing diffoscope
+[2023-05-14 03:14:22] INFO root fetch - processPackages [ebtorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ebtorch-0.8.4.tar.gz tmp/ebtorch-0.8.5.tar.gz --markdown 20230514/e/ebtorch/0.8.4-0.8.5/diff.md --exclude *.pyd
+[2023-05-14 03:14:22] INFO root fetch - processPackages [embedin]: executing diffoscope
+[2023-05-14 03:14:22] INFO root fetch - processPackages [embedin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedin-0.1.3.tar.gz tmp/embedin-0.2.0.tar.gz --markdown 20230514/e/embedin/0.1.3-0.2.0/diff.md --exclude *.pyd
+[2023-05-14 03:14:22] INFO root fetch - processPackages [pynau7802]: executing diffoscope
+[2023-05-14 03:14:22] INFO root fetch - processPackages [pynau7802]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PyNAU7802-0.2.1.tar.gz tmp/pynau7802-0.2.2.tar.gz --markdown 20230514/p/pynau7802/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-14 03:14:23] INFO root fetch - main [MainThread]: End processing [tnsgrt]: success
+[2023-05-14 03:14:23] INFO root fetch - main [MainThread]: End processing [pynau7802]: success
+[2023-05-14 03:14:23] INFO root fetch - main [MainThread]: End processing [embedin]: success
+[2023-05-14 03:14:23] INFO root fetch - main [MainThread]: End processing [pytreeclass]: success
+[2023-05-14 03:14:23] INFO root fetch - main [MainThread]: End processing [ebtorch]: success
+[2023-05-14 03:14:23] INFO root fetch - main [MainThread]: Store serial: [18094238]
