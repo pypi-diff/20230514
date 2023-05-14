@@ -2866,3 +2866,29 @@
 [2023-05-14 07:42:08] INFO root fetch - main [MainThread]: End processing [osintbuddy]: success
 [2023-05-14 07:42:09] INFO root fetch - main [MainThread]: End processing [tzlocal]: success
 [2023-05-14 07:42:09] INFO root fetch - main [MainThread]: Store serial: [18095134]
+[2023-05-14 07:47:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095134]
+[2023-05-14 07:47:18] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 07:47:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: n1trobrdr
+[2023-05-14 07:47:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: renus
+[2023-05-14 07:47:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aiuv
+[2023-05-14 07:47:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lineagex
+[2023-05-14 07:47:18] INFO root fetch - processPackages [lineagex]: New version: [0.0.2a2] Old Version: [0.0.2a1]
+[2023-05-14 07:47:18] INFO root fetch - processPackages [aiuv]: New version: [0.6] Old Version: [0.5]
+[2023-05-14 07:47:18] WARNING root fetch - processPackages [n1trobrdr]: Skipping, unable to determine old version
+[2023-05-14 07:47:18] INFO root fetch - processPackages [renus]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-14 07:47:18] INFO root fetch - main [MainThread]: End processing [n1trobrdr] error
+[2023-05-14 07:47:18] INFO root fetch - processPackages [renus]: Downloading https://files.pythonhosted.org/packages/53/5c/9ef3faf805f91fde97b15f712198535fe72816bd8380655c2a3de7b01cc5/renus-1.1.2.tar.gz
+[2023-05-14 07:47:18] INFO root fetch - processPackages [aiuv]: Downloading https://files.pythonhosted.org/packages/5d/f6/2bedde8a6d4e88fde1c11785922a16af87b33e9a09a5bc7efa77f246bbbf/aiuv-0.5.tar.gz
+[2023-05-14 07:47:18] INFO root fetch - processPackages [lineagex]: Downloading https://files.pythonhosted.org/packages/73/18/1057795735d1c8ca4f24b7d649a38713ae442bdde61eb6a5b1fbf9a6aa7a/lineagex-0.0.2a2.tar.gz
+[2023-05-14 07:47:19] INFO root fetch - processPackages [renus]: Downloading https://files.pythonhosted.org/packages/d9/f3/e0ed4014925ef4faf356ce0f4bcbb9ae345062331e944f0e0c42280cf613/renus-1.1.3.tar.gz
+[2023-05-14 07:47:19] INFO root fetch - processPackages [aiuv]: Downloading https://files.pythonhosted.org/packages/c6/17/4664b5c499e6c0771cb89213c19757119e85ef646e60e1af7ef3ffb0f1af/aiuv-0.6.tar.gz
+[2023-05-14 07:47:19] INFO root fetch - processPackages [aiuv]: executing diffoscope
+[2023-05-14 07:47:19] INFO root fetch - processPackages [aiuv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiuv-0.5.tar.gz tmp/aiuv-0.6.tar.gz --markdown 20230514/a/aiuv/0.5-0.6/diff.md --exclude *.pyd
+[2023-05-14 07:47:19] INFO root fetch - processPackages [lineagex]: executing diffoscope
+[2023-05-14 07:47:19] INFO root fetch - processPackages [lineagex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lineagex-0.0.2a1.tar.gz tmp/lineagex-0.0.2a2.tar.gz --markdown 20230514/l/lineagex/0.0.2a1-0.0.2a2/diff.md --exclude *.pyd
+[2023-05-14 07:47:19] INFO root fetch - processPackages [renus]: executing diffoscope
+[2023-05-14 07:47:19] INFO root fetch - processPackages [renus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/renus-1.1.2.tar.gz tmp/renus-1.1.3.tar.gz --markdown 20230514/r/renus/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-14 07:47:20] INFO root fetch - main [MainThread]: End processing [aiuv]: success
+[2023-05-14 07:47:20] INFO root fetch - main [MainThread]: End processing [lineagex]: success
+[2023-05-14 07:47:20] INFO root fetch - main [MainThread]: End processing [renus]: success
+[2023-05-14 07:47:20] INFO root fetch - main [MainThread]: Store serial: [18095147]
