@@ -4400,3 +4400,64 @@
 [2023-05-14 11:22:11] INFO root fetch - main [MainThread]: End processing [tbp-nightly]: success
 [2023-05-14 11:22:30] INFO root fetch - main [MainThread]: End processing [tsid]: success
 [2023-05-14 11:22:30] INFO root fetch - main [MainThread]: Store serial: [18096037]
+[2023-05-14 11:27:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096037]
+[2023-05-14 11:27:42] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-14 11:27:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anjani
+[2023-05-14 11:27:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: questdb-connect
+[2023-05-14 11:27:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: knowledgebase-gsheet-gpt
+[2023-05-14 11:27:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chompjs
+[2023-05-14 11:27:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cambridge
+[2023-05-14 11:27:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xiedemo
+[2023-05-14 11:27:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: flexrunner
+[2023-05-14 11:27:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ml-starter
+[2023-05-14 11:27:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: tarvis-exchange-dydx
+[2023-05-14 11:27:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: transformers-agent-ui
+[2023-05-14 11:27:42] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-14 11:27:42] INFO root fetch - processPackages [tarvis-exchange-dydx]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-14 11:27:42] INFO root fetch - processPackages [questdb-connect]: New version: [0.0.43] Old Version: [0.0.42]
+[2023-05-14 11:27:42] INFO root fetch - processPackages [anjani]: New version: [2.9.0] Old Version: [2.8.1]
+[2023-05-14 11:27:42] WARNING root fetch - processPackages [xiedemo]: Skipping, unable to determine old version
+[2023-05-14 11:27:42] INFO root fetch - main [MainThread]: End processing [xiedemo] error
+[2023-05-14 11:27:42] INFO root fetch - processPackages [chompjs]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-14 11:27:42] WARNING root fetch - processPackages [transformers-agent-ui]: Skipping, unable to determine old version
+[2023-05-14 11:27:42] INFO root fetch - main [MainThread]: End processing [transformers-agent-ui] error
+[2023-05-14 11:27:42] INFO root fetch - processPackages [flexrunner]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-14 11:27:42] INFO root fetch - processPackages [ml-starter]: New version: [0.0.39] Old Version: [0.0.38]
+[2023-05-14 11:27:42] INFO root fetch - processPackages [cambridge]: New version: [3.5.9] Old Version: [3.5.8]
+[2023-05-14 11:27:42] INFO root fetch - processPackages [cambridge]: executing diffoscope
+[2023-05-14 11:27:42] INFO root fetch - processPackages [cambridge]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cambridge-3.5.8.tar.gz tmp/cambridge-3.5.9.tar.gz --markdown 20230514/c/cambridge/3.5.8-3.5.9/diff.md --exclude *.pyd
+[2023-05-14 11:27:42] INFO root fetch - processPackages [tarvis-exchange-dydx]: Downloading https://files.pythonhosted.org/packages/93/77/f82d841cac6da96e698b2e44b83c3e62ecb58872acd7072aef6f62a5ccd0/tarvis-exchange-dydx-0.9.5.tar.gz
+[2023-05-14 11:27:42] INFO root fetch - processPackages [anjani]: Downloading https://files.pythonhosted.org/packages/a0/4b/02833bc01203d0b9addbff43d3b48c7c40022e828cbd0b8fdb836018bcac/anjani-2.8.1.tar.gz
+[2023-05-14 11:27:42] INFO root fetch - processPackages [flexrunner]: Downloading https://files.pythonhosted.org/packages/20/bc/58a1e383581a886604a9e01f5184aa87fc0152bbf09ea40735a63cc338e1/flexrunner-1.0.8.tar.gz
+[2023-05-14 11:27:42] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: Downloading https://files.pythonhosted.org/packages/33/53/d68574226dc67825257d8664165755132d406ccc63196753e14f187dcd6a/knowledgebase-gsheet-gpt-1.0.0.tar.gz
+[2023-05-14 11:27:42] INFO root fetch - processPackages [chompjs]: Downloading https://files.pythonhosted.org/packages/69/11/5aa85c8b31fce1a29e49f7c7daf021828b967abe7209c82eb0e761da269f/chompjs-1.2.0.tar.gz
+[2023-05-14 11:27:43] INFO root fetch - processPackages [ml-starter]: Downloading https://files.pythonhosted.org/packages/46/e5/ea58d1ba48a480addb6667969e7ac80e7a90c733c984e409c6a13579ba0a/ml-starter-0.0.39.tar.gz
+[2023-05-14 11:27:43] INFO root fetch - processPackages [questdb-connect]: Downloading https://files.pythonhosted.org/packages/a3/a0/424cc62e9cad420756d7979c0cb9ff342d31909594fc85a4c93d0b34c374/questdb-connect-0.0.43.tar.gz
+[2023-05-14 11:27:43] INFO root fetch - processPackages [tarvis-exchange-dydx]: Downloading https://files.pythonhosted.org/packages/18/12/a96157be44d360f804d94ac5cdb8d92b55d704449e646928cdacfe3f6c71/tarvis-exchange-dydx-0.9.6.tar.gz
+[2023-05-14 11:27:43] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: Downloading https://files.pythonhosted.org/packages/ca/90/54c373cf423402392f12ce933b56896dd79d835f61c0a43f4eb1d7a5ebdd/knowledgebase-gsheet-gpt-1.1.0.tar.gz
+[2023-05-14 11:27:43] INFO root fetch - processPackages [flexrunner]: Downloading https://files.pythonhosted.org/packages/42/7e/04038fb315a660510656954558784ab34b4661595c66d096dbcabb7b66c9/flexrunner-1.0.9.tar.gz
+[2023-05-14 11:27:43] INFO root fetch - processPackages [questdb-connect]: executing diffoscope
+[2023-05-14 11:27:43] INFO root fetch - processPackages [chompjs]: Downloading https://files.pythonhosted.org/packages/22/f0/5803a1f93ef6f5a5c25f0dc480ba5987939797cdf32ab0ef0334d27ebb32/chompjs-1.2.1.tar.gz
+[2023-05-14 11:27:43] INFO root fetch - processPackages [questdb-connect]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/questdb-connect-0.0.42.tar.gz tmp/questdb-connect-0.0.43.tar.gz --markdown 20230514/q/questdb-connect/0.0.42-0.0.43/diff.md --exclude *.pyd
+[2023-05-14 11:27:43] INFO root fetch - processPackages [anjani]: Downloading https://files.pythonhosted.org/packages/f9/9d/09023cad363092c71cd40b8312939b2e4d4bfbd47cae721893d04ab5a6d9/anjani-2.9.0.tar.gz
+[2023-05-14 11:27:43] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: executing diffoscope
+[2023-05-14 11:27:43] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knowledgebase-gsheet-gpt-1.0.0.tar.gz tmp/knowledgebase-gsheet-gpt-1.1.0.tar.gz --markdown 20230514/k/knowledgebase-gsheet-gpt/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 11:27:43] INFO root fetch - processPackages [ml-starter]: executing diffoscope
+[2023-05-14 11:27:43] INFO root fetch - processPackages [ml-starter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-starter-0.0.38.tar.gz tmp/ml-starter-0.0.39.tar.gz --markdown 20230514/m/ml-starter/0.0.38-0.0.39/diff.md --exclude *.pyd
+[2023-05-14 11:27:43] INFO root fetch - processPackages [flexrunner]: executing diffoscope
+[2023-05-14 11:27:43] INFO root fetch - processPackages [flexrunner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flexrunner-1.0.8.tar.gz tmp/flexrunner-1.0.9.tar.gz --markdown 20230514/f/flexrunner/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-14 11:27:43] INFO root fetch - processPackages [chompjs]: executing diffoscope
+[2023-05-14 11:27:43] INFO root fetch - processPackages [chompjs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chompjs-1.2.0.tar.gz tmp/chompjs-1.2.1.tar.gz --markdown 20230514/c/chompjs/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-14 11:27:43] INFO root fetch - processPackages [anjani]: executing diffoscope
+[2023-05-14 11:27:43] INFO root fetch - processPackages [anjani]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anjani-2.8.1.tar.gz tmp/anjani-2.9.0.tar.gz --markdown 20230514/a/anjani/2.8.1-2.9.0/diff.md --exclude *.pyd
+[2023-05-14 11:27:43] INFO root fetch - processPackages [tarvis-exchange-dydx]: executing diffoscope
+[2023-05-14 11:27:43] INFO root fetch - processPackages [tarvis-exchange-dydx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tarvis-exchange-dydx-0.9.5.tar.gz tmp/tarvis-exchange-dydx-0.9.6.tar.gz --markdown 20230514/t/tarvis-exchange-dydx/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-14 11:27:44] INFO root fetch - main [MainThread]: End processing [cambridge]: success
+[2023-05-14 11:27:44] INFO root fetch - main [MainThread]: End processing [knowledgebase-gsheet-gpt]: success
+[2023-05-14 11:27:44] INFO root fetch - main [MainThread]: End processing [tarvis-exchange-dydx]: success
+[2023-05-14 11:27:44] INFO root fetch - main [MainThread]: End processing [questdb-connect]: success
+[2023-05-14 11:27:45] INFO root fetch - main [MainThread]: End processing [chompjs]: success
+[2023-05-14 11:27:45] INFO root fetch - main [MainThread]: End processing [ml-starter]: success
+[2023-05-14 11:27:46] INFO root fetch - main [MainThread]: End processing [flexrunner]: success
+[2023-05-14 11:27:46] INFO root fetch - main [MainThread]: End processing [anjani]: success
+[2023-05-14 11:27:46] INFO root fetch - main [MainThread]: Store serial: [18096078]
