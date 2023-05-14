@@ -4744,3 +4744,50 @@
 [2023-05-14 12:14:31] INFO root fetch - main [MainThread]: End processing [saic-ismart-client]: success
 [2023-05-14 12:15:22] INFO root fetch - main [MainThread]: End processing [dm-reverb-nightly]: success
 [2023-05-14 12:15:22] INFO root fetch - main [MainThread]: Store serial: [18096249]
+[2023-05-14 12:20:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096249]
+[2023-05-14 12:20:31] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 12:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: censoredsummarystats
+[2023-05-14 12:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fmsne
+[2023-05-14 12:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pulumi-proxmoxve
+[2023-05-14 12:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mathslib
+[2023-05-14 12:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zypl-macro
+[2023-05-14 12:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: certomancer-csc-dummy
+[2023-05-14 12:20:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: certora-cli-alpha-naftali-CERT-1884-prevent-solidity-func-as-summary
+[2023-05-14 12:20:31] INFO root fetch - processPackages [censoredsummarystats]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-14 12:20:31] INFO root fetch - processPackages [mathslib]: New version: [2.8.0] Old Version: [2.7.0]
+[2023-05-14 12:20:31] INFO root fetch - processPackages [pulumi-proxmoxve]: New version: [4.1.1] Old Version: [4.1.0]
+[2023-05-14 12:20:31] WARNING root fetch - processPackages [certora-cli-alpha-naftali-CERT-1884-prevent-solidity-func-as-summary]: Skipping, unable to determine old version
+[2023-05-14 12:20:31] INFO root fetch - processPackages [fmsne]: New version: [0.5.1] Old Version: [0.5.0]
+[2023-05-14 12:20:31] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-naftali-CERT-1884-prevent-solidity-func-as-summary] error
+[2023-05-14 12:20:31] INFO root fetch - processPackages [certomancer-csc-dummy]: New version: [0.2.2] Old Version: [0.2.1]
+[2023-05-14 12:20:31] INFO root fetch - processPackages [zypl-macro]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-14 12:20:31] INFO root fetch - processPackages [zypl-macro]: Downloading https://files.pythonhosted.org/packages/67/ce/a0568b1af4ba7cdb7053838955be236abb2d4d2df11db215f9a5f0a5e446/zypl_macro-1.0.0.tar.gz
+[2023-05-14 12:20:31] INFO root fetch - processPackages [fmsne]: Downloading https://files.pythonhosted.org/packages/68/e6/020a27969f5f0bff0e12e289e24f52953827c476daa03894140f48cbe242/fmsne-0.5.0.tar.gz
+[2023-05-14 12:20:31] INFO root fetch - processPackages [censoredsummarystats]: Downloading https://files.pythonhosted.org/packages/72/2c/9b9afca951113b63f51ea5f3136086d2792f992e236c096ab7b023196b56/censoredsummarystats-0.0.3.tar.gz
+[2023-05-14 12:20:31] INFO root fetch - processPackages [mathslib]: Downloading https://files.pythonhosted.org/packages/96/07/26122f0b248f8bc89e9ffca355492fff5f2ce1dd960d5afc0f770966b47f/mathslib-2.7.0.tar.gz
+[2023-05-14 12:20:31] INFO root fetch - processPackages [certomancer-csc-dummy]: Downloading https://files.pythonhosted.org/packages/34/72/01a9bbb04e83cad131c4b56a3e7924f2689a55ac0c4cf86388a469ba5e6c/certomancer-csc-dummy-0.2.1.tar.gz
+[2023-05-14 12:20:31] INFO root fetch - processPackages [pulumi-proxmoxve]: Downloading https://files.pythonhosted.org/packages/c7/51/43299aee8fab7cb1e28e30febec599eddd2d4528f96544276a87b66d3e13/pulumi_proxmoxve-4.1.1.tar.gz
+[2023-05-14 12:20:31] INFO root fetch - processPackages [zypl-macro]: Downloading https://files.pythonhosted.org/packages/22/b7/22ccf8f8cca5ef2ca8638bd4173f1f129bddb25fd9c66bd6eaa7a8577e44/zypl_macro-1.0.1.tar.gz
+[2023-05-14 12:20:31] INFO root fetch - processPackages [censoredsummarystats]: Downloading https://files.pythonhosted.org/packages/ca/79/4482875dc2098b685a82d252219a2b14d272b881dd426c6ff34fd4a8c6b0/censoredsummarystats-0.0.4.tar.gz
+[2023-05-14 12:20:31] INFO root fetch - processPackages [certomancer-csc-dummy]: Downloading https://files.pythonhosted.org/packages/3f/5e/a7022dd111553ae6a630bd9299fe9ef226021960ae73ba4f905e303af01a/certomancer-csc-dummy-0.2.2.tar.gz
+[2023-05-14 12:20:31] INFO root fetch - processPackages [zypl-macro]: executing diffoscope
+[2023-05-14 12:20:31] INFO root fetch - processPackages [zypl-macro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zypl_macro-1.0.0.tar.gz tmp/zypl_macro-1.0.1.tar.gz --markdown 20230514/z/zypl-macro/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-14 12:20:31] INFO root fetch - processPackages [fmsne]: Downloading https://files.pythonhosted.org/packages/96/08/72bc50fc6a1f6c6459fde6b5a3dad656510f5e637cf3876035501b4cb981/fmsne-0.5.1.tar.gz
+[2023-05-14 12:20:31] INFO root fetch - processPackages [censoredsummarystats]: executing diffoscope
+[2023-05-14 12:20:31] INFO root fetch - processPackages [censoredsummarystats]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/censoredsummarystats-0.0.3.tar.gz tmp/censoredsummarystats-0.0.4.tar.gz --markdown 20230514/c/censoredsummarystats/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-14 12:20:31] INFO root fetch - processPackages [certomancer-csc-dummy]: executing diffoscope
+[2023-05-14 12:20:31] INFO root fetch - processPackages [certomancer-csc-dummy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/certomancer-csc-dummy-0.2.1.tar.gz tmp/certomancer-csc-dummy-0.2.2.tar.gz --markdown 20230514/c/certomancer-csc-dummy/0.2.1-0.2.2/diff.md --exclude *.pyd
+[2023-05-14 12:20:31] INFO root fetch - processPackages [mathslib]: Downloading https://files.pythonhosted.org/packages/3c/7f/a056d73737f1289ea360d64ff4befabfb7806959d2d830eac89444d3b553/mathslib-2.8.0.tar.gz
+[2023-05-14 12:20:31] INFO root fetch - processPackages [pulumi-proxmoxve]: executing diffoscope
+[2023-05-14 12:20:31] INFO root fetch - processPackages [pulumi-proxmoxve]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pulumi_proxmoxve-4.1.0.tar.gz tmp/pulumi_proxmoxve-4.1.1.tar.gz --markdown 20230514/p/pulumi-proxmoxve/4.1.0-4.1.1/diff.md --exclude *.pyd
+[2023-05-14 12:20:31] INFO root fetch - processPackages [fmsne]: executing diffoscope
+[2023-05-14 12:20:31] INFO root fetch - processPackages [fmsne]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fmsne-0.5.0.tar.gz tmp/fmsne-0.5.1.tar.gz --markdown 20230514/f/fmsne/0.5.0-0.5.1/diff.md --exclude *.pyd
+[2023-05-14 12:20:31] INFO root fetch - processPackages [mathslib]: executing diffoscope
+[2023-05-14 12:20:31] INFO root fetch - processPackages [mathslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mathslib-2.7.0.tar.gz tmp/mathslib-2.8.0.tar.gz --markdown 20230514/m/mathslib/2.7.0-2.8.0/diff.md --exclude *.pyd
+[2023-05-14 12:20:32] INFO root fetch - main [MainThread]: End processing [zypl-macro]: success
+[2023-05-14 12:20:33] INFO root fetch - main [MainThread]: End processing [certomancer-csc-dummy]: success
+[2023-05-14 12:20:33] INFO root fetch - main [MainThread]: End processing [censoredsummarystats]: success
+[2023-05-14 12:20:33] INFO root fetch - main [MainThread]: End processing [fmsne]: success
+[2023-05-14 12:21:11] INFO root fetch - main [MainThread]: End processing [pulumi-proxmoxve]: success
+[2023-05-14 12:21:11] INFO root fetch - main [MainThread]: End processing [mathslib]: success
+[2023-05-14 12:21:11] INFO root fetch - main [MainThread]: Store serial: [18096273]
