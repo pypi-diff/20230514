@@ -2847,3 +2847,22 @@
 [2023-05-14 07:36:56] INFO root fetch - main [MainThread]: End processing [mml-qae]: success
 [2023-05-14 07:36:57] INFO root fetch - main [MainThread]: End processing [aioqui]: success
 [2023-05-14 07:36:57] INFO root fetch - main [MainThread]: Store serial: [18095123]
+[2023-05-14 07:42:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095123]
+[2023-05-14 07:42:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-14 07:42:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: osintbuddy
+[2023-05-14 07:42:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tzlocal
+[2023-05-14 07:42:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: autosend
+[2023-05-14 07:42:07] INFO root fetch - processPackages [osintbuddy]: New version: [0.0.2rc27.post1] Old Version: [0.0.2rc26.post1]
+[2023-05-14 07:42:07] WARNING root fetch - processPackages [autosend]: Skipping, unable to determine old version
+[2023-05-14 07:42:07] INFO root fetch - main [MainThread]: End processing [autosend] error
+[2023-05-14 07:42:07] INFO root fetch - processPackages [tzlocal]: New version: [5.0b2] Old Version: [5.0b1]
+[2023-05-14 07:42:07] INFO root fetch - processPackages [tzlocal]: Downloading https://files.pythonhosted.org/packages/20/a9/d73eb2a29f3de8808321d8cf07c5acc0db139dd8187a87cbedc24d0f21a4/tzlocal-5.0b1.tar.gz
+[2023-05-14 07:42:07] INFO root fetch - processPackages [osintbuddy]: Downloading https://files.pythonhosted.org/packages/41/04/b47c029322c6bd7d0bafcc0a7903f1e7c79520b7cdc9c349268abbc1e4af/osintbuddy-0.0.2rc27.post1.tar.gz
+[2023-05-14 07:42:07] INFO root fetch - processPackages [osintbuddy]: executing diffoscope
+[2023-05-14 07:42:07] INFO root fetch - processPackages [osintbuddy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osintbuddy-0.0.2rc26.post1.tar.gz tmp/osintbuddy-0.0.2rc27.post1.tar.gz --markdown 20230514/o/osintbuddy/0.0.2rc26.post1-0.0.2rc27.post1/diff.md --exclude *.pyd
+[2023-05-14 07:42:07] INFO root fetch - processPackages [tzlocal]: Downloading https://files.pythonhosted.org/packages/37/1b/1a1d637ef0aef9129fdc95e3809dac33e12d91cd5df2a019fb5a7bf3f65c/tzlocal-5.0b2.tar.gz
+[2023-05-14 07:42:07] INFO root fetch - processPackages [tzlocal]: executing diffoscope
+[2023-05-14 07:42:07] INFO root fetch - processPackages [tzlocal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tzlocal-5.0b1.tar.gz tmp/tzlocal-5.0b2.tar.gz --markdown 20230514/t/tzlocal/5.0b1-5.0b2/diff.md --exclude *.pyd
+[2023-05-14 07:42:08] INFO root fetch - main [MainThread]: End processing [osintbuddy]: success
+[2023-05-14 07:42:09] INFO root fetch - main [MainThread]: End processing [tzlocal]: success
+[2023-05-14 07:42:09] INFO root fetch - main [MainThread]: Store serial: [18095134]
