@@ -8361,3 +8361,36 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 18:37:08] INFO root fetch - main [MainThread]: End processing [grzegorz]: success
 [2023-05-14 18:37:08] INFO root fetch - main [MainThread]: End processing [p4p]: success
 [2023-05-14 18:37:08] INFO root fetch - main [MainThread]: Store serial: [18098484]
+[2023-05-14 18:42:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098484]
+[2023-05-14 18:42:17] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 18:42:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-madvr
+[2023-05-14 18:42:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: speech-collator
+[2023-05-14 18:42:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: patchworklib
+[2023-05-14 18:42:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: quant-invest-lab
+[2023-05-14 18:42:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: SantorinAI
+[2023-05-14 18:42:17] INFO root fetch - processPackages [speech-collator]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-05-14 18:42:17] INFO root fetch - processPackages [py-madvr]: New version: [1.3.14] Old Version: [1.3.13]
+[2023-05-14 18:42:17] INFO root fetch - processPackages [patchworklib]: New version: [0.6.0] Old Version: [0.5.2]
+[2023-05-14 18:42:17] INFO root fetch - processPackages [SantorinAI]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-14 18:42:17] WARNING root fetch - processPackages [quant-invest-lab]: Skipping, unable to determine old version
+[2023-05-14 18:42:17] INFO root fetch - main [MainThread]: End processing [quant-invest-lab] error
+[2023-05-14 18:42:17] INFO root fetch - processPackages [speech-collator]: Downloading https://files.pythonhosted.org/packages/84/41/0de2ee1a8b5fd2aed4ccbe0f3922f756f0e73c3d5a085cabd9e5fbb3627f/speech_collator-0.1.0.tar.gz
+[2023-05-14 18:42:17] INFO root fetch - processPackages [py-madvr]: Downloading https://files.pythonhosted.org/packages/de/18/d0b9c6108b51df2fa8ab5538ca9281a8e1360f4821f6b72a065ce8a73fee/py_madvr-1.3.13.tar.gz
+[2023-05-14 18:42:17] INFO root fetch - processPackages [patchworklib]: Downloading https://files.pythonhosted.org/packages/3d/99/26327e0db03174fac47e4a2b3cd1054ebebad8a0de4794ba78bc82432852/patchworklib-0.5.2.tar.gz
+[2023-05-14 18:42:17] INFO root fetch - processPackages [SantorinAI]: Downloading https://files.pythonhosted.org/packages/a3/c9/c880f5bf4ae540987949a1128049ff459c081b6cba3f32e5de494d3e1bc2/SantorinAI-1.2.1.tar.gz
+[2023-05-14 18:42:17] INFO root fetch - processPackages [SantorinAI]: executing diffoscope
+[2023-05-14 18:42:17] INFO root fetch - processPackages [SantorinAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SantorinAI-1.2.0.tar.gz tmp/SantorinAI-1.2.1.tar.gz --markdown 20230514/S/SantorinAI/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-14 18:42:17] INFO root fetch - processPackages [speech-collator]: Downloading https://files.pythonhosted.org/packages/08/60/e9b1ec4b3c840dbf3bcc7089d2e60afa1b774233766d049fe91f52c307bb/speech_collator-0.1.2.tar.gz
+[2023-05-14 18:42:17] INFO root fetch - processPackages [py-madvr]: Downloading https://files.pythonhosted.org/packages/08/f0/d65ebe043410ba06347870c2cff7a564c5abf3573b170c31c1bfa09f20b7/py_madvr-1.3.14.tar.gz
+[2023-05-14 18:42:17] INFO root fetch - processPackages [patchworklib]: Downloading https://files.pythonhosted.org/packages/55/bf/cf23b4e581590b0edc6926248636ee16e8470c8f29a42aabef807b4318b3/patchworklib-0.6.0.tar.gz
+[2023-05-14 18:42:18] INFO root fetch - processPackages [py-madvr]: executing diffoscope
+[2023-05-14 18:42:18] INFO root fetch - processPackages [py-madvr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_madvr-1.3.13.tar.gz tmp/py_madvr-1.3.14.tar.gz --markdown 20230514/p/py-madvr/1.3.13-1.3.14/diff.md --exclude *.pyd
+[2023-05-14 18:42:18] INFO root fetch - processPackages [patchworklib]: executing diffoscope
+[2023-05-14 18:42:18] INFO root fetch - processPackages [patchworklib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/patchworklib-0.5.2.tar.gz tmp/patchworklib-0.6.0.tar.gz --markdown 20230514/p/patchworklib/0.5.2-0.6.0/diff.md --exclude *.pyd
+[2023-05-14 18:42:18] INFO root fetch - processPackages [speech-collator]: executing diffoscope
+[2023-05-14 18:42:18] INFO root fetch - processPackages [speech-collator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speech_collator-0.1.0.tar.gz tmp/speech_collator-0.1.2.tar.gz --markdown 20230514/s/speech-collator/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-05-14 18:42:19] INFO root fetch - main [MainThread]: End processing [py-madvr]: success
+[2023-05-14 18:42:19] INFO root fetch - main [MainThread]: End processing [SantorinAI]: success
+[2023-05-14 18:42:19] INFO root fetch - main [MainThread]: End processing [patchworklib]: success
+[2023-05-14 18:42:19] INFO root fetch - main [MainThread]: End processing [speech-collator]: success
+[2023-05-14 18:42:19] INFO root fetch - main [MainThread]: Store serial: [18098508]
