@@ -7802,3 +7802,53 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 17:33:41] ERROR root fetch - processPackages [westat]: Timeout during execution of pkgdiff
 [2023-05-14 17:33:41] INFO root fetch - main [MainThread]: End processing [westat] error
 [2023-05-14 17:33:41] INFO root fetch - main [MainThread]: Store serial: [18098076]
+[2023-05-14 17:38:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098076]
+[2023-05-14 17:38:50] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-14 17:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: emi-calculator
+[2023-05-14 17:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: elementary-data
+[2023-05-14 17:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: zyncify
+[2023-05-14 17:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: vollseg
+[2023-05-14 17:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sylk
+[2023-05-14 17:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: foldingdiff-pytorch
+[2023-05-14 17:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lecture-automator
+[2023-05-14 17:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: mini-lightning
+[2023-05-14 17:38:50] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: gma
+[2023-05-14 17:38:50] WARNING root fetch - processPackages [sylk]: Skipping, unable to determine old version
+[2023-05-14 17:38:50] INFO root fetch - main [MainThread]: End processing [sylk] error
+[2023-05-14 17:38:50] WARNING root fetch - processPackages [emi-calculator]: Skipping, unable to determine old version
+[2023-05-14 17:38:50] WARNING root fetch - processPackages [foldingdiff-pytorch]: Skipping, unable to determine old version
+[2023-05-14 17:38:50] INFO root fetch - main [MainThread]: End processing [emi-calculator] error
+[2023-05-14 17:38:50] INFO root fetch - main [MainThread]: End processing [foldingdiff-pytorch] error
+[2023-05-14 17:38:50] INFO root fetch - processPackages [elementary-data]: New version: [0.7.9] Old Version: [0.7.8]
+[2023-05-14 17:38:50] INFO root fetch - processPackages [lecture-automator]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-14 17:38:50] INFO root fetch - processPackages [zyncify]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-14 17:38:50] INFO root fetch - processPackages [mini-lightning]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-14 17:38:50] INFO root fetch - processPackages [gma]: New version: [2.0.0a1] Old Version: [1.1.6]
+[2023-05-14 17:38:50] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-05-14 17:38:50] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-05-14 17:38:50] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-05-14 17:38:50] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-05-14 17:38:50] INFO root fetch - processPackages [elementary-data]: Downloading https://files.pythonhosted.org/packages/23/c9/8ad372c650c1632ddf4c068f45dbaa1c9c0843d057feb9977996f24162c8/elementary-data-0.7.8.tar.gz
+[2023-05-14 17:38:50] INFO root fetch - processPackages [gma]: Downloading https://files.pythonhosted.org/packages/5f/43/060478446be5de356c4f47eda7a0d1c5f08da1108011dfe17c0eec16ecda/gma-1.1.6-cp39-cp39-win_amd64.whl
+[2023-05-14 17:38:50] INFO root fetch - processPackages [mini-lightning]: Downloading https://files.pythonhosted.org/packages/e4/d1/4b1946adc9573d362e76fb45e4c505d07147b4a4d9684d06ed6021972a2b/mini-lightning-0.2.0.tar.gz
+[2023-05-14 17:38:51] INFO root fetch - processPackages [lecture-automator]: Downloading https://files.pythonhosted.org/packages/94/8a/eb47687d3f3d53be93c607070933d0ca4724ccad2cdc9c95bcebdeeabc75/lecture_automator-1.1.0.tar.gz
+[2023-05-14 17:38:51] INFO root fetch - processPackages [zyncify]: Downloading https://files.pythonhosted.org/packages/50/d3/e1fea2e02b2ade044b7f566e589f970f6d87e85ee0c9932940fc9aa78c28/zyncify-0.1.4-py2.py3-none-any.whl
+[2023-05-14 17:38:51] INFO root fetch - processPackages [elementary-data]: Downloading https://files.pythonhosted.org/packages/75/60/3fa2a4cf528b6fbe025e9ad2418fe56aade320806bd21ab1e3705ec461d8/elementary-data-0.7.9.tar.gz
+[2023-05-14 17:38:51] INFO root fetch - processPackages [lecture-automator]: executing diffoscope
+[2023-05-14 17:38:51] INFO root fetch - processPackages [lecture-automator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lecture_automator-1.0.0.tar.gz tmp/lecture_automator-1.1.0.tar.gz --markdown 20230514/l/lecture-automator/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 17:38:51] INFO root fetch - processPackages [zyncify]: executing diffoscope
+[2023-05-14 17:38:51] INFO root fetch - processPackages [zyncify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zyncify-0.1.3-py2.py3-none-any.whl.zip tmp/zyncify-0.1.4-py2.py3-none-any.whl.zip --markdown 20230514/z/zyncify/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-14 17:38:51] INFO root fetch - processPackages [elementary-data]: executing diffoscope
+[2023-05-14 17:38:51] INFO root fetch - processPackages [elementary-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elementary-data-0.7.8.tar.gz tmp/elementary-data-0.7.9.tar.gz --markdown 20230514/e/elementary-data/0.7.8-0.7.9/diff.md --exclude *.pyd
+[2023-05-14 17:38:51] INFO root fetch - processPackages [mini-lightning]: Downloading https://files.pythonhosted.org/packages/09/24/022a9ae2071d390381cbd1e39baae6e1023a33759779b574123eb3fb964a/mini-lightning-0.2.1.tar.gz
+[2023-05-14 17:38:51] INFO root fetch - processPackages [mini-lightning]: executing diffoscope
+[2023-05-14 17:38:51] INFO root fetch - processPackages [mini-lightning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mini-lightning-0.2.0.tar.gz tmp/mini-lightning-0.2.1.tar.gz --markdown 20230514/m/mini-lightning/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-14 17:38:51] INFO root fetch - processPackages [gma]: Downloading https://files.pythonhosted.org/packages/0b/6d/3166513c8d1a54d5ef95f6ab7941d2e010cccb466f56b84a520f9e0e5024/gma-2.0.0a1-cp311-cp311-win_amd64.whl
+[2023-05-14 17:38:52] INFO root fetch - main [MainThread]: End processing [zyncify]: success
+[2023-05-14 17:38:52] INFO root fetch - main [MainThread]: End processing [lecture-automator]: success
+[2023-05-14 17:38:52] INFO root fetch - main [MainThread]: End processing [mini-lightning]: success
+[2023-05-14 17:38:52] INFO root fetch - processPackages [gma]: executing diffoscope
+[2023-05-14 17:38:52] INFO root fetch - processPackages [gma]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gma-1.1.6-cp39-cp39-win_amd64.whl.zip tmp/gma-2.0.0a1-cp311-cp311-win_amd64.whl.zip --markdown 20230514/g/gma/1.1.6-2.0.0a1/diff.md --exclude *.pyd
+[2023-05-14 17:38:53] INFO root fetch - main [MainThread]: End processing [elementary-data]: success
+[2023-05-14 17:38:54] INFO root fetch - main [MainThread]: End processing [gma]: success
+[2023-05-14 17:38:54] INFO root fetch - main [MainThread]: Store serial: [18098106]
