@@ -10735,3 +10735,116 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 22:41:53] INFO root fetch - main [MainThread]: End processing [wiremock]: success
 [2023-05-14 22:42:31] INFO root fetch - main [MainThread]: End processing [Red-DiscordBot]: success
 [2023-05-14 22:42:31] INFO root fetch - main [MainThread]: Store serial: [18099884]
+[2023-05-14 22:47:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18099884]
+[2023-05-14 22:47:43] INFO root fetch - main [MainThread]: Found 20 changed packages
+[2023-05-14 22:47:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: axios
+[2023-05-14 22:47:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: n0struct
+[2023-05-14 22:47:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xmlable
+[2023-05-14 22:47:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ultima-scraper-renamer
+[2023-05-14 22:47:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-madvr
+[2023-05-14 22:47:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: wireprobe
+[2023-05-14 22:47:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nonebot-plugin-multincm
+[2023-05-14 22:47:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: terka
+[2023-05-14 22:47:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bytez
+[2023-05-14 22:47:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: forager-toolkit
+[2023-05-14 22:47:43] INFO root fetch - processPackages [ultima-scraper-renamer]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-14 22:47:43] INFO root fetch - processPackages [axios]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-14 22:47:43] INFO root fetch - processPackages [xmlable]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-14 22:47:43] WARNING root fetch - processPackages [forager-toolkit]: Skipping, unable to determine old version
+[2023-05-14 22:47:43] INFO root fetch - processPackages [forager-toolkit]: Start processing: npf-web-extension
+[2023-05-14 22:47:43] INFO root fetch - main [MainThread]: End processing [forager-toolkit] error
+[2023-05-14 22:47:43] INFO root fetch - processPackages [wireprobe]: New version: [0.1.9] Old Version: [0.1.7]
+[2023-05-14 22:47:43] WARNING root fetch - processPackages [nonebot-plugin-multincm]: Skipping, unable to determine old version
+[2023-05-14 22:47:43] INFO root fetch - processPackages [nonebot-plugin-multincm]: Start processing: bytez
+[2023-05-14 22:47:43] INFO root fetch - processPackages [py-madvr]: New version: [1.4.1] Old Version: [1.4.0]
+[2023-05-14 22:47:43] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-multincm] error
+[2023-05-14 22:47:43] INFO root fetch - processPackages [bytez]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 22:47:43] INFO root fetch - processPackages [n0struct]: New version: [0.2.97] Old Version: [0.2.96]
+[2023-05-14 22:47:43] INFO root fetch - processPackages [terka]: New version: [1.9.0.1] Old Version: [1.9.0]
+[2023-05-14 22:47:43] INFO root fetch - processPackages [npf-web-extension]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-14 22:47:43] INFO root fetch - processPackages [bytez]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 22:47:43] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-14 22:47:43] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.8.tar.gz tmp/bytez-0.1.9.tar.gz --markdown 20230514/b/bytez/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 22:47:43] INFO root fetch - processPackages [xmlable]: Downloading https://files.pythonhosted.org/packages/19/5f/bb8d0e2925e09c1a6decd354045b10a8ea0f0c8fca7803461a848871e473/xmlable-1.0.0.tar.gz
+[2023-05-14 22:47:43] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-14 22:47:43] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.8.tar.gz tmp/bytez-0.1.9.tar.gz --markdown 20230514/b/bytez/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 22:47:43] INFO root fetch - processPackages [ultima-scraper-renamer]: Downloading https://files.pythonhosted.org/packages/58/6b/dab179979affd1c6cf273a8720767c4f6ecc0204f3d68888ea93ae1fdc1a/ultima_scraper_renamer-1.0.0.tar.gz
+[2023-05-14 22:47:43] INFO root fetch - processPackages [terka]: Downloading https://files.pythonhosted.org/packages/34/ba/c3e2ae74e1a99538234788807b0edce3bc51da33682eb000f60298ebd003/terka-1.9.0.tar.gz
+[2023-05-14 22:47:43] INFO root fetch - processPackages [axios]: Downloading https://files.pythonhosted.org/packages/be/2a/994a1788c2105628671ea629524063733f13a6324d8733c3f96f3ffdbee0/axios-0.3.0.tar.gz
+[2023-05-14 22:47:43] INFO root fetch - processPackages [npf-web-extension]: Downloading https://files.pythonhosted.org/packages/9c/61/fe362785d6b27792dc2b7449f7423d9d41eca1ad793ce8d57df7f36c090f/npf-web-extension-0.6.0.tar.gz
+[2023-05-14 22:47:43] INFO root fetch - processPackages [wireprobe]: executing diffoscope
+[2023-05-14 22:47:44] INFO root fetch - processPackages [wireprobe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wireprobe-0.1.7.tar.gz tmp/wireprobe-0.1.9.tar.gz --markdown 20230514/w/wireprobe/0.1.7-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 22:47:44] INFO root fetch - processPackages [py-madvr]: Downloading https://files.pythonhosted.org/packages/9e/6d/c2447b157a281ba2f8ab9568acb31f4aa434434887d7e09eb46adde74320/py_madvr-1.4.1.tar.gz
+[2023-05-14 22:47:44] INFO root fetch - processPackages [n0struct]: Downloading https://files.pythonhosted.org/packages/7b/b0/fe255c971034ac8b120a70ec288904f63b441c1661e4d018a75025b74d5c/n0struct-0.2.97.tar.gz
+[2023-05-14 22:47:44] INFO root fetch - processPackages [ultima-scraper-renamer]: Downloading https://files.pythonhosted.org/packages/fc/80/2b98924a6ba3245e9d7d9e0d6ae43410d8ee17ee8e5b119169198d185f4a/ultima_scraper_renamer-1.1.0.tar.gz
+[2023-05-14 22:47:44] INFO root fetch - processPackages [terka]: Downloading https://files.pythonhosted.org/packages/ce/06/d30eea5ba4fcc328da1214249dc121b377fb50fb662ebccb026c29829b5d/terka-1.9.0.1.tar.gz
+[2023-05-14 22:47:44] INFO root fetch - processPackages [xmlable]: Downloading https://files.pythonhosted.org/packages/08/10/5fe3131779e1c0645057340676ebe63c4b83f8d426349cb5c8f49209794c/xmlable-1.0.1.tar.gz
+[2023-05-14 22:47:44] INFO root fetch - processPackages [axios]: Downloading https://files.pythonhosted.org/packages/48/94/21ff5540d5a618dd9d10875b7297131d58ebd55b8a96a0622df9f90548a5/axios-0.4.0.tar.gz
+[2023-05-14 22:47:44] INFO root fetch - processPackages [ultima-scraper-renamer]: executing diffoscope
+[2023-05-14 22:47:44] INFO root fetch - processPackages [ultima-scraper-renamer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultima_scraper_renamer-1.0.0.tar.gz tmp/ultima_scraper_renamer-1.1.0.tar.gz --markdown 20230514/u/ultima-scraper-renamer/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 22:47:44] INFO root fetch - processPackages [n0struct]: executing diffoscope
+[2023-05-14 22:47:44] INFO root fetch - processPackages [n0struct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/n0struct-0.2.96.tar.gz tmp/n0struct-0.2.97.tar.gz --markdown 20230514/n/n0struct/0.2.96-0.2.97/diff.md --exclude *.pyd
+[2023-05-14 22:47:44] INFO root fetch - processPackages [npf-web-extension]: Downloading https://files.pythonhosted.org/packages/c7/ba/77e052d42f8d9c2d5dcbf3321be3f2aa5bcafafa0d7602d7ca206da116f6/npf-web-extension-0.6.1.tar.gz
+[2023-05-14 22:47:44] INFO root fetch - processPackages [py-madvr]: executing diffoscope
+[2023-05-14 22:47:44] INFO root fetch - processPackages [py-madvr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_madvr-1.4.0.tar.gz tmp/py_madvr-1.4.1.tar.gz --markdown 20230514/p/py-madvr/1.4.0-1.4.1/diff.md --exclude *.pyd
+[2023-05-14 22:47:44] INFO root fetch - processPackages [terka]: executing diffoscope
+[2023-05-14 22:47:44] INFO root fetch - processPackages [terka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terka-1.9.0.tar.gz tmp/terka-1.9.0.1.tar.gz --markdown 20230514/t/terka/1.9.0-1.9.0.1/diff.md --exclude *.pyd
+[2023-05-14 22:47:44] INFO root fetch - processPackages [axios]: executing diffoscope
+[2023-05-14 22:47:44] INFO root fetch - processPackages [axios]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/axios-0.3.0.tar.gz tmp/axios-0.4.0.tar.gz --markdown 20230514/a/axios/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-14 22:47:44] INFO root fetch - processPackages [xmlable]: executing diffoscope
+[2023-05-14 22:47:44] INFO root fetch - processPackages [xmlable]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xmlable-1.0.0.tar.gz tmp/xmlable-1.0.1.tar.gz --markdown 20230514/x/xmlable/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-14 22:47:44] INFO root fetch - processPackages [npf-web-extension]: executing diffoscope
+[2023-05-14 22:47:44] INFO root fetch - processPackages [npf-web-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/npf-web-extension-0.6.0.tar.gz tmp/npf-web-extension-0.6.1.tar.gz --markdown 20230514/n/npf-web-extension/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-14 22:47:45] INFO root fetch - processPackages [bytez]: Start processing: keras-gpt-copilot
+[2023-05-14 22:47:45] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-14 22:47:45] WARNING root fetch - processPackages [keras-gpt-copilot]: Skipping, unable to determine old version
+[2023-05-14 22:47:45] INFO root fetch - processPackages [keras-gpt-copilot]: Start processing: bytez
+[2023-05-14 22:47:45] INFO root fetch - main [MainThread]: End processing [keras-gpt-copilot] error
+[2023-05-14 22:47:45] INFO root fetch - processPackages [bytez]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 22:47:45] INFO root fetch - processPackages [wireprobe]: Start processing: constrainedlr
+[2023-05-14 22:47:45] INFO root fetch - main [MainThread]: End processing [wireprobe]: success
+[2023-05-14 22:47:45] INFO root fetch - processPackages [constrainedlr]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-14 22:47:45] INFO root fetch - processPackages [bytez]: Start processing: pytheus
+[2023-05-14 22:47:45] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-14 22:47:45] INFO root fetch - processPackages [pytheus]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 22:47:45] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-14 22:47:45] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.8.tar.gz tmp/bytez-0.1.9.tar.gz --markdown 20230514/b/bytez/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 22:47:45] INFO root fetch - processPackages [constrainedlr]: Downloading https://files.pythonhosted.org/packages/5d/1f/31b2a13d4e00ecfb3a02e2d95b5c28cd346402d4b646d81b22ee719aae4c/constrainedlr-0.0.6.tar.gz
+[2023-05-14 22:47:45] INFO root fetch - processPackages [ultima-scraper-renamer]: Start processing: terka
+[2023-05-14 22:47:45] INFO root fetch - main [MainThread]: End processing [ultima-scraper-renamer]: success
+[2023-05-14 22:47:45] INFO root fetch - processPackages [terka]: New version: [1.9.0.1] Old Version: [1.9.0]
+[2023-05-14 22:47:45] INFO root fetch - processPackages [pytheus]: Downloading https://files.pythonhosted.org/packages/44/24/ddb8d3e3971c71fb37193e96548dd63417bd2d1fd9228d2d99a262621966/pytheus-0.0.8.tar.gz
+[2023-05-14 22:47:45] INFO root fetch - processPackages [terka]: executing diffoscope
+[2023-05-14 22:47:45] INFO root fetch - processPackages [terka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/terka-1.9.0.tar.gz tmp/terka-1.9.0.1.tar.gz --markdown 20230514/t/terka/1.9.0-1.9.0.1/diff.md --exclude *.pyd
+[2023-05-14 22:47:45] INFO root fetch - processPackages [py-madvr]: Start processing: kirznerSerializer
+[2023-05-14 22:47:45] INFO root fetch - main [MainThread]: End processing [py-madvr]: success
+[2023-05-14 22:47:45] WARNING root fetch - processPackages [kirznerSerializer]: Skipping, unable to determine old version
+[2023-05-14 22:47:45] INFO root fetch - processPackages [kirznerSerializer]: Start processing: recruitment-employer-local
+[2023-05-14 22:47:45] INFO root fetch - main [MainThread]: End processing [kirznerSerializer] error
+[2023-05-14 22:47:45] INFO root fetch - processPackages [recruitment-employer-local]: New version: [0.0.19] Old Version: [0.0.18]
+[2023-05-14 22:47:45] INFO root fetch - processPackages [constrainedlr]: Downloading https://files.pythonhosted.org/packages/69/54/caf8224afeb76e6e2f6af2d8cd1a92623e78c821b2668d77c82761f07af7/constrainedlr-0.0.7.tar.gz
+[2023-05-14 22:47:45] INFO root fetch - processPackages [constrainedlr]: executing diffoscope
+[2023-05-14 22:47:45] INFO root fetch - processPackages [constrainedlr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/constrainedlr-0.0.6.tar.gz tmp/constrainedlr-0.0.7.tar.gz --markdown 20230514/c/constrainedlr/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-14 22:47:45] INFO root fetch - processPackages [n0struct]: Start processing: gcsaws
+[2023-05-14 22:47:45] INFO root fetch - main [MainThread]: End processing [n0struct]: success
+[2023-05-14 22:47:45] INFO root fetch - processPackages [recruitment-employer-local]: Downloading https://files.pythonhosted.org/packages/00/c4/ffcb920107e4fd1d303e89d98b6a4c148e5da0dc337e9fde1df10864bb55/recruitment-employer-local-0.0.18.tar.gz
+[2023-05-14 22:47:45] INFO root fetch - processPackages [gcsaws]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 22:47:46] INFO root fetch - main [MainThread]: End processing [terka]: success
+[2023-05-14 22:47:46] INFO root fetch - processPackages [pytheus]: Downloading https://files.pythonhosted.org/packages/81/91/2118822eee94be679af19c9fd9c9bfe2289d5eeb0f18883b2bfbdeeba393/pytheus-0.0.9.tar.gz
+[2023-05-14 22:47:46] INFO root fetch - processPackages [gcsaws]: executing diffoscope
+[2023-05-14 22:47:46] INFO root fetch - processPackages [gcsaws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcsaws-0.0.8.tar.gz tmp/gcsaws-0.0.9.tar.gz --markdown 20230514/g/gcsaws/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 22:47:46] INFO root fetch - main [MainThread]: End processing [axios]: success
+[2023-05-14 22:47:46] INFO root fetch - processPackages [pytheus]: executing diffoscope
+[2023-05-14 22:47:46] INFO root fetch - processPackages [pytheus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytheus-0.0.8.tar.gz tmp/pytheus-0.0.9.tar.gz --markdown 20230514/p/pytheus/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 22:47:46] INFO root fetch - processPackages [recruitment-employer-local]: Downloading https://files.pythonhosted.org/packages/24/c4/ee71b04653a6bbfb04fc79bf6f61644fe74a66d5707e8042c3105565f63f/recruitment-employer-local-0.0.19.tar.gz
+[2023-05-14 22:47:46] INFO root fetch - processPackages [recruitment-employer-local]: executing diffoscope
+[2023-05-14 22:47:46] INFO root fetch - processPackages [recruitment-employer-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/recruitment-employer-local-0.0.18.tar.gz tmp/recruitment-employer-local-0.0.19.tar.gz --markdown 20230514/r/recruitment-employer-local/0.0.18-0.0.19/diff.md --exclude *.pyd
+[2023-05-14 22:47:46] INFO root fetch - main [MainThread]: End processing [xmlable]: success
+[2023-05-14 22:47:46] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-14 22:47:47] INFO root fetch - main [MainThread]: End processing [terka]: success
+[2023-05-14 22:47:47] INFO root fetch - main [MainThread]: End processing [constrainedlr]: success
+[2023-05-14 22:47:47] INFO root fetch - main [MainThread]: End processing [gcsaws]: success
+[2023-05-14 22:47:47] INFO root fetch - main [MainThread]: End processing [pytheus]: success
+[2023-05-14 22:47:47] INFO root fetch - main [MainThread]: End processing [recruitment-employer-local]: success
+[2023-05-14 22:47:48] INFO root fetch - main [MainThread]: End processing [npf-web-extension]: success
+[2023-05-14 22:47:48] INFO root fetch - main [MainThread]: Store serial: [18099950]
