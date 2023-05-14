@@ -8603,3 +8603,58 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 18:58:39] INFO root fetch - main [MainThread]: End processing [liitos]: success
 [2023-05-14 18:58:44] INFO root fetch - main [MainThread]: End processing [cosmic-profiles]: success
 [2023-05-14 18:58:44] INFO root fetch - main [MainThread]: Store serial: [18098623]
+[2023-05-14 19:03:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098623]
+[2023-05-14 19:03:54] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-14 19:03:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datazets
+[2023-05-14 19:03:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: linearSubproblemSltns
+[2023-05-14 19:03:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pipe21
+[2023-05-14 19:03:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hyped
+[2023-05-14 19:03:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hordelib
+[2023-05-14 19:03:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdp-backend
+[2023-05-14 19:03:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cwsearch-utils
+[2023-05-14 19:03:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyhanko-certvalidator
+[2023-05-14 19:03:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: fieldedge-utilities
+[2023-05-14 19:03:54] INFO root fetch - processPackages [datazets]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-14 19:03:54] INFO root fetch - processPackages [linearSubproblemSltns]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-14 19:03:54] INFO root fetch - processPackages [pipe21]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-14 19:03:54] INFO root fetch - processPackages [hordelib]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-14 19:03:54] INFO root fetch - processPackages [hyped]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-14 19:03:54] INFO root fetch - processPackages [cwsearch-utils]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 19:03:54] INFO root fetch - processPackages [pyhanko-certvalidator]: New version: [0.23.0] Old Version: [0.22.0]
+[2023-05-14 19:03:54] INFO root fetch - processPackages [cdp-backend]: New version: [4.1.0rc2] Old Version: [4.1.0rc1]
+[2023-05-14 19:03:54] INFO root fetch - processPackages [fieldedge-utilities]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-14 19:03:54] INFO root fetch - processPackages [linearSubproblemSltns]: Downloading https://files.pythonhosted.org/packages/bb/7b/abec88073ce9985f655c3489ef224f743a702159641c794cc8e3ff7a28ac/linearsubproblemsltns-1.0.2.tar.gz
+[2023-05-14 19:03:54] INFO root fetch - processPackages [fieldedge-utilities]: executing diffoscope
+[2023-05-14 19:03:54] INFO root fetch - processPackages [fieldedge-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fieldedge-utilities-0.9.4.tar.gz tmp/fieldedge-utilities-0.9.5.tar.gz --markdown 20230514/f/fieldedge-utilities/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-14 19:03:54] INFO root fetch - processPackages [hordelib]: Downloading https://files.pythonhosted.org/packages/3b/73/c971177ce0b8c5cf3d8be5b9388c084482b156eac2c5981c448b76f59820/hordelib-1.0.1.tar.gz
+[2023-05-14 19:03:54] INFO root fetch - processPackages [hyped]: Downloading https://files.pythonhosted.org/packages/43/d2/81b8f6dcc547354751eae4ae04d43b9d557d3aee133f2867c0b405da47b7/hyped-0.0.3.tar.gz
+[2023-05-14 19:03:54] INFO root fetch - processPackages [pyhanko-certvalidator]: Downloading https://files.pythonhosted.org/packages/3d/ef/1cf2e23b9ce29ccd2664abeb87ca2138e9650bbf15eeb20ad811671b1bc9/pyhanko-certvalidator-0.22.0.tar.gz
+[2023-05-14 19:03:54] INFO root fetch - processPackages [cdp-backend]: Downloading https://files.pythonhosted.org/packages/6a/6a/905360ac47f13fcbcea1457892472f71ca879bbce141c927f4107f3bb262/cdp-backend-4.1.0rc1.tar.gz
+[2023-05-14 19:03:54] INFO root fetch - processPackages [datazets]: Downloading https://files.pythonhosted.org/packages/cb/eb/04024a71ccae1fb21f04b3bf951431e133b5f72ea20701031e2159eac6cf/datazets-0.1.4.tar.gz
+[2023-05-14 19:03:54] INFO root fetch - processPackages [hyped]: executing diffoscope
+[2023-05-14 19:03:54] INFO root fetch - processPackages [hyped]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyped-0.0.2.tar.gz tmp/hyped-0.0.3.tar.gz --markdown 20230514/h/hyped/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-14 19:03:54] INFO root fetch - processPackages [linearSubproblemSltns]: Downloading https://files.pythonhosted.org/packages/92/26/c6946e212c8bf3d05f90e07e7a04c1d850f94586cd7c37f7ce44c7e542ba/linearsubproblemsltns-1.0.3.tar.gz
+[2023-05-14 19:03:54] WARNING root fetch - processPackages [cdp-backend]: Skipping package: exceeds size limit 50966045>=10485760
+[2023-05-14 19:03:54] INFO root fetch - main [MainThread]: End processing [cdp-backend] error
+[2023-05-14 19:03:55] INFO root fetch - processPackages [cwsearch-utils]: executing diffoscope
+[2023-05-14 19:03:55] INFO root fetch - processPackages [cwsearch-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cwsearch_utils-0.1.8-py3-none-any.whl.zip tmp/cwsearch_utils-0.1.9-py3-none-any.whl.zip --markdown 20230514/c/cwsearch-utils/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 19:03:55] INFO root fetch - processPackages [pipe21]: executing diffoscope
+[2023-05-14 19:03:55] INFO root fetch - processPackages [pipe21]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipe21-1.8.0.tar.gz tmp/pipe21-1.9.0.tar.gz --markdown 20230514/p/pipe21/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-14 19:03:55] INFO root fetch - processPackages [datazets]: executing diffoscope
+[2023-05-14 19:03:55] INFO root fetch - processPackages [datazets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datazets-0.1.3.tar.gz tmp/datazets-0.1.4.tar.gz --markdown 20230514/d/datazets/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-14 19:03:55] INFO root fetch - processPackages [linearSubproblemSltns]: executing diffoscope
+[2023-05-14 19:03:55] INFO root fetch - processPackages [linearSubproblemSltns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linearsubproblemsltns-1.0.2.tar.gz tmp/linearsubproblemsltns-1.0.3.tar.gz --markdown 20230514/l/linearSubproblemSltns/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-14 19:03:55] INFO root fetch - processPackages [pyhanko-certvalidator]: Downloading https://files.pythonhosted.org/packages/d1/bc/9eb9f44756af88aa57e78f78d6365e58260718fbffbe42f81d1a7be7a279/pyhanko-certvalidator-0.23.0.tar.gz
+[2023-05-14 19:03:55] INFO root fetch - processPackages [pyhanko-certvalidator]: executing diffoscope
+[2023-05-14 19:03:55] INFO root fetch - processPackages [pyhanko-certvalidator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyhanko-certvalidator-0.22.0.tar.gz tmp/pyhanko-certvalidator-0.23.0.tar.gz --markdown 20230514/p/pyhanko-certvalidator/0.22.0-0.23.0/diff.md --exclude *.pyd
+[2023-05-14 19:03:56] INFO root fetch - main [MainThread]: End processing [fieldedge-utilities]: success
+[2023-05-14 19:03:56] INFO root fetch - main [MainThread]: End processing [hyped]: success
+[2023-05-14 19:03:56] INFO root fetch - main [MainThread]: End processing [cwsearch-utils]: success
+[2023-05-14 19:03:56] INFO root fetch - main [MainThread]: End processing [linearSubproblemSltns]: success
+[2023-05-14 19:03:56] INFO root fetch - main [MainThread]: End processing [datazets]: success
+[2023-05-14 19:03:56] INFO root fetch - main [MainThread]: End processing [pipe21]: success
+[2023-05-14 19:03:56] INFO root fetch - main [MainThread]: End processing [pyhanko-certvalidator]: success
+[2023-05-14 19:04:11] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-05-14 19:04:11] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-1.0.0.tar.gz tmp/hordelib-1.0.1.tar.gz --markdown 20230514/h/hordelib/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-14 19:04:19] INFO root fetch - main [MainThread]: End processing [hordelib]: success
+[2023-05-14 19:04:19] INFO root fetch - main [MainThread]: Store serial: [18098650]
