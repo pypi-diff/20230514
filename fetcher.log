@@ -4519,3 +4519,61 @@
 [2023-05-14 11:38:09] INFO root fetch - main [MainThread]: End processing [knowledgebase-gsheet-gpt]: success
 [2023-05-14 11:38:09] INFO root fetch - main [MainThread]: End processing [xdat]: success
 [2023-05-14 11:38:09] INFO root fetch - main [MainThread]: Store serial: [18096120]
+[2023-05-14 11:43:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096120]
+[2023-05-14 11:43:19] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-14 11:43:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: embody-file
+[2023-05-14 11:43:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trojanzoo-sphinx-theme
+[2023-05-14 11:43:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nazo-image-utils
+[2023-05-14 11:43:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: worktoy
+[2023-05-14 11:43:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-shays-CERT-2066-b
+[2023-05-14 11:43:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tarvis-exchange-woo
+[2023-05-14 11:43:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: certora-cli-alpha-jtoman-try-catch
+[2023-05-14 11:43:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: certora-cli-alpha-jtoman-infinite-loop-fix
+[2023-05-14 11:43:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: code-loader
+[2023-05-14 11:43:19] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-2066-b]: New version: [20230514.9.41.873976] Old Version: [20230511.15.2.969910]
+[2023-05-14 11:43:19] INFO root fetch - processPackages [tarvis-exchange-woo]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-14 11:43:19] INFO root fetch - processPackages [worktoy]: New version: [0.28] Old Version: [0.25]
+[2023-05-14 11:43:19] INFO root fetch - processPackages [embody-file]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-14 11:43:19] INFO root fetch - processPackages [trojanzoo-sphinx-theme]: New version: [1.0.0] Old Version: [0.1.5]
+[2023-05-14 11:43:19] INFO root fetch - processPackages [nazo-image-utils]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-14 11:43:19] INFO root fetch - processPackages [certora-cli-alpha-jtoman-try-catch]: New version: [20230514.9.42.407] Old Version: [20230512.9.39.729450]
+[2023-05-14 11:43:19] INFO root fetch - processPackages [certora-cli-alpha-jtoman-infinite-loop-fix]: New version: [20230514.9.42.756705] Old Version: [20230512.9.39.601040]
+[2023-05-14 11:43:19] INFO root fetch - processPackages [tarvis-exchange-woo]: Downloading https://files.pythonhosted.org/packages/ae/73/43878c00718e829f2bf41d108a8079e7f748e30929b6dcdd9d83e4e9e69f/tarvis-exchange-woo-0.9.5.tar.gz
+[2023-05-14 11:43:19] INFO root fetch - processPackages [code-loader]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-14 11:43:19] INFO root fetch - processPackages [certora-cli-alpha-shays-CERT-2066-b]: Downloading https://files.pythonhosted.org/packages/67/cc/d1e73507b2e8c239d8aa421fffef4999cb8a948277d6cccde55d49db7498/certora-cli-alpha-shays-CERT-2066-b-20230511.15.2.969910.tar.gz
+[2023-05-14 11:43:19] INFO root fetch - processPackages [embody-file]: Downloading https://files.pythonhosted.org/packages/fb/98/6a49d4d86c36168a3fa9b55946a452a4fd21063cbceafa32b3985bb017d5/embody_file-1.0.8.tar.gz
+[2023-05-14 11:43:19] INFO root fetch - processPackages [trojanzoo-sphinx-theme]: Downloading https://files.pythonhosted.org/packages/2c/7c/c4a4eb77905c2c2bee128642278d1d82096dc9ca2a52eadd2b9309599422/trojanzoo_sphinx_theme-0.1.5.tar.gz
+[2023-05-14 11:43:20] INFO root fetch - processPackages [nazo-image-utils]: Downloading https://files.pythonhosted.org/packages/53/2c/b4c96a0f71b9ef7e8fb2dbd2f4cad8e23281fa1b8093853f79e929cee8fa/nazo_image_utils-0.0.3.tar.gz
+[2023-05-14 11:43:20] WARNING root fetch - processPackages [certora-cli-alpha-shays-CERT-2066-b]: Skipping package: exceeds size limit 38474393>=10485760
+[2023-05-14 11:43:20] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shays-CERT-2066-b] error
+[2023-05-14 11:43:20] INFO root fetch - processPackages [certora-cli-alpha-jtoman-try-catch]: Downloading https://files.pythonhosted.org/packages/2f/e7/e7fced32071c87a61e95a99e8920f0f486b1426cec898d8b8dffb8585c36/certora-cli-alpha-jtoman-try-catch-20230512.9.39.729450.tar.gz
+[2023-05-14 11:43:20] WARNING root fetch - processPackages [certora-cli-alpha-jtoman-try-catch]: Skipping package: exceeds size limit 39430751>=10485760
+[2023-05-14 11:43:20] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-jtoman-try-catch] error
+[2023-05-14 11:43:20] INFO root fetch - processPackages [certora-cli-alpha-jtoman-infinite-loop-fix]: Downloading https://files.pythonhosted.org/packages/fd/3e/cb9e7b584a92e1bc819f8f4997a9d4aca4875bd1bc19378ec02551d7005d/certora-cli-alpha-jtoman-infinite-loop-fix-20230512.9.39.601040.tar.gz
+[2023-05-14 11:43:20] INFO root fetch - processPackages [nazo-image-utils]: executing diffoscope
+[2023-05-14 11:43:20] INFO root fetch - processPackages [nazo-image-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nazo_image_utils-0.0.2.tar.gz tmp/nazo_image_utils-0.0.3.tar.gz --markdown 20230514/n/nazo-image-utils/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-14 11:43:20] INFO root fetch - processPackages [worktoy]: Downloading https://files.pythonhosted.org/packages/8d/5a/5cb6a30d348e45cb1a82b0763308eff532fbc7e2f1642c9a8e734296679a/worktoy-0.28.tar.gz
+[2023-05-14 11:43:20] INFO root fetch - processPackages [code-loader]: Downloading https://files.pythonhosted.org/packages/2b/01/67f0774553562f5ae0a08a3b821df90162bf956d036fab47342f443911f4/code-loader-0.2.8.tar.gz
+[2023-05-14 11:43:20] WARNING root fetch - processPackages [certora-cli-alpha-jtoman-infinite-loop-fix]: Skipping package: exceeds size limit 39430769>=10485760
+[2023-05-14 11:43:20] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-jtoman-infinite-loop-fix] error
+[2023-05-14 11:43:20] INFO root fetch - processPackages [tarvis-exchange-woo]: Downloading https://files.pythonhosted.org/packages/6f/64/35148aa68be6105af0b844f5925c665d483daea9fc20cdb86cfd567f0af5/tarvis-exchange-woo-0.9.6.tar.gz
+[2023-05-14 11:43:20] INFO root fetch - processPackages [embody-file]: Downloading https://files.pythonhosted.org/packages/e1/07/0eeea4d0aa2f1e834541754af02fd360d0b58614af0b2d59ca31326267af/embody_file-1.0.9.tar.gz
+[2023-05-14 11:43:20] INFO root fetch - processPackages [worktoy]: executing diffoscope
+[2023-05-14 11:43:20] INFO root fetch - processPackages [worktoy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/worktoy-0.25.tar.gz tmp/worktoy-0.28.tar.gz --markdown 20230514/w/worktoy/0.25-0.28/diff.md --exclude *.pyd
+[2023-05-14 11:43:20] INFO root fetch - processPackages [tarvis-exchange-woo]: executing diffoscope
+[2023-05-14 11:43:20] INFO root fetch - processPackages [tarvis-exchange-woo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tarvis-exchange-woo-0.9.5.tar.gz tmp/tarvis-exchange-woo-0.9.6.tar.gz --markdown 20230514/t/tarvis-exchange-woo/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-14 11:43:20] INFO root fetch - processPackages [embody-file]: executing diffoscope
+[2023-05-14 11:43:20] INFO root fetch - processPackages [embody-file]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embody_file-1.0.8.tar.gz tmp/embody_file-1.0.9.tar.gz --markdown 20230514/e/embody-file/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-14 11:43:20] INFO root fetch - processPackages [trojanzoo-sphinx-theme]: Downloading https://files.pythonhosted.org/packages/a5/f1/0c80e0743e39d1b06cee8c250f55e67e01dc251234466a9aacd4f49b19a4/trojanzoo_sphinx_theme-1.0.0.tar.gz
+[2023-05-14 11:43:20] INFO root fetch - processPackages [code-loader]: Downloading https://files.pythonhosted.org/packages/23/3d/c50351675c5df1eec25c494b3e7b9f9b516c43bd5d3db8cc4447604a8f74/code-loader-0.2.9.tar.gz
+[2023-05-14 11:43:20] INFO root fetch - processPackages [code-loader]: executing diffoscope
+[2023-05-14 11:43:20] INFO root fetch - processPackages [code-loader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/code-loader-0.2.8.tar.gz tmp/code-loader-0.2.9.tar.gz --markdown 20230514/c/code-loader/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-14 11:43:20] INFO root fetch - processPackages [trojanzoo-sphinx-theme]: executing diffoscope
+[2023-05-14 11:43:20] INFO root fetch - processPackages [trojanzoo-sphinx-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trojanzoo_sphinx_theme-0.1.5.tar.gz tmp/trojanzoo_sphinx_theme-1.0.0.tar.gz --markdown 20230514/t/trojanzoo-sphinx-theme/0.1.5-1.0.0/diff.md --exclude *.pyd
+[2023-05-14 11:43:21] INFO root fetch - main [MainThread]: End processing [nazo-image-utils]: success
+[2023-05-14 11:43:21] INFO root fetch - main [MainThread]: End processing [tarvis-exchange-woo]: success
+[2023-05-14 11:43:21] INFO root fetch - main [MainThread]: End processing [worktoy]: success
+[2023-05-14 11:43:21] INFO root fetch - main [MainThread]: End processing [embody-file]: success
+[2023-05-14 11:43:21] INFO root fetch - main [MainThread]: End processing [code-loader]: success
+[2023-05-14 11:43:22] INFO root fetch - main [MainThread]: End processing [trojanzoo-sphinx-theme]: success
+[2023-05-14 11:43:22] INFO root fetch - main [MainThread]: Store serial: [18096158]
