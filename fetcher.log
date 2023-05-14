@@ -2076,3 +2076,24 @@
 [2023-05-14 04:55:50] INFO root fetch - main [MainThread]: End processing [ldtkpy]: success
 [2023-05-14 04:56:24] INFO root fetch - main [MainThread]: End processing [xicorpy]: success
 [2023-05-14 04:56:24] INFO root fetch - main [MainThread]: Store serial: [18094617]
+[2023-05-14 05:01:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094617]
+[2023-05-14 05:01:33] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 05:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chalkpy
+[2023-05-14 05:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: duckdb
+[2023-05-14 05:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gkj2jh146
+[2023-05-14 05:01:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aioqui
+[2023-05-14 05:01:33] WARNING root fetch - processPackages [gkj2jh146]: Skipping, unable to determine old version
+[2023-05-14 05:01:33] INFO root fetch - main [MainThread]: End processing [gkj2jh146] error
+[2023-05-14 05:01:33] WARNING root fetch - processPackages [aioqui]: Skipping, unable to determine old version
+[2023-05-14 05:01:33] INFO root fetch - main [MainThread]: End processing [aioqui] error
+[2023-05-14 05:01:33] INFO root fetch - processPackages [chalkpy]: New version: [2.3.7] Old Version: [2.3.6]
+[2023-05-14 05:01:34] INFO root fetch - processPackages [duckdb]: New version: [0.7.2.dev3546] Old Version: [0.7.2.dev3515]
+[2023-05-14 05:01:34] INFO root fetch - processPackages [duckdb]: Downloading https://files.pythonhosted.org/packages/b5/5d/58e8e0219f78acfc96070ef3f6da854cb84667894af5ef9f5e6fc09c8f93/duckdb-0.7.2.dev3515.tar.gz
+[2023-05-14 05:01:34] INFO root fetch - processPackages [chalkpy]: Downloading https://files.pythonhosted.org/packages/11/78/efb4c48d5e435dcb5023cb6f0a7404e8ef2586d472966b0ecbd69b104663/chalkpy-2.3.7.tar.gz
+[2023-05-14 05:01:34] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-05-14 05:01:34] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-2.3.6.tar.gz tmp/chalkpy-2.3.7.tar.gz --markdown 20230514/c/chalkpy/2.3.6-2.3.7/diff.md --exclude *.pyd
+[2023-05-14 05:01:34] INFO root fetch - processPackages [duckdb]: Downloading https://files.pythonhosted.org/packages/96/37/cb4b52e39b9d22a337499aa400ed652bb694c3aa772609eec815171b40fb/duckdb-0.7.2.dev3546-cp36-cp36m-macosx_10_9_x86_64.whl
+[2023-05-14 05:01:35] WARNING root fetch - processPackages [duckdb]: Skipping package: exceeds size limit 14597301>=10485760
+[2023-05-14 05:01:35] INFO root fetch - main [MainThread]: End processing [duckdb] error
+[2023-05-14 05:01:40] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2023-05-14 05:01:40] INFO root fetch - main [MainThread]: Store serial: [18094631]
