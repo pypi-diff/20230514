@@ -4890,3 +4890,31 @@
 [2023-05-14 12:36:45] INFO root fetch - main [MainThread]: End processing [indecode]: success
 [2023-05-14 12:36:45] INFO root fetch - main [MainThread]: End processing [hyperparameters]: success
 [2023-05-14 12:36:45] INFO root fetch - main [MainThread]: Store serial: [18096315]
+[2023-05-14 12:41:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096315]
+[2023-05-14 12:41:54] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 12:41:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-ga4-serverside
+[2023-05-14 12:41:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: feathers
+[2023-05-14 12:41:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sqlacodegen-v2
+[2023-05-14 12:41:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: streamlit-kpi
+[2023-05-14 12:41:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: indecode
+[2023-05-14 12:41:54] INFO root fetch - processPackages [feathers]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-14 12:41:54] WARNING root fetch - processPackages [sqlacodegen-v2]: Skipping, unable to determine old version
+[2023-05-14 12:41:54] INFO root fetch - main [MainThread]: End processing [sqlacodegen-v2] error
+[2023-05-14 12:41:54] INFO root fetch - processPackages [indecode]: New version: [1.4.1] Old Version: [1.3.1]
+[2023-05-14 12:41:54] WARNING root fetch - processPackages [django-ga4-serverside]: Skipping, unable to determine old version
+[2023-05-14 12:41:54] INFO root fetch - main [MainThread]: End processing [django-ga4-serverside] error
+[2023-05-14 12:41:54] INFO root fetch - processPackages [streamlit-kpi]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 12:41:54] INFO root fetch - processPackages [indecode]: Downloading https://files.pythonhosted.org/packages/b4/33/f2b938baeafbebee36e43359121b0854122965cd09d0cec50bfefad3791a/indecode-1.4.1-py3-none-any.whl
+[2023-05-14 12:41:54] INFO root fetch - processPackages [streamlit-kpi]: Downloading https://files.pythonhosted.org/packages/c8/18/52ff1297e8da4140fc5debb6a94ea35d94aeddff2f5ba94687504a0c1829/streamlit-kpi-0.0.8.tar.gz
+[2023-05-14 12:41:54] INFO root fetch - processPackages [indecode]: executing diffoscope
+[2023-05-14 12:41:54] INFO root fetch - processPackages [indecode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indecode-1.3.1-py3-none-any.whl.zip tmp/indecode-1.4.1-py3-none-any.whl.zip --markdown 20230514/i/indecode/1.3.1-1.4.1/diff.md --exclude *.pyd
+[2023-05-14 12:41:54] INFO root fetch - processPackages [feathers]: Downloading https://files.pythonhosted.org/packages/41/b9/e84af6f9c3cf9f1b325729974506a9c9b69f2a1a0f165a63d2713b449baf/feathers-0.1.4.tar.gz
+[2023-05-14 12:41:55] INFO root fetch - processPackages [feathers]: executing diffoscope
+[2023-05-14 12:41:55] INFO root fetch - processPackages [feathers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/feathers-0.1.3.tar.gz tmp/feathers-0.1.4.tar.gz --markdown 20230514/f/feathers/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-14 12:41:55] INFO root fetch - processPackages [streamlit-kpi]: Downloading https://files.pythonhosted.org/packages/d6/15/f2db4dea507af4e6b4eefb7e04fa23aecd64ac97696254c49702bcebbe8b/streamlit-kpi-0.0.9.tar.gz
+[2023-05-14 12:41:55] INFO root fetch - processPackages [streamlit-kpi]: executing diffoscope
+[2023-05-14 12:41:55] INFO root fetch - processPackages [streamlit-kpi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-kpi-0.0.8.tar.gz tmp/streamlit-kpi-0.0.9.tar.gz --markdown 20230514/s/streamlit-kpi/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 12:41:55] INFO root fetch - main [MainThread]: End processing [indecode]: success
+[2023-05-14 12:41:56] INFO root fetch - main [MainThread]: End processing [feathers]: success
+[2023-05-14 12:42:31] INFO root fetch - main [MainThread]: End processing [streamlit-kpi]: success
+[2023-05-14 12:42:31] INFO root fetch - main [MainThread]: Store serial: [18096340]
