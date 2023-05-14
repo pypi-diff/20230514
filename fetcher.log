@@ -11533,3 +11533,40 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 23:51:54] INFO root fetch - main [MainThread]: End processing [kynaylibs]: success
 [2023-05-14 23:51:54] INFO root fetch - main [MainThread]: End processing [magyar]: success
 [2023-05-14 23:51:54] INFO root fetch - main [MainThread]: Store serial: [18100324]
+[2023-05-14 23:56:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18100324]
+[2023-05-14 23:57:04] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-14 23:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: swegram
+[2023-05-14 23:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: poetry-dynamic-versioning
+[2023-05-14 23:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: findatapy
+[2023-05-14 23:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: poetichelloworld
+[2023-05-14 23:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: ItsuBot
+[2023-05-14 23:57:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mujoco-dev
+[2023-05-14 23:57:04] INFO root fetch - processPackages [poetry-dynamic-versioning]: New version: [1.0.0b3] Old Version: [1.0.0b2]
+[2023-05-14 23:57:04] WARNING root fetch - processPackages [ItsuBot]: Skipping, unable to determine old version
+[2023-05-14 23:57:04] INFO root fetch - main [MainThread]: End processing [ItsuBot] error
+[2023-05-14 23:57:04] WARNING root fetch - processPackages [poetichelloworld]: Skipping, unable to determine old version
+[2023-05-14 23:57:04] INFO root fetch - main [MainThread]: End processing [poetichelloworld] error
+[2023-05-14 23:57:04] INFO root fetch - processPackages [swegram]: New version: [1.0.0.dev3] Old Version: [1.0.0.dev2]
+[2023-05-14 23:57:04] INFO root fetch - processPackages [mujoco-dev]: New version: [2.3.6.dev531941053] Old Version: [2.3.6.dev531473354]
+[2023-05-14 23:57:04] INFO root fetch - processPackages [findatapy]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 23:57:04] INFO root fetch - processPackages [swegram]: Downloading https://files.pythonhosted.org/packages/6c/2f/7ceb9bb381780137204795b690ada42fa1ad7f6a4adb8d128fad3944c901/swegram-1.0.0.dev2-py3-none-any.whl
+[2023-05-14 23:57:04] INFO root fetch - processPackages [poetry-dynamic-versioning]: Downloading https://files.pythonhosted.org/packages/b1/d6/5a83f2b400fce07e8f10d782dbf3eadae453b1a65923418e3b0e961c5bc4/poetry-dynamic-versioning-1.0.0b2.tar.gz
+[2023-05-14 23:57:04] INFO root fetch - processPackages [findatapy]: Downloading https://files.pythonhosted.org/packages/62/42/3cb60df4d1c9f9318c6e13e27b88469d8b661bf946e08abb586e011410c8/findatapy-0.1.8.tar.gz
+[2023-05-14 23:57:04] INFO root fetch - processPackages [mujoco-dev]: Downloading https://files.pythonhosted.org/packages/b7/a3/a6a09e6254140cbc644747d443e6820c744915e082d70b171a8ea09b9c3b/mujoco_dev-2.3.6.dev531473354-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-14 23:57:04] INFO root fetch - processPackages [swegram]: Downloading https://files.pythonhosted.org/packages/05/1b/fc712cf6110d5b8088f204a4f51bdfee47e0ce977afd58168d3c7ea7c32c/swegram-1.0.0.dev3-py3-none-any.whl
+[2023-05-14 23:57:04] INFO root fetch - processPackages [findatapy]: Downloading https://files.pythonhosted.org/packages/90/9a/510bde9636a0a5fcc7f0eac3b6f14cc6abcfc8cbe20da25cb83b1cbd86ea/findatapy-0.1.9.tar.gz
+[2023-05-14 23:57:04] INFO root fetch - processPackages [poetry-dynamic-versioning]: Downloading https://files.pythonhosted.org/packages/81/a2/81f8bcee29b28979952b5596f15e5e16b9d160ab3644e20c449a2f15ed29/poetry-dynamic-versioning-1.0.0b3.tar.gz
+[2023-05-14 23:57:04] INFO root fetch - processPackages [findatapy]: executing diffoscope
+[2023-05-14 23:57:04] INFO root fetch - processPackages [findatapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/findatapy-0.1.8.tar.gz tmp/findatapy-0.1.9.tar.gz --markdown 20230514/f/findatapy/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 23:57:04] INFO root fetch - processPackages [swegram]: executing diffoscope
+[2023-05-14 23:57:04] INFO root fetch - processPackages [swegram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swegram-1.0.0.dev2-py3-none-any.whl.zip tmp/swegram-1.0.0.dev3-py3-none-any.whl.zip --markdown 20230514/s/swegram/1.0.0.dev2-1.0.0.dev3/diff.md --exclude *.pyd
+[2023-05-14 23:57:04] INFO root fetch - processPackages [poetry-dynamic-versioning]: executing diffoscope
+[2023-05-14 23:57:04] INFO root fetch - processPackages [poetry-dynamic-versioning]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/poetry-dynamic-versioning-1.0.0b2.tar.gz tmp/poetry-dynamic-versioning-1.0.0b3.tar.gz --markdown 20230514/p/poetry-dynamic-versioning/1.0.0b2-1.0.0b3/diff.md --exclude *.pyd
+[2023-05-14 23:57:05] INFO root fetch - processPackages [mujoco-dev]: Downloading https://files.pythonhosted.org/packages/1d/22/835d42d08eae8710ec1f089fd27d7c97c6352630924ea86b4db5a791ac13/mujoco_dev-2.3.6.dev531941053-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-14 23:57:05] INFO root fetch - main [MainThread]: End processing [poetry-dynamic-versioning]: success
+[2023-05-14 23:57:06] INFO root fetch - main [MainThread]: End processing [swegram]: success
+[2023-05-14 23:57:06] INFO root fetch - main [MainThread]: End processing [findatapy]: success
+[2023-05-14 23:57:06] INFO root fetch - processPackages [mujoco-dev]: executing diffoscope
+[2023-05-14 23:57:06] INFO root fetch - processPackages [mujoco-dev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mujoco_dev-2.3.6.dev531473354-cp311-cp311-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/mujoco_dev-2.3.6.dev531941053-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230514/m/mujoco-dev/2.3.6.dev531473354-2.3.6.dev531941053/diff.md --exclude *.pyd
+[2023-05-14 23:57:47] INFO root fetch - main [MainThread]: End processing [mujoco-dev]: success
+[2023-05-14 23:57:47] INFO root fetch - main [MainThread]: Store serial: [18100355]
