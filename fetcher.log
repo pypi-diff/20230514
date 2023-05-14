@@ -10698,3 +10698,40 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 22:36:39] INFO root fetch - main [MainThread]: End processing [yak-server]: success
 [2023-05-14 22:36:39] INFO root fetch - main [MainThread]: End processing [wagtail-humanitarian-icons]: success
 [2023-05-14 22:36:39] INFO root fetch - main [MainThread]: Store serial: [18099869]
+[2023-05-14 22:41:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18099869]
+[2023-05-14 22:41:48] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 22:41:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: filedbm
+[2023-05-14 22:41:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: backup-github
+[2023-05-14 22:41:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: wiremock
+[2023-05-14 22:41:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jdfile
+[2023-05-14 22:41:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Red-DiscordBot
+[2023-05-14 22:41:49] INFO root fetch - processPackages [backup-github]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-14 22:41:49] INFO root fetch - processPackages [wiremock]: New version: [2.4.0a0] Old Version: [2.3.1]
+[2023-05-14 22:41:49] INFO root fetch - processPackages [Red-DiscordBot]: New version: [3.5.2] Old Version: [3.5.1]
+[2023-05-14 22:41:49] INFO root fetch - processPackages [filedbm]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-14 22:41:49] INFO root fetch - processPackages [jdfile]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-05-14 22:41:49] INFO root fetch - processPackages [wiremock]: Downloading https://files.pythonhosted.org/packages/7d/b5/bffe74ca9e59a97a7047c7033b91f7d7cba39369c5aaed7f7485c3777ec3/wiremock-2.3.1.tar.gz
+[2023-05-14 22:41:49] INFO root fetch - processPackages [backup-github]: Downloading https://files.pythonhosted.org/packages/5a/a9/ba1b034a20f6e56e44df0dbebf3bade2f1d4743aabc095384e45cac6229a/backup_github-1.0.0.tar.gz
+[2023-05-14 22:41:49] INFO root fetch - processPackages [jdfile]: Downloading https://files.pythonhosted.org/packages/cb/3b/93ac50fd6972cf46b639b2df231b5af617b6894f28ea7d19588a136a21e2/jdfile-1.1.4.tar.gz
+[2023-05-14 22:41:49] INFO root fetch - processPackages [Red-DiscordBot]: Downloading https://files.pythonhosted.org/packages/fc/55/4187df04c594888caa7fa2b9b365729fb7456b917da2fcd14d0283926b98/Red-DiscordBot-3.5.1.tar.gz
+[2023-05-14 22:41:49] INFO root fetch - processPackages [filedbm]: Downloading https://files.pythonhosted.org/packages/67/4e/8f97fd1c9ade6e3b1743c66954f1de2610d725c605d51d58b7adf4eed976/filedbm-0.0.5.tar.gz
+[2023-05-14 22:41:49] INFO root fetch - processPackages [filedbm]: executing diffoscope
+[2023-05-14 22:41:49] INFO root fetch - processPackages [filedbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/filedbm-0.0.4.tar.gz tmp/filedbm-0.0.5.tar.gz --markdown 20230514/f/filedbm/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-14 22:41:49] INFO root fetch - processPackages [backup-github]: Downloading https://files.pythonhosted.org/packages/74/f8/e76525338966473836bbb3e8f7d04e969faf0b20c7c177dea9657fbe2628/backup_github-1.1.0.tar.gz
+[2023-05-14 22:41:49] INFO root fetch - processPackages [backup-github]: executing diffoscope
+[2023-05-14 22:41:49] INFO root fetch - processPackages [backup-github]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/backup_github-1.0.0.tar.gz tmp/backup_github-1.1.0.tar.gz --markdown 20230514/b/backup-github/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 22:41:49] INFO root fetch - processPackages [jdfile]: Downloading https://files.pythonhosted.org/packages/d2/0d/f133a0034137f5e46e554ed719d3476993b14b021d93d9bcbb6dd81e55f4/jdfile-1.1.5.tar.gz
+[2023-05-14 22:41:49] INFO root fetch - processPackages [wiremock]: Downloading https://files.pythonhosted.org/packages/7e/cd/b42cbe9c2be0e1fd27a9cb4b3abe8d603376b791481d02ee36978a34de5a/wiremock-2.4.0a0.tar.gz
+[2023-05-14 22:41:49] INFO root fetch - processPackages [jdfile]: executing diffoscope
+[2023-05-14 22:41:49] INFO root fetch - processPackages [jdfile]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jdfile-1.1.4.tar.gz tmp/jdfile-1.1.5.tar.gz --markdown 20230514/j/jdfile/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-05-14 22:41:49] INFO root fetch - processPackages [Red-DiscordBot]: Downloading https://files.pythonhosted.org/packages/87/38/9e952f1e09945354a65537a20c0aa461c03640f99f7c4426940e60319778/Red-DiscordBot-3.5.2.tar.gz
+[2023-05-14 22:41:49] INFO root fetch - processPackages [Red-DiscordBot]: executing diffoscope
+[2023-05-14 22:41:49] INFO root fetch - processPackages [Red-DiscordBot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Red-DiscordBot-3.5.1.tar.gz tmp/Red-DiscordBot-3.5.2.tar.gz --markdown 20230514/R/Red-DiscordBot/3.5.1-3.5.2/diff.md --exclude *.pyd
+[2023-05-14 22:41:50] INFO root fetch - main [MainThread]: End processing [filedbm]: success
+[2023-05-14 22:41:50] INFO root fetch - main [MainThread]: End processing [backup-github]: success
+[2023-05-14 22:41:50] INFO root fetch - main [MainThread]: End processing [jdfile]: success
+[2023-05-14 22:41:51] INFO root fetch - processPackages [wiremock]: executing diffoscope
+[2023-05-14 22:41:51] INFO root fetch - processPackages [wiremock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wiremock-2.3.1.tar.gz tmp/wiremock-2.4.0a0.tar.gz --markdown 20230514/w/wiremock/2.3.1-2.4.0a0/diff.md --exclude *.pyd
+[2023-05-14 22:41:53] INFO root fetch - main [MainThread]: End processing [wiremock]: success
+[2023-05-14 22:42:31] INFO root fetch - main [MainThread]: End processing [Red-DiscordBot]: success
+[2023-05-14 22:42:31] INFO root fetch - main [MainThread]: Store serial: [18099884]
