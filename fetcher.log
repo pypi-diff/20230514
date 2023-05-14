@@ -8870,3 +8870,67 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 19:35:33] INFO root fetch - main [MainThread]: End processing [labmate]: success
 [2023-05-14 19:35:34] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
 [2023-05-14 19:35:34] INFO root fetch - main [MainThread]: Store serial: [18098753]
+[2023-05-14 19:40:38] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098753]
+[2023-05-14 19:40:43] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-14 19:40:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pysfa
+[2023-05-14 19:40:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xia-sso-flask
+[2023-05-14 19:40:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cliconfig
+[2023-05-14 19:40:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dxsp
+[2023-05-14 19:40:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: berserk
+[2023-05-14 19:40:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cmake-build-extension
+[2023-05-14 19:40:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cast-bootstrap5
+[2023-05-14 19:40:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: neopolitan
+[2023-05-14 19:40:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: fpm
+[2023-05-14 19:40:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: fhnw-nlp-utils
+[2023-05-14 19:40:43] INFO root fetch - processPackages [pysfa]: New version: [0.8] Old Version: [0.7]
+[2023-05-14 19:40:43] INFO root fetch - processPackages [cliconfig]: New version: [0.6.0] Old Version: [0.5.6]
+[2023-05-14 19:40:43] INFO root fetch - processPackages [xia-sso-flask]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 19:40:43] INFO root fetch - processPackages [cmake-build-extension]: New version: [0.5.2.dev7] Old Version: [0.5.2.dev5]
+[2023-05-14 19:40:43] WARNING root fetch - processPackages [cast-bootstrap5]: Skipping, unable to determine old version
+[2023-05-14 19:40:43] INFO root fetch - processPackages [berserk]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-14 19:40:43] INFO root fetch - main [MainThread]: End processing [cast-bootstrap5] error
+[2023-05-14 19:40:43] INFO root fetch - processPackages [neopolitan]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 19:40:43] INFO root fetch - processPackages [fpm]: New version: [0.8.2] Old Version: [0.8.1]
+[2023-05-14 19:40:43] INFO root fetch - processPackages [dxsp]: New version: [2.2.8] Old Version: [2.2.7]
+[2023-05-14 19:40:43] INFO root fetch - processPackages [berserk]: Downloading https://files.pythonhosted.org/packages/83/7d/ca6332b8aa17ff24603b5ac7c9f4432397e7bc81c59ae2097dfb33df5d03/berserk-0.8.0.tar.gz
+[2023-05-14 19:40:43] INFO root fetch - processPackages [neopolitan]: executing diffoscope
+[2023-05-14 19:40:43] INFO root fetch - processPackages [neopolitan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neopolitan-0.1.8.tar.gz tmp/neopolitan-0.1.9.tar.gz --markdown 20230514/n/neopolitan/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 19:40:43] INFO root fetch - processPackages [fhnw-nlp-utils]: New version: [0.8.0] Old Version: [0.6.9]
+[2023-05-14 19:40:43] INFO root fetch - processPackages [pysfa]: Downloading https://files.pythonhosted.org/packages/8a/c4/b8bbdf82407a6ab37ce64110ab3611c026282dd1f012b45e3fe69d44d167/pysfa-0.7.tar.gz
+[2023-05-14 19:40:43] INFO root fetch - processPackages [xia-sso-flask]: Downloading https://files.pythonhosted.org/packages/cb/13/3f8eed14e43da83e8729ce13908e441091b825a13bf8f3b4c9da8be63471/xia_sso_flask-0.1.8-cp39-none-win_amd64.whl
+[2023-05-14 19:40:43] INFO root fetch - processPackages [cmake-build-extension]: Downloading https://files.pythonhosted.org/packages/b4/3f/fecc27c0e08d63d3cfcf584241519ca96b43cd4445309d30c5326de2cd00/cmake-build-extension-0.5.2.dev7.tar.gz
+[2023-05-14 19:40:43] INFO root fetch - processPackages [fpm]: Downloading https://files.pythonhosted.org/packages/7f/c8/4142e86f3b4f55da918f7ff98d8846b351f1fc9e4e2deb2654a3d02f04f1/fpm-0.8.1.tar.gz
+[2023-05-14 19:40:43] INFO root fetch - processPackages [dxsp]: Downloading https://files.pythonhosted.org/packages/60/71/f51df07ee91ed662145f7859e19028ecda816149656eab5205b50267a959/dxsp-2.2.8.tar.gz
+[2023-05-14 19:40:43] INFO root fetch - processPackages [fhnw-nlp-utils]: Downloading https://files.pythonhosted.org/packages/11/67/7115b84725fc7938a503325c52b57c9134a467ce979d36eab281cb23ccf5/fhnw_nlp_utils-0.6.9-py3-none-any.whl
+[2023-05-14 19:40:43] INFO root fetch - processPackages [berserk]: Downloading https://files.pythonhosted.org/packages/75/5d/9bc9866bce95ef40cd39bf641c210021beb83c2c4c3034eb543754a79767/berserk-0.9.0.tar.gz
+[2023-05-14 19:40:43] INFO root fetch - processPackages [cmake-build-extension]: executing diffoscope
+[2023-05-14 19:40:43] INFO root fetch - processPackages [cmake-build-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmake-build-extension-0.5.2.dev5.tar.gz tmp/cmake-build-extension-0.5.2.dev7.tar.gz --markdown 20230514/c/cmake-build-extension/0.5.2.dev5-0.5.2.dev7/diff.md --exclude *.pyd
+[2023-05-14 19:40:43] INFO root fetch - processPackages [cliconfig]: Downloading https://files.pythonhosted.org/packages/34/43/035096398b9931fe3e485a243ca26feeb75774de5e4652cc88ef53fc0cd3/cliconfig-0.6.0.tar.gz
+[2023-05-14 19:40:43] INFO root fetch - processPackages [pysfa]: Downloading https://files.pythonhosted.org/packages/77/a3/0bae4b30b7b5b216bc3c3e1088146f69b8efab261e452480674bf1417c51/pysfa-0.8.tar.gz
+[2023-05-14 19:40:43] INFO root fetch - processPackages [dxsp]: executing diffoscope
+[2023-05-14 19:40:43] INFO root fetch - processPackages [dxsp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dxsp-2.2.7.tar.gz tmp/dxsp-2.2.8.tar.gz --markdown 20230514/d/dxsp/2.2.7-2.2.8/diff.md --exclude *.pyd
+[2023-05-14 19:40:43] INFO root fetch - processPackages [berserk]: executing diffoscope
+[2023-05-14 19:40:43] INFO root fetch - processPackages [berserk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/berserk-0.8.0.tar.gz tmp/berserk-0.9.0.tar.gz --markdown 20230514/b/berserk/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 19:40:43] INFO root fetch - processPackages [cliconfig]: executing diffoscope
+[2023-05-14 19:40:43] INFO root fetch - processPackages [cliconfig]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cliconfig-0.5.6.tar.gz tmp/cliconfig-0.6.0.tar.gz --markdown 20230514/c/cliconfig/0.5.6-0.6.0/diff.md --exclude *.pyd
+[2023-05-14 19:40:43] INFO root fetch - processPackages [xia-sso-flask]: Downloading https://files.pythonhosted.org/packages/c1/1f/7de010a1a7b31381857db69a5be40a631be5e1e21eef3870b5aa79ae6e28/xia_sso_flask-0.1.9-cp39-none-win_amd64.whl
+[2023-05-14 19:40:43] INFO root fetch - processPackages [pysfa]: executing diffoscope
+[2023-05-14 19:40:43] INFO root fetch - processPackages [pysfa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysfa-0.7.tar.gz tmp/pysfa-0.8.tar.gz --markdown 20230514/p/pysfa/0.7-0.8/diff.md --exclude *.pyd
+[2023-05-14 19:40:43] INFO root fetch - processPackages [fpm]: Downloading https://files.pythonhosted.org/packages/1a/a0/12ccdd0b1059c9b6861696d6c088cd0675830189668de66feb5394940d4c/fpm-0.8.2.tar.gz
+[2023-05-14 19:40:44] INFO root fetch - processPackages [fhnw-nlp-utils]: Downloading https://files.pythonhosted.org/packages/b3/8e/8e0f233cde86332588001cb22d709cbfb4a3a961183ca8f328e54eec4017/fhnw_nlp_utils-0.8.0-py3-none-any.whl
+[2023-05-14 19:40:44] INFO root fetch - processPackages [xia-sso-flask]: executing diffoscope
+[2023-05-14 19:40:44] INFO root fetch - processPackages [xia-sso-flask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_sso_flask-0.1.8-cp39-none-win_amd64.whl.zip tmp/xia_sso_flask-0.1.9-cp39-none-win_amd64.whl.zip --markdown 20230514/x/xia-sso-flask/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 19:40:44] INFO root fetch - processPackages [fpm]: executing diffoscope
+[2023-05-14 19:40:44] INFO root fetch - processPackages [fpm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fpm-0.8.1.tar.gz tmp/fpm-0.8.2.tar.gz --markdown 20230514/f/fpm/0.8.1-0.8.2/diff.md --exclude *.pyd
+[2023-05-14 19:40:44] INFO root fetch - processPackages [fhnw-nlp-utils]: executing diffoscope
+[2023-05-14 19:40:44] INFO root fetch - processPackages [fhnw-nlp-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fhnw_nlp_utils-0.6.9-py3-none-any.whl.zip tmp/fhnw_nlp_utils-0.8.0-py3-none-any.whl.zip --markdown 20230514/f/fhnw-nlp-utils/0.6.9-0.8.0/diff.md --exclude *.pyd
+[2023-05-14 19:40:45] INFO root fetch - main [MainThread]: End processing [neopolitan]: success
+[2023-05-14 19:40:45] INFO root fetch - main [MainThread]: End processing [dxsp]: success
+[2023-05-14 19:40:45] INFO root fetch - main [MainThread]: End processing [berserk]: success
+[2023-05-14 19:40:45] INFO root fetch - main [MainThread]: End processing [xia-sso-flask]: success
+[2023-05-14 19:40:45] INFO root fetch - main [MainThread]: End processing [pysfa]: success
+[2023-05-14 19:40:45] INFO root fetch - main [MainThread]: End processing [fhnw-nlp-utils]: success
+[2023-05-14 19:40:46] INFO root fetch - main [MainThread]: End processing [cmake-build-extension]: success
+[2023-05-14 19:40:46] INFO root fetch - main [MainThread]: End processing [cliconfig]: success
+[2023-05-14 19:40:51] INFO root fetch - main [MainThread]: End processing [fpm]: success
+[2023-05-14 19:40:51] INFO root fetch - main [MainThread]: Store serial: [18098792]
