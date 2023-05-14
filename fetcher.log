@@ -2242,3 +2242,34 @@
 [2023-05-14 05:22:29] INFO root fetch - main [MainThread]: End processing [promptulate]: success
 [2023-05-14 05:22:29] INFO root fetch - main [MainThread]: End processing [stmaterial]: success
 [2023-05-14 05:22:29] INFO root fetch - main [MainThread]: Store serial: [18094726]
+[2023-05-14 05:27:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094726]
+[2023-05-14 05:27:39] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-14 05:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bananopie
+[2023-05-14 05:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: konfuzio-sdk
+[2023-05-14 05:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aioqui
+[2023-05-14 05:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: webarchiver
+[2023-05-14 05:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: RolexReserver
+[2023-05-14 05:27:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mml-qae
+[2023-05-14 05:27:39] WARNING root fetch - processPackages [RolexReserver]: Skipping, unable to determine old version
+[2023-05-14 05:27:39] INFO root fetch - main [MainThread]: End processing [RolexReserver] error
+[2023-05-14 05:27:39] INFO root fetch - processPackages [bananopie]: New version: [0.1.0] Old Version: [0.0.4]
+[2023-05-14 05:27:39] INFO root fetch - processPackages [aioqui]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-14 05:27:39] INFO root fetch - processPackages [webarchiver]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-14 05:27:39] WARNING root fetch - processPackages [mml-qae]: Skipping, unable to determine old version
+[2023-05-14 05:27:39] INFO root fetch - main [MainThread]: End processing [mml-qae] error
+[2023-05-14 05:27:39] INFO root fetch - processPackages [konfuzio-sdk]: New version: [0.2.9.dev20230104175944] Old Version: [0.2.9.dev20221227125623]
+[2023-05-14 05:27:40] INFO root fetch - processPackages [webarchiver]: executing diffoscope
+[2023-05-14 05:27:40] INFO root fetch - processPackages [webarchiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webarchiver-0.8.0-py2.py3-none-any.whl.zip tmp/webarchiver-0.9.0-py2.py3-none-any.whl.zip --markdown 20230514/w/webarchiver/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 05:27:40] INFO root fetch - processPackages [konfuzio-sdk]: executing diffoscope
+[2023-05-14 05:27:40] INFO root fetch - processPackages [konfuzio-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/konfuzio_sdk-0.2.9.dev20221227125623.tar.gz tmp/konfuzio_sdk-0.2.9.dev20230104175944.tar.gz --markdown 20230514/k/konfuzio-sdk/0.2.9.dev20221227125623-0.2.9.dev20230104175944/diff.md --exclude *.pyd
+[2023-05-14 05:27:40] INFO root fetch - processPackages [aioqui]: Downloading https://files.pythonhosted.org/packages/d4/2e/8ffef2ce864b6449da4a9878c90141b2337cb4ba0bba1dbb40dcd1c58ed2/aioqui-1.0.2.tar.gz
+[2023-05-14 05:27:40] INFO root fetch - processPackages [bananopie]: Downloading https://files.pythonhosted.org/packages/95/44/f27187affcf5036c60970b365b465425b45c36b5ff9556e89a210fe6ceaf/bananopie-0.1.0-py3-none-any.whl
+[2023-05-14 05:27:40] INFO root fetch - processPackages [aioqui]: executing diffoscope
+[2023-05-14 05:27:40] INFO root fetch - processPackages [aioqui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioqui-1.0.1.tar.gz tmp/aioqui-1.0.2.tar.gz --markdown 20230514/a/aioqui/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-14 05:27:40] INFO root fetch - processPackages [bananopie]: executing diffoscope
+[2023-05-14 05:27:40] INFO root fetch - processPackages [bananopie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bananopie-0.0.4.tar.gz tmp/bananopie-0.1.0-py3-none-any.whl.zip --markdown 20230514/b/bananopie/0.0.4-0.1.0/diff.md --exclude *.pyd
+[2023-05-14 05:27:41] INFO root fetch - main [MainThread]: End processing [bananopie]: success
+[2023-05-14 05:27:41] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
+[2023-05-14 05:27:41] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
+[2023-05-14 05:27:42] INFO root fetch - main [MainThread]: End processing [aioqui]: success
+[2023-05-14 05:27:42] INFO root fetch - main [MainThread]: Store serial: [18094751]
