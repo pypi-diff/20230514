@@ -3353,3 +3353,31 @@
 [2023-05-14 08:52:04] INFO root fetch - main [MainThread]: End processing [pyvantage]: success
 [2023-05-14 08:52:05] INFO root fetch - main [MainThread]: End processing [whistling]: success
 [2023-05-14 08:52:05] INFO root fetch - main [MainThread]: Store serial: [18095409]
+[2023-05-14 08:57:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095409]
+[2023-05-14 08:57:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 08:57:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: redcat
+[2023-05-14 08:57:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mml-qae
+[2023-05-14 08:57:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lumigo-tracer
+[2023-05-14 08:57:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: uc-sgsim
+[2023-05-14 08:57:13] INFO root fetch - processPackages [mml-qae]: New version: [1.0.1.2] Old Version: [1.0.1.1]
+[2023-05-14 08:57:13] INFO root fetch - processPackages [uc-sgsim]: New version: [1.2.0rc0] Old Version: [1.2.0]
+[2023-05-14 08:57:13] INFO root fetch - processPackages [redcat]: New version: [0.0.1a198] Old Version: [0.0.1a182]
+[2023-05-14 08:57:13] INFO root fetch - processPackages [lumigo-tracer]: New version: [1.1.99] Old Version: [1.1.98]
+[2023-05-14 08:57:14] INFO root fetch - processPackages [uc-sgsim]: Downloading https://files.pythonhosted.org/packages/27/18/17776f3f2051872ca0aab252e343fcc58523dc06c3a32e3859d1dd0529da/uc_sgsim-1.2.0.tar.gz
+[2023-05-14 08:57:14] INFO root fetch - processPackages [lumigo-tracer]: Downloading https://files.pythonhosted.org/packages/dd/ef/fbba7a946946680f2f99ab0d2aa9d13aa14919c5e1cb645488afbb0767b8/lumigo_tracer-1.1.98-py3-none-any.whl
+[2023-05-14 08:57:14] INFO root fetch - processPackages [mml-qae]: Downloading https://files.pythonhosted.org/packages/67/c2/8d2551e817dc2102bf3658aec5c7c9c8a169465c4354d33ea01d2393c371/mml_qae-1.0.1.2.tar.gz
+[2023-05-14 08:57:14] INFO root fetch - processPackages [redcat]: Downloading https://files.pythonhosted.org/packages/49/dd/d75ba387fe5327a2517166e83256b24b8cc88e57af4893e2fec7ce74051a/redcat-0.0.1a198.tar.gz
+[2023-05-14 08:57:14] INFO root fetch - processPackages [uc-sgsim]: executing diffoscope
+[2023-05-14 08:57:14] INFO root fetch - processPackages [uc-sgsim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/uc_sgsim-1.2.0.tar.gz tmp/uc_sgsim-1.2.0rc0.tar.gz --markdown 20230514/u/uc-sgsim/1.2.0-1.2.0rc0/diff.md --exclude *.pyd
+[2023-05-14 08:57:14] INFO root fetch - processPackages [redcat]: executing diffoscope
+[2023-05-14 08:57:14] INFO root fetch - processPackages [redcat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redcat-0.0.1a182.tar.gz tmp/redcat-0.0.1a198.tar.gz --markdown 20230514/r/redcat/0.0.1a182-0.0.1a198/diff.md --exclude *.pyd
+[2023-05-14 08:57:14] INFO root fetch - processPackages [mml-qae]: executing diffoscope
+[2023-05-14 08:57:14] INFO root fetch - processPackages [mml-qae]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mml_qae-1.0.1.1.tar.gz tmp/mml_qae-1.0.1.2.tar.gz --markdown 20230514/m/mml-qae/1.0.1.1-1.0.1.2/diff.md --exclude *.pyd
+[2023-05-14 08:57:14] INFO root fetch - processPackages [lumigo-tracer]: Downloading https://files.pythonhosted.org/packages/45/61/9eb6225f0ca75858f699d8748b94dc6354527f49d9d9b609f70404bf5b44/lumigo_tracer-1.1.99-py3-none-any.whl
+[2023-05-14 08:57:14] INFO root fetch - processPackages [lumigo-tracer]: executing diffoscope
+[2023-05-14 08:57:14] INFO root fetch - processPackages [lumigo-tracer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lumigo_tracer-1.1.98-py3-none-any.whl.zip tmp/lumigo_tracer-1.1.99-py3-none-any.whl.zip --markdown 20230514/l/lumigo-tracer/1.1.98-1.1.99/diff.md --exclude *.pyd
+[2023-05-14 08:57:15] INFO root fetch - main [MainThread]: End processing [uc-sgsim]: success
+[2023-05-14 08:57:15] INFO root fetch - main [MainThread]: End processing [mml-qae]: success
+[2023-05-14 08:57:15] INFO root fetch - main [MainThread]: End processing [redcat]: success
+[2023-05-14 08:57:15] INFO root fetch - main [MainThread]: End processing [lumigo-tracer]: success
+[2023-05-14 08:57:15] INFO root fetch - main [MainThread]: Store serial: [18095420]
