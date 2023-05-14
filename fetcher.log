@@ -2892,3 +2892,23 @@
 [2023-05-14 07:47:20] INFO root fetch - main [MainThread]: End processing [lineagex]: success
 [2023-05-14 07:47:20] INFO root fetch - main [MainThread]: End processing [renus]: success
 [2023-05-14 07:47:20] INFO root fetch - main [MainThread]: Store serial: [18095147]
+[2023-05-14 07:52:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095147]
+[2023-05-14 07:52:29] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-14 07:52:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: checkov
+[2023-05-14 07:52:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nonebot-plugin-bilibilibot
+[2023-05-14 07:52:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-oz-docker-json5
+[2023-05-14 07:52:29] INFO root fetch - processPackages [nonebot-plugin-bilibilibot]: New version: [2.3.2] Old Version: [2.3.1]
+[2023-05-14 07:52:29] INFO root fetch - processPackages [checkov]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-14 07:52:29] INFO root fetch - processPackages [certora-cli-alpha-oz-docker-json5]: New version: [20230514.5.51.278588] Old Version: [20230504.8.42.61246]
+[2023-05-14 07:52:29] INFO root fetch - processPackages [nonebot-plugin-bilibilibot]: Downloading https://files.pythonhosted.org/packages/6a/89/1d923a599b7174a2d399c1fa4f6179d541e175395f8ba5518aa564118669/nonebot_plugin_bilibilibot-2.3.1.tar.gz
+[2023-05-14 07:52:29] INFO root fetch - processPackages [certora-cli-alpha-oz-docker-json5]: Downloading https://files.pythonhosted.org/packages/79/26/d51a2b1e418053427e21f511a66b09a88bec611ffb68adaede7dbd12151d/certora-cli-alpha-oz-docker-json5-20230504.8.42.61246.tar.gz
+[2023-05-14 07:52:29] WARNING root fetch - processPackages [certora-cli-alpha-oz-docker-json5]: Skipping package: exceeds size limit 38417635>=10485760
+[2023-05-14 07:52:29] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-oz-docker-json5] error
+[2023-05-14 07:52:29] INFO root fetch - processPackages [checkov]: executing diffoscope
+[2023-05-14 07:52:29] INFO root fetch - processPackages [checkov]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/checkov-2.3.98.tar.gz tmp/checkov-2.3.99.tar.gz --markdown 20230514/c/checkov/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-14 07:52:29] INFO root fetch - processPackages [nonebot-plugin-bilibilibot]: Downloading https://files.pythonhosted.org/packages/49/39/a75e6aabca868b11000e14494952fa437bbe200038a93c06410efbeb9122/nonebot_plugin_bilibilibot-2.3.2.tar.gz
+[2023-05-14 07:52:29] INFO root fetch - processPackages [nonebot-plugin-bilibilibot]: executing diffoscope
+[2023-05-14 07:52:29] INFO root fetch - processPackages [nonebot-plugin-bilibilibot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nonebot_plugin_bilibilibot-2.3.1.tar.gz tmp/nonebot_plugin_bilibilibot-2.3.2.tar.gz --markdown 20230514/n/nonebot-plugin-bilibilibot/2.3.1-2.3.2/diff.md --exclude *.pyd
+[2023-05-14 07:52:30] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilibilibot]: success
+[2023-05-14 07:53:09] INFO root fetch - main [MainThread]: End processing [checkov]: success
+[2023-05-14 07:53:09] INFO root fetch - main [MainThread]: Store serial: [18095157]
