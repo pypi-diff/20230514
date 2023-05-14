@@ -2024,3 +2024,22 @@
 [2023-05-14 04:45:29] INFO root fetch - main [MainThread]: End processing [qunqunpdf]: success
 [2023-05-14 04:45:29] INFO root fetch - main [MainThread]: End processing [configzen]: success
 [2023-05-14 04:45:29] INFO root fetch - main [MainThread]: Store serial: [18094593]
+[2023-05-14 04:50:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094593]
+[2023-05-14 04:50:37] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-14 04:50:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fluffy-server
+[2023-05-14 04:50:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ksconf
+[2023-05-14 04:50:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: kintyre-splunk-conf
+[2023-05-14 04:50:37] INFO root fetch - processPackages [ksconf]: New version: [0.11.2b1] Old Version: [0.11.1]
+[2023-05-14 04:50:37] INFO root fetch - processPackages [fluffy-server]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-14 04:50:37] INFO root fetch - processPackages [kintyre-splunk-conf]: New version: [0.9.3] Old Version: [0.9.2]
+[2023-05-14 04:50:38] INFO root fetch - processPackages [kintyre-splunk-conf]: executing diffoscope
+[2023-05-14 04:50:38] INFO root fetch - processPackages [kintyre-splunk-conf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kintyre-splunk-conf-0.9.2.tar.gz tmp/kintyre-splunk-conf-0.9.3.tar.gz --markdown 20230514/k/kintyre-splunk-conf/0.9.2-0.9.3/diff.md --exclude *.pyd
+[2023-05-14 04:50:38] INFO root fetch - processPackages [ksconf]: Downloading https://files.pythonhosted.org/packages/d9/96/5b33e53539aa154d4f1b38f51851e70815416ad025641e0cb0f31a87932e/ksconf-0.11.2b1.tar.gz
+[2023-05-14 04:50:38] INFO root fetch - processPackages [fluffy-server]: executing diffoscope
+[2023-05-14 04:50:38] INFO root fetch - processPackages [fluffy-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluffy-server-1.9.0.tar.gz tmp/fluffy-server-1.9.1.tar.gz --markdown 20230514/f/fluffy-server/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-14 04:50:38] INFO root fetch - processPackages [ksconf]: executing diffoscope
+[2023-05-14 04:50:38] INFO root fetch - processPackages [ksconf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ksconf-0.11.1.tar.gz tmp/ksconf-0.11.2b1.tar.gz --markdown 20230514/k/ksconf/0.11.1-0.11.2b1/diff.md --exclude *.pyd
+[2023-05-14 04:50:39] INFO root fetch - main [MainThread]: End processing [kintyre-splunk-conf]: success
+[2023-05-14 04:50:39] INFO root fetch - main [MainThread]: End processing [ksconf]: success
+[2023-05-14 04:50:39] INFO root fetch - main [MainThread]: End processing [fluffy-server]: success
+[2023-05-14 04:50:39] INFO root fetch - main [MainThread]: Store serial: [18094601]
