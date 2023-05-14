@@ -3204,3 +3204,69 @@
 [2023-05-14 08:29:52] INFO root fetch - main [MainThread]: End processing [datasette-sqlite-vss]: success
 [2023-05-14 08:29:59] INFO root fetch - main [MainThread]: End processing [fake-bpy-module-latest]: success
 [2023-05-14 08:29:59] INFO root fetch - main [MainThread]: Store serial: [18095337]
+[2023-05-14 08:35:04] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095337]
+[2023-05-14 08:35:09] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-14 08:35:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: datasette-sqlite-vss
+[2023-05-14 08:35:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: sqlite-vss
+[2023-05-14 08:35:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: toolkit-cmm
+[2023-05-14 08:35:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: osstatus
+[2023-05-14 08:35:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: PySciMath
+[2023-05-14 08:35:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Kekik
+[2023-05-14 08:35:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: mod9-asr
+[2023-05-14 08:35:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: xbox-sdk
+[2023-05-14 08:35:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: t2c
+[2023-05-14 08:35:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: traversaal
+[2023-05-14 08:35:09] WARNING root fetch - processPackages [toolkit-cmm]: Skipping, unable to determine old version
+[2023-05-14 08:35:09] INFO root fetch - main [MainThread]: End processing [toolkit-cmm] error
+[2023-05-14 08:35:09] INFO root fetch - processPackages [sqlite-vss]: New version: [0.1.1a1] Old Version: [0.1.0a1]
+[2023-05-14 08:35:09] INFO root fetch - processPackages [PySciMath]: New version: [1.5.2] Old Version: [1.5.1]
+[2023-05-14 08:35:09] INFO root fetch - processPackages [xbox-sdk]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-14 08:35:09] INFO root fetch - processPackages [t2c]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 08:35:09] INFO root fetch - processPackages [osstatus]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-14 08:35:09] INFO root fetch - processPackages [datasette-sqlite-vss]: New version: [0.1.1a1] Old Version: [0.1.0a1]
+[2023-05-14 08:35:09] INFO root fetch - processPackages [Kekik]: New version: [1.2.7] Old Version: [1.2.6]
+[2023-05-14 08:35:09] INFO root fetch - processPackages [mod9-asr]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-14 08:35:09] INFO root fetch - processPackages [traversaal]: New version: [0.2] Old Version: [0.1]
+[2023-05-14 08:35:10] INFO root fetch - processPackages [sqlite-vss]: Downloading https://files.pythonhosted.org/packages/02/fe/ce38b369d68b2ae6e35ef4d258178c53eecf7273b5cbbb3c1694e79ddff0/sqlite_vss-0.1.0a1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl
+[2023-05-14 08:35:10] INFO root fetch - processPackages [xbox-sdk]: Downloading https://files.pythonhosted.org/packages/13/44/9c2491cfce0daae54f3211c57de11529ebaa0be9a3803e4a6cb02b0b1ef5/xbox-sdk-0.0.6.tar.gz
+[2023-05-14 08:35:10] INFO root fetch - processPackages [PySciMath]: Downloading https://files.pythonhosted.org/packages/9d/86/aff04fa3e738f295002d7804ca570089cb90354d7cc467ca9be113b5b5e5/PySciMath-1.5.2.tar.gz
+[2023-05-14 08:35:10] INFO root fetch - processPackages [osstatus]: Downloading https://files.pythonhosted.org/packages/21/ef/3d36fcb416de22befd1209eda7259523e107407a5467517a758559368f5e/osstatus-1.0.2.tar.gz
+[2023-05-14 08:35:10] INFO root fetch - processPackages [t2c]: Downloading https://files.pythonhosted.org/packages/f1/91/3ceb6efe4e0c7a6ab33e4759ca9cd01ad548b936bfc378fbdcbda7d8975a/t2c-0.0.1.tar.gz
+[2023-05-14 08:35:10] INFO root fetch - processPackages [traversaal]: Downloading https://files.pythonhosted.org/packages/74/fd/488e2814da970fab774bac52d2d6ad6cf89206e53fdd7f4219a3fda8afdd/traversaal-0.1.tar.gz
+[2023-05-14 08:35:10] INFO root fetch - processPackages [Kekik]: Downloading https://files.pythonhosted.org/packages/53/1c/f850414bc7025633cb358b391bf59f9f91a619ba5e1549313d00b2defdd7/Kekik-1.2.7.tar.gz
+[2023-05-14 08:35:10] INFO root fetch - processPackages [PySciMath]: executing diffoscope
+[2023-05-14 08:35:10] INFO root fetch - processPackages [PySciMath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySciMath-1.5.1.tar.gz tmp/PySciMath-1.5.2.tar.gz --markdown 20230514/P/PySciMath/1.5.1-1.5.2/diff.md --exclude *.pyd
+[2023-05-14 08:35:10] INFO root fetch - processPackages [mod9-asr]: Downloading https://files.pythonhosted.org/packages/c0/f6/13907d5800e037f555859ad91ae0c90259c43f64842fec46341b0583a9d8/mod9-asr-1.8.0.tar.gz
+[2023-05-14 08:35:10] INFO root fetch - processPackages [datasette-sqlite-vss]: Downloading https://files.pythonhosted.org/packages/47/46/617d3024ed550048cdead1227794bdccc50b12ed3083869a1845ee8e1b67/datasette_sqlite_vss-0.1.1a1-py3-none-any.whl
+[2023-05-14 08:35:10] INFO root fetch - processPackages [Kekik]: executing diffoscope
+[2023-05-14 08:35:10] INFO root fetch - processPackages [Kekik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Kekik-1.2.6.tar.gz tmp/Kekik-1.2.7.tar.gz --markdown 20230514/K/Kekik/1.2.6-1.2.7/diff.md --exclude *.pyd
+[2023-05-14 08:35:10] INFO root fetch - processPackages [t2c]: Downloading https://files.pythonhosted.org/packages/c2/68/a19508f4cc1099d979eae94779cf6cbf6fd7d6c9d5320f18bc9d12cac2e3/t2c-0.0.2.tar.gz
+[2023-05-14 08:35:10] INFO root fetch - processPackages [datasette-sqlite-vss]: executing diffoscope
+[2023-05-14 08:35:10] INFO root fetch - processPackages [datasette-sqlite-vss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datasette_sqlite_vss-0.1.0a1-py3-none-any.whl.zip tmp/datasette_sqlite_vss-0.1.1a1-py3-none-any.whl.zip --markdown 20230514/d/datasette-sqlite-vss/0.1.0a1-0.1.1a1/diff.md --exclude *.pyd
+[2023-05-14 08:35:10] INFO root fetch - processPackages [traversaal]: Downloading https://files.pythonhosted.org/packages/d2/6c/d86091b1db91e63898a261ae85876d22f181bda1b5ba58e29f51a4dd536c/traversaal-0.2.tar.gz
+[2023-05-14 08:35:10] INFO root fetch - processPackages [xbox-sdk]: Downloading https://files.pythonhosted.org/packages/59/a7/42d8c5c2f3b1d3489d93daf5d2868e4191c25d1d60d5bba593296e060e7c/xbox-sdk-0.0.7.tar.gz
+[2023-05-14 08:35:10] INFO root fetch - processPackages [osstatus]: Downloading https://files.pythonhosted.org/packages/ab/a6/3f16e26a9fe1a15468e040252a7f8abb665965689c69b694dc867b3dc349/osstatus-1.0.3.tar.gz
+[2023-05-14 08:35:10] INFO root fetch - processPackages [xbox-sdk]: executing diffoscope
+[2023-05-14 08:35:10] INFO root fetch - processPackages [xbox-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xbox-sdk-0.0.6.tar.gz tmp/xbox-sdk-0.0.7.tar.gz --markdown 20230514/x/xbox-sdk/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-14 08:35:10] INFO root fetch - processPackages [t2c]: executing diffoscope
+[2023-05-14 08:35:10] INFO root fetch - processPackages [t2c]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/t2c-0.0.1.tar.gz tmp/t2c-0.0.2.tar.gz --markdown 20230514/t/t2c/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 08:35:10] INFO root fetch - processPackages [traversaal]: executing diffoscope
+[2023-05-14 08:35:10] INFO root fetch - processPackages [traversaal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traversaal-0.1.tar.gz tmp/traversaal-0.2.tar.gz --markdown 20230514/t/traversaal/0.1-0.2/diff.md --exclude *.pyd
+[2023-05-14 08:35:10] INFO root fetch - processPackages [osstatus]: executing diffoscope
+[2023-05-14 08:35:10] INFO root fetch - processPackages [osstatus]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osstatus-1.0.2.tar.gz tmp/osstatus-1.0.3.tar.gz --markdown 20230514/o/osstatus/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-14 08:35:10] INFO root fetch - processPackages [mod9-asr]: Downloading https://files.pythonhosted.org/packages/0d/13/5c364d7ae8687f8bca2458b2f83fc03a1386c5f008cc9a75e093a4bc9b2a/mod9-asr-1.9.0.tar.gz
+[2023-05-14 08:35:10] INFO root fetch - processPackages [sqlite-vss]: Downloading https://files.pythonhosted.org/packages/b1/da/b3055183fedc03898a68f841db5da154776878b0140fedfaf50c1c38f058/sqlite_vss-0.1.1a1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl
+[2023-05-14 08:35:10] INFO root fetch - processPackages [mod9-asr]: executing diffoscope
+[2023-05-14 08:35:10] INFO root fetch - processPackages [mod9-asr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mod9-asr-1.8.0.tar.gz tmp/mod9-asr-1.9.0.tar.gz --markdown 20230514/m/mod9-asr/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-14 08:35:11] INFO root fetch - processPackages [sqlite-vss]: executing diffoscope
+[2023-05-14 08:35:11] INFO root fetch - processPackages [sqlite-vss]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sqlite_vss-0.1.0a1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip tmp/sqlite_vss-0.1.1a1-py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.manylinux1_x86_64.whl.zip --markdown 20230514/s/sqlite-vss/0.1.0a1-0.1.1a1/diff.md --exclude *.pyd
+[2023-05-14 08:35:11] INFO root fetch - main [MainThread]: End processing [datasette-sqlite-vss]: success
+[2023-05-14 08:35:11] INFO root fetch - main [MainThread]: End processing [xbox-sdk]: success
+[2023-05-14 08:35:11] INFO root fetch - main [MainThread]: End processing [PySciMath]: success
+[2023-05-14 08:35:11] INFO root fetch - main [MainThread]: End processing [t2c]: success
+[2023-05-14 08:35:11] INFO root fetch - main [MainThread]: End processing [traversaal]: success
+[2023-05-14 08:35:12] INFO root fetch - main [MainThread]: End processing [Kekik]: success
+[2023-05-14 08:35:12] INFO root fetch - main [MainThread]: End processing [osstatus]: success
+[2023-05-14 08:35:12] INFO root fetch - main [MainThread]: End processing [mod9-asr]: success
+[2023-05-14 08:35:35] INFO root fetch - main [MainThread]: End processing [sqlite-vss]: success
+[2023-05-14 08:35:35] INFO root fetch - main [MainThread]: Store serial: [18095368]
