@@ -5012,3 +5012,36 @@
 [2023-05-14 12:53:31] INFO root fetch - main [MainThread]: End processing [lilit]: success
 [2023-05-14 12:53:33] INFO root fetch - main [MainThread]: End processing [injective-py]: success
 [2023-05-14 12:53:33] INFO root fetch - main [MainThread]: Store serial: [18096421]
+[2023-05-14 12:58:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096421]
+[2023-05-14 12:58:42] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 12:58:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pocketrockit
+[2023-05-14 12:58:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: injective-py
+[2023-05-14 12:58:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-shelly-cacheworkaround
+[2023-05-14 12:58:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: indecode
+[2023-05-14 12:58:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: argparse-manpage
+[2023-05-14 12:58:42] INFO root fetch - processPackages [pocketrockit]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 12:58:42] INFO root fetch - processPackages [indecode]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-05-14 12:58:42] INFO root fetch - processPackages [injective-py]: New version: [0.6.2.4] Old Version: [0.6.2.3]
+[2023-05-14 12:58:42] INFO root fetch - processPackages [argparse-manpage]: New version: [4.2] Old Version: [4.1]
+[2023-05-14 12:58:42] INFO root fetch - processPackages [certora-cli-alpha-shelly-cacheworkaround]: New version: [20230514.10.57.301298] Old Version: [20230511.7.52.421096]
+[2023-05-14 12:58:42] INFO root fetch - processPackages [indecode]: executing diffoscope
+[2023-05-14 12:58:42] INFO root fetch - processPackages [indecode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indecode-1.4.1-py3-none-any.whl.zip tmp/indecode-1.4.2-py3-none-any.whl.zip --markdown 20230514/i/indecode/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-05-14 12:58:42] INFO root fetch - processPackages [pocketrockit]: Downloading https://files.pythonhosted.org/packages/a8/ee/f1c11743551245aafc55139aecd6ab3e8159baee4fca46a33374bff27bcc/pocketrockit-0.0.8.tar.gz
+[2023-05-14 12:58:42] INFO root fetch - processPackages [injective-py]: Downloading https://files.pythonhosted.org/packages/f4/a3/0c0c07923fe1f95566366a173945642efdd019a7d250ad9feae5e6113661/injective-py-0.6.2.4.tar.gz
+[2023-05-14 12:58:43] INFO root fetch - processPackages [argparse-manpage]: Downloading https://files.pythonhosted.org/packages/6c/96/b53e86c3479d03f62338ede7430c32ec9b6bf189c83a5008b7d346dc00af/argparse-manpage-4.1.tar.gz
+[2023-05-14 12:58:43] INFO root fetch - processPackages [certora-cli-alpha-shelly-cacheworkaround]: Downloading https://files.pythonhosted.org/packages/31/f6/9f15df7e8a59d314e2626f600b133c1f3f2f9eb68813569c0a73f5f37bda/certora-cli-alpha-shelly-cacheworkaround-20230511.7.52.421096.tar.gz
+[2023-05-14 12:58:43] WARNING root fetch - processPackages [certora-cli-alpha-shelly-cacheworkaround]: Skipping package: exceeds size limit 39424479>=10485760
+[2023-05-14 12:58:43] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-shelly-cacheworkaround] error
+[2023-05-14 12:58:43] INFO root fetch - processPackages [injective-py]: executing diffoscope
+[2023-05-14 12:58:43] INFO root fetch - processPackages [injective-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/injective-py-0.6.2.3.tar.gz tmp/injective-py-0.6.2.4.tar.gz --markdown 20230514/i/injective-py/0.6.2.3-0.6.2.4/diff.md --exclude *.pyd
+[2023-05-14 12:58:43] INFO root fetch - processPackages [pocketrockit]: Downloading https://files.pythonhosted.org/packages/35/0e/2ce2be3bcdaaceced761358d15c74af9ebe357db6c5da3435e8fe5d8ca74/pocketrockit-0.0.9.tar.gz
+[2023-05-14 12:58:43] INFO root fetch - processPackages [argparse-manpage]: Downloading https://files.pythonhosted.org/packages/f6/84/2d6cf91aeebdb4f19c6e0d71a2495091d75d889e3a1f1d3203dcf9b835f8/argparse-manpage-4.2.tar.gz
+[2023-05-14 12:58:43] INFO root fetch - processPackages [pocketrockit]: executing diffoscope
+[2023-05-14 12:58:43] INFO root fetch - processPackages [pocketrockit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pocketrockit-0.0.8.tar.gz tmp/pocketrockit-0.0.9.tar.gz --markdown 20230514/p/pocketrockit/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 12:58:43] INFO root fetch - processPackages [argparse-manpage]: executing diffoscope
+[2023-05-14 12:58:43] INFO root fetch - processPackages [argparse-manpage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/argparse-manpage-4.1.tar.gz tmp/argparse-manpage-4.2.tar.gz --markdown 20230514/a/argparse-manpage/4.1-4.2/diff.md --exclude *.pyd
+[2023-05-14 12:58:43] INFO root fetch - main [MainThread]: End processing [indecode]: success
+[2023-05-14 12:58:44] INFO root fetch - main [MainThread]: End processing [pocketrockit]: success
+[2023-05-14 12:58:44] INFO root fetch - main [MainThread]: End processing [argparse-manpage]: success
+[2023-05-14 12:58:50] INFO root fetch - main [MainThread]: End processing [injective-py]: success
+[2023-05-14 12:58:50] INFO root fetch - main [MainThread]: Store serial: [18096436]
