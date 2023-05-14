@@ -4609,3 +4609,33 @@
 [2023-05-14 11:48:33] INFO root fetch - main [MainThread]: End processing [tarvis-indicators-webapi]: success
 [2023-05-14 11:48:33] INFO root fetch - main [MainThread]: End processing [pdf-annotations-diff]: success
 [2023-05-14 11:48:33] INFO root fetch - main [MainThread]: Store serial: [18096175]
+[2023-05-14 11:53:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096175]
+[2023-05-14 11:53:41] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 11:53:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hhcm-forest
+[2023-05-14 11:53:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: trojanzoo-sphinx-theme
+[2023-05-14 11:53:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tarvis-tradingbot
+[2023-05-14 11:53:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: v4xyz
+[2023-05-14 11:53:41] INFO root fetch - processPackages [trojanzoo-sphinx-theme]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-14 11:53:41] INFO root fetch - processPackages [hhcm-forest]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-14 11:53:41] INFO root fetch - processPackages [tarvis-tradingbot]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-14 11:53:41] INFO root fetch - processPackages [v4xyz]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-14 11:53:42] INFO root fetch - processPackages [trojanzoo-sphinx-theme]: Downloading https://files.pythonhosted.org/packages/0e/cc/1b466092530f47e1f6bd0166e8a6f4d6cb08423fc660c1d13c02f0ad7156/trojanzoo_sphinx_theme-0.1.4.tar.gz
+[2023-05-14 11:53:42] INFO root fetch - processPackages [tarvis-tradingbot]: Downloading https://files.pythonhosted.org/packages/ca/9c/a6492345b1d9b14822cb42f5924ad5c055aa5f482551c195604badebae57/tarvis-tradingbot-0.9.5.tar.gz
+[2023-05-14 11:53:42] INFO root fetch - processPackages [hhcm-forest]: Downloading https://files.pythonhosted.org/packages/1a/b9/9dd0dcf137d50dcbdadfe512e24f3b64783fc563ca598434d18d5eb87089/hhcm_forest-1.1.8.tar.gz
+[2023-05-14 11:53:42] INFO root fetch - processPackages [v4xyz]: Downloading https://files.pythonhosted.org/packages/0f/46/f91a8d3ace529fd20ba12f869cc9243e4871d923f464a1e19889f44d37e4/v4xyz-0.0.4.tar.gz
+[2023-05-14 11:53:42] INFO root fetch - processPackages [tarvis-tradingbot]: Downloading https://files.pythonhosted.org/packages/cc/c1/ad4d5ca8c2120a254478935dd278c36cd34d860f3cf4cd5869cf30de374c/tarvis-tradingbot-0.9.6.tar.gz
+[2023-05-14 11:53:42] INFO root fetch - processPackages [hhcm-forest]: Downloading https://files.pythonhosted.org/packages/dc/55/1095ec9d5bcd490b4a577f577d8648f4b5f30b10327bc04a08ef258a35fb/hhcm_forest-1.1.9.tar.gz
+[2023-05-14 11:53:42] INFO root fetch - processPackages [v4xyz]: Downloading https://files.pythonhosted.org/packages/75/c1/d0b593faee4a6b652ceddf8269b9651459a60673761412cb9ad444290ad3/v4xyz-0.0.5.tar.gz
+[2023-05-14 11:53:42] INFO root fetch - processPackages [tarvis-tradingbot]: executing diffoscope
+[2023-05-14 11:53:42] INFO root fetch - processPackages [tarvis-tradingbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tarvis-tradingbot-0.9.5.tar.gz tmp/tarvis-tradingbot-0.9.6.tar.gz --markdown 20230514/t/tarvis-tradingbot/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-14 11:53:42] INFO root fetch - processPackages [hhcm-forest]: executing diffoscope
+[2023-05-14 11:53:42] INFO root fetch - processPackages [hhcm-forest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hhcm_forest-1.1.8.tar.gz tmp/hhcm_forest-1.1.9.tar.gz --markdown 20230514/h/hhcm-forest/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-14 11:53:42] INFO root fetch - processPackages [v4xyz]: executing diffoscope
+[2023-05-14 11:53:42] INFO root fetch - processPackages [v4xyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/v4xyz-0.0.4.tar.gz tmp/v4xyz-0.0.5.tar.gz --markdown 20230514/v/v4xyz/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-14 11:53:42] INFO root fetch - processPackages [trojanzoo-sphinx-theme]: executing diffoscope
+[2023-05-14 11:53:42] INFO root fetch - processPackages [trojanzoo-sphinx-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trojanzoo_sphinx_theme-0.1.4.tar.gz tmp/trojanzoo_sphinx_theme-0.1.5.tar.gz --markdown 20230514/t/trojanzoo-sphinx-theme/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-14 11:53:43] INFO root fetch - main [MainThread]: End processing [tarvis-tradingbot]: success
+[2023-05-14 11:53:43] INFO root fetch - main [MainThread]: End processing [v4xyz]: success
+[2023-05-14 11:53:43] INFO root fetch - main [MainThread]: End processing [hhcm-forest]: success
+[2023-05-14 11:53:44] INFO root fetch - main [MainThread]: End processing [trojanzoo-sphinx-theme]: success
+[2023-05-14 11:53:44] INFO root fetch - main [MainThread]: Store serial: [18096187]
