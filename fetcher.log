@@ -2399,3 +2399,51 @@
 [2023-05-14 05:59:36] INFO root fetch - main [MainThread]: End processing [livesolid]: success
 [2023-05-14 05:59:40] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2023-05-14 05:59:40] INFO root fetch - main [MainThread]: Store serial: [18094845]
+[2023-05-14 06:04:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094845]
+[2023-05-14 06:04:48] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-14 06:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: TransLiter
+[2023-05-14 06:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyusel
+[2023-05-14 06:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pynterface
+[2023-05-14 06:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: enformer-pytorch
+[2023-05-14 06:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: livesolid
+[2023-05-14 06:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-05-14 06:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-05-14 06:04:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: ColdTOFU
+[2023-05-14 06:04:48] WARNING root fetch - processPackages [pynterface]: Skipping, unable to determine old version
+[2023-05-14 06:04:48] INFO root fetch - main [MainThread]: End processing [pynterface] error
+[2023-05-14 06:04:48] WARNING root fetch - processPackages [pyusel]: Skipping, unable to determine old version
+[2023-05-14 06:04:48] INFO root fetch - main [MainThread]: End processing [pyusel] error
+[2023-05-14 06:04:48] INFO root fetch - processPackages [TransLiter]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-14 06:04:48] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1684036941] Old Version: [0.1.1684036933]
+[2023-05-14 06:04:48] INFO root fetch - processPackages [ColdTOFU]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-14 06:04:48] INFO root fetch - processPackages [livesolid]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 06:04:48] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1684036941] Old Version: [0.1.1684036933]
+[2023-05-14 06:04:48] INFO root fetch - processPackages [enformer-pytorch]: New version: [0.7.4] Old Version: [0.7.3]
+[2023-05-14 06:04:49] INFO root fetch - processPackages [livesolid]: executing diffoscope
+[2023-05-14 06:04:49] INFO root fetch - processPackages [livesolid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/livesolid-0.0.8.tar.gz tmp/livesolid-0.0.9.tar.gz --markdown 20230514/l/livesolid/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 06:04:49] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/8f/06/a9903ab19f4f7702c4b4234cf67685d21888f24e08675fe62f1b2970332f/eia-odin-pkg-rioatmadja2018-0.1.1684036933.tar.gz
+[2023-05-14 06:04:49] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/8f/06/a9903ab19f4f7702c4b4234cf67685d21888f24e08675fe62f1b2970332f/eia-odin-pkg-rioatmadja2018-0.1.1684036933.tar.gz
+[2023-05-14 06:04:49] INFO root fetch - processPackages [enformer-pytorch]: Downloading https://files.pythonhosted.org/packages/f4/9d/bae02cb931da41c049e5298eac71c778a62d45bba61115467a3c763564ff/enformer-pytorch-0.7.3.tar.gz
+[2023-05-14 06:04:49] INFO root fetch - processPackages [ColdTOFU]: Downloading https://files.pythonhosted.org/packages/f4/0f/88ab9bcac0d733860bca87df49d79360e83ac8ee1708ae3a9df6128b13ca/ColdTOFU-0.0.6.tar.gz
+[2023-05-14 06:04:49] INFO root fetch - processPackages [TransLiter]: Downloading https://files.pythonhosted.org/packages/bf/f6/76ef42a2c85b4390ea935c180978830e94768f1d4d8b7c4e40c2c6cd1a6e/TransLiter-0.3.3.tar.gz
+[2023-05-14 06:04:49] INFO root fetch - processPackages [TransLiter]: executing diffoscope
+[2023-05-14 06:04:49] INFO root fetch - processPackages [TransLiter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TransLiter-0.3.2.tar.gz tmp/TransLiter-0.3.3.tar.gz --markdown 20230514/T/TransLiter/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-14 06:04:49] INFO root fetch - processPackages [ColdTOFU]: Downloading https://files.pythonhosted.org/packages/bc/cc/1b9a3b734fc15f02c2903ccf65eac6049262d2a5d8d11b7dbd102b4d51d8/ColdTOFU-0.0.7.tar.gz
+[2023-05-14 06:04:49] INFO root fetch - processPackages [ColdTOFU]: executing diffoscope
+[2023-05-14 06:04:49] INFO root fetch - processPackages [ColdTOFU]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ColdTOFU-0.0.6.tar.gz tmp/ColdTOFU-0.0.7.tar.gz --markdown 20230514/C/ColdTOFU/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-14 06:04:49] INFO root fetch - processPackages [enformer-pytorch]: Downloading https://files.pythonhosted.org/packages/76/ea/529936f971a9ba7debfd3784e767f4bd0dfc44c5daf9e892459c20a763a3/enformer-pytorch-0.7.4.tar.gz
+[2023-05-14 06:04:49] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/e5/2b/5a2e42be59948aaf76db61d1c0c913a254c9e0827bf28b2b2b0bf1a2bf40/eia_odin_pkg_rioatmadja2018-0.1.1684036941-py3-none-any.whl
+[2023-05-14 06:04:49] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/e5/2b/5a2e42be59948aaf76db61d1c0c913a254c9e0827bf28b2b2b0bf1a2bf40/eia_odin_pkg_rioatmadja2018-0.1.1684036941-py3-none-any.whl
+[2023-05-14 06:04:49] INFO root fetch - processPackages [enformer-pytorch]: executing diffoscope
+[2023-05-14 06:04:49] INFO root fetch - processPackages [enformer-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enformer-pytorch-0.7.3.tar.gz tmp/enformer-pytorch-0.7.4.tar.gz --markdown 20230514/e/enformer-pytorch/0.7.3-0.7.4/diff.md --exclude *.pyd
+[2023-05-14 06:04:49] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-05-14 06:04:49] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1684036933.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1684036941-py3-none-any.whl.zip --markdown 20230514/e/eia-odin-pkg-rioatmadja2018/0.1.1684036933-0.1.1684036941/diff.md --exclude *.pyd
+[2023-05-14 06:04:49] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-05-14 06:04:49] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1684036933.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1684036941-py3-none-any.whl.zip --markdown 20230514/e/eia-odin-pkg-rioatmadja2018/0.1.1684036933-0.1.1684036941/diff.md --exclude *.pyd
+[2023-05-14 06:04:50] INFO root fetch - main [MainThread]: End processing [livesolid]: success
+[2023-05-14 06:04:50] INFO root fetch - main [MainThread]: End processing [TransLiter]: success
+[2023-05-14 06:04:50] INFO root fetch - main [MainThread]: End processing [ColdTOFU]: success
+[2023-05-14 06:04:50] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-05-14 06:04:50] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-05-14 06:04:50] INFO root fetch - main [MainThread]: End processing [enformer-pytorch]: success
+[2023-05-14 06:04:50] INFO root fetch - main [MainThread]: Store serial: [18094876]
