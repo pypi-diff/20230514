@@ -3647,3 +3647,29 @@
 [2023-05-14 09:34:03] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-order-line-price-history]: success
 [2023-05-14 09:34:03] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-sale-workflow]: success
 [2023-05-14 09:34:03] INFO root fetch - main [MainThread]: Store serial: [18095539]
+[2023-05-14 09:39:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095539]
+[2023-05-14 09:39:12] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 09:39:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: t2f
+[2023-05-14 09:39:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: DSMLTF
+[2023-05-14 09:39:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lalsuite
+[2023-05-14 09:39:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: BDXConverter
+[2023-05-14 09:39:12] INFO root fetch - processPackages [BDXConverter]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-05-14 09:39:12] INFO root fetch - processPackages [t2f]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-14 09:39:12] INFO root fetch - processPackages [DSMLTF]: New version: [0.0.1] Old Version: [0.0]
+[2023-05-14 09:39:12] INFO root fetch - processPackages [lalsuite]: New version: [7.9] Old Version: [7.8]
+[2023-05-14 09:39:12] INFO root fetch - processPackages [BDXConverter]: executing diffoscope
+[2023-05-14 09:39:12] INFO root fetch - processPackages [BDXConverter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BDXConverter-1.1.7.tar.gz tmp/BDXConverter-1.1.8.tar.gz --markdown 20230514/B/BDXConverter/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-05-14 09:39:12] INFO root fetch - processPackages [lalsuite]: Downloading https://files.pythonhosted.org/packages/53/92/fc43211ca56b7c5532fc1b47c701a564c7ddcaf866c62ae45acbfdc34f23/lalsuite-7.8-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-14 09:39:12] INFO root fetch - processPackages [DSMLTF]: Downloading https://files.pythonhosted.org/packages/d0/59/74e68a440ec106bc6641ec4071dac0b1dc0f076cc069397c0e6aab5a62e9/DSMLTF-0.0.tar.gz
+[2023-05-14 09:39:12] WARNING root fetch - processPackages [lalsuite]: Skipping package: exceeds size limit 48394251>=10485760
+[2023-05-14 09:39:12] INFO root fetch - main [MainThread]: End processing [lalsuite] error
+[2023-05-14 09:39:12] INFO root fetch - processPackages [t2f]: Downloading https://files.pythonhosted.org/packages/71/cd/026804d395b618ab25f99cc5492b6bcf9d008854713b0ca55ae6bbfdfaac/t2f-0.1.6.tar.gz
+[2023-05-14 09:39:12] INFO root fetch - processPackages [t2f]: executing diffoscope
+[2023-05-14 09:39:12] INFO root fetch - processPackages [t2f]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/t2f-0.1.5.tar.gz tmp/t2f-0.1.6.tar.gz --markdown 20230514/t/t2f/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-14 09:39:12] INFO root fetch - processPackages [DSMLTF]: Downloading https://files.pythonhosted.org/packages/d8/c9/a8e7a86b87a22c68184c71a182474617de189e39036c84fde4ea6ab02313/DSMLTF-0.0.1.tar.gz
+[2023-05-14 09:39:13] INFO root fetch - processPackages [DSMLTF]: executing diffoscope
+[2023-05-14 09:39:13] INFO root fetch - processPackages [DSMLTF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/DSMLTF-0.0.tar.gz tmp/DSMLTF-0.0.1.tar.gz --markdown 20230514/D/DSMLTF/0.0-0.0.1/diff.md --exclude *.pyd
+[2023-05-14 09:39:13] INFO root fetch - main [MainThread]: End processing [t2f]: success
+[2023-05-14 09:39:13] INFO root fetch - main [MainThread]: End processing [BDXConverter]: success
+[2023-05-14 09:39:13] INFO root fetch - main [MainThread]: End processing [DSMLTF]: success
+[2023-05-14 09:39:13] INFO root fetch - main [MainThread]: Store serial: [18095567]
