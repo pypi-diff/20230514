@@ -7347,3 +7347,49 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 16:54:09] INFO root fetch - main [MainThread]: End processing [flit]: success
 [2023-05-14 16:54:11] INFO root fetch - main [MainThread]: End processing [salabim]: success
 [2023-05-14 16:54:11] INFO root fetch - main [MainThread]: Store serial: [18097788]
+[2023-05-14 16:59:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18097788]
+[2023-05-14 16:59:21] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-14 16:59:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: circuitpython-laser-egismos
+[2023-05-14 16:59:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: data2latex
+[2023-05-14 16:59:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SantorinAI
+[2023-05-14 16:59:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: chitose
+[2023-05-14 16:59:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: livesolid
+[2023-05-14 16:59:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: rapidtide
+[2023-05-14 16:59:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: projectrexa
+[2023-05-14 16:59:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: amazon-ec2-best-instance
+[2023-05-14 16:59:21] INFO root fetch - processPackages [data2latex]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-14 16:59:21] INFO root fetch - processPackages [rapidtide]: New version: [2.5.6] Old Version: [2.5.5]
+[2023-05-14 16:59:21] WARNING root fetch - processPackages [projectrexa]: Skipping, unable to determine old version
+[2023-05-14 16:59:21] INFO root fetch - processPackages [SantorinAI]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-14 16:59:21] INFO root fetch - main [MainThread]: End processing [projectrexa] error
+[2023-05-14 16:59:21] INFO root fetch - processPackages [circuitpython-laser-egismos]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-05-14 16:59:21] INFO root fetch - processPackages [amazon-ec2-best-instance]: New version: [2.4.3] Old Version: [2.4.2]
+[2023-05-14 16:59:21] INFO root fetch - processPackages [chitose]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-14 16:59:21] INFO root fetch - processPackages [livesolid]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 16:59:21] INFO root fetch - processPackages [amazon-ec2-best-instance]: executing diffoscope
+[2023-05-14 16:59:21] INFO root fetch - processPackages [amazon-ec2-best-instance]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amazon-ec2-best-instance-2.4.2.tar.gz tmp/amazon-ec2-best-instance-2.4.3.tar.gz --markdown 20230514/a/amazon-ec2-best-instance/2.4.2-2.4.3/diff.md --exclude *.pyd
+[2023-05-14 16:59:21] INFO root fetch - processPackages [circuitpython-laser-egismos]: executing diffoscope
+[2023-05-14 16:59:21] INFO root fetch - processPackages [circuitpython-laser-egismos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circuitpython-laser-egismos-1.0.1.tar.gz tmp/circuitpython-laser-egismos-1.1.0.tar.gz --markdown 20230514/c/circuitpython-laser-egismos/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 16:59:21] INFO root fetch - processPackages [data2latex]: Downloading https://files.pythonhosted.org/packages/0b/25/be44fa01eac5033b004426e5fe3cc5f23e394fd8aa1d5d4fd2dfca4120ea/data2latex-1.0.1.tar.gz
+[2023-05-14 16:59:21] INFO root fetch - processPackages [livesolid]: executing diffoscope
+[2023-05-14 16:59:21] INFO root fetch - processPackages [livesolid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/livesolid-0.0.8.tar.gz tmp/livesolid-0.0.9.tar.gz --markdown 20230514/l/livesolid/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 16:59:21] INFO root fetch - processPackages [rapidtide]: Downloading https://files.pythonhosted.org/packages/14/9c/23b154060f16545d592c83a3fac20fddb01a3a48eebdf30fc99d7563eb92/rapidtide-2.5.5-py2.py3-none-any.whl
+[2023-05-14 16:59:21] INFO root fetch - processPackages [chitose]: Downloading https://files.pythonhosted.org/packages/4f/e0/ac5872185ca96454b97a89359ef721f29f79faf70d2deab715d843b9b24e/chitose-0.0.4.tar.gz
+[2023-05-14 16:59:21] INFO root fetch - processPackages [SantorinAI]: Downloading https://files.pythonhosted.org/packages/45/50/db98817781095bc2cfd5a55cb885b71d9c021fd58a717e74617d5191cb40/SantorinAI-1.1.3.tar.gz
+[2023-05-14 16:59:21] INFO root fetch - processPackages [SantorinAI]: executing diffoscope
+[2023-05-14 16:59:21] INFO root fetch - processPackages [SantorinAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SantorinAI-1.1.2.tar.gz tmp/SantorinAI-1.1.3.tar.gz --markdown 20230514/S/SantorinAI/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-14 16:59:21] INFO root fetch - processPackages [data2latex]: Downloading https://files.pythonhosted.org/packages/a5/16/e04767ffc657f75f98674e97f22eb45ce754e0dd2dbea7d7c9b74bc0d70d/data2latex-1.0.2.tar.gz
+[2023-05-14 16:59:22] INFO root fetch - processPackages [data2latex]: executing diffoscope
+[2023-05-14 16:59:22] INFO root fetch - processPackages [data2latex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data2latex-1.0.1.tar.gz tmp/data2latex-1.0.2.tar.gz --markdown 20230514/d/data2latex/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-14 16:59:22] WARNING root fetch - processPackages [rapidtide]: Skipping package: exceeds size limit 10952459>=10485760
+[2023-05-14 16:59:22] INFO root fetch - main [MainThread]: End processing [rapidtide] error
+[2023-05-14 16:59:22] INFO root fetch - processPackages [chitose]: Downloading https://files.pythonhosted.org/packages/b2/94/8d3506e29ac8296479b852d0b0eac60c2ade5526abbaef57b26311d75919/chitose-0.0.5.tar.gz
+[2023-05-14 16:59:22] INFO root fetch - processPackages [chitose]: executing diffoscope
+[2023-05-14 16:59:22] INFO root fetch - processPackages [chitose]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chitose-0.0.4.tar.gz tmp/chitose-0.0.5.tar.gz --markdown 20230514/c/chitose/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-14 16:59:23] INFO root fetch - main [MainThread]: End processing [amazon-ec2-best-instance]: success
+[2023-05-14 16:59:23] INFO root fetch - main [MainThread]: End processing [circuitpython-laser-egismos]: success
+[2023-05-14 16:59:23] INFO root fetch - main [MainThread]: End processing [livesolid]: success
+[2023-05-14 16:59:23] INFO root fetch - main [MainThread]: End processing [SantorinAI]: success
+[2023-05-14 16:59:23] INFO root fetch - main [MainThread]: End processing [data2latex]: success
+[2023-05-14 16:59:23] INFO root fetch - main [MainThread]: End processing [chitose]: success
+[2023-05-14 16:59:23] INFO root fetch - main [MainThread]: Store serial: [18097819]
