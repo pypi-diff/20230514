@@ -6292,3 +6292,73 @@
 [2023-05-14 15:32:02] INFO root fetch - main [MainThread]: End processing [ytspider]: success
 [2023-05-14 15:32:02] INFO root fetch - main [MainThread]: End processing [twitter-api-py]: success
 [2023-05-14 15:32:02] INFO root fetch - main [MainThread]: Store serial: [18097242]
+[2023-05-14 15:37:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18097242]
+[2023-05-14 15:37:11] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-14 15:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: anicli-api
+[2023-05-14 15:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mknsmPy
+[2023-05-14 15:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PakePip
+[2023-05-14 15:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: TDhelper
+[2023-05-14 15:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: amazoncaptcha
+[2023-05-14 15:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ctfpipshell
+[2023-05-14 15:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ctfpipshell
+[2023-05-14 15:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pyinst
+[2023-05-14 15:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ctfpipshell
+[2023-05-14 15:37:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: yunxiao
+[2023-05-14 15:37:11] INFO root fetch - processPackages [mknsmPy]: New version: [0.4] Old Version: [0.3]
+[2023-05-14 15:37:11] INFO root fetch - processPackages [anicli-api]: New version: [0.4.0] Old Version: [0.3.8]
+[2023-05-14 15:37:11] INFO root fetch - processPackages [ctfpipshell]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-14 15:37:11] INFO root fetch - processPackages [ctfpipshell]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-14 15:37:11] WARNING root fetch - processPackages [PakePip]: Skipping, unable to determine old version
+[2023-05-14 15:37:11] INFO root fetch - processPackages [PakePip]: Start processing: certora-cli-alpha-roy-CERT-1955-assertHits
+[2023-05-14 15:37:11] INFO root fetch - main [MainThread]: End processing [PakePip] error
+[2023-05-14 15:37:11] INFO root fetch - processPackages [amazoncaptcha]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-14 15:37:11] WARNING root fetch - processPackages [pyinst]: Skipping, unable to determine old version
+[2023-05-14 15:37:11] INFO root fetch - processPackages [yunxiao]: New version: [0.1.7] Old Version: [0.1.6]
+[2023-05-14 15:37:11] INFO root fetch - main [MainThread]: End processing [pyinst] error
+[2023-05-14 15:37:11] INFO root fetch - processPackages [ctfpipshell]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-14 15:37:11] INFO root fetch - processPackages [TDhelper]: New version: [2.4.9] Old Version: [2.4.8]
+[2023-05-14 15:37:11] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: New version: [20230514.13.35.499127] Old Version: [20230514.10.59.61006]
+[2023-05-14 15:37:11] INFO root fetch - processPackages [ctfpipshell]: Downloading https://files.pythonhosted.org/packages/82/1c/13fc0661a08b43f05386c9e3addfc2732a67f44b40f06aca7feab3cda58c/ctfpipshell-0.0.2.tar.gz
+[2023-05-14 15:37:11] INFO root fetch - processPackages [ctfpipshell]: Downloading https://files.pythonhosted.org/packages/82/1c/13fc0661a08b43f05386c9e3addfc2732a67f44b40f06aca7feab3cda58c/ctfpipshell-0.0.2.tar.gz
+[2023-05-14 15:37:11] INFO root fetch - processPackages [mknsmPy]: Downloading https://files.pythonhosted.org/packages/c5/8a/da67ff361c75305c99529e5a4f414ff8ffd14551cc828a89f8bb75efe8f3/mknsmPy-0.3.tar.gz
+[2023-05-14 15:37:11] INFO root fetch - processPackages [ctfpipshell]: Downloading https://files.pythonhosted.org/packages/82/1c/13fc0661a08b43f05386c9e3addfc2732a67f44b40f06aca7feab3cda58c/ctfpipshell-0.0.2.tar.gz
+[2023-05-14 15:37:11] INFO root fetch - processPackages [anicli-api]: Downloading https://files.pythonhosted.org/packages/c6/32/36bbb8dcea080d98c657e076c3a9e0923457234c09b3e0cb8e90abf71fa0/anicli_api-0.3.8.tar.gz
+[2023-05-14 15:37:11] INFO root fetch - processPackages [TDhelper]: Downloading https://files.pythonhosted.org/packages/bb/1c/dca1ceb037eb8f1ae4de4019d0068c738138f1245464ed9fc883cebccd4c/TDhelper-2.4.8.tar.gz
+[2023-05-14 15:37:12] INFO root fetch - processPackages [amazoncaptcha]: Downloading https://files.pythonhosted.org/packages/a5/0c/0b1006c69ce4c7ab6b2b3b2c7bd3b4c146842e5aad55368c26f7a4e319f7/amazoncaptcha-0.5.8.tar.gz
+[2023-05-14 15:37:12] INFO root fetch - processPackages [yunxiao]: Downloading https://files.pythonhosted.org/packages/84/d8/33f271f3b235de2c7587eda26631ab8860a5a4d4cfd2d521483da6b8e450/yunxiao-0.1.6.tar.gz
+[2023-05-14 15:37:12] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Downloading https://files.pythonhosted.org/packages/d2/f4/f80d6bdda2c08b09ed1a04f869f7055d8b2240f9df410f53d308805bb003/certora-cli-alpha-roy-CERT-1955-assertHits-20230514.10.59.61006.tar.gz
+[2023-05-14 15:37:12] WARNING root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Skipping package: exceeds size limit 39431233>=10485760
+[2023-05-14 15:37:12] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-roy-CERT-1955-assertHits] error
+[2023-05-14 15:37:12] INFO root fetch - processPackages [mknsmPy]: Downloading https://files.pythonhosted.org/packages/4a/a6/e92ce57239977ea064d94032fe6067e933169a82f116be848c02d4010b04/mknsmPy-0.4.tar.gz
+[2023-05-14 15:37:12] INFO root fetch - processPackages [anicli-api]: Downloading https://files.pythonhosted.org/packages/8b/bf/34b91597658bfbe3dcc036cc1e3f650d5dd74eaffb73f89abb857d31c394/anicli_api-0.4.0.tar.gz
+[2023-05-14 15:37:12] INFO root fetch - processPackages [TDhelper]: Downloading https://files.pythonhosted.org/packages/aa/53/a01861610e107d19f5f6fdb99b82e2d1155ed57aca74b3349dc5cf10caea/TDhelper-2.4.9.tar.gz
+[2023-05-14 15:37:12] INFO root fetch - processPackages [ctfpipshell]: Downloading https://files.pythonhosted.org/packages/d4/24/723cc429d15054329aa08343e4df4013a1c9c960fc5067d57b8e4ed00cb5/ctfpipshell-0.0.3.tar.gz
+[2023-05-14 15:37:12] INFO root fetch - processPackages [ctfpipshell]: Downloading https://files.pythonhosted.org/packages/d4/24/723cc429d15054329aa08343e4df4013a1c9c960fc5067d57b8e4ed00cb5/ctfpipshell-0.0.3.tar.gz
+[2023-05-14 15:37:12] INFO root fetch - processPackages [mknsmPy]: executing diffoscope
+[2023-05-14 15:37:12] INFO root fetch - processPackages [mknsmPy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mknsmPy-0.3.tar.gz tmp/mknsmPy-0.4.tar.gz --markdown 20230514/m/mknsmPy/0.3-0.4/diff.md --exclude *.pyd
+[2023-05-14 15:37:12] INFO root fetch - processPackages [anicli-api]: executing diffoscope
+[2023-05-14 15:37:12] INFO root fetch - processPackages [ctfpipshell]: Downloading https://files.pythonhosted.org/packages/d4/24/723cc429d15054329aa08343e4df4013a1c9c960fc5067d57b8e4ed00cb5/ctfpipshell-0.0.3.tar.gz
+[2023-05-14 15:37:12] INFO root fetch - processPackages [anicli-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anicli_api-0.3.8.tar.gz tmp/anicli_api-0.4.0.tar.gz --markdown 20230514/a/anicli-api/0.3.8-0.4.0/diff.md --exclude *.pyd
+[2023-05-14 15:37:12] INFO root fetch - processPackages [ctfpipshell]: executing diffoscope
+[2023-05-14 15:37:12] INFO root fetch - processPackages [ctfpipshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctfpipshell-0.0.2.tar.gz tmp/ctfpipshell-0.0.3.tar.gz --markdown 20230514/c/ctfpipshell/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-14 15:37:12] INFO root fetch - processPackages [ctfpipshell]: executing diffoscope
+[2023-05-14 15:37:12] INFO root fetch - processPackages [ctfpipshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctfpipshell-0.0.2.tar.gz tmp/ctfpipshell-0.0.3.tar.gz --markdown 20230514/c/ctfpipshell/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-14 15:37:12] INFO root fetch - processPackages [TDhelper]: executing diffoscope
+[2023-05-14 15:37:12] INFO root fetch - processPackages [TDhelper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/TDhelper-2.4.8.tar.gz tmp/TDhelper-2.4.9.tar.gz --markdown 20230514/T/TDhelper/2.4.8-2.4.9/diff.md --exclude *.pyd
+[2023-05-14 15:37:12] INFO root fetch - processPackages [amazoncaptcha]: Downloading https://files.pythonhosted.org/packages/11/fe/71b2b192ddcf84971ea3e5a9c99fa1c99a85d6f82a0821d8f9c7a7edf538/amazoncaptcha-0.5.9.tar.gz
+[2023-05-14 15:37:12] INFO root fetch - processPackages [ctfpipshell]: executing diffoscope
+[2023-05-14 15:37:12] INFO root fetch - processPackages [ctfpipshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctfpipshell-0.0.2.tar.gz tmp/ctfpipshell-0.0.3.tar.gz --markdown 20230514/c/ctfpipshell/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-14 15:37:12] INFO root fetch - processPackages [yunxiao]: Downloading https://files.pythonhosted.org/packages/7c/cc/6ba58876c828b1572d6027c00509719219f003d61ebdc7f07a44e9d3562a/yunxiao-0.1.7.tar.gz
+[2023-05-14 15:37:12] INFO root fetch - processPackages [yunxiao]: executing diffoscope
+[2023-05-14 15:37:12] INFO root fetch - processPackages [yunxiao]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yunxiao-0.1.6.tar.gz tmp/yunxiao-0.1.7.tar.gz --markdown 20230514/y/yunxiao/0.1.6-0.1.7/diff.md --exclude *.pyd
+[2023-05-14 15:37:12] INFO root fetch - processPackages [amazoncaptcha]: executing diffoscope
+[2023-05-14 15:37:12] INFO root fetch - processPackages [amazoncaptcha]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/amazoncaptcha-0.5.8.tar.gz tmp/amazoncaptcha-0.5.9.tar.gz --markdown 20230514/a/amazoncaptcha/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-14 15:37:13] INFO root fetch - main [MainThread]: End processing [ctfpipshell]: success
+[2023-05-14 15:37:13] INFO root fetch - main [MainThread]: End processing [mknsmPy]: success
+[2023-05-14 15:37:13] INFO root fetch - main [MainThread]: End processing [ctfpipshell]: success
+[2023-05-14 15:37:13] INFO root fetch - main [MainThread]: End processing [ctfpipshell]: success
+[2023-05-14 15:37:13] INFO root fetch - main [MainThread]: End processing [yunxiao]: success
+[2023-05-14 15:37:13] INFO root fetch - main [MainThread]: End processing [anicli-api]: success
+[2023-05-14 15:37:15] INFO root fetch - main [MainThread]: End processing [amazoncaptcha]: success
+[2023-05-14 15:37:15] INFO root fetch - main [MainThread]: End processing [TDhelper]: success
+[2023-05-14 15:37:15] INFO root fetch - main [MainThread]: Store serial: [18097277]
