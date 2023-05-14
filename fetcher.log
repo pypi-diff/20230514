@@ -9863,3 +9863,56 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 21:05:28] INFO root fetch - main [MainThread]: End processing [llama-index-sl]: success
 [2023-05-14 21:05:33] INFO root fetch - main [MainThread]: End processing [kcli]: success
 [2023-05-14 21:05:33] INFO root fetch - main [MainThread]: Store serial: [18099388]
+[2023-05-14 21:10:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18099388]
+[2023-05-14 21:10:42] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-14 21:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: edc-subject-dashboard
+[2023-05-14 21:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-madvr
+[2023-05-14 21:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: jutility
+[2023-05-14 21:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ipfskvs
+[2023-05-14 21:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fastapi-redis-rate-limiter
+[2023-05-14 21:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: odoo12-addon-pos-empty-home
+[2023-05-14 21:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sensor-state-data
+[2023-05-14 21:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cast-bootstrap5
+[2023-05-14 21:10:42] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: certora-cli-alpha-jaroslav-UCStats2
+[2023-05-14 21:10:42] WARNING root fetch - processPackages [fastapi-redis-rate-limiter]: Skipping, unable to determine old version
+[2023-05-14 21:10:42] INFO root fetch - main [MainThread]: End processing [fastapi-redis-rate-limiter] error
+[2023-05-14 21:10:42] INFO root fetch - processPackages [ipfskvs]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 21:10:42] INFO root fetch - processPackages [py-madvr]: New version: [1.4.0] Old Version: [1.3.19]
+[2023-05-14 21:10:42] INFO root fetch - processPackages [jutility]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-14 21:10:42] INFO root fetch - processPackages [edc-subject-dashboard]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-14 21:10:42] INFO root fetch - processPackages [odoo12-addon-pos-empty-home]: New version: [12.0.1.0.1] Old Version: [12.0.1.0.0.99.dev8]
+[2023-05-14 21:10:42] INFO root fetch - processPackages [cast-bootstrap5]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-14 21:10:42] INFO root fetch - processPackages [certora-cli-alpha-jaroslav-UCStats2]: New version: [20230514.17.47.470333] Old Version: [20230510.20.20.327816]
+[2023-05-14 21:10:42] INFO root fetch - processPackages [sensor-state-data]: New version: [2.9.1] Old Version: [2.9.0]
+[2023-05-14 21:10:42] INFO root fetch - processPackages [ipfskvs]: executing diffoscope
+[2023-05-14 21:10:42] INFO root fetch - processPackages [ipfskvs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipfskvs-0.1.8.tar.gz tmp/ipfskvs-0.1.9.tar.gz --markdown 20230514/i/ipfskvs/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 21:10:42] INFO root fetch - processPackages [certora-cli-alpha-jaroslav-UCStats2]: Downloading https://files.pythonhosted.org/packages/ff/ac/910e07c93da59c74e24cdbcc411e8c0a5b0b48685fcdf879324cb75fe314/certora-cli-alpha-jaroslav-UCStats2-20230510.20.20.327816.tar.gz
+[2023-05-14 21:10:42] INFO root fetch - processPackages [sensor-state-data]: executing diffoscope
+[2023-05-14 21:10:42] INFO root fetch - processPackages [sensor-state-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sensor-state-data-2.9.0.tar.gz tmp/sensor-state-data-2.9.1.tar.gz --markdown 20230514/s/sensor-state-data/2.9.0-2.9.1/diff.md --exclude *.pyd
+[2023-05-14 21:10:42] INFO root fetch - processPackages [cast-bootstrap5]: Downloading https://files.pythonhosted.org/packages/22/6f/624bea6b6f8f50c7acc97a2b8d1a9390bc0ccc5b5b8f12ae1889e7a36c2d/cast_bootstrap5-0.0.4.tar.gz
+[2023-05-14 21:10:42] INFO root fetch - processPackages [edc-subject-dashboard]: Downloading https://files.pythonhosted.org/packages/e2/de/4ac899f759846a1ffcc6a6347a85e786c1b637d41680d2cae0a6c2007b55/edc_subject_dashboard-0.3.8-py3-none-any.whl
+[2023-05-14 21:10:42] INFO root fetch - processPackages [odoo12-addon-pos-empty-home]: Downloading https://files.pythonhosted.org/packages/d5/e5/3972aa986d53026f811adb64a04fe296d34b0214bf6bf03eaaa333a3cd35/odoo12_addon_pos_empty_home-12.0.1.0.0.99.dev8-py3-none-any.whl
+[2023-05-14 21:10:42] INFO root fetch - processPackages [jutility]: Downloading https://files.pythonhosted.org/packages/e4/7c/1d55246340866552cc02d76f8f09e95df318ebf05d96fb30bd9729f69ac0/jutility-0.0.7.tar.gz
+[2023-05-14 21:10:42] INFO root fetch - processPackages [py-madvr]: Downloading https://files.pythonhosted.org/packages/6a/b4/6e0352b73bbe8e2ea2de75b60ec35f5991fb40fd4e7421c5b20c1e617dd1/py_madvr-1.4.0.tar.gz
+[2023-05-14 21:10:42] WARNING root fetch - processPackages [certora-cli-alpha-jaroslav-UCStats2]: Skipping package: exceeds size limit 39212933>=10485760
+[2023-05-14 21:10:42] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-jaroslav-UCStats2] error
+[2023-05-14 21:10:42] INFO root fetch - processPackages [py-madvr]: executing diffoscope
+[2023-05-14 21:10:42] INFO root fetch - processPackages [py-madvr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_madvr-1.3.19.tar.gz tmp/py_madvr-1.4.0.tar.gz --markdown 20230514/p/py-madvr/1.3.19-1.4.0/diff.md --exclude *.pyd
+[2023-05-14 21:10:43] INFO root fetch - processPackages [jutility]: executing diffoscope
+[2023-05-14 21:10:43] INFO root fetch - processPackages [jutility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jutility-0.0.6.tar.gz tmp/jutility-0.0.7.tar.gz --markdown 20230514/j/jutility/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-14 21:10:43] INFO root fetch - processPackages [edc-subject-dashboard]: Downloading https://files.pythonhosted.org/packages/dc/b2/f27cfd5946aaa1c7ae940b84f419cae29f450e721aac2786e84e4a456a12/edc_subject_dashboard-0.3.9-py3-none-any.whl
+[2023-05-14 21:10:43] INFO root fetch - processPackages [odoo12-addon-pos-empty-home]: Downloading https://files.pythonhosted.org/packages/2e/22/350573c1c1b7dfa60cb935041d053abf4caf71f3ca642afa14672a4d8f9d/odoo12_addon_pos_empty_home-12.0.1.0.1-py3-none-any.whl
+[2023-05-14 21:10:43] INFO root fetch - processPackages [cast-bootstrap5]: executing diffoscope
+[2023-05-14 21:10:43] INFO root fetch - processPackages [cast-bootstrap5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cast_bootstrap5-0.0.3.tar.gz tmp/cast_bootstrap5-0.0.4.tar.gz --markdown 20230514/c/cast-bootstrap5/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-14 21:10:43] INFO root fetch - processPackages [edc-subject-dashboard]: executing diffoscope
+[2023-05-14 21:10:43] INFO root fetch - processPackages [edc-subject-dashboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc_subject_dashboard-0.3.8-py3-none-any.whl.zip tmp/edc_subject_dashboard-0.3.9-py3-none-any.whl.zip --markdown 20230514/e/edc-subject-dashboard/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-14 21:10:43] INFO root fetch - processPackages [odoo12-addon-pos-empty-home]: executing diffoscope
+[2023-05-14 21:10:43] INFO root fetch - processPackages [odoo12-addon-pos-empty-home]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo12_addon_pos_empty_home-12.0.1.0.0.99.dev8-py3-none-any.whl.zip tmp/odoo12_addon_pos_empty_home-12.0.1.0.1-py3-none-any.whl.zip --markdown 20230514/o/odoo12-addon-pos-empty-home/12.0.1.0.0.99.dev8-12.0.1.0.1/diff.md --exclude *.pyd
+[2023-05-14 21:10:43] INFO root fetch - main [MainThread]: End processing [ipfskvs]: success
+[2023-05-14 21:10:44] INFO root fetch - main [MainThread]: End processing [sensor-state-data]: success
+[2023-05-14 21:10:44] INFO root fetch - main [MainThread]: End processing [py-madvr]: success
+[2023-05-14 21:10:44] INFO root fetch - main [MainThread]: End processing [jutility]: success
+[2023-05-14 21:10:44] INFO root fetch - main [MainThread]: End processing [cast-bootstrap5]: success
+[2023-05-14 21:10:44] INFO root fetch - main [MainThread]: End processing [edc-subject-dashboard]: success
+[2023-05-14 21:10:44] INFO root fetch - main [MainThread]: End processing [odoo12-addon-pos-empty-home]: success
+[2023-05-14 21:10:44] INFO root fetch - main [MainThread]: Store serial: [18099425]
