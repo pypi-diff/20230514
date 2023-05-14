@@ -3813,3 +3813,32 @@
 [2023-05-14 10:05:59] INFO root fetch - main [MainThread]: End processing [embedbase]: success
 [2023-05-14 10:05:59] INFO root fetch - main [MainThread]: End processing [tof]: success
 [2023-05-14 10:05:59] INFO root fetch - main [MainThread]: Store serial: [18095679]
+[2023-05-14 10:11:03] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095679]
+[2023-05-14 10:11:08] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 10:11:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eegsynth
+[2023-05-14 10:11:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyglove
+[2023-05-14 10:11:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pywithraccoon
+[2023-05-14 10:11:08] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-amazon-ad-api
+[2023-05-14 10:11:08] INFO root fetch - processPackages [eegsynth]: New version: [0.7.5] Old Version: [0.7.4]
+[2023-05-14 10:11:08] INFO root fetch - processPackages [pywithraccoon]: New version: [1.1] Old Version: [1.0]
+[2023-05-14 10:11:08] INFO root fetch - processPackages [python-amazon-ad-api]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-05-14 10:11:08] INFO root fetch - processPackages [pyglove]: New version: [0.3.1.dev20230514] Old Version: [0.3.1.dev20230513]
+[2023-05-14 10:11:09] INFO root fetch - processPackages [python-amazon-ad-api]: executing diffoscope
+[2023-05-14 10:11:09] INFO root fetch - processPackages [python-amazon-ad-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-amazon-ad-api-0.4.4.tar.gz tmp/python-amazon-ad-api-0.4.5.tar.gz --markdown 20230514/p/python-amazon-ad-api/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-05-14 10:11:09] INFO root fetch - processPackages [pywithraccoon]: Downloading https://files.pythonhosted.org/packages/14/c6/d714e21a8d756bb0cf7feb2d5603f2e9086b48c29c139cf9921b350a51e7/pywithraccoon-1.0.tar.gz
+[2023-05-14 10:11:09] INFO root fetch - processPackages [eegsynth]: Downloading https://files.pythonhosted.org/packages/73/3d/c92f9e93cc080c9ef044d64160ad7db2381efda72bb0e8551780e6cd2b96/eegsynth-0.7.4.tar.gz
+[2023-05-14 10:11:09] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/0d/8f/86cb3cf25059af79ccc61d4d2235d9d36278ce01d52173d766d3f8f8bb9d/pyglove-0.3.1.dev20230513.tar.gz
+[2023-05-14 10:11:09] INFO root fetch - processPackages [eegsynth]: Downloading https://files.pythonhosted.org/packages/b3/3d/36ad283aaba774967ab1ec09f25f53d328c787a0958906efa34b0954dd3b/eegsynth-0.7.5.tar.gz
+[2023-05-14 10:11:09] INFO root fetch - processPackages [eegsynth]: executing diffoscope
+[2023-05-14 10:11:09] INFO root fetch - processPackages [eegsynth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eegsynth-0.7.4.tar.gz tmp/eegsynth-0.7.5.tar.gz --markdown 20230514/e/eegsynth/0.7.4-0.7.5/diff.md --exclude *.pyd
+[2023-05-14 10:11:09] INFO root fetch - processPackages [pywithraccoon]: Downloading https://files.pythonhosted.org/packages/0b/5e/b7f3dd55fe083df81db11582780961fa2d157a3ae3b1f37c489df4a39490/pywithraccoon-1.1.tar.gz
+[2023-05-14 10:11:09] INFO root fetch - processPackages [pyglove]: Downloading https://files.pythonhosted.org/packages/bc/5e/ce553ecfa232f6acfc73f479f63a9ea2864c07f6252e6c960a819fc17d73/pyglove-0.3.1.dev20230514.tar.gz
+[2023-05-14 10:11:09] INFO root fetch - processPackages [pywithraccoon]: executing diffoscope
+[2023-05-14 10:11:09] INFO root fetch - processPackages [pywithraccoon]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pywithraccoon-1.0.tar.gz tmp/pywithraccoon-1.1.tar.gz --markdown 20230514/p/pywithraccoon/1.0-1.1/diff.md --exclude *.pyd
+[2023-05-14 10:11:09] INFO root fetch - processPackages [pyglove]: executing diffoscope
+[2023-05-14 10:11:09] INFO root fetch - processPackages [pyglove]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyglove-0.3.1.dev20230513.tar.gz tmp/pyglove-0.3.1.dev20230514.tar.gz --markdown 20230514/p/pyglove/0.3.1.dev20230513-0.3.1.dev20230514/diff.md --exclude *.pyd
+[2023-05-14 10:11:10] INFO root fetch - main [MainThread]: End processing [pywithraccoon]: success
+[2023-05-14 10:11:10] INFO root fetch - main [MainThread]: End processing [python-amazon-ad-api]: success
+[2023-05-14 10:11:11] INFO root fetch - main [MainThread]: End processing [eegsynth]: success
+[2023-05-14 10:11:11] INFO root fetch - main [MainThread]: End processing [pyglove]: success
+[2023-05-14 10:11:11] INFO root fetch - main [MainThread]: Store serial: [18095692]
