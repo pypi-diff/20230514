@@ -5045,3 +5045,54 @@
 [2023-05-14 12:58:44] INFO root fetch - main [MainThread]: End processing [argparse-manpage]: success
 [2023-05-14 12:58:50] INFO root fetch - main [MainThread]: End processing [injective-py]: success
 [2023-05-14 12:58:50] INFO root fetch - main [MainThread]: Store serial: [18096436]
+[2023-05-14 13:03:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096436]
+[2023-05-14 13:04:00] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-14 13:04:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: worktoy
+[2023-05-14 13:04:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: autokattis
+[2023-05-14 13:04:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-roy-CERT-1955-assertHits
+[2023-05-14 13:04:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hrin-msb
+[2023-05-14 13:04:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: gcsaws
+[2023-05-14 13:04:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: akatsuki-pp-py
+[2023-05-14 13:04:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: QuNet
+[2023-05-14 13:04:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: indecode
+[2023-05-14 13:04:00] INFO root fetch - processPackages [autokattis]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-05-14 13:04:00] INFO root fetch - processPackages [gcsaws]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 13:04:00] WARNING root fetch - processPackages [akatsuki-pp-py]: Skipping, unable to determine old version
+[2023-05-14 13:04:00] INFO root fetch - main [MainThread]: End processing [akatsuki-pp-py] error
+[2023-05-14 13:04:00] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: New version: [20230514.10.59.61006] Old Version: [20230511.11.55.578904]
+[2023-05-14 13:04:00] INFO root fetch - processPackages [QuNet]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 13:04:00] INFO root fetch - processPackages [worktoy]: New version: [0.28.3] Old Version: [0.28]
+[2023-05-14 13:04:00] INFO root fetch - processPackages [indecode]: New version: [1.4.3] Old Version: [1.4.2]
+[2023-05-14 13:04:00] INFO root fetch - processPackages [hrin-msb]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-14 13:04:00] INFO root fetch - processPackages [QuNet]: Downloading https://files.pythonhosted.org/packages/dd/ff/d52ef4f3702badb2b965ed11d28efa922877afe48d7211f5b389e5d704d6/QuNet-0.0.8-py3-none-any.whl
+[2023-05-14 13:04:00] INFO root fetch - processPackages [autokattis]: Downloading https://files.pythonhosted.org/packages/cd/35/6d77921aafed635cb352c388bb5b40980ff1cd831703ffde93b8c2cb84f1/autokattis-1.4.1.tar.gz
+[2023-05-14 13:04:00] INFO root fetch - processPackages [QuNet]: Downloading https://files.pythonhosted.org/packages/54/58/cbef2a8ccded07bca6ecb72ab20606abf8e1a54d857d6505877d10eba14d/QuNet-0.0.9-py3-none-any.whl
+[2023-05-14 13:04:00] INFO root fetch - processPackages [gcsaws]: Downloading https://files.pythonhosted.org/packages/08/8a/05177a8c3cb408994fbcadd1de82000fad9fc69f43879dc65f5f5dc1d4b8/gcsaws-0.0.8.tar.gz
+[2023-05-14 13:04:00] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Downloading https://files.pythonhosted.org/packages/92/c3/1510cffa37ceacb3fb5a0dcfe8d3dc9d6ec3650d08d0de37a8eee967c9d4/certora-cli-alpha-roy-CERT-1955-assertHits-20230511.11.55.578904.tar.gz
+[2023-05-14 13:04:00] INFO root fetch - processPackages [hrin-msb]: Downloading https://files.pythonhosted.org/packages/01/68/1789fa953fb7468267c85f88fd2bd30966fc7095fa1019588962e2e45635/hrin_msb-0.2.8.tar.gz
+[2023-05-14 13:04:00] INFO root fetch - processPackages [QuNet]: executing diffoscope
+[2023-05-14 13:04:00] INFO root fetch - processPackages [QuNet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/QuNet-0.0.8-py3-none-any.whl.zip tmp/QuNet-0.0.9-py3-none-any.whl.zip --markdown 20230514/Q/QuNet/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 13:04:00] INFO root fetch - processPackages [indecode]: Downloading https://files.pythonhosted.org/packages/e1/ff/25e713422ccd5f2dc467b5737f53345e765808e2b5846b0bfbf5b2dbb25c/indecode-1.4.3-py3-none-any.whl
+[2023-05-14 13:04:01] WARNING root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Skipping package: exceeds size limit 39425708>=10485760
+[2023-05-14 13:04:01] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-roy-CERT-1955-assertHits] error
+[2023-05-14 13:04:01] INFO root fetch - processPackages [indecode]: executing diffoscope
+[2023-05-14 13:04:01] INFO root fetch - processPackages [indecode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indecode-1.4.2-py3-none-any.whl.zip tmp/indecode-1.4.3-py3-none-any.whl.zip --markdown 20230514/i/indecode/1.4.2-1.4.3/diff.md --exclude *.pyd
+[2023-05-14 13:04:01] INFO root fetch - processPackages [worktoy]: Downloading https://files.pythonhosted.org/packages/d6/0a/3a67dfb4f1e08213c2e136506b716643857587217dab8380663fdceaefd3/worktoy-0.28.3.tar.gz
+[2023-05-14 13:04:01] INFO root fetch - processPackages [worktoy]: executing diffoscope
+[2023-05-14 13:04:01] INFO root fetch - processPackages [worktoy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/worktoy-0.28.tar.gz tmp/worktoy-0.28.3.tar.gz --markdown 20230514/w/worktoy/0.28-0.28.3/diff.md --exclude *.pyd
+[2023-05-14 13:04:01] INFO root fetch - processPackages [autokattis]: Downloading https://files.pythonhosted.org/packages/32/1f/2c3b73f0554f3b47212fad63f09f71b843c0c126b7e35b2f63013059e68d/autokattis-1.4.2.tar.gz
+[2023-05-14 13:04:01] INFO root fetch - processPackages [gcsaws]: Downloading https://files.pythonhosted.org/packages/f4/61/f3000e49f08920b77b2c1f4c0457ef630f7468369f2690897f29c45ca10a/gcsaws-0.0.9.tar.gz
+[2023-05-14 13:04:01] INFO root fetch - processPackages [autokattis]: executing diffoscope
+[2023-05-14 13:04:01] INFO root fetch - processPackages [autokattis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autokattis-1.4.1.tar.gz tmp/autokattis-1.4.2.tar.gz --markdown 20230514/a/autokattis/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-05-14 13:04:01] INFO root fetch - processPackages [gcsaws]: executing diffoscope
+[2023-05-14 13:04:01] INFO root fetch - processPackages [gcsaws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcsaws-0.0.8.tar.gz tmp/gcsaws-0.0.9.tar.gz --markdown 20230514/g/gcsaws/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 13:04:01] INFO root fetch - processPackages [hrin-msb]: Downloading https://files.pythonhosted.org/packages/f7/94/d59c8a5b3bee420117fc2d467d62317feecd19b8b1d838107abbbf1f5528/hrin_msb-0.2.9.tar.gz
+[2023-05-14 13:04:01] INFO root fetch - processPackages [hrin-msb]: executing diffoscope
+[2023-05-14 13:04:01] INFO root fetch - processPackages [hrin-msb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hrin_msb-0.2.8.tar.gz tmp/hrin_msb-0.2.9.tar.gz --markdown 20230514/h/hrin-msb/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-14 13:04:02] INFO root fetch - main [MainThread]: End processing [QuNet]: success
+[2023-05-14 13:04:02] INFO root fetch - main [MainThread]: End processing [indecode]: success
+[2023-05-14 13:04:02] INFO root fetch - main [MainThread]: End processing [worktoy]: success
+[2023-05-14 13:04:02] INFO root fetch - main [MainThread]: End processing [gcsaws]: success
+[2023-05-14 13:04:02] INFO root fetch - main [MainThread]: End processing [hrin-msb]: success
+[2023-05-14 13:04:02] INFO root fetch - main [MainThread]: End processing [autokattis]: success
+[2023-05-14 13:04:02] INFO root fetch - main [MainThread]: Store serial: [18096487]
