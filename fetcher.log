@@ -4672,3 +4672,20 @@
 [2023-05-14 11:58:55] INFO root fetch - main [MainThread]: End processing [brocolli]: success
 [2023-05-14 11:58:57] INFO root fetch - main [MainThread]: End processing [trojanzoo]: success
 [2023-05-14 11:58:57] INFO root fetch - main [MainThread]: Store serial: [18096201]
+[2023-05-14 12:04:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096201]
+[2023-05-14 12:04:06] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-14 12:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sluyspy
+[2023-05-14 12:04:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FreeTVG-karjakak
+[2023-05-14 12:04:06] INFO root fetch - processPackages [sluyspy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 12:04:06] INFO root fetch - processPackages [FreeTVG-karjakak]: New version: [3.2.0rc1] Old Version: [3.1.9]
+[2023-05-14 12:04:06] INFO root fetch - processPackages [sluyspy]: Downloading https://files.pythonhosted.org/packages/2e/a4/4900e50b59fbb28d4aab27262e301da21d524f63b67822a6e0d4a96ffa07/sluyspy-0.0.8.tar.gz
+[2023-05-14 12:04:06] INFO root fetch - processPackages [FreeTVG-karjakak]: Downloading https://files.pythonhosted.org/packages/49/44/f418fb9547083914b4db8003e4a5988a22cb2bd854295a3f76714be21700/FreeTVG-karjakak-3.1.9.tar.gz
+[2023-05-14 12:04:06] INFO root fetch - processPackages [FreeTVG-karjakak]: Downloading https://files.pythonhosted.org/packages/a5/c9/e7c553205ca83d6f4bed87f5b3a4a7e0a7356e776b8740accf8ff4ea4e6d/FreeTVG-karjakak-3.2.0rc1.tar.gz
+[2023-05-14 12:04:06] INFO root fetch - processPackages [sluyspy]: Downloading https://files.pythonhosted.org/packages/57/63/315f0a2381b239ccca34d6bc6a450de14abd766af694e35bd2e06340f14d/sluyspy-0.0.9.tar.gz
+[2023-05-14 12:04:06] INFO root fetch - processPackages [FreeTVG-karjakak]: executing diffoscope
+[2023-05-14 12:04:06] INFO root fetch - processPackages [FreeTVG-karjakak]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FreeTVG-karjakak-3.1.9.tar.gz tmp/FreeTVG-karjakak-3.2.0rc1.tar.gz --markdown 20230514/F/FreeTVG-karjakak/3.1.9-3.2.0rc1/diff.md --exclude *.pyd
+[2023-05-14 12:04:07] INFO root fetch - processPackages [sluyspy]: executing diffoscope
+[2023-05-14 12:04:07] INFO root fetch - processPackages [sluyspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sluyspy-0.0.8.tar.gz tmp/sluyspy-0.0.9.tar.gz --markdown 20230514/s/sluyspy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 12:04:07] INFO root fetch - main [MainThread]: End processing [sluyspy]: success
+[2023-05-14 12:04:08] INFO root fetch - main [MainThread]: End processing [FreeTVG-karjakak]: success
+[2023-05-14 12:04:08] INFO root fetch - main [MainThread]: Store serial: [18096209]
