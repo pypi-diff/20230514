@@ -3286,3 +3286,41 @@
 [2023-05-14 08:40:49] INFO root fetch - main [MainThread]: End processing [t2f]: success
 [2023-05-14 08:40:57] INFO root fetch - main [MainThread]: End processing [apysc]: success
 [2023-05-14 08:40:57] INFO root fetch - main [MainThread]: Store serial: [18095379]
+[2023-05-14 08:46:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095379]
+[2023-05-14 08:46:07] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-14 08:46:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mpservice
+[2023-05-14 08:46:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: 0wneg
+[2023-05-14 08:46:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: databend
+[2023-05-14 08:46:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: traversaal
+[2023-05-14 08:46:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: musiclib
+[2023-05-14 08:46:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: dreye
+[2023-05-14 08:46:07] INFO root fetch - processPackages [databend]: New version: [1.1.37] Old Version: [0.1.2]
+[2023-05-14 08:46:07] INFO root fetch - processPackages [traversaal]: New version: [0.3] Old Version: [0.2]
+[2023-05-14 08:46:07] WARNING root fetch - processPackages [0wneg]: Skipping, unable to determine old version
+[2023-05-14 08:46:07] INFO root fetch - main [MainThread]: End processing [0wneg] error
+[2023-05-14 08:46:07] INFO root fetch - processPackages [mpservice]: New version: [0.9.9.post1] Old Version: [0.9.9]
+[2023-05-14 08:46:07] INFO root fetch - processPackages [musiclib]: New version: [1.9.4] Old Version: [1.9.3]
+[2023-05-14 08:46:07] INFO root fetch - processPackages [dreye]: New version: [1.1.0.dev1] Old Version: [1.0.2.dev1]
+[2023-05-14 08:46:07] INFO root fetch - processPackages [mpservice]: Downloading https://files.pythonhosted.org/packages/a4/76/0caf3e54fc1b0c685c01abdb7deb283a4e0ab62467df218edf79256efe6d/mpservice-0.9.9.tar.gz
+[2023-05-14 08:46:07] INFO root fetch - processPackages [mpservice]: Downloading https://files.pythonhosted.org/packages/62/83/992eb812676a1d5b8ffbc5c9ba7e1bd57f82c86ae5c8a0e509834c8df031/mpservice-0.9.9.post1.tar.gz
+[2023-05-14 08:46:07] INFO root fetch - processPackages [databend]: Downloading https://files.pythonhosted.org/packages/31/61/f7e0b9fa6ad9c789c461e285efbaa91923390e31afd0ad0f39e7cdabde6d/databend-0.1.2.tar.gz
+[2023-05-14 08:46:07] INFO root fetch - processPackages [mpservice]: executing diffoscope
+[2023-05-14 08:46:07] INFO root fetch - processPackages [musiclib]: Downloading https://files.pythonhosted.org/packages/c7/96/eee5bcb387a77e4dbda243eeb1c2dfa66409eb8c61e9b0dbe9ce99c8038f/musiclib-1.9.3.tar.gz
+[2023-05-14 08:46:07] INFO root fetch - processPackages [mpservice]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mpservice-0.9.9.tar.gz tmp/mpservice-0.9.9.post1.tar.gz --markdown 20230514/m/mpservice/0.9.9-0.9.9.post1/diff.md --exclude *.pyd
+[2023-05-14 08:46:07] INFO root fetch - processPackages [dreye]: Downloading https://files.pythonhosted.org/packages/46/f2/01d7a73b5271d13f19a5ba61c435ca55ad4fd1320bde173a9ee518f73f61/dreye-1.0.2.dev1.tar.gz
+[2023-05-14 08:46:07] INFO root fetch - processPackages [traversaal]: Downloading https://files.pythonhosted.org/packages/45/37/e256ad919b7b0d023730bdb1aa6e7375f13e84df148098a5f35cc0aa299b/traversaal-0.3.tar.gz
+[2023-05-14 08:46:07] WARNING root fetch - processPackages [dreye]: Skipping package: exceeds size limit 94399558>=10485760
+[2023-05-14 08:46:07] INFO root fetch - main [MainThread]: End processing [dreye] error
+[2023-05-14 08:46:07] INFO root fetch - processPackages [traversaal]: executing diffoscope
+[2023-05-14 08:46:07] INFO root fetch - processPackages [traversaal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traversaal-0.2.tar.gz tmp/traversaal-0.3.tar.gz --markdown 20230514/t/traversaal/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-14 08:46:07] INFO root fetch - processPackages [musiclib]: Downloading https://files.pythonhosted.org/packages/cf/3a/f8dddb47ec312e3b0fa8dba8e3ea53138292e596a9d289c41f75cc4e69b7/musiclib-1.9.4.tar.gz
+[2023-05-14 08:46:07] INFO root fetch - processPackages [databend]: Downloading https://files.pythonhosted.org/packages/15/5b/c39100b50f9c3db7bc4da028e34c7bd076eabdc5a024e967e5d2be012b9f/databend-1.1.37.tar.gz
+[2023-05-14 08:46:07] INFO root fetch - processPackages [musiclib]: executing diffoscope
+[2023-05-14 08:46:07] INFO root fetch - processPackages [musiclib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/musiclib-1.9.3.tar.gz tmp/musiclib-1.9.4.tar.gz --markdown 20230514/m/musiclib/1.9.3-1.9.4/diff.md --exclude *.pyd
+[2023-05-14 08:46:07] INFO root fetch - processPackages [databend]: executing diffoscope
+[2023-05-14 08:46:07] INFO root fetch - processPackages [databend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databend-0.1.2.tar.gz tmp/databend-1.1.37.tar.gz --markdown 20230514/d/databend/0.1.2-1.1.37/diff.md --exclude *.pyd
+[2023-05-14 08:46:08] INFO root fetch - main [MainThread]: End processing [traversaal]: success
+[2023-05-14 08:46:08] INFO root fetch - main [MainThread]: End processing [mpservice]: success
+[2023-05-14 08:46:09] INFO root fetch - main [MainThread]: End processing [musiclib]: success
+[2023-05-14 08:46:54] INFO root fetch - main [MainThread]: End processing [databend]: success
+[2023-05-14 08:46:54] INFO root fetch - main [MainThread]: Store serial: [18095399]
