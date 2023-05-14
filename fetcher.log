@@ -1817,3 +1817,30 @@
 [2023-05-14 04:14:00] INFO root fetch - main [MainThread]: End processing [validmind]: success
 [2023-05-14 04:14:01] INFO root fetch - main [MainThread]: End processing [ksconf]: success
 [2023-05-14 04:14:01] INFO root fetch - main [MainThread]: Store serial: [18094460]
+[2023-05-14 04:19:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094460]
+[2023-05-14 04:19:10] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 04:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xicorpy
+[2023-05-14 04:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gandai
+[2023-05-14 04:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: webarchiver
+[2023-05-14 04:19:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hledger-args
+[2023-05-14 04:19:10] INFO root fetch - processPackages [xicorpy]: New version: [0.2] Old Version: [0.1.2]
+[2023-05-14 04:19:10] INFO root fetch - processPackages [webarchiver]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-14 04:19:10] INFO root fetch - processPackages [hledger-args]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-14 04:19:10] INFO root fetch - processPackages [gandai]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-05-14 04:19:10] INFO root fetch - processPackages [webarchiver]: executing diffoscope
+[2023-05-14 04:19:10] INFO root fetch - processPackages [webarchiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webarchiver-0.8.0-py2.py3-none-any.whl.zip tmp/webarchiver-0.9.0-py2.py3-none-any.whl.zip --markdown 20230514/w/webarchiver/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 04:19:10] INFO root fetch - processPackages [xicorpy]: Downloading https://files.pythonhosted.org/packages/1f/de/967a2552f926828ab1a4a9e41839df6aed7073db9096c0f43a4cb0e6dda8/xicorpy-0.1.2.tar.gz
+[2023-05-14 04:19:10] INFO root fetch - processPackages [gandai]: Downloading https://files.pythonhosted.org/packages/c9/e9/44de7983c0cda2c8c1729612f95865145d2e77b88efeef9cd42161ed3e2c/gandai-1.1.6.tar.gz
+[2023-05-14 04:19:10] INFO root fetch - processPackages [hledger-args]: Downloading https://files.pythonhosted.org/packages/08/6a/16657afeb14a35fb2cdc57faf0d469e6fe305ce9c985f968af7bfefe021c/hledger_args-0.0.7.tar.gz
+[2023-05-14 04:19:11] INFO root fetch - processPackages [gandai]: executing diffoscope
+[2023-05-14 04:19:11] INFO root fetch - processPackages [gandai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gandai-1.1.5.tar.gz tmp/gandai-1.1.6.tar.gz --markdown 20230514/g/gandai/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-05-14 04:19:11] INFO root fetch - processPackages [hledger-args]: executing diffoscope
+[2023-05-14 04:19:11] INFO root fetch - processPackages [hledger-args]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hledger_args-0.0.6.tar.gz tmp/hledger_args-0.0.7.tar.gz --markdown 20230514/h/hledger-args/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-14 04:19:11] INFO root fetch - processPackages [xicorpy]: Downloading https://files.pythonhosted.org/packages/b6/e5/ecc0e07a9ed97d089f7faf4e26498e4fa6ceb9c380a488cd7c4c1727833a/xicorpy-0.2.tar.gz
+[2023-05-14 04:19:11] INFO root fetch - processPackages [xicorpy]: executing diffoscope
+[2023-05-14 04:19:11] INFO root fetch - processPackages [xicorpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xicorpy-0.1.2.tar.gz tmp/xicorpy-0.2.tar.gz --markdown 20230514/x/xicorpy/0.1.2-0.2/diff.md --exclude *.pyd
+[2023-05-14 04:19:12] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
+[2023-05-14 04:19:12] INFO root fetch - main [MainThread]: End processing [hledger-args]: success
+[2023-05-14 04:19:12] INFO root fetch - main [MainThread]: End processing [gandai]: success
+[2023-05-14 04:19:12] INFO root fetch - main [MainThread]: End processing [xicorpy]: success
+[2023-05-14 04:19:12] INFO root fetch - main [MainThread]: Store serial: [18094472]
