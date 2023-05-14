@@ -4500,3 +4500,22 @@
 [2023-05-14 11:32:58] INFO root fetch - main [MainThread]: End processing [wks]: success
 [2023-05-14 11:32:58] INFO root fetch - main [MainThread]: End processing [md2html-phuker]: success
 [2023-05-14 11:32:58] INFO root fetch - main [MainThread]: Store serial: [18096108]
+[2023-05-14 11:38:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096108]
+[2023-05-14 11:38:07] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-14 11:38:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xdat
+[2023-05-14 11:38:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pdf-annotations-diff
+[2023-05-14 11:38:07] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: knowledgebase-gsheet-gpt
+[2023-05-14 11:38:07] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-14 11:38:07] WARNING root fetch - processPackages [pdf-annotations-diff]: Skipping, unable to determine old version
+[2023-05-14 11:38:07] INFO root fetch - main [MainThread]: End processing [pdf-annotations-diff] error
+[2023-05-14 11:38:07] INFO root fetch - processPackages [xdat]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-14 11:38:08] INFO root fetch - processPackages [xdat]: Downloading https://files.pythonhosted.org/packages/1f/59/50979d7bd38d3b54ebda88cfebaad892786056349707120dd15b0f3ac4a6/xdat-0.1.98.tar.gz
+[2023-05-14 11:38:08] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: Downloading https://files.pythonhosted.org/packages/0b/99/5407d4acce371548410f01090d5f7b3a7d073e56bca445212b1440799ac7/knowledgebase-gsheet-gpt-1.1.1.tar.gz
+[2023-05-14 11:38:08] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: executing diffoscope
+[2023-05-14 11:38:08] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knowledgebase-gsheet-gpt-1.1.0.tar.gz tmp/knowledgebase-gsheet-gpt-1.1.1.tar.gz --markdown 20230514/k/knowledgebase-gsheet-gpt/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-14 11:38:08] INFO root fetch - processPackages [xdat]: Downloading https://files.pythonhosted.org/packages/00/b5/44d6ceebadb7e9f19552d1b65fe724db78a16ae9e19ae608960562ff5d39/xdat-0.1.99.tar.gz
+[2023-05-14 11:38:08] INFO root fetch - processPackages [xdat]: executing diffoscope
+[2023-05-14 11:38:08] INFO root fetch - processPackages [xdat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xdat-0.1.98.tar.gz tmp/xdat-0.1.99.tar.gz --markdown 20230514/x/xdat/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-14 11:38:09] INFO root fetch - main [MainThread]: End processing [knowledgebase-gsheet-gpt]: success
+[2023-05-14 11:38:09] INFO root fetch - main [MainThread]: End processing [xdat]: success
+[2023-05-14 11:38:09] INFO root fetch - main [MainThread]: Store serial: [18096120]
