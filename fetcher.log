@@ -1231,3 +1231,29 @@
 [2023-05-14 02:42:08] INFO root fetch - main [MainThread]: End processing [pybash]: success
 [2023-05-14 02:42:08] INFO root fetch - main [MainThread]: End processing [orient]: success
 [2023-05-14 02:42:08] INFO root fetch - main [MainThread]: Store serial: [18094137]
+[2023-05-14 02:47:12] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094137]
+[2023-05-14 02:47:17] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 02:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: album-sender
+[2023-05-14 02:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-comprehend-s3olap
+[2023-05-14 02:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tfds-nightly
+[2023-05-14 02:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: zkpwgen
+[2023-05-14 02:47:17] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: kubric-nightly
+[2023-05-14 02:47:17] INFO root fetch - processPackages [cdk-comprehend-s3olap]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-14 02:47:17] INFO root fetch - processPackages [album-sender]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 02:47:17] INFO root fetch - processPackages [kubric-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-14 02:47:17] INFO root fetch - processPackages [tfds-nightly]: New version: [4.9.2.dev202305130044] Old Version: [4.9.2.dev202305110044]
+[2023-05-14 02:47:17] WARNING root fetch - processPackages [zkpwgen]: Skipping, unable to determine old version
+[2023-05-14 02:47:17] INFO root fetch - main [MainThread]: End processing [zkpwgen] error
+[2023-05-14 02:47:17] INFO root fetch - processPackages [album-sender]: executing diffoscope
+[2023-05-14 02:47:17] INFO root fetch - processPackages [album-sender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/album_sender-0.0.8.tar.gz tmp/album_sender-0.0.9.tar.gz --markdown 20230514/a/album-sender/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 02:47:17] INFO root fetch - processPackages [kubric-nightly]: executing diffoscope
+[2023-05-14 02:47:17] INFO root fetch - processPackages [kubric-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kubric-nightly-2023.5.8.tar.gz tmp/kubric-nightly-2023.5.9.tar.gz --markdown 20230514/k/kubric-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-14 02:47:17] INFO root fetch - processPackages [tfds-nightly]: executing diffoscope
+[2023-05-14 02:47:17] INFO root fetch - processPackages [tfds-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfds-nightly-4.9.2.dev202305110044.tar.gz tmp/tfds-nightly-4.9.2.dev202305130044.tar.gz --markdown 20230514/t/tfds-nightly/4.9.2.dev202305110044-4.9.2.dev202305130044/diff.md --exclude *.pyd
+[2023-05-14 02:47:17] INFO root fetch - processPackages [cdk-comprehend-s3olap]: Downloading https://files.pythonhosted.org/packages/d2/64/ec00fce58a2563fe9a768f5ee5a77ecba74bfccf89b1ec489306be4a20a8/cdk_comprehend_s3olap-2.0.98.tar.gz
+[2023-05-14 02:47:17] WARNING root fetch - processPackages [cdk-comprehend-s3olap]: Skipping package: exceeds size limit 14179128>=10485760
+[2023-05-14 02:47:17] INFO root fetch - main [MainThread]: End processing [cdk-comprehend-s3olap] error
+[2023-05-14 02:47:18] INFO root fetch - main [MainThread]: End processing [album-sender]: success
+[2023-05-14 02:47:18] INFO root fetch - main [MainThread]: End processing [kubric-nightly]: success
+[2023-05-14 02:47:28] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
+[2023-05-14 02:47:28] INFO root fetch - main [MainThread]: Store serial: [18094155]
