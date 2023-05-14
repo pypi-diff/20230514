@@ -11314,3 +11314,38 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 23:20:39] INFO root fetch - main [MainThread]: End processing [cpmpy]: success
 [2023-05-14 23:20:40] INFO root fetch - main [MainThread]: End processing [langchain]: success
 [2023-05-14 23:20:40] INFO root fetch - main [MainThread]: Store serial: [18100217]
+[2023-05-14 23:25:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18100217]
+[2023-05-14 23:25:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 23:25:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clean-ioc
+[2023-05-14 23:25:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: keras-gpt-copilot
+[2023-05-14 23:25:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: snowball-extractor
+[2023-05-14 23:25:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: copytool
+[2023-05-14 23:25:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: IMDbTraktSyncer
+[2023-05-14 23:25:51] INFO root fetch - processPackages [clean-ioc]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-14 23:25:51] INFO root fetch - processPackages [keras-gpt-copilot]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-14 23:25:51] INFO root fetch - processPackages [IMDbTraktSyncer]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-14 23:25:51] INFO root fetch - processPackages [copytool]: New version: [0.11] Old Version: [0.10]
+[2023-05-14 23:25:51] INFO root fetch - processPackages [snowball-extractor]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-14 23:25:51] INFO root fetch - processPackages [keras-gpt-copilot]: Downloading https://files.pythonhosted.org/packages/b0/9f/f7c7e838fd5c6ef8453268c472e1a6bc6f51a6338f6980bcd08b6114b80d/keras-gpt-copilot-0.1.0.tar.gz
+[2023-05-14 23:25:51] INFO root fetch - processPackages [clean-ioc]: Downloading https://files.pythonhosted.org/packages/30/8c/98eaea233d18abe5487e610634d70ff7e43ef76c87ca05978d58a9e3bc72/clean_ioc-0.0.5.tar.gz
+[2023-05-14 23:25:51] INFO root fetch - processPackages [copytool]: Downloading https://files.pythonhosted.org/packages/fa/ad/9327730cdb26b2d4fce49e7e593b3a25128f7b4f9a2a09205708aafbef39/copytool-0.10.tar.gz
+[2023-05-14 23:25:51] INFO root fetch - processPackages [snowball-extractor]: Downloading https://files.pythonhosted.org/packages/a4/ea/232fedbfeb66ceb9b7cb1ed9e1c8309b5054c4240d880350478eb67e1e8f/snowball-extractor-1.0.2.tar.gz
+[2023-05-14 23:25:51] INFO root fetch - processPackages [clean-ioc]: executing diffoscope
+[2023-05-14 23:25:51] INFO root fetch - processPackages [clean-ioc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clean_ioc-0.0.4.tar.gz tmp/clean_ioc-0.0.5.tar.gz --markdown 20230514/c/clean-ioc/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-14 23:25:51] INFO root fetch - processPackages [IMDbTraktSyncer]: Downloading https://files.pythonhosted.org/packages/10/0c/98c1dc9b8e7e0b46482b4b87929b0c9250cf6e610ad8da522f0dfea33aba/IMDbTraktSyncer-1.1.2.tar.gz
+[2023-05-14 23:25:51] INFO root fetch - processPackages [snowball-extractor]: executing diffoscope
+[2023-05-14 23:25:51] INFO root fetch - processPackages [snowball-extractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snowball-extractor-1.0.1.tar.gz tmp/snowball-extractor-1.0.2.tar.gz --markdown 20230514/s/snowball-extractor/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-14 23:25:51] INFO root fetch - processPackages [IMDbTraktSyncer]: executing diffoscope
+[2023-05-14 23:25:51] INFO root fetch - processPackages [IMDbTraktSyncer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/IMDbTraktSyncer-1.1.1.tar.gz tmp/IMDbTraktSyncer-1.1.2.tar.gz --markdown 20230514/I/IMDbTraktSyncer/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-14 23:25:51] INFO root fetch - processPackages [copytool]: Downloading https://files.pythonhosted.org/packages/43/bc/228fa6edd43d5b7bbde8f8ce835e85d172cfdd4257f3c88bf0030598a477/copytool-0.11.tar.gz
+[2023-05-14 23:25:51] INFO root fetch - processPackages [keras-gpt-copilot]: Downloading https://files.pythonhosted.org/packages/30/61/5297abc126ff5f5f2aff501d7366952be98d274268cf6a683e0ae56fb6ea/keras-gpt-copilot-0.1.1.tar.gz
+[2023-05-14 23:25:52] INFO root fetch - processPackages [copytool]: executing diffoscope
+[2023-05-14 23:25:52] INFO root fetch - processPackages [copytool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/copytool-0.10.tar.gz tmp/copytool-0.11.tar.gz --markdown 20230514/c/copytool/0.10-0.11/diff.md --exclude *.pyd
+[2023-05-14 23:25:52] INFO root fetch - processPackages [keras-gpt-copilot]: executing diffoscope
+[2023-05-14 23:25:52] INFO root fetch - processPackages [keras-gpt-copilot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras-gpt-copilot-0.1.0.tar.gz tmp/keras-gpt-copilot-0.1.1.tar.gz --markdown 20230514/k/keras-gpt-copilot/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-14 23:25:52] INFO root fetch - main [MainThread]: End processing [clean-ioc]: success
+[2023-05-14 23:25:53] INFO root fetch - main [MainThread]: End processing [snowball-extractor]: success
+[2023-05-14 23:25:53] INFO root fetch - main [MainThread]: End processing [copytool]: success
+[2023-05-14 23:25:53] INFO root fetch - main [MainThread]: End processing [keras-gpt-copilot]: success
+[2023-05-14 23:25:53] INFO root fetch - main [MainThread]: End processing [IMDbTraktSyncer]: success
+[2023-05-14 23:25:53] INFO root fetch - main [MainThread]: Store serial: [18100233]
