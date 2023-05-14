@@ -5599,3 +5599,56 @@
 [2023-05-14 14:01:28] INFO root fetch - main [MainThread]: End processing [bigdl-chronos-spark2]: success
 [2023-05-14 14:01:38] INFO root fetch - main [MainThread]: End processing [opal-net]: success
 [2023-05-14 14:01:38] INFO root fetch - main [MainThread]: Store serial: [18096804]
+[2023-05-14 14:06:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096804]
+[2023-05-14 14:06:57] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-14 14:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: orso
+[2023-05-14 14:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tf-agents-nightly
+[2023-05-14 14:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyatproto
+[2023-05-14 14:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rpl
+[2023-05-14 14:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: odoo14-addon-product-supplierinfo-group-intercompany
+[2023-05-14 14:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sg-hello-pypi
+[2023-05-14 14:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: milvus-ingestion
+[2023-05-14 14:06:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cyberpay-utils-lib
+[2023-05-14 14:06:57] INFO root fetch - processPackages [tf-agents-nightly]: New version: [0.9.0.dev20210812] Old Version: [0.9.0.dev20210811]
+[2023-05-14 14:06:57] INFO root fetch - processPackages [sg-hello-pypi]: New version: [0.2.1] Old Version: [0.1.0]
+[2023-05-14 14:06:58] INFO root fetch - processPackages [cyberpay-utils-lib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 14:06:58] INFO root fetch - processPackages [pyatproto]: New version: [0.2.0] Old Version: [0.1]
+[2023-05-14 14:06:58] INFO root fetch - processPackages [tf-agents-nightly]: Downloading https://files.pythonhosted.org/packages/2f/8e/5b1259fdcefcc564c90842a0c1206b58d6abfbb7914bcbd38710ba780d40/tf_agents_nightly-0.9.0.dev20210811-py3-none-any.whl
+[2023-05-14 14:06:58] INFO root fetch - processPackages [rpl]: New version: [1.9.2] Old Version: [1.9.1]
+[2023-05-14 14:06:58] WARNING root fetch - processPackages [milvus-ingestion]: Skipping, unable to determine old version
+[2023-05-14 14:06:58] INFO root fetch - processPackages [orso]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 14:06:58] INFO root fetch - main [MainThread]: End processing [milvus-ingestion] error
+[2023-05-14 14:06:58] INFO root fetch - processPackages [odoo14-addon-product-supplierinfo-group-intercompany]: New version: [14.0.1.1.2.dev2] Old Version: [14.0.1.1.2.dev1]
+[2023-05-14 14:06:58] INFO root fetch - processPackages [pyatproto]: Downloading https://files.pythonhosted.org/packages/68/99/20023b5d570dd7a145bc8482b20d874a0cc03a1a32f6b37c9b305ad740bb/pyatproto-0.1.tar.gz
+[2023-05-14 14:06:58] INFO root fetch - processPackages [sg-hello-pypi]: Downloading https://files.pythonhosted.org/packages/c7/3c/22f3449741ff9156c1c402e7f1126a13ed0d76e09f8614f436eec4a6fc95/sg_hello_pypi-0.1.0.tar.gz
+[2023-05-14 14:06:58] INFO root fetch - processPackages [odoo14-addon-product-supplierinfo-group-intercompany]: Downloading https://files.pythonhosted.org/packages/ac/fc/52e04946f301762fea29d122ebd825a93201bf0bf2abfc52a21689dfed72/odoo14_addon_product_supplierinfo_group_intercompany-14.0.1.1.2.dev1-py3-none-any.whl
+[2023-05-14 14:06:58] INFO root fetch - processPackages [rpl]: Downloading https://files.pythonhosted.org/packages/48/8c/da3d490214ee20fe49db7cd19fee78c4dffb37455b307d4ae4405b1428e3/rpl-1.9.1.tar.gz
+[2023-05-14 14:06:58] INFO root fetch - processPackages [orso]: Downloading https://files.pythonhosted.org/packages/1c/66/5aad0089df0da0e221630da2c585677459a251fa6db22921c5846de42924/orso-0.0.8.tar.gz
+[2023-05-14 14:06:58] INFO root fetch - processPackages [cyberpay-utils-lib]: executing diffoscope
+[2023-05-14 14:06:58] INFO root fetch - processPackages [cyberpay-utils-lib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberpay-utils-lib-0.0.8.tar.gz tmp/cyberpay-utils-lib-0.0.9.tar.gz --markdown 20230514/c/cyberpay-utils-lib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 14:06:58] INFO root fetch - processPackages [pyatproto]: Downloading https://files.pythonhosted.org/packages/66/a5/87d0bec6df0ad8a21fd52896992bb5c674c68fe5d6a2e45962282d8be995/pyatproto-0.2.0.tar.gz
+[2023-05-14 14:06:58] INFO root fetch - processPackages [sg-hello-pypi]: Downloading https://files.pythonhosted.org/packages/8c/d9/47e31df2a43fa483f0ac68cee091c2639d36a1087b5214c7090b454b1a6c/sg_hello_pypi-0.2.1.tar.gz
+[2023-05-14 14:06:58] INFO root fetch - processPackages [pyatproto]: executing diffoscope
+[2023-05-14 14:06:58] INFO root fetch - processPackages [pyatproto]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyatproto-0.1.tar.gz tmp/pyatproto-0.2.0.tar.gz --markdown 20230514/p/pyatproto/0.1-0.2.0/diff.md --exclude *.pyd
+[2023-05-14 14:06:58] INFO root fetch - processPackages [sg-hello-pypi]: executing diffoscope
+[2023-05-14 14:06:58] INFO root fetch - processPackages [sg-hello-pypi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sg_hello_pypi-0.1.0.tar.gz tmp/sg_hello_pypi-0.2.1.tar.gz --markdown 20230514/s/sg-hello-pypi/0.1.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-14 14:06:58] INFO root fetch - processPackages [orso]: Downloading https://files.pythonhosted.org/packages/d0/a6/e427d299b4d15d22164372c94c2665865951bb26973a967eca19d3d2493c/orso-0.0.9.tar.gz
+[2023-05-14 14:06:58] INFO root fetch - processPackages [tf-agents-nightly]: Downloading https://files.pythonhosted.org/packages/ae/8c/d1e1b7b8f7b6ceee69bbf569ab3bd6f79ffd9963ff66079303942550d03d/tf_agents_nightly-0.9.0.dev20210812-py3-none-any.whl
+[2023-05-14 14:06:58] INFO root fetch - processPackages [odoo14-addon-product-supplierinfo-group-intercompany]: Downloading https://files.pythonhosted.org/packages/3e/a4/c47c14fa53c7c50cab21aef8cceb9a5cb4fd3cf6195bcbeec0110dcde0ae/odoo14_addon_product_supplierinfo_group_intercompany-14.0.1.1.2.dev2-py3-none-any.whl
+[2023-05-14 14:06:58] INFO root fetch - processPackages [orso]: executing diffoscope
+[2023-05-14 14:06:58] INFO root fetch - processPackages [orso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orso-0.0.8.tar.gz tmp/orso-0.0.9.tar.gz --markdown 20230514/o/orso/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 14:06:58] INFO root fetch - processPackages [odoo14-addon-product-supplierinfo-group-intercompany]: executing diffoscope
+[2023-05-14 14:06:58] INFO root fetch - processPackages [odoo14-addon-product-supplierinfo-group-intercompany]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo14_addon_product_supplierinfo_group_intercompany-14.0.1.1.2.dev1-py3-none-any.whl.zip tmp/odoo14_addon_product_supplierinfo_group_intercompany-14.0.1.1.2.dev2-py3-none-any.whl.zip --markdown 20230514/o/odoo14-addon-product-supplierinfo-group-intercompany/14.0.1.1.2.dev1-14.0.1.1.2.dev2/diff.md --exclude *.pyd
+[2023-05-14 14:06:58] INFO root fetch - processPackages [rpl]: Downloading https://files.pythonhosted.org/packages/a8/66/cf038e4e3b0b1895e2518c9bbfce0168f4ce16706ea957546643064d92f5/rpl-1.9.2.tar.gz
+[2023-05-14 14:06:59] INFO root fetch - processPackages [rpl]: executing diffoscope
+[2023-05-14 14:06:59] INFO root fetch - processPackages [rpl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rpl-1.9.1.tar.gz tmp/rpl-1.9.2.tar.gz --markdown 20230514/r/rpl/1.9.1-1.9.2/diff.md --exclude *.pyd
+[2023-05-14 14:06:59] INFO root fetch - processPackages [tf-agents-nightly]: executing diffoscope
+[2023-05-14 14:06:59] INFO root fetch - processPackages [tf-agents-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_agents_nightly-0.9.0.dev20210811-py3-none-any.whl.zip tmp/tf_agents_nightly-0.9.0.dev20210812-py3-none-any.whl.zip --markdown 20230514/t/tf-agents-nightly/0.9.0.dev20210811-0.9.0.dev20210812/diff.md --exclude *.pyd
+[2023-05-14 14:06:59] INFO root fetch - main [MainThread]: End processing [cyberpay-utils-lib]: success
+[2023-05-14 14:06:59] INFO root fetch - main [MainThread]: End processing [sg-hello-pypi]: success
+[2023-05-14 14:06:59] INFO root fetch - main [MainThread]: End processing [pyatproto]: success
+[2023-05-14 14:06:59] INFO root fetch - main [MainThread]: End processing [orso]: success
+[2023-05-14 14:07:00] INFO root fetch - main [MainThread]: End processing [odoo14-addon-product-supplierinfo-group-intercompany]: success
+[2023-05-14 14:07:00] INFO root fetch - main [MainThread]: End processing [rpl]: success
+[2023-05-14 14:07:06] INFO root fetch - main [MainThread]: End processing [tf-agents-nightly]: success
+[2023-05-14 14:07:06] INFO root fetch - main [MainThread]: Store serial: [18096838]
