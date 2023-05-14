@@ -3620,3 +3620,30 @@
 [2023-05-14 09:28:53] INFO root fetch - main [MainThread]: End processing [lmcloud]: success
 [2023-05-14 09:28:53] INFO root fetch - main [MainThread]: End processing [xbox-sdk]: success
 [2023-05-14 09:28:53] INFO root fetch - main [MainThread]: Store serial: [18095530]
+[2023-05-14 09:33:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095530]
+[2023-05-14 09:34:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 09:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: odoo-addon-sale-order-line-price-history
+[2023-05-14 09:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: odoo-addons-oca-sale-workflow
+[2023-05-14 09:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aicli
+[2023-05-14 09:34:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: t2c
+[2023-05-14 09:34:02] INFO root fetch - processPackages [t2c]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-14 09:34:02] INFO root fetch - processPackages [odoo-addon-sale-order-line-price-history]: New version: [16.0.1.0.0.3] Old Version: [16.0.1.0.0.2]
+[2023-05-14 09:34:02] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: New version: [16.0.20230513.0] Old Version: [16.0.20230510.0]
+[2023-05-14 09:34:02] INFO root fetch - processPackages [aicli]: New version: [99.0.202305140731] Old Version: [99.0.202305131723]
+[2023-05-14 09:34:02] INFO root fetch - processPackages [odoo-addon-sale-order-line-price-history]: Downloading https://files.pythonhosted.org/packages/8c/e6/4bcbbe5314e6fcd25aeef929b52f2e33d123d271d8a169c3e449886e7082/odoo_addon_sale_order_line_price_history-16.0.1.0.0.3-py3-none-any.whl
+[2023-05-14 09:34:02] INFO root fetch - processPackages [t2c]: Downloading https://files.pythonhosted.org/packages/cc/2d/576d153255d980da994354b943e42492a13ac4712000bcafad15f761f45a/t2c-0.0.3.tar.gz
+[2023-05-14 09:34:02] INFO root fetch - processPackages [aicli]: Downloading https://files.pythonhosted.org/packages/64/70/38070a8d625b2f32326a7f4a56dd0daa969744987c1dc16d6a56805e2ac9/aicli-99.0.202305140731-py3-none-any.whl
+[2023-05-14 09:34:02] INFO root fetch - processPackages [t2c]: executing diffoscope
+[2023-05-14 09:34:02] INFO root fetch - processPackages [t2c]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/t2c-0.0.2.tar.gz tmp/t2c-0.0.3.tar.gz --markdown 20230514/t/t2c/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-14 09:34:02] INFO root fetch - processPackages [odoo-addon-sale-order-line-price-history]: executing diffoscope
+[2023-05-14 09:34:02] INFO root fetch - processPackages [odoo-addon-sale-order-line-price-history]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_sale_order_line_price_history-16.0.1.0.0.2-py3-none-any.whl.zip tmp/odoo_addon_sale_order_line_price_history-16.0.1.0.0.3-py3-none-any.whl.zip --markdown 20230514/o/odoo-addon-sale-order-line-price-history/16.0.1.0.0.2-16.0.1.0.0.3/diff.md --exclude *.pyd
+[2023-05-14 09:34:02] INFO root fetch - processPackages [aicli]: executing diffoscope
+[2023-05-14 09:34:02] INFO root fetch - processPackages [aicli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aicli-99.0.202305131723-py3-none-any.whl.zip tmp/aicli-99.0.202305140731-py3-none-any.whl.zip --markdown 20230514/a/aicli/99.0.202305131723-99.0.202305140731/diff.md --exclude *.pyd
+[2023-05-14 09:34:02] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: Downloading https://files.pythonhosted.org/packages/34/d0/ecac3fae6051d4af48edcd9ff245da7dff4b7a6851dc5d0ef8b722662ede/odoo_addons_oca_sale_workflow-16.0.20230513.0-py3-none-any.whl
+[2023-05-14 09:34:02] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: executing diffoscope
+[2023-05-14 09:34:02] INFO root fetch - processPackages [odoo-addons-oca-sale-workflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addons_oca_sale_workflow-16.0.20230510.0-py3-none-any.whl.zip tmp/odoo_addons_oca_sale_workflow-16.0.20230513.0-py3-none-any.whl.zip --markdown 20230514/o/odoo-addons-oca-sale-workflow/16.0.20230510.0-16.0.20230513.0/diff.md --exclude *.pyd
+[2023-05-14 09:34:03] INFO root fetch - main [MainThread]: End processing [t2c]: success
+[2023-05-14 09:34:03] INFO root fetch - main [MainThread]: End processing [aicli]: success
+[2023-05-14 09:34:03] INFO root fetch - main [MainThread]: End processing [odoo-addon-sale-order-line-price-history]: success
+[2023-05-14 09:34:03] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-sale-workflow]: success
+[2023-05-14 09:34:03] INFO root fetch - main [MainThread]: Store serial: [18095539]
