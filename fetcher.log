@@ -1172,3 +1172,37 @@
 [2023-05-14 02:31:45] INFO root fetch - main [MainThread]: End processing [azapy]: success
 [2023-05-14 02:31:46] INFO root fetch - main [MainThread]: End processing [cdk-ecs-service-extensions]: success
 [2023-05-14 02:31:46] INFO root fetch - main [MainThread]: Store serial: [18094108]
+[2023-05-14 02:36:50] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094108]
+[2023-05-14 02:36:55] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-14 02:36:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: everdrop-aws-cdk-constructs
+[2023-05-14 02:36:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aeppl-nightly
+[2023-05-14 02:36:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mynacode
+[2023-05-14 02:36:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdklabs.cdk-enterprise-iac
+[2023-05-14 02:36:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: mynacode
+[2023-05-14 02:36:55] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: mockupgen
+[2023-05-14 02:36:55] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-14 02:36:55] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 02:36:55] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-14 02:36:55] INFO root fetch - processPackages [mockupgen]: New version: [1.5.0] Old Version: [1.0.0]
+[2023-05-14 02:36:55] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-14 02:36:55] INFO root fetch - processPackages [aeppl-nightly]: New version: [0.1.4.dev20230514] Old Version: [0.1.4.dev20230513]
+[2023-05-14 02:36:56] INFO root fetch - processPackages [mockupgen]: Downloading https://files.pythonhosted.org/packages/c1/cb/81f1b38c99172e934601310a9a474e829b42718329907221345bc64210bd/mockupgen-1.0.0.tar.gz
+[2023-05-14 02:36:56] WARNING root fetch - processPackages [mockupgen]: Skipping package: exceeds size limit 25793288>=10485760
+[2023-05-14 02:36:56] INFO root fetch - main [MainThread]: End processing [mockupgen] error
+[2023-05-14 02:36:56] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: executing diffoscope
+[2023-05-14 02:36:56] INFO root fetch - processPackages [everdrop-aws-cdk-constructs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/everdrop-aws-cdk-constructs-0.0.8.tar.gz tmp/everdrop-aws-cdk-constructs-0.0.9.tar.gz --markdown 20230514/e/everdrop-aws-cdk-constructs/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 02:36:56] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-05-14 02:36:56] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230514/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-14 02:36:56] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-05-14 02:36:56] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230514/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-14 02:36:56] INFO root fetch - processPackages [aeppl-nightly]: Downloading https://files.pythonhosted.org/packages/7b/4f/420fc57f12b276a6c6ebe66a83b4ba15331a8ab321f05dbf407cfbbbe37a/aeppl-nightly-0.1.4.dev20230514.tar.gz
+[2023-05-14 02:36:56] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: executing diffoscope
+[2023-05-14 02:36:56] INFO root fetch - processPackages [cdklabs.cdk-enterprise-iac]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdklabs.cdk-enterprise-iac-0.0.98.tar.gz tmp/cdklabs.cdk-enterprise-iac-0.0.99.tar.gz --markdown 20230514/c/cdklabs.cdk-enterprise-iac/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-14 02:36:56] INFO root fetch - processPackages [aeppl-nightly]: executing diffoscope
+[2023-05-14 02:36:56] INFO root fetch - processPackages [aeppl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aeppl-nightly-0.1.4.dev20230513.tar.gz tmp/aeppl-nightly-0.1.4.dev20230514.tar.gz --markdown 20230514/a/aeppl-nightly/0.1.4.dev20230513-0.1.4.dev20230514/diff.md --exclude *.pyd
+[2023-05-14 02:36:57] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-05-14 02:36:57] INFO root fetch - main [MainThread]: End processing [everdrop-aws-cdk-constructs]: success
+[2023-05-14 02:36:57] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-05-14 02:36:57] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
+[2023-05-14 02:36:58] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
+[2023-05-14 02:36:58] INFO root fetch - main [MainThread]: Store serial: [18094123]
