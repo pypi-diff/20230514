@@ -8532,3 +8532,74 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 18:53:26] INFO root fetch - main [MainThread]: End processing [speech-collator]: success
 [2023-05-14 18:53:26] INFO root fetch - main [MainThread]: End processing [django-schema-graph]: success
 [2023-05-14 18:53:26] INFO root fetch - main [MainThread]: Store serial: [18098584]
+[2023-05-14 18:58:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098584]
+[2023-05-14 18:58:35] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-14 18:58:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cellpy
+[2023-05-14 18:58:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tensor-parallel
+[2023-05-14 18:58:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: traversaal
+[2023-05-14 18:58:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pro-sports-transactions
+[2023-05-14 18:58:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: zyncify
+[2023-05-14 18:58:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: projectrexa
+[2023-05-14 18:58:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: upload-machine
+[2023-05-14 18:58:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: data-dictionary-cui-mapping
+[2023-05-14 18:58:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cosmic-profiles
+[2023-05-14 18:58:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: xarg-python
+[2023-05-14 18:58:35] WARNING root fetch - processPackages [pro-sports-transactions]: Skipping, unable to determine old version
+[2023-05-14 18:58:35] INFO root fetch - processPackages [pro-sports-transactions]: Start processing: liitos
+[2023-05-14 18:58:35] INFO root fetch - main [MainThread]: End processing [pro-sports-transactions] error
+[2023-05-14 18:58:35] INFO root fetch - processPackages [traversaal]: New version: [0.57] Old Version: [0.56]
+[2023-05-14 18:58:35] INFO root fetch - processPackages [tensor-parallel]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-05-14 18:58:35] INFO root fetch - processPackages [cellpy]: New version: [1.0.0a7] Old Version: [1.0.0a6]
+[2023-05-14 18:58:35] WARNING root fetch - processPackages [projectrexa]: Skipping, unable to determine old version
+[2023-05-14 18:58:35] INFO root fetch - processPackages [zyncify]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-14 18:58:35] INFO root fetch - processPackages [projectrexa]: Start processing: zpywallet
+[2023-05-14 18:58:35] INFO root fetch - main [MainThread]: End processing [projectrexa] error
+[2023-05-14 18:58:35] INFO root fetch - processPackages [data-dictionary-cui-mapping]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-14 18:58:35] INFO root fetch - processPackages [upload-machine]: New version: [0.0.8] Old Version: [0.0.70]
+[2023-05-14 18:58:35] INFO root fetch - processPackages [cosmic-profiles]: New version: [1.4.0] Old Version: [1.3.1]
+[2023-05-14 18:58:35] INFO root fetch - processPackages [liitos]: New version: [2023.5.9] Old Version: [2023.5.13]
+[2023-05-14 18:58:35] WARNING root fetch - processPackages [xarg-python]: Skipping, unable to determine old version
+[2023-05-14 18:58:35] INFO root fetch - main [MainThread]: End processing [xarg-python] error
+[2023-05-14 18:58:35] INFO root fetch - processPackages [zpywallet]: New version: [0.3.0] Old Version: [0.2.2]
+[2023-05-14 18:58:35] INFO root fetch - processPackages [upload-machine]: Downloading https://files.pythonhosted.org/packages/8a/0d/b07fa445be3fe58a7732c9f8c8c6f19ca3f1a2f4cd623977c060d5cde0eb/upload_machine-0.0.70.tar.gz
+[2023-05-14 18:58:35] INFO root fetch - processPackages [traversaal]: Downloading https://files.pythonhosted.org/packages/55/18/13069d461d9dd988c09e291e1a2d976edd4d0c76fadc2f79393c9441b235/traversaal-0.57-py3-none-any.whl
+[2023-05-14 18:58:35] INFO root fetch - processPackages [data-dictionary-cui-mapping]: Downloading https://files.pythonhosted.org/packages/4b/ff/30c17f8a915ee16e5727111c08da7202dc9cb477fcb693acf036864a318d/data_dictionary_cui_mapping-1.1.2.tar.gz
+[2023-05-14 18:58:35] INFO root fetch - processPackages [tensor-parallel]: Downloading https://files.pythonhosted.org/packages/7d/51/3fc56405c5e5476901ca7efb6a03d771898e4061d050f8172939eab2e943/tensor_parallel-1.2.2.tar.gz
+[2023-05-14 18:58:35] INFO root fetch - processPackages [cosmic-profiles]: Downloading https://files.pythonhosted.org/packages/c0/3d/47734d0a93e442c4cb140da339f73a8570dfc4e96924dc8c76f0a578f51f/cosmic_profiles-1.3.1.tar.gz
+[2023-05-14 18:58:35] WARNING root fetch - processPackages [data-dictionary-cui-mapping]: Skipping package: exceeds size limit 20319116>=10485760
+[2023-05-14 18:58:35] INFO root fetch - processPackages [zyncify]: Downloading https://files.pythonhosted.org/packages/c9/dd/0f5e48081d1f378aa0b9c9f66e886629b7f7b0b13918bf10fba3c7f980dc/zyncify-0.1.5-py2.py3-none-any.whl
+[2023-05-14 18:58:35] INFO root fetch - processPackages [liitos]: Downloading https://files.pythonhosted.org/packages/ac/56/5b05333b8588e6e37f4c6fca9d62e9f8066d893e4ab0ea994b252157a57f/liitos-2023.5.13.tar.gz
+[2023-05-14 18:58:36] INFO root fetch - main [MainThread]: End processing [data-dictionary-cui-mapping] error
+[2023-05-14 18:58:36] INFO root fetch - processPackages [cellpy]: Downloading https://files.pythonhosted.org/packages/03/26/56ddb50273fc508f7b3198b2a0d3966263d4b07d94270f04e9cb79b519b2/cellpy-1.0.0a6.tar.gz
+[2023-05-14 18:58:36] INFO root fetch - processPackages [traversaal]: executing diffoscope
+[2023-05-14 18:58:36] INFO root fetch - processPackages [traversaal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traversaal-0.56-py3-none-any.whl.zip tmp/traversaal-0.57-py3-none-any.whl.zip --markdown 20230514/t/traversaal/0.56-0.57/diff.md --exclude *.pyd
+[2023-05-14 18:58:36] INFO root fetch - processPackages [zpywallet]: Downloading https://files.pythonhosted.org/packages/0d/c4/7b846fdbb59bfcd1181e4e1ef1a33cef7d1682651bb58b35e9d4584b3091/zpywallet-0.2.2.tar.gz
+[2023-05-14 18:58:36] INFO root fetch - processPackages [zyncify]: executing diffoscope
+[2023-05-14 18:58:36] INFO root fetch - processPackages [zyncify]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zyncify-0.1.4-py2.py3-none-any.whl.zip tmp/zyncify-0.1.5-py2.py3-none-any.whl.zip --markdown 20230514/z/zyncify/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-14 18:58:36] INFO root fetch - processPackages [upload-machine]: Downloading https://files.pythonhosted.org/packages/64/65/84b4bf4f46e9d5a30af7a84e38f824d36e5ee389378c67b46ac6158af024/upload_machine-0.0.8.tar.gz
+[2023-05-14 18:58:36] INFO root fetch - processPackages [tensor-parallel]: Downloading https://files.pythonhosted.org/packages/76/08/aa203e4e697b5ef9a6a89c305cc357ede74327d1761b741cc7490f81c638/tensor_parallel-1.2.3.tar.gz
+[2023-05-14 18:58:36] INFO root fetch - processPackages [cosmic-profiles]: Downloading https://files.pythonhosted.org/packages/ea/84/1bdd83cf472fd75bff0865a488212cc10ee1f369e6a3a52d4d30f59733c0/cosmic_profiles-1.4.0.tar.gz
+[2023-05-14 18:58:36] INFO root fetch - processPackages [tensor-parallel]: executing diffoscope
+[2023-05-14 18:58:36] INFO root fetch - processPackages [tensor-parallel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensor_parallel-1.2.2.tar.gz tmp/tensor_parallel-1.2.3.tar.gz --markdown 20230514/t/tensor-parallel/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-05-14 18:58:36] INFO root fetch - processPackages [liitos]: Downloading https://files.pythonhosted.org/packages/7f/6f/8648b48cd821c184c597ad549d59f861e6c6f3f0157b0335f15f3c3c4682/liitos-2023.5.9.tar.gz
+[2023-05-14 18:58:36] INFO root fetch - processPackages [upload-machine]: executing diffoscope
+[2023-05-14 18:58:36] INFO root fetch - processPackages [upload-machine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/upload_machine-0.0.70.tar.gz tmp/upload_machine-0.0.8.tar.gz --markdown 20230514/u/upload-machine/0.0.70-0.0.8/diff.md --exclude *.pyd
+[2023-05-14 18:58:36] INFO root fetch - processPackages [zpywallet]: Downloading https://files.pythonhosted.org/packages/18/d5/c26b3a491a9bddeaba06cd006e88d6002a6aa5849bcf90352b0e2e40eddf/zpywallet-0.3.0.tar.gz
+[2023-05-14 18:58:36] INFO root fetch - processPackages [cosmic-profiles]: executing diffoscope
+[2023-05-14 18:58:36] INFO root fetch - processPackages [cosmic-profiles]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cosmic_profiles-1.3.1.tar.gz tmp/cosmic_profiles-1.4.0.tar.gz --markdown 20230514/c/cosmic-profiles/1.3.1-1.4.0/diff.md --exclude *.pyd
+[2023-05-14 18:58:36] INFO root fetch - processPackages [liitos]: executing diffoscope
+[2023-05-14 18:58:36] INFO root fetch - processPackages [liitos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/liitos-2023.5.13.tar.gz tmp/liitos-2023.5.9.tar.gz --markdown 20230514/l/liitos/2023.5.13-2023.5.9/diff.md --exclude *.pyd
+[2023-05-14 18:58:36] INFO root fetch - processPackages [cellpy]: Downloading https://files.pythonhosted.org/packages/eb/18/fa507e11235c767df7ca87432799f37a28b24fe8093f8f7d2e2755247eb4/cellpy-1.0.0a7.tar.gz
+[2023-05-14 18:58:36] INFO root fetch - processPackages [zpywallet]: executing diffoscope
+[2023-05-14 18:58:36] INFO root fetch - processPackages [zpywallet]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zpywallet-0.2.2.tar.gz tmp/zpywallet-0.3.0.tar.gz --markdown 20230514/z/zpywallet/0.2.2-0.3.0/diff.md --exclude *.pyd
+[2023-05-14 18:58:36] INFO root fetch - processPackages [cellpy]: executing diffoscope
+[2023-05-14 18:58:36] INFO root fetch - processPackages [cellpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cellpy-1.0.0a6.tar.gz tmp/cellpy-1.0.0a7.tar.gz --markdown 20230514/c/cellpy/1.0.0a6-1.0.0a7/diff.md --exclude *.pyd
+[2023-05-14 18:58:37] INFO root fetch - main [MainThread]: End processing [traversaal]: success
+[2023-05-14 18:58:37] INFO root fetch - main [MainThread]: End processing [zyncify]: success
+[2023-05-14 18:58:37] INFO root fetch - main [MainThread]: End processing [tensor-parallel]: success
+[2023-05-14 18:58:38] INFO root fetch - main [MainThread]: End processing [zpywallet]: success
+[2023-05-14 18:58:39] INFO root fetch - main [MainThread]: End processing [upload-machine]: success
+[2023-05-14 18:58:39] INFO root fetch - main [MainThread]: End processing [cellpy]: success
+[2023-05-14 18:58:39] INFO root fetch - main [MainThread]: End processing [liitos]: success
+[2023-05-14 18:58:44] INFO root fetch - main [MainThread]: End processing [cosmic-profiles]: success
+[2023-05-14 18:58:44] INFO root fetch - main [MainThread]: Store serial: [18098623]
