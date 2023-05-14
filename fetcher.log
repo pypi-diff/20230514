@@ -8992,3 +8992,39 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 19:46:04] INFO root fetch - main [MainThread]: End processing [statinf]: success
 [2023-05-14 19:46:04] INFO root fetch - main [MainThread]: End processing [astroid]: success
 [2023-05-14 19:46:04] INFO root fetch - main [MainThread]: Store serial: [18098828]
+[2023-05-14 19:51:08] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098828]
+[2023-05-14 19:51:13] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-14 19:51:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: usr-agent-rnd-rs
+[2023-05-14 19:51:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: astroid
+[2023-05-14 19:51:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-jaroslav-UCStats2
+[2023-05-14 19:51:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: FlashGBX
+[2023-05-14 19:51:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pylebedev
+[2023-05-14 19:51:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bruts
+[2023-05-14 19:51:13] INFO root fetch - processPackages [usr-agent-rnd-rs]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-14 19:51:13] INFO root fetch - processPackages [certora-cli-alpha-jaroslav-UCStats2]: New version: [20230514.17.47.470333] Old Version: [20230510.20.20.327816]
+[2023-05-14 19:51:13] INFO root fetch - processPackages [pylebedev]: New version: [0.2.0.0] Old Version: [0.1.1.2]
+[2023-05-14 19:51:13] INFO root fetch - processPackages [astroid]: New version: [3.0.0a3] Old Version: [3.0.0a2]
+[2023-05-14 19:51:13] INFO root fetch - processPackages [FlashGBX]: New version: [3.9] Old Version: [3.8]
+[2023-05-14 19:51:13] INFO root fetch - processPackages [pylebedev]: executing diffoscope
+[2023-05-14 19:51:13] INFO root fetch - processPackages [pylebedev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylebedev-0.1.1.2-py3-none-any.whl.zip tmp/pylebedev-0.2.0.0-py3-none-any.whl.zip --markdown 20230514/p/pylebedev/0.1.1.2-0.2.0.0/diff.md --exclude *.pyd
+[2023-05-14 19:51:13] INFO root fetch - processPackages [usr-agent-rnd-rs]: Downloading https://files.pythonhosted.org/packages/c8/fc/d795e0a903106515201dae04db999dd92e13e35f81eed327f4192851f1d6/usr_agent_rnd_rs-0.0.5.tar.gz
+[2023-05-14 19:51:13] INFO root fetch - processPackages [certora-cli-alpha-jaroslav-UCStats2]: Downloading https://files.pythonhosted.org/packages/ff/ac/910e07c93da59c74e24cdbcc411e8c0a5b0b48685fcdf879324cb75fe314/certora-cli-alpha-jaroslav-UCStats2-20230510.20.20.327816.tar.gz
+[2023-05-14 19:51:13] INFO root fetch - processPackages [astroid]: Downloading https://files.pythonhosted.org/packages/9e/f6/f7f229a753bf4ccfb9d468db3511626570be697fdc1e1dd26eb41a998fb5/astroid-3.0.0a3.tar.gz
+[2023-05-14 19:51:13] INFO root fetch - processPackages [FlashGBX]: Downloading https://files.pythonhosted.org/packages/ee/5a/a2eb33ad2508c9cb01b5b61a4b0a7a9188fcf55009ccaa61a5fca3fc46e8/FlashGBX-3.8.tar.gz
+[2023-05-14 19:51:13] WARNING root fetch - processPackages [bruts]: Skipping, unable to determine old version
+[2023-05-14 19:51:13] INFO root fetch - main [MainThread]: End processing [bruts] error
+[2023-05-14 19:51:13] WARNING root fetch - processPackages [certora-cli-alpha-jaroslav-UCStats2]: Skipping package: exceeds size limit 39212933>=10485760
+[2023-05-14 19:51:13] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-jaroslav-UCStats2] error
+[2023-05-14 19:51:13] INFO root fetch - processPackages [astroid]: executing diffoscope
+[2023-05-14 19:51:13] INFO root fetch - processPackages [astroid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astroid-3.0.0a2.tar.gz tmp/astroid-3.0.0a3.tar.gz --markdown 20230514/a/astroid/3.0.0a2-3.0.0a3/diff.md --exclude *.pyd
+[2023-05-14 19:51:13] INFO root fetch - processPackages [FlashGBX]: Downloading https://files.pythonhosted.org/packages/c8/72/acefb62dbeece66c9b1dd593f90453843a08169b426de937d96a24dd1242/FlashGBX-3.9.tar.gz
+[2023-05-14 19:51:13] INFO root fetch - processPackages [usr-agent-rnd-rs]: Downloading https://files.pythonhosted.org/packages/2a/44/bcc31fa4e08b7398d894c8d9b05c27ebc0e510da27365a8b97075a114179/usr_agent_rnd_rs-0.0.6.tar.gz
+[2023-05-14 19:51:13] INFO root fetch - processPackages [FlashGBX]: executing diffoscope
+[2023-05-14 19:51:13] INFO root fetch - processPackages [FlashGBX]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FlashGBX-3.8.tar.gz tmp/FlashGBX-3.9.tar.gz --markdown 20230514/F/FlashGBX/3.8-3.9/diff.md --exclude *.pyd
+[2023-05-14 19:51:13] INFO root fetch - processPackages [usr-agent-rnd-rs]: executing diffoscope
+[2023-05-14 19:51:13] INFO root fetch - processPackages [usr-agent-rnd-rs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/usr_agent_rnd_rs-0.0.5.tar.gz tmp/usr_agent_rnd_rs-0.0.6.tar.gz --markdown 20230514/u/usr-agent-rnd-rs/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-14 19:51:14] INFO root fetch - main [MainThread]: End processing [pylebedev]: success
+[2023-05-14 19:51:14] INFO root fetch - main [MainThread]: End processing [usr-agent-rnd-rs]: success
+[2023-05-14 19:51:15] INFO root fetch - main [MainThread]: End processing [FlashGBX]: success
+[2023-05-14 19:51:16] INFO root fetch - main [MainThread]: End processing [astroid]: success
+[2023-05-14 19:51:16] INFO root fetch - main [MainThread]: Store serial: [18098850]
