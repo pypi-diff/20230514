@@ -1416,3 +1416,31 @@
 [2023-05-14 03:14:23] INFO root fetch - main [MainThread]: End processing [pytreeclass]: success
 [2023-05-14 03:14:23] INFO root fetch - main [MainThread]: End processing [ebtorch]: success
 [2023-05-14 03:14:23] INFO root fetch - main [MainThread]: Store serial: [18094238]
+[2023-05-14 03:19:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094238]
+[2023-05-14 03:19:32] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 03:19:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk-sops-secrets
+[2023-05-14 03:19:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hypothesis
+[2023-05-14 03:19:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bananopie
+[2023-05-14 03:19:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-lambda-subminute
+[2023-05-14 03:19:32] INFO root fetch - processPackages [bananopie]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-14 03:19:32] INFO root fetch - processPackages [cdk-sops-secrets]: New version: [1.2.95] Old Version: [1.2.94]
+[2023-05-14 03:19:32] INFO root fetch - processPackages [hypothesis]: New version: [6.9.2] Old Version: [6.9.1]
+[2023-05-14 03:19:32] INFO root fetch - processPackages [cdk-lambda-subminute]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-14 03:19:32] INFO root fetch - processPackages [hypothesis]: Downloading https://files.pythonhosted.org/packages/21/51/090644a56a1ccd0bd639535632ae004a14748414c625a4ee110764a147f5/hypothesis-6.9.1.tar.gz
+[2023-05-14 03:19:32] INFO root fetch - processPackages [bananopie]: Downloading https://files.pythonhosted.org/packages/8c/15/de22c8730bdc57ee675fff3d90462840bc0a004b17e1d2c47e6b72c77208/bananopie-0.0.4.tar.gz
+[2023-05-14 03:19:32] INFO root fetch - processPackages [cdk-sops-secrets]: Downloading https://files.pythonhosted.org/packages/d0/49/d197577a76ec055784c0f5b17bae50439c5e024192bcbb24738651594102/cdk-sops-secrets-1.2.95.tar.gz
+[2023-05-14 03:19:32] INFO root fetch - processPackages [bananopie]: Downloading https://files.pythonhosted.org/packages/19/3b/de42a0b79c22a43dd4416b2a399969d75383fcc1bf07753c47fac936e2d6/bananopie-0.0.5.win-amd64.zip
+[2023-05-14 03:19:32] INFO root fetch - processPackages [cdk-lambda-subminute]: executing diffoscope
+[2023-05-14 03:19:32] INFO root fetch - processPackages [cdk-lambda-subminute]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk_lambda_subminute-2.0.98.tar.gz tmp/cdk_lambda_subminute-2.0.99.tar.gz --markdown 20230514/c/cdk-lambda-subminute/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-14 03:19:33] INFO root fetch - processPackages [bananopie]: executing diffoscope
+[2023-05-14 03:19:33] INFO root fetch - processPackages [bananopie]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bananopie-0.0.4.tar.gz tmp/bananopie-0.0.5.win-amd64.zip --markdown 20230514/b/bananopie/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-14 03:19:33] INFO root fetch - processPackages [cdk-sops-secrets]: executing diffoscope
+[2023-05-14 03:19:33] INFO root fetch - processPackages [cdk-sops-secrets]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-sops-secrets-1.2.94.tar.gz tmp/cdk-sops-secrets-1.2.95.tar.gz --markdown 20230514/c/cdk-sops-secrets/1.2.94-1.2.95/diff.md --exclude *.pyd
+[2023-05-14 03:19:33] INFO root fetch - processPackages [hypothesis]: Downloading https://files.pythonhosted.org/packages/9f/55/ca134a35ade2848ccb6a38038cbdc144c8d975ba9f8535f980233784f3a5/hypothesis-6.9.2.tar.gz
+[2023-05-14 03:19:33] INFO root fetch - processPackages [hypothesis]: executing diffoscope
+[2023-05-14 03:19:33] INFO root fetch - processPackages [hypothesis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hypothesis-6.9.1.tar.gz tmp/hypothesis-6.9.2.tar.gz --markdown 20230514/h/hypothesis/6.9.1-6.9.2/diff.md --exclude *.pyd
+[2023-05-14 03:19:33] INFO root fetch - main [MainThread]: End processing [cdk-lambda-subminute]: success
+[2023-05-14 03:19:34] INFO root fetch - main [MainThread]: End processing [bananopie]: success
+[2023-05-14 03:19:35] INFO root fetch - main [MainThread]: End processing [hypothesis]: success
+[2023-05-14 03:19:35] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
+[2023-05-14 03:19:35] INFO root fetch - main [MainThread]: Store serial: [18094249]
