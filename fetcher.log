@@ -10332,3 +10332,48 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 21:54:03] INFO root fetch - main [MainThread]: End processing [kynaylibs]: success
 [2023-05-14 21:54:06] INFO root fetch - main [MainThread]: End processing [cast-bootstrap5]: success
 [2023-05-14 21:54:06] INFO root fetch - main [MainThread]: Store serial: [18099656]
+[2023-05-14 21:59:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18099656]
+[2023-05-14 21:59:16] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 21:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytest-logikal
+[2023-05-14 21:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pysyn-data
+[2023-05-14 21:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bytez
+[2023-05-14 21:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tensor-parallel
+[2023-05-14 21:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bytez
+[2023-05-14 21:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aleksis-app-chronos
+[2023-05-14 21:59:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: siobrultech-protocols
+[2023-05-14 21:59:16] INFO root fetch - processPackages [bytez]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 21:59:16] INFO root fetch - processPackages [pysyn-data]: New version: [0.3.4] Old Version: [0.3.3]
+[2023-05-14 21:59:16] INFO root fetch - processPackages [pytest-logikal]: New version: [1.8.2] Old Version: [1.8.1]
+[2023-05-14 21:59:16] INFO root fetch - processPackages [tensor-parallel]: New version: [1.2.4] Old Version: [1.2.3]
+[2023-05-14 21:59:16] INFO root fetch - processPackages [bytez]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 21:59:16] INFO root fetch - processPackages [siobrultech-protocols]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-14 21:59:16] INFO root fetch - processPackages [aleksis-app-chronos]: New version: [3.0b0] Old Version: [3.0.dev1]
+[2023-05-14 21:59:16] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-14 21:59:16] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.8.tar.gz tmp/bytez-0.1.9.tar.gz --markdown 20230514/b/bytez/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 21:59:16] INFO root fetch - processPackages [siobrultech-protocols]: executing diffoscope
+[2023-05-14 21:59:16] INFO root fetch - processPackages [siobrultech-protocols]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/siobrultech-protocols-0.8.0.tar.gz tmp/siobrultech-protocols-0.9.0.tar.gz --markdown 20230514/s/siobrultech-protocols/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 21:59:16] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-14 21:59:16] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.8.tar.gz tmp/bytez-0.1.9.tar.gz --markdown 20230514/b/bytez/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 21:59:16] INFO root fetch - processPackages [pysyn-data]: Downloading https://files.pythonhosted.org/packages/3b/90/0118854640f971534d9743bde6f8de8edd5064abae5b3d842748464c1aef/pysyn_data-0.3.3-py3-none-any.whl
+[2023-05-14 21:59:16] INFO root fetch - processPackages [pytest-logikal]: Downloading https://files.pythonhosted.org/packages/6b/f7/235f4842c17060c78b7ba713b2a3a868116a3d716013300444dffb2e9d87/pytest-logikal-1.8.1.tar.gz
+[2023-05-14 21:59:16] INFO root fetch - processPackages [tensor-parallel]: Downloading https://files.pythonhosted.org/packages/63/52/28df63fbaa22d5e92f6706824f15aefb9027c53d0819bcd6c6c906fe566f/tensor_parallel-1.2.4.tar.gz
+[2023-05-14 21:59:16] INFO root fetch - processPackages [aleksis-app-chronos]: Downloading https://files.pythonhosted.org/packages/cc/a0/0e984e4d94cbf07e08b9fc4f7615fb39488524c3d4305b53da6a5a834428/aleksis_app_chronos-3.0.dev1.tar.gz
+[2023-05-14 21:59:16] INFO root fetch - processPackages [tensor-parallel]: executing diffoscope
+[2023-05-14 21:59:16] INFO root fetch - processPackages [tensor-parallel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensor_parallel-1.2.3.tar.gz tmp/tensor_parallel-1.2.4.tar.gz --markdown 20230514/t/tensor-parallel/1.2.3-1.2.4/diff.md --exclude *.pyd
+[2023-05-14 21:59:16] INFO root fetch - processPackages [pytest-logikal]: Downloading https://files.pythonhosted.org/packages/f1/06/5db91f889eeed6d7e91d0357435a1219fa8f8f2faed5e92619aca2df67a5/pytest-logikal-1.8.2.tar.gz
+[2023-05-14 21:59:16] INFO root fetch - processPackages [pysyn-data]: Downloading https://files.pythonhosted.org/packages/d6/b8/68d22184d311c608eb854c998e8d6fd869fa3ff44ba43dcf187e3c068548/pysyn-data-0.3.4.tar.gz
+[2023-05-14 21:59:16] INFO root fetch - processPackages [aleksis-app-chronos]: Downloading https://files.pythonhosted.org/packages/88/9c/8775bd9b84da8a91d955d955a4ac928ff3dc6e9c27958f3030e3ba20df5a/aleksis_app_chronos-3.0b0.tar.gz
+[2023-05-14 21:59:16] INFO root fetch - processPackages [pytest-logikal]: executing diffoscope
+[2023-05-14 21:59:16] INFO root fetch - processPackages [pytest-logikal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytest-logikal-1.8.1.tar.gz tmp/pytest-logikal-1.8.2.tar.gz --markdown 20230514/p/pytest-logikal/1.8.1-1.8.2/diff.md --exclude *.pyd
+[2023-05-14 21:59:16] INFO root fetch - processPackages [pysyn-data]: executing diffoscope
+[2023-05-14 21:59:16] INFO root fetch - processPackages [pysyn-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysyn_data-0.3.3-py3-none-any.whl.zip tmp/pysyn-data-0.3.4.tar.gz --markdown 20230514/p/pysyn-data/0.3.3-0.3.4/diff.md --exclude *.pyd
+[2023-05-14 21:59:16] INFO root fetch - processPackages [aleksis-app-chronos]: executing diffoscope
+[2023-05-14 21:59:16] INFO root fetch - processPackages [aleksis-app-chronos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aleksis_app_chronos-3.0.dev1.tar.gz tmp/aleksis_app_chronos-3.0b0.tar.gz --markdown 20230514/a/aleksis-app-chronos/3.0.dev1-3.0b0/diff.md --exclude *.pyd
+[2023-05-14 21:59:17] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-14 21:59:17] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-14 21:59:17] INFO root fetch - main [MainThread]: End processing [siobrultech-protocols]: success
+[2023-05-14 21:59:17] INFO root fetch - main [MainThread]: End processing [tensor-parallel]: success
+[2023-05-14 21:59:17] INFO root fetch - main [MainThread]: End processing [pysyn-data]: success
+[2023-05-14 21:59:18] INFO root fetch - main [MainThread]: End processing [pytest-logikal]: success
+[2023-05-14 21:59:18] INFO root fetch - main [MainThread]: End processing [aleksis-app-chronos]: success
+[2023-05-14 21:59:18] INFO root fetch - main [MainThread]: Store serial: [18099679]
