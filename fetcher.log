@@ -1988,3 +1988,39 @@
 [2023-05-14 04:40:18] INFO root fetch - main [MainThread]: End processing [BDXConverter]: success
 [2023-05-14 04:40:18] INFO root fetch - main [MainThread]: End processing [fluffy-server]: success
 [2023-05-14 04:40:18] INFO root fetch - main [MainThread]: Store serial: [18094573]
+[2023-05-14 04:45:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094573]
+[2023-05-14 04:45:27] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-14 04:45:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: animateplot
+[2023-05-14 04:45:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qunqunpdf
+[2023-05-14 04:45:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pypipr
+[2023-05-14 04:45:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dailypics
+[2023-05-14 04:45:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: configzen
+[2023-05-14 04:45:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: featurizerai
+[2023-05-14 04:45:27] WARNING root fetch - processPackages [dailypics]: Skipping, unable to determine old version
+[2023-05-14 04:45:27] INFO root fetch - main [MainThread]: End processing [dailypics] error
+[2023-05-14 04:45:27] INFO root fetch - processPackages [pypipr]: New version: [0.1.9] Old Version: [0.1.80]
+[2023-05-14 04:45:27] INFO root fetch - processPackages [animateplot]: New version: [0.3.2] Old Version: [0.2.1]
+[2023-05-14 04:45:27] INFO root fetch - processPackages [configzen]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-14 04:45:27] INFO root fetch - processPackages [featurizerai]: New version: [1.6.7] Old Version: [1.6.6]
+[2023-05-14 04:45:27] INFO root fetch - processPackages [qunqunpdf]: New version: [1.3] Old Version: [1.2]
+[2023-05-14 04:45:27] INFO root fetch - processPackages [featurizerai]: executing diffoscope
+[2023-05-14 04:45:27] INFO root fetch - processPackages [featurizerai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featurizerai-1.6.6.tar.gz tmp/featurizerai-1.6.7.tar.gz --markdown 20230514/f/featurizerai/1.6.6-1.6.7/diff.md --exclude *.pyd
+[2023-05-14 04:45:27] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/dd/fe/a97983bc174073e4ec73b09f259365a0f863e55079907be4cff6f386ef91/pypipr-0.1.80.tar.gz
+[2023-05-14 04:45:27] INFO root fetch - processPackages [animateplot]: Downloading https://files.pythonhosted.org/packages/2c/57/86d51c4a479f3fea3297c6f9df7c8b0fe4b3f5eaf451c362cf64bdb65002/animateplot-0.2.1-py3-none-any.whl
+[2023-05-14 04:45:27] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/64/37/f741d9491071edb53560397a9a5ca1154fa632d9b87714913209ee083d88/configzen-0.1.2.tar.gz
+[2023-05-14 04:45:27] INFO root fetch - processPackages [qunqunpdf]: Downloading https://files.pythonhosted.org/packages/9b/da/39cf6846c601fc38708653b8d65508a2d9351c0e0d103bffb4a638e4a05d/qunqunpdf-1.3.tar.gz
+[2023-05-14 04:45:27] INFO root fetch - processPackages [qunqunpdf]: executing diffoscope
+[2023-05-14 04:45:27] INFO root fetch - processPackages [qunqunpdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qunqunpdf-1.2.tar.gz tmp/qunqunpdf-1.3.tar.gz --markdown 20230514/q/qunqunpdf/1.2-1.3/diff.md --exclude *.pyd
+[2023-05-14 04:45:28] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-14 04:45:28] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.1.tar.gz tmp/configzen-0.1.2.tar.gz --markdown 20230514/c/configzen/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-14 04:45:28] INFO root fetch - processPackages [animateplot]: Downloading https://files.pythonhosted.org/packages/59/83/dae7784c98f7ed6e9222a6b5160f3057d12bd2611e42c68c371b884739c3/animateplot-0.3.2-py3-none-any.whl
+[2023-05-14 04:45:28] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2023-05-14 04:45:28] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-0.1.80.tar.gz tmp/pypipr-0.1.9.tar.gz --markdown 20230514/p/pypipr/0.1.80-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 04:45:28] INFO root fetch - processPackages [animateplot]: executing diffoscope
+[2023-05-14 04:45:28] INFO root fetch - processPackages [animateplot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/animateplot-0.2.1-py3-none-any.whl.zip tmp/animateplot-0.3.2-py3-none-any.whl.zip --markdown 20230514/a/animateplot/0.2.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-14 04:45:28] INFO root fetch - main [MainThread]: End processing [featurizerai]: success
+[2023-05-14 04:45:29] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2023-05-14 04:45:29] INFO root fetch - main [MainThread]: End processing [animateplot]: success
+[2023-05-14 04:45:29] INFO root fetch - main [MainThread]: End processing [qunqunpdf]: success
+[2023-05-14 04:45:29] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-14 04:45:29] INFO root fetch - main [MainThread]: Store serial: [18094593]
