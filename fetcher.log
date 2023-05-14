@@ -3523,3 +3523,47 @@
 [2023-05-14 09:13:07] INFO root fetch - processPackages [streamlit-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/streamlit-nightly-1.9.3.dev20220531.tar.gz tmp/streamlit-nightly-1.9.3.dev20220601.tar.gz --markdown 20230514/s/streamlit-nightly/1.9.3.dev20220531-1.9.3.dev20220601/diff.md --exclude *.pyd
 [2023-05-14 09:13:18] INFO root fetch - main [MainThread]: End processing [streamlit-nightly]: success
 [2023-05-14 09:13:18] INFO root fetch - main [MainThread]: Store serial: [18095478]
+[2023-05-14 09:18:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095478]
+[2023-05-14 09:18:27] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-14 09:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: t2f
+[2023-05-14 09:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: appsurifyci
+[2023-05-14 09:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xbox-sdk
+[2023-05-14 09:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: appsurifyci
+[2023-05-14 09:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tfq-nightly
+[2023-05-14 09:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aioqui
+[2023-05-14 09:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ippr
+[2023-05-14 09:18:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: appsurifyci
+[2023-05-14 09:18:27] INFO root fetch - processPackages [t2f]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-14 09:18:27] INFO root fetch - processPackages [appsurifyci]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 09:18:27] INFO root fetch - processPackages [xbox-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 09:18:27] INFO root fetch - processPackages [tfq-nightly]: New version: [0.7.3.dev20230513] Old Version: [0.7.3.dev20230512]
+[2023-05-14 09:18:27] INFO root fetch - processPackages [aioqui]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-14 09:18:27] INFO root fetch - processPackages [appsurifyci]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 09:18:27] INFO root fetch - processPackages [appsurifyci]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 09:18:27] WARNING root fetch - processPackages [ippr]: Skipping, unable to determine old version
+[2023-05-14 09:18:27] INFO root fetch - main [MainThread]: End processing [ippr] error
+[2023-05-14 09:18:27] INFO root fetch - processPackages [appsurifyci]: executing diffoscope
+[2023-05-14 09:18:27] INFO root fetch - processPackages [appsurifyci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appsurifyci-0.1.8.tar.gz tmp/appsurifyci-0.1.9.tar.gz --markdown 20230514/a/appsurifyci/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 09:18:27] INFO root fetch - processPackages [appsurifyci]: executing diffoscope
+[2023-05-14 09:18:27] INFO root fetch - processPackages [appsurifyci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appsurifyci-0.1.8.tar.gz tmp/appsurifyci-0.1.9.tar.gz --markdown 20230514/a/appsurifyci/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 09:18:27] INFO root fetch - processPackages [appsurifyci]: executing diffoscope
+[2023-05-14 09:18:27] INFO root fetch - processPackages [appsurifyci]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appsurifyci-0.1.8.tar.gz tmp/appsurifyci-0.1.9.tar.gz --markdown 20230514/a/appsurifyci/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 09:18:27] INFO root fetch - processPackages [t2f]: Downloading https://files.pythonhosted.org/packages/2b/54/ddfcaf22a43185cd9009d76bcb1e861e9c114c873bfabcf3ff04a4a8fc74/t2f-0.1.5.tar.gz
+[2023-05-14 09:18:27] INFO root fetch - processPackages [xbox-sdk]: Downloading https://files.pythonhosted.org/packages/e1/4f/9f14a818da768d9344da4a4171cbce39c66b84b033b739c34a49deea86cf/xbox-sdk-0.0.9.tar.gz
+[2023-05-14 09:18:27] INFO root fetch - processPackages [tfq-nightly]: Downloading https://files.pythonhosted.org/packages/f4/a0/2789f59977b0fc68abf6de7837f8db35eac5062bf64d7ddcd56a0fe62613/tfq_nightly-0.7.3.dev20230512-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-14 09:18:27] INFO root fetch - processPackages [aioqui]: Downloading https://files.pythonhosted.org/packages/bd/e0/bd0f00a54fed95f591a1ced524835e38a5eb3dd2a77fbd65d185f5acf90b/aioqui-1.1.3.tar.gz
+[2023-05-14 09:18:27] WARNING root fetch - processPackages [tfq-nightly]: Skipping package: exceeds size limit 10819847>=10485760
+[2023-05-14 09:18:27] INFO root fetch - main [MainThread]: End processing [tfq-nightly] error
+[2023-05-14 09:18:27] INFO root fetch - processPackages [xbox-sdk]: executing diffoscope
+[2023-05-14 09:18:27] INFO root fetch - processPackages [xbox-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xbox-sdk-0.0.8.tar.gz tmp/xbox-sdk-0.0.9.tar.gz --markdown 20230514/x/xbox-sdk/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 09:18:27] INFO root fetch - processPackages [t2f]: executing diffoscope
+[2023-05-14 09:18:27] INFO root fetch - processPackages [t2f]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/t2f-0.1.4.tar.gz tmp/t2f-0.1.5.tar.gz --markdown 20230514/t/t2f/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-14 09:18:27] INFO root fetch - processPackages [aioqui]: executing diffoscope
+[2023-05-14 09:18:27] INFO root fetch - processPackages [aioqui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioqui-1.1.2.tar.gz tmp/aioqui-1.1.3.tar.gz --markdown 20230514/a/aioqui/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-14 09:18:28] INFO root fetch - main [MainThread]: End processing [appsurifyci]: success
+[2023-05-14 09:18:28] INFO root fetch - main [MainThread]: End processing [appsurifyci]: success
+[2023-05-14 09:18:28] INFO root fetch - main [MainThread]: End processing [appsurifyci]: success
+[2023-05-14 09:18:28] INFO root fetch - main [MainThread]: End processing [t2f]: success
+[2023-05-14 09:18:28] INFO root fetch - main [MainThread]: End processing [xbox-sdk]: success
+[2023-05-14 09:18:30] INFO root fetch - main [MainThread]: End processing [aioqui]: success
+[2023-05-14 09:18:30] INFO root fetch - main [MainThread]: Store serial: [18095501]
