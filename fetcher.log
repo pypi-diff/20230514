@@ -1757,3 +1757,23 @@
 [2023-05-14 04:03:38] INFO root fetch - processPackages [Scrapinger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Scrapinger-1.0.8.tar.gz tmp/Scrapinger-1.0.9.tar.gz --markdown 20230514/S/Scrapinger/1.0.8-1.0.9/diff.md --exclude *.pyd
 [2023-05-14 04:03:39] INFO root fetch - main [MainThread]: End processing [Scrapinger]: success
 [2023-05-14 04:03:39] INFO root fetch - main [MainThread]: Store serial: [18094435]
+[2023-05-14 04:08:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094435]
+[2023-05-14 04:08:48] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-14 04:08:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webarchiver
+[2023-05-14 04:08:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jax-dataloader
+[2023-05-14 04:08:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tkfly
+[2023-05-14 04:08:48] INFO root fetch - processPackages [webarchiver]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-14 04:08:48] INFO root fetch - processPackages [tkfly]: New version: [0.1.0a5] Old Version: [0.1.0a4]
+[2023-05-14 04:08:48] INFO root fetch - processPackages [jax-dataloader]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-14 04:08:48] INFO root fetch - processPackages [webarchiver]: executing diffoscope
+[2023-05-14 04:08:48] INFO root fetch - processPackages [webarchiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webarchiver-0.8.0-py2.py3-none-any.whl.zip tmp/webarchiver-0.9.0-py2.py3-none-any.whl.zip --markdown 20230514/w/webarchiver/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 04:08:48] INFO root fetch - processPackages [tkfly]: Downloading https://files.pythonhosted.org/packages/72/63/3645c8d9bed102432f16bdab5cc23fcd1472ef5b2c5668a00cf5e960429e/tkfly-0.1.0a5.tar.gz
+[2023-05-14 04:08:48] WARNING root fetch - processPackages [tkfly]: Skipping package: exceeds size limit 34644439>=10485760
+[2023-05-14 04:08:48] INFO root fetch - main [MainThread]: End processing [tkfly] error
+[2023-05-14 04:08:48] INFO root fetch - processPackages [jax-dataloader]: Downloading https://files.pythonhosted.org/packages/e7/3c/026c315a5aab7001f14b609e6727bb7f5c682544242d8a8d906c6e97f0af/jax-dataloader-0.0.3.tar.gz
+[2023-05-14 04:08:48] INFO root fetch - processPackages [jax-dataloader]: Downloading https://files.pythonhosted.org/packages/81/2b/a94b81323058358e54ad4cba9fec76e83c47e387f664997e53b1233a6772/jax-dataloader-0.0.4.tar.gz
+[2023-05-14 04:08:48] INFO root fetch - processPackages [jax-dataloader]: executing diffoscope
+[2023-05-14 04:08:48] INFO root fetch - processPackages [jax-dataloader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jax-dataloader-0.0.3.tar.gz tmp/jax-dataloader-0.0.4.tar.gz --markdown 20230514/j/jax-dataloader/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-14 04:08:49] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
+[2023-05-14 04:08:50] INFO root fetch - main [MainThread]: End processing [jax-dataloader]: success
+[2023-05-14 04:08:50] INFO root fetch - main [MainThread]: Store serial: [18094444]
