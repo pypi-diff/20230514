@@ -3944,3 +3944,37 @@
 [2023-05-14 10:28:48] INFO root fetch - main [MainThread]: End processing [nvfuser-cu118]: success
 [2023-05-14 10:28:48] INFO root fetch - main [MainThread]: End processing [nvfuser-cu121]: success
 [2023-05-14 10:28:48] INFO root fetch - main [MainThread]: Store serial: [18095746]
+[2023-05-14 10:34:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095746]
+[2023-05-14 10:34:15] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 10:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fuxictr
+[2023-05-14 10:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: test-helper-vbot3
+[2023-05-14 10:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odoo-addons-oca-website-cms
+[2023-05-14 10:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: local-recruitment-employer-python-backend
+[2023-05-14 10:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: python-packages
+[2023-05-14 10:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hex-utility-pkg
+[2023-05-14 10:34:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sse-starlette
+[2023-05-14 10:34:15] INFO root fetch - processPackages [fuxictr]: New version: [2.0.2] Old Version: [2.0.1]
+[2023-05-14 10:34:15] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-05-14 10:34:15] WARNING root fetch - processPackages [test-helper-vbot3]: Skipping, unable to determine old version
+[2023-05-14 10:34:15] INFO root fetch - main [MainThread]: End processing [test-helper-vbot3] error
+[2023-05-14 10:34:15] WARNING root fetch - processPackages [odoo-addons-oca-website-cms]: Skipping, unable to determine old version
+[2023-05-14 10:34:15] INFO root fetch - main [MainThread]: End processing [odoo-addons-oca-website-cms] error
+[2023-05-14 10:34:15] WARNING root fetch - processPackages [python-packages]: Skipping, unable to determine old version
+[2023-05-14 10:34:15] INFO root fetch - main [MainThread]: End processing [python-packages] error
+[2023-05-14 10:34:15] INFO root fetch - processPackages [sse-starlette]: New version: [1.6.0] Old Version: [1.5.0]
+[2023-05-14 10:34:15] WARNING root fetch - processPackages [hex-utility-pkg]: Skipping, unable to determine old version
+[2023-05-14 10:34:15] INFO root fetch - main [MainThread]: End processing [hex-utility-pkg] error
+[2023-05-14 10:34:15] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: executing diffoscope
+[2023-05-14 10:34:15] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local-recruitment-employer-python-backend-0.0.7.tar.gz tmp/local-recruitment-employer-python-backend-0.0.9.tar.gz --markdown 20230514/l/local-recruitment-employer-python-backend/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 10:34:15] INFO root fetch - processPackages [fuxictr]: Downloading https://files.pythonhosted.org/packages/77/75/465dcb9ab4a9340a35a41b6688a2f0480588c949d9a1f900f3e91088a7c9/fuxictr-2.0.1.tar.gz
+[2023-05-14 10:34:15] INFO root fetch - processPackages [sse-starlette]: Downloading https://files.pythonhosted.org/packages/ea/c0/3287f88a6d781a1b4cac432aed68c404ae48112875d493396ae38f23a657/sse-starlette-1.5.0.tar.gz
+[2023-05-14 10:34:15] INFO root fetch - processPackages [fuxictr]: Downloading https://files.pythonhosted.org/packages/7d/fb/0d644a3f04018c7512da99d52a3f5268abc8c9f6e41a4c0e3a513d54a619/fuxictr-2.0.2.tar.gz
+[2023-05-14 10:34:15] INFO root fetch - processPackages [fuxictr]: executing diffoscope
+[2023-05-14 10:34:15] INFO root fetch - processPackages [fuxictr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fuxictr-2.0.1.tar.gz tmp/fuxictr-2.0.2.tar.gz --markdown 20230514/f/fuxictr/2.0.1-2.0.2/diff.md --exclude *.pyd
+[2023-05-14 10:34:15] INFO root fetch - processPackages [sse-starlette]: Downloading https://files.pythonhosted.org/packages/5d/9c/05ff547415c13f0170282338002589c6d3a6a8740c19415c4c9c8379f160/sse-starlette-1.6.0.tar.gz
+[2023-05-14 10:34:15] INFO root fetch - processPackages [sse-starlette]: executing diffoscope
+[2023-05-14 10:34:15] INFO root fetch - processPackages [sse-starlette]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sse-starlette-1.5.0.tar.gz tmp/sse-starlette-1.6.0.tar.gz --markdown 20230514/s/sse-starlette/1.5.0-1.6.0/diff.md --exclude *.pyd
+[2023-05-14 10:34:16] INFO root fetch - main [MainThread]: End processing [local-recruitment-employer-python-backend]: success
+[2023-05-14 10:34:16] INFO root fetch - main [MainThread]: End processing [sse-starlette]: success
+[2023-05-14 10:34:17] INFO root fetch - main [MainThread]: End processing [fuxictr]: success
+[2023-05-14 10:34:17] INFO root fetch - main [MainThread]: Store serial: [18095773]
