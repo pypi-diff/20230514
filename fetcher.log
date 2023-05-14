@@ -6952,3 +6952,68 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 16:24:42] INFO root fetch - main [MainThread]: End processing [botoy]: success
 [2023-05-14 16:24:43] INFO root fetch - main [MainThread]: End processing [transformers-agent-ui]: success
 [2023-05-14 16:24:43] INFO root fetch - main [MainThread]: Store serial: [18097577]
+[2023-05-14 16:29:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18097577]
+[2023-05-14 16:29:52] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-14 16:29:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mafic
+[2023-05-14 16:29:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hordelib
+[2023-05-14 16:29:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tmtccmd
+[2023-05-14 16:29:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gcsaws
+[2023-05-14 16:29:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-kit-annotation
+[2023-05-14 16:29:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sipiiiii
+[2023-05-14 16:29:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pytessel
+[2023-05-14 16:29:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: configzen
+[2023-05-14 16:29:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: ctdd
+[2023-05-14 16:29:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pyathena
+[2023-05-14 16:29:52] INFO root fetch - processPackages [gcsaws]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 16:29:52] INFO root fetch - processPackages [tmtccmd]: New version: [5.0.0a0] Old Version: [4.1.2]
+[2023-05-14 16:29:52] INFO root fetch - processPackages [pytessel]: New version: [0.1.3.0] Old Version: [0.1.2.1]
+[2023-05-14 16:29:52] INFO root fetch - processPackages [mafic]: New version: [2.4.0] Old Version: [2.3.1]
+[2023-05-14 16:29:52] INFO root fetch - processPackages [certora-cli-alpha-kit-annotation]: New version: [20230514.14.27.272626] Old Version: [20230514.12.11.847491]
+[2023-05-14 16:29:52] INFO root fetch - processPackages [configzen]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 16:29:52] INFO root fetch - processPackages [hordelib]: New version: [1.0.0] Old Version: [0.9.5]
+[2023-05-14 16:29:52] INFO root fetch - processPackages [sipiiiii]: New version: [1.1.17] Old Version: [1.0.2]
+[2023-05-14 16:29:52] INFO root fetch - processPackages [ctdd]: New version: [0.0.3] Old Version: [0.0.2a3]
+[2023-05-14 16:29:52] INFO root fetch - processPackages [gcsaws]: executing diffoscope
+[2023-05-14 16:29:52] INFO root fetch - processPackages [gcsaws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcsaws-0.0.8.tar.gz tmp/gcsaws-0.0.9.tar.gz --markdown 20230514/g/gcsaws/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 16:29:52] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-14 16:29:52] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.8.tar.gz tmp/configzen-0.1.9.tar.gz --markdown 20230514/c/configzen/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 16:29:52] INFO root fetch - processPackages [pyathena]: New version: [3.0.1] Old Version: [3.0.0]
+[2023-05-14 16:29:52] INFO root fetch - processPackages [mafic]: Downloading https://files.pythonhosted.org/packages/34/91/ca427ee8248fe20014c35e9773d7e9edf5fa7e1c7a4d56b944b9ba773747/mafic-2.3.1.tar.gz
+[2023-05-14 16:29:52] INFO root fetch - processPackages [pytessel]: Downloading https://files.pythonhosted.org/packages/9d/16/b04d999e7f53d5b6b5b9fbd06744624b23b96054248a21db56c0dcb84af4/pytessel-0.1.2.1-cp39-cp39-manylinux2014_x86_64.whl
+[2023-05-14 16:29:52] INFO root fetch - processPackages [sipiiiii]: Downloading https://files.pythonhosted.org/packages/68/89/a10db6a6b55eda968e37adc649a20b7c6de903f4138b0bbc4daef795d665/sipiiiii-1.0.2.tar.gz
+[2023-05-14 16:29:52] INFO root fetch - processPackages [tmtccmd]: Downloading https://files.pythonhosted.org/packages/61/9e/f5043477588e8d437b513e90153196f4e042632fe476941447648bbc2e1d/tmtccmd-4.1.2.tar.gz
+[2023-05-14 16:29:52] INFO root fetch - processPackages [certora-cli-alpha-kit-annotation]: Downloading https://files.pythonhosted.org/packages/5e/ad/ab75608dbd8bc2fbec32e1dbd5d3b05a6bac3b67460b3784bad4b2932415/certora-cli-alpha-kit-annotation-20230514.12.11.847491.tar.gz
+[2023-05-14 16:29:52] INFO root fetch - processPackages [hordelib]: Downloading https://files.pythonhosted.org/packages/c5/2f/db349bc95a7e78bfd720ed4241bdad90e5f0b8bc5bfda8920e7e823fc5ab/hordelib-1.0.0.tar.gz
+[2023-05-14 16:29:52] INFO root fetch - processPackages [ctdd]: Downloading https://files.pythonhosted.org/packages/d5/1c/825fda52c258063cf370fde72656f9aa5895087bedeaab6bef998dd5b49e/ctdd-0.0.3.tar.gz
+[2023-05-14 16:29:52] WARNING root fetch - processPackages [certora-cli-alpha-kit-annotation]: Skipping package: exceeds size limit 39443734>=10485760
+[2023-05-14 16:29:52] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-kit-annotation] error
+[2023-05-14 16:29:52] INFO root fetch - processPackages [pyathena]: Downloading https://files.pythonhosted.org/packages/46/45/97d95cc84ab4d71b4fefae806873297ed367de506e257f8691d7f4fb2302/pyathena-3.0.0.tar.gz
+[2023-05-14 16:29:52] INFO root fetch - processPackages [ctdd]: executing diffoscope
+[2023-05-14 16:29:52] INFO root fetch - processPackages [ctdd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctdd-0.0.2a3.tar.gz tmp/ctdd-0.0.3.tar.gz --markdown 20230514/c/ctdd/0.0.2a3-0.0.3/diff.md --exclude *.pyd
+[2023-05-14 16:29:52] INFO root fetch - processPackages [mafic]: Downloading https://files.pythonhosted.org/packages/c7/0e/68958f56bbf8877692dfda964c0a6205d13f9dca1e6f3eb8c66bea332eec/mafic-2.4.0.tar.gz
+[2023-05-14 16:29:52] INFO root fetch - processPackages [sipiiiii]: Downloading https://files.pythonhosted.org/packages/97/0a/f636d0d67a676676b460e1247a7983f5cc24f73d4c7ada3324f94d35e700/sipiiiii-1.1.17.tar.gz
+[2023-05-14 16:29:52] INFO root fetch - processPackages [tmtccmd]: Downloading https://files.pythonhosted.org/packages/55/d4/e101b7a4ec33ab6fea36fda894387f7c9aada1c89d15a5eb490d1dfa6efc/tmtccmd-5.0.0a0.tar.gz
+[2023-05-14 16:29:52] INFO root fetch - processPackages [mafic]: executing diffoscope
+[2023-05-14 16:29:52] INFO root fetch - processPackages [mafic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mafic-2.3.1.tar.gz tmp/mafic-2.4.0.tar.gz --markdown 20230514/m/mafic/2.3.1-2.4.0/diff.md --exclude *.pyd
+[2023-05-14 16:29:53] INFO root fetch - processPackages [sipiiiii]: executing diffoscope
+[2023-05-14 16:29:53] INFO root fetch - processPackages [sipiiiii]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sipiiiii-1.0.2.tar.gz tmp/sipiiiii-1.1.17.tar.gz --markdown 20230514/s/sipiiiii/1.0.2-1.1.17/diff.md --exclude *.pyd
+[2023-05-14 16:29:53] INFO root fetch - processPackages [pytessel]: Downloading https://files.pythonhosted.org/packages/d8/98/a67e94669cc2e4bf19570fd6b20cba5ee99dd550dab1d23272963da74170/pytessel-0.1.3.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-14 16:29:53] INFO root fetch - processPackages [pyathena]: Downloading https://files.pythonhosted.org/packages/3e/05/6ce88a53c7e7e278025373c4c7fa057da0f36fc1150732adc067fb840746/pyathena-3.0.1.tar.gz
+[2023-05-14 16:29:53] INFO root fetch - processPackages [tmtccmd]: executing diffoscope
+[2023-05-14 16:29:53] INFO root fetch - processPackages [tmtccmd]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmtccmd-4.1.2.tar.gz tmp/tmtccmd-5.0.0a0.tar.gz --markdown 20230514/t/tmtccmd/4.1.2-5.0.0a0/diff.md --exclude *.pyd
+[2023-05-14 16:29:53] INFO root fetch - processPackages [pytessel]: executing diffoscope
+[2023-05-14 16:29:53] INFO root fetch - processPackages [pytessel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytessel-0.1.2.1-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/pytessel-0.1.3.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230514/p/pytessel/0.1.2.1-0.1.3.0/diff.md --exclude *.pyd
+[2023-05-14 16:29:53] INFO root fetch - processPackages [pyathena]: executing diffoscope
+[2023-05-14 16:29:53] INFO root fetch - processPackages [pyathena]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyathena-3.0.0.tar.gz tmp/pyathena-3.0.1.tar.gz --markdown 20230514/p/pyathena/3.0.0-3.0.1/diff.md --exclude *.pyd
+[2023-05-14 16:29:53] INFO root fetch - main [MainThread]: End processing [ctdd]: success
+[2023-05-14 16:29:53] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-05-14 16:29:53] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-0.9.5.tar.gz tmp/hordelib-1.0.0.tar.gz --markdown 20230514/h/hordelib/0.9.5-1.0.0/diff.md --exclude *.pyd
+[2023-05-14 16:29:54] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-14 16:29:54] INFO root fetch - main [MainThread]: End processing [gcsaws]: success
+[2023-05-14 16:29:54] INFO root fetch - main [MainThread]: End processing [mafic]: success
+[2023-05-14 16:29:54] INFO root fetch - main [MainThread]: End processing [sipiiiii]: success
+[2023-05-14 16:29:54] INFO root fetch - main [MainThread]: End processing [pyathena]: success
+[2023-05-14 16:29:57] INFO root fetch - main [MainThread]: End processing [tmtccmd]: success
+[2023-05-14 16:30:02] INFO root fetch - main [MainThread]: End processing [pytessel]: success
+[2023-05-14 16:30:05] INFO root fetch - main [MainThread]: End processing [hordelib]: success
+[2023-05-14 16:30:05] INFO root fetch - main [MainThread]: Store serial: [18097611]
