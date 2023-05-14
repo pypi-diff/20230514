@@ -8079,3 +8079,28 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 18:05:07] INFO root fetch - main [MainThread]: End processing [dnadb]: success
 [2023-05-14 18:05:08] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
 [2023-05-14 18:05:08] INFO root fetch - main [MainThread]: Store serial: [18098286]
+[2023-05-14 18:10:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098286]
+[2023-05-14 18:10:16] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 18:10:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: notification-service-nightly
+[2023-05-14 18:10:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ai-flow-nightly
+[2023-05-14 18:10:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tiktokapipy
+[2023-05-14 18:10:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kanren123
+[2023-05-14 18:10:16] INFO root fetch - processPackages [notification-service-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-14 18:10:16] INFO root fetch - processPackages [ai-flow-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-14 18:10:17] INFO root fetch - processPackages [ai-flow-nightly]: Downloading https://files.pythonhosted.org/packages/c5/63/f44cb52cb4e63a29eb4e9e200545a00a85431d13fe7a97a1826656f4f440/ai_flow_nightly-2023.5.8.tar.gz
+[2023-05-14 18:10:17] INFO root fetch - processPackages [notification-service-nightly]: Downloading https://files.pythonhosted.org/packages/bd/fb/51af7678def01e44dd62524b36b8ba4fff3d817d8b595829cb0d7ebbe02e/notification_service_nightly-2023.5.8.tar.gz
+[2023-05-14 18:10:17] WARNING root fetch - processPackages [kanren123]: Skipping, unable to determine old version
+[2023-05-14 18:10:17] INFO root fetch - main [MainThread]: End processing [kanren123] error
+[2023-05-14 18:10:17] INFO root fetch - processPackages [tiktokapipy]: New version: [0.1.9.post1] Old Version: [0.1.9]
+[2023-05-14 18:10:17] INFO root fetch - processPackages [ai-flow-nightly]: executing diffoscope
+[2023-05-14 18:10:17] INFO root fetch - processPackages [ai-flow-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ai_flow_nightly-2023.5.8.tar.gz tmp/ai_flow_nightly-2023.5.9.tar.gz --markdown 20230514/a/ai-flow-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-14 18:10:17] INFO root fetch - processPackages [tiktokapipy]: Downloading https://files.pythonhosted.org/packages/cd/bb/3a13446b2373c4339a184f14288f148e79394d4798a9cad2831d3c4022ed/tiktokapipy-0.1.9.tar.gz
+[2023-05-14 18:10:17] INFO root fetch - processPackages [notification-service-nightly]: executing diffoscope
+[2023-05-14 18:10:17] INFO root fetch - processPackages [notification-service-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/notification_service_nightly-2023.5.8.tar.gz tmp/notification_service_nightly-2023.5.9.tar.gz --markdown 20230514/n/notification-service-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-14 18:10:17] INFO root fetch - processPackages [tiktokapipy]: Downloading https://files.pythonhosted.org/packages/63/31/43b6abdd020b33b02f78837904a30b80800400a2113f582dd924ff88082c/tiktokapipy-0.1.9.post1.tar.gz
+[2023-05-14 18:10:17] INFO root fetch - processPackages [tiktokapipy]: executing diffoscope
+[2023-05-14 18:10:17] INFO root fetch - processPackages [tiktokapipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tiktokapipy-0.1.9.tar.gz tmp/tiktokapipy-0.1.9.post1.tar.gz --markdown 20230514/t/tiktokapipy/0.1.9-0.1.9.post1/diff.md --exclude *.pyd
+[2023-05-14 18:10:18] INFO root fetch - main [MainThread]: End processing [notification-service-nightly]: success
+[2023-05-14 18:10:18] INFO root fetch - main [MainThread]: End processing [tiktokapipy]: success
+[2023-05-14 18:10:19] INFO root fetch - main [MainThread]: End processing [ai-flow-nightly]: success
+[2023-05-14 18:10:19] INFO root fetch - main [MainThread]: Store serial: [18098303]
