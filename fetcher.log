@@ -2679,3 +2679,46 @@
 [2023-05-14 07:01:52] INFO root fetch - main [MainThread]: End processing [aioqui]: success
 [2023-05-14 07:02:21] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
 [2023-05-14 07:02:21] INFO root fetch - main [MainThread]: Store serial: [18095018]
+[2023-05-14 07:07:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095018]
+[2023-05-14 07:07:33] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 07:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dask-cuda
+[2023-05-14 07:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: selenextra
+[2023-05-14 07:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: depthcharge-ms
+[2023-05-14 07:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: heaserver-folders-aws-s3
+[2023-05-14 07:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hexutility
+[2023-05-14 07:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: multi-model-server
+[2023-05-14 07:07:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tflite-model-maker-nightly
+[2023-05-14 07:07:33] WARNING root fetch - processPackages [hexutility]: Skipping, unable to determine old version
+[2023-05-14 07:07:33] INFO root fetch - main [MainThread]: End processing [hexutility] error
+[2023-05-14 07:07:33] INFO root fetch - processPackages [selenextra]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-14 07:07:33] INFO root fetch - processPackages [depthcharge-ms]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-14 07:07:33] INFO root fetch - processPackages [heaserver-folders-aws-s3]: New version: [1.0.0a9] Old Version: [1.0.0a8]
+[2023-05-14 07:07:33] INFO root fetch - processPackages [multi-model-server]: New version: [1.1.8b20230514] Old Version: [1.1.8b20230512]
+[2023-05-14 07:07:33] INFO root fetch - processPackages [tflite-model-maker-nightly]: New version: [0.4.3.dev202305130508] Old Version: [0.4.3.dev202305120508]
+[2023-05-14 07:07:33] INFO root fetch - processPackages [dask-cuda]: New version: [23.6.0a230514] Old Version: [23.6.0a230513]
+[2023-05-14 07:07:33] INFO root fetch - processPackages [selenextra]: Downloading https://files.pythonhosted.org/packages/38/9e/1843ebabd7154e94e04907a89335d4b33ccbcbce026fb8f633132e4555ad/selenextra-1.0.2.tar.gz
+[2023-05-14 07:07:33] INFO root fetch - processPackages [depthcharge-ms]: Downloading https://files.pythonhosted.org/packages/0c/ec/fbd482fc0689fb90865717895ded3f94df88dcabbf32654602bb0bb677b5/depthcharge-ms-0.2.0.tar.gz
+[2023-05-14 07:07:33] INFO root fetch - processPackages [tflite-model-maker-nightly]: Downloading https://files.pythonhosted.org/packages/33/a0/101307f1e9e37b25e9f6c7ad748f4a56ccef73e54d4b6fd279aad1943bff/tflite-model-maker-nightly-0.4.3.dev202305130508.tar.gz
+[2023-05-14 07:07:33] INFO root fetch - processPackages [multi-model-server]: Downloading https://files.pythonhosted.org/packages/cd/35/50de231374e4387158464e2403fb065be223d6977e63b8b3b1071377e865/multi_model_server-1.1.8b20230514-py2.py3-none-any.whl
+[2023-05-14 07:07:34] INFO root fetch - processPackages [dask-cuda]: Downloading https://files.pythonhosted.org/packages/40/a3/f904dcb208b807eece3a3e79cd01728237e8f0870352e4f79331116e246a/dask-cuda-23.6.0a230514.tar.gz
+[2023-05-14 07:07:34] INFO root fetch - processPackages [depthcharge-ms]: Downloading https://files.pythonhosted.org/packages/09/3a/3505118ad46b49afc2f62d74556027d3f1b0123216dc96f1cd9f95d65b89/depthcharge-ms-0.2.1.tar.gz
+[2023-05-14 07:07:34] INFO root fetch - processPackages [selenextra]: Downloading https://files.pythonhosted.org/packages/4f/9c/2ec77e5be1e16c89733f50793aca89ac62c30ffa1d942c12023319a9c043/selenextra-1.0.3.tar.gz
+[2023-05-14 07:07:34] INFO root fetch - processPackages [heaserver-folders-aws-s3]: executing diffoscope
+[2023-05-14 07:07:34] INFO root fetch - processPackages [heaserver-folders-aws-s3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heaserver-folders-aws-s3-1.0.0a8.tar.gz tmp/heaserver-folders-aws-s3-1.0.0a9.tar.gz --markdown 20230514/h/heaserver-folders-aws-s3/1.0.0a8-1.0.0a9/diff.md --exclude *.pyd
+[2023-05-14 07:07:34] INFO root fetch - processPackages [tflite-model-maker-nightly]: executing diffoscope
+[2023-05-14 07:07:34] INFO root fetch - processPackages [tflite-model-maker-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite-model-maker-nightly-0.4.3.dev202305120508.tar.gz tmp/tflite-model-maker-nightly-0.4.3.dev202305130508.tar.gz --markdown 20230514/t/tflite-model-maker-nightly/0.4.3.dev202305120508-0.4.3.dev202305130508/diff.md --exclude *.pyd
+[2023-05-14 07:07:34] INFO root fetch - processPackages [dask-cuda]: executing diffoscope
+[2023-05-14 07:07:34] INFO root fetch - processPackages [dask-cuda]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dask-cuda-23.6.0a230513.tar.gz tmp/dask-cuda-23.6.0a230514.tar.gz --markdown 20230514/d/dask-cuda/23.6.0a230513-23.6.0a230514/diff.md --exclude *.pyd
+[2023-05-14 07:07:34] INFO root fetch - processPackages [depthcharge-ms]: executing diffoscope
+[2023-05-14 07:07:34] INFO root fetch - processPackages [depthcharge-ms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/depthcharge-ms-0.2.0.tar.gz tmp/depthcharge-ms-0.2.1.tar.gz --markdown 20230514/d/depthcharge-ms/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-14 07:07:34] INFO root fetch - processPackages [selenextra]: executing diffoscope
+[2023-05-14 07:07:34] INFO root fetch - processPackages [selenextra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selenextra-1.0.2.tar.gz tmp/selenextra-1.0.3.tar.gz --markdown 20230514/s/selenextra/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-14 07:07:34] INFO root fetch - processPackages [multi-model-server]: executing diffoscope
+[2023-05-14 07:07:34] INFO root fetch - processPackages [multi-model-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multi_model_server-1.1.8b20230512-py2.py3-none-any.whl.zip tmp/multi_model_server-1.1.8b20230514-py2.py3-none-any.whl.zip --markdown 20230514/m/multi-model-server/1.1.8b20230512-1.1.8b20230514/diff.md --exclude *.pyd
+[2023-05-14 07:07:35] INFO root fetch - main [MainThread]: End processing [heaserver-folders-aws-s3]: success
+[2023-05-14 07:07:35] INFO root fetch - main [MainThread]: End processing [selenextra]: success
+[2023-05-14 07:07:35] INFO root fetch - main [MainThread]: End processing [dask-cuda]: success
+[2023-05-14 07:07:35] INFO root fetch - main [MainThread]: End processing [depthcharge-ms]: success
+[2023-05-14 07:07:37] INFO root fetch - main [MainThread]: End processing [tflite-model-maker-nightly]: success
+[2023-05-14 07:10:26] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
+[2023-05-14 07:10:26] INFO root fetch - main [MainThread]: Store serial: [18095043]
