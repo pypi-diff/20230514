@@ -9981,3 +9981,52 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 21:16:01] INFO root fetch - main [MainThread]: End processing [llama-index]: success
 [2023-05-14 21:16:03] INFO root fetch - main [MainThread]: End processing [gpt-index]: success
 [2023-05-14 21:16:03] INFO root fetch - main [MainThread]: Store serial: [18099454]
+[2023-05-14 21:21:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18099454]
+[2023-05-14 21:21:12] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 21:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bytez
+[2023-05-14 21:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: constrained-lr
+[2023-05-14 21:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dlt
+[2023-05-14 21:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gutenberg2kindle
+[2023-05-14 21:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: impetuous-gfa
+[2023-05-14 21:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xklb
+[2023-05-14 21:21:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: beancount-black
+[2023-05-14 21:21:12] INFO root fetch - processPackages [constrained-lr]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 21:21:12] INFO root fetch - processPackages [dlt]: New version: [0.2.7a0] Old Version: [0.2.6a2]
+[2023-05-14 21:21:12] INFO root fetch - processPackages [bytez]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 21:21:12] INFO root fetch - processPackages [gutenberg2kindle]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-14 21:21:12] INFO root fetch - processPackages [beancount-black]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-14 21:21:12] INFO root fetch - processPackages [impetuous-gfa]: New version: [0.97.9] Old Version: [0.97.8]
+[2023-05-14 21:21:12] INFO root fetch - processPackages [xklb]: New version: [1.27.3] Old Version: [1.27.2]
+[2023-05-14 21:21:12] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-14 21:21:12] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.8.tar.gz tmp/bytez-0.1.9.tar.gz --markdown 20230514/b/bytez/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 21:21:12] INFO root fetch - processPackages [constrained-lr]: Downloading https://files.pythonhosted.org/packages/c6/69/6bfac2f8235fb691680ab36071b643d00bb3a47ef580b18cd318b6eb4425/constrained-lr-0.0.1.tar.gz
+[2023-05-14 21:21:12] INFO root fetch - processPackages [dlt]: Downloading https://files.pythonhosted.org/packages/d9/b3/99ea03affc575c799b4cffab493faa2ad44724e63654faff041b68fdbec2/dlt-0.2.6a2.tar.gz
+[2023-05-14 21:21:12] INFO root fetch - processPackages [gutenberg2kindle]: Downloading https://files.pythonhosted.org/packages/17/bf/6bcefaa5b67057f6078867c2eb2fedcac3a772df4f099a12a77cf34c3d3e/gutenberg2kindle-0.3.0.tar.gz
+[2023-05-14 21:21:12] INFO root fetch - processPackages [impetuous-gfa]: Downloading https://files.pythonhosted.org/packages/96/3b/a06477b50e047caa4a6dc95da47c0fcc6e44d95d56744bdbd1d7f6da90d0/impetuous-gfa-0.97.8.tar.gz
+[2023-05-14 21:21:12] INFO root fetch - processPackages [xklb]: Downloading https://files.pythonhosted.org/packages/c8/28/ac36ec163f3efd35336a169d5d054c87d706d31648cdcbe737c959f53543/xklb-1.27.3.tar.gz
+[2023-05-14 21:21:12] INFO root fetch - processPackages [beancount-black]: Downloading https://files.pythonhosted.org/packages/1f/bc/bb6d3f28f13933a48dd5b12fe203302c9f47ff2f13805c01316b21f15fd9/beancount-black-0.2.0.tar.gz
+[2023-05-14 21:21:12] INFO root fetch - processPackages [gutenberg2kindle]: Downloading https://files.pythonhosted.org/packages/8b/5d/9c3395178f4daba68600b85af47eaa46ef60582d0a52af7b573cc4a71e0e/gutenberg2kindle-0.4.0.tar.gz
+[2023-05-14 21:21:12] INFO root fetch - processPackages [xklb]: executing diffoscope
+[2023-05-14 21:21:12] INFO root fetch - processPackages [xklb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xklb-1.27.2.tar.gz tmp/xklb-1.27.3.tar.gz --markdown 20230514/x/xklb/1.27.2-1.27.3/diff.md --exclude *.pyd
+[2023-05-14 21:21:12] INFO root fetch - processPackages [constrained-lr]: Downloading https://files.pythonhosted.org/packages/6e/4a/05dd89f4f35630eba692d5e83ab7753019b29218b89f329059a4614df707/constrained_lr-0.0.2.tar.gz
+[2023-05-14 21:21:12] INFO root fetch - processPackages [beancount-black]: Downloading https://files.pythonhosted.org/packages/11/ec/041b337ee218d54fc6b929ba3e6c9a471eb92fbc9b5ac756b22ebd4dbea0/beancount_black-0.2.1.tar.gz
+[2023-05-14 21:21:13] INFO root fetch - processPackages [impetuous-gfa]: Downloading https://files.pythonhosted.org/packages/c5/67/c56317b909cfcee7d671d06d31b44520b2c5f553e11d71a3620c91554a59/impetuous-gfa-0.97.9.tar.gz
+[2023-05-14 21:21:13] INFO root fetch - processPackages [gutenberg2kindle]: executing diffoscope
+[2023-05-14 21:21:13] INFO root fetch - processPackages [gutenberg2kindle]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gutenberg2kindle-0.3.0.tar.gz tmp/gutenberg2kindle-0.4.0.tar.gz --markdown 20230514/g/gutenberg2kindle/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-14 21:21:13] INFO root fetch - processPackages [dlt]: Downloading https://files.pythonhosted.org/packages/e9/a5/a013d72f1632fee541c22e5bfa9e73c1d57ad7a3b8626c6565165cd158f1/dlt-0.2.7a0.tar.gz
+[2023-05-14 21:21:13] INFO root fetch - processPackages [constrained-lr]: executing diffoscope
+[2023-05-14 21:21:13] INFO root fetch - processPackages [constrained-lr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/constrained-lr-0.0.1.tar.gz tmp/constrained_lr-0.0.2.tar.gz --markdown 20230514/c/constrained-lr/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 21:21:13] INFO root fetch - processPackages [beancount-black]: executing diffoscope
+[2023-05-14 21:21:13] INFO root fetch - processPackages [beancount-black]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/beancount-black-0.2.0.tar.gz tmp/beancount_black-0.2.1.tar.gz --markdown 20230514/b/beancount-black/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-14 21:21:13] INFO root fetch - processPackages [impetuous-gfa]: executing diffoscope
+[2023-05-14 21:21:13] INFO root fetch - processPackages [impetuous-gfa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/impetuous-gfa-0.97.8.tar.gz tmp/impetuous-gfa-0.97.9.tar.gz --markdown 20230514/i/impetuous-gfa/0.97.8-0.97.9/diff.md --exclude *.pyd
+[2023-05-14 21:21:13] INFO root fetch - processPackages [dlt]: executing diffoscope
+[2023-05-14 21:21:13] INFO root fetch - processPackages [dlt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dlt-0.2.6a2.tar.gz tmp/dlt-0.2.7a0.tar.gz --markdown 20230514/d/dlt/0.2.6a2-0.2.7a0/diff.md --exclude *.pyd
+[2023-05-14 21:21:13] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-14 21:21:14] INFO root fetch - main [MainThread]: End processing [constrained-lr]: success
+[2023-05-14 21:21:14] INFO root fetch - main [MainThread]: End processing [gutenberg2kindle]: success
+[2023-05-14 21:21:14] INFO root fetch - main [MainThread]: End processing [impetuous-gfa]: success
+[2023-05-14 21:21:15] INFO root fetch - main [MainThread]: End processing [dlt]: success
+[2023-05-14 21:21:16] INFO root fetch - main [MainThread]: End processing [xklb]: success
+[2023-05-14 21:21:49] INFO root fetch - main [MainThread]: End processing [beancount-black]: success
+[2023-05-14 21:21:49] INFO root fetch - main [MainThread]: Store serial: [18099475]
