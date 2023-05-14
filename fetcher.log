@@ -6159,3 +6159,39 @@
 [2023-05-14 15:10:39] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
 [2023-05-14 15:10:42] INFO root fetch - main [MainThread]: End processing [gnssrefl]: success
 [2023-05-14 15:10:42] INFO root fetch - main [MainThread]: Store serial: [18097157]
+[2023-05-14 15:15:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18097157]
+[2023-05-14 15:15:51] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 15:15:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SantorinAI
+[2023-05-14 15:15:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nbdev-pytorch
+[2023-05-14 15:15:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ptcompletion
+[2023-05-14 15:15:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev-scipy
+[2023-05-14 15:15:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nanoqa
+[2023-05-14 15:15:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: certora-cli-alpha-EyalH-FlattenCalleeHierarchy
+[2023-05-14 15:15:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: nbdev-sphinx
+[2023-05-14 15:15:51] WARNING root fetch - processPackages [SantorinAI]: Skipping, unable to determine old version
+[2023-05-14 15:15:51] INFO root fetch - main [MainThread]: End processing [SantorinAI] error
+[2023-05-14 15:15:51] WARNING root fetch - processPackages [ptcompletion]: Skipping, unable to determine old version
+[2023-05-14 15:15:51] INFO root fetch - main [MainThread]: End processing [ptcompletion] error
+[2023-05-14 15:15:51] WARNING root fetch - processPackages [nanoqa]: Skipping, unable to determine old version
+[2023-05-14 15:15:51] INFO root fetch - main [MainThread]: End processing [nanoqa] error
+[2023-05-14 15:15:51] INFO root fetch - processPackages [nbdev-pytorch]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-14 15:15:51] INFO root fetch - processPackages [nbdev-scipy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-14 15:15:51] INFO root fetch - processPackages [nbdev-sphinx]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-14 15:15:51] INFO root fetch - processPackages [nbdev-pytorch]: Downloading https://files.pythonhosted.org/packages/f8/45/4613a0137d296a1960d76ded45b0af15a8fd578bf48df103c50675b49136/nbdev-pytorch-0.0.98.tar.gz
+[2023-05-14 15:15:51] INFO root fetch - processPackages [nbdev-sphinx]: Downloading https://files.pythonhosted.org/packages/50/26/1673892b3686c404af92c390906ab3bac81806c424381e82dedac6477190/nbdev-sphinx-0.0.98.tar.gz
+[2023-05-14 15:15:51] WARNING root fetch - processPackages [certora-cli-alpha-EyalH-FlattenCalleeHierarchy]: Skipping, unable to determine old version
+[2023-05-14 15:15:51] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-EyalH-FlattenCalleeHierarchy] error
+[2023-05-14 15:15:51] INFO root fetch - processPackages [nbdev-scipy]: Downloading https://files.pythonhosted.org/packages/94/a7/9596b1506d5fc0b0ceb265f8bbd5e0919fc146eb6df0916b4e546e9f074f/nbdev-scipy-0.0.98.tar.gz
+[2023-05-14 15:15:51] INFO root fetch - processPackages [nbdev-sphinx]: Downloading https://files.pythonhosted.org/packages/55/5e/ba946430b849ba8f51f4047dad2bb2417fbc794da9bb8301308347bb6207/nbdev-sphinx-0.0.99.tar.gz
+[2023-05-14 15:15:51] INFO root fetch - processPackages [nbdev-pytorch]: Downloading https://files.pythonhosted.org/packages/b0/37/5921f26bef4d07ebb5599f7ccb4d57ab1a847950edaa615ebcf9ef228690/nbdev-pytorch-0.0.99.tar.gz
+[2023-05-14 15:15:51] INFO root fetch - processPackages [nbdev-pytorch]: executing diffoscope
+[2023-05-14 15:15:51] INFO root fetch - processPackages [nbdev-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pytorch-0.0.98.tar.gz tmp/nbdev-pytorch-0.0.99.tar.gz --markdown 20230514/n/nbdev-pytorch/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-14 15:15:51] INFO root fetch - processPackages [nbdev-sphinx]: executing diffoscope
+[2023-05-14 15:15:51] INFO root fetch - processPackages [nbdev-sphinx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-sphinx-0.0.98.tar.gz tmp/nbdev-sphinx-0.0.99.tar.gz --markdown 20230514/n/nbdev-sphinx/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-14 15:15:51] INFO root fetch - processPackages [nbdev-scipy]: Downloading https://files.pythonhosted.org/packages/d4/25/482f9160692bdd2d374401b19f8b4700ae91c179761991cee076e37aae0d/nbdev-scipy-0.0.99.tar.gz
+[2023-05-14 15:15:51] INFO root fetch - processPackages [nbdev-scipy]: executing diffoscope
+[2023-05-14 15:15:51] INFO root fetch - processPackages [nbdev-scipy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-scipy-0.0.98.tar.gz tmp/nbdev-scipy-0.0.99.tar.gz --markdown 20230514/n/nbdev-scipy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-14 15:15:52] INFO root fetch - main [MainThread]: End processing [nbdev-sphinx]: success
+[2023-05-14 15:15:52] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
+[2023-05-14 15:15:52] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
+[2023-05-14 15:15:52] INFO root fetch - main [MainThread]: Store serial: [18097185]
