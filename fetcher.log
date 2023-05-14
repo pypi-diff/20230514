@@ -5263,3 +5263,70 @@
 [2023-05-14 13:24:53] INFO root fetch - main [MainThread]: End processing [ml-starter]: success
 [2023-05-14 13:24:53] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2023-05-14 13:24:54] INFO root fetch - main [MainThread]: Store serial: [18096574]
+[2023-05-14 13:29:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096574]
+[2023-05-14 13:30:03] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-14 13:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: rhyton
+[2023-05-14 13:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: hyperar
+[2023-05-14 13:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sln1550hello
+[2023-05-14 13:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: python-semantic-release
+[2023-05-14 13:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torchx-nightly
+[2023-05-14 13:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: torchserve-nightly
+[2023-05-14 13:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: torch-model-archiver-nightly
+[2023-05-14 13:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: torch-workflow-archiver-nightly
+[2023-05-14 13:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: few-shot-priming
+[2023-05-14 13:30:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: colortextpy
+[2023-05-14 13:30:03] INFO root fetch - processPackages [rhyton]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-14 13:30:03] WARNING root fetch - processPackages [hyperar]: Skipping, unable to determine old version
+[2023-05-14 13:30:03] INFO root fetch - processPackages [hyperar]: Start processing: torchrec-nightly
+[2023-05-14 13:30:03] INFO root fetch - main [MainThread]: End processing [hyperar] error
+[2023-05-14 13:30:03] WARNING root fetch - processPackages [sln1550hello]: Skipping, unable to determine old version
+[2023-05-14 13:30:03] INFO root fetch - main [MainThread]: End processing [sln1550hello] error
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torch-model-archiver-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-14 13:30:03] INFO root fetch - processPackages [colortextpy]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-14 13:30:03] INFO root fetch - processPackages [python-semantic-release]: New version: [8.0.0a5] Old Version: [8.0.0a4]
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torchx-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torchserve-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-14 13:30:03] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/bd/a9/03b80eb9353184dc3d312e985e22dc69d65c449643d5d5ec8ccd09008782/torch_model_archiver_nightly-2023.5.8-py3-none-any.whl
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torchserve-nightly]: Downloading https://files.pythonhosted.org/packages/84/1f/9485a72320b2c7f49d6a9304acfbc2bd5fe71c25e0e7a3844ce81a1ed180/torchserve_nightly-2023.5.8-py3-none-any.whl
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torchrec-nightly]: New version: [2023.5.8] Old Version: [2023.5.7]
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/28/be/2fa33687a55b658bd4f93636e506af45f7b1ea0894a3424f7c1e7d660e6a/torch_workflow_archiver_nightly-2023.5.8-py3-none-any.whl
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/6d/b7/ed69c31a8036a3dc777d8b47929adf15a85a8936d0f2a3ac0d9beacefe86/torchx_nightly-2023.5.8-py3-none-any.whl
+[2023-05-14 13:30:03] INFO root fetch - processPackages [colortextpy]: Downloading https://files.pythonhosted.org/packages/7c/14/dba1fc898748ae07bd35cb3189ffa866fcff0545cd346ee59f00c485c285/colortextpy-0.0.2.tar.gz
+[2023-05-14 13:30:03] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-05-14 13:30:03] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230514/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-05-14 13:30:03] INFO root fetch - processPackages [python-semantic-release]: Downloading https://files.pythonhosted.org/packages/8a/5a/0d15fc08a75ba6e75eaea422dc7c042204c23ffda956d0bc43fbbc7e00d5/python-semantic-release-8.0.0a4.tar.gz
+[2023-05-14 13:30:03] WARNING root fetch - processPackages [torchserve-nightly]: Skipping package: exceeds size limit 23716791>=10485760
+[2023-05-14 13:30:03] INFO root fetch - main [MainThread]: End processing [torchserve-nightly] error
+[2023-05-14 13:30:03] INFO root fetch - processPackages [rhyton]: Downloading https://files.pythonhosted.org/packages/be/e5/c03363fc564d58dc04bdd6da0eb9210acf8a7eabc374ef11f876d7958420/rhyton-0.0.4.tar.gz
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torch-model-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/42/4c/e930f43a6b8053b4557bf1f85c3789e4088d98bb437d4a2790089abb7699/torch_model_archiver_nightly-2023.5.9-py3-none-any.whl
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torchrec-nightly]: Downloading https://files.pythonhosted.org/packages/2f/a3/c8fea2a4a17b2ca7f33d5cd35472849730ecc0480921bceea1e2de34f10c/torchrec_nightly-2023.5.7-py39-none-any.whl
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: Downloading https://files.pythonhosted.org/packages/b0/b3/2d52ec1bd0dd1dae05bbb5823675d0ef4fe27885ba7d4bc77942b66af6c2/torch_workflow_archiver_nightly-2023.5.9-py3-none-any.whl
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torchx-nightly]: Downloading https://files.pythonhosted.org/packages/47/b3/6e7994c7dcbddb791c906a4b7e7510035fd4e41d79c97f47b34ba6fb41af/torchx_nightly-2023.5.9-py3-none-any.whl
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torch-model-archiver-nightly]: executing diffoscope
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torch-model-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_model_archiver_nightly-2023.5.8-py3-none-any.whl.zip tmp/torch_model_archiver_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230514/t/torch-model-archiver-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: executing diffoscope
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torch-workflow-archiver-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torch_workflow_archiver_nightly-2023.5.8-py3-none-any.whl.zip tmp/torch_workflow_archiver_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230514/t/torch-workflow-archiver-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-14 13:30:03] INFO root fetch - processPackages [rhyton]: executing diffoscope
+[2023-05-14 13:30:03] INFO root fetch - processPackages [rhyton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rhyton-0.0.3.tar.gz tmp/rhyton-0.0.4.tar.gz --markdown 20230514/r/rhyton/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torchx-nightly]: executing diffoscope
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torchx-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchx_nightly-2023.5.8-py3-none-any.whl.zip tmp/torchx_nightly-2023.5.9-py3-none-any.whl.zip --markdown 20230514/t/torchx-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-14 13:30:03] INFO root fetch - processPackages [colortextpy]: Downloading https://files.pythonhosted.org/packages/f2/ec/18c41db88402a2b3c7079fee3badfcf3e12b8a6800a2bfc7c207028bd673/colortextpy-0.0.3.tar.gz
+[2023-05-14 13:30:03] INFO root fetch - processPackages [python-semantic-release]: Downloading https://files.pythonhosted.org/packages/8b/fa/2643a2a5ad6d21b7c8420143ccc4d784e6c43c893512a7585e4e74f56764/python-semantic-release-8.0.0a5.tar.gz
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torchrec-nightly]: Downloading https://files.pythonhosted.org/packages/35/12/eb3353710fdeb54ba10756aff257224fac6dd4ea00d82561249249e6cde1/torchrec_nightly-2023.5.8-py39-none-any.whl
+[2023-05-14 13:30:03] INFO root fetch - processPackages [python-semantic-release]: executing diffoscope
+[2023-05-14 13:30:03] INFO root fetch - processPackages [python-semantic-release]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python-semantic-release-8.0.0a4.tar.gz tmp/python-semantic-release-8.0.0a5.tar.gz --markdown 20230514/p/python-semantic-release/8.0.0a4-8.0.0a5/diff.md --exclude *.pyd
+[2023-05-14 13:30:03] INFO root fetch - processPackages [colortextpy]: executing diffoscope
+[2023-05-14 13:30:03] INFO root fetch - processPackages [colortextpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/colortextpy-0.0.2.tar.gz tmp/colortextpy-0.0.3.tar.gz --markdown 20230514/c/colortextpy/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torchrec-nightly]: executing diffoscope
+[2023-05-14 13:30:03] INFO root fetch - processPackages [torchrec-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrec_nightly-2023.5.7-py39-none-any.whl.zip tmp/torchrec_nightly-2023.5.8-py39-none-any.whl.zip --markdown 20230514/t/torchrec-nightly/2023.5.7-2023.5.8/diff.md --exclude *.pyd
+[2023-05-14 13:30:04] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-05-14 13:30:04] INFO root fetch - main [MainThread]: End processing [rhyton]: success
+[2023-05-14 13:30:04] INFO root fetch - main [MainThread]: End processing [torch-model-archiver-nightly]: success
+[2023-05-14 13:30:04] INFO root fetch - main [MainThread]: End processing [torch-workflow-archiver-nightly]: success
+[2023-05-14 13:30:05] INFO root fetch - main [MainThread]: End processing [colortextpy]: success
+[2023-05-14 13:30:05] INFO root fetch - main [MainThread]: End processing [torchx-nightly]: success
+[2023-05-14 13:30:05] INFO root fetch - main [MainThread]: End processing [python-semantic-release]: success
+[2023-05-14 13:30:05] INFO root fetch - main [MainThread]: End processing [torchrec-nightly]: success
+[2023-05-14 13:30:05] INFO root fetch - main [MainThread]: Store serial: [18096615]
