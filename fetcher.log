@@ -11461,3 +11461,50 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 23:41:30] INFO root fetch - main [MainThread]: End processing [meiga]: success
 [2023-05-14 23:41:30] INFO root fetch - main [MainThread]: End processing [graphsignal]: success
 [2023-05-14 23:41:30] INFO root fetch - main [MainThread]: Store serial: [18100287]
+[2023-05-14 23:46:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18100287]
+[2023-05-14 23:46:39] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-14 23:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reasoner-pydantic
+[2023-05-14 23:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dash-connectivity-viewer
+[2023-05-14 23:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: django-axes
+[2023-05-14 23:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: samadb
+[2023-05-14 23:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: oceanum
+[2023-05-14 23:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: const.store
+[2023-05-14 23:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: email-analysis
+[2023-05-14 23:46:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: swegram
+[2023-05-14 23:46:39] INFO root fetch - processPackages [reasoner-pydantic]: New version: [4.0.4] Old Version: [4.0.3]
+[2023-05-14 23:46:39] INFO root fetch - processPackages [samadb]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-14 23:46:39] INFO root fetch - processPackages [swegram]: New version: [1.0.0.dev1] Old Version: [1.0.0.dev0]
+[2023-05-14 23:46:39] INFO root fetch - processPackages [oceanum]: New version: [0.7.6] Old Version: [0.7.5]
+[2023-05-14 23:46:39] INFO root fetch - processPackages [dash-connectivity-viewer]: New version: [2.0.5] Old Version: [2.0.4]
+[2023-05-14 23:46:39] INFO root fetch - processPackages [django-axes]: New version: [6.0.0b5] Old Version: [6.0.0b4]
+[2023-05-14 23:46:39] WARNING root fetch - processPackages [const.store]: Skipping, unable to determine old version
+[2023-05-14 23:46:39] INFO root fetch - main [MainThread]: End processing [const.store] error
+[2023-05-14 23:46:39] WARNING root fetch - processPackages [email-analysis]: Skipping, unable to determine old version
+[2023-05-14 23:46:39] INFO root fetch - main [MainThread]: End processing [email-analysis] error
+[2023-05-14 23:46:39] INFO root fetch - processPackages [swegram]: executing diffoscope
+[2023-05-14 23:46:39] INFO root fetch - processPackages [swegram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swegram-1.0.0.dev0-py3-none-any.whl.zip tmp/swegram-1.0.0.dev1-py3-none-any.whl.zip --markdown 20230514/s/swegram/1.0.0.dev0-1.0.0.dev1/diff.md --exclude *.pyd
+[2023-05-14 23:46:39] INFO root fetch - processPackages [dash-connectivity-viewer]: Downloading https://files.pythonhosted.org/packages/13/28/d1620155115844a1366da355e5ce7bd5c1dcb9165fdcfb7a3b4063f16429/dash-connectivity-viewer-2.0.4.tar.gz
+[2023-05-14 23:46:39] INFO root fetch - processPackages [samadb]: Downloading https://files.pythonhosted.org/packages/ba/90/c20980d256f4f673add82448f391122b090d34262db27b23b888583c94ce/samadb-0.2.5.tar.gz
+[2023-05-14 23:46:39] INFO root fetch - processPackages [oceanum]: Downloading https://files.pythonhosted.org/packages/2d/96/f477a8ecb522d15b4ea4ecc6eb3a5e77fc8d70b28795453802abc4e12bae/oceanum-0.7.5.tar.gz
+[2023-05-14 23:46:39] INFO root fetch - processPackages [reasoner-pydantic]: Downloading https://files.pythonhosted.org/packages/28/b1/0093346128ce0c7e4ce800587a4f6ac02f78d726ba13596aca62cf0420a8/reasoner-pydantic-4.0.4.tar.gz
+[2023-05-14 23:46:39] INFO root fetch - processPackages [samadb]: Downloading https://files.pythonhosted.org/packages/83/21/396447b9318ffa6b4b9493194d948aefeaf94e7a3a5408c381abf22e8eee/samadb-0.2.6.tar.gz
+[2023-05-14 23:46:39] INFO root fetch - processPackages [django-axes]: Downloading https://files.pythonhosted.org/packages/6f/af/0262dd004561a1b9cf7cc3c64ff466d88b3836f883c48b9590a2a164a128/django-axes-6.0.0b5.tar.gz
+[2023-05-14 23:46:39] INFO root fetch - processPackages [dash-connectivity-viewer]: Downloading https://files.pythonhosted.org/packages/4f/90/bb953b8e1e6413d7244c6a325ec7ecdf947ddc056903f0ceab41cd21066b/dash-connectivity-viewer-2.0.5.tar.gz
+[2023-05-14 23:46:39] INFO root fetch - processPackages [samadb]: executing diffoscope
+[2023-05-14 23:46:39] INFO root fetch - processPackages [samadb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/samadb-0.2.5.tar.gz tmp/samadb-0.2.6.tar.gz --markdown 20230514/s/samadb/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-14 23:46:39] INFO root fetch - processPackages [dash-connectivity-viewer]: executing diffoscope
+[2023-05-14 23:46:39] INFO root fetch - processPackages [dash-connectivity-viewer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dash-connectivity-viewer-2.0.4.tar.gz tmp/dash-connectivity-viewer-2.0.5.tar.gz --markdown 20230514/d/dash-connectivity-viewer/2.0.4-2.0.5/diff.md --exclude *.pyd
+[2023-05-14 23:46:39] INFO root fetch - processPackages [reasoner-pydantic]: executing diffoscope
+[2023-05-14 23:46:39] INFO root fetch - processPackages [reasoner-pydantic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reasoner-pydantic-4.0.3.tar.gz tmp/reasoner-pydantic-4.0.4.tar.gz --markdown 20230514/r/reasoner-pydantic/4.0.3-4.0.4/diff.md --exclude *.pyd
+[2023-05-14 23:46:39] INFO root fetch - processPackages [django-axes]: executing diffoscope
+[2023-05-14 23:46:39] INFO root fetch - processPackages [django-axes]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-axes-6.0.0b4.tar.gz tmp/django-axes-6.0.0b5.tar.gz --markdown 20230514/d/django-axes/6.0.0b4-6.0.0b5/diff.md --exclude *.pyd
+[2023-05-14 23:46:40] INFO root fetch - processPackages [oceanum]: Downloading https://files.pythonhosted.org/packages/86/6b/a186572d0d63ae44afaca9850cae00a9a558883363fe19c190cc42d7c9f4/oceanum-0.7.6.tar.gz
+[2023-05-14 23:46:40] INFO root fetch - processPackages [oceanum]: executing diffoscope
+[2023-05-14 23:46:40] INFO root fetch - processPackages [oceanum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oceanum-0.7.5.tar.gz tmp/oceanum-0.7.6.tar.gz --markdown 20230514/o/oceanum/0.7.5-0.7.6/diff.md --exclude *.pyd
+[2023-05-14 23:46:40] INFO root fetch - main [MainThread]: End processing [swegram]: success
+[2023-05-14 23:46:40] INFO root fetch - main [MainThread]: End processing [samadb]: success
+[2023-05-14 23:46:41] INFO root fetch - main [MainThread]: End processing [dash-connectivity-viewer]: success
+[2023-05-14 23:46:41] INFO root fetch - main [MainThread]: End processing [reasoner-pydantic]: success
+[2023-05-14 23:46:42] INFO root fetch - main [MainThread]: End processing [django-axes]: success
+[2023-05-14 23:46:43] INFO root fetch - main [MainThread]: End processing [oceanum]: success
+[2023-05-14 23:46:43] INFO root fetch - main [MainThread]: Store serial: [18100310]
