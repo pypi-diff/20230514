@@ -7477,3 +7477,107 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 17:04:36] INFO root fetch - main [MainThread]: End processing [pythonsqlitedbextV1]: success
 [2023-05-14 17:04:39] INFO root fetch - main [MainThread]: End processing [tnsgrt]: success
 [2023-05-14 17:04:39] INFO root fetch - main [MainThread]: Store serial: [18097875]
+[2023-05-14 17:09:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18097875]
+[2023-05-14 17:09:47] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-14 17:09:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mds3
+[2023-05-14 17:09:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tensorflow-text-nightly
+[2023-05-14 17:09:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hrin-msb
+[2023-05-14 17:09:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: timm
+[2023-05-14 17:09:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xia-login-flask
+[2023-05-14 17:09:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sppuai
+[2023-05-14 17:09:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wwpdb.utils.emdb
+[2023-05-14 17:09:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: SalatikSer
+[2023-05-14 17:09:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: embedders
+[2023-05-14 17:09:47] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: webarchiver
+[2023-05-14 17:09:47] INFO root fetch - processPackages [xia-login-flask]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 17:09:47] WARNING root fetch - processPackages [sppuai]: Skipping, unable to determine old version
+[2023-05-14 17:09:47] INFO root fetch - processPackages [sppuai]: Start processing: circuitpython-laser-egismos
+[2023-05-14 17:09:47] INFO root fetch - main [MainThread]: End processing [sppuai] error
+[2023-05-14 17:09:47] INFO root fetch - processPackages [hrin-msb]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-14 17:09:47] INFO root fetch - processPackages [webarchiver]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-14 17:09:47] INFO root fetch - processPackages [embedders]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-14 17:09:47] INFO root fetch - processPackages [wwpdb.utils.emdb]: New version: [1.3] Old Version: [1.2]
+[2023-05-14 17:09:47] INFO root fetch - processPackages [circuitpython-laser-egismos]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-14 17:09:47] INFO root fetch - processPackages [tensorflow-text-nightly]: New version: [2.14.0.dev20230513] Old Version: [2.14.0.dev20230512]
+[2023-05-14 17:09:47] WARNING root fetch - processPackages [mds3]: Skipping, unable to determine old version
+[2023-05-14 17:09:47] INFO root fetch - processPackages [mds3]: Start processing: hyped
+[2023-05-14 17:09:47] INFO root fetch - processPackages [SalatikSer]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-05-14 17:09:47] INFO root fetch - main [MainThread]: End processing [mds3] error
+[2023-05-14 17:09:47] INFO root fetch - processPackages [timm]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-14 17:09:48] WARNING root fetch - processPackages [hyped]: Skipping, unable to determine old version
+[2023-05-14 17:09:48] INFO root fetch - processPackages [hyped]: Start processing: aioqui
+[2023-05-14 17:09:48] INFO root fetch - main [MainThread]: End processing [hyped] error
+[2023-05-14 17:09:48] INFO root fetch - processPackages [aioqui]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-14 17:09:48] INFO root fetch - processPackages [webarchiver]: executing diffoscope
+[2023-05-14 17:09:48] INFO root fetch - processPackages [webarchiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webarchiver-0.8.0-py2.py3-none-any.whl.zip tmp/webarchiver-0.9.0-py2.py3-none-any.whl.zip --markdown 20230514/w/webarchiver/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 17:09:48] INFO root fetch - processPackages [hrin-msb]: executing diffoscope
+[2023-05-14 17:09:48] INFO root fetch - processPackages [hrin-msb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hrin_msb-0.2.8.tar.gz tmp/hrin_msb-0.2.9.tar.gz --markdown 20230514/h/hrin-msb/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-14 17:09:48] INFO root fetch - processPackages [embedders]: Downloading https://files.pythonhosted.org/packages/fe/e6/d02e52159817ba6d7dce13e11e9831578e70a17d9a15de209e232b7da5ed/embedders-0.1.1-py2.py3-none-any.whl
+[2023-05-14 17:09:48] INFO root fetch - processPackages [aioqui]: executing diffoscope
+[2023-05-14 17:09:48] INFO root fetch - processPackages [SalatikSer]: Downloading https://files.pythonhosted.org/packages/cb/dd/47094686df30f7e80e4dfc39027a7785b75a0fe50e8a8779299412df68a0/SalatikSer-1.0.1.tar.gz
+[2023-05-14 17:09:48] INFO root fetch - processPackages [aioqui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioqui-1.1.2.tar.gz tmp/aioqui-1.1.3.tar.gz --markdown 20230514/a/aioqui/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-14 17:09:48] INFO root fetch - processPackages [circuitpython-laser-egismos]: Downloading https://files.pythonhosted.org/packages/db/67/e3634a4a2a6201c7faf49bc0797a514d13dea7b52a44f3a053549b548b19/circuitpython-laser-egismos-1.1.1.tar.gz
+[2023-05-14 17:09:48] INFO root fetch - processPackages [wwpdb.utils.emdb]: Downloading https://files.pythonhosted.org/packages/8f/9d/b1dec6ee336940c23bfbe48e27f4da5738d8d7bf5b078dad2e9d7e0ce5bd/wwpdb.utils.emdb-1.2.tar.gz
+[2023-05-14 17:09:48] INFO root fetch - processPackages [timm]: Downloading https://files.pythonhosted.org/packages/a9/98/413172e0fd465ab679be795a6a04b60ef44c8bb0930f1a8ec20ff98b783a/timm-0.9.1.tar.gz
+[2023-05-14 17:09:48] INFO root fetch - processPackages [circuitpython-laser-egismos]: executing diffoscope
+[2023-05-14 17:09:48] INFO root fetch - processPackages [circuitpython-laser-egismos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/circuitpython-laser-egismos-1.1.0.tar.gz tmp/circuitpython-laser-egismos-1.1.1.tar.gz --markdown 20230514/c/circuitpython-laser-egismos/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-14 17:09:48] INFO root fetch - processPackages [xia-login-flask]: executing diffoscope
+[2023-05-14 17:09:48] INFO root fetch - processPackages [xia-login-flask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_login_flask-0.1.8-cp39-none-win_amd64.whl.zip tmp/xia_login_flask-0.1.9-cp39-none-win_amd64.whl.zip --markdown 20230514/x/xia-login-flask/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 17:09:48] INFO root fetch - processPackages [embedders]: Downloading https://files.pythonhosted.org/packages/01/59/429761e269e613fce9e822787845d8a0ebc42ec795a4c46985c841c8cf07/embedders-0.1.2-py2.py3-none-any.whl
+[2023-05-14 17:09:48] INFO root fetch - processPackages [tensorflow-text-nightly]: Downloading https://files.pythonhosted.org/packages/4b/c3/0ee98178a4ca9e3875eb6816cb19c1215103678f8f435ccd6d6baa7263df/tensorflow_text_nightly-2.14.0.dev20230513-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-14 17:09:48] INFO root fetch - processPackages [SalatikSer]: Downloading https://files.pythonhosted.org/packages/6d/7d/2223aa14a286c02d7fb4b76791bb319f1d47b0111434ab253b4a81edd9f2/SalatikSer-1.1.0-py3-none-any.whl
+[2023-05-14 17:09:48] INFO root fetch - processPackages [embedders]: executing diffoscope
+[2023-05-14 17:09:48] INFO root fetch - processPackages [embedders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedders-0.1.1-py2.py3-none-any.whl.zip tmp/embedders-0.1.2-py2.py3-none-any.whl.zip --markdown 20230514/e/embedders/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-14 17:09:48] INFO root fetch - processPackages [SalatikSer]: executing diffoscope
+[2023-05-14 17:09:48] INFO root fetch - processPackages [SalatikSer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SalatikSer-1.0.1.tar.gz tmp/SalatikSer-1.1.0-py3-none-any.whl.zip --markdown 20230514/S/SalatikSer/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 17:09:48] INFO root fetch - processPackages [timm]: Downloading https://files.pythonhosted.org/packages/90/79/f79ebb37aab0815a67e025d3fd2ae94b02a4d6078ba9ddc8aed9adc6fb25/timm-0.9.2.tar.gz
+[2023-05-14 17:09:48] INFO root fetch - processPackages [tensorflow-text-nightly]: executing diffoscope
+[2023-05-14 17:09:48] INFO root fetch - processPackages [tensorflow-text-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensorflow_text_nightly-2.14.0.dev20230512-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/tensorflow_text_nightly-2.14.0.dev20230513-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230514/t/tensorflow-text-nightly/2.14.0.dev20230512-2.14.0.dev20230513/diff.md --exclude *.pyd
+[2023-05-14 17:09:48] INFO root fetch - processPackages [wwpdb.utils.emdb]: Downloading https://files.pythonhosted.org/packages/f1/18/a56d35874d6a723c8bda6cbf7042f0b14d6675e406bae95ebbe28bc4a24d/wwpdb.utils.emdb-1.3.tar.gz
+[2023-05-14 17:09:48] INFO root fetch - processPackages [timm]: executing diffoscope
+[2023-05-14 17:09:48] INFO root fetch - processPackages [timm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/timm-0.9.1.tar.gz tmp/timm-0.9.2.tar.gz --markdown 20230514/t/timm/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-14 17:09:48] INFO root fetch - processPackages [wwpdb.utils.emdb]: executing diffoscope
+[2023-05-14 17:09:48] INFO root fetch - processPackages [wwpdb.utils.emdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.utils.emdb-1.2.tar.gz tmp/wwpdb.utils.emdb-1.3.tar.gz --markdown 20230514/w/wwpdb.utils.emdb/1.2-1.3/diff.md --exclude *.pyd
+[2023-05-14 17:09:49] INFO root fetch - processPackages [xia-login-flask]: Start processing: moarc-framework
+[2023-05-14 17:09:49] INFO root fetch - main [MainThread]: End processing [xia-login-flask]: success
+[2023-05-14 17:09:49] INFO root fetch - processPackages [moarc-framework]: New version: [0.9.5.8] Old Version: [0.9.5.7]
+[2023-05-14 17:09:49] INFO root fetch - processPackages [moarc-framework]: executing diffoscope
+[2023-05-14 17:09:49] INFO root fetch - processPackages [moarc-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/moarc-framework-0.9.5.7.tar.gz tmp/moarc-framework-0.9.5.8.tar.gz --markdown 20230514/m/moarc-framework/0.9.5.7-0.9.5.8/diff.md --exclude *.pyd
+[2023-05-14 17:09:49] INFO root fetch - processPackages [circuitpython-laser-egismos]: Start processing: crypto-pay-api-sdk
+[2023-05-14 17:09:49] INFO root fetch - main [MainThread]: End processing [circuitpython-laser-egismos]: success
+[2023-05-14 17:09:49] INFO root fetch - processPackages [crypto-pay-api-sdk]: New version: [1.3.3] Old Version: [1.3.2]
+[2023-05-14 17:09:49] INFO root fetch - processPackages [embedders]: Start processing: fairbench
+[2023-05-14 17:09:49] INFO root fetch - main [MainThread]: End processing [embedders]: success
+[2023-05-14 17:09:49] INFO root fetch - processPackages [fairbench]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-14 17:09:50] INFO root fetch - processPackages [hrin-msb]: Start processing: kappadata
+[2023-05-14 17:09:50] INFO root fetch - main [MainThread]: End processing [hrin-msb]: success
+[2023-05-14 17:09:50] INFO root fetch - processPackages [crypto-pay-api-sdk]: executing diffoscope
+[2023-05-14 17:09:50] INFO root fetch - processPackages [crypto-pay-api-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crypto_pay_api_sdk-1.3.2.tar.gz tmp/crypto_pay_api_sdk-1.3.3.tar.gz --markdown 20230514/c/crypto-pay-api-sdk/1.3.2-1.3.3/diff.md --exclude *.pyd
+[2023-05-14 17:09:50] INFO root fetch - processPackages [kappadata]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-14 17:09:50] INFO root fetch - processPackages [SalatikSer]: Start processing: logmaster
+[2023-05-14 17:09:50] INFO root fetch - main [MainThread]: End processing [SalatikSer]: success
+[2023-05-14 17:09:50] INFO root fetch - processPackages [logmaster]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-14 17:09:50] INFO root fetch - processPackages [kappadata]: executing diffoscope
+[2023-05-14 17:09:50] INFO root fetch - processPackages [kappadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kappadata-1.2.8.tar.gz tmp/kappadata-1.2.9.tar.gz --markdown 20230514/k/kappadata/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-14 17:09:50] INFO root fetch - processPackages [logmaster]: executing diffoscope
+[2023-05-14 17:09:50] INFO root fetch - processPackages [logmaster]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/logmaster-0.1.0.tar.gz tmp/logmaster-0.1.1.tar.gz --markdown 20230514/l/logmaster/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-14 17:09:50] INFO root fetch - processPackages [fairbench]: Downloading https://files.pythonhosted.org/packages/0e/88/dafa70ca2eeb2d2a0dc17e386730ebf090a843daaec4242bfe8e1e579a9b/fairbench-0.1.2-py3-none-any.whl
+[2023-05-14 17:09:50] INFO root fetch - processPackages [fairbench]: Downloading https://files.pythonhosted.org/packages/aa/aa/431bfab5689b05e85bb45ac2369b63f9e762ee2711f901fc206e4f6e6aa5/fairbench-0.1.3-py3-none-any.whl
+[2023-05-14 17:09:50] INFO root fetch - processPackages [wwpdb.utils.emdb]: Start processing: pypipr
+[2023-05-14 17:09:50] INFO root fetch - main [MainThread]: End processing [wwpdb.utils.emdb]: success
+[2023-05-14 17:09:50] INFO root fetch - processPackages [fairbench]: executing diffoscope
+[2023-05-14 17:09:50] INFO root fetch - processPackages [fairbench]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fairbench-0.1.2-py3-none-any.whl.zip tmp/fairbench-0.1.3-py3-none-any.whl.zip --markdown 20230514/f/fairbench/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-14 17:09:50] INFO root fetch - processPackages [pypipr]: New version: [0.1.9] Old Version: [0.1.82]
+[2023-05-14 17:09:50] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2023-05-14 17:09:50] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-0.1.82.tar.gz tmp/pypipr-0.1.9.tar.gz --markdown 20230514/p/pypipr/0.1.82-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 17:09:51] INFO root fetch - main [MainThread]: End processing [moarc-framework]: success
+[2023-05-14 17:09:51] INFO root fetch - main [MainThread]: End processing [logmaster]: success
+[2023-05-14 17:09:51] INFO root fetch - main [MainThread]: End processing [crypto-pay-api-sdk]: success
+[2023-05-14 17:09:51] INFO root fetch - main [MainThread]: End processing [fairbench]: success
+[2023-05-14 17:09:51] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2023-05-14 17:09:51] INFO root fetch - main [MainThread]: End processing [kappadata]: success
+[2023-05-14 17:09:52] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
+[2023-05-14 17:09:52] INFO root fetch - main [MainThread]: End processing [tensorflow-text-nightly]: success
+[2023-05-14 17:09:52] INFO root fetch - main [MainThread]: End processing [aioqui]: success
+[2023-05-14 17:09:55] INFO root fetch - main [MainThread]: End processing [timm]: success
+[2023-05-14 17:09:55] INFO root fetch - main [MainThread]: Store serial: [18097942]
