@@ -6195,3 +6195,31 @@
 [2023-05-14 15:15:52] INFO root fetch - main [MainThread]: End processing [nbdev-pytorch]: success
 [2023-05-14 15:15:52] INFO root fetch - main [MainThread]: End processing [nbdev-scipy]: success
 [2023-05-14 15:15:52] INFO root fetch - main [MainThread]: Store serial: [18097185]
+[2023-05-14 15:20:57] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18097185]
+[2023-05-14 15:21:02] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 15:21:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: nbdev-django
+[2023-05-14 15:21:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: fbgemm-gpu-nightly
+[2023-05-14 15:21:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: brainanalysistool
+[2023-05-14 15:21:02] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nbdev-apl
+[2023-05-14 15:21:02] INFO root fetch - processPackages [brainanalysistool]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-14 15:21:02] INFO root fetch - processPackages [fbgemm-gpu-nightly]: New version: [2023.5.13] Old Version: [2023.5.12]
+[2023-05-14 15:21:02] INFO root fetch - processPackages [nbdev-apl]: New version: [0.0.772] Old Version: [0.0.771]
+[2023-05-14 15:21:02] INFO root fetch - processPackages [nbdev-django]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-14 15:21:02] INFO root fetch - processPackages [nbdev-django]: Downloading https://files.pythonhosted.org/packages/2b/95/9e261b8f3e5f931da5a2f9ddc475954265376d1d468b6f3877f38ad482c3/nbdev-django-0.0.98.tar.gz
+[2023-05-14 15:21:02] INFO root fetch - processPackages [brainanalysistool]: Downloading https://files.pythonhosted.org/packages/7c/5a/cac5c04666a798007a1fb95629d83585c589e5ab3e5c3ba1026c425a1052/brainanalysistool-0.0.4.tar.gz
+[2023-05-14 15:21:02] INFO root fetch - processPackages [nbdev-apl]: Downloading https://files.pythonhosted.org/packages/d3/44/cf8a3899a4f0228ba5ecd0cc0bed724c3688cf4b50057e8d3a35263e74cc/nbdev-apl-0.0.772.tar.gz
+[2023-05-14 15:21:02] INFO root fetch - processPackages [fbgemm-gpu-nightly]: Downloading https://files.pythonhosted.org/packages/da/7d/c45791c1f888355b81313973b3fa7e06cf8d12293b62449fc9efd7814249/fbgemm_gpu_nightly-2023.5.12-cp39-cp39-manylinux1_x86_64.whl
+[2023-05-14 15:21:02] WARNING root fetch - processPackages [fbgemm-gpu-nightly]: Skipping package: exceeds size limit 266596856>=10485760
+[2023-05-14 15:21:02] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly] error
+[2023-05-14 15:21:02] INFO root fetch - processPackages [nbdev-django]: Downloading https://files.pythonhosted.org/packages/f2/7a/5214014e1426324d1fea2f984c9b5480e467e5eddefe61721e8f4d1c025e/nbdev-django-0.0.99.tar.gz
+[2023-05-14 15:21:03] INFO root fetch - processPackages [nbdev-apl]: executing diffoscope
+[2023-05-14 15:21:03] INFO root fetch - processPackages [nbdev-apl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-apl-0.0.771.tar.gz tmp/nbdev-apl-0.0.772.tar.gz --markdown 20230514/n/nbdev-apl/0.0.771-0.0.772/diff.md --exclude *.pyd
+[2023-05-14 15:21:03] INFO root fetch - processPackages [brainanalysistool]: Downloading https://files.pythonhosted.org/packages/51/43/a022b7dff0255ed92aba1b12dfea22a2dc2f159682535eb8c9ab8967e262/brainanalysistool-0.0.5.tar.gz
+[2023-05-14 15:21:03] INFO root fetch - processPackages [nbdev-django]: executing diffoscope
+[2023-05-14 15:21:03] INFO root fetch - processPackages [nbdev-django]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-django-0.0.98.tar.gz tmp/nbdev-django-0.0.99.tar.gz --markdown 20230514/n/nbdev-django/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-14 15:21:03] INFO root fetch - processPackages [brainanalysistool]: executing diffoscope
+[2023-05-14 15:21:03] INFO root fetch - processPackages [brainanalysistool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brainanalysistool-0.0.4.tar.gz tmp/brainanalysistool-0.0.5.tar.gz --markdown 20230514/b/brainanalysistool/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-14 15:21:04] INFO root fetch - main [MainThread]: End processing [brainanalysistool]: success
+[2023-05-14 15:21:04] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
+[2023-05-14 15:21:04] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
+[2023-05-14 15:21:04] INFO root fetch - main [MainThread]: Store serial: [18097201]
