@@ -7852,3 +7852,56 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 17:38:53] INFO root fetch - main [MainThread]: End processing [elementary-data]: success
 [2023-05-14 17:38:54] INFO root fetch - main [MainThread]: End processing [gma]: success
 [2023-05-14 17:38:54] INFO root fetch - main [MainThread]: Store serial: [18098106]
+[2023-05-14 17:43:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098106]
+[2023-05-14 17:44:03] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-14 17:44:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyfreerdp
+[2023-05-14 17:44:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pymesh3d
+[2023-05-14 17:44:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: diannpy
+[2023-05-14 17:44:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pypcapkit
+[2023-05-14 17:44:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xerparser
+[2023-05-14 17:44:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: foldingdiff-pytorch
+[2023-05-14 17:44:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: py-madvr
+[2023-05-14 17:44:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: wwpdb.apps.ccmodule
+[2023-05-14 17:44:03] WARNING root fetch - processPackages [pyfreerdp]: Skipping, unable to determine old version
+[2023-05-14 17:44:03] INFO root fetch - main [MainThread]: End processing [pyfreerdp] error
+[2023-05-14 17:44:03] INFO root fetch - processPackages [pymesh3d]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 17:44:03] INFO root fetch - processPackages [foldingdiff-pytorch]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 17:44:03] INFO root fetch - processPackages [diannpy]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-14 17:44:03] INFO root fetch - processPackages [xerparser]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-14 17:44:03] INFO root fetch - processPackages [pypcapkit]: New version: [1.0.1] Old Version: [1.0.0rc1]
+[2023-05-14 17:44:03] INFO root fetch - processPackages [py-madvr]: New version: [1.3.12] Old Version: [1.3.11]
+[2023-05-14 17:44:03] INFO root fetch - processPackages [wwpdb.apps.ccmodule]: New version: [0.26] Old Version: [0.25.dev1]
+[2023-05-14 17:44:03] INFO root fetch - processPackages [foldingdiff-pytorch]: Downloading https://files.pythonhosted.org/packages/46/2e/d2617880c8b6f70a6bd3fe911381e135321b8d62b88c085df712dd607e8c/foldingdiff-pytorch-0.0.1.tar.gz
+[2023-05-14 17:44:03] INFO root fetch - processPackages [diannpy]: Downloading https://files.pythonhosted.org/packages/bf/bb/b8508f6b5fe2c72eaed08e29c55518c16d9c41b4a31894a61975df304d20/diannpy-0.1.0.tar.gz
+[2023-05-14 17:44:03] INFO root fetch - processPackages [pymesh3d]: Downloading https://files.pythonhosted.org/packages/81/7b/e3228a0c006fc891394d80dd49f18b4107331f2904f5ddc1a89b40b7da22/pymesh3d-0.0.8-py3-none-any.whl
+[2023-05-14 17:44:03] INFO root fetch - processPackages [pypcapkit]: Downloading https://files.pythonhosted.org/packages/21/9e/3dd1f3748e34c2bc3447b669c972db086da945301764392d4478c19f5825/pypcapkit-1.0.0rc1.tar.gz
+[2023-05-14 17:44:03] INFO root fetch - processPackages [wwpdb.apps.ccmodule]: Downloading https://files.pythonhosted.org/packages/9d/56/a129bf592c4a3033f6367eb9d3c9b39e746a981c540d39a80003e7f88fbb/wwpdb.apps.ccmodule-0.25.dev1.tar.gz
+[2023-05-14 17:44:03] INFO root fetch - processPackages [xerparser]: Downloading https://files.pythonhosted.org/packages/73/cf/c74eac066b407af4ac104dec1be75b4132ba4132a32ab7640ece5acbc402/xerparser-0.9.6.tar.gz
+[2023-05-14 17:44:03] INFO root fetch - processPackages [diannpy]: Downloading https://files.pythonhosted.org/packages/e1/34/a575c32b2d346329f71e20be194683b34cb7d49d091ada7276b3a74539ab/diannpy-0.1.1.tar.gz
+[2023-05-14 17:44:03] INFO root fetch - processPackages [foldingdiff-pytorch]: Downloading https://files.pythonhosted.org/packages/3b/32/e667293bb74e4017da3567d9540296c7f48cce9d63896d55b9c1748d837f/foldingdiff-pytorch-0.0.2.tar.gz
+[2023-05-14 17:44:03] INFO root fetch - processPackages [py-madvr]: Downloading https://files.pythonhosted.org/packages/bd/c4/aaa8e8d8a12e425cb2b95a8049748067e4e5a1298faa3656c7c77277220b/py_madvr-1.3.12.tar.gz
+[2023-05-14 17:44:04] INFO root fetch - processPackages [xerparser]: executing diffoscope
+[2023-05-14 17:44:04] INFO root fetch - processPackages [xerparser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xerparser-0.9.5.tar.gz tmp/xerparser-0.9.6.tar.gz --markdown 20230514/x/xerparser/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-14 17:44:04] INFO root fetch - processPackages [diannpy]: executing diffoscope
+[2023-05-14 17:44:04] INFO root fetch - processPackages [diannpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/diannpy-0.1.0.tar.gz tmp/diannpy-0.1.1.tar.gz --markdown 20230514/d/diannpy/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-14 17:44:04] INFO root fetch - processPackages [foldingdiff-pytorch]: executing diffoscope
+[2023-05-14 17:44:04] INFO root fetch - processPackages [foldingdiff-pytorch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/foldingdiff-pytorch-0.0.1.tar.gz tmp/foldingdiff-pytorch-0.0.2.tar.gz --markdown 20230514/f/foldingdiff-pytorch/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 17:44:04] INFO root fetch - processPackages [pymesh3d]: Downloading https://files.pythonhosted.org/packages/35/12/76781c01b5cfba7d2365b1bd5676b547408e8cfbee438e63b5caf595c262/pymesh3d-0.0.9-py3-none-any.whl
+[2023-05-14 17:44:04] INFO root fetch - processPackages [py-madvr]: executing diffoscope
+[2023-05-14 17:44:04] INFO root fetch - processPackages [py-madvr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_madvr-1.3.11.tar.gz tmp/py_madvr-1.3.12.tar.gz --markdown 20230514/p/py-madvr/1.3.11-1.3.12/diff.md --exclude *.pyd
+[2023-05-14 17:44:04] INFO root fetch - processPackages [pypcapkit]: Downloading https://files.pythonhosted.org/packages/54/9d/99f6743b6883b7f4d186d794c8f9b3119904f83c4430e88bfb1652600759/pypcapkit-1.0.1.tar.gz
+[2023-05-14 17:44:04] INFO root fetch - processPackages [pymesh3d]: executing diffoscope
+[2023-05-14 17:44:04] INFO root fetch - processPackages [pymesh3d]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pymesh3d-0.0.8-py3-none-any.whl.zip tmp/pymesh3d-0.0.9-py3-none-any.whl.zip --markdown 20230514/p/pymesh3d/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 17:44:04] INFO root fetch - processPackages [pypcapkit]: executing diffoscope
+[2023-05-14 17:44:04] INFO root fetch - processPackages [pypcapkit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypcapkit-1.0.0rc1.tar.gz tmp/pypcapkit-1.0.1.tar.gz --markdown 20230514/p/pypcapkit/1.0.0rc1-1.0.1/diff.md --exclude *.pyd
+[2023-05-14 17:44:04] INFO root fetch - processPackages [wwpdb.apps.ccmodule]: Downloading https://files.pythonhosted.org/packages/69/a4/bb2aa7d9c791e861c267d48ef3a63cfbb839a19971576eb5a058c6efe06d/wwpdb.apps.ccmodule-0.26.tar.gz
+[2023-05-14 17:44:04] INFO root fetch - processPackages [wwpdb.apps.ccmodule]: executing diffoscope
+[2023-05-14 17:44:04] INFO root fetch - processPackages [wwpdb.apps.ccmodule]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wwpdb.apps.ccmodule-0.25.dev1.tar.gz tmp/wwpdb.apps.ccmodule-0.26.tar.gz --markdown 20230514/w/wwpdb.apps.ccmodule/0.25.dev1-0.26/diff.md --exclude *.pyd
+[2023-05-14 17:44:05] INFO root fetch - main [MainThread]: End processing [diannpy]: success
+[2023-05-14 17:44:05] INFO root fetch - main [MainThread]: End processing [foldingdiff-pytorch]: success
+[2023-05-14 17:44:05] INFO root fetch - main [MainThread]: End processing [xerparser]: success
+[2023-05-14 17:44:05] INFO root fetch - main [MainThread]: End processing [py-madvr]: success
+[2023-05-14 17:44:05] INFO root fetch - main [MainThread]: End processing [pymesh3d]: success
+[2023-05-14 17:44:05] INFO root fetch - main [MainThread]: End processing [wwpdb.apps.ccmodule]: success
+[2023-05-14 17:44:09] INFO root fetch - main [MainThread]: End processing [pypcapkit]: success
+[2023-05-14 17:44:09] INFO root fetch - main [MainThread]: Store serial: [18098161]
