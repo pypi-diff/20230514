@@ -8038,3 +8038,44 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 17:59:47] INFO root fetch - main [MainThread]: End processing [bluerpc]: success
 [2023-05-14 17:59:55] INFO root fetch - main [MainThread]: End processing [netilion-api]: success
 [2023-05-14 17:59:55] INFO root fetch - main [MainThread]: Store serial: [18098256]
+[2023-05-14 18:05:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098256]
+[2023-05-14 18:05:06] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-14 18:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-05-14 18:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-05-14 18:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dnadb
+[2023-05-14 18:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jutility
+[2023-05-14 18:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: nats-nsc
+[2023-05-14 18:05:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: projectrexa
+[2023-05-14 18:05:06] INFO root fetch - processPackages [projectrexa]: New version: [0.0.0.2] Old Version: [0.0.0.1]
+[2023-05-14 18:05:06] INFO root fetch - processPackages [jutility]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 18:05:06] INFO root fetch - processPackages [projectrexa]: executing diffoscope
+[2023-05-14 18:05:06] INFO root fetch - processPackages [projectrexa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projectrexa-0.0.0.1.tar.gz tmp/projectrexa-0.0.0.2.tar.gz --markdown 20230514/p/projectrexa/0.0.0.1-0.0.0.2/diff.md --exclude *.pyd
+[2023-05-14 18:05:06] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1684079990] Old Version: [0.1.1684079980]
+[2023-05-14 18:05:06] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1684079990] Old Version: [0.1.1684079980]
+[2023-05-14 18:05:06] INFO root fetch - processPackages [nats-nsc]: New version: [0.4.0] Old Version: [0.3.1]
+[2023-05-14 18:05:06] INFO root fetch - processPackages [dnadb]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-14 18:05:06] INFO root fetch - processPackages [jutility]: Downloading https://files.pythonhosted.org/packages/ab/64/3fc63e5546bc9e565caa4ea7f46948b7abe76fdaa7a40d981158a07e0fd8/jutility-0.0.1.tar.gz
+[2023-05-14 18:05:06] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/7b/da/e1856a81334ddeed41a756d5ef764c8ff71edb73f533a109f634ab118ea5/eia-odin-pkg-rioatmadja2018-0.1.1684079980.tar.gz
+[2023-05-14 18:05:06] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/7b/da/e1856a81334ddeed41a756d5ef764c8ff71edb73f533a109f634ab118ea5/eia-odin-pkg-rioatmadja2018-0.1.1684079980.tar.gz
+[2023-05-14 18:05:06] INFO root fetch - processPackages [nats-nsc]: Downloading https://files.pythonhosted.org/packages/21/e0/29ee5ff872022b5fc1837206b0f5bc88967e883d484b2fb9894f36e93497/nats_nsc-0.4.0.tar.gz
+[2023-05-14 18:05:06] INFO root fetch - processPackages [jutility]: Downloading https://files.pythonhosted.org/packages/be/aa/9918ca8ba212e66e4f893feed4c3a3da9383c7e7e538c94d0b32e1a2fde0/jutility-0.0.2.tar.gz
+[2023-05-14 18:05:06] INFO root fetch - processPackages [dnadb]: Downloading https://files.pythonhosted.org/packages/ef/95/568f02a754cb1c4c46882588c4af46b33ed5e7447ed7e71c93919c9dabec/dnadb-0.4.0.tar.gz
+[2023-05-14 18:05:06] INFO root fetch - processPackages [jutility]: executing diffoscope
+[2023-05-14 18:05:06] INFO root fetch - processPackages [jutility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jutility-0.0.1.tar.gz tmp/jutility-0.0.2.tar.gz --markdown 20230514/j/jutility/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 18:05:06] INFO root fetch - processPackages [nats-nsc]: executing diffoscope
+[2023-05-14 18:05:06] INFO root fetch - processPackages [nats-nsc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nats_nsc-0.3.1.tar.gz tmp/nats_nsc-0.4.0.tar.gz --markdown 20230514/n/nats-nsc/0.3.1-0.4.0/diff.md --exclude *.pyd
+[2023-05-14 18:05:06] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/19/7b/98ad622270e39827e7fd4a6e2c270fcfe56832070e0e2c224b15c1943133/eia_odin_pkg_rioatmadja2018-0.1.1684079990-py3-none-any.whl
+[2023-05-14 18:05:06] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/19/7b/98ad622270e39827e7fd4a6e2c270fcfe56832070e0e2c224b15c1943133/eia_odin_pkg_rioatmadja2018-0.1.1684079990-py3-none-any.whl
+[2023-05-14 18:05:06] INFO root fetch - processPackages [dnadb]: executing diffoscope
+[2023-05-14 18:05:06] INFO root fetch - processPackages [dnadb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dnadb-0.3.0.tar.gz tmp/dnadb-0.4.0.tar.gz --markdown 20230514/d/dnadb/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-14 18:05:06] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-05-14 18:05:06] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1684079980.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1684079990-py3-none-any.whl.zip --markdown 20230514/e/eia-odin-pkg-rioatmadja2018/0.1.1684079980-0.1.1684079990/diff.md --exclude *.pyd
+[2023-05-14 18:05:06] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-05-14 18:05:06] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1684079980.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1684079990-py3-none-any.whl.zip --markdown 20230514/e/eia-odin-pkg-rioatmadja2018/0.1.1684079980-0.1.1684079990/diff.md --exclude *.pyd
+[2023-05-14 18:05:07] INFO root fetch - main [MainThread]: End processing [projectrexa]: success
+[2023-05-14 18:05:07] INFO root fetch - main [MainThread]: End processing [jutility]: success
+[2023-05-14 18:05:07] INFO root fetch - main [MainThread]: End processing [nats-nsc]: success
+[2023-05-14 18:05:07] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-05-14 18:05:07] INFO root fetch - main [MainThread]: End processing [dnadb]: success
+[2023-05-14 18:05:08] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-05-14 18:05:08] INFO root fetch - main [MainThread]: Store serial: [18098286]
