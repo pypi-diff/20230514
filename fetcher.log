@@ -1257,3 +1257,27 @@
 [2023-05-14 02:47:18] INFO root fetch - main [MainThread]: End processing [kubric-nightly]: success
 [2023-05-14 02:47:28] INFO root fetch - main [MainThread]: End processing [tfds-nightly]: success
 [2023-05-14 02:47:28] INFO root fetch - main [MainThread]: Store serial: [18094155]
+[2023-05-14 02:52:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094155]
+[2023-05-14 02:52:38] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 02:52:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: osintbuddy
+[2023-05-14 02:52:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: t2f
+[2023-05-14 02:52:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mynacode
+[2023-05-14 02:52:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scikit-base
+[2023-05-14 02:52:38] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-14 02:52:38] INFO root fetch - processPackages [osintbuddy]: New version: [0.0.2rc24.post1] Old Version: [0.0.2rc23.post1]
+[2023-05-14 02:52:38] WARNING root fetch - processPackages [t2f]: Skipping, unable to determine old version
+[2023-05-14 02:52:38] INFO root fetch - main [MainThread]: End processing [t2f] error
+[2023-05-14 02:52:38] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-05-14 02:52:38] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230514/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-14 02:52:39] INFO root fetch - processPackages [scikit-base]: New version: [0.4.4] Old Version: [0.4.3]
+[2023-05-14 02:52:39] INFO root fetch - processPackages [osintbuddy]: Downloading https://files.pythonhosted.org/packages/a6/96/5dea545aaace6ff4ea67e326a2c3de9d348047615f704ae65d9139f6d740/osintbuddy-0.0.2rc24.post1.tar.gz
+[2023-05-14 02:52:39] INFO root fetch - processPackages [osintbuddy]: executing diffoscope
+[2023-05-14 02:52:39] INFO root fetch - processPackages [osintbuddy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osintbuddy-0.0.2rc23.post1.tar.gz tmp/osintbuddy-0.0.2rc24.post1.tar.gz --markdown 20230514/o/osintbuddy/0.0.2rc23.post1-0.0.2rc24.post1/diff.md --exclude *.pyd
+[2023-05-14 02:52:39] INFO root fetch - processPackages [scikit-base]: Downloading https://files.pythonhosted.org/packages/bd/30/3e2bfb1df7a0cb192c214fb0644a2ad746344b0ae076c2f0986edf86c4bb/scikit-base-0.4.3.tar.gz
+[2023-05-14 02:52:39] INFO root fetch - processPackages [scikit-base]: Downloading https://files.pythonhosted.org/packages/c5/d5/815814bbe79680ddc8ba27871eeadaa550e1a0d705b9517e45fe203fc912/scikit-base-0.4.4.tar.gz
+[2023-05-14 02:52:39] INFO root fetch - processPackages [scikit-base]: executing diffoscope
+[2023-05-14 02:52:39] INFO root fetch - processPackages [scikit-base]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scikit-base-0.4.3.tar.gz tmp/scikit-base-0.4.4.tar.gz --markdown 20230514/s/scikit-base/0.4.3-0.4.4/diff.md --exclude *.pyd
+[2023-05-14 02:52:39] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-05-14 02:52:40] INFO root fetch - main [MainThread]: End processing [osintbuddy]: success
+[2023-05-14 02:52:41] INFO root fetch - main [MainThread]: End processing [scikit-base]: success
+[2023-05-14 02:52:41] INFO root fetch - main [MainThread]: Store serial: [18094178]
