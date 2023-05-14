@@ -6254,3 +6254,41 @@
 [2023-05-14 15:26:15] INFO root fetch - main [MainThread]: End processing [pythonsqlitedbmodules]: success
 [2023-05-14 15:26:51] INFO root fetch - main [MainThread]: End processing [persian-num2words]: success
 [2023-05-14 15:26:51] INFO root fetch - main [MainThread]: Store serial: [18097216]
+[2023-05-14 15:31:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18097216]
+[2023-05-14 15:32:00] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 15:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: twitter-api-py
+[2023-05-14 15:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: zensvi
+[2023-05-14 15:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ptcompletion
+[2023-05-14 15:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: code-loader
+[2023-05-14 15:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xia-login-flask
+[2023-05-14 15:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PakePip
+[2023-05-14 15:32:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ytspider
+[2023-05-14 15:32:00] INFO root fetch - processPackages [zensvi]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-14 15:32:00] INFO root fetch - processPackages [xia-login-flask]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 15:32:00] WARNING root fetch - processPackages [ptcompletion]: Skipping, unable to determine old version
+[2023-05-14 15:32:00] INFO root fetch - main [MainThread]: End processing [ptcompletion] error
+[2023-05-14 15:32:00] WARNING root fetch - processPackages [PakePip]: Skipping, unable to determine old version
+[2023-05-14 15:32:00] INFO root fetch - main [MainThread]: End processing [PakePip] error
+[2023-05-14 15:32:00] INFO root fetch - processPackages [code-loader]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-14 15:32:00] INFO root fetch - processPackages [twitter-api-py]: New version: [0.6.3] Old Version: [0.6.2]
+[2023-05-14 15:32:00] INFO root fetch - processPackages [ytspider]: New version: [0.0.0.5] Old Version: [0.0.0.4]
+[2023-05-14 15:32:00] INFO root fetch - processPackages [code-loader]: executing diffoscope
+[2023-05-14 15:32:00] INFO root fetch - processPackages [code-loader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/code-loader-0.2.8.tar.gz tmp/code-loader-0.2.9.tar.gz --markdown 20230514/c/code-loader/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-14 15:32:00] INFO root fetch - processPackages [xia-login-flask]: executing diffoscope
+[2023-05-14 15:32:00] INFO root fetch - processPackages [xia-login-flask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_login_flask-0.1.8-cp39-none-win_amd64.whl.zip tmp/xia_login_flask-0.1.9-cp39-none-win_amd64.whl.zip --markdown 20230514/x/xia-login-flask/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 15:32:00] INFO root fetch - processPackages [zensvi]: Downloading https://files.pythonhosted.org/packages/a5/5d/9e05f9beb959d62fa7542bb3129b70368b7fa418b32e2dcb3273de02b0d9/zensvi-0.1.5.tar.gz
+[2023-05-14 15:32:00] INFO root fetch - processPackages [twitter-api-py]: Downloading https://files.pythonhosted.org/packages/7b/95/fc17dc5b955d4eaedfcf815ad70c1b4ffbd476e428ac2421b17949506142/twitter_api_py-0.6.3.tar.gz
+[2023-05-14 15:32:00] INFO root fetch - processPackages [ytspider]: Downloading https://files.pythonhosted.org/packages/55/fe/f68e3169f770ac923cd1a5e0b258da4d99fa0857e4320ad860ad1ab21798/ytspider-0.0.0.4.tar.gz
+[2023-05-14 15:32:00] INFO root fetch - processPackages [twitter-api-py]: executing diffoscope
+[2023-05-14 15:32:00] INFO root fetch - processPackages [twitter-api-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter_api_py-0.6.2.tar.gz tmp/twitter_api_py-0.6.3.tar.gz --markdown 20230514/t/twitter-api-py/0.6.2-0.6.3/diff.md --exclude *.pyd
+[2023-05-14 15:32:00] INFO root fetch - processPackages [zensvi]: executing diffoscope
+[2023-05-14 15:32:00] INFO root fetch - processPackages [zensvi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zensvi-0.1.4.tar.gz tmp/zensvi-0.1.5.tar.gz --markdown 20230514/z/zensvi/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-14 15:32:00] INFO root fetch - processPackages [ytspider]: Downloading https://files.pythonhosted.org/packages/ea/0e/2ffdc6128e394ac3e8b223a2eff668e1767fdbef54fc5d32dba2ee4abb4c/ytspider-0.0.0.5.tar.gz
+[2023-05-14 15:32:00] INFO root fetch - processPackages [ytspider]: executing diffoscope
+[2023-05-14 15:32:00] INFO root fetch - processPackages [ytspider]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ytspider-0.0.0.4.tar.gz tmp/ytspider-0.0.0.5.tar.gz --markdown 20230514/y/ytspider/0.0.0.4-0.0.0.5/diff.md --exclude *.pyd
+[2023-05-14 15:32:01] INFO root fetch - main [MainThread]: End processing [code-loader]: success
+[2023-05-14 15:32:01] INFO root fetch - main [MainThread]: End processing [xia-login-flask]: success
+[2023-05-14 15:32:01] INFO root fetch - main [MainThread]: End processing [zensvi]: success
+[2023-05-14 15:32:02] INFO root fetch - main [MainThread]: End processing [ytspider]: success
+[2023-05-14 15:32:02] INFO root fetch - main [MainThread]: End processing [twitter-api-py]: success
+[2023-05-14 15:32:02] INFO root fetch - main [MainThread]: Store serial: [18097242]
