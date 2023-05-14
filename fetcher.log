@@ -2535,3 +2535,37 @@
 [2023-05-14 06:35:56] INFO root fetch - main [MainThread]: End processing [austrakka]: success
 [2023-05-14 06:35:56] INFO root fetch - main [MainThread]: End processing [aioqui]: success
 [2023-05-14 06:35:56] INFO root fetch - main [MainThread]: Store serial: [18094938]
+[2023-05-14 06:41:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094938]
+[2023-05-14 06:41:06] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 06:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ejtraderCT
+[2023-05-14 06:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gkjzjh146
+[2023-05-14 06:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fluffy-server
+[2023-05-14 06:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tf-nightly-macos
+[2023-05-14 06:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: shenghuo2-getshell
+[2023-05-14 06:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: t2f
+[2023-05-14 06:41:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: midoTrim
+[2023-05-14 06:41:06] INFO root fetch - processPackages [fluffy-server]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-14 06:41:06] INFO root fetch - processPackages [ejtraderCT]: New version: [1.1.1b0] Old Version: [1.1.1a0]
+[2023-05-14 06:41:06] WARNING root fetch - processPackages [shenghuo2-getshell]: Skipping, unable to determine old version
+[2023-05-14 06:41:06] INFO root fetch - main [MainThread]: End processing [shenghuo2-getshell] error
+[2023-05-14 06:41:06] INFO root fetch - processPackages [t2f]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-14 06:41:06] WARNING root fetch - processPackages [gkjzjh146]: Skipping, unable to determine old version
+[2023-05-14 06:41:06] INFO root fetch - main [MainThread]: End processing [gkjzjh146] error
+[2023-05-14 06:41:06] INFO root fetch - processPackages [tf-nightly-macos]: New version: [2.14.0.dev20230513] Old Version: [2.14.0.dev20230512]
+[2023-05-14 06:41:06] INFO root fetch - processPackages [fluffy-server]: executing diffoscope
+[2023-05-14 06:41:06] INFO root fetch - processPackages [fluffy-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluffy-server-1.9.0.tar.gz tmp/fluffy-server-1.9.1.tar.gz --markdown 20230514/f/fluffy-server/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-14 06:41:06] WARNING root fetch - processPackages [midoTrim]: Skipping, unable to determine old version
+[2023-05-14 06:41:06] INFO root fetch - main [MainThread]: End processing [midoTrim] error
+[2023-05-14 06:41:06] INFO root fetch - processPackages [ejtraderCT]: Downloading https://files.pythonhosted.org/packages/7a/1d/a827d63e2be5bddb14a13e643e3169040e4a368cf0ead2e89934304ae0ea/ejtraderCT-1.1.1b0.tar.gz
+[2023-05-14 06:41:06] INFO root fetch - processPackages [t2f]: Downloading https://files.pythonhosted.org/packages/69/e0/c43c231d9c551906e6cb4088870fa9588bded82ff1cc51f38d25bb880e15/t2f-0.1.3.tar.gz
+[2023-05-14 06:41:06] INFO root fetch - processPackages [t2f]: executing diffoscope
+[2023-05-14 06:41:06] INFO root fetch - processPackages [t2f]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/t2f-0.1.2.tar.gz tmp/t2f-0.1.3.tar.gz --markdown 20230514/t/t2f/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-14 06:41:06] INFO root fetch - processPackages [tf-nightly-macos]: Downloading https://files.pythonhosted.org/packages/aa/07/b52392b2367d25cc4e84a755799bdda7e44fa46e08f910ba4c5e3459de55/tf_nightly_macos-2.14.0.dev20230512-cp311-cp311-macosx_12_0_arm64.whl
+[2023-05-14 06:41:06] INFO root fetch - processPackages [ejtraderCT]: executing diffoscope
+[2023-05-14 06:41:06] INFO root fetch - processPackages [ejtraderCT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ejtraderCT-1.1.1a0.tar.gz tmp/ejtraderCT-1.1.1b0.tar.gz --markdown 20230514/e/ejtraderCT/1.1.1a0-1.1.1b0/diff.md --exclude *.pyd
+[2023-05-14 06:41:06] WARNING root fetch - processPackages [tf-nightly-macos]: Skipping package: exceeds size limit 190434105>=10485760
+[2023-05-14 06:41:06] INFO root fetch - main [MainThread]: End processing [tf-nightly-macos] error
+[2023-05-14 06:41:07] INFO root fetch - main [MainThread]: End processing [t2f]: success
+[2023-05-14 06:41:07] INFO root fetch - main [MainThread]: End processing [ejtraderCT]: success
+[2023-05-14 06:41:08] INFO root fetch - main [MainThread]: End processing [fluffy-server]: success
+[2023-05-14 06:41:08] INFO root fetch - main [MainThread]: Store serial: [18094964]
