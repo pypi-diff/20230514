@@ -9350,3 +9350,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 20:22:38] INFO root fetch - main [MainThread]: End processing [cmake-build-extension]: success
 [2023-05-14 20:22:39] INFO root fetch - main [MainThread]: End processing [aioqui]: success
 [2023-05-14 20:22:39] INFO root fetch - main [MainThread]: Store serial: [18099065]
+[2023-05-14 20:27:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18099065]
+[2023-05-14 20:27:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-14 20:27:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fieldedge-utilities
+[2023-05-14 20:27:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: anutils
+[2023-05-14 20:27:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: axia
+[2023-05-14 20:27:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: disnake-ext-plugins
+[2023-05-14 20:27:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: py-madvr
+[2023-05-14 20:27:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: aleksis-app-dashboardfeeds
+[2023-05-14 20:27:48] WARNING root fetch - processPackages [disnake-ext-plugins]: Skipping, unable to determine old version
+[2023-05-14 20:27:48] INFO root fetch - processPackages [aleksis-app-dashboardfeeds]: New version: [3.0b0] Old Version: [3.0]
+[2023-05-14 20:27:48] INFO root fetch - main [MainThread]: End processing [disnake-ext-plugins] error
+[2023-05-14 20:27:48] INFO root fetch - processPackages [py-madvr]: New version: [1.3.18] Old Version: [1.3.17]
+[2023-05-14 20:27:48] INFO root fetch - processPackages [axia]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-14 20:27:48] INFO root fetch - processPackages [anutils]: New version: [0.4.4] Old Version: [0.4.3b1]
+[2023-05-14 20:27:49] INFO root fetch - processPackages [fieldedge-utilities]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-14 20:27:49] INFO root fetch - processPackages [fieldedge-utilities]: executing diffoscope
+[2023-05-14 20:27:49] INFO root fetch - processPackages [fieldedge-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fieldedge-utilities-0.9.4.tar.gz tmp/fieldedge-utilities-0.9.5.tar.gz --markdown 20230514/f/fieldedge-utilities/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-14 20:27:49] INFO root fetch - processPackages [aleksis-app-dashboardfeeds]: Downloading https://files.pythonhosted.org/packages/57/a4/ccb18d158debf7663a89730c1152885b0c681c1081ae590940d9f51e3411/aleksis_app_dashboardfeeds-3.0.tar.gz
+[2023-05-14 20:27:49] INFO root fetch - processPackages [axia]: Downloading https://files.pythonhosted.org/packages/e8/e8/de76229831ae6bf31aada997f2491d4b2b669bb005962edefc0fe52824c4/axia-0.1.0.tar.gz
+[2023-05-14 20:27:49] INFO root fetch - processPackages [anutils]: Downloading https://files.pythonhosted.org/packages/c0/fd/72c734617fce5ad44b5cd6f2e8e31e262a58954e4d91e4ffcf8d5b920259/anutils-0.4.3b1.tar.gz
+[2023-05-14 20:27:49] INFO root fetch - processPackages [py-madvr]: Downloading https://files.pythonhosted.org/packages/31/e4/6a5bab1571b755d6b0d5941ec81528aac99fedef3bf497c2b6826b10051c/py_madvr-1.3.18.tar.gz
+[2023-05-14 20:27:49] INFO root fetch - processPackages [py-madvr]: executing diffoscope
+[2023-05-14 20:27:49] INFO root fetch - processPackages [py-madvr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_madvr-1.3.17.tar.gz tmp/py_madvr-1.3.18.tar.gz --markdown 20230514/p/py-madvr/1.3.17-1.3.18/diff.md --exclude *.pyd
+[2023-05-14 20:27:49] INFO root fetch - processPackages [axia]: Downloading https://files.pythonhosted.org/packages/ed/38/c82162d53c9e56bf3107783412f7964ffb608ddbd643488197a2dddaf47a/axia-0.1.1.tar.gz
+[2023-05-14 20:27:49] INFO root fetch - processPackages [anutils]: Downloading https://files.pythonhosted.org/packages/63/d3/1c2532aaa0850b6241e5d39ee58125a8781564893a3f54a4c88d85819a1d/anutils-0.4.4.tar.gz
+[2023-05-14 20:27:49] INFO root fetch - processPackages [aleksis-app-dashboardfeeds]: Downloading https://files.pythonhosted.org/packages/13/7a/27e933d4c64685212ce8c8ef394b59b1ca5c46bdad1093577b850368d3e1/aleksis_app_dashboardfeeds-3.0b0.tar.gz
+[2023-05-14 20:27:49] INFO root fetch - processPackages [anutils]: executing diffoscope
+[2023-05-14 20:27:49] INFO root fetch - processPackages [anutils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/anutils-0.4.3b1.tar.gz tmp/anutils-0.4.4.tar.gz --markdown 20230514/a/anutils/0.4.3b1-0.4.4/diff.md --exclude *.pyd
+[2023-05-14 20:27:49] INFO root fetch - processPackages [aleksis-app-dashboardfeeds]: executing diffoscope
+[2023-05-14 20:27:49] INFO root fetch - processPackages [aleksis-app-dashboardfeeds]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aleksis_app_dashboardfeeds-3.0.tar.gz tmp/aleksis_app_dashboardfeeds-3.0b0.tar.gz --markdown 20230514/a/aleksis-app-dashboardfeeds/3.0-3.0b0/diff.md --exclude *.pyd
+[2023-05-14 20:27:49] INFO root fetch - processPackages [axia]: executing diffoscope
+[2023-05-14 20:27:49] INFO root fetch - processPackages [axia]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/axia-0.1.0.tar.gz tmp/axia-0.1.1.tar.gz --markdown 20230514/a/axia/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-14 20:27:50] INFO root fetch - main [MainThread]: End processing [fieldedge-utilities]: success
+[2023-05-14 20:27:50] INFO root fetch - main [MainThread]: End processing [py-madvr]: success
+[2023-05-14 20:27:50] INFO root fetch - main [MainThread]: End processing [axia]: success
+[2023-05-14 20:27:50] INFO root fetch - main [MainThread]: End processing [anutils]: success
+[2023-05-14 20:28:26] INFO root fetch - main [MainThread]: End processing [aleksis-app-dashboardfeeds]: success
+[2023-05-14 20:28:26] INFO root fetch - main [MainThread]: Store serial: [18099087]
