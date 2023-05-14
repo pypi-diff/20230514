@@ -11423,3 +11423,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 23:36:19] INFO root fetch - main [MainThread]: End processing [kynaylibs]: success
 [2023-05-14 23:36:19] INFO root fetch - main [MainThread]: End processing [express-integrations-monday]: success
 [2023-05-14 23:36:19] INFO root fetch - main [MainThread]: Store serial: [18100271]
+[2023-05-14 23:41:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18100271]
+[2023-05-14 23:41:28] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 23:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: derivslib
+[2023-05-14 23:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cookiestream
+[2023-05-14 23:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PCCanalyser
+[2023-05-14 23:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: graphsignal
+[2023-05-14 23:41:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: meiga
+[2023-05-14 23:41:28] INFO root fetch - processPackages [derivslib]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 23:41:28] INFO root fetch - processPackages [cookiestream]: New version: [0.0.1.2] Old Version: [0.0.1.1]
+[2023-05-14 23:41:28] INFO root fetch - processPackages [meiga]: New version: [1.9.0] Old Version: [1.8.3]
+[2023-05-14 23:41:28] INFO root fetch - processPackages [PCCanalyser]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-14 23:41:28] INFO root fetch - processPackages [graphsignal]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-14 23:41:28] INFO root fetch - processPackages [PCCanalyser]: Downloading https://files.pythonhosted.org/packages/2f/64/332c019bacd66df7ce988998bd74daa1751817aa470e495a90ef38be1cb1/PCCanalyser-0.1.0.tar.gz
+[2023-05-14 23:41:28] INFO root fetch - processPackages [cookiestream]: Downloading https://files.pythonhosted.org/packages/4b/26/86ecbc2d0db075721bd8581d471eb096d54223bd7877532ccc13bf7dfaa9/cookiestream-0.0.1.1.tar.gz
+[2023-05-14 23:41:28] INFO root fetch - processPackages [derivslib]: Downloading https://files.pythonhosted.org/packages/9e/46/c901322758258e927dc997728190826a1a96b5113206cb6fb36f0483ff96/derivslib-0.0.8.tar.gz
+[2023-05-14 23:41:28] INFO root fetch - processPackages [meiga]: Downloading https://files.pythonhosted.org/packages/ba/3f/7e4caf5d8541ca429be4addc6436eb380de984bb51883ca8b8174e7fc511/meiga-1.8.3.tar.gz
+[2023-05-14 23:41:28] INFO root fetch - processPackages [graphsignal]: Downloading https://files.pythonhosted.org/packages/8a/ce/6c4ad532d461693620e6155f4cc8c8495b148d9bef62b7204619e41f19ec/graphsignal-0.9.4.tar.gz
+[2023-05-14 23:41:28] INFO root fetch - processPackages [PCCanalyser]: Downloading https://files.pythonhosted.org/packages/96/a6/84231bbb0df95df8b588d2b67c7b697c5bd2f828c8b035f7fba30a1bf43f/PCCanalyser-0.1.1.tar.gz
+[2023-05-14 23:41:29] INFO root fetch - processPackages [derivslib]: Downloading https://files.pythonhosted.org/packages/42/d7/d01ff2ff48004c19b76194c6c6eebbe16078ea53505543748831ea1e4ed9/derivslib-0.0.9.tar.gz
+[2023-05-14 23:41:29] INFO root fetch - processPackages [cookiestream]: Downloading https://files.pythonhosted.org/packages/ca/44/15ec062a71d292f5e88cd0bee31c8a5b353c1fffd2e79ca38839e91a7413/cookiestream-0.0.1.2.tar.gz
+[2023-05-14 23:41:29] INFO root fetch - processPackages [graphsignal]: Downloading https://files.pythonhosted.org/packages/63/9a/d9360e506d4b48251d07845d69b0a9facd3465a3c270adacda14a215a8a8/graphsignal-0.9.5.tar.gz
+[2023-05-14 23:41:29] INFO root fetch - processPackages [derivslib]: executing diffoscope
+[2023-05-14 23:41:29] INFO root fetch - processPackages [derivslib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/derivslib-0.0.8.tar.gz tmp/derivslib-0.0.9.tar.gz --markdown 20230514/d/derivslib/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 23:41:29] INFO root fetch - processPackages [PCCanalyser]: executing diffoscope
+[2023-05-14 23:41:29] INFO root fetch - processPackages [meiga]: Downloading https://files.pythonhosted.org/packages/53/17/d8e39ec677071f7a7b48e37dca43638b5da7074437dd2199cfd351e226cc/meiga-1.9.0.tar.gz
+[2023-05-14 23:41:29] INFO root fetch - processPackages [PCCanalyser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PCCanalyser-0.1.0.tar.gz tmp/PCCanalyser-0.1.1.tar.gz --markdown 20230514/P/PCCanalyser/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-14 23:41:29] INFO root fetch - processPackages [graphsignal]: executing diffoscope
+[2023-05-14 23:41:29] INFO root fetch - processPackages [graphsignal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphsignal-0.9.4.tar.gz tmp/graphsignal-0.9.5.tar.gz --markdown 20230514/g/graphsignal/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-14 23:41:29] INFO root fetch - processPackages [cookiestream]: executing diffoscope
+[2023-05-14 23:41:29] INFO root fetch - processPackages [cookiestream]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cookiestream-0.0.1.1.tar.gz tmp/cookiestream-0.0.1.2.tar.gz --markdown 20230514/c/cookiestream/0.0.1.1-0.0.1.2/diff.md --exclude *.pyd
+[2023-05-14 23:41:29] INFO root fetch - processPackages [meiga]: executing diffoscope
+[2023-05-14 23:41:29] INFO root fetch - processPackages [meiga]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meiga-1.8.3.tar.gz tmp/meiga-1.9.0.tar.gz --markdown 20230514/m/meiga/1.8.3-1.9.0/diff.md --exclude *.pyd
+[2023-05-14 23:41:30] INFO root fetch - main [MainThread]: End processing [PCCanalyser]: success
+[2023-05-14 23:41:30] INFO root fetch - main [MainThread]: End processing [derivslib]: success
+[2023-05-14 23:41:30] INFO root fetch - main [MainThread]: End processing [cookiestream]: success
+[2023-05-14 23:41:30] INFO root fetch - main [MainThread]: End processing [meiga]: success
+[2023-05-14 23:41:30] INFO root fetch - main [MainThread]: End processing [graphsignal]: success
+[2023-05-14 23:41:30] INFO root fetch - main [MainThread]: Store serial: [18100287]
