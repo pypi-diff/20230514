@@ -6554,3 +6554,71 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 15:53:02] INFO root fetch - main [MainThread]: End processing [SimpleStereo]: success
 [2023-05-14 15:53:02] INFO root fetch - main [MainThread]: End processing [svgelements]: success
 [2023-05-14 15:53:02] INFO root fetch - main [MainThread]: Store serial: [18097376]
+[2023-05-14 15:58:06] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18097376]
+[2023-05-14 15:58:11] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-14 15:58:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: gcsaws
+[2023-05-14 15:58:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyphysio
+[2023-05-14 15:58:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: sharingiscaring
+[2023-05-14 15:58:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gcsaws
+[2023-05-14 15:58:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: smoloki
+[2023-05-14 15:58:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyqrack
+[2023-05-14 15:58:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: local-bert-python-backend
+[2023-05-14 15:58:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: odoo-addon-stock-split-picking
+[2023-05-14 15:58:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: kangas
+[2023-05-14 15:58:11] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: gcsaws
+[2023-05-14 15:58:11] INFO root fetch - processPackages [pyphysio]: New version: [3.1.5] Old Version: [3.1.4]
+[2023-05-14 15:58:11] INFO root fetch - processPackages [gcsaws]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 15:58:11] INFO root fetch - processPackages [local-bert-python-backend]: New version: [0.0.2] Old Version: [0.0.12]
+[2023-05-14 15:58:11] INFO root fetch - processPackages [gcsaws]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 15:58:11] INFO root fetch - processPackages [smoloki]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 15:58:11] INFO root fetch - processPackages [kangas]: New version: [2.4.0a1] Old Version: [2.3.8]
+[2023-05-14 15:58:11] INFO root fetch - processPackages [sharingiscaring]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-14 15:58:11] INFO root fetch - processPackages [odoo-addon-stock-split-picking]: New version: [16.0.1.0.2] Old Version: [16.0.1.0.1.2]
+[2023-05-14 15:58:11] INFO root fetch - processPackages [pyqrack]: New version: [1.9.3] Old Version: [1.9.2]
+[2023-05-14 15:58:11] INFO root fetch - processPackages [gcsaws]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 15:58:11] INFO root fetch - processPackages [gcsaws]: executing diffoscope
+[2023-05-14 15:58:11] INFO root fetch - processPackages [gcsaws]: executing diffoscope
+[2023-05-14 15:58:11] INFO root fetch - processPackages [gcsaws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcsaws-0.0.8.tar.gz tmp/gcsaws-0.0.9.tar.gz --markdown 20230514/g/gcsaws/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 15:58:11] INFO root fetch - processPackages [gcsaws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcsaws-0.0.8.tar.gz tmp/gcsaws-0.0.9.tar.gz --markdown 20230514/g/gcsaws/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 15:58:11] INFO root fetch - processPackages [gcsaws]: executing diffoscope
+[2023-05-14 15:58:11] INFO root fetch - processPackages [gcsaws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcsaws-0.0.8.tar.gz tmp/gcsaws-0.0.9.tar.gz --markdown 20230514/g/gcsaws/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 15:58:11] INFO root fetch - processPackages [pyphysio]: Downloading https://files.pythonhosted.org/packages/1a/6c/6e055d6687216ac2a268b86b518f180dc2e07e77e14cdba98e9e180c01f0/pyphysio-3.1.4.tar.gz
+[2023-05-14 15:58:11] INFO root fetch - processPackages [kangas]: Downloading https://files.pythonhosted.org/packages/4b/c8/4f336223543d0c0b5f318ca0bdd80b17b9394fef9c2b84aa799155315a7c/kangas-2.3.8-py3-none-any.whl
+[2023-05-14 15:58:11] INFO root fetch - processPackages [sharingiscaring]: Downloading https://files.pythonhosted.org/packages/ec/8c/18f997c3d361aa358776fa84dc75aa9ae090ce8fbc3f7099d41d86437e2e/sharingiscaring-0.2.8.tar.gz
+[2023-05-14 15:58:11] INFO root fetch - processPackages [pyqrack]: Downloading https://files.pythonhosted.org/packages/9a/46/24c6e2fcb11c0b33c5d2a4e32931d820f361b76c05c92aa0cca73cc1d396/pyqrack-1.9.2.tar.gz
+[2023-05-14 15:58:11] INFO root fetch - processPackages [odoo-addon-stock-split-picking]: Downloading https://files.pythonhosted.org/packages/48/65/0f115676c1f8c2a6dc10391688c9d4aba0999c7274306517157d42e6841a/odoo_addon_stock_split_picking-16.0.1.0.1.2-py3-none-any.whl
+[2023-05-14 15:58:11] INFO root fetch - processPackages [local-bert-python-backend]: Downloading https://files.pythonhosted.org/packages/c0/eb/a8e4a706818eada098617f1268e01a33db1903d25ce4d04063735311803f/local-bert-python-backend-0.0.2.tar.gz
+[2023-05-14 15:58:11] INFO root fetch - processPackages [smoloki]: executing diffoscope
+[2023-05-14 15:58:11] INFO root fetch - processPackages [smoloki]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/smoloki-0.0.8.tar.gz tmp/smoloki-0.0.9.tar.gz --markdown 20230514/s/smoloki/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 15:58:11] INFO root fetch - processPackages [pyphysio]: Downloading https://files.pythonhosted.org/packages/04/df/624d89955a7a63bc673d1339295f28c5cd4c32b2dd955cc93b36cb813217/pyphysio-3.1.5.tar.gz
+[2023-05-14 15:58:11] INFO root fetch - processPackages [pyqrack]: Downloading https://files.pythonhosted.org/packages/da/89/d681e95a5499eedb172d03fa975aeb0e48f87234f5d6c697e6a0f42edc8d/pyqrack-1.9.3.tar.gz
+[2023-05-14 15:58:12] INFO root fetch - processPackages [odoo-addon-stock-split-picking]: Downloading https://files.pythonhosted.org/packages/8b/e1/d8917d7a0258cf755960c95346a92e324d22110422ee03aa4d6175c84d9a/odoo_addon_stock_split_picking-16.0.1.0.2-py3-none-any.whl
+[2023-05-14 15:58:12] INFO root fetch - processPackages [local-bert-python-backend]: executing diffoscope
+[2023-05-14 15:58:12] INFO root fetch - processPackages [local-bert-python-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local-bert-python-backend-0.0.12.tar.gz tmp/local-bert-python-backend-0.0.2.tar.gz --markdown 20230514/l/local-bert-python-backend/0.0.12-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 15:58:12] INFO root fetch - processPackages [kangas]: Downloading https://files.pythonhosted.org/packages/3f/79/a1e29289a7f35b3503f6e912107eaa7c6d819fe56213876cb0f42e8163d4/kangas-2.4.0a1-py3-none-any.whl
+[2023-05-14 15:58:12] INFO root fetch - processPackages [sharingiscaring]: Downloading https://files.pythonhosted.org/packages/3c/51/994c3bf1116cc8b6234cbdc78a444ab9f875f5c3ce1e11c36bc0b2cdfa0e/sharingiscaring-0.2.9.tar.gz
+[2023-05-14 15:58:12] INFO root fetch - processPackages [pyqrack]: executing diffoscope
+[2023-05-14 15:58:12] INFO root fetch - processPackages [pyqrack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqrack-1.9.2.tar.gz tmp/pyqrack-1.9.3.tar.gz --markdown 20230514/p/pyqrack/1.9.2-1.9.3/diff.md --exclude *.pyd
+[2023-05-14 15:58:12] INFO root fetch - processPackages [odoo-addon-stock-split-picking]: executing diffoscope
+[2023-05-14 15:58:12] INFO root fetch - processPackages [odoo-addon-stock-split-picking]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_stock_split_picking-16.0.1.0.1.2-py3-none-any.whl.zip tmp/odoo_addon_stock_split_picking-16.0.1.0.2-py3-none-any.whl.zip --markdown 20230514/o/odoo-addon-stock-split-picking/16.0.1.0.1.2-16.0.1.0.2/diff.md --exclude *.pyd
+[2023-05-14 15:58:12] WARNING root fetch - processPackages [kangas]: Skipping package: exceeds size limit 15715440>=10485760
+[2023-05-14 15:58:12] INFO root fetch - processPackages [kangas]: Start processing: spotPython
+[2023-05-14 15:58:12] INFO root fetch - main [MainThread]: End processing [kangas] error
+[2023-05-14 15:58:12] INFO root fetch - processPackages [spotPython]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 15:58:12] INFO root fetch - processPackages [sharingiscaring]: executing diffoscope
+[2023-05-14 15:58:12] INFO root fetch - processPackages [sharingiscaring]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sharingiscaring-0.2.8.tar.gz tmp/sharingiscaring-0.2.9.tar.gz --markdown 20230514/s/sharingiscaring/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-14 15:58:12] INFO root fetch - processPackages [spotPython]: executing diffoscope
+[2023-05-14 15:58:12] INFO root fetch - processPackages [spotPython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotPython-0.0.8.tar.gz tmp/spotPython-0.0.9.tar.gz --markdown 20230514/s/spotPython/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 15:58:12] INFO root fetch - processPackages [pyphysio]: executing diffoscope
+[2023-05-14 15:58:12] INFO root fetch - processPackages [pyphysio]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyphysio-3.1.4.tar.gz tmp/pyphysio-3.1.5.tar.gz --markdown 20230514/p/pyphysio/3.1.4-3.1.5/diff.md --exclude *.pyd
+[2023-05-14 15:58:12] INFO root fetch - main [MainThread]: End processing [gcsaws]: success
+[2023-05-14 15:58:12] INFO root fetch - main [MainThread]: End processing [gcsaws]: success
+[2023-05-14 15:58:13] INFO root fetch - main [MainThread]: End processing [gcsaws]: success
+[2023-05-14 15:58:13] INFO root fetch - main [MainThread]: End processing [local-bert-python-backend]: success
+[2023-05-14 15:58:13] INFO root fetch - main [MainThread]: End processing [smoloki]: success
+[2023-05-14 15:58:13] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-split-picking]: success
+[2023-05-14 15:58:14] INFO root fetch - main [MainThread]: End processing [pyphysio]: success
+[2023-05-14 15:58:14] INFO root fetch - main [MainThread]: End processing [pyqrack]: success
+[2023-05-14 15:58:15] INFO root fetch - main [MainThread]: End processing [spotPython]: success
+[2023-05-14 15:58:15] INFO root fetch - main [MainThread]: End processing [sharingiscaring]: success
+[2023-05-14 15:58:15] INFO root fetch - main [MainThread]: Store serial: [18097414]
