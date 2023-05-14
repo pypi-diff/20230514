@@ -3085,3 +3085,22 @@
 [2023-05-14 08:14:08] INFO root fetch - main [MainThread]: End processing [databricks-common]: success
 [2023-05-14 08:14:09] INFO root fetch - main [MainThread]: End processing [aioqui]: success
 [2023-05-14 08:14:09] INFO root fetch - main [MainThread]: Store serial: [18095283]
+[2023-05-14 08:19:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095283]
+[2023-05-14 08:19:18] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-14 08:19:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: qaqaqazzz
+[2023-05-14 08:19:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ocrmypdf
+[2023-05-14 08:19:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pretext
+[2023-05-14 08:19:18] INFO root fetch - processPackages [pretext]: New version: [1.5.3.dev20230514] Old Version: [1.5.3.dev20230512]
+[2023-05-14 08:19:18] WARNING root fetch - processPackages [qaqaqazzz]: Skipping, unable to determine old version
+[2023-05-14 08:19:18] INFO root fetch - main [MainThread]: End processing [qaqaqazzz] error
+[2023-05-14 08:19:18] INFO root fetch - processPackages [ocrmypdf]: New version: [9.8.2] Old Version: [9.8.1]
+[2023-05-14 08:19:19] INFO root fetch - processPackages [ocrmypdf]: Downloading https://files.pythonhosted.org/packages/14/45/a2315680b83ec61fee6771408338754b37b678e56dacb9abdc770190b759/ocrmypdf-9.8.1.tar.gz
+[2023-05-14 08:19:19] INFO root fetch - processPackages [pretext]: Downloading https://files.pythonhosted.org/packages/a7/79/cd634a502aa00d72155461a364b80615780866e21a690c76460e1765c034/pretext-1.5.3.dev20230514.tar.gz
+[2023-05-14 08:19:19] INFO root fetch - processPackages [pretext]: executing diffoscope
+[2023-05-14 08:19:19] INFO root fetch - processPackages [pretext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pretext-1.5.3.dev20230512.tar.gz tmp/pretext-1.5.3.dev20230514.tar.gz --markdown 20230514/p/pretext/1.5.3.dev20230512-1.5.3.dev20230514/diff.md --exclude *.pyd
+[2023-05-14 08:19:21] INFO root fetch - processPackages [ocrmypdf]: Downloading https://files.pythonhosted.org/packages/e9/15/f126999a5fa467662835013d51793ea20eb24aac509252b0a5b1a5f403f3/ocrmypdf-9.8.2.tar.gz
+[2023-05-14 08:19:22] INFO root fetch - processPackages [ocrmypdf]: executing diffoscope
+[2023-05-14 08:19:22] INFO root fetch - processPackages [ocrmypdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ocrmypdf-9.8.1.tar.gz tmp/ocrmypdf-9.8.2.tar.gz --markdown 20230514/o/ocrmypdf/9.8.1-9.8.2/diff.md --exclude *.pyd
+[2023-05-14 08:19:24] INFO root fetch - main [MainThread]: End processing [pretext]: success
+[2023-05-14 08:19:26] INFO root fetch - main [MainThread]: End processing [ocrmypdf]: success
+[2023-05-14 08:19:26] INFO root fetch - main [MainThread]: Store serial: [18095293]
