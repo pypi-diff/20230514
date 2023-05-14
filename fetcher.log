@@ -8394,3 +8394,78 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 18:42:19] INFO root fetch - main [MainThread]: End processing [patchworklib]: success
 [2023-05-14 18:42:19] INFO root fetch - main [MainThread]: End processing [speech-collator]: success
 [2023-05-14 18:42:19] INFO root fetch - main [MainThread]: Store serial: [18098508]
+[2023-05-14 18:47:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098508]
+[2023-05-14 18:47:29] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-14 18:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ankipandas
+[2023-05-14 18:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: gcsaws
+[2023-05-14 18:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: local-recruitment-employer-python-backend
+[2023-05-14 18:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: z4d-certified-devices
+[2023-05-14 18:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: speech-collator
+[2023-05-14 18:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pypipr
+[2023-05-14 18:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: traversaal
+[2023-05-14 18:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: linkrot
+[2023-05-14 18:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: neopolitan
+[2023-05-14 18:47:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: vcspull
+[2023-05-14 18:47:29] INFO root fetch - processPackages [speech-collator]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-14 18:47:29] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-05-14 18:47:29] INFO root fetch - processPackages [ankipandas]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-14 18:47:29] INFO root fetch - processPackages [traversaal]: New version: [0.56] Old Version: [0.55]
+[2023-05-14 18:47:29] INFO root fetch - processPackages [z4d-certified-devices]: New version: [2.61] Old Version: [2.60]
+[2023-05-14 18:47:29] INFO root fetch - processPackages [pypipr]: New version: [0.1.9] Old Version: [0.1.84]
+[2023-05-14 18:47:29] INFO root fetch - processPackages [vcspull]: New version: [1.9.0.post2] Old Version: [1.9.0.post1]
+[2023-05-14 18:47:29] INFO root fetch - processPackages [neopolitan]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 18:47:29] INFO root fetch - processPackages [linkrot]: New version: [3.9.9] Old Version: [3.9.5]
+[2023-05-14 18:47:29] INFO root fetch - processPackages [gcsaws]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 18:47:29] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: executing diffoscope
+[2023-05-14 18:47:29] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local-recruitment-employer-python-backend-0.0.7.tar.gz tmp/local-recruitment-employer-python-backend-0.0.9.tar.gz --markdown 20230514/l/local-recruitment-employer-python-backend/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 18:47:29] INFO root fetch - processPackages [gcsaws]: executing diffoscope
+[2023-05-14 18:47:29] INFO root fetch - processPackages [gcsaws]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gcsaws-0.0.8.tar.gz tmp/gcsaws-0.0.9.tar.gz --markdown 20230514/g/gcsaws/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 18:47:29] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/62/e0/ba6c19d79c33adb2e62466a87a38a900b215909a4dc1134fbb5a2b1f0194/pypipr-0.1.84.tar.gz
+[2023-05-14 18:47:29] INFO root fetch - processPackages [ankipandas]: Downloading https://files.pythonhosted.org/packages/76/13/dae41df0785e8f30be171e9868087d635c3e050b3f61af06a93934102553/ankipandas-0.3.8.tar.gz
+[2023-05-14 18:47:29] INFO root fetch - processPackages [speech-collator]: Downloading https://files.pythonhosted.org/packages/d8/40/f6de7fc7ab626a7cd8fe410bc30e729a3cbad32e3725553e608b43c080a2/speech_collator-0.1.3.tar.gz
+[2023-05-14 18:47:29] INFO root fetch - processPackages [traversaal]: Downloading https://files.pythonhosted.org/packages/79/43/8989fc5275a9465ee784be300966b48f82f5aff7a86187b3abaccce513a7/traversaal-0.55.tar.gz
+[2023-05-14 18:47:29] INFO root fetch - processPackages [neopolitan]: Downloading https://files.pythonhosted.org/packages/82/fd/cfe7abfc0a0fc620899bdb1731b862dbd2ed1adefd5c647417f24efd5294/neopolitan-0.1.8.tar.gz
+[2023-05-14 18:47:29] INFO root fetch - processPackages [vcspull]: Downloading https://files.pythonhosted.org/packages/df/f6/7072bb745d13efa4a13a0bfb94853879f092c59b20cb966ef78b0c326a4a/vcspull-1.9.0.post1.tar.gz
+[2023-05-14 18:47:29] INFO root fetch - processPackages [linkrot]: Downloading https://files.pythonhosted.org/packages/19/97/0e7c1afca540749b9ab94fcfc3c7e3873b11025a86de20fa9e2defcfee26/linkrot-3.9.5.tar.gz
+[2023-05-14 18:47:29] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2023-05-14 18:47:29] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-0.1.84.tar.gz tmp/pypipr-0.1.9.tar.gz --markdown 20230514/p/pypipr/0.1.84-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 18:47:29] INFO root fetch - processPackages [speech-collator]: executing diffoscope
+[2023-05-14 18:47:29] INFO root fetch - processPackages [speech-collator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speech_collator-0.1.2.tar.gz tmp/speech_collator-0.1.3.tar.gz --markdown 20230514/s/speech-collator/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-14 18:47:29] INFO root fetch - processPackages [z4d-certified-devices]: Downloading https://files.pythonhosted.org/packages/00/bb/43cdae6a15c6ee7c145edbe4c7b7b538fd6fba736b2444c46c9069611577/z4d-certified-devices-2.61.tar.gz
+[2023-05-14 18:47:30] INFO root fetch - processPackages [traversaal]: Downloading https://files.pythonhosted.org/packages/c4/8b/7fc296f27c31c25a6ffbacb3b95135fae0b52886c633667dd6de1df2b33a/traversaal-0.56-py3-none-any.whl
+[2023-05-14 18:47:30] INFO root fetch - processPackages [z4d-certified-devices]: executing diffoscope
+[2023-05-14 18:47:30] INFO root fetch - processPackages [z4d-certified-devices]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/z4d-certified-devices-2.60.tar.gz tmp/z4d-certified-devices-2.61.tar.gz --markdown 20230514/z/z4d-certified-devices/2.60-2.61/diff.md --exclude *.pyd
+[2023-05-14 18:47:30] INFO root fetch - processPackages [ankipandas]: Downloading https://files.pythonhosted.org/packages/2b/d1/d34daa4f12f83cf520970fbd1c1d368205a21a04c9fb6e73734af32bfbd3/ankipandas-0.3.9.tar.gz
+[2023-05-14 18:47:30] INFO root fetch - processPackages [traversaal]: executing diffoscope
+[2023-05-14 18:47:30] INFO root fetch - processPackages [traversaal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traversaal-0.55.tar.gz tmp/traversaal-0.56-py3-none-any.whl.zip --markdown 20230514/t/traversaal/0.55-0.56/diff.md --exclude *.pyd
+[2023-05-14 18:47:30] INFO root fetch - processPackages [linkrot]: Downloading https://files.pythonhosted.org/packages/91/d1/47297fdca0ef6137755c9d091179633fa21762aeecd9f5fe3329cea46bba/linkrot-3.9.9.tar.gz
+[2023-05-14 18:47:30] INFO root fetch - processPackages [neopolitan]: Downloading https://files.pythonhosted.org/packages/00/65/b41ff523baaf805c0854f263e01e6607c4304683730b1e063ca7deb47d55/neopolitan-0.1.9.tar.gz
+[2023-05-14 18:47:30] INFO root fetch - processPackages [vcspull]: Downloading https://files.pythonhosted.org/packages/49/bc/7d75a2dd01b33e2f6b0222a1e9c5ac1958ff1f2b43139e375961794558a1/vcspull-1.9.0.post2.tar.gz
+[2023-05-14 18:47:30] INFO root fetch - processPackages [linkrot]: executing diffoscope
+[2023-05-14 18:47:30] INFO root fetch - processPackages [linkrot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/linkrot-3.9.5.tar.gz tmp/linkrot-3.9.9.tar.gz --markdown 20230514/l/linkrot/3.9.5-3.9.9/diff.md --exclude *.pyd
+[2023-05-14 18:47:30] INFO root fetch - processPackages [neopolitan]: executing diffoscope
+[2023-05-14 18:47:30] INFO root fetch - processPackages [neopolitan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neopolitan-0.1.8.tar.gz tmp/neopolitan-0.1.9.tar.gz --markdown 20230514/n/neopolitan/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 18:47:30] INFO root fetch - processPackages [ankipandas]: executing diffoscope
+[2023-05-14 18:47:30] INFO root fetch - processPackages [ankipandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ankipandas-0.3.8.tar.gz tmp/ankipandas-0.3.9.tar.gz --markdown 20230514/a/ankipandas/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-14 18:47:30] INFO root fetch - processPackages [vcspull]: executing diffoscope
+[2023-05-14 18:47:30] INFO root fetch - processPackages [vcspull]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vcspull-1.9.0.post1.tar.gz tmp/vcspull-1.9.0.post2.tar.gz --markdown 20230514/v/vcspull/1.9.0.post1-1.9.0.post2/diff.md --exclude *.pyd
+[2023-05-14 18:47:30] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: Start processing: databend
+[2023-05-14 18:47:30] INFO root fetch - main [MainThread]: End processing [local-recruitment-employer-python-backend]: success
+[2023-05-14 18:47:30] INFO root fetch - processPackages [databend]: New version: [1.1.38] Old Version: [1.1.37]
+[2023-05-14 18:47:31] INFO root fetch - processPackages [gcsaws]: Start processing: rexactor
+[2023-05-14 18:47:31] INFO root fetch - main [MainThread]: End processing [gcsaws]: success
+[2023-05-14 18:47:31] WARNING root fetch - processPackages [rexactor]: Skipping, unable to determine old version
+[2023-05-14 18:47:31] INFO root fetch - main [MainThread]: End processing [rexactor] error
+[2023-05-14 18:47:31] INFO root fetch - processPackages [databend]: Downloading https://files.pythonhosted.org/packages/58/1b/54f479bb79708685b57366bda10ebd88d305ea2390716aadd77585b00cc5/databend-1.1.38.tar.gz
+[2023-05-14 18:47:31] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2023-05-14 18:47:31] INFO root fetch - processPackages [databend]: executing diffoscope
+[2023-05-14 18:47:31] INFO root fetch - processPackages [databend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databend-1.1.37.tar.gz tmp/databend-1.1.38.tar.gz --markdown 20230514/d/databend/1.1.37-1.1.38/diff.md --exclude *.pyd
+[2023-05-14 18:47:31] INFO root fetch - main [MainThread]: End processing [traversaal]: success
+[2023-05-14 18:47:31] INFO root fetch - main [MainThread]: End processing [speech-collator]: success
+[2023-05-14 18:47:31] INFO root fetch - main [MainThread]: End processing [linkrot]: success
+[2023-05-14 18:47:31] INFO root fetch - main [MainThread]: End processing [neopolitan]: success
+[2023-05-14 18:47:32] INFO root fetch - main [MainThread]: End processing [vcspull]: success
+[2023-05-14 18:47:32] INFO root fetch - main [MainThread]: End processing [ankipandas]: success
+[2023-05-14 18:47:35] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
+[2023-05-14 18:48:12] INFO root fetch - main [MainThread]: End processing [databend]: success
+[2023-05-14 18:48:12] INFO root fetch - main [MainThread]: Store serial: [18098548]
