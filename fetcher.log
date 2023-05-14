@@ -4461,3 +4461,42 @@
 [2023-05-14 11:27:46] INFO root fetch - main [MainThread]: End processing [flexrunner]: success
 [2023-05-14 11:27:46] INFO root fetch - main [MainThread]: End processing [anjani]: success
 [2023-05-14 11:27:46] INFO root fetch - main [MainThread]: Store serial: [18096078]
+[2023-05-14 11:32:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096078]
+[2023-05-14 11:32:56] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 11:32:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wks
+[2023-05-14 11:32:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: md2html-phuker
+[2023-05-14 11:32:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyfixest
+[2023-05-14 11:32:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: always-updates
+[2023-05-14 11:32:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: tulliolo.bip39
+[2023-05-14 11:32:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: quart-flask-patch
+[2023-05-14 11:32:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: local-recruitment-employer-python-backend
+[2023-05-14 11:32:56] INFO root fetch - processPackages [md2html-phuker]: New version: [0.5.2] Old Version: [0.5.1]
+[2023-05-14 11:32:56] INFO root fetch - processPackages [wks]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-14 11:32:56] INFO root fetch - processPackages [pyfixest]: New version: [0.5.2] Old Version: [0.3.4]
+[2023-05-14 11:32:56] WARNING root fetch - processPackages [quart-flask-patch]: Skipping, unable to determine old version
+[2023-05-14 11:32:56] INFO root fetch - main [MainThread]: End processing [quart-flask-patch] error
+[2023-05-14 11:32:56] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-05-14 11:32:56] WARNING root fetch - processPackages [tulliolo.bip39]: Skipping, unable to determine old version
+[2023-05-14 11:32:56] INFO root fetch - main [MainThread]: End processing [tulliolo.bip39] error
+[2023-05-14 11:32:56] INFO root fetch - processPackages [always-updates]: New version: [99.9] Old Version: [99.8]
+[2023-05-14 11:32:57] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: executing diffoscope
+[2023-05-14 11:32:57] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local-recruitment-employer-python-backend-0.0.7.tar.gz tmp/local-recruitment-employer-python-backend-0.0.9.tar.gz --markdown 20230514/l/local-recruitment-employer-python-backend/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 11:32:57] INFO root fetch - processPackages [md2html-phuker]: Downloading https://files.pythonhosted.org/packages/5e/1f/fcde761c335b10567b15f8cfd98ac08878f8600923580906b11b3a53fa10/md2html-phuker-0.5.1.tar.gz
+[2023-05-14 11:32:57] INFO root fetch - processPackages [pyfixest]: Downloading https://files.pythonhosted.org/packages/96/ac/f6827857a9c59741f6b23d7c5a2c86b29174913f3945a65ce7e1fad8bcce/pyfixest-0.3.4.tar.gz
+[2023-05-14 11:32:57] INFO root fetch - processPackages [always-updates]: executing diffoscope
+[2023-05-14 11:32:57] INFO root fetch - processPackages [always-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/always_updates-99.8.tar.gz tmp/always_updates-99.9.tar.gz --markdown 20230514/a/always-updates/99.8-99.9/diff.md --exclude *.pyd
+[2023-05-14 11:32:57] INFO root fetch - processPackages [wks]: Downloading https://files.pythonhosted.org/packages/5f/0b/71a938d75221e40a2bd068424956c4254ce97439640745337dc2016feb47/wks-0.2.9.tar.gz
+[2023-05-14 11:32:57] INFO root fetch - processPackages [wks]: executing diffoscope
+[2023-05-14 11:32:57] INFO root fetch - processPackages [wks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/wks-0.2.8.tar.gz tmp/wks-0.2.9.tar.gz --markdown 20230514/w/wks/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-14 11:32:57] INFO root fetch - processPackages [pyfixest]: Downloading https://files.pythonhosted.org/packages/0b/b1/e3feca9537c9174186b777a1de224c9f1cb06e1833e76d2c55bbee278fcd/pyfixest-0.5.2.tar.gz
+[2023-05-14 11:32:57] INFO root fetch - processPackages [md2html-phuker]: Downloading https://files.pythonhosted.org/packages/d5/30/a70a9f432b8d1151395dd4d600d6e82354fd15288306cc3080a933527193/md2html-phuker-0.5.2.tar.gz
+[2023-05-14 11:32:57] INFO root fetch - processPackages [pyfixest]: executing diffoscope
+[2023-05-14 11:32:57] INFO root fetch - processPackages [pyfixest]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfixest-0.3.4.tar.gz tmp/pyfixest-0.5.2.tar.gz --markdown 20230514/p/pyfixest/0.3.4-0.5.2/diff.md --exclude *.pyd
+[2023-05-14 11:32:57] INFO root fetch - processPackages [md2html-phuker]: executing diffoscope
+[2023-05-14 11:32:57] INFO root fetch - processPackages [md2html-phuker]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/md2html-phuker-0.5.1.tar.gz tmp/md2html-phuker-0.5.2.tar.gz --markdown 20230514/m/md2html-phuker/0.5.1-0.5.2/diff.md --exclude *.pyd
+[2023-05-14 11:32:58] INFO root fetch - main [MainThread]: End processing [always-updates]: success
+[2023-05-14 11:32:58] INFO root fetch - main [MainThread]: End processing [local-recruitment-employer-python-backend]: success
+[2023-05-14 11:32:58] INFO root fetch - main [MainThread]: End processing [pyfixest]: success
+[2023-05-14 11:32:58] INFO root fetch - main [MainThread]: End processing [wks]: success
+[2023-05-14 11:32:58] INFO root fetch - main [MainThread]: End processing [md2html-phuker]: success
+[2023-05-14 11:32:58] INFO root fetch - main [MainThread]: Store serial: [18096108]
