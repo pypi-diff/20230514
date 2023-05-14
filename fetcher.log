@@ -2640,3 +2640,22 @@
 [2023-05-14 06:51:29] INFO root fetch - main [MainThread]: End processing [polarismesh-specification]: success
 [2023-05-14 06:51:30] INFO root fetch - main [MainThread]: End processing [aioqui]: success
 [2023-05-14 06:51:30] INFO root fetch - main [MainThread]: Store serial: [18094995]
+[2023-05-14 06:56:34] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094995]
+[2023-05-14 06:56:39] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-14 06:56:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: snakesays
+[2023-05-14 06:56:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: configzen
+[2023-05-14 06:56:39] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: Lshengpackage
+[2023-05-14 06:56:39] WARNING root fetch - processPackages [snakesays]: Skipping, unable to determine old version
+[2023-05-14 06:56:39] INFO root fetch - main [MainThread]: End processing [snakesays] error
+[2023-05-14 06:56:39] INFO root fetch - processPackages [Lshengpackage]: New version: [0.3.6] Old Version: [0.3.5]
+[2023-05-14 06:56:39] INFO root fetch - processPackages [configzen]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-14 06:56:39] INFO root fetch - processPackages [Lshengpackage]: Downloading https://files.pythonhosted.org/packages/44/e9/c0994279df8c5f3ab02c5977b58ced4ce6fc12ae9934291714f7879face0/Lshengpackage-0.3.5.tar.gz
+[2023-05-14 06:56:39] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/bc/60/6a90b9286e75fc71ee180dfa7f246e6dfff77d692da24a97dca2c6375f41/configzen-0.1.4.tar.gz
+[2023-05-14 06:56:39] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-14 06:56:39] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.3.tar.gz tmp/configzen-0.1.4.tar.gz --markdown 20230514/c/configzen/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-14 06:56:40] INFO root fetch - processPackages [Lshengpackage]: Downloading https://files.pythonhosted.org/packages/96/bd/c26aa6a3afe90463d9bd46628b71bfe663302230702ed31bfc2fc3ece435/Lshengpackage-0.3.6.tar.gz
+[2023-05-14 06:56:40] INFO root fetch - processPackages [Lshengpackage]: executing diffoscope
+[2023-05-14 06:56:40] INFO root fetch - processPackages [Lshengpackage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Lshengpackage-0.3.5.tar.gz tmp/Lshengpackage-0.3.6.tar.gz --markdown 20230514/L/Lshengpackage/0.3.5-0.3.6/diff.md --exclude *.pyd
+[2023-05-14 06:56:40] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-14 06:56:41] INFO root fetch - main [MainThread]: End processing [Lshengpackage]: success
+[2023-05-14 06:56:41] INFO root fetch - main [MainThread]: Store serial: [18095006]
