@@ -8934,3 +8934,61 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 19:40:46] INFO root fetch - main [MainThread]: End processing [cliconfig]: success
 [2023-05-14 19:40:51] INFO root fetch - main [MainThread]: End processing [fpm]: success
 [2023-05-14 19:40:51] INFO root fetch - main [MainThread]: Store serial: [18098792]
+[2023-05-14 19:45:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098792]
+[2023-05-14 19:46:01] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-14 19:46:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: py-seasnake
+[2023-05-14 19:46:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: statinf
+[2023-05-14 19:46:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: astroid
+[2023-05-14 19:46:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tmux-conf
+[2023-05-14 19:46:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: emi-calculator
+[2023-05-14 19:46:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: SuperDuperEasyAuth
+[2023-05-14 19:46:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: sln1550hello
+[2023-05-14 19:46:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: xpip-python
+[2023-05-14 19:46:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pro-sports
+[2023-05-14 19:46:01] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: get-github-code
+[2023-05-14 19:46:01] INFO root fetch - processPackages [py-seasnake]: New version: [0.3.2] Old Version: [0.3.1]
+[2023-05-14 19:46:01] WARNING root fetch - processPackages [xpip-python]: Skipping, unable to determine old version
+[2023-05-14 19:46:01] INFO root fetch - main [MainThread]: End processing [xpip-python] error
+[2023-05-14 19:46:01] INFO root fetch - processPackages [statinf]: New version: [1.2.6] Old Version: [1.2.5]
+[2023-05-14 19:46:01] INFO root fetch - processPackages [astroid]: New version: [3.0.0a2] Old Version: [3.0.0a1]
+[2023-05-14 19:46:01] INFO root fetch - processPackages [emi-calculator]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-14 19:46:01] INFO root fetch - processPackages [SuperDuperEasyAuth]: New version: [0.2.1] Old Version: [0.1.1]
+[2023-05-14 19:46:01] INFO root fetch - processPackages [sln1550hello]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-14 19:46:01] INFO root fetch - processPackages [tmux-conf]: New version: [0.15.9] Old Version: [0.15.8]
+[2023-05-14 19:46:01] WARNING root fetch - processPackages [get-github-code]: Skipping, unable to determine old version
+[2023-05-14 19:46:01] INFO root fetch - main [MainThread]: End processing [get-github-code] error
+[2023-05-14 19:46:01] WARNING root fetch - processPackages [pro-sports]: Skipping, unable to determine old version
+[2023-05-14 19:46:01] INFO root fetch - main [MainThread]: End processing [pro-sports] error
+[2023-05-14 19:46:01] INFO root fetch - processPackages [py-seasnake]: Downloading https://files.pythonhosted.org/packages/6e/b6/4476a73beee9cc017eec42e900d969c366b13feb7f7cd04dee053825ff32/py_seasnake-0.3.1.tar.gz
+[2023-05-14 19:46:01] INFO root fetch - processPackages [astroid]: Downloading https://files.pythonhosted.org/packages/cd/b2/a08df10220738c738c689d8c4d57a32b0384a1b151c665e36aa8578b49c1/astroid-3.0.0a1.tar.gz
+[2023-05-14 19:46:01] INFO root fetch - processPackages [statinf]: Downloading https://files.pythonhosted.org/packages/20/c6/af730db71caf0954c0dfabc9be2872ffef56763935fb65589744e0957d93/statinf-1.2.5.tar.gz
+[2023-05-14 19:46:01] INFO root fetch - processPackages [sln1550hello]: Downloading https://files.pythonhosted.org/packages/03/c6/2f4559f2c4fe00e17f6f0adb7b9f5a957d9af3a498d8fa004bb038e243c3/sln1550hello-0.0.2.tar.gz
+[2023-05-14 19:46:01] INFO root fetch - processPackages [tmux-conf]: Downloading https://files.pythonhosted.org/packages/59/d4/6821fa494e9237b1073962001599abdc5cf77667e26818956917d13c43ae/tmux_conf-0.15.8.tar.gz
+[2023-05-14 19:46:01] INFO root fetch - processPackages [SuperDuperEasyAuth]: Downloading https://files.pythonhosted.org/packages/34/21/2268b13475591ff31b1fbd42992d16afa05fdfc133aedf6f1883d1034fe9/SuperDuperEasyAuth-0.2.1.tar.gz
+[2023-05-14 19:46:01] INFO root fetch - processPackages [py-seasnake]: Downloading https://files.pythonhosted.org/packages/29/08/67c5dd2a23592ae0211a4179637331fc4a0a4eacd84f44b06975bfb34be5/py_seasnake-0.3.2.tar.gz
+[2023-05-14 19:46:01] INFO root fetch - processPackages [emi-calculator]: executing diffoscope
+[2023-05-14 19:46:01] INFO root fetch - processPackages [emi-calculator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emi_calculator-1.0.1.tar.gz tmp/emi_calculator-1.0.2.tar.gz --markdown 20230514/e/emi-calculator/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-14 19:46:01] INFO root fetch - processPackages [sln1550hello]: Downloading https://files.pythonhosted.org/packages/65/f8/afa26e2701e8e671d7b6d1dd8977e0b7400c5848709e8c4a93717be0c765/sln1550hello-0.0.3.tar.gz
+[2023-05-14 19:46:01] INFO root fetch - processPackages [statinf]: Downloading https://files.pythonhosted.org/packages/83/f1/2455a6b055ecb7e40cc54882ebe4786817a1e9e7ffff38d1cc2322c2fa35/statinf-1.2.6.tar.gz
+[2023-05-14 19:46:01] INFO root fetch - processPackages [SuperDuperEasyAuth]: executing diffoscope
+[2023-05-14 19:46:01] INFO root fetch - processPackages [SuperDuperEasyAuth]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SuperDuperEasyAuth-0.1.1.tar.gz tmp/SuperDuperEasyAuth-0.2.1.tar.gz --markdown 20230514/S/SuperDuperEasyAuth/0.1.1-0.2.1/diff.md --exclude *.pyd
+[2023-05-14 19:46:01] INFO root fetch - processPackages [py-seasnake]: executing diffoscope
+[2023-05-14 19:46:01] INFO root fetch - processPackages [py-seasnake]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_seasnake-0.3.1.tar.gz tmp/py_seasnake-0.3.2.tar.gz --markdown 20230514/p/py-seasnake/0.3.1-0.3.2/diff.md --exclude *.pyd
+[2023-05-14 19:46:01] INFO root fetch - processPackages [astroid]: Downloading https://files.pythonhosted.org/packages/71/db/2048cea6f676a832bc9e1cc558fe45df460b75be328d15f851e87ebcaf97/astroid-3.0.0a2.tar.gz
+[2023-05-14 19:46:01] INFO root fetch - processPackages [sln1550hello]: executing diffoscope
+[2023-05-14 19:46:01] INFO root fetch - processPackages [sln1550hello]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sln1550hello-0.0.2.tar.gz tmp/sln1550hello-0.0.3.tar.gz --markdown 20230514/s/sln1550hello/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-14 19:46:01] INFO root fetch - processPackages [statinf]: executing diffoscope
+[2023-05-14 19:46:01] INFO root fetch - processPackages [statinf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/statinf-1.2.5.tar.gz tmp/statinf-1.2.6.tar.gz --markdown 20230514/s/statinf/1.2.5-1.2.6/diff.md --exclude *.pyd
+[2023-05-14 19:46:02] INFO root fetch - processPackages [tmux-conf]: Downloading https://files.pythonhosted.org/packages/7b/16/debfa7205fdf6f06f3c5f776514a0fcf2e42726c7f88caaa24157398a5e6/tmux_conf-0.15.9.tar.gz
+[2023-05-14 19:46:02] INFO root fetch - processPackages [astroid]: executing diffoscope
+[2023-05-14 19:46:02] INFO root fetch - processPackages [astroid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/astroid-3.0.0a1.tar.gz tmp/astroid-3.0.0a2.tar.gz --markdown 20230514/a/astroid/3.0.0a1-3.0.0a2/diff.md --exclude *.pyd
+[2023-05-14 19:46:02] INFO root fetch - processPackages [tmux-conf]: executing diffoscope
+[2023-05-14 19:46:02] INFO root fetch - processPackages [tmux-conf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tmux_conf-0.15.8.tar.gz tmp/tmux_conf-0.15.9.tar.gz --markdown 20230514/t/tmux-conf/0.15.8-0.15.9/diff.md --exclude *.pyd
+[2023-05-14 19:46:03] INFO root fetch - main [MainThread]: End processing [sln1550hello]: success
+[2023-05-14 19:46:03] INFO root fetch - main [MainThread]: End processing [emi-calculator]: success
+[2023-05-14 19:46:03] INFO root fetch - main [MainThread]: End processing [SuperDuperEasyAuth]: success
+[2023-05-14 19:46:03] INFO root fetch - main [MainThread]: End processing [py-seasnake]: success
+[2023-05-14 19:46:03] INFO root fetch - main [MainThread]: End processing [tmux-conf]: success
+[2023-05-14 19:46:04] INFO root fetch - main [MainThread]: End processing [statinf]: success
+[2023-05-14 19:46:04] INFO root fetch - main [MainThread]: End processing [astroid]: success
+[2023-05-14 19:46:04] INFO root fetch - main [MainThread]: Store serial: [18098828]
