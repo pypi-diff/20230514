@@ -8802,3 +8802,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 19:25:09] INFO root fetch - main [MainThread]: End processing [slpkg]: success
 [2023-05-14 19:25:09] INFO root fetch - main [MainThread]: End processing [overhave]: success
 [2023-05-14 19:25:09] INFO root fetch - main [MainThread]: Store serial: [18098723]
+[2023-05-14 19:30:14] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098723]
+[2023-05-14 19:30:19] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-14 19:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyadlml
+[2023-05-14 19:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: crazy-thursday
+[2023-05-14 19:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pylebedev
+[2023-05-14 19:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mixture-of-attention
+[2023-05-14 19:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pygim-common
+[2023-05-14 19:30:19] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: jutility
+[2023-05-14 19:30:19] INFO root fetch - processPackages [pyadlml]: New version: [0.0.7.9a0] Old Version: [0.0.7.8a0]
+[2023-05-14 19:30:19] WARNING root fetch - processPackages [mixture-of-attention]: Skipping, unable to determine old version
+[2023-05-14 19:30:19] INFO root fetch - main [MainThread]: End processing [mixture-of-attention] error
+[2023-05-14 19:30:19] INFO root fetch - processPackages [crazy-thursday]: New version: [2023.5.9.1] Old Version: [2023.5.9.0]
+[2023-05-14 19:30:19] INFO root fetch - processPackages [jutility]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-14 19:30:19] INFO root fetch - processPackages [pylebedev]: New version: [0.2.0.0] Old Version: [0.1.1.2]
+[2023-05-14 19:30:19] INFO root fetch - processPackages [pygim-common]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-14 19:30:19] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/b8/8e/43365d018b0f1833776d94dea6cbc54eadb59a1f178b85cad521c695b3a5/crazy-thursday-2023.5.9.0.tar.gz
+[2023-05-14 19:30:19] INFO root fetch - processPackages [pyadlml]: executing diffoscope
+[2023-05-14 19:30:19] INFO root fetch - processPackages [pyadlml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyadlml-0.0.7.8a0.tar.gz tmp/pyadlml-0.0.7.9a0.tar.gz --markdown 20230514/p/pyadlml/0.0.7.8a0-0.0.7.9a0/diff.md --exclude *.pyd
+[2023-05-14 19:30:19] INFO root fetch - processPackages [pygim-common]: Downloading https://files.pythonhosted.org/packages/47/de/314279d58f644687584e04e20086f49306243cb3e3a6ac09a8834766d600/pygim_common-0.1.0-py3-none-any.whl
+[2023-05-14 19:30:19] INFO root fetch - processPackages [jutility]: Downloading https://files.pythonhosted.org/packages/da/93/3ff038adf574c29a3bde326b489ff3aa11f54af437ff8abc1a8eb0f16534/jutility-0.0.4.tar.gz
+[2023-05-14 19:30:19] INFO root fetch - processPackages [pylebedev]: Downloading https://files.pythonhosted.org/packages/6a/17/39ea62838b83372b5f9c51e9778db7a7c74d974a0ac9d192d1b2ebd895e6/pylebedev-0.1.1.2-py3-none-any.whl
+[2023-05-14 19:30:19] INFO root fetch - processPackages [crazy-thursday]: Downloading https://files.pythonhosted.org/packages/3f/90/ef44e7da09a509715fa71be220e4b092d4cb0821620f0469b6591825f25f/crazy-thursday-2023.5.9.1.tar.gz
+[2023-05-14 19:30:19] INFO root fetch - processPackages [jutility]: executing diffoscope
+[2023-05-14 19:30:19] INFO root fetch - processPackages [jutility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jutility-0.0.3.tar.gz tmp/jutility-0.0.4.tar.gz --markdown 20230514/j/jutility/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-14 19:30:19] INFO root fetch - processPackages [crazy-thursday]: executing diffoscope
+[2023-05-14 19:30:19] INFO root fetch - processPackages [crazy-thursday]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/crazy-thursday-2023.5.9.0.tar.gz tmp/crazy-thursday-2023.5.9.1.tar.gz --markdown 20230514/c/crazy-thursday/2023.5.9.0-2023.5.9.1/diff.md --exclude *.pyd
+[2023-05-14 19:30:19] INFO root fetch - processPackages [pygim-common]: Downloading https://files.pythonhosted.org/packages/f3/03/f96fba4306a22c740be0425f983c9c4d0ac6287a63b8dcf5bc0afc1dba14/pygim_common-0.2.0-py3-none-any.whl
+[2023-05-14 19:30:19] INFO root fetch - processPackages [pylebedev]: Downloading https://files.pythonhosted.org/packages/3c/7e/f28a50890c119129bc59eb8a1f8b4f3cc0bb33ce3c4131fc51885a23d7dd/pylebedev-0.2.0.0-py3-none-any.whl
+[2023-05-14 19:30:19] INFO root fetch - processPackages [pygim-common]: executing diffoscope
+[2023-05-14 19:30:19] INFO root fetch - processPackages [pygim-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pygim_common-0.1.0-py3-none-any.whl.zip tmp/pygim_common-0.2.0-py3-none-any.whl.zip --markdown 20230514/p/pygim-common/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-14 19:30:19] INFO root fetch - processPackages [pylebedev]: executing diffoscope
+[2023-05-14 19:30:19] INFO root fetch - processPackages [pylebedev]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylebedev-0.1.1.2-py3-none-any.whl.zip tmp/pylebedev-0.2.0.0-py3-none-any.whl.zip --markdown 20230514/p/pylebedev/0.1.1.2-0.2.0.0/diff.md --exclude *.pyd
+[2023-05-14 19:30:20] INFO root fetch - main [MainThread]: End processing [jutility]: success
+[2023-05-14 19:30:20] INFO root fetch - main [MainThread]: End processing [crazy-thursday]: success
+[2023-05-14 19:30:21] INFO root fetch - main [MainThread]: End processing [pylebedev]: success
+[2023-05-14 19:30:21] INFO root fetch - main [MainThread]: End processing [pygim-common]: success
+[2023-05-14 19:30:22] INFO root fetch - main [MainThread]: End processing [pyadlml]: success
+[2023-05-14 19:30:22] INFO root fetch - main [MainThread]: Store serial: [18098741]
