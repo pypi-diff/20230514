@@ -7581,3 +7581,46 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 17:09:52] INFO root fetch - main [MainThread]: End processing [aioqui]: success
 [2023-05-14 17:09:55] INFO root fetch - main [MainThread]: End processing [timm]: success
 [2023-05-14 17:09:55] INFO root fetch - main [MainThread]: Store serial: [18097942]
+[2023-05-14 17:14:59] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18097942]
+[2023-05-14 17:15:04] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-14 17:15:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: classparse
+[2023-05-14 17:15:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ecidacli
+[2023-05-14 17:15:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: code-loader
+[2023-05-14 17:15:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyVLMP
+[2023-05-14 17:15:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: papara
+[2023-05-14 17:15:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vollseg
+[2023-05-14 17:15:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: SeisMonitor
+[2023-05-14 17:15:04] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: certora-cli-alpha-roy-CERT-1955-assertHits
+[2023-05-14 17:15:04] INFO root fetch - processPackages [ecidacli]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 17:15:04] WARNING root fetch - processPackages [papara]: Skipping, unable to determine old version
+[2023-05-14 17:15:04] INFO root fetch - processPackages [code-loader]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-14 17:15:04] INFO root fetch - main [MainThread]: End processing [papara] error
+[2023-05-14 17:15:04] WARNING root fetch - processPackages [classparse]: Skipping, unable to determine old version
+[2023-05-14 17:15:04] INFO root fetch - main [MainThread]: End processing [classparse] error
+[2023-05-14 17:15:04] INFO root fetch - processPackages [pyVLMP]: New version: [1.0.5] Old Version: [1.0.4]
+[2023-05-14 17:15:04] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: New version: [20230514.13.35.499127] Old Version: [20230514.10.59.61006]
+[2023-05-14 17:15:04] INFO root fetch - processPackages [SeisMonitor]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 17:15:04] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-05-14 17:15:04] INFO root fetch - processPackages [ecidacli]: executing diffoscope
+[2023-05-14 17:15:04] INFO root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Downloading https://files.pythonhosted.org/packages/d2/f4/f80d6bdda2c08b09ed1a04f869f7055d8b2240f9df410f53d308805bb003/certora-cli-alpha-roy-CERT-1955-assertHits-20230514.10.59.61006.tar.gz
+[2023-05-14 17:15:04] INFO root fetch - processPackages [ecidacli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ecidacli-0.0.8.tar.gz tmp/ecidacli-0.0.9.tar.gz --markdown 20230514/e/ecidacli/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 17:15:04] INFO root fetch - processPackages [SeisMonitor]: Downloading https://files.pythonhosted.org/packages/d2/90/401f30a3c4b26b4f049f3814c988ce2135a1f4a2d9e649d0f7e2ebdb814b/SeisMonitor-0.0.8.tar.gz
+[2023-05-14 17:15:04] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-05-14 17:15:04] INFO root fetch - processPackages [code-loader]: executing diffoscope
+[2023-05-14 17:15:04] INFO root fetch - processPackages [code-loader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/code-loader-0.2.8.tar.gz tmp/code-loader-0.2.9.tar.gz --markdown 20230514/c/code-loader/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-14 17:15:04] WARNING root fetch - processPackages [certora-cli-alpha-roy-CERT-1955-assertHits]: Skipping package: exceeds size limit 39431233>=10485760
+[2023-05-14 17:15:04] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-roy-CERT-1955-assertHits] error
+[2023-05-14 17:15:04] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-05-14 17:15:04] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-05-14 17:15:04] INFO root fetch - processPackages [pyVLMP]: Downloading https://files.pythonhosted.org/packages/32/9d/ceafb9e730e1546b49fc149672ce798b1721ca04b4141c218291fd4b07cd/pyVLMP-1.0.4.tar.gz
+[2023-05-14 17:15:04] INFO root fetch - processPackages [SeisMonitor]: Downloading https://files.pythonhosted.org/packages/54/fc/17a04b3842aad1daa791e1b1350e830ce0e062862d5b6861eaea868cfb0d/SeisMonitor-0.0.9.tar.gz
+[2023-05-14 17:15:04] INFO root fetch - processPackages [SeisMonitor]: executing diffoscope
+[2023-05-14 17:15:04] INFO root fetch - processPackages [SeisMonitor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SeisMonitor-0.0.8.tar.gz tmp/SeisMonitor-0.0.9.tar.gz --markdown 20230514/S/SeisMonitor/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 17:15:04] INFO root fetch - processPackages [pyVLMP]: Downloading https://files.pythonhosted.org/packages/8a/04/792d1e9d094aeca912d51dc6fe59f85fa9fc10104e1f6fd52a30fe7aa39e/pyVLMP-1.0.5.tar.gz
+[2023-05-14 17:15:04] INFO root fetch - processPackages [pyVLMP]: executing diffoscope
+[2023-05-14 17:15:04] INFO root fetch - processPackages [pyVLMP]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyVLMP-1.0.4.tar.gz tmp/pyVLMP-1.0.5.tar.gz --markdown 20230514/p/pyVLMP/1.0.4-1.0.5/diff.md --exclude *.pyd
+[2023-05-14 17:15:05] INFO root fetch - main [MainThread]: End processing [ecidacli]: success
+[2023-05-14 17:15:05] INFO root fetch - main [MainThread]: End processing [code-loader]: success
+[2023-05-14 17:15:05] INFO root fetch - main [MainThread]: End processing [SeisMonitor]: success
+[2023-05-14 17:15:05] INFO root fetch - main [MainThread]: End processing [pyVLMP]: success
+[2023-05-14 17:15:05] INFO root fetch - main [MainThread]: Store serial: [18097973]
