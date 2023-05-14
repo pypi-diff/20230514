@@ -5857,3 +5857,62 @@
 [2023-05-14 14:38:13] INFO root fetch - main [MainThread]: End processing [vnpy-tap]: success
 [2023-05-14 14:38:23] INFO root fetch - main [MainThread]: End processing [pypinyin-dict]: success
 [2023-05-14 14:38:23] INFO root fetch - main [MainThread]: Store serial: [18096993]
+[2023-05-14 14:43:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096993]
+[2023-05-14 14:43:31] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-14 14:43:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FreeMobileConso
+[2023-05-14 14:43:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: data2latex
+[2023-05-14 14:43:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cython-dev-tools
+[2023-05-14 14:43:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: milvus-ingestion
+[2023-05-14 14:43:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: callingcardstools
+[2023-05-14 14:43:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sj-tool
+[2023-05-14 14:43:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: autoeq
+[2023-05-14 14:43:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: xia-login-flask
+[2023-05-14 14:43:32] INFO root fetch - processPackages [FreeMobileConso]: New version: [0.1.0] Old Version: [0.0.3]
+[2023-05-14 14:43:32] INFO root fetch - processPackages [data2latex]: New version: [1.0.0] Old Version: [0.0.1]
+[2023-05-14 14:43:32] INFO root fetch - processPackages [callingcardstools]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-14 14:43:32] INFO root fetch - processPackages [autoeq]: New version: [3.0.0] Old Version: [2.2.0]
+[2023-05-14 14:43:32] INFO root fetch - processPackages [milvus-ingestion]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-14 14:43:32] INFO root fetch - processPackages [sj-tool]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-14 14:43:32] INFO root fetch - processPackages [cython-dev-tools]: New version: [0.6.7] Old Version: [0.6.6]
+[2023-05-14 14:43:32] INFO root fetch - processPackages [xia-login-flask]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 14:43:32] INFO root fetch - processPackages [FreeMobileConso]: Downloading https://files.pythonhosted.org/packages/48/60/370e78d376d80afc050c4f888cf0082d83ce0e8ff6014962a79386b5d230/FreeMobileConso-0.0.3.tar.gz
+[2023-05-14 14:43:32] INFO root fetch - processPackages [callingcardstools]: Downloading https://files.pythonhosted.org/packages/80/d0/e002a107c3135361923130e6f01d79271060982c80ce7544596c9015fe9b/callingcardstools-0.1.3.tar.gz
+[2023-05-14 14:43:32] INFO root fetch - processPackages [data2latex]: Downloading https://files.pythonhosted.org/packages/b0/bd/421df77261941a01a9f43d096233c54b15742061e619267f631bc496250a/data2latex-0.0.1.tar.gz
+[2023-05-14 14:43:32] INFO root fetch - processPackages [autoeq]: Downloading https://files.pythonhosted.org/packages/fe/4f/72942ce8a04f329da311725d8214ccdd13dc69b388d9e53a2792d3c53c01/autoeq-2.2.0.tar.gz
+[2023-05-14 14:43:32] INFO root fetch - processPackages [cython-dev-tools]: Downloading https://files.pythonhosted.org/packages/53/f1/d08b49baeaf625b00f25cfcd6c42b9887c458d5170961f386ae88aa56e86/cython_dev_tools-0.6.6-py3-none-any.whl
+[2023-05-14 14:43:32] INFO root fetch - processPackages [xia-login-flask]: Downloading https://files.pythonhosted.org/packages/fc/04/15ac640bec855409004504389a93f0c7fbb0fe7662f20d3f91808a624879/xia_login_flask-0.1.8-cp39-none-win_amd64.whl
+[2023-05-14 14:43:32] INFO root fetch - processPackages [sj-tool]: Downloading https://files.pythonhosted.org/packages/8b/f9/2af667f18b77632259bbdac6a0db7f33f9cbea38a7a1baa7d9979d9060d3/sj_tool-1.0.8-py3-none-any.whl
+[2023-05-14 14:43:32] INFO root fetch - processPackages [milvus-ingestion]: Downloading https://files.pythonhosted.org/packages/2e/04/ad0f8cfb7a222ce312525979b8e42f802bf5eee65073dfbddaf3b2e1e53b/milvus_ingestion-0.1.0.tar.gz
+[2023-05-14 14:43:32] INFO root fetch - processPackages [FreeMobileConso]: Downloading https://files.pythonhosted.org/packages/08/04/df26d795884891da7eb3fbe620e00730450a330c8c876906bde7eea3031d/FreeMobileConso-0.1.0.tar.gz
+[2023-05-14 14:43:32] INFO root fetch - processPackages [data2latex]: Downloading https://files.pythonhosted.org/packages/5c/36/e253b169817163b01b1b28e6305e5b3f5284dfff0a4f5a06ecdc188f22e7/data2latex-1.0.0.tar.gz
+[2023-05-14 14:43:32] INFO root fetch - processPackages [autoeq]: Downloading https://files.pythonhosted.org/packages/3f/48/287bfef16a8a3722f3a3478fd09038fcb25f9c932ababf939ca3ad386693/autoeq-3.0.0.tar.gz
+[2023-05-14 14:43:32] INFO root fetch - processPackages [FreeMobileConso]: executing diffoscope
+[2023-05-14 14:43:32] INFO root fetch - processPackages [FreeMobileConso]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FreeMobileConso-0.0.3.tar.gz tmp/FreeMobileConso-0.1.0.tar.gz --markdown 20230514/F/FreeMobileConso/0.0.3-0.1.0/diff.md --exclude *.pyd
+[2023-05-14 14:43:32] INFO root fetch - processPackages [cython-dev-tools]: Downloading https://files.pythonhosted.org/packages/b2/e3/fc67a878ee590805fab4283a0848608ffd749b3766c35a40dd732fe8b928/cython-dev-tools-0.6.7.tar.gz
+[2023-05-14 14:43:32] INFO root fetch - processPackages [milvus-ingestion]: Downloading https://files.pythonhosted.org/packages/0d/11/9dbf0980681c464db3417a964d3fc13306c4fcd35fedf1391341b4f313a3/milvus_ingestion-0.2.0.tar.gz
+[2023-05-14 14:43:32] INFO root fetch - processPackages [data2latex]: executing diffoscope
+[2023-05-14 14:43:32] INFO root fetch - processPackages [data2latex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/data2latex-0.0.1.tar.gz tmp/data2latex-1.0.0.tar.gz --markdown 20230514/d/data2latex/0.0.1-1.0.0/diff.md --exclude *.pyd
+[2023-05-14 14:43:32] INFO root fetch - processPackages [autoeq]: executing diffoscope
+[2023-05-14 14:43:32] INFO root fetch - processPackages [autoeq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autoeq-2.2.0.tar.gz tmp/autoeq-3.0.0.tar.gz --markdown 20230514/a/autoeq/2.2.0-3.0.0/diff.md --exclude *.pyd
+[2023-05-14 14:43:32] INFO root fetch - processPackages [cython-dev-tools]: executing diffoscope
+[2023-05-14 14:43:32] INFO root fetch - processPackages [cython-dev-tools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cython_dev_tools-0.6.6-py3-none-any.whl.zip tmp/cython-dev-tools-0.6.7.tar.gz --markdown 20230514/c/cython-dev-tools/0.6.6-0.6.7/diff.md --exclude *.pyd
+[2023-05-14 14:43:32] INFO root fetch - processPackages [milvus-ingestion]: executing diffoscope
+[2023-05-14 14:43:32] INFO root fetch - processPackages [milvus-ingestion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/milvus_ingestion-0.1.0.tar.gz tmp/milvus_ingestion-0.2.0.tar.gz --markdown 20230514/m/milvus-ingestion/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-14 14:43:32] INFO root fetch - processPackages [xia-login-flask]: Downloading https://files.pythonhosted.org/packages/87/09/47d7630eff3ea90ef97e71450ce85a6773e2224aac4d1604d31fc4743494/xia_login_flask-0.1.9-cp39-none-win_amd64.whl
+[2023-05-14 14:43:32] INFO root fetch - processPackages [sj-tool]: Downloading https://files.pythonhosted.org/packages/2e/c6/ed941d25e472426116ea2e75bd85fead4f6fad46d6238c6a7bc0c10801f1/sj_tool-1.0.9-py3-none-any.whl
+[2023-05-14 14:43:32] INFO root fetch - processPackages [xia-login-flask]: executing diffoscope
+[2023-05-14 14:43:32] INFO root fetch - processPackages [xia-login-flask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_login_flask-0.1.8-cp39-none-win_amd64.whl.zip tmp/xia_login_flask-0.1.9-cp39-none-win_amd64.whl.zip --markdown 20230514/x/xia-login-flask/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 14:43:32] INFO root fetch - processPackages [sj-tool]: executing diffoscope
+[2023-05-14 14:43:32] INFO root fetch - processPackages [sj-tool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sj_tool-1.0.8-py3-none-any.whl.zip tmp/sj_tool-1.0.9-py3-none-any.whl.zip --markdown 20230514/s/sj-tool/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-14 14:43:32] INFO root fetch - processPackages [callingcardstools]: Downloading https://files.pythonhosted.org/packages/e1/66/91566ebabd2c4b964aeced378d755d5eabc7a98a1328d03c464ab9541d26/callingcardstools-0.1.4.tar.gz
+[2023-05-14 14:43:33] INFO root fetch - processPackages [callingcardstools]: executing diffoscope
+[2023-05-14 14:43:33] INFO root fetch - processPackages [callingcardstools]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/callingcardstools-0.1.3.tar.gz tmp/callingcardstools-0.1.4.tar.gz --markdown 20230514/c/callingcardstools/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-14 14:43:33] INFO root fetch - main [MainThread]: End processing [FreeMobileConso]: success
+[2023-05-14 14:43:33] INFO root fetch - main [MainThread]: End processing [data2latex]: success
+[2023-05-14 14:43:34] INFO root fetch - main [MainThread]: End processing [cython-dev-tools]: success
+[2023-05-14 14:43:34] INFO root fetch - main [MainThread]: End processing [xia-login-flask]: success
+[2023-05-14 14:43:34] INFO root fetch - main [MainThread]: End processing [milvus-ingestion]: success
+[2023-05-14 14:43:34] INFO root fetch - main [MainThread]: End processing [sj-tool]: success
+[2023-05-14 14:43:34] INFO root fetch - main [MainThread]: End processing [autoeq]: success
+[2023-05-14 14:43:35] INFO root fetch - main [MainThread]: End processing [callingcardstools]: success
+[2023-05-14 14:43:35] INFO root fetch - main [MainThread]: Store serial: [18097016]
