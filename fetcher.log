@@ -1357,3 +1357,25 @@
 [2023-05-14 03:03:23] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
 [2023-05-14 03:03:24] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
 [2023-05-14 03:03:24] INFO root fetch - main [MainThread]: Store serial: [18094214]
+[2023-05-14 03:08:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094214]
+[2023-05-14 03:08:32] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-14 03:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: element-calcium-imaging
+[2023-05-14 03:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: langflow
+[2023-05-14 03:08:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bhv
+[2023-05-14 03:08:32] INFO root fetch - processPackages [element-calcium-imaging]: New version: [0.6.0] Old Version: [0.5.5]
+[2023-05-14 03:08:32] INFO root fetch - processPackages [langflow]: New version: [0.0.70] Old Version: [0.0.69]
+[2023-05-14 03:08:32] INFO root fetch - processPackages [bhv]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-14 03:08:33] INFO root fetch - processPackages [element-calcium-imaging]: Downloading https://files.pythonhosted.org/packages/9f/c6/6f0a66dc5a27975e301ed863a24e44847e061fda302f0a01d3117f46d9f4/element-calcium-imaging-0.5.5.tar.gz
+[2023-05-14 03:08:33] INFO root fetch - processPackages [langflow]: Downloading https://files.pythonhosted.org/packages/cd/8b/ae3a991107f6bcd98359cf6f813daa5df691639a635a8286e6d3eae5f9f7/langflow-0.0.70.tar.gz
+[2023-05-14 03:08:33] INFO root fetch - processPackages [bhv]: Downloading https://files.pythonhosted.org/packages/14/af/01f512658e83e874169f3027e0c4eb1bcf8c1927425708d88f8998a79b69/bhv-0.3.1.tar.gz
+[2023-05-14 03:08:33] INFO root fetch - processPackages [bhv]: executing diffoscope
+[2023-05-14 03:08:33] INFO root fetch - processPackages [bhv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bhv-0.3.0.tar.gz tmp/bhv-0.3.1.tar.gz --markdown 20230514/b/bhv/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-14 03:08:33] INFO root fetch - processPackages [element-calcium-imaging]: Downloading https://files.pythonhosted.org/packages/cd/66/7830d7a657fd2a711c4bd3bc4400be9289dd39b4d0cf5fbe86b45dba575b/element-calcium-imaging-0.6.0.tar.gz
+[2023-05-14 03:08:33] INFO root fetch - processPackages [element-calcium-imaging]: executing diffoscope
+[2023-05-14 03:08:33] INFO root fetch - processPackages [element-calcium-imaging]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/element-calcium-imaging-0.5.5.tar.gz tmp/element-calcium-imaging-0.6.0.tar.gz --markdown 20230514/e/element-calcium-imaging/0.5.5-0.6.0/diff.md --exclude *.pyd
+[2023-05-14 03:08:34] INFO root fetch - processPackages [langflow]: executing diffoscope
+[2023-05-14 03:08:34] INFO root fetch - processPackages [langflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langflow-0.0.69.tar.gz tmp/langflow-0.0.70.tar.gz --markdown 20230514/l/langflow/0.0.69-0.0.70/diff.md --exclude *.pyd
+[2023-05-14 03:08:34] INFO root fetch - main [MainThread]: End processing [element-calcium-imaging]: success
+[2023-05-14 03:08:40] INFO root fetch - main [MainThread]: End processing [langflow]: success
+[2023-05-14 03:09:11] INFO root fetch - main [MainThread]: End processing [bhv]: success
+[2023-05-14 03:09:11] INFO root fetch - main [MainThread]: Store serial: [18094223]
