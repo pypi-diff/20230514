@@ -2447,3 +2447,21 @@
 [2023-05-14 06:04:50] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
 [2023-05-14 06:04:50] INFO root fetch - main [MainThread]: End processing [enformer-pytorch]: success
 [2023-05-14 06:04:50] INFO root fetch - main [MainThread]: Store serial: [18094876]
+[2023-05-14 06:09:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094876]
+[2023-05-14 06:09:59] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-14 06:09:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: llama-cpp-python
+[2023-05-14 06:09:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: FakePipD
+[2023-05-14 06:09:59] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyrms
+[2023-05-14 06:09:59] WARNING root fetch - processPackages [FakePipD]: Skipping, unable to determine old version
+[2023-05-14 06:09:59] INFO root fetch - main [MainThread]: End processing [FakePipD] error
+[2023-05-14 06:09:59] INFO root fetch - processPackages [pyrms]: New version: [1.0.0] Old Version: [0.1.2]
+[2023-05-14 06:09:59] INFO root fetch - processPackages [llama-cpp-python]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 06:09:59] INFO root fetch - processPackages [pyrms]: Downloading https://files.pythonhosted.org/packages/dc/6b/0ee268b606676351477b6ff4f1c702ba590f91b0ff94e46f764edd4efdbc/pyrms-0.1.2.tar.gz
+[2023-05-14 06:10:00] INFO root fetch - processPackages [llama-cpp-python]: executing diffoscope
+[2023-05-14 06:10:00] INFO root fetch - processPackages [llama-cpp-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_cpp_python-0.1.8.tar.gz tmp/llama_cpp_python-0.1.9.tar.gz --markdown 20230514/l/llama-cpp-python/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 06:10:00] INFO root fetch - processPackages [pyrms]: Downloading https://files.pythonhosted.org/packages/91/2f/d22562a0a76fb2bd38aa784698bdc8babc130a083b21a60cfec69ba04483/pyrms-1.0.0.tar.gz
+[2023-05-14 06:10:00] INFO root fetch - processPackages [pyrms]: executing diffoscope
+[2023-05-14 06:10:00] INFO root fetch - processPackages [pyrms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrms-0.1.2.tar.gz tmp/pyrms-1.0.0.tar.gz --markdown 20230514/p/pyrms/0.1.2-1.0.0/diff.md --exclude *.pyd
+[2023-05-14 06:10:01] INFO root fetch - main [MainThread]: End processing [pyrms]: success
+[2023-05-14 06:10:01] INFO root fetch - main [MainThread]: End processing [llama-cpp-python]: success
+[2023-05-14 06:10:01] INFO root fetch - main [MainThread]: Store serial: [18094888]
