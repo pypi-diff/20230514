@@ -10925,3 +10925,121 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 22:53:07] INFO root fetch - main [MainThread]: End processing [pineboo]: success
 [2023-05-14 22:54:32] INFO root fetch - main [MainThread]: End processing [ezbeq]: success
 [2023-05-14 22:54:32] INFO root fetch - main [MainThread]: Store serial: [18099995]
+[2023-05-14 22:59:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18099995]
+[2023-05-14 22:59:44] INFO root fetch - main [MainThread]: Found 19 changed packages
+[2023-05-14 22:59:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: EclipsingBinaries
+[2023-05-14 22:59:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: embedders
+[2023-05-14 22:59:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: trojanzoo-sphinx-theme
+[2023-05-14 22:59:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: kynaylibs
+[2023-05-14 22:59:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: convert2vars
+[2023-05-14 22:59:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: graphscope
+[2023-05-14 22:59:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: requestRender
+[2023-05-14 22:59:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: graphscope-client
+[2023-05-14 22:59:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bytez
+[2023-05-14 22:59:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: opengpt4
+[2023-05-14 22:59:44] INFO root fetch - processPackages [requestRender]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 22:59:44] INFO root fetch - processPackages [embedders]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-14 22:59:44] INFO root fetch - processPackages [trojanzoo-sphinx-theme]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-14 22:59:44] INFO root fetch - processPackages [opengpt4]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-14 22:59:44] INFO root fetch - processPackages [convert2vars]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-14 22:59:44] INFO root fetch - processPackages [kynaylibs]: New version: [7.0.6] Old Version: [7.0.5]
+[2023-05-14 22:59:44] INFO root fetch - processPackages [EclipsingBinaries]: New version: [2.8.4a7] Old Version: [2.8.4a6]
+[2023-05-14 22:59:44] INFO root fetch - processPackages [bytez]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 22:59:44] INFO root fetch - processPackages [graphscope]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-14 22:59:44] INFO root fetch - processPackages [graphscope-client]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-14 22:59:44] INFO root fetch - processPackages [requestRender]: Downloading https://files.pythonhosted.org/packages/1e/6b/d8d2d1de30dfe2c8adaf75c4d380e640e79ccdf817a07f50ff41b8ad23a2/requestRender-0.0.1.tar.gz
+[2023-05-14 22:59:44] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-14 22:59:44] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.8.tar.gz tmp/bytez-0.1.9.tar.gz --markdown 20230514/b/bytez/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 22:59:44] INFO root fetch - processPackages [EclipsingBinaries]: Downloading https://files.pythonhosted.org/packages/f7/71/29c04848182629bf3b94f4cc09d391de080f26c02d0125a39f78bc7c2b8a/EclipsingBinaries-2.8.4a6.tar.gz
+[2023-05-14 22:59:44] INFO root fetch - processPackages [embedders]: Downloading https://files.pythonhosted.org/packages/57/47/dfa8b94bfccec115e38498cd0eca70b124eef6458da15f7bc9813010b072/embedders-0.1.3-py2.py3-none-any.whl
+[2023-05-14 22:59:44] INFO root fetch - processPackages [trojanzoo-sphinx-theme]: Downloading https://files.pythonhosted.org/packages/3c/64/cc5f4e44367c9e51a9872bcf52c3ee724d6d1b6404b4ab5e31b6f030955e/trojanzoo_sphinx_theme-1.0.1.tar.gz
+[2023-05-14 22:59:44] INFO root fetch - processPackages [opengpt4]: Downloading https://files.pythonhosted.org/packages/5a/16/39b660ad83071714fc797782fc8da80bb758cc8d3d1012f151f40fa945d7/opengpt4-0.1.1.tar.gz
+[2023-05-14 22:59:44] INFO root fetch - processPackages [kynaylibs]: Downloading https://files.pythonhosted.org/packages/7f/44/8b74fd7f233c5b1f3d367fa1845eec65c1188c92e9cfdb830dc585376714/kynaylibs-7.0.5.tar.gz
+[2023-05-14 22:59:44] INFO root fetch - processPackages [graphscope]: Downloading https://files.pythonhosted.org/packages/8a/cf/5bf5520d0cba1c8ac0bd824e70ade1c01fce914eeed5c7c210496c3f5906/graphscope-0.9.0-py2.py3-none-macosx_10_9_x86_64.whl
+[2023-05-14 22:59:44] INFO root fetch - processPackages [graphscope-client]: Downloading https://files.pythonhosted.org/packages/f7/53/c1ffb245684956bc30883fd2945f3e1677b030e8d69945fbfca28db2b46a/graphscope_client-0.9.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-14 22:59:44] INFO root fetch - processPackages [convert2vars]: Downloading https://files.pythonhosted.org/packages/01/b1/0070015ebfbcf4ae256e1cd9e833e46b6fd8ebd0b0e81fcff030a67bbf69/convert2vars-1.0.1.tar.gz
+[2023-05-14 22:59:44] WARNING root fetch - processPackages [graphscope-client]: Skipping package: exceeds size limit 48560616>=10485760
+[2023-05-14 22:59:44] INFO root fetch - processPackages [graphscope-client]: Start processing: gs-apps
+[2023-05-14 22:59:44] INFO root fetch - main [MainThread]: End processing [graphscope-client] error
+[2023-05-14 22:59:44] INFO root fetch - processPackages [gs-apps]: New version: [0.22.0a20230514] Old Version: [0.22.0a20230513]
+[2023-05-14 22:59:45] INFO root fetch - processPackages [requestRender]: Downloading https://files.pythonhosted.org/packages/90/f7/6168b5665be4d49df1eb5bf2f2b8f44e5c70f232011ffd7f63d6555f0557/requestRender-0.0.2-py3-none-any.whl
+[2023-05-14 22:59:45] INFO root fetch - processPackages [requestRender]: executing diffoscope
+[2023-05-14 22:59:45] INFO root fetch - processPackages [requestRender]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/requestRender-0.0.1.tar.gz tmp/requestRender-0.0.2-py3-none-any.whl.zip --markdown 20230514/r/requestRender/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 22:59:45] INFO root fetch - processPackages [opengpt4]: Downloading https://files.pythonhosted.org/packages/ac/39/b4dabcfd8a22b37d059ab209d9eec99c1ad29cf264cfb984ac274846fc15/opengpt4-0.1.2.tar.gz
+[2023-05-14 22:59:45] INFO root fetch - processPackages [EclipsingBinaries]: Downloading https://files.pythonhosted.org/packages/06/51/c745d7d52bb8c821a65ebe96cedea1358c75fc50e61ec9b8d1b3041e45d1/EclipsingBinaries-2.8.4a7.tar.gz
+[2023-05-14 22:59:45] INFO root fetch - processPackages [trojanzoo-sphinx-theme]: Downloading https://files.pythonhosted.org/packages/59/4c/36926b906ca681549bcbdd99515c6927f34990cc2af8b7d098f82d25c381/trojanzoo_sphinx_theme-1.0.2.tar.gz
+[2023-05-14 22:59:45] INFO root fetch - processPackages [embedders]: Downloading https://files.pythonhosted.org/packages/cb/07/145859f035593fb9835123f8389fac6b373af95468d9071f8b43eb6513c4/embedders-0.1.4-py2.py3-none-any.whl
+[2023-05-14 22:59:45] INFO root fetch - processPackages [kynaylibs]: Downloading https://files.pythonhosted.org/packages/f6/27/2e836ac666effe4c70aee5be4c85a730464d4a67ff8b9a776d3ba0b28253/kynaylibs-7.0.6.tar.gz
+[2023-05-14 22:59:45] INFO root fetch - processPackages [opengpt4]: executing diffoscope
+[2023-05-14 22:59:45] INFO root fetch - processPackages [opengpt4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opengpt4-0.1.1.tar.gz tmp/opengpt4-0.1.2.tar.gz --markdown 20230514/o/opengpt4/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-14 22:59:45] INFO root fetch - processPackages [convert2vars]: Downloading https://files.pythonhosted.org/packages/04/0c/d2f9095f53317c8521f8589e7831268d8c7a89fa92099aa7eb907c43295c/convert2vars-1.0.2.tar.gz
+[2023-05-14 22:59:45] INFO root fetch - processPackages [gs-apps]: Downloading https://files.pythonhosted.org/packages/01/1d/2647e7b811e76b8bc7ba43707c9cb6f1660681a97e85dcbb20819e11a87e/gs_apps-0.22.0a20230513-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-14 22:59:45] INFO root fetch - processPackages [convert2vars]: executing diffoscope
+[2023-05-14 22:59:45] INFO root fetch - processPackages [convert2vars]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/convert2vars-1.0.1.tar.gz tmp/convert2vars-1.0.2.tar.gz --markdown 20230514/c/convert2vars/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-14 22:59:45] INFO root fetch - processPackages [EclipsingBinaries]: executing diffoscope
+[2023-05-14 22:59:45] INFO root fetch - processPackages [EclipsingBinaries]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/EclipsingBinaries-2.8.4a6.tar.gz tmp/EclipsingBinaries-2.8.4a7.tar.gz --markdown 20230514/E/EclipsingBinaries/2.8.4a6-2.8.4a7/diff.md --exclude *.pyd
+[2023-05-14 22:59:45] INFO root fetch - processPackages [embedders]: executing diffoscope
+[2023-05-14 22:59:45] INFO root fetch - processPackages [embedders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedders-0.1.3-py2.py3-none-any.whl.zip tmp/embedders-0.1.4-py2.py3-none-any.whl.zip --markdown 20230514/e/embedders/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-14 22:59:45] INFO root fetch - processPackages [kynaylibs]: executing diffoscope
+[2023-05-14 22:59:45] INFO root fetch - processPackages [kynaylibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kynaylibs-7.0.5.tar.gz tmp/kynaylibs-7.0.6.tar.gz --markdown 20230514/k/kynaylibs/7.0.5-7.0.6/diff.md --exclude *.pyd
+[2023-05-14 22:59:45] WARNING root fetch - processPackages [gs-apps]: Skipping package: exceeds size limit 47797590>=10485760
+[2023-05-14 22:59:45] INFO root fetch - processPackages [gs-apps]: Start processing: gs-coordinator
+[2023-05-14 22:59:45] INFO root fetch - main [MainThread]: End processing [gs-apps] error
+[2023-05-14 22:59:45] INFO root fetch - processPackages [gs-coordinator]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-14 22:59:45] INFO root fetch - processPackages [trojanzoo-sphinx-theme]: executing diffoscope
+[2023-05-14 22:59:45] INFO root fetch - processPackages [trojanzoo-sphinx-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trojanzoo_sphinx_theme-1.0.1.tar.gz tmp/trojanzoo_sphinx_theme-1.0.2.tar.gz --markdown 20230514/t/trojanzoo-sphinx-theme/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-14 22:59:45] INFO root fetch - processPackages [graphscope]: Downloading https://files.pythonhosted.org/packages/88/bc/d15c620f88ee0f2d9e2d48162b0fe41abceec7a07feb87268c4d10c6392b/graphscope-0.9.1-py2.py3-none-macosx_11_0_arm64.whl
+[2023-05-14 22:59:45] INFO root fetch - processPackages [gs-coordinator]: Downloading https://files.pythonhosted.org/packages/71/0d/6c4b5d49846c2ee8e977037c2419e1ef57a68acfe87fdf0a031771493e84/gs_coordinator-0.9.0-py2.py3-none-macosx_10_9_x86_64.whl
+[2023-05-14 22:59:45] INFO root fetch - processPackages [graphscope]: executing diffoscope
+[2023-05-14 22:59:45] INFO root fetch - processPackages [graphscope]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/graphscope-0.9.0-py2.py3-none-macosx_10_9_x86_64.whl.zip tmp/graphscope-0.9.1-py2.py3-none-macosx_11_0_arm64.whl.zip --markdown 20230514/g/graphscope/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-14 22:59:45] INFO root fetch - processPackages [gs-coordinator]: Downloading https://files.pythonhosted.org/packages/b7/72/66667502448c5415e0a3437e817f8ee16d970e4058abb125303ce5365eee/gs_coordinator-0.9.1-py2.py3-none-macosx_11_0_arm64.whl
+[2023-05-14 22:59:46] INFO root fetch - processPackages [bytez]: Start processing: gs-engine
+[2023-05-14 22:59:46] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-14 22:59:46] INFO root fetch - processPackages [gs-engine]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-14 22:59:46] INFO root fetch - processPackages [gs-coordinator]: executing diffoscope
+[2023-05-14 22:59:46] INFO root fetch - processPackages [gs-coordinator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gs_coordinator-0.9.0-py2.py3-none-macosx_10_9_x86_64.whl.zip tmp/gs_coordinator-0.9.1-py2.py3-none-macosx_11_0_arm64.whl.zip --markdown 20230514/g/gs-coordinator/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-14 22:59:46] INFO root fetch - processPackages [requestRender]: Start processing: gs-include
+[2023-05-14 22:59:46] INFO root fetch - main [MainThread]: End processing [requestRender]: success
+[2023-05-14 22:59:46] INFO root fetch - processPackages [gs-include]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-14 22:59:46] INFO root fetch - processPackages [gs-engine]: Downloading https://files.pythonhosted.org/packages/bd/b0/b9b1a1a65be3a78a220a726aa90bda0d1e1a17bbc47999c157c784a7320e/gs_engine-0.9.0-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-14 22:59:46] WARNING root fetch - processPackages [gs-engine]: Skipping package: exceeds size limit 88119450>=10485760
+[2023-05-14 22:59:46] INFO root fetch - processPackages [gs-engine]: Start processing: trojanzoo-sphinx-theme
+[2023-05-14 22:59:46] INFO root fetch - main [MainThread]: End processing [gs-engine] error
+[2023-05-14 22:59:46] INFO root fetch - processPackages [trojanzoo-sphinx-theme]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-14 22:59:46] INFO root fetch - processPackages [gs-include]: Downloading https://files.pythonhosted.org/packages/14/24/6aa7d96461fb18c825639db76c5c3edc7abfca148e3e55cc010cbf4d9a02/gs_include-0.9.0-py2.py3-none-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-14 22:59:46] WARNING root fetch - processPackages [gs-include]: Skipping package: exceeds size limit 73794505>=10485760
+[2023-05-14 22:59:46] INFO root fetch - processPackages [gs-include]: Start processing: bytez
+[2023-05-14 22:59:46] INFO root fetch - main [MainThread]: End processing [gs-include] error
+[2023-05-14 22:59:46] INFO root fetch - processPackages [bytez]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 22:59:46] INFO root fetch - processPackages [trojanzoo-sphinx-theme]: Downloading https://files.pythonhosted.org/packages/49/69/aa5b9ab2c9fa171b75c0d15866dcd633d5f0638c8fe83fc1696f8b9ad7ba/trojanzoo_sphinx_theme-1.0.3.tar.gz
+[2023-05-14 22:59:46] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-14 22:59:46] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.8.tar.gz tmp/bytez-0.1.9.tar.gz --markdown 20230514/b/bytez/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 22:59:46] INFO root fetch - processPackages [opengpt4]: Start processing: kirznerSerializer
+[2023-05-14 22:59:46] INFO root fetch - main [MainThread]: End processing [opengpt4]: success
+[2023-05-14 22:59:46] INFO root fetch - processPackages [embedders]: Start processing: bytez
+[2023-05-14 22:59:46] INFO root fetch - main [MainThread]: End processing [embedders]: success
+[2023-05-14 22:59:46] INFO root fetch - processPackages [kirznerSerializer]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 22:59:46] INFO root fetch - processPackages [bytez]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 22:59:46] INFO root fetch - processPackages [convert2vars]: Start processing: kynaylibs
+[2023-05-14 22:59:46] INFO root fetch - main [MainThread]: End processing [convert2vars]: success
+[2023-05-14 22:59:46] INFO root fetch - processPackages [kynaylibs]: New version: [7.0.7] Old Version: [7.0.6]
+[2023-05-14 22:59:46] INFO root fetch - processPackages [kirznerSerializer]: executing diffoscope
+[2023-05-14 22:59:46] INFO root fetch - processPackages [kirznerSerializer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kirznerSerializer-0.0.1.tar.gz tmp/kirznerSerializer-0.0.2.tar.gz --markdown 20230514/k/kirznerSerializer/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 22:59:46] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-14 22:59:46] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.8.tar.gz tmp/bytez-0.1.9.tar.gz --markdown 20230514/b/bytez/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 22:59:47] INFO root fetch - main [MainThread]: End processing [EclipsingBinaries]: success
+[2023-05-14 22:59:47] INFO root fetch - processPackages [kynaylibs]: Downloading https://files.pythonhosted.org/packages/4d/64/6b98ebbb59be3abd9a67676eab93cb5f5a1702e17c795fc673a4267e4492/kynaylibs-7.0.7.tar.gz
+[2023-05-14 22:59:47] INFO root fetch - main [MainThread]: End processing [kynaylibs]: success
+[2023-05-14 22:59:47] INFO root fetch - main [MainThread]: End processing [graphscope]: success
+[2023-05-14 22:59:47] INFO root fetch - processPackages [kynaylibs]: executing diffoscope
+[2023-05-14 22:59:47] INFO root fetch - processPackages [kynaylibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kynaylibs-7.0.6.tar.gz tmp/kynaylibs-7.0.7.tar.gz --markdown 20230514/k/kynaylibs/7.0.6-7.0.7/diff.md --exclude *.pyd
+[2023-05-14 22:59:47] INFO root fetch - processPackages [trojanzoo-sphinx-theme]: executing diffoscope
+[2023-05-14 22:59:47] INFO root fetch - processPackages [trojanzoo-sphinx-theme]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trojanzoo_sphinx_theme-1.0.2.tar.gz tmp/trojanzoo_sphinx_theme-1.0.3.tar.gz --markdown 20230514/t/trojanzoo-sphinx-theme/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-14 22:59:47] INFO root fetch - main [MainThread]: End processing [gs-coordinator]: success
+[2023-05-14 22:59:48] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-14 22:59:48] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-14 22:59:48] INFO root fetch - main [MainThread]: End processing [kirznerSerializer]: success
+[2023-05-14 22:59:48] INFO root fetch - main [MainThread]: End processing [kynaylibs]: success
+[2023-05-14 22:59:48] INFO root fetch - main [MainThread]: End processing [trojanzoo-sphinx-theme]: success
+[2023-05-14 22:59:50] INFO root fetch - main [MainThread]: End processing [trojanzoo-sphinx-theme]: success
+[2023-05-14 22:59:50] INFO root fetch - main [MainThread]: Store serial: [18100054]
