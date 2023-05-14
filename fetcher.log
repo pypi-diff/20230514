@@ -2502,3 +2502,11 @@
 [2023-05-14 06:25:32] INFO root fetch - processPackages [aioqui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioqui-1.0.3.tar.gz tmp/aioqui-1.0.5.tar.gz --markdown 20230514/a/aioqui/1.0.3-1.0.5/diff.md --exclude *.pyd
 [2023-05-14 06:25:35] INFO root fetch - main [MainThread]: End processing [aioqui]: success
 [2023-05-14 06:25:35] INFO root fetch - main [MainThread]: Store serial: [18094920]
+[2023-05-14 06:30:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094920]
+[2023-05-14 06:30:44] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-14 06:30:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dokuwikidumper
+[2023-05-14 06:30:44] INFO root fetch - processPackages [dokuwikidumper]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 06:30:44] INFO root fetch - processPackages [dokuwikidumper]: executing diffoscope
+[2023-05-14 06:30:44] INFO root fetch - processPackages [dokuwikidumper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dokuwikidumper-0.1.8.tar.gz tmp/dokuwikidumper-0.1.9.tar.gz --markdown 20230514/d/dokuwikidumper/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 06:30:45] INFO root fetch - main [MainThread]: End processing [dokuwikidumper]: success
+[2023-05-14 06:30:45] INFO root fetch - main [MainThread]: Store serial: [18094925]
