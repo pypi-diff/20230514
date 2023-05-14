@@ -3763,3 +3763,53 @@
 [2023-05-14 10:00:45] INFO root fetch - main [MainThread]: End processing [qwak-core]: success
 [2023-05-14 10:00:48] INFO root fetch - main [MainThread]: End processing [gettsim]: success
 [2023-05-14 10:00:48] INFO root fetch - main [MainThread]: Store serial: [18095644]
+[2023-05-14 10:05:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095644]
+[2023-05-14 10:05:57] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-14 10:05:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tof
+[2023-05-14 10:05:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jupyter-glances-proxy
+[2023-05-14 10:05:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: easygetflag
+[2023-05-14 10:05:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pywithraccoon
+[2023-05-14 10:05:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fetch-features
+[2023-05-14 10:05:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: finpy-tse
+[2023-05-14 10:05:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: embedbase
+[2023-05-14 10:05:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: zWell-model
+[2023-05-14 10:05:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: certomancer
+[2023-05-14 10:05:57] WARNING root fetch - processPackages [easygetflag]: Skipping, unable to determine old version
+[2023-05-14 10:05:57] INFO root fetch - main [MainThread]: End processing [easygetflag] error
+[2023-05-14 10:05:57] INFO root fetch - processPackages [tof]: New version: [23.5.1] Old Version: [23.5.0]
+[2023-05-14 10:05:57] WARNING root fetch - processPackages [fetch-features]: Skipping, unable to determine old version
+[2023-05-14 10:05:57] INFO root fetch - main [MainThread]: End processing [fetch-features] error
+[2023-05-14 10:05:57] INFO root fetch - processPackages [jupyter-glances-proxy]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 10:05:57] WARNING root fetch - processPackages [pywithraccoon]: Skipping, unable to determine old version
+[2023-05-14 10:05:57] INFO root fetch - main [MainThread]: End processing [pywithraccoon] error
+[2023-05-14 10:05:57] INFO root fetch - processPackages [finpy-tse]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-14 10:05:57] INFO root fetch - processPackages [certomancer]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-14 10:05:57] WARNING root fetch - processPackages [zWell-model]: Skipping, unable to determine old version
+[2023-05-14 10:05:57] INFO root fetch - main [MainThread]: End processing [zWell-model] error
+[2023-05-14 10:05:57] INFO root fetch - processPackages [embedbase]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-05-14 10:05:58] INFO root fetch - processPackages [tof]: Downloading https://files.pythonhosted.org/packages/69/33/6d7a85f9d58af61891530ecd54efcbe32f101a8fb638f946f97e93ebef16/tof-23.5.0.tar.gz
+[2023-05-14 10:05:58] INFO root fetch - processPackages [jupyter-glances-proxy]: Downloading https://files.pythonhosted.org/packages/75/d4/b1999a07de1fc756e6f4f486ecd89f155d0a9063e7d73d1b366c37b95fa3/jupyter_glances_proxy-0.0.1.tar.gz
+[2023-05-14 10:05:58] INFO root fetch - processPackages [certomancer]: Downloading https://files.pythonhosted.org/packages/46/d6/4fcede9c38d152550241f459560914459d9939bba71df286ec26f640238d/certomancer-0.9.0.tar.gz
+[2023-05-14 10:05:58] INFO root fetch - processPackages [embedbase]: Downloading https://files.pythonhosted.org/packages/ac/d2/17c3555cef7c779e9f00ecf7288c35c8b17bb892d3c15b3bccd57573d2b0/embedbase-1.1.4.tar.gz
+[2023-05-14 10:05:58] INFO root fetch - processPackages [finpy-tse]: Downloading https://files.pythonhosted.org/packages/12/dc/cea8b5957d8b9b7a9165a0924a380eb48d4814a541f640308717a739ab15/finpy_tse-1.2.0.tar.gz
+[2023-05-14 10:05:58] INFO root fetch - processPackages [jupyter-glances-proxy]: Downloading https://files.pythonhosted.org/packages/56/ae/923874c5267f9842f9fab30c749c21c0f68f4162b1c6b7714e61f50eb0ea/jupyter_glances_proxy-0.0.2.tar.gz
+[2023-05-14 10:05:58] INFO root fetch - processPackages [tof]: Downloading https://files.pythonhosted.org/packages/31/6b/326e2fe13033d8d95fd119b236f8e51d5b61a433d011416478e94de3e6de/tof-23.5.1.tar.gz
+[2023-05-14 10:05:58] INFO root fetch - processPackages [embedbase]: Downloading https://files.pythonhosted.org/packages/00/2b/c7047708dfbffaa34965d82ad57ec11a3666364d33d7c0fd516dadcb9c27/embedbase-1.1.5.tar.gz
+[2023-05-14 10:05:58] INFO root fetch - processPackages [certomancer]: Downloading https://files.pythonhosted.org/packages/32/45/72d5c76e43cd5f276e52da7daa141fe703734351e59ab74b885b0691171b/certomancer-0.9.1.tar.gz
+[2023-05-14 10:05:58] INFO root fetch - processPackages [finpy-tse]: Downloading https://files.pythonhosted.org/packages/3b/04/57f89dbf424d5c1a414ac827dc50e99a1219988536595447f91be64eefbb/finpy_tse-1.2.1.tar.gz
+[2023-05-14 10:05:58] INFO root fetch - processPackages [certomancer]: executing diffoscope
+[2023-05-14 10:05:58] INFO root fetch - processPackages [certomancer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/certomancer-0.9.0.tar.gz tmp/certomancer-0.9.1.tar.gz --markdown 20230514/c/certomancer/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-14 10:05:58] INFO root fetch - processPackages [jupyter-glances-proxy]: executing diffoscope
+[2023-05-14 10:05:58] INFO root fetch - processPackages [jupyter-glances-proxy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jupyter_glances_proxy-0.0.1.tar.gz tmp/jupyter_glances_proxy-0.0.2.tar.gz --markdown 20230514/j/jupyter-glances-proxy/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 10:05:58] INFO root fetch - processPackages [tof]: executing diffoscope
+[2023-05-14 10:05:58] INFO root fetch - processPackages [tof]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tof-23.5.0.tar.gz tmp/tof-23.5.1.tar.gz --markdown 20230514/t/tof/23.5.0-23.5.1/diff.md --exclude *.pyd
+[2023-05-14 10:05:58] INFO root fetch - processPackages [embedbase]: executing diffoscope
+[2023-05-14 10:05:58] INFO root fetch - processPackages [embedbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedbase-1.1.4.tar.gz tmp/embedbase-1.1.5.tar.gz --markdown 20230514/e/embedbase/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-05-14 10:05:58] INFO root fetch - processPackages [finpy-tse]: executing diffoscope
+[2023-05-14 10:05:58] INFO root fetch - processPackages [finpy-tse]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finpy_tse-1.2.0.tar.gz tmp/finpy_tse-1.2.1.tar.gz --markdown 20230514/f/finpy-tse/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-14 10:05:59] INFO root fetch - main [MainThread]: End processing [jupyter-glances-proxy]: success
+[2023-05-14 10:05:59] INFO root fetch - main [MainThread]: End processing [certomancer]: success
+[2023-05-14 10:05:59] INFO root fetch - main [MainThread]: End processing [finpy-tse]: success
+[2023-05-14 10:05:59] INFO root fetch - main [MainThread]: End processing [embedbase]: success
+[2023-05-14 10:05:59] INFO root fetch - main [MainThread]: End processing [tof]: success
+[2023-05-14 10:05:59] INFO root fetch - main [MainThread]: Store serial: [18095679]
