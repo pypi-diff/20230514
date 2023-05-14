@@ -5185,3 +5185,81 @@
 [2023-05-14 13:19:37] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
 [2023-05-14 13:19:41] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
 [2023-05-14 13:19:41] INFO root fetch - main [MainThread]: Store serial: [18096530]
+[2023-05-14 13:24:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096530]
+[2023-05-14 13:24:49] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-14 13:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tb-nightly
+[2023-05-14 13:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: indecode
+[2023-05-14 13:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dbt-cockroachdb
+[2023-05-14 13:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ml-starter
+[2023-05-14 13:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pysui
+[2023-05-14 13:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tensordict-nightly
+[2023-05-14 13:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: indecode
+[2023-05-14 13:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: torchtnt-nightly
+[2023-05-14 13:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: glaceon
+[2023-05-14 13:24:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: tankioapi
+[2023-05-14 13:24:49] INFO root fetch - processPackages [indecode]: New version: [1.4.8] Old Version: [1.4.7]
+[2023-05-14 13:24:49] INFO root fetch - processPackages [indecode]: New version: [1.4.8] Old Version: [1.4.7]
+[2023-05-14 13:24:49] INFO root fetch - processPackages [dbt-cockroachdb]: New version: [1.1.2] Old Version: [1.1.1a0]
+[2023-05-14 13:24:49] INFO root fetch - processPackages [tensordict-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-14 13:24:49] WARNING root fetch - processPackages [glaceon]: Skipping, unable to determine old version
+[2023-05-14 13:24:49] INFO root fetch - processPackages [glaceon]: Start processing: data2latex
+[2023-05-14 13:24:49] INFO root fetch - main [MainThread]: End processing [glaceon] error
+[2023-05-14 13:24:49] WARNING root fetch - processPackages [tankioapi]: Skipping, unable to determine old version
+[2023-05-14 13:24:49] INFO root fetch - processPackages [tankioapi]: Start processing: torchrl-nightly
+[2023-05-14 13:24:49] INFO root fetch - main [MainThread]: End processing [tankioapi] error
+[2023-05-14 13:24:49] INFO root fetch - processPackages [ml-starter]: New version: [0.0.40] Old Version: [0.0.39]
+[2023-05-14 13:24:49] INFO root fetch - processPackages [pysui]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-14 13:24:49] WARNING root fetch - processPackages [data2latex]: Skipping, unable to determine old version
+[2023-05-14 13:24:49] INFO root fetch - processPackages [data2latex]: Start processing: rhyton
+[2023-05-14 13:24:49] INFO root fetch - main [MainThread]: End processing [data2latex] error
+[2023-05-14 13:24:49] INFO root fetch - processPackages [torchtnt-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-14 13:24:49] INFO root fetch - processPackages [rhyton]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-14 13:24:49] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/62/33/9250703fd4c8e0207d7769383c0270233abc90f1561de61a72fefc4fb81a/tensordict_nightly-2023.5.8-py39-none-any.whl
+[2023-05-14 13:24:49] INFO root fetch - processPackages [torchtnt-nightly]: Downloading https://files.pythonhosted.org/packages/b2/9e/fb94e3475576700c29b739a2c5e15d8cdec19b71ad4720793151bfefa39e/torchtnt-nightly-2023.5.8.tar.gz
+[2023-05-14 13:24:49] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2023-05-14 13:24:49] INFO root fetch - processPackages [indecode]: Downloading https://files.pythonhosted.org/packages/da/83/317b44b14f09ad3669628d1b4f1f0e1c55b6daf5ff04ee473971dce8a275/indecode-1.4.7-py3-none-any.whl
+[2023-05-14 13:24:49] INFO root fetch - processPackages [indecode]: Downloading https://files.pythonhosted.org/packages/da/83/317b44b14f09ad3669628d1b4f1f0e1c55b6daf5ff04ee473971dce8a275/indecode-1.4.7-py3-none-any.whl
+[2023-05-14 13:24:49] INFO root fetch - processPackages [torchrl-nightly]: New version: [2023.5.9] Old Version: [2023.5.8]
+[2023-05-14 13:24:49] INFO root fetch - processPackages [dbt-cockroachdb]: Downloading https://files.pythonhosted.org/packages/25/37/3f0f23c4f2b47758cf19636a955da9006cce29f64aead1644026f5beec7d/dbt_cockroachdb-1.1.1a0-py3-none-any.whl
+[2023-05-14 13:24:49] INFO root fetch - processPackages [ml-starter]: Downloading https://files.pythonhosted.org/packages/bc/36/6694a255b810bb0717874dd5b34e111fcc44162b50ecd7c58d3a448788b7/ml-starter-0.0.40.tar.gz
+[2023-05-14 13:24:49] INFO root fetch - processPackages [rhyton]: Downloading https://files.pythonhosted.org/packages/4e/ce/8a364ce8214816b558d1d1b8cbb9ff4a3ef22ead3d0cd082d1f0072819bd/rhyton-0.0.3.tar.gz
+[2023-05-14 13:24:49] INFO root fetch - processPackages [pysui]: Downloading https://files.pythonhosted.org/packages/df/fd/8060c20cdf32607400911d43fc627a8bf48fe7571dc1992ab190b3274d7b/pysui-0.8.0-py3-none-any.whl
+[2023-05-14 13:24:49] INFO root fetch - processPackages [tensordict-nightly]: Downloading https://files.pythonhosted.org/packages/7c/a0/7c1245486e3080bdd8d23ef40da1a4f7e1e24f48905890ee9e0fb9e779e1/tensordict_nightly-2023.5.9-py39-none-any.whl
+[2023-05-14 13:24:49] INFO root fetch - processPackages [torchtnt-nightly]: Downloading https://files.pythonhosted.org/packages/84/58/d92a7f6b5272f00573f228299b167e2475aa768066980df79d4f10ea20ba/torchtnt-nightly-2023.5.9.tar.gz
+[2023-05-14 13:24:49] INFO root fetch - processPackages [ml-starter]: executing diffoscope
+[2023-05-14 13:24:49] INFO root fetch - processPackages [ml-starter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ml-starter-0.0.39.tar.gz tmp/ml-starter-0.0.40.tar.gz --markdown 20230514/m/ml-starter/0.0.39-0.0.40/diff.md --exclude *.pyd
+[2023-05-14 13:24:49] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/70/13/8cbe47345c0e418e44de0be9cfdb382877a55f35fb6df8e6ebdf8bbece3f/torchrl_nightly-2023.5.8-cp39-cp39-win_amd64.whl
+[2023-05-14 13:24:49] INFO root fetch - processPackages [indecode]: Downloading https://files.pythonhosted.org/packages/5e/24/c6b54fc1a85e78823b715d4e6890d1b001f0c51fc44760c3343ebbfa0f76/indecode-1.4.8-py3-none-any.whl
+[2023-05-14 13:24:49] INFO root fetch - processPackages [torchtnt-nightly]: executing diffoscope
+[2023-05-14 13:24:49] INFO root fetch - processPackages [torchtnt-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchtnt-nightly-2023.5.8.tar.gz tmp/torchtnt-nightly-2023.5.9.tar.gz --markdown 20230514/t/torchtnt-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-14 13:24:49] INFO root fetch - processPackages [tensordict-nightly]: executing diffoscope
+[2023-05-14 13:24:49] INFO root fetch - processPackages [tensordict-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tensordict_nightly-2023.5.8-py39-none-any.whl.zip tmp/tensordict_nightly-2023.5.9-py39-none-any.whl.zip --markdown 20230514/t/tensordict-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-14 13:24:49] INFO root fetch - processPackages [indecode]: Downloading https://files.pythonhosted.org/packages/5e/24/c6b54fc1a85e78823b715d4e6890d1b001f0c51fc44760c3343ebbfa0f76/indecode-1.4.8-py3-none-any.whl
+[2023-05-14 13:24:49] INFO root fetch - processPackages [rhyton]: executing diffoscope
+[2023-05-14 13:24:49] INFO root fetch - processPackages [rhyton]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rhyton-0.0.2.tar.gz tmp/rhyton-0.0.3.tar.gz --markdown 20230514/r/rhyton/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-14 13:24:50] INFO root fetch - processPackages [indecode]: executing diffoscope
+[2023-05-14 13:24:50] INFO root fetch - processPackages [indecode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indecode-1.4.7-py3-none-any.whl.zip tmp/indecode-1.4.8-py3-none-any.whl.zip --markdown 20230514/i/indecode/1.4.7-1.4.8/diff.md --exclude *.pyd
+[2023-05-14 13:24:50] INFO root fetch - processPackages [indecode]: executing diffoscope
+[2023-05-14 13:24:50] INFO root fetch - processPackages [indecode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indecode-1.4.7-py3-none-any.whl.zip tmp/indecode-1.4.8-py3-none-any.whl.zip --markdown 20230514/i/indecode/1.4.7-1.4.8/diff.md --exclude *.pyd
+[2023-05-14 13:24:50] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2023-05-14 13:24:50] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20230514/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/diff.md --exclude *.pyd
+[2023-05-14 13:24:50] INFO root fetch - processPackages [dbt-cockroachdb]: Downloading https://files.pythonhosted.org/packages/de/70/108e5f68bfc3c2a0d6f1ea1e4d747bb1fe3e687175b2bb196a2d75005d48/dbt_cockroachdb-1.1.2-py3-none-any.whl
+[2023-05-14 13:24:50] INFO root fetch - processPackages [pysui]: Downloading https://files.pythonhosted.org/packages/d0/d5/e2108ab88d1f544ccab9554dcf4127133263950ae9c3e3912ab5bb6db12a/pysui-0.9.0-py3-none-any.whl
+[2023-05-14 13:24:50] INFO root fetch - processPackages [pysui]: executing diffoscope
+[2023-05-14 13:24:50] INFO root fetch - processPackages [pysui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysui-0.8.0-py3-none-any.whl.zip tmp/pysui-0.9.0-py3-none-any.whl.zip --markdown 20230514/p/pysui/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 13:24:50] INFO root fetch - processPackages [dbt-cockroachdb]: executing diffoscope
+[2023-05-14 13:24:50] INFO root fetch - processPackages [dbt-cockroachdb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dbt_cockroachdb-1.1.1a0-py3-none-any.whl.zip tmp/dbt_cockroachdb-1.1.2-py3-none-any.whl.zip --markdown 20230514/d/dbt-cockroachdb/1.1.1a0-1.1.2/diff.md --exclude *.pyd
+[2023-05-14 13:24:50] INFO root fetch - processPackages [torchrl-nightly]: Downloading https://files.pythonhosted.org/packages/c6/41/e1cddf7875baadaeeb390de1a900e03e19b03adc9413503cdd83419ab093/torchrl_nightly-2023.5.9-cp39-cp39-win_amd64.whl
+[2023-05-14 13:24:50] INFO root fetch - processPackages [torchrl-nightly]: executing diffoscope
+[2023-05-14 13:24:50] INFO root fetch - processPackages [torchrl-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchrl_nightly-2023.5.8-cp39-cp39-win_amd64.whl.zip tmp/torchrl_nightly-2023.5.9-cp39-cp39-win_amd64.whl.zip --markdown 20230514/t/torchrl-nightly/2023.5.8-2023.5.9/diff.md --exclude *.pyd
+[2023-05-14 13:24:51] INFO root fetch - main [MainThread]: End processing [indecode]: success
+[2023-05-14 13:24:51] INFO root fetch - main [MainThread]: End processing [indecode]: success
+[2023-05-14 13:24:51] INFO root fetch - main [MainThread]: End processing [rhyton]: success
+[2023-05-14 13:24:51] INFO root fetch - main [MainThread]: End processing [tensordict-nightly]: success
+[2023-05-14 13:24:51] INFO root fetch - main [MainThread]: End processing [dbt-cockroachdb]: success
+[2023-05-14 13:24:52] INFO root fetch - main [MainThread]: End processing [pysui]: success
+[2023-05-14 13:24:52] INFO root fetch - main [MainThread]: End processing [torchtnt-nightly]: success
+[2023-05-14 13:24:52] INFO root fetch - main [MainThread]: End processing [torchrl-nightly]: success
+[2023-05-14 13:24:53] INFO root fetch - main [MainThread]: End processing [ml-starter]: success
+[2023-05-14 13:24:53] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2023-05-14 13:24:54] INFO root fetch - main [MainThread]: Store serial: [18096574]
