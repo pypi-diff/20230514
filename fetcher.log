@@ -2379,3 +2379,23 @@
 [2023-05-14 05:54:24] INFO root fetch - processPackages [webarchiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webarchiver-0.8.0-py2.py3-none-any.whl.zip tmp/webarchiver-0.9.0-py2.py3-none-any.whl.zip --markdown 20230514/w/webarchiver/0.8.0-0.9.0/diff.md --exclude *.pyd
 [2023-05-14 05:54:25] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
 [2023-05-14 05:54:25] INFO root fetch - main [MainThread]: Store serial: [18094836]
+[2023-05-14 05:59:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094836]
+[2023-05-14 05:59:35] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-14 05:59:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chalkpy
+[2023-05-14 05:59:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: livesolid
+[2023-05-14 05:59:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: discord-pretty-help
+[2023-05-14 05:59:35] INFO root fetch - processPackages [livesolid]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 05:59:35] INFO root fetch - processPackages [discord-pretty-help]: New version: [2.0.4] Old Version: [2.0.3]
+[2023-05-14 05:59:35] INFO root fetch - processPackages [chalkpy]: New version: [2.3.8] Old Version: [2.3.7]
+[2023-05-14 05:59:35] INFO root fetch - processPackages [chalkpy]: Downloading https://files.pythonhosted.org/packages/e8/12/7e78d8806aa0b0884db98ce8ca878b71c5e0eb680685f8ccceb566bf887e/chalkpy-2.3.8.tar.gz
+[2023-05-14 05:59:35] INFO root fetch - processPackages [discord-pretty-help]: Downloading https://files.pythonhosted.org/packages/60/8b/bbe593bacd9e56a181f2f10b55174b401581b15863beb712979b2be7f505/discord_pretty_help-2.0.4.tar.gz
+[2023-05-14 05:59:35] INFO root fetch - processPackages [chalkpy]: executing diffoscope
+[2023-05-14 05:59:35] INFO root fetch - processPackages [chalkpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chalkpy-2.3.7.tar.gz tmp/chalkpy-2.3.8.tar.gz --markdown 20230514/c/chalkpy/2.3.7-2.3.8/diff.md --exclude *.pyd
+[2023-05-14 05:59:35] INFO root fetch - processPackages [livesolid]: executing diffoscope
+[2023-05-14 05:59:35] INFO root fetch - processPackages [livesolid]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/livesolid-0.0.8.tar.gz tmp/livesolid-0.0.9.tar.gz --markdown 20230514/l/livesolid/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 05:59:35] INFO root fetch - processPackages [discord-pretty-help]: executing diffoscope
+[2023-05-14 05:59:35] INFO root fetch - processPackages [discord-pretty-help]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/discord_pretty_help-2.0.3.tar.gz tmp/discord_pretty_help-2.0.4.tar.gz --markdown 20230514/d/discord-pretty-help/2.0.3-2.0.4/diff.md --exclude *.pyd
+[2023-05-14 05:59:36] INFO root fetch - main [MainThread]: End processing [discord-pretty-help]: success
+[2023-05-14 05:59:36] INFO root fetch - main [MainThread]: End processing [livesolid]: success
+[2023-05-14 05:59:40] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
+[2023-05-14 05:59:40] INFO root fetch - main [MainThread]: Store serial: [18094845]
