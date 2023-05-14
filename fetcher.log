@@ -3381,3 +3381,36 @@
 [2023-05-14 08:57:15] INFO root fetch - main [MainThread]: End processing [redcat]: success
 [2023-05-14 08:57:15] INFO root fetch - main [MainThread]: End processing [lumigo-tracer]: success
 [2023-05-14 08:57:15] INFO root fetch - main [MainThread]: Store serial: [18095420]
+[2023-05-14 09:02:20] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095420]
+[2023-05-14 09:02:25] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 09:02:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: easygetflag
+[2023-05-14 09:02:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: spotPython
+[2023-05-14 09:02:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: traversaal
+[2023-05-14 09:02:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: seqio-nightly
+[2023-05-14 09:02:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: noaawc
+[2023-05-14 09:02:25] WARNING root fetch - processPackages [easygetflag]: Skipping, unable to determine old version
+[2023-05-14 09:02:25] INFO root fetch - main [MainThread]: End processing [easygetflag] error
+[2023-05-14 09:02:25] INFO root fetch - processPackages [traversaal]: New version: [0.4] Old Version: [0.3]
+[2023-05-14 09:02:25] INFO root fetch - processPackages [seqio-nightly]: New version: [0.0.8.dev20220907] Old Version: [0.0.8.dev20220906]
+[2023-05-14 09:02:25] INFO root fetch - processPackages [spotPython]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 09:02:25] INFO root fetch - processPackages [seqio-nightly]: Downloading https://files.pythonhosted.org/packages/43/a0/f60ad514b6f8534fa5ba8cc5fcc2a8f2e32e7d06d2dbfd43b12c2cb29931/seqio-nightly-0.0.8.dev20220906.tar.gz
+[2023-05-14 09:02:25] INFO root fetch - processPackages [noaawc]: New version: [0.1.5] Old Version: [0.1.2.1]
+[2023-05-14 09:02:25] INFO root fetch - processPackages [traversaal]: Downloading https://files.pythonhosted.org/packages/a6/77/062e4467970faff52152098780dc7e4bf39a6facb8b9d9ea41066f40d273/traversaal-0.4.tar.gz
+[2023-05-14 09:02:25] INFO root fetch - processPackages [spotPython]: Downloading https://files.pythonhosted.org/packages/6e/02/b62c43753db71f5d9f38ae7283b794e6f74a68fb4ed705d99cefd2253532/spotPython-0.0.8.tar.gz
+[2023-05-14 09:02:26] INFO root fetch - processPackages [noaawc]: Downloading https://files.pythonhosted.org/packages/96/fb/260b7ad7a063bebdeb895d7f4d65d4482f82651bcf2a2ac1408f448fdc6c/noaawc-0.1.2.1-py3-none-any.whl
+[2023-05-14 09:02:26] INFO root fetch - processPackages [seqio-nightly]: Downloading https://files.pythonhosted.org/packages/2a/76/25f4c7602cdd724deac948a914e454756abfad2119a525c06d9ce341b918/seqio-nightly-0.0.8.dev20220907.tar.gz
+[2023-05-14 09:02:26] INFO root fetch - processPackages [traversaal]: executing diffoscope
+[2023-05-14 09:02:26] INFO root fetch - processPackages [traversaal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traversaal-0.3.tar.gz tmp/traversaal-0.4.tar.gz --markdown 20230514/t/traversaal/0.3-0.4/diff.md --exclude *.pyd
+[2023-05-14 09:02:26] INFO root fetch - processPackages [seqio-nightly]: executing diffoscope
+[2023-05-14 09:02:26] INFO root fetch - processPackages [seqio-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/seqio-nightly-0.0.8.dev20220906.tar.gz tmp/seqio-nightly-0.0.8.dev20220907.tar.gz --markdown 20230514/s/seqio-nightly/0.0.8.dev20220906-0.0.8.dev20220907/diff.md --exclude *.pyd
+[2023-05-14 09:02:26] INFO root fetch - processPackages [noaawc]: Downloading https://files.pythonhosted.org/packages/65/07/e870ce56b50d867e26f57698b027336c57876709f801a3090729b744953b/noaawc-0.1.5-py3-none-any.whl
+[2023-05-14 09:02:26] INFO root fetch - processPackages [noaawc]: executing diffoscope
+[2023-05-14 09:02:26] INFO root fetch - processPackages [noaawc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/noaawc-0.1.2.1-py3-none-any.whl.zip tmp/noaawc-0.1.5-py3-none-any.whl.zip --markdown 20230514/n/noaawc/0.1.2.1-0.1.5/diff.md --exclude *.pyd
+[2023-05-14 09:02:27] INFO root fetch - processPackages [spotPython]: Downloading https://files.pythonhosted.org/packages/4b/fe/e18dc9bcd7946a695352c3bdf34b95776e2ad6d970f7a8b6ff4368e7e2fe/spotPython-0.0.9.tar.gz
+[2023-05-14 09:02:27] INFO root fetch - main [MainThread]: End processing [traversaal]: success
+[2023-05-14 09:02:27] INFO root fetch - main [MainThread]: End processing [seqio-nightly]: success
+[2023-05-14 09:02:27] INFO root fetch - main [MainThread]: End processing [noaawc]: success
+[2023-05-14 09:02:28] INFO root fetch - processPackages [spotPython]: executing diffoscope
+[2023-05-14 09:02:28] INFO root fetch - processPackages [spotPython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotPython-0.0.8.tar.gz tmp/spotPython-0.0.9.tar.gz --markdown 20230514/s/spotPython/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 09:02:30] INFO root fetch - main [MainThread]: End processing [spotPython]: success
+[2023-05-14 09:02:30] INFO root fetch - main [MainThread]: Store serial: [18095437]
