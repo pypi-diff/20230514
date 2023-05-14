@@ -8159,3 +8159,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 18:15:31] INFO root fetch - main [MainThread]: End processing [projectrexa]: success
 [2023-05-14 18:16:06] INFO root fetch - main [MainThread]: End processing [kiwi-booster]: success
 [2023-05-14 18:16:06] INFO root fetch - main [MainThread]: Store serial: [18098341]
+[2023-05-14 18:21:10] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098341]
+[2023-05-14 18:21:15] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-14 18:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tongsuopy-crayon
+[2023-05-14 18:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-madvr
+[2023-05-14 18:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: scaled
+[2023-05-14 18:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: importer-local
+[2023-05-14 18:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-naftali-CERT-1884-prevent-solidity-func-as-summary
+[2023-05-14 18:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PaPDF
+[2023-05-14 18:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: wes-palette
+[2023-05-14 18:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: netilion-lab-tab-api
+[2023-05-14 18:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: jorun
+[2023-05-14 18:21:15] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pipsqliext
+[2023-05-14 18:21:15] INFO root fetch - processPackages [py-madvr]: New version: [1.3.12] Old Version: [1.3.11]
+[2023-05-14 18:21:15] WARNING root fetch - processPackages [certora-cli-alpha-naftali-CERT-1884-prevent-solidity-func-as-summary]: Skipping, unable to determine old version
+[2023-05-14 18:21:15] INFO root fetch - processPackages [certora-cli-alpha-naftali-CERT-1884-prevent-solidity-func-as-summary]: Start processing: PaPDF
+[2023-05-14 18:21:15] INFO root fetch - processPackages [importer-local]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 18:21:15] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-naftali-CERT-1884-prevent-solidity-func-as-summary] error
+[2023-05-14 18:21:15] INFO root fetch - processPackages [PaPDF]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-05-14 18:21:15] INFO root fetch - processPackages [netilion-lab-tab-api]: New version: [1.2.0] Old Version: [1.1.3]
+[2023-05-14 18:21:15] INFO root fetch - processPackages [PaPDF]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-05-14 18:21:15] INFO root fetch - processPackages [py-madvr]: executing diffoscope
+[2023-05-14 18:21:15] INFO root fetch - processPackages [py-madvr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_madvr-1.3.11.tar.gz tmp/py_madvr-1.3.12.tar.gz --markdown 20230514/p/py-madvr/1.3.11-1.3.12/diff.md --exclude *.pyd
+[2023-05-14 18:21:15] WARNING root fetch - processPackages [jorun]: Skipping, unable to determine old version
+[2023-05-14 18:21:15] INFO root fetch - processPackages [jorun]: Start processing: ccxt
+[2023-05-14 18:21:15] INFO root fetch - main [MainThread]: End processing [jorun] error
+[2023-05-14 18:21:15] WARNING root fetch - processPackages [pipsqliext]: Skipping, unable to determine old version
+[2023-05-14 18:21:15] INFO root fetch - main [MainThread]: End processing [pipsqliext] error
+[2023-05-14 18:21:15] INFO root fetch - processPackages [PaPDF]: executing diffoscope
+[2023-05-14 18:21:15] INFO root fetch - processPackages [PaPDF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PaPDF-1.1.5-py3-none-any.whl.zip tmp/PaPDF-1.1.6.tar.gz --markdown 20230514/P/PaPDF/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-05-14 18:21:15] WARNING root fetch - processPackages [wes-palette]: Skipping, unable to determine old version
+[2023-05-14 18:21:15] INFO root fetch - main [MainThread]: End processing [wes-palette] error
+[2023-05-14 18:21:15] INFO root fetch - processPackages [netilion-lab-tab-api]: executing diffoscope
+[2023-05-14 18:21:15] INFO root fetch - processPackages [netilion-lab-tab-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netilion_lab_tab_api-1.1.3.tar.gz tmp/netilion_lab_tab_api-1.2.0.tar.gz --markdown 20230514/n/netilion-lab-tab-api/1.1.3-1.2.0/diff.md --exclude *.pyd
+[2023-05-14 18:21:15] INFO root fetch - processPackages [importer-local]: executing diffoscope
+[2023-05-14 18:21:15] INFO root fetch - processPackages [importer-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/importer-local-0.0.1.tar.gz tmp/importer-local-0.0.2.tar.gz --markdown 20230514/i/importer-local/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 18:21:15] WARNING root fetch - processPackages [tongsuopy-crayon]: Skipping, unable to determine old version
+[2023-05-14 18:21:15] INFO root fetch - main [MainThread]: End processing [tongsuopy-crayon] error
+[2023-05-14 18:21:15] INFO root fetch - processPackages [scaled]: New version: [0.9] Old Version: [0.7]
+[2023-05-14 18:21:15] INFO root fetch - processPackages [PaPDF]: executing diffoscope
+[2023-05-14 18:21:15] INFO root fetch - processPackages [PaPDF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PaPDF-1.1.5-py3-none-any.whl.zip tmp/PaPDF-1.1.6.tar.gz --markdown 20230514/P/PaPDF/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-05-14 18:21:15] INFO root fetch - processPackages [ccxt]: New version: [3.0.99] Old Version: [3.0.98]
+[2023-05-14 18:21:15] INFO root fetch - processPackages [scaled]: Downloading https://files.pythonhosted.org/packages/d0/5e/66c19fded924369c6cf0a7e941b55a0cab4b21966ced8c15c6fdc3ca97e5/scaled-0.7.tar.gz
+[2023-05-14 18:21:16] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/72/ff/1354b114369fa772754f1105e77d28b757941f27c8cd19e8b77840cfed48/ccxt-3.0.98.tar.gz
+[2023-05-14 18:21:16] INFO root fetch - main [MainThread]: End processing [py-madvr]: success
+[2023-05-14 18:21:16] INFO root fetch - main [MainThread]: End processing [PaPDF]: success
+[2023-05-14 18:21:16] INFO root fetch - main [MainThread]: End processing [PaPDF]: success
+[2023-05-14 18:21:16] INFO root fetch - main [MainThread]: End processing [importer-local]: success
+[2023-05-14 18:21:17] INFO root fetch - processPackages [scaled]: Downloading https://files.pythonhosted.org/packages/e6/5b/bdf751547126f8a50ee2fdfab7629f5f4faa482b5ccbd1e8d8cdf030f4cc/scaled-0.9.tar.gz
+[2023-05-14 18:21:17] INFO root fetch - processPackages [scaled]: executing diffoscope
+[2023-05-14 18:21:17] INFO root fetch - processPackages [scaled]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scaled-0.7.tar.gz tmp/scaled-0.9.tar.gz --markdown 20230514/s/scaled/0.7-0.9/diff.md --exclude *.pyd
+[2023-05-14 18:21:17] INFO root fetch - processPackages [ccxt]: Downloading https://files.pythonhosted.org/packages/89/5b/90a3ef98d8a4aa07396ff16a1a4e855dd5e3f01a4649b7bca3d97cc28519/ccxt-3.0.99.tar.gz
+[2023-05-14 18:21:17] INFO root fetch - main [MainThread]: End processing [netilion-lab-tab-api]: success
+[2023-05-14 18:21:18] INFO root fetch - processPackages [ccxt]: executing diffoscope
+[2023-05-14 18:21:18] INFO root fetch - processPackages [ccxt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ccxt-3.0.98.tar.gz tmp/ccxt-3.0.99.tar.gz --markdown 20230514/c/ccxt/3.0.98-3.0.99/diff.md --exclude *.pyd
+[2023-05-14 18:21:18] INFO root fetch - main [MainThread]: End processing [scaled]: success
+[2023-05-14 18:21:28] INFO root fetch - main [MainThread]: End processing [ccxt]: success
+[2023-05-14 18:21:28] INFO root fetch - main [MainThread]: Store serial: [18098393]
