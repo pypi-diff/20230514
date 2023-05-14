@@ -9722,3 +9722,60 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 20:55:01] INFO root fetch - main [MainThread]: End processing [llama-index-sl]: success
 [2023-05-14 20:55:01] INFO root fetch - main [MainThread]: End processing [es7s]: success
 [2023-05-14 20:55:01] INFO root fetch - main [MainThread]: Store serial: [18099305]
+[2023-05-14 21:00:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18099305]
+[2023-05-14 21:00:10] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-14 21:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: dismake
+[2023-05-14 21:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: urllib3-ext-hface
+[2023-05-14 21:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: polymesh
+[2023-05-14 21:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: configzen
+[2023-05-14 21:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lectric-sdk
+[2023-05-14 21:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: sageworks
+[2023-05-14 21:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: lsst-daf-butler
+[2023-05-14 21:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cast-bootstrap5
+[2023-05-14 21:00:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: transformers-agent-ui
+[2023-05-14 21:00:10] INFO root fetch - processPackages [cast-bootstrap5]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 21:00:10] INFO root fetch - processPackages [urllib3-ext-hface]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-14 21:00:10] INFO root fetch - processPackages [lsst-daf-butler]: New version: [26.0.0a20230500] Old Version: [26.0.0a20230400]
+[2023-05-14 21:00:10] INFO root fetch - processPackages [transformers-agent-ui]: New version: [0.4.0] Old Version: [0.3.0]
+[2023-05-14 21:00:10] INFO root fetch - processPackages [dismake]: New version: [0.0.7] Old Version: [0.0.5]
+[2023-05-14 21:00:10] INFO root fetch - processPackages [lectric-sdk]: New version: [0.0.9] Old Version: [0.0.6a0]
+[2023-05-14 21:00:10] INFO root fetch - processPackages [configzen]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 21:00:10] INFO root fetch - processPackages [sageworks]: New version: [0.1.5.1] Old Version: [0.1.5.0]
+[2023-05-14 21:00:10] INFO root fetch - processPackages [polymesh]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 21:00:10] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-14 21:00:10] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.8.tar.gz tmp/configzen-0.1.9.tar.gz --markdown 20230514/c/configzen/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 21:00:10] ERROR root fetch - processPackages [dismake]: Unable to fetch info: No such project/version 'dismake' 0.0.5
+[2023-05-14 21:00:10] INFO root fetch - main [MainThread]: End processing [dismake] error
+[2023-05-14 21:00:10] INFO root fetch - processPackages [cast-bootstrap5]: Downloading https://files.pythonhosted.org/packages/42/2c/e7adab60510a83565c1427179f1d6d4514a50d3791197d76927552abe356/cast-bootstrap5-0.0.1.tar.gz
+[2023-05-14 21:00:10] INFO root fetch - processPackages [transformers-agent-ui]: Downloading https://files.pythonhosted.org/packages/6e/19/50169eca2c8a944e7776664a8dfbec69a8b08a2692c6b39b3dabd69361ea/transformers-agent-ui-0.4.0.tar.gz
+[2023-05-14 21:00:10] INFO root fetch - processPackages [sageworks]: Downloading https://files.pythonhosted.org/packages/54/61/6e07eabd8cbd41dfc515140f9b89b952e2e1cf64db3bf62cfce9e712a469/sageworks-0.1.5.0.tar.gz
+[2023-05-14 21:00:10] INFO root fetch - processPackages [polymesh]: Downloading https://files.pythonhosted.org/packages/fc/45/d1eba5e5612041a6017bf17b8a96c492cace28c8ea75688cdd12c23a7823/polymesh-0.0.8.tar.gz
+[2023-05-14 21:00:10] INFO root fetch - processPackages [lectric-sdk]: Downloading https://files.pythonhosted.org/packages/43/64/6272ab8629bdcb6480b2746e6e3bb7146ea176e827b6de3de5867b0b94d6/lectric-sdk-0.0.6a0.tar.gz
+[2023-05-14 21:00:10] INFO root fetch - processPackages [urllib3-ext-hface]: Downloading https://files.pythonhosted.org/packages/b4/8d/24d111f69005075fea6c8471ea80e9a2316f6b444f024ced5a15dba00b74/urllib3_ext_hface-0.2.3.tar.gz
+[2023-05-14 21:00:10] INFO root fetch - processPackages [lsst-daf-butler]: executing diffoscope
+[2023-05-14 21:00:10] INFO root fetch - processPackages [lsst-daf-butler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lsst-daf-butler-26.0.0a20230400.tar.gz tmp/lsst-daf-butler-26.0.0a20230500.tar.gz --markdown 20230514/l/lsst-daf-butler/26.0.0a20230400-26.0.0a20230500/diff.md --exclude *.pyd
+[2023-05-14 21:00:10] INFO root fetch - processPackages [transformers-agent-ui]: executing diffoscope
+[2023-05-14 21:00:10] INFO root fetch - processPackages [transformers-agent-ui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/transformers-agent-ui-0.3.0.tar.gz tmp/transformers-agent-ui-0.4.0.tar.gz --markdown 20230514/t/transformers-agent-ui/0.3.0-0.4.0/diff.md --exclude *.pyd
+[2023-05-14 21:00:10] INFO root fetch - processPackages [cast-bootstrap5]: Downloading https://files.pythonhosted.org/packages/89/2b/3335c76230d861065763adf126ca59d25e7c961794d4f94d57efaaed9202/cast_bootstrap5-0.0.2.tar.gz
+[2023-05-14 21:00:10] INFO root fetch - processPackages [urllib3-ext-hface]: executing diffoscope
+[2023-05-14 21:00:10] INFO root fetch - processPackages [urllib3-ext-hface]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/urllib3_ext_hface-0.2.2.tar.gz tmp/urllib3_ext_hface-0.2.3.tar.gz --markdown 20230514/u/urllib3-ext-hface/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-14 21:00:11] INFO root fetch - processPackages [lectric-sdk]: Downloading https://files.pythonhosted.org/packages/7d/f5/c957a796a1873e1f7870cd3cdfbba66a8159c62adb8e5785cb5d9b2dfef0/lectric-sdk-0.0.9.tar.gz
+[2023-05-14 21:00:11] INFO root fetch - processPackages [cast-bootstrap5]: executing diffoscope
+[2023-05-14 21:00:11] INFO root fetch - processPackages [cast-bootstrap5]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cast-bootstrap5-0.0.1.tar.gz tmp/cast_bootstrap5-0.0.2.tar.gz --markdown 20230514/c/cast-bootstrap5/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 21:00:11] INFO root fetch - processPackages [sageworks]: Downloading https://files.pythonhosted.org/packages/6a/39/75b14fe816cefa9ae9461ff2565a01547b89e03abafcc22af87bc6ff787b/sageworks-0.1.5.1.tar.gz
+[2023-05-14 21:00:11] INFO root fetch - processPackages [polymesh]: Downloading https://files.pythonhosted.org/packages/93/f4/358fdc0bd2b0e840adefef858001078494071d70636d5e5a4bead987ecbc/polymesh-0.0.9.tar.gz
+[2023-05-14 21:00:11] INFO root fetch - processPackages [lectric-sdk]: executing diffoscope
+[2023-05-14 21:00:11] INFO root fetch - processPackages [lectric-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lectric-sdk-0.0.6a0.tar.gz tmp/lectric-sdk-0.0.9.tar.gz --markdown 20230514/l/lectric-sdk/0.0.6a0-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 21:00:11] INFO root fetch - processPackages [polymesh]: executing diffoscope
+[2023-05-14 21:00:11] INFO root fetch - processPackages [polymesh]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/polymesh-0.0.8.tar.gz tmp/polymesh-0.0.9.tar.gz --markdown 20230514/p/polymesh/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 21:00:12] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-14 21:00:12] INFO root fetch - processPackages [sageworks]: executing diffoscope
+[2023-05-14 21:00:12] INFO root fetch - processPackages [sageworks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sageworks-0.1.5.0.tar.gz tmp/sageworks-0.1.5.1.tar.gz --markdown 20230514/s/sageworks/0.1.5.0-0.1.5.1/diff.md --exclude *.pyd
+[2023-05-14 21:00:12] INFO root fetch - main [MainThread]: End processing [transformers-agent-ui]: success
+[2023-05-14 21:00:12] INFO root fetch - main [MainThread]: End processing [urllib3-ext-hface]: success
+[2023-05-14 21:00:12] INFO root fetch - main [MainThread]: End processing [lectric-sdk]: success
+[2023-05-14 21:00:13] INFO root fetch - main [MainThread]: End processing [cast-bootstrap5]: success
+[2023-05-14 21:00:14] INFO root fetch - main [MainThread]: End processing [polymesh]: success
+[2023-05-14 21:00:14] INFO root fetch - main [MainThread]: End processing [lsst-daf-butler]: success
+[2023-05-14 21:00:14] INFO root fetch - main [MainThread]: End processing [sageworks]: success
+[2023-05-14 21:00:14] INFO root fetch - main [MainThread]: Store serial: [18099336]
