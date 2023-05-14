@@ -5789,3 +5789,38 @@
 [2023-05-14 14:27:48] INFO root fetch - main [MainThread]: End processing [indecode]: success
 [2023-05-14 14:27:49] INFO root fetch - main [MainThread]: End processing [types-pyinstaller]: success
 [2023-05-14 14:27:49] INFO root fetch - main [MainThread]: Store serial: [18096953]
+[2023-05-14 14:32:53] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096953]
+[2023-05-14 14:32:57] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-14 14:32:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: munch
+[2023-05-14 14:32:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tapcap
+[2023-05-14 14:32:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: python-scan
+[2023-05-14 14:32:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Kvsqlite
+[2023-05-14 14:32:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: hummuspy
+[2023-05-14 14:32:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: First-package-Carlo-Catanuso
+[2023-05-14 14:32:57] INFO root fetch - processPackages [Kvsqlite]: New version: [0.2.1] Old Version: [0.2.0.dev0]
+[2023-05-14 14:32:57] INFO root fetch - processPackages [munch]: New version: [3.0.0] Old Version: [2.5.1.dev12]
+[2023-05-14 14:32:58] ERROR root fetch - processPackages [First-package-Carlo-Catanuso]: Unable to get metadata: No such project 'First-package-Carlo-Catanuso'
+[2023-05-14 14:32:58] INFO root fetch - main [MainThread]: End processing [First-package-Carlo-Catanuso] error
+[2023-05-14 14:32:58] INFO root fetch - processPackages [hummuspy]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 14:32:58] WARNING root fetch - processPackages [tapcap]: Skipping, unable to determine old version
+[2023-05-14 14:32:58] INFO root fetch - processPackages [python-scan]: New version: [0.4.4a3] Old Version: [0.4.4a2]
+[2023-05-14 14:32:58] INFO root fetch - main [MainThread]: End processing [tapcap] error
+[2023-05-14 14:32:58] INFO root fetch - processPackages [Kvsqlite]: Downloading https://files.pythonhosted.org/packages/51/93/69b7a866cda7c9b648dcb3c1015e70919c4429b8d277954215c25671ab53/Kvsqlite-0.2.0.dev0.tar.gz
+[2023-05-14 14:32:58] INFO root fetch - processPackages [python-scan]: Downloading https://files.pythonhosted.org/packages/03/e2/9b87e4779b06b52127a6381786b894e91311bcf415a664d822769d280ed9/python_scan-0.4.4a2-py3-none-any.whl
+[2023-05-14 14:32:58] INFO root fetch - processPackages [munch]: Downloading https://files.pythonhosted.org/packages/b1/97/5a0ff179f193dfb3b86c9e8e192c1251c4701db9572dd21f6f812d76399d/munch-2.5.1.dev12.tar.gz
+[2023-05-14 14:32:58] INFO root fetch - processPackages [hummuspy]: executing diffoscope
+[2023-05-14 14:32:58] INFO root fetch - processPackages [hummuspy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hummuspy-0.0.8.tar.gz tmp/hummuspy-0.0.9.tar.gz --markdown 20230514/h/hummuspy/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 14:32:58] INFO root fetch - processPackages [python-scan]: Downloading https://files.pythonhosted.org/packages/d4/c7/994f3b445b52ce89505ce19468b26ec5c689fca1e5394aecad270d6db87a/python_scan-0.4.4a3-py3-none-any.whl
+[2023-05-14 14:32:58] INFO root fetch - processPackages [Kvsqlite]: Downloading https://files.pythonhosted.org/packages/a4/1c/8a3344b8d5a3397b25a1be7464edcb2263c2e4a168d411f8e3a357f3abc0/Kvsqlite-0.2.1.tar.gz
+[2023-05-14 14:32:58] INFO root fetch - processPackages [munch]: Downloading https://files.pythonhosted.org/packages/e1/40/5dcab397be4682839a1c669b2c24c857e59f073d691a2bcf9b14cebb054a/munch-3.0.0.tar.gz
+[2023-05-14 14:32:58] INFO root fetch - processPackages [munch]: executing diffoscope
+[2023-05-14 14:32:58] INFO root fetch - processPackages [munch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/munch-2.5.1.dev12.tar.gz tmp/munch-3.0.0.tar.gz --markdown 20230514/m/munch/2.5.1.dev12-3.0.0/diff.md --exclude *.pyd
+[2023-05-14 14:32:58] INFO root fetch - processPackages [python-scan]: executing diffoscope
+[2023-05-14 14:32:58] INFO root fetch - processPackages [python-scan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/python_scan-0.4.4a2-py3-none-any.whl.zip tmp/python_scan-0.4.4a3-py3-none-any.whl.zip --markdown 20230514/p/python-scan/0.4.4a2-0.4.4a3/diff.md --exclude *.pyd
+[2023-05-14 14:32:58] INFO root fetch - processPackages [Kvsqlite]: executing diffoscope
+[2023-05-14 14:32:58] INFO root fetch - processPackages [Kvsqlite]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Kvsqlite-0.2.0.dev0.tar.gz tmp/Kvsqlite-0.2.1.tar.gz --markdown 20230514/K/Kvsqlite/0.2.0.dev0-0.2.1/diff.md --exclude *.pyd
+[2023-05-14 14:32:59] INFO root fetch - main [MainThread]: End processing [hummuspy]: success
+[2023-05-14 14:32:59] INFO root fetch - main [MainThread]: End processing [munch]: success
+[2023-05-14 14:32:59] INFO root fetch - main [MainThread]: End processing [python-scan]: success
+[2023-05-14 14:32:59] INFO root fetch - main [MainThread]: End processing [Kvsqlite]: success
+[2023-05-14 14:32:59] INFO root fetch - main [MainThread]: Store serial: [18096977]
