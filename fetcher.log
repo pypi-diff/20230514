@@ -3683,3 +3683,39 @@
 [2023-05-14 09:44:23] INFO root fetch - processPackages [pycrashreport]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pycrashreport-1.0.6.tar.gz tmp/pycrashreport-1.0.7.tar.gz --markdown 20230514/p/pycrashreport/1.0.6-1.0.7/diff.md --exclude *.pyd
 [2023-05-14 09:44:24] INFO root fetch - main [MainThread]: End processing [pycrashreport]: success
 [2023-05-14 09:44:24] INFO root fetch - main [MainThread]: Store serial: [18095573]
+[2023-05-14 09:49:28] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095573]
+[2023-05-14 09:49:33] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-14 09:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: clixx
+[2023-05-14 09:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qtc
+[2023-05-14 09:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qtjq
+[2023-05-14 09:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: subproc-mgr
+[2023-05-14 09:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: keras-nightly
+[2023-05-14 09:49:33] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: django-utilitas
+[2023-05-14 09:49:33] INFO root fetch - processPackages [keras-nightly]: New version: [2.9.0.dev2022033107] Old Version: [2.9.0.dev2022033007]
+[2023-05-14 09:49:33] WARNING root fetch - processPackages [subproc-mgr]: Skipping, unable to determine old version
+[2023-05-14 09:49:33] INFO root fetch - main [MainThread]: End processing [subproc-mgr] error
+[2023-05-14 09:49:33] INFO root fetch - processPackages [clixx]: New version: [0.7.0a0] Old Version: [0.6.0a0]
+[2023-05-14 09:49:33] INFO root fetch - processPackages [django-utilitas]: New version: [1.3.4] Old Version: [1.3.3]
+[2023-05-14 09:49:33] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/9c/ac/df626672be5af4204ef9c477f1110050afecb7a0f086fef8a6a2e3469a56/keras_nightly-2.9.0.dev2022033007-py2.py3-none-any.whl
+[2023-05-14 09:49:33] WARNING root fetch - processPackages [qtjq]: Skipping, unable to determine old version
+[2023-05-14 09:49:33] INFO root fetch - processPackages [qtc]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-14 09:49:33] INFO root fetch - main [MainThread]: End processing [qtjq] error
+[2023-05-14 09:49:33] INFO root fetch - processPackages [clixx]: Downloading https://files.pythonhosted.org/packages/02/89/6cea0d307a46264a1b01ebcc2ea5511694d5cae8c54e6e24b9300bd9db92/clixx-0.6.0a0.tar.gz
+[2023-05-14 09:49:33] INFO root fetch - processPackages [qtc]: Downloading https://files.pythonhosted.org/packages/dd/a1/aef644e43ec7198863de7deb34bd0930a66bb0ffe729674c0e5403d6d5a6/qtc-0.0.2.tar.gz
+[2023-05-14 09:49:33] INFO root fetch - processPackages [keras-nightly]: Downloading https://files.pythonhosted.org/packages/64/5c/effcf86e94e42de7429f684d499233617aaa054e929986d65d4d72fb5c19/keras_nightly-2.9.0.dev2022033107-py2.py3-none-any.whl
+[2023-05-14 09:49:33] INFO root fetch - processPackages [django-utilitas]: Downloading https://files.pythonhosted.org/packages/db/be/29fc501db3dccbe9c69d824b4c144459d2b370c66dcebfc612fcc0e34659/django-utilitas-1.3.4.tar.gz
+[2023-05-14 09:49:33] INFO root fetch - processPackages [clixx]: Downloading https://files.pythonhosted.org/packages/a8/38/9863d9326549bbd9059a5891a3c2d526f390c483fb36f5dac0af39e500c0/clixx-0.7.0a0.tar.gz
+[2023-05-14 09:49:33] INFO root fetch - processPackages [qtc]: Downloading https://files.pythonhosted.org/packages/e7/b6/d3c757900467d8494dab0fb2892504ec20313241a6b1c8d3c86532db09de/qtc-0.0.3.tar.gz
+[2023-05-14 09:49:33] INFO root fetch - processPackages [django-utilitas]: executing diffoscope
+[2023-05-14 09:49:33] INFO root fetch - processPackages [django-utilitas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-utilitas-1.3.3.tar.gz tmp/django-utilitas-1.3.4.tar.gz --markdown 20230514/d/django-utilitas/1.3.3-1.3.4/diff.md --exclude *.pyd
+[2023-05-14 09:49:33] INFO root fetch - processPackages [clixx]: executing diffoscope
+[2023-05-14 09:49:33] INFO root fetch - processPackages [clixx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/clixx-0.6.0a0.tar.gz tmp/clixx-0.7.0a0.tar.gz --markdown 20230514/c/clixx/0.6.0a0-0.7.0a0/diff.md --exclude *.pyd
+[2023-05-14 09:49:33] INFO root fetch - processPackages [qtc]: executing diffoscope
+[2023-05-14 09:49:33] INFO root fetch - processPackages [qtc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qtc-0.0.2.tar.gz tmp/qtc-0.0.3.tar.gz --markdown 20230514/q/qtc/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-14 09:49:34] INFO root fetch - processPackages [keras-nightly]: executing diffoscope
+[2023-05-14 09:49:34] INFO root fetch - processPackages [keras-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/keras_nightly-2.9.0.dev2022033007-py2.py3-none-any.whl.zip tmp/keras_nightly-2.9.0.dev2022033107-py2.py3-none-any.whl.zip --markdown 20230514/k/keras-nightly/2.9.0.dev2022033007-2.9.0.dev2022033107/diff.md --exclude *.pyd
+[2023-05-14 09:49:34] INFO root fetch - main [MainThread]: End processing [clixx]: success
+[2023-05-14 09:49:35] INFO root fetch - main [MainThread]: End processing [qtc]: success
+[2023-05-14 09:49:35] INFO root fetch - main [MainThread]: End processing [django-utilitas]: success
+[2023-05-14 09:49:44] INFO root fetch - main [MainThread]: End processing [keras-nightly]: success
+[2023-05-14 09:49:44] INFO root fetch - main [MainThread]: Store serial: [18095594]
