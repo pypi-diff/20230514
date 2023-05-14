@@ -2314,3 +2314,43 @@
 [2023-05-14 05:38:06] INFO root fetch - main [MainThread]: End processing [meerschaum]: success
 [2023-05-14 05:38:06] INFO root fetch - main [MainThread]: End processing [meerschaum]: success
 [2023-05-14 05:38:06] INFO root fetch - main [MainThread]: Store serial: [18094786]
+[2023-05-14 05:43:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094786]
+[2023-05-14 05:43:16] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 05:43:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fp-browser-sdk
+[2023-05-14 05:43:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyusel-dispest
+[2023-05-14 05:43:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: canomaly
+[2023-05-14 05:43:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tornado
+[2023-05-14 05:43:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyfaust
+[2023-05-14 05:43:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyfaust-openblaso
+[2023-05-14 05:43:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pyfaust-torch
+[2023-05-14 05:43:16] INFO root fetch - processPackages [fp-browser-sdk]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-14 05:43:16] WARNING root fetch - processPackages [pyusel-dispest]: Skipping, unable to determine old version
+[2023-05-14 05:43:16] INFO root fetch - main [MainThread]: End processing [pyusel-dispest] error
+[2023-05-14 05:43:16] INFO root fetch - processPackages [canomaly]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-14 05:43:16] INFO root fetch - processPackages [pyfaust-openblaso]: New version: [3.38.9] Old Version: [3.38.8]
+[2023-05-14 05:43:16] INFO root fetch - processPackages [pyfaust-torch]: New version: [3.38.9] Old Version: [3.38.8]
+[2023-05-14 05:43:16] INFO root fetch - processPackages [tornado]: New version: [6.3b1] Old Version: [6.3.2]
+[2023-05-14 05:43:16] INFO root fetch - processPackages [pyfaust]: New version: [3.9.1] Old Version: [3.9.0]
+[2023-05-14 05:43:16] INFO root fetch - processPackages [tornado]: Downloading https://files.pythonhosted.org/packages/30/f0/6e5d85d422a26fd696a1f2613ab8119495c1ebb8f49e29f428d15daf79cc/tornado-6.3.2.tar.gz
+[2023-05-14 05:43:16] INFO root fetch - processPackages [pyfaust-openblaso]: Downloading https://files.pythonhosted.org/packages/59/0f/a671bb18f0866e38b3711c876d95dfa037f0ffd6e093480ae6ce5db7d8a6/pyfaust_openblaso-3.38.8-cp39-cp39-manylinux1_x86_64.whl
+[2023-05-14 05:43:16] INFO root fetch - processPackages [canomaly]: Downloading https://files.pythonhosted.org/packages/1d/37/947988f60b9a6cf5c65bfaca3db3d4e0a14d743d354d03e1c42d8176c006/canomaly-0.0.4.tar.gz
+[2023-05-14 05:43:16] INFO root fetch - processPackages [canomaly]: executing diffoscope
+[2023-05-14 05:43:16] INFO root fetch - processPackages [canomaly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canomaly-0.0.3.tar.gz tmp/canomaly-0.0.4.tar.gz --markdown 20230514/c/canomaly/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-14 05:43:16] INFO root fetch - processPackages [fp-browser-sdk]: Downloading https://files.pythonhosted.org/packages/c0/51/cb828fe19ad28595d53e12485a279832046e4dc82780e1f8d566e66eb342/fp_browser_sdk-0.9.2.tar.gz
+[2023-05-14 05:43:17] INFO root fetch - processPackages [fp-browser-sdk]: executing diffoscope
+[2023-05-14 05:43:17] INFO root fetch - processPackages [fp-browser-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fp_browser_sdk-0.9.1.tar.gz tmp/fp_browser_sdk-0.9.2.tar.gz --markdown 20230514/f/fp-browser-sdk/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-14 05:43:17] INFO root fetch - processPackages [pyfaust-torch]: executing diffoscope
+[2023-05-14 05:43:17] INFO root fetch - processPackages [pyfaust-torch]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfaust_torch-3.38.8-cp39-cp39-macosx_10_9_x86_64.whl.zip tmp/pyfaust_torch-3.38.9-cp39-cp39-macosx_10_9_x86_64.whl.zip --markdown 20230514/p/pyfaust-torch/3.38.8-3.38.9/diff.md --exclude *.pyd
+[2023-05-14 05:43:17] INFO root fetch - processPackages [pyfaust]: executing diffoscope
+[2023-05-14 05:43:17] INFO root fetch - processPackages [pyfaust]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfaust-3.9.0-cp39-cp39-win_amd64.whl.zip tmp/pyfaust-3.9.1-cp39-cp39-win_amd64.whl.zip --markdown 20230514/p/pyfaust/3.9.0-3.9.1/diff.md --exclude *.pyd
+[2023-05-14 05:43:17] INFO root fetch - processPackages [tornado]: Downloading https://files.pythonhosted.org/packages/41/2c/ebb4c417eb82d1d9b9666875d051a9fce6ff1e0fe5d3e93019b94c61d29d/tornado-6.3b1.tar.gz
+[2023-05-14 05:43:17] INFO root fetch - processPackages [tornado]: executing diffoscope
+[2023-05-14 05:43:17] INFO root fetch - processPackages [tornado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tornado-6.3.2.tar.gz tmp/tornado-6.3b1.tar.gz --markdown 20230514/t/tornado/6.3.2-6.3b1/diff.md --exclude *.pyd
+[2023-05-14 05:43:17] WARNING root fetch - processPackages [pyfaust-openblaso]: Skipping package: exceeds size limit 22956958>=10485760
+[2023-05-14 05:43:17] INFO root fetch - main [MainThread]: End processing [pyfaust-openblaso] error
+[2023-05-14 05:43:17] INFO root fetch - main [MainThread]: End processing [canomaly]: success
+[2023-05-14 05:43:18] INFO root fetch - main [MainThread]: End processing [fp-browser-sdk]: success
+[2023-05-14 05:43:19] INFO root fetch - main [MainThread]: End processing [tornado]: success
+[2023-05-14 05:43:53] INFO root fetch - main [MainThread]: End processing [pyfaust]: success
+[2023-05-14 05:43:57] INFO root fetch - main [MainThread]: End processing [pyfaust-torch]: success
+[2023-05-14 05:43:57] INFO root fetch - main [MainThread]: Store serial: [18094819]
