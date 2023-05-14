@@ -7998,3 +7998,43 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 17:54:35] INFO root fetch - main [MainThread]: End processing [xia-login-flask]: success
 [2023-05-14 17:54:36] INFO root fetch - main [MainThread]: End processing [pvxslibs]: success
 [2023-05-14 17:54:36] INFO root fetch - main [MainThread]: Store serial: [18098213]
+[2023-05-14 17:59:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098213]
+[2023-05-14 17:59:46] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-14 17:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: ipfindx
+[2023-05-14 17:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bluerpc
+[2023-05-14 17:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: netilion-api
+[2023-05-14 17:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: knowledgebase-gsheet-gpt
+[2023-05-14 17:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: django-orsay
+[2023-05-14 17:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: flake8-ban-utcnow
+[2023-05-14 17:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: embedders
+[2023-05-14 17:59:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: SantorinAI
+[2023-05-14 17:59:46] INFO root fetch - processPackages [netilion-api]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-05-14 17:59:46] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-14 17:59:46] WARNING root fetch - processPackages [flake8-ban-utcnow]: Skipping, unable to determine old version
+[2023-05-14 17:59:46] INFO root fetch - main [MainThread]: End processing [flake8-ban-utcnow] error
+[2023-05-14 17:59:46] INFO root fetch - processPackages [SantorinAI]: New version: [1.1.3] Old Version: [1.1.2]
+[2023-05-14 17:59:46] WARNING root fetch - processPackages [django-orsay]: Skipping, unable to determine old version
+[2023-05-14 17:59:46] INFO root fetch - main [MainThread]: End processing [django-orsay] error
+[2023-05-14 17:59:46] INFO root fetch - processPackages [embedders]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-14 17:59:46] WARNING root fetch - processPackages [ipfindx]: Skipping, unable to determine old version
+[2023-05-14 17:59:46] INFO root fetch - main [MainThread]: End processing [ipfindx] error
+[2023-05-14 17:59:46] INFO root fetch - processPackages [bluerpc]: New version: [0.2.6] Old Version: [0.0.8]
+[2023-05-14 17:59:46] INFO root fetch - processPackages [netilion-api]: executing diffoscope
+[2023-05-14 17:59:46] INFO root fetch - processPackages [netilion-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netilion_api-1.1.1.tar.gz tmp/netilion_api-1.2.0.tar.gz --markdown 20230514/n/netilion-api/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-05-14 17:59:46] INFO root fetch - processPackages [embedders]: executing diffoscope
+[2023-05-14 17:59:46] INFO root fetch - processPackages [embedders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedders-0.1.1-py2.py3-none-any.whl.zip tmp/embedders-0.1.2-py2.py3-none-any.whl.zip --markdown 20230514/e/embedders/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-14 17:59:46] INFO root fetch - processPackages [SantorinAI]: executing diffoscope
+[2023-05-14 17:59:46] INFO root fetch - processPackages [SantorinAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SantorinAI-1.1.2.tar.gz tmp/SantorinAI-1.1.3.tar.gz --markdown 20230514/S/SantorinAI/1.1.2-1.1.3/diff.md --exclude *.pyd
+[2023-05-14 17:59:46] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: Downloading https://files.pythonhosted.org/packages/3e/40/b7fa5ed9361d47ebb002f3f27f02da6698acff270667c37a4a2ac1fe90db/knowledgebase-gsheet-gpt-1.1.2.tar.gz
+[2023-05-14 17:59:46] INFO root fetch - processPackages [bluerpc]: Downloading https://files.pythonhosted.org/packages/35/b1/f07dc139b86a5bed9a017fd6b5c04c7d43e1f4babe131c15d98a0cf4e4b4/bluerpc-0.0.8.tar.gz
+[2023-05-14 17:59:46] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: executing diffoscope
+[2023-05-14 17:59:46] INFO root fetch - processPackages [knowledgebase-gsheet-gpt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/knowledgebase-gsheet-gpt-1.1.1.tar.gz tmp/knowledgebase-gsheet-gpt-1.1.2.tar.gz --markdown 20230514/k/knowledgebase-gsheet-gpt/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-14 17:59:46] INFO root fetch - processPackages [bluerpc]: Downloading https://files.pythonhosted.org/packages/5f/40/a8fc649545b5334db7e9e8b7e086b9f0ed839350e0aebd045eb38735141d/bluerpc-0.2.6.tar.gz
+[2023-05-14 17:59:46] INFO root fetch - processPackages [bluerpc]: executing diffoscope
+[2023-05-14 17:59:46] INFO root fetch - processPackages [bluerpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bluerpc-0.0.8.tar.gz tmp/bluerpc-0.2.6.tar.gz --markdown 20230514/b/bluerpc/0.0.8-0.2.6/diff.md --exclude *.pyd
+[2023-05-14 17:59:47] INFO root fetch - main [MainThread]: End processing [SantorinAI]: success
+[2023-05-14 17:59:47] INFO root fetch - main [MainThread]: End processing [embedders]: success
+[2023-05-14 17:59:47] INFO root fetch - main [MainThread]: End processing [knowledgebase-gsheet-gpt]: success
+[2023-05-14 17:59:47] INFO root fetch - main [MainThread]: End processing [bluerpc]: success
+[2023-05-14 17:59:55] INFO root fetch - main [MainThread]: End processing [netilion-api]: success
+[2023-05-14 17:59:55] INFO root fetch - main [MainThread]: Store serial: [18098256]
