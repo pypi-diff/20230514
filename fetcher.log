@@ -5454,3 +5454,53 @@
 [2023-05-14 13:45:46] INFO root fetch - processPackages [datagen-tech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datagen_tech-1.9.0rc1.tar.gz tmp/datagen_tech-1.9.0rc2.tar.gz --markdown 20230514/d/datagen-tech/1.9.0rc1-1.9.0rc2/diff.md --exclude *.pyd
 [2023-05-14 13:45:50] INFO root fetch - main [MainThread]: End processing [datagen-tech]: success
 [2023-05-14 13:45:50] INFO root fetch - main [MainThread]: Store serial: [18096721]
+[2023-05-14 13:50:55] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096721]
+[2023-05-14 13:51:00] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-14 13:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bigdl-orca-spark3
+[2023-05-14 13:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: glaceon
+[2023-05-14 13:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bigdl-friesian-spark3
+[2023-05-14 13:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: simplebox
+[2023-05-14 13:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bigdl-chronos-spark3
+[2023-05-14 13:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bigdl-spark3
+[2023-05-14 13:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: oceano-algos
+[2023-05-14 13:51:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tankioapi
+[2023-05-14 13:51:01] INFO root fetch - processPackages [oceano-algos]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-14 13:51:01] WARNING root fetch - processPackages [glaceon]: Skipping, unable to determine old version
+[2023-05-14 13:51:01] INFO root fetch - main [MainThread]: End processing [glaceon] error
+[2023-05-14 13:51:01] INFO root fetch - processPackages [simplebox]: New version: [0.0.1a146] Old Version: [0.0.1a145]
+[2023-05-14 13:51:01] INFO root fetch - processPackages [tankioapi]: New version: [0.1.2] Old Version: [0.1.0]
+[2023-05-14 13:51:01] INFO root fetch - processPackages [bigdl-spark3]: New version: [2.4.0b20230514] Old Version: [2.4.0b20230513]
+[2023-05-14 13:51:01] INFO root fetch - processPackages [bigdl-orca-spark3]: New version: [2.4.0b20230514] Old Version: [2.4.0b20230513]
+[2023-05-14 13:51:02] INFO root fetch - processPackages [bigdl-chronos-spark3]: New version: [2.4.0b20230514] Old Version: [2.4.0b20230513]
+[2023-05-14 13:51:02] INFO root fetch - processPackages [bigdl-friesian-spark3]: New version: [2.4.0b20230514] Old Version: [2.4.0b20230513]
+[2023-05-14 13:51:02] INFO root fetch - processPackages [oceano-algos]: Downloading https://files.pythonhosted.org/packages/7c/86/fa1e34f3f2b1a445edd276795af0bb760952c128f07d270af929b89e1cea/oceano_algos-0.0.98.tar.gz
+[2023-05-14 13:51:02] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/c9/59/69811d387b20e57ded379cf6c123d714c18c3bfc62357d8a4a51aebd3867/simplebox-0.0.1a145-py3-none-any.whl
+[2023-05-14 13:51:02] INFO root fetch - processPackages [tankioapi]: Downloading https://files.pythonhosted.org/packages/19/86/f62935b3deee083226aaf8eb0263aa3ee2d02708302cb9e6ff87fc6b20f8/tankioapi-0.1.0.tar.gz
+[2023-05-14 13:51:02] INFO root fetch - processPackages [bigdl-orca-spark3]: Downloading https://files.pythonhosted.org/packages/76/27/42f5062dae05217df398debd4cfa5924e13f328793cb63c93e38f2b0a648/bigdl_orca_spark3-2.4.0b20230513-py3-none-manylinux1_x86_64.whl
+[2023-05-14 13:51:02] INFO root fetch - processPackages [bigdl-spark3]: Downloading https://files.pythonhosted.org/packages/65/d2/92ab2317ae705f20f28caccc81be5c40a510a4fcf9adafffbb8bcf19a7e9/bigdl_spark3-2.4.0b20230514-py3-none-manylinux1_x86_64.whl
+[2023-05-14 13:51:02] INFO root fetch - processPackages [bigdl-friesian-spark3]: Downloading https://files.pythonhosted.org/packages/77/15/433e880111f51c56e20b26025da205fe27b6f68c12d8b9ef2d67547be958/bigdl_friesian_spark3-2.4.0b20230514-py3-none-manylinux1_x86_64.whl
+[2023-05-14 13:51:02] INFO root fetch - processPackages [bigdl-chronos-spark3]: Downloading https://files.pythonhosted.org/packages/3a/87/d53aa1aebe3e797416ddf37c4120f1d82f3e2fcc0c80d3b7506685b6927e/bigdl_chronos_spark3-2.4.0b20230514-py3-none-manylinux1_x86_64.whl
+[2023-05-14 13:51:02] INFO root fetch - processPackages [tankioapi]: Downloading https://files.pythonhosted.org/packages/cb/4a/7107dc6eef96736748a6561af0fd9772f1689d8df92294ba15b19b00807c/tankioapi-0.1.2.tar.gz
+[2023-05-14 13:51:02] WARNING root fetch - processPackages [bigdl-orca-spark3]: Skipping package: exceeds size limit 20207414>=10485760
+[2023-05-14 13:51:02] INFO root fetch - main [MainThread]: End processing [bigdl-orca-spark3] error
+[2023-05-14 13:51:02] INFO root fetch - processPackages [bigdl-spark3]: executing diffoscope
+[2023-05-14 13:51:02] INFO root fetch - processPackages [bigdl-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_spark3-2.4.0b20230513-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_spark3-2.4.0b20230514-py3-none-manylinux1_x86_64.whl.zip --markdown 20230514/b/bigdl-spark3/2.4.0b20230513-2.4.0b20230514/diff.md --exclude *.pyd
+[2023-05-14 13:51:02] INFO root fetch - processPackages [simplebox]: Downloading https://files.pythonhosted.org/packages/6e/46/f5cafb6b8fc9252c96f8ee643cae0f037cf898a31ce64a93f660f7ff2483/simplebox-0.0.1a146-py3-none-any.whl
+[2023-05-14 13:51:02] INFO root fetch - processPackages [bigdl-friesian-spark3]: executing diffoscope
+[2023-05-14 13:51:02] INFO root fetch - processPackages [bigdl-friesian-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_friesian_spark3-2.4.0b20230513-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_friesian_spark3-2.4.0b20230514-py3-none-manylinux1_x86_64.whl.zip --markdown 20230514/b/bigdl-friesian-spark3/2.4.0b20230513-2.4.0b20230514/diff.md --exclude *.pyd
+[2023-05-14 13:51:02] INFO root fetch - processPackages [bigdl-chronos-spark3]: executing diffoscope
+[2023-05-14 13:51:02] INFO root fetch - processPackages [bigdl-chronos-spark3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bigdl_chronos_spark3-2.4.0b20230513-py3-none-manylinux1_x86_64.whl.zip tmp/bigdl_chronos_spark3-2.4.0b20230514-py3-none-manylinux1_x86_64.whl.zip --markdown 20230514/b/bigdl-chronos-spark3/2.4.0b20230513-2.4.0b20230514/diff.md --exclude *.pyd
+[2023-05-14 13:51:02] INFO root fetch - processPackages [oceano-algos]: Downloading https://files.pythonhosted.org/packages/83/a4/d9e4d84d0b1d04e29a556b683f50c95a60a02dea91e4cc072d3195e1058b/oceano_algos-0.0.99.tar.gz
+[2023-05-14 13:51:02] INFO root fetch - processPackages [tankioapi]: executing diffoscope
+[2023-05-14 13:51:02] INFO root fetch - processPackages [tankioapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tankioapi-0.1.0.tar.gz tmp/tankioapi-0.1.2.tar.gz --markdown 20230514/t/tankioapi/0.1.0-0.1.2/diff.md --exclude *.pyd
+[2023-05-14 13:51:02] INFO root fetch - processPackages [oceano-algos]: executing diffoscope
+[2023-05-14 13:51:02] INFO root fetch - processPackages [oceano-algos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oceano_algos-0.0.98.tar.gz tmp/oceano_algos-0.0.99.tar.gz --markdown 20230514/o/oceano-algos/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-14 13:51:02] INFO root fetch - processPackages [simplebox]: executing diffoscope
+[2023-05-14 13:51:02] INFO root fetch - processPackages [simplebox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/simplebox-0.0.1a145-py3-none-any.whl.zip tmp/simplebox-0.0.1a146-py3-none-any.whl.zip --markdown 20230514/s/simplebox/0.0.1a145-0.0.1a146/diff.md --exclude *.pyd
+[2023-05-14 13:51:03] INFO root fetch - main [MainThread]: End processing [bigdl-spark3]: success
+[2023-05-14 13:51:03] INFO root fetch - main [MainThread]: End processing [tankioapi]: success
+[2023-05-14 13:51:03] INFO root fetch - main [MainThread]: End processing [bigdl-friesian-spark3]: success
+[2023-05-14 13:51:04] INFO root fetch - main [MainThread]: End processing [oceano-algos]: success
+[2023-05-14 13:51:04] INFO root fetch - main [MainThread]: End processing [simplebox]: success
+[2023-05-14 13:51:04] INFO root fetch - main [MainThread]: End processing [bigdl-chronos-spark3]: success
+[2023-05-14 13:51:04] INFO root fetch - main [MainThread]: Store serial: [18096745]
