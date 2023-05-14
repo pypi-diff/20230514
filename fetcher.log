@@ -1206,3 +1206,28 @@
 [2023-05-14 02:36:57] INFO root fetch - main [MainThread]: End processing [aeppl-nightly]: success
 [2023-05-14 02:36:58] INFO root fetch - main [MainThread]: End processing [cdklabs.cdk-enterprise-iac]: success
 [2023-05-14 02:36:58] INFO root fetch - main [MainThread]: Store serial: [18094123]
+[2023-05-14 02:42:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094123]
+[2023-05-14 02:42:06] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 02:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: state-machine-semaphore
+[2023-05-14 02:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyipums
+[2023-05-14 02:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pybash
+[2023-05-14 02:42:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: orient
+[2023-05-14 02:42:06] WARNING root fetch - processPackages [pyipums]: Skipping, unable to determine old version
+[2023-05-14 02:42:06] INFO root fetch - main [MainThread]: End processing [pyipums] error
+[2023-05-14 02:42:06] INFO root fetch - processPackages [pybash]: New version: [0.3.0] Old Version: [0.2.5]
+[2023-05-14 02:42:06] INFO root fetch - processPackages [orient]: New version: [7.0.0] Old Version: [6.2.0]
+[2023-05-14 02:42:06] INFO root fetch - processPackages [state-machine-semaphore]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-14 02:42:06] INFO root fetch - processPackages [pybash]: Downloading https://files.pythonhosted.org/packages/79/69/ed90924391cdc2c15302811371e3b6b998a2aef12d94ddb4c98f108a8a57/pybash-0.2.5.tar.gz
+[2023-05-14 02:42:06] INFO root fetch - processPackages [orient]: Downloading https://files.pythonhosted.org/packages/e2/bb/fa67ba6b082c81915217f7fc862304fb11138f2852275b5496dcde116025/orient-6.2.0.tar.gz
+[2023-05-14 02:42:07] INFO root fetch - processPackages [state-machine-semaphore]: executing diffoscope
+[2023-05-14 02:42:07] INFO root fetch - processPackages [state-machine-semaphore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/state-machine-semaphore-0.1.98.tar.gz tmp/state-machine-semaphore-0.1.99.tar.gz --markdown 20230514/s/state-machine-semaphore/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-14 02:42:07] INFO root fetch - processPackages [pybash]: Downloading https://files.pythonhosted.org/packages/79/28/e9440f9143233e6ac63124376fddc0afc3cc1ef80e67689570463662d266/pybash-0.3.0.tar.gz
+[2023-05-14 02:42:07] INFO root fetch - processPackages [orient]: Downloading https://files.pythonhosted.org/packages/95/6a/3449ffd9ece2e62dd3c0a002a3a94a8069049c125eb999763c703bdd0b96/orient-7.0.0.tar.gz
+[2023-05-14 02:42:07] INFO root fetch - processPackages [pybash]: executing diffoscope
+[2023-05-14 02:42:07] INFO root fetch - processPackages [pybash]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pybash-0.2.5.tar.gz tmp/pybash-0.3.0.tar.gz --markdown 20230514/p/pybash/0.2.5-0.3.0/diff.md --exclude *.pyd
+[2023-05-14 02:42:07] INFO root fetch - processPackages [orient]: executing diffoscope
+[2023-05-14 02:42:07] INFO root fetch - processPackages [orient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/orient-6.2.0.tar.gz tmp/orient-7.0.0.tar.gz --markdown 20230514/o/orient/6.2.0-7.0.0/diff.md --exclude *.pyd
+[2023-05-14 02:42:08] INFO root fetch - main [MainThread]: End processing [state-machine-semaphore]: success
+[2023-05-14 02:42:08] INFO root fetch - main [MainThread]: End processing [pybash]: success
+[2023-05-14 02:42:08] INFO root fetch - main [MainThread]: End processing [orient]: success
+[2023-05-14 02:42:08] INFO root fetch - main [MainThread]: Store serial: [18094137]
