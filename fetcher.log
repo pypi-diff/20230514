@@ -4689,3 +4689,30 @@
 [2023-05-14 12:04:07] INFO root fetch - main [MainThread]: End processing [sluyspy]: success
 [2023-05-14 12:04:08] INFO root fetch - main [MainThread]: End processing [FreeTVG-karjakak]: success
 [2023-05-14 12:04:08] INFO root fetch - main [MainThread]: Store serial: [18096209]
+[2023-05-14 12:09:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096209]
+[2023-05-14 12:09:18] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 12:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: zypl-macro
+[2023-05-14 12:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PatryksAutoAI
+[2023-05-14 12:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: fmsne
+[2023-05-14 12:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ondewo-nlu-client
+[2023-05-14 12:09:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: flaretool
+[2023-05-14 12:09:18] WARNING root fetch - processPackages [zypl-macro]: Skipping, unable to determine old version
+[2023-05-14 12:09:18] INFO root fetch - main [MainThread]: End processing [zypl-macro] error
+[2023-05-14 12:09:18] WARNING root fetch - processPackages [fmsne]: Skipping, unable to determine old version
+[2023-05-14 12:09:18] INFO root fetch - main [MainThread]: End processing [fmsne] error
+[2023-05-14 12:09:18] INFO root fetch - processPackages [flaretool]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 12:09:18] INFO root fetch - processPackages [PatryksAutoAI]: New version: [0.5.7] Old Version: [0.5.6]
+[2023-05-14 12:09:18] INFO root fetch - processPackages [ondewo-nlu-client]: New version: [4.7.0] Old Version: [4.6.0]
+[2023-05-14 12:09:18] INFO root fetch - processPackages [flaretool]: executing diffoscope
+[2023-05-14 12:09:18] INFO root fetch - processPackages [flaretool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flaretool-0.1.8.tar.gz tmp/flaretool-0.1.9-py3-none-any.whl.zip --markdown 20230514/f/flaretool/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 12:09:18] INFO root fetch - processPackages [ondewo-nlu-client]: Downloading https://files.pythonhosted.org/packages/97/03/adbc016a40b012d7d8087bc6d9f9a920f08a14ec8a1ef0fb02500d8d7418/ondewo-nlu-client-4.6.0.tar.gz
+[2023-05-14 12:09:18] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/c4/c8/1099eb29fe71dbc4be8e1804325b80e9ecdfc5acd26d0c7fd415d9fd1b9f/PatryksAutoAI-0.5.7.tar.gz
+[2023-05-14 12:09:18] INFO root fetch - processPackages [PatryksAutoAI]: executing diffoscope
+[2023-05-14 12:09:18] INFO root fetch - processPackages [PatryksAutoAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PatryksAutoAI-0.5.6.tar.gz tmp/PatryksAutoAI-0.5.7.tar.gz --markdown 20230514/P/PatryksAutoAI/0.5.6-0.5.7/diff.md --exclude *.pyd
+[2023-05-14 12:09:18] INFO root fetch - processPackages [ondewo-nlu-client]: Downloading https://files.pythonhosted.org/packages/79/58/ff587a0ad3a13ec67adb36277b8c77d1dea91f62ad67296b995d30b63a5c/ondewo-nlu-client-4.7.0.tar.gz
+[2023-05-14 12:09:18] INFO root fetch - processPackages [ondewo-nlu-client]: executing diffoscope
+[2023-05-14 12:09:18] INFO root fetch - processPackages [ondewo-nlu-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ondewo-nlu-client-4.6.0.tar.gz tmp/ondewo-nlu-client-4.7.0.tar.gz --markdown 20230514/o/ondewo-nlu-client/4.6.0-4.7.0/diff.md --exclude *.pyd
+[2023-05-14 12:09:19] INFO root fetch - main [MainThread]: End processing [flaretool]: success
+[2023-05-14 12:09:19] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
+[2023-05-14 12:09:20] INFO root fetch - main [MainThread]: End processing [ondewo-nlu-client]: success
+[2023-05-14 12:09:20] INFO root fetch - main [MainThread]: Store serial: [18096227]
