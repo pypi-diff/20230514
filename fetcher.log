@@ -2273,3 +2273,16 @@
 [2023-05-14 05:27:41] INFO root fetch - main [MainThread]: End processing [konfuzio-sdk]: success
 [2023-05-14 05:27:42] INFO root fetch - main [MainThread]: End processing [aioqui]: success
 [2023-05-14 05:27:42] INFO root fetch - main [MainThread]: Store serial: [18094751]
+[2023-05-14 05:32:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094751]
+[2023-05-14 05:32:52] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-14 05:32:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hexabyte
+[2023-05-14 05:32:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cloudpathlib
+[2023-05-14 05:32:52] WARNING root fetch - processPackages [hexabyte]: Skipping, unable to determine old version
+[2023-05-14 05:32:52] INFO root fetch - main [MainThread]: End processing [hexabyte] error
+[2023-05-14 05:32:52] INFO root fetch - processPackages [cloudpathlib]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-14 05:32:52] INFO root fetch - processPackages [cloudpathlib]: Downloading https://files.pythonhosted.org/packages/de/3a/17182dc09d341dd9d31f63d8db9e58b05a0520a5273cfeac0e940566147c/cloudpathlib-0.8.0.tar.gz
+[2023-05-14 05:32:53] INFO root fetch - processPackages [cloudpathlib]: Downloading https://files.pythonhosted.org/packages/2a/1d/e1e1d8d484a96f0136b86f07f4979f3bb703409c592ede643c98a64a7009/cloudpathlib-0.9.0.tar.gz
+[2023-05-14 05:32:53] INFO root fetch - processPackages [cloudpathlib]: executing diffoscope
+[2023-05-14 05:32:53] INFO root fetch - processPackages [cloudpathlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudpathlib-0.8.0.tar.gz tmp/cloudpathlib-0.9.0.tar.gz --markdown 20230514/c/cloudpathlib/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 05:32:54] INFO root fetch - main [MainThread]: End processing [cloudpathlib]: success
+[2023-05-14 05:32:54] INFO root fetch - main [MainThread]: Store serial: [18094767]
