@@ -1961,3 +1961,30 @@
 [2023-05-14 04:35:07] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
 [2023-05-14 04:35:08] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
 [2023-05-14 04:35:08] INFO root fetch - main [MainThread]: Store serial: [18094549]
+[2023-05-14 04:40:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094549]
+[2023-05-14 04:40:16] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 04:40:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fluffy-server
+[2023-05-14 04:40:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: APPA
+[2023-05-14 04:40:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: mml-qae
+[2023-05-14 04:40:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: BDXConverter
+[2023-05-14 04:40:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: configzen
+[2023-05-14 04:40:16] INFO root fetch - processPackages [configzen]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-14 04:40:16] WARNING root fetch - processPackages [mml-qae]: Skipping, unable to determine old version
+[2023-05-14 04:40:16] INFO root fetch - main [MainThread]: End processing [mml-qae] error
+[2023-05-14 04:40:16] INFO root fetch - processPackages [BDXConverter]: New version: [1.1.8] Old Version: [1.1.7]
+[2023-05-14 04:40:16] INFO root fetch - processPackages [fluffy-server]: New version: [1.9.1] Old Version: [1.9.0]
+[2023-05-14 04:40:16] WARNING root fetch - processPackages [APPA]: Skipping, unable to determine old version
+[2023-05-14 04:40:16] INFO root fetch - main [MainThread]: End processing [APPA] error
+[2023-05-14 04:40:17] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/6f/b3/b77a3d19000f4d549e6e14b9195d331b28d3a39e7fb7ff42e38af2c8574c/configzen-0.1.0.tar.gz
+[2023-05-14 04:40:17] INFO root fetch - processPackages [BDXConverter]: Downloading https://files.pythonhosted.org/packages/0d/71/d5037227457536d8ff456b899432f8185586adfc45b0a93e9104864f53ed/BDXConverter-1.1.8.tar.gz
+[2023-05-14 04:40:17] INFO root fetch - processPackages [BDXConverter]: executing diffoscope
+[2023-05-14 04:40:17] INFO root fetch - processPackages [BDXConverter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/BDXConverter-1.1.7.tar.gz tmp/BDXConverter-1.1.8.tar.gz --markdown 20230514/B/BDXConverter/1.1.7-1.1.8/diff.md --exclude *.pyd
+[2023-05-14 04:40:17] INFO root fetch - processPackages [fluffy-server]: executing diffoscope
+[2023-05-14 04:40:17] INFO root fetch - processPackages [fluffy-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluffy-server-1.9.0.tar.gz tmp/fluffy-server-1.9.1.tar.gz --markdown 20230514/f/fluffy-server/1.9.0-1.9.1/diff.md --exclude *.pyd
+[2023-05-14 04:40:17] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/63/f8/652582b28cc291f5abdd2785d3ae2c157f30e50fe4264473ba2b19d523b4/configzen-0.1.1.tar.gz
+[2023-05-14 04:40:17] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-14 04:40:17] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.0.tar.gz tmp/configzen-0.1.1.tar.gz --markdown 20230514/c/configzen/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-14 04:40:18] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-14 04:40:18] INFO root fetch - main [MainThread]: End processing [BDXConverter]: success
+[2023-05-14 04:40:18] INFO root fetch - main [MainThread]: End processing [fluffy-server]: success
+[2023-05-14 04:40:18] INFO root fetch - main [MainThread]: Store serial: [18094573]
