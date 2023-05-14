@@ -10575,3 +10575,49 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 22:23:15] INFO root fetch - main [MainThread]: End processing [dvc-data]: success
 [2023-05-14 22:23:15] INFO root fetch - main [MainThread]: End processing [resqpy]: success
 [2023-05-14 22:23:15] INFO root fetch - main [MainThread]: Store serial: [18099802]
+[2023-05-14 22:28:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18099802]
+[2023-05-14 22:28:25] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 22:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: FuncsForSPO
+[2023-05-14 22:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ooouno
+[2023-05-14 22:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ultima-scraper-api
+[2023-05-14 22:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: local-recruitment-employer-python-backend
+[2023-05-14 22:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: JLC2KiCadLib
+[2023-05-14 22:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: recruitment-employer-local-python-package
+[2023-05-14 22:28:25] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: experimenthq
+[2023-05-14 22:28:25] INFO root fetch - processPackages [JLC2KiCadLib]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-14 22:28:25] INFO root fetch - processPackages [ultima-scraper-api]: New version: [1.1.0] Old Version: [1.0.5]
+[2023-05-14 22:28:25] INFO root fetch - processPackages [ooouno]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-14 22:28:25] INFO root fetch - processPackages [FuncsForSPO]: New version: [4.42.0] Old Version: [4.41.6]
+[2023-05-14 22:28:25] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-05-14 22:28:25] WARNING root fetch - processPackages [recruitment-employer-local-python-package]: Skipping, unable to determine old version
+[2023-05-14 22:28:25] INFO root fetch - main [MainThread]: End processing [recruitment-employer-local-python-package] error
+[2023-05-14 22:28:25] INFO root fetch - processPackages [experimenthq]: New version: [0.0.0.dev3] Old Version: [0.0.0.dev2]
+[2023-05-14 22:28:25] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: executing diffoscope
+[2023-05-14 22:28:25] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local-recruitment-employer-python-backend-0.0.7.tar.gz tmp/local-recruitment-employer-python-backend-0.0.9.tar.gz --markdown 20230514/l/local-recruitment-employer-python-backend/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 22:28:25] INFO root fetch - processPackages [ultima-scraper-api]: Downloading https://files.pythonhosted.org/packages/e8/23/e20a6291081fef68d0a2014e5fcfd7a862d5e5c3a0d5c13ad974f0c2de02/ultima_scraper_api-1.0.5.tar.gz
+[2023-05-14 22:28:25] INFO root fetch - processPackages [JLC2KiCadLib]: Downloading https://files.pythonhosted.org/packages/cb/98/ccede9721435b39721a7933a153f2461f594407d748bea3fcf928d10bc0a/JLC2KiCadLib-1.0.8.tar.gz
+[2023-05-14 22:28:25] INFO root fetch - processPackages [ooouno]: Downloading https://files.pythonhosted.org/packages/a4/f7/b13e6b5bf76578b9780552004808e69a4b2e937a6c87ba623e16897e90d1/ooouno-1.0.1.tar.gz
+[2023-05-14 22:28:25] INFO root fetch - processPackages [FuncsForSPO]: Downloading https://files.pythonhosted.org/packages/2b/65/172bf2320fb5062982f48c311c62bc8df18692a7f9076065403031cde9ff/FuncsForSPO-4.42.0.tar.gz
+[2023-05-14 22:28:25] INFO root fetch - processPackages [FuncsForSPO]: executing diffoscope
+[2023-05-14 22:28:25] INFO root fetch - processPackages [FuncsForSPO]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/FuncsForSPO-4.41.6.tar.gz tmp/FuncsForSPO-4.42.0.tar.gz --markdown 20230514/F/FuncsForSPO/4.41.6-4.42.0/diff.md --exclude *.pyd
+[2023-05-14 22:28:25] INFO root fetch - processPackages [experimenthq]: Downloading https://files.pythonhosted.org/packages/f7/49/5111ddcb62e18ac37515021f763874cce8fd855290400747c409aa2851a1/experimenthq-0.0.0.dev2.tar.gz
+[2023-05-14 22:28:25] INFO root fetch - processPackages [ultima-scraper-api]: Downloading https://files.pythonhosted.org/packages/7a/b4/c6f1dc7e12fd24eb8de91515336da17241b95e877639fa00f09266a6cc25/ultima_scraper_api-1.1.0.tar.gz
+[2023-05-14 22:28:25] INFO root fetch - processPackages [JLC2KiCadLib]: Downloading https://files.pythonhosted.org/packages/02/6e/ec1524fb03dd570156201c0e3f6c7014ee1762d01f88c926f5c22b756f5e/JLC2KiCadLib-1.0.9.tar.gz
+[2023-05-14 22:28:25] INFO root fetch - processPackages [JLC2KiCadLib]: executing diffoscope
+[2023-05-14 22:28:25] INFO root fetch - processPackages [JLC2KiCadLib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/JLC2KiCadLib-1.0.8.tar.gz tmp/JLC2KiCadLib-1.0.9.tar.gz --markdown 20230514/J/JLC2KiCadLib/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-14 22:28:25] INFO root fetch - processPackages [ultima-scraper-api]: executing diffoscope
+[2023-05-14 22:28:25] INFO root fetch - processPackages [ultima-scraper-api]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ultima_scraper_api-1.0.5.tar.gz tmp/ultima_scraper_api-1.1.0.tar.gz --markdown 20230514/u/ultima-scraper-api/1.0.5-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 22:28:25] INFO root fetch - processPackages [experimenthq]: Downloading https://files.pythonhosted.org/packages/ed/f3/00b47272dbfda6ce757e00b4cc7cd2823ad1658a41f457dbef8a90298f16/experimenthq-0.0.0.dev3.tar.gz
+[2023-05-14 22:28:25] INFO root fetch - processPackages [ooouno]: Downloading https://files.pythonhosted.org/packages/79/dd/3705eafd121f08f16356f3fae4817a94361196a57f7deea9974aa764816c/ooouno-1.0.2.tar.gz
+[2023-05-14 22:28:26] INFO root fetch - processPackages [experimenthq]: executing diffoscope
+[2023-05-14 22:28:26] INFO root fetch - processPackages [experimenthq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/experimenthq-0.0.0.dev2.tar.gz tmp/experimenthq-0.0.0.dev3.tar.gz --markdown 20230514/e/experimenthq/0.0.0.dev2-0.0.0.dev3/diff.md --exclude *.pyd
+[2023-05-14 22:28:26] INFO root fetch - processPackages [ooouno]: executing diffoscope
+[2023-05-14 22:28:26] INFO root fetch - processPackages [ooouno]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ooouno-1.0.1.tar.gz tmp/ooouno-1.0.2.tar.gz --markdown 20230514/o/ooouno/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-14 22:28:26] INFO root fetch - main [MainThread]: End processing [local-recruitment-employer-python-backend]: success
+[2023-05-14 22:28:26] INFO root fetch - main [MainThread]: End processing [JLC2KiCadLib]: success
+[2023-05-14 22:28:26] INFO root fetch - main [MainThread]: End processing [FuncsForSPO]: success
+[2023-05-14 22:28:27] INFO root fetch - main [MainThread]: End processing [ultima-scraper-api]: success
+[2023-05-14 22:28:27] INFO root fetch - main [MainThread]: End processing [experimenthq]: success
+[2023-05-14 22:31:26] ERROR root fetch - processPackages [ooouno]: Timeout during execution of pkgdiff
+[2023-05-14 22:31:26] INFO root fetch - main [MainThread]: End processing [ooouno] error
+[2023-05-14 22:31:26] INFO root fetch - main [MainThread]: Store serial: [18099826]
