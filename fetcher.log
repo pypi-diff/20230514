@@ -3588,3 +3588,35 @@
 [2023-05-14 09:23:41] INFO root fetch - main [MainThread]: End processing [xbox-sdk]: success
 [2023-05-14 09:23:41] INFO root fetch - main [MainThread]: End processing [weatheril]: success
 [2023-05-14 09:23:41] INFO root fetch - main [MainThread]: Store serial: [18095515]
+[2023-05-14 09:28:46] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095515]
+[2023-05-14 09:28:51] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 09:28:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: xbox-sdk
+[2023-05-14 09:28:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: lmcloud
+[2023-05-14 09:28:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tarvis-common
+[2023-05-14 09:28:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: traversaal
+[2023-05-14 09:28:51] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: local-recruitment-employer-python-backend
+[2023-05-14 09:28:51] INFO root fetch - processPackages [tarvis-common]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-14 09:28:51] INFO root fetch - processPackages [traversaal]: New version: [0.5] Old Version: [0.4]
+[2023-05-14 09:28:51] INFO root fetch - processPackages [xbox-sdk]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 09:28:51] INFO root fetch - processPackages [lmcloud]: New version: [0.3.3] Old Version: [0.3.2]
+[2023-05-14 09:28:51] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-14 09:28:51] INFO root fetch - processPackages [traversaal]: executing diffoscope
+[2023-05-14 09:28:51] INFO root fetch - processPackages [traversaal]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/traversaal-0.4.tar.gz tmp/traversaal-0.5.tar.gz --markdown 20230514/t/traversaal/0.4-0.5/diff.md --exclude *.pyd
+[2023-05-14 09:28:51] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: executing diffoscope
+[2023-05-14 09:28:51] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local-recruitment-employer-python-backend-0.0.6.tar.gz tmp/local-recruitment-employer-python-backend-0.0.7.tar.gz --markdown 20230514/l/local-recruitment-employer-python-backend/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-14 09:28:51] INFO root fetch - processPackages [lmcloud]: Downloading https://files.pythonhosted.org/packages/57/21/b188689cfcf1973bb104be8521f47df1045d8683fe37cf4746fadcdc5f01/lmcloud-0.3.2.tar.gz
+[2023-05-14 09:28:51] INFO root fetch - processPackages [tarvis-common]: Downloading https://files.pythonhosted.org/packages/c6/f8/24f5948a11d29ea19a44709e6e4d7f14466a1e44d76686ed8df7cd0f925d/tarvis-common-0.9.5.tar.gz
+[2023-05-14 09:28:51] INFO root fetch - processPackages [lmcloud]: Downloading https://files.pythonhosted.org/packages/eb/be/855c355d261e78bea8217d63b86a6782e76603b4d166fbd0084e71602a96/lmcloud-0.3.3.tar.gz
+[2023-05-14 09:28:51] INFO root fetch - processPackages [xbox-sdk]: executing diffoscope
+[2023-05-14 09:28:51] INFO root fetch - processPackages [xbox-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xbox-sdk-0.0.8.tar.gz tmp/xbox-sdk-0.0.9.tar.gz --markdown 20230514/x/xbox-sdk/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 09:28:51] INFO root fetch - processPackages [lmcloud]: executing diffoscope
+[2023-05-14 09:28:51] INFO root fetch - processPackages [lmcloud]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lmcloud-0.3.2.tar.gz tmp/lmcloud-0.3.3.tar.gz --markdown 20230514/l/lmcloud/0.3.2-0.3.3/diff.md --exclude *.pyd
+[2023-05-14 09:28:51] INFO root fetch - processPackages [tarvis-common]: Downloading https://files.pythonhosted.org/packages/f6/70/0458d83c868b50691e1a02cba41958930fc9c738e69417985b93ea277676/tarvis-common-0.9.6.tar.gz
+[2023-05-14 09:28:52] INFO root fetch - processPackages [tarvis-common]: executing diffoscope
+[2023-05-14 09:28:52] INFO root fetch - processPackages [tarvis-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tarvis-common-0.9.5.tar.gz tmp/tarvis-common-0.9.6.tar.gz --markdown 20230514/t/tarvis-common/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-14 09:28:52] INFO root fetch - main [MainThread]: End processing [traversaal]: success
+[2023-05-14 09:28:52] INFO root fetch - main [MainThread]: End processing [local-recruitment-employer-python-backend]: success
+[2023-05-14 09:28:53] INFO root fetch - main [MainThread]: End processing [tarvis-common]: success
+[2023-05-14 09:28:53] INFO root fetch - main [MainThread]: End processing [lmcloud]: success
+[2023-05-14 09:28:53] INFO root fetch - main [MainThread]: End processing [xbox-sdk]: success
+[2023-05-14 09:28:53] INFO root fetch - main [MainThread]: Store serial: [18095530]
