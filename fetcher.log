@@ -4868,3 +4868,25 @@
 [2023-05-14 12:31:33] INFO root fetch - main [MainThread]: End processing [aec-cli]: success
 [2023-05-14 12:31:34] INFO root fetch - main [MainThread]: End processing [classiq]: success
 [2023-05-14 12:31:34] INFO root fetch - main [MainThread]: Store serial: [18096304]
+[2023-05-14 12:36:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096304]
+[2023-05-14 12:36:44] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-14 12:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: om-quant-fin
+[2023-05-14 12:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: indecode
+[2023-05-14 12:36:44] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hyperparameters
+[2023-05-14 12:36:44] INFO root fetch - processPackages [om-quant-fin]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-14 12:36:44] INFO root fetch - processPackages [indecode]: New version: [1.4] Old Version: [1.3.1]
+[2023-05-14 12:36:44] INFO root fetch - processPackages [hyperparameters]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-14 12:36:44] INFO root fetch - processPackages [om-quant-fin]: Downloading https://files.pythonhosted.org/packages/50/5d/c09a63daa5983e5802124974cad1826cccf609bd5baccdfafa84f27a4548/om_quant_fin-1.0.1.tar.gz
+[2023-05-14 12:36:44] INFO root fetch - processPackages [hyperparameters]: Downloading https://files.pythonhosted.org/packages/a2/d0/4682b78fe5005f6ebc6c3145618789cb6413b34e972b2bdf912af65ff198/hyperparameters-0.1.0.tar.gz
+[2023-05-14 12:36:44] INFO root fetch - processPackages [indecode]: Downloading https://files.pythonhosted.org/packages/38/8a/dd5839c83c024fdbdf137a689ced0e4d2efd6c881c2a5c970957192324ce/indecode-1.4-py3-none-any.whl
+[2023-05-14 12:36:44] INFO root fetch - processPackages [om-quant-fin]: executing diffoscope
+[2023-05-14 12:36:44] INFO root fetch - processPackages [om-quant-fin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/om_quant_fin-1.0.0.tar.gz tmp/om_quant_fin-1.0.1.tar.gz --markdown 20230514/o/om-quant-fin/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-14 12:36:44] INFO root fetch - processPackages [indecode]: executing diffoscope
+[2023-05-14 12:36:44] INFO root fetch - processPackages [indecode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indecode-1.3.1-py3-none-any.whl.zip tmp/indecode-1.4-py3-none-any.whl.zip --markdown 20230514/i/indecode/1.3.1-1.4/diff.md --exclude *.pyd
+[2023-05-14 12:36:44] INFO root fetch - processPackages [hyperparameters]: Downloading https://files.pythonhosted.org/packages/2c/e4/378fb53096309fc852a5e6bf8d75aff069a26b50e43facdc31c23474935a/hyperparameters-0.2.0.tar.gz
+[2023-05-14 12:36:44] INFO root fetch - processPackages [hyperparameters]: executing diffoscope
+[2023-05-14 12:36:44] INFO root fetch - processPackages [hyperparameters]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyperparameters-0.1.0.tar.gz tmp/hyperparameters-0.2.0.tar.gz --markdown 20230514/h/hyperparameters/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-14 12:36:45] INFO root fetch - main [MainThread]: End processing [om-quant-fin]: success
+[2023-05-14 12:36:45] INFO root fetch - main [MainThread]: End processing [indecode]: success
+[2023-05-14 12:36:45] INFO root fetch - main [MainThread]: End processing [hyperparameters]: success
+[2023-05-14 12:36:45] INFO root fetch - main [MainThread]: Store serial: [18096315]
