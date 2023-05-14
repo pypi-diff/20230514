@@ -6670,3 +6670,88 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 16:03:27] INFO root fetch - main [MainThread]: End processing [PyQt-Fluent-Widgets]: success
 [2023-05-14 16:03:27] INFO root fetch - main [MainThread]: End processing [requests-mock-flask]: success
 [2023-05-14 16:03:27] INFO root fetch - main [MainThread]: Store serial: [18097437]
+[2023-05-14 16:08:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18097437]
+[2023-05-14 16:08:36] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-14 16:08:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyxk
+[2023-05-14 16:08:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: image-frequency-analysis
+[2023-05-14 16:08:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cicc-excel
+[2023-05-14 16:08:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: ctfpipshell
+[2023-05-14 16:08:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: supylib
+[2023-05-14 16:08:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ItsPrompt
+[2023-05-14 16:08:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: demisto-sdk
+[2023-05-14 16:08:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nasim
+[2023-05-14 16:08:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: zadarapyV2
+[2023-05-14 16:08:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: redditwarp
+[2023-05-14 16:08:36] INFO root fetch - processPackages [cicc-excel]: New version: [0.1.0] Old Version: [0.0.2]
+[2023-05-14 16:08:36] INFO root fetch - processPackages [ItsPrompt]: New version: [1.3] Old Version: [1.2]
+[2023-05-14 16:08:36] INFO root fetch - processPackages [pyxk]: New version: [0.5.7] Old Version: [0.5.6]
+[2023-05-14 16:08:36] INFO root fetch - processPackages [image-frequency-analysis]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-14 16:08:36] INFO root fetch - processPackages [ctfpipshell]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-14 16:08:36] INFO root fetch - processPackages [zadarapyV2]: New version: [23.8.2] Old Version: [23.8.1]
+[2023-05-14 16:08:36] INFO root fetch - processPackages [nasim]: New version: [0.9.1] Old Version: [0.9.0]
+[2023-05-14 16:08:36] INFO root fetch - processPackages [supylib]: New version: [0.40] Old Version: [0.31]
+[2023-05-14 16:08:36] INFO root fetch - processPackages [demisto-sdk]: New version: [1.9.0] Old Version: [1.8.3]
+[2023-05-14 16:08:36] INFO root fetch - processPackages [redditwarp]: New version: [1.1.0] Old Version: [1.0.0rc0]
+[2023-05-14 16:08:36] INFO root fetch - processPackages [supylib]: Downloading https://files.pythonhosted.org/packages/a8/0d/aa8869a95bc949b5727af9e4e6d2b0f4317530372bc34b928f8cab05546b/supylib-0.31.tar.gz
+[2023-05-14 16:08:36] INFO root fetch - processPackages [nasim]: Downloading https://files.pythonhosted.org/packages/c2/55/41cc7cdbe3578b4b95eeeb586d96555be0a926db9f677a471b8030ba4d02/nasim-0.9.0.tar.gz
+[2023-05-14 16:08:36] INFO root fetch - processPackages [image-frequency-analysis]: Downloading https://files.pythonhosted.org/packages/57/7b/338b65423a82edc500557662841615db8a08d162ce071f92e82912464718/image_frequency_analysis-0.2.2.tar.gz
+[2023-05-14 16:08:36] INFO root fetch - processPackages [ctfpipshell]: Downloading https://files.pythonhosted.org/packages/47/f6/2eb8d618b16ebba372550285c36542171bc80c679dfd26dd869cfa8bcc68/ctfpipshell-0.0.4.tar.gz
+[2023-05-14 16:08:36] INFO root fetch - processPackages [zadarapyV2]: Downloading https://files.pythonhosted.org/packages/dd/0f/5d6f2e537e6ec1cdb1541702500b6806b56ef804686b6248d0e51505c904/zadarapyV2-23.8.1.tar.gz
+[2023-05-14 16:08:36] INFO root fetch - processPackages [demisto-sdk]: Downloading https://files.pythonhosted.org/packages/09/d8/b40156edfeb2c658f2e1fbd96230c4ad73caeb31f2c65c8c3c79aadd10ae/demisto_sdk-1.8.3.tar.gz
+[2023-05-14 16:08:36] INFO root fetch - processPackages [ItsPrompt]: Downloading https://files.pythonhosted.org/packages/45/64/66b54679fb72b18c86936833960609ca5478173cb97aa8fc8a007d2fca96/ItsPrompt-1.2.tar.gz
+[2023-05-14 16:08:36] INFO root fetch - processPackages [cicc-excel]: Downloading https://files.pythonhosted.org/packages/1a/19/9b23c85553ffca82b34b700e1f435a7e5774b5c27ad19b412568356895c9/cicc_excel-0.0.2.tar.gz
+[2023-05-14 16:08:36] INFO root fetch - processPackages [redditwarp]: Downloading https://files.pythonhosted.org/packages/65/6a/04fa2f8b970bbf763b5b63d1541259f3d467ec5432b53973c0be46ece3a3/redditwarp-1.0.0rc0.tar.gz
+[2023-05-14 16:08:36] INFO root fetch - processPackages [ctfpipshell]: executing diffoscope
+[2023-05-14 16:08:36] INFO root fetch - processPackages [ctfpipshell]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ctfpipshell-0.0.3.tar.gz tmp/ctfpipshell-0.0.4.tar.gz --markdown 20230514/c/ctfpipshell/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-14 16:08:36] INFO root fetch - processPackages [pyxk]: Downloading https://files.pythonhosted.org/packages/ef/4f/fb9af2386d46ffb873ae61e4a5705cb5fa065a88f6dd562d492a08e12fb5/pyxk-0.5.7.tar.gz
+[2023-05-14 16:08:36] INFO root fetch - processPackages [supylib]: Downloading https://files.pythonhosted.org/packages/62/82/ffe6e7148a23a3a55fd51004e1a895a232c5d461e0e4119ad57e3ed6f2f3/supylib-0.40.tar.gz
+[2023-05-14 16:08:36] INFO root fetch - processPackages [image-frequency-analysis]: Downloading https://files.pythonhosted.org/packages/e3/f6/721568ee85f1869a12d500ce5f4f9c7395274dafe3f1477bc4335d52090d/image_frequency_analysis-0.2.3.tar.gz
+[2023-05-14 16:08:36] INFO root fetch - processPackages [pyxk]: executing diffoscope
+[2023-05-14 16:08:36] INFO root fetch - processPackages [pyxk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyxk-0.5.6.tar.gz tmp/pyxk-0.5.7.tar.gz --markdown 20230514/p/pyxk/0.5.6-0.5.7/diff.md --exclude *.pyd
+[2023-05-14 16:08:36] INFO root fetch - processPackages [ItsPrompt]: Downloading https://files.pythonhosted.org/packages/d3/06/54d319d4b9dc3002980db730e1073b9af0ba2cc3cf5bd8825bcc5449c3e4/ItsPrompt-1.3.tar.gz
+[2023-05-14 16:08:36] INFO root fetch - processPackages [cicc-excel]: Downloading https://files.pythonhosted.org/packages/90/f1/efa092e03c0c55bbc81533afe4cca8b2cc14d701384bdebcf10f5cfc3346/cicc_excel-0.1.0.tar.gz
+[2023-05-14 16:08:36] INFO root fetch - processPackages [zadarapyV2]: Downloading https://files.pythonhosted.org/packages/c1/b7/0c1eba11565673b70f7ed0cd599a60a79759e8ece882d48dbc187119d814/zadarapyV2-23.8.2.tar.gz
+[2023-05-14 16:08:36] INFO root fetch - processPackages [image-frequency-analysis]: executing diffoscope
+[2023-05-14 16:08:36] INFO root fetch - processPackages [image-frequency-analysis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/image_frequency_analysis-0.2.2.tar.gz tmp/image_frequency_analysis-0.2.3.tar.gz --markdown 20230514/i/image-frequency-analysis/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-14 16:08:36] INFO root fetch - processPackages [zadarapyV2]: executing diffoscope
+[2023-05-14 16:08:36] INFO root fetch - processPackages [zadarapyV2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zadarapyV2-23.8.1.tar.gz tmp/zadarapyV2-23.8.2.tar.gz --markdown 20230514/z/zadarapyV2/23.8.1-23.8.2/diff.md --exclude *.pyd
+[2023-05-14 16:08:36] INFO root fetch - processPackages [nasim]: Downloading https://files.pythonhosted.org/packages/42/49/4ff70286ad7217af16ed611b596d0fe91ccdf8b94e7fcfb28f9994769f4e/nasim-0.9.1.tar.gz
+[2023-05-14 16:08:36] INFO root fetch - processPackages [demisto-sdk]: Downloading https://files.pythonhosted.org/packages/64/f1/eb1afa74c8cd36ec00a08aa9c524502235aca66e33f399269e7f2b852df2/demisto_sdk-1.9.0.tar.gz
+[2023-05-14 16:08:36] INFO root fetch - processPackages [supylib]: executing diffoscope
+[2023-05-14 16:08:36] INFO root fetch - processPackages [supylib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/supylib-0.31.tar.gz tmp/supylib-0.40.tar.gz --markdown 20230514/s/supylib/0.31-0.40/diff.md --exclude *.pyd
+[2023-05-14 16:08:36] INFO root fetch - processPackages [cicc-excel]: executing diffoscope
+[2023-05-14 16:08:36] INFO root fetch - processPackages [cicc-excel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cicc_excel-0.0.2.tar.gz tmp/cicc_excel-0.1.0.tar.gz --markdown 20230514/c/cicc-excel/0.0.2-0.1.0/diff.md --exclude *.pyd
+[2023-05-14 16:08:36] INFO root fetch - processPackages [ItsPrompt]: executing diffoscope
+[2023-05-14 16:08:36] INFO root fetch - processPackages [ItsPrompt]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ItsPrompt-1.2.tar.gz tmp/ItsPrompt-1.3.tar.gz --markdown 20230514/I/ItsPrompt/1.2-1.3/diff.md --exclude *.pyd
+[2023-05-14 16:08:36] INFO root fetch - processPackages [demisto-sdk]: executing diffoscope
+[2023-05-14 16:08:36] INFO root fetch - processPackages [demisto-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/demisto_sdk-1.8.3.tar.gz tmp/demisto_sdk-1.9.0.tar.gz --markdown 20230514/d/demisto-sdk/1.8.3-1.9.0/diff.md --exclude *.pyd
+[2023-05-14 16:08:36] INFO root fetch - processPackages [redditwarp]: Downloading https://files.pythonhosted.org/packages/2c/f4/75bfb72e73747cb031177d0f4155410aca6382b58450cff202b7a9527d14/redditwarp-1.1.0.tar.gz
+[2023-05-14 16:08:36] INFO root fetch - processPackages [nasim]: executing diffoscope
+[2023-05-14 16:08:36] INFO root fetch - processPackages [nasim]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nasim-0.9.0.tar.gz tmp/nasim-0.9.1.tar.gz --markdown 20230514/n/nasim/0.9.0-0.9.1/diff.md --exclude *.pyd
+[2023-05-14 16:08:37] INFO root fetch - processPackages [redditwarp]: executing diffoscope
+[2023-05-14 16:08:37] INFO root fetch - processPackages [redditwarp]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redditwarp-1.0.0rc0.tar.gz tmp/redditwarp-1.1.0.tar.gz --markdown 20230514/r/redditwarp/1.0.0rc0-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 16:08:37] INFO root fetch - processPackages [ctfpipshell]: Start processing: chaanbot
+[2023-05-14 16:08:37] INFO root fetch - main [MainThread]: End processing [ctfpipshell]: success
+[2023-05-14 16:08:37] INFO root fetch - processPackages [chaanbot]: New version: [3.1.0] Old Version: [3.0.1]
+[2023-05-14 16:08:38] INFO root fetch - processPackages [chaanbot]: Downloading https://files.pythonhosted.org/packages/db/df/77bff365bf836c52ba559bd8f96ace613a38e78c500b59e94e22535034fd/chaanbot-3.0.1.tar.gz
+[2023-05-14 16:08:38] INFO root fetch - processPackages [image-frequency-analysis]: Start processing: mcmc-statphys
+[2023-05-14 16:08:38] INFO root fetch - main [MainThread]: End processing [image-frequency-analysis]: success
+[2023-05-14 16:08:38] INFO root fetch - main [MainThread]: End processing [cicc-excel]: success
+[2023-05-14 16:08:38] INFO root fetch - processPackages [mcmc-statphys]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-14 16:08:38] INFO root fetch - processPackages [chaanbot]: Downloading https://files.pythonhosted.org/packages/52/99/569b4be1559c9a19b7b578aadc69abe6e152284db3bcc0507ebc595878b9/chaanbot-3.1.0.tar.gz
+[2023-05-14 16:08:38] INFO root fetch - main [MainThread]: End processing [supylib]: success
+[2023-05-14 16:08:38] INFO root fetch - processPackages [mcmc-statphys]: Downloading https://files.pythonhosted.org/packages/87/e5/486e641b15a988cb2ee97528c5a1d00584f878aa65f9b88f418eda86f425/mcmc_statphys-0.1.0.tar.gz
+[2023-05-14 16:08:38] INFO root fetch - processPackages [chaanbot]: executing diffoscope
+[2023-05-14 16:08:38] INFO root fetch - processPackages [chaanbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chaanbot-3.0.1.tar.gz tmp/chaanbot-3.1.0.tar.gz --markdown 20230514/c/chaanbot/3.0.1-3.1.0/diff.md --exclude *.pyd
+[2023-05-14 16:08:38] INFO root fetch - main [MainThread]: End processing [pyxk]: success
+[2023-05-14 16:08:38] INFO root fetch - main [MainThread]: End processing [nasim]: success
+[2023-05-14 16:08:38] INFO root fetch - processPackages [mcmc-statphys]: Downloading https://files.pythonhosted.org/packages/ca/a0/fc7324b49469b35c341e1374847cbffb0a000747bd50fcbc45828e1841ae/mcmc_statphys-0.1.1.tar.gz
+[2023-05-14 16:08:38] INFO root fetch - processPackages [mcmc-statphys]: executing diffoscope
+[2023-05-14 16:08:38] INFO root fetch - processPackages [mcmc-statphys]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mcmc_statphys-0.1.0.tar.gz tmp/mcmc_statphys-0.1.1.tar.gz --markdown 20230514/m/mcmc-statphys/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-14 16:08:39] INFO root fetch - main [MainThread]: End processing [ItsPrompt]: success
+[2023-05-14 16:08:39] INFO root fetch - main [MainThread]: End processing [chaanbot]: success
+[2023-05-14 16:08:40] INFO root fetch - main [MainThread]: End processing [mcmc-statphys]: success
+[2023-05-14 16:08:43] INFO root fetch - main [MainThread]: End processing [redditwarp]: success
+[2023-05-14 16:08:47] INFO root fetch - main [MainThread]: End processing [demisto-sdk]: success
+[2023-05-14 16:08:50] INFO root fetch - main [MainThread]: End processing [zadarapyV2]: success
+[2023-05-14 16:08:50] INFO root fetch - main [MainThread]: Store serial: [18097472]
