@@ -2510,3 +2510,28 @@
 [2023-05-14 06:30:44] INFO root fetch - processPackages [dokuwikidumper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dokuwikidumper-0.1.8.tar.gz tmp/dokuwikidumper-0.1.9.tar.gz --markdown 20230514/d/dokuwikidumper/0.1.8-0.1.9/diff.md --exclude *.pyd
 [2023-05-14 06:30:45] INFO root fetch - main [MainThread]: End processing [dokuwikidumper]: success
 [2023-05-14 06:30:45] INFO root fetch - main [MainThread]: Store serial: [18094925]
+[2023-05-14 06:35:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094925]
+[2023-05-14 06:35:54] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 06:35:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django4-chunked-upload
+[2023-05-14 06:35:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: aioqui
+[2023-05-14 06:35:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: t2f
+[2023-05-14 06:35:54] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: austrakka
+[2023-05-14 06:35:54] INFO root fetch - processPackages [aioqui]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-14 06:35:54] WARNING root fetch - processPackages [django4-chunked-upload]: Skipping, unable to determine old version
+[2023-05-14 06:35:54] INFO root fetch - main [MainThread]: End processing [django4-chunked-upload] error
+[2023-05-14 06:35:54] INFO root fetch - processPackages [t2f]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-14 06:35:54] INFO root fetch - processPackages [austrakka]: New version: [0.29.0] Old Version: [0.28.1]
+[2023-05-14 06:35:54] INFO root fetch - processPackages [aioqui]: Downloading https://files.pythonhosted.org/packages/15/09/525ba8b439bcd731e02cd339ebe5ea70beda6dddedf11142a2c07dfa8f34/aioqui-1.0.6.tar.gz
+[2023-05-14 06:35:54] INFO root fetch - processPackages [t2f]: Downloading https://files.pythonhosted.org/packages/a6/a7/3a51f596abe9a75bab59102866ef7d3193149a2ad06683161930eb6fd746/t2f-0.1.2.tar.gz
+[2023-05-14 06:35:54] INFO root fetch - processPackages [aioqui]: executing diffoscope
+[2023-05-14 06:35:54] INFO root fetch - processPackages [aioqui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioqui-1.0.5.tar.gz tmp/aioqui-1.0.6.tar.gz --markdown 20230514/a/aioqui/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-14 06:35:54] INFO root fetch - processPackages [austrakka]: Downloading https://files.pythonhosted.org/packages/84/bd/5f8517a0112c1a0daa2139be92e900bbf1a4651757042f9d3a6c3033c1e1/austrakka-0.28.1-py3-none-any.whl
+[2023-05-14 06:35:54] INFO root fetch - processPackages [t2f]: executing diffoscope
+[2023-05-14 06:35:54] INFO root fetch - processPackages [t2f]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/t2f-0.1.1.tar.gz tmp/t2f-0.1.2.tar.gz --markdown 20230514/t/t2f/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-14 06:35:54] INFO root fetch - processPackages [austrakka]: Downloading https://files.pythonhosted.org/packages/3e/bb/4b959c4379a00068297b4f1ec340f08ffd99271369c5fbe84285340f3c7f/austrakka-0.29.0-py3-none-any.whl
+[2023-05-14 06:35:54] INFO root fetch - processPackages [austrakka]: executing diffoscope
+[2023-05-14 06:35:54] INFO root fetch - processPackages [austrakka]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/austrakka-0.28.1-py3-none-any.whl.zip tmp/austrakka-0.29.0-py3-none-any.whl.zip --markdown 20230514/a/austrakka/0.28.1-0.29.0/diff.md --exclude *.pyd
+[2023-05-14 06:35:55] INFO root fetch - main [MainThread]: End processing [t2f]: success
+[2023-05-14 06:35:56] INFO root fetch - main [MainThread]: End processing [austrakka]: success
+[2023-05-14 06:35:56] INFO root fetch - main [MainThread]: End processing [aioqui]: success
+[2023-05-14 06:35:56] INFO root fetch - main [MainThread]: Store serial: [18094938]
