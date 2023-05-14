@@ -2465,3 +2465,18 @@
 [2023-05-14 06:10:01] INFO root fetch - main [MainThread]: End processing [pyrms]: success
 [2023-05-14 06:10:01] INFO root fetch - main [MainThread]: End processing [llama-cpp-python]: success
 [2023-05-14 06:10:01] INFO root fetch - main [MainThread]: Store serial: [18094888]
+[2023-05-14 06:15:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094888]
+[2023-05-14 06:15:09] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-14 06:15:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aioqui
+[2023-05-14 06:15:09] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: canomaly
+[2023-05-14 06:15:10] INFO root fetch - processPackages [aioqui]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-14 06:15:10] INFO root fetch - processPackages [canomaly]: New version: [0.0.5] Old Version: [0.0.4]
+[2023-05-14 06:15:10] INFO root fetch - processPackages [aioqui]: Downloading https://files.pythonhosted.org/packages/52/50/20c04140782c4c484040faa4c19b8980a355d4d4a311cf6a26ca9f8bd03c/aioqui-1.0.3.tar.gz
+[2023-05-14 06:15:10] INFO root fetch - processPackages [canomaly]: Downloading https://files.pythonhosted.org/packages/81/9a/af0e677cd96f018fbd7fa36a465f12a4e9fc7c4e2a647155a958063a33d0/canomaly-0.0.5.tar.gz
+[2023-05-14 06:15:10] INFO root fetch - processPackages [aioqui]: executing diffoscope
+[2023-05-14 06:15:10] INFO root fetch - processPackages [aioqui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioqui-1.0.2.tar.gz tmp/aioqui-1.0.3.tar.gz --markdown 20230514/a/aioqui/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-14 06:15:10] INFO root fetch - processPackages [canomaly]: executing diffoscope
+[2023-05-14 06:15:10] INFO root fetch - processPackages [canomaly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canomaly-0.0.4.tar.gz tmp/canomaly-0.0.5.tar.gz --markdown 20230514/c/canomaly/0.0.4-0.0.5/diff.md --exclude *.pyd
+[2023-05-14 06:15:11] INFO root fetch - main [MainThread]: End processing [canomaly]: success
+[2023-05-14 06:15:12] INFO root fetch - main [MainThread]: End processing [aioqui]: success
+[2023-05-14 06:15:12] INFO root fetch - main [MainThread]: Store serial: [18094900]
