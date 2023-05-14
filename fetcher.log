@@ -8469,3 +8469,66 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 18:47:35] INFO root fetch - main [MainThread]: End processing [z4d-certified-devices]: success
 [2023-05-14 18:48:12] INFO root fetch - main [MainThread]: End processing [databend]: success
 [2023-05-14 18:48:12] INFO root fetch - main [MainThread]: Store serial: [18098548]
+[2023-05-14 18:53:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098548]
+[2023-05-14 18:53:22] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-14 18:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: arithmetica-py
+[2023-05-14 18:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-schema-graph
+[2023-05-14 18:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: automata1000
+[2023-05-14 18:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: speech-collator
+[2023-05-14 18:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: neopolitan
+[2023-05-14 18:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: SantorinAI
+[2023-05-14 18:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: omnidep
+[2023-05-14 18:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: neopolitan
+[2023-05-14 18:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: fieldedge-utilities
+[2023-05-14 18:53:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: SwissArmyTransformer
+[2023-05-14 18:53:22] WARNING root fetch - processPackages [automata1000]: Skipping, unable to determine old version
+[2023-05-14 18:53:22] INFO root fetch - processPackages [django-schema-graph]: New version: [3.0.0] Old Version: [2.2.1]
+[2023-05-14 18:53:22] INFO root fetch - main [MainThread]: End processing [automata1000] error
+[2023-05-14 18:53:22] INFO root fetch - processPackages [neopolitan]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 18:53:22] INFO root fetch - processPackages [speech-collator]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-14 18:53:22] INFO root fetch - processPackages [arithmetica-py]: New version: [1.0.204] Old Version: [1.0.203]
+[2023-05-14 18:53:22] INFO root fetch - processPackages [SantorinAI]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-05-14 18:53:22] INFO root fetch - processPackages [neopolitan]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 18:53:22] INFO root fetch - processPackages [omnidep]: New version: [0.3.5] Old Version: [0.3.4]
+[2023-05-14 18:53:22] INFO root fetch - processPackages [SwissArmyTransformer]: New version: [0.3.4] Old Version: [0.3.2]
+[2023-05-14 18:53:22] INFO root fetch - processPackages [fieldedge-utilities]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-14 18:53:22] INFO root fetch - processPackages [fieldedge-utilities]: Downloading https://files.pythonhosted.org/packages/94/51/27351e27b84fb88e4cafeee9829c12c91fa3a932466885fd524f7745c83c/fieldedge-utilities-0.9.4.tar.gz
+[2023-05-14 18:53:22] INFO root fetch - processPackages [neopolitan]: executing diffoscope
+[2023-05-14 18:53:22] INFO root fetch - processPackages [neopolitan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neopolitan-0.1.8.tar.gz tmp/neopolitan-0.1.9.tar.gz --markdown 20230514/n/neopolitan/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 18:53:22] INFO root fetch - processPackages [neopolitan]: executing diffoscope
+[2023-05-14 18:53:22] INFO root fetch - processPackages [neopolitan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neopolitan-0.1.8.tar.gz tmp/neopolitan-0.1.9.tar.gz --markdown 20230514/n/neopolitan/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 18:53:22] INFO root fetch - processPackages [SantorinAI]: Downloading https://files.pythonhosted.org/packages/52/d9/811ca5dc6a9b25ac9c4331fe9f9af2ab95cf8d0d0f91bf14082b71bf0117/SantorinAI-1.2.2.tar.gz
+[2023-05-14 18:53:22] INFO root fetch - processPackages [fieldedge-utilities]: Downloading https://files.pythonhosted.org/packages/a4/cc/5e3cca6cf81fd198ab60061c1fc2991aa7d6101683864c4fac3709547e03/fieldedge-utilities-0.9.5.tar.gz
+[2023-05-14 18:53:22] INFO root fetch - processPackages [django-schema-graph]: Downloading https://files.pythonhosted.org/packages/d0/12/4aa6ff1bc6dda31abf2aed3fea8e8c93a6595a3307c4bb22aa7b4b511f5e/django_schema_graph-2.2.1.tar.gz
+[2023-05-14 18:53:22] INFO root fetch - processPackages [speech-collator]: Downloading https://files.pythonhosted.org/packages/a2/c2/6941f2fcdfa5a294a07ae60afb62c4aa230a096f008aeb3bce57f95c1530/speech_collator-0.1.4.tar.gz
+[2023-05-14 18:53:22] INFO root fetch - processPackages [omnidep]: Downloading https://files.pythonhosted.org/packages/da/05/6a77103ababbaa1474781dd09074e9cd4cd5e15eef9da4206d3e4a6b5f7a/omnidep-0.3.4.tar.gz
+[2023-05-14 18:53:22] INFO root fetch - processPackages [fieldedge-utilities]: executing diffoscope
+[2023-05-14 18:53:22] INFO root fetch - processPackages [fieldedge-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fieldedge-utilities-0.9.4.tar.gz tmp/fieldedge-utilities-0.9.5.tar.gz --markdown 20230514/f/fieldedge-utilities/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-14 18:53:22] INFO root fetch - processPackages [SwissArmyTransformer]: Downloading https://files.pythonhosted.org/packages/02/43/31b8a0a35ecdd3232c8f7fcde1516016e81c227bc49dd276f6a14fa95924/SwissArmyTransformer-0.3.2.tar.gz
+[2023-05-14 18:53:22] INFO root fetch - processPackages [speech-collator]: executing diffoscope
+[2023-05-14 18:53:22] INFO root fetch - processPackages [speech-collator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/speech_collator-0.1.3.tar.gz tmp/speech_collator-0.1.4.tar.gz --markdown 20230514/s/speech-collator/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-14 18:53:22] INFO root fetch - processPackages [arithmetica-py]: Downloading https://files.pythonhosted.org/packages/db/0e/2376a88d2e95bd897be2474c1451b0ee02d12c41dc84c3ced8ebcb58d1a3/arithmetica-py-1.0.204.tar.gz
+[2023-05-14 18:53:22] INFO root fetch - processPackages [django-schema-graph]: Downloading https://files.pythonhosted.org/packages/b7/9f/38f3bd3ffd23a1fd7fcbdbfd4aa25ed1ec17e49b3e8b92c9cbbc19f3b05d/django_schema_graph-3.0.0.tar.gz
+[2023-05-14 18:53:22] INFO root fetch - processPackages [arithmetica-py]: executing diffoscope
+[2023-05-14 18:53:22] INFO root fetch - processPackages [arithmetica-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arithmetica-py-1.0.203.tar.gz tmp/arithmetica-py-1.0.204.tar.gz --markdown 20230514/a/arithmetica-py/1.0.203-1.0.204/diff.md --exclude *.pyd
+[2023-05-14 18:53:22] INFO root fetch - processPackages [SantorinAI]: Downloading https://files.pythonhosted.org/packages/7c/9c/c8db22d1de688be423934c2ee6c0022e16bf887d190f26cf1ce8a74fc0bb/SantorinAI-1.2.3.tar.gz
+[2023-05-14 18:53:22] INFO root fetch - processPackages [django-schema-graph]: executing diffoscope
+[2023-05-14 18:53:22] INFO root fetch - processPackages [django-schema-graph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_schema_graph-2.2.1.tar.gz tmp/django_schema_graph-3.0.0.tar.gz --markdown 20230514/d/django-schema-graph/2.2.1-3.0.0/diff.md --exclude *.pyd
+[2023-05-14 18:53:22] INFO root fetch - processPackages [SantorinAI]: executing diffoscope
+[2023-05-14 18:53:22] INFO root fetch - processPackages [SantorinAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SantorinAI-1.2.2.tar.gz tmp/SantorinAI-1.2.3.tar.gz --markdown 20230514/S/SantorinAI/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-05-14 18:53:22] INFO root fetch - processPackages [omnidep]: Downloading https://files.pythonhosted.org/packages/5b/85/13c81b7c14999dd51ad83cbb0c5d77c8a94c547489560d16130ddf276941/omnidep-0.3.5.tar.gz
+[2023-05-14 18:53:22] INFO root fetch - processPackages [omnidep]: executing diffoscope
+[2023-05-14 18:53:22] INFO root fetch - processPackages [omnidep]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/omnidep-0.3.4.tar.gz tmp/omnidep-0.3.5.tar.gz --markdown 20230514/o/omnidep/0.3.4-0.3.5/diff.md --exclude *.pyd
+[2023-05-14 18:53:22] INFO root fetch - processPackages [SwissArmyTransformer]: Downloading https://files.pythonhosted.org/packages/17/1e/b00493861710a899631c6932b76d291e2cbf474cf5085273cb0b463cb4ac/SwissArmyTransformer-0.3.4.tar.gz
+[2023-05-14 18:53:23] INFO root fetch - processPackages [SwissArmyTransformer]: executing diffoscope
+[2023-05-14 18:53:23] INFO root fetch - processPackages [SwissArmyTransformer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SwissArmyTransformer-0.3.2.tar.gz tmp/SwissArmyTransformer-0.3.4.tar.gz --markdown 20230514/S/SwissArmyTransformer/0.3.2-0.3.4/diff.md --exclude *.pyd
+[2023-05-14 18:53:23] INFO root fetch - main [MainThread]: End processing [neopolitan]: success
+[2023-05-14 18:53:23] INFO root fetch - main [MainThread]: End processing [fieldedge-utilities]: success
+[2023-05-14 18:53:23] INFO root fetch - main [MainThread]: End processing [neopolitan]: success
+[2023-05-14 18:53:24] INFO root fetch - main [MainThread]: End processing [SantorinAI]: success
+[2023-05-14 18:53:24] INFO root fetch - main [MainThread]: End processing [omnidep]: success
+[2023-05-14 18:53:24] INFO root fetch - main [MainThread]: End processing [arithmetica-py]: success
+[2023-05-14 18:53:25] INFO root fetch - main [MainThread]: End processing [SwissArmyTransformer]: success
+[2023-05-14 18:53:26] INFO root fetch - main [MainThread]: End processing [speech-collator]: success
+[2023-05-14 18:53:26] INFO root fetch - main [MainThread]: End processing [django-schema-graph]: success
+[2023-05-14 18:53:26] INFO root fetch - main [MainThread]: Store serial: [18098584]
