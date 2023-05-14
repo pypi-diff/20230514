@@ -1749,3 +1749,11 @@
 [2023-05-14 03:58:29] INFO root fetch - main [MainThread]: End processing [tap-totango]: success
 [2023-05-14 03:58:29] INFO root fetch - main [MainThread]: End processing [magic-class]: success
 [2023-05-14 03:58:29] INFO root fetch - main [MainThread]: Store serial: [18094432]
+[2023-05-14 04:03:33] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094432]
+[2023-05-14 04:03:38] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-14 04:03:38] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Scrapinger
+[2023-05-14 04:03:38] INFO root fetch - processPackages [Scrapinger]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-14 04:03:38] INFO root fetch - processPackages [Scrapinger]: executing diffoscope
+[2023-05-14 04:03:38] INFO root fetch - processPackages [Scrapinger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Scrapinger-1.0.8.tar.gz tmp/Scrapinger-1.0.9.tar.gz --markdown 20230514/S/Scrapinger/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-14 04:03:39] INFO root fetch - main [MainThread]: End processing [Scrapinger]: success
+[2023-05-14 04:03:39] INFO root fetch - main [MainThread]: Store serial: [18094435]
