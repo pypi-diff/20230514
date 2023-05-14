@@ -6090,3 +6090,72 @@
 [2023-05-14 15:04:27] INFO root fetch - main [MainThread]: End processing [poetry-core]: success
 [2023-05-14 15:05:18] INFO root fetch - main [MainThread]: End processing [fbgemm-gpu-nightly-cpu]: success
 [2023-05-14 15:05:18] INFO root fetch - main [MainThread]: Store serial: [18097120]
+[2023-05-14 15:10:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18097120]
+[2023-05-14 15:10:36] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-14 15:10:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: persian-num2words
+[2023-05-14 15:10:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: edc-subject-model-wrappers
+[2023-05-14 15:10:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: nbdev-stdlib
+[2023-05-14 15:10:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: gnssrefl
+[2023-05-14 15:10:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: leuci-pol
+[2023-05-14 15:10:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: netbox-plugin-dns
+[2023-05-14 15:10:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: HakePip
+[2023-05-14 15:10:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: nbdev-numpy
+[2023-05-14 15:10:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: zensvi
+[2023-05-14 15:10:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: nbdev-pandas
+[2023-05-14 15:10:36] WARNING root fetch - processPackages [HakePip]: Skipping, unable to determine old version
+[2023-05-14 15:10:36] INFO root fetch - processPackages [HakePip]: Start processing: certora-cli-beta
+[2023-05-14 15:10:36] INFO root fetch - main [MainThread]: End processing [HakePip] error
+[2023-05-14 15:10:36] INFO root fetch - processPackages [netbox-plugin-dns]: New version: [0.18.2] Old Version: [0.18.1]
+[2023-05-14 15:10:36] INFO root fetch - processPackages [edc-subject-model-wrappers]: New version: [0.3.9] Old Version: [0.3.8]
+[2023-05-14 15:10:36] INFO root fetch - processPackages [zensvi]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-14 15:10:36] WARNING root fetch - processPackages [persian-num2words]: Skipping, unable to determine old version
+[2023-05-14 15:10:36] INFO root fetch - main [MainThread]: End processing [persian-num2words] error
+[2023-05-14 15:10:36] INFO root fetch - processPackages [gnssrefl]: New version: [1.3.8] Old Version: [1.3.7]
+[2023-05-14 15:10:36] INFO root fetch - processPackages [leuci-pol]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 15:10:36] INFO root fetch - processPackages [nbdev-stdlib]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-14 15:10:36] INFO root fetch - processPackages [nbdev-numpy]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-14 15:10:36] INFO root fetch - processPackages [nbdev-pandas]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-14 15:10:36] INFO root fetch - processPackages [nbdev-stdlib]: Downloading https://files.pythonhosted.org/packages/e8/48/ed43dbfa0bd5ca86a6a3f6ae0500b0cffb413b2c3f118e82da24ef3488f1/nbdev-stdlib-0.0.98.tar.gz
+[2023-05-14 15:10:36] INFO root fetch - processPackages [nbdev-pandas]: Downloading https://files.pythonhosted.org/packages/e4/e4/cd3df65f7d13a8e8dfa1592e08d78574793d38384b1c92993ce920dcd0df/nbdev-pandas-0.0.98.tar.gz
+[2023-05-14 15:10:36] INFO root fetch - processPackages [nbdev-numpy]: Downloading https://files.pythonhosted.org/packages/73/28/26429c7dd7dcf4c45025b55facc2688943de2ab2ec4851cc073f81f31e65/nbdev-numpy-0.0.98.tar.gz
+[2023-05-14 15:10:36] INFO root fetch - processPackages [certora-cli-beta]: New version: [4.0.3] Old Version: [4.0.2]
+[2023-05-14 15:10:36] INFO root fetch - processPackages [netbox-plugin-dns]: Downloading https://files.pythonhosted.org/packages/21/1d/917801a3955f4dfbca0dba97d53163752e4418335085201c3bb703fe95bd/netbox_plugin_dns-0.18.1.tar.gz
+[2023-05-14 15:10:36] INFO root fetch - processPackages [gnssrefl]: Downloading https://files.pythonhosted.org/packages/a4/5c/f49ad56cf2935d22d1328bf9170ea052b2eef9de33ec9d65022e09364bfd/gnssrefl-1.3.7.tar.gz
+[2023-05-14 15:10:36] INFO root fetch - processPackages [edc-subject-model-wrappers]: Downloading https://files.pythonhosted.org/packages/fc/9c/2cd01946d9aa5187f9e02bd2559b88c7eb6a2a109e93cfdc5f1cb4888a1b/edc-subject-model-wrappers-0.3.8.tar.gz
+[2023-05-14 15:10:36] INFO root fetch - processPackages [leuci-pol]: Downloading https://files.pythonhosted.org/packages/5f/d1/4957f96d594b9f52a647954d2f395b95a9f663e993976b1dd95ca28695dd/leuci-pol-0.0.8.tar.gz
+[2023-05-14 15:10:36] INFO root fetch - processPackages [zensvi]: Downloading https://files.pythonhosted.org/packages/d9/01/e3e28f482c9422b510a6ef3f5092879911e4444368714ade5ce81ee11099/zensvi-0.1.4.tar.gz
+[2023-05-14 15:10:36] INFO root fetch - processPackages [nbdev-numpy]: Downloading https://files.pythonhosted.org/packages/ea/78/0c0ef1d69ad517e7123dd810dda3cf8c0863af031c2cbb78ac3dae878b48/nbdev-numpy-0.0.99.tar.gz
+[2023-05-14 15:10:36] INFO root fetch - processPackages [nbdev-stdlib]: Downloading https://files.pythonhosted.org/packages/9b/0f/42944508859f820e43bf894814c5e9dbc7920a0caceef1828a31a9e5b599/nbdev-stdlib-0.0.99.tar.gz
+[2023-05-14 15:10:36] INFO root fetch - processPackages [nbdev-pandas]: Downloading https://files.pythonhosted.org/packages/cf/b5/493c8e89c5cb4fcc7db248f99868f931ca6389f6e411e63c97bb22c6f1b0/nbdev-pandas-0.0.99.tar.gz
+[2023-05-14 15:10:36] INFO root fetch - processPackages [certora-cli-beta]: Downloading https://files.pythonhosted.org/packages/70/03/907c5e4dd35a720ef8327eb4651ecf2f62a5911ba29b0394aae45cf072ed/certora-cli-beta-4.0.2.tar.gz
+[2023-05-14 15:10:36] INFO root fetch - processPackages [nbdev-numpy]: executing diffoscope
+[2023-05-14 15:10:36] INFO root fetch - processPackages [nbdev-numpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-numpy-0.0.98.tar.gz tmp/nbdev-numpy-0.0.99.tar.gz --markdown 20230514/n/nbdev-numpy/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-14 15:10:36] INFO root fetch - processPackages [nbdev-stdlib]: executing diffoscope
+[2023-05-14 15:10:36] INFO root fetch - processPackages [nbdev-stdlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-stdlib-0.0.98.tar.gz tmp/nbdev-stdlib-0.0.99.tar.gz --markdown 20230514/n/nbdev-stdlib/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-14 15:10:36] INFO root fetch - processPackages [zensvi]: executing diffoscope
+[2023-05-14 15:10:36] INFO root fetch - processPackages [zensvi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/zensvi-0.1.3.tar.gz tmp/zensvi-0.1.4.tar.gz --markdown 20230514/z/zensvi/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-14 15:10:36] INFO root fetch - processPackages [netbox-plugin-dns]: Downloading https://files.pythonhosted.org/packages/78/70/1c72faf6e6457280107153113e7036793cf4e7468d9bfcf0f581c8136779/netbox_plugin_dns-0.18.2.tar.gz
+[2023-05-14 15:10:36] INFO root fetch - processPackages [nbdev-pandas]: executing diffoscope
+[2023-05-14 15:10:36] INFO root fetch - processPackages [nbdev-pandas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nbdev-pandas-0.0.98.tar.gz tmp/nbdev-pandas-0.0.99.tar.gz --markdown 20230514/n/nbdev-pandas/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-14 15:10:36] INFO root fetch - processPackages [leuci-pol]: Downloading https://files.pythonhosted.org/packages/ba/52/0e8b23909efc0e5b7a78f5704e0a10943de0379212ca92d48c2feb9607d8/leuci-pol-0.0.9.tar.gz
+[2023-05-14 15:10:36] INFO root fetch - processPackages [edc-subject-model-wrappers]: Downloading https://files.pythonhosted.org/packages/36/8c/e6d92e05644d5b760fa169cb64f3fb8c019204bfc33f49c542c135571bc3/edc-subject-model-wrappers-0.3.9.tar.gz
+[2023-05-14 15:10:36] WARNING root fetch - processPackages [certora-cli-beta]: Skipping package: exceeds size limit 39221065>=10485760
+[2023-05-14 15:10:36] INFO root fetch - main [MainThread]: End processing [certora-cli-beta] error
+[2023-05-14 15:10:37] INFO root fetch - processPackages [edc-subject-model-wrappers]: executing diffoscope
+[2023-05-14 15:10:37] INFO root fetch - processPackages [edc-subject-model-wrappers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/edc-subject-model-wrappers-0.3.8.tar.gz tmp/edc-subject-model-wrappers-0.3.9.tar.gz --markdown 20230514/e/edc-subject-model-wrappers/0.3.8-0.3.9/diff.md --exclude *.pyd
+[2023-05-14 15:10:37] INFO root fetch - processPackages [leuci-pol]: executing diffoscope
+[2023-05-14 15:10:37] INFO root fetch - processPackages [leuci-pol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leuci-pol-0.0.8.tar.gz tmp/leuci-pol-0.0.9.tar.gz --markdown 20230514/l/leuci-pol/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 15:10:37] INFO root fetch - processPackages [netbox-plugin-dns]: executing diffoscope
+[2023-05-14 15:10:37] INFO root fetch - processPackages [netbox-plugin-dns]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/netbox_plugin_dns-0.18.1.tar.gz tmp/netbox_plugin_dns-0.18.2.tar.gz --markdown 20230514/n/netbox-plugin-dns/0.18.1-0.18.2/diff.md --exclude *.pyd
+[2023-05-14 15:10:37] INFO root fetch - processPackages [gnssrefl]: Downloading https://files.pythonhosted.org/packages/58/ca/e783ec5ced96c271dfccce3e4af083e94ee3baec149a1e2374beb8c43fdf/gnssrefl-1.3.8.tar.gz
+[2023-05-14 15:10:37] INFO root fetch - processPackages [gnssrefl]: executing diffoscope
+[2023-05-14 15:10:37] INFO root fetch - processPackages [gnssrefl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gnssrefl-1.3.7.tar.gz tmp/gnssrefl-1.3.8.tar.gz --markdown 20230514/g/gnssrefl/1.3.7-1.3.8/diff.md --exclude *.pyd
+[2023-05-14 15:10:38] INFO root fetch - main [MainThread]: End processing [nbdev-numpy]: success
+[2023-05-14 15:10:38] INFO root fetch - main [MainThread]: End processing [nbdev-stdlib]: success
+[2023-05-14 15:10:38] INFO root fetch - main [MainThread]: End processing [leuci-pol]: success
+[2023-05-14 15:10:38] INFO root fetch - main [MainThread]: End processing [zensvi]: success
+[2023-05-14 15:10:38] INFO root fetch - main [MainThread]: End processing [edc-subject-model-wrappers]: success
+[2023-05-14 15:10:38] INFO root fetch - main [MainThread]: End processing [netbox-plugin-dns]: success
+[2023-05-14 15:10:39] INFO root fetch - main [MainThread]: End processing [nbdev-pandas]: success
+[2023-05-14 15:10:42] INFO root fetch - main [MainThread]: End processing [gnssrefl]: success
+[2023-05-14 15:10:42] INFO root fetch - main [MainThread]: Store serial: [18097157]
