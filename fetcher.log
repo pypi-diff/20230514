@@ -4954,3 +4954,61 @@
 [2023-05-14 12:47:42] INFO root fetch - main [MainThread]: End processing [lixinger]: success
 [2023-05-14 12:48:17] INFO root fetch - main [MainThread]: End processing [bgutils-hddly]: success
 [2023-05-14 12:48:17] INFO root fetch - main [MainThread]: Store serial: [18096369]
+[2023-05-14 12:53:21] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096369]
+[2023-05-14 12:53:26] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-14 12:53:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lilit
+[2023-05-14 12:53:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torsposer
+[2023-05-14 12:53:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: emr-sfn-waiter
+[2023-05-14 12:53:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: smartrandom
+[2023-05-14 12:53:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cnert
+[2023-05-14 12:53:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: djau-private-storage
+[2023-05-14 12:53:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: certora-cli-alpha-jtoman-try-catch
+[2023-05-14 12:53:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: abu-hack
+[2023-05-14 12:53:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: certora-cli-alpha-jtoman-infinite-loop-fix
+[2023-05-14 12:53:26] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: sqlacodegen-v2
+[2023-05-14 12:53:26] INFO root fetch - processPackages [certora-cli-alpha-jtoman-try-catch]: New version: [20230514.9.42.407] Old Version: [20230514.10.50.40584]
+[2023-05-14 12:53:26] INFO root fetch - processPackages [abu-hack]: New version: [1.2] Old Version: [1.1]
+[2023-05-14 12:53:26] INFO root fetch - processPackages [lilit]: New version: [1.2.0] Old Version: [1.1.4]
+[2023-05-14 12:53:26] WARNING root fetch - processPackages [djau-private-storage]: Skipping, unable to determine old version
+[2023-05-14 12:53:26] INFO root fetch - processPackages [djau-private-storage]: Start processing: injective-py
+[2023-05-14 12:53:26] INFO root fetch - main [MainThread]: End processing [djau-private-storage] error
+[2023-05-14 12:53:26] WARNING root fetch - processPackages [torsposer]: Skipping, unable to determine old version
+[2023-05-14 12:53:26] INFO root fetch - processPackages [emr-sfn-waiter]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 12:53:26] INFO root fetch - main [MainThread]: End processing [torsposer] error
+[2023-05-14 12:53:26] INFO root fetch - processPackages [cnert]: New version: [0.6.0] Old Version: [0.5.0]
+[2023-05-14 12:53:26] WARNING root fetch - processPackages [smartrandom]: Skipping, unable to determine old version
+[2023-05-14 12:53:26] INFO root fetch - main [MainThread]: End processing [smartrandom] error
+[2023-05-14 12:53:26] INFO root fetch - processPackages [certora-cli-alpha-jtoman-infinite-loop-fix]: New version: [20230514.9.42.756705] Old Version: [20230512.9.39.601040]
+[2023-05-14 12:53:26] INFO root fetch - processPackages [certora-cli-alpha-jtoman-infinite-loop-fix]: Downloading https://files.pythonhosted.org/packages/fd/3e/cb9e7b584a92e1bc819f8f4997a9d4aca4875bd1bc19378ec02551d7005d/certora-cli-alpha-jtoman-infinite-loop-fix-20230512.9.39.601040.tar.gz
+[2023-05-14 12:53:26] WARNING root fetch - processPackages [sqlacodegen-v2]: Skipping, unable to determine old version
+[2023-05-14 12:53:26] INFO root fetch - main [MainThread]: End processing [sqlacodegen-v2] error
+[2023-05-14 12:53:26] WARNING root fetch - processPackages [certora-cli-alpha-jtoman-infinite-loop-fix]: Skipping package: exceeds size limit 39430769>=10485760
+[2023-05-14 12:53:26] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-jtoman-infinite-loop-fix] error
+[2023-05-14 12:53:26] INFO root fetch - processPackages [certora-cli-alpha-jtoman-try-catch]: Downloading https://files.pythonhosted.org/packages/4c/5d/9eec18f04995d5d7289d297880e2ab5098e0d6872829544573fe2ccfc143/certora-cli-alpha-jtoman-try-catch-20230514.10.50.40584.tar.gz
+[2023-05-14 12:53:26] INFO root fetch - processPackages [lilit]: Downloading https://files.pythonhosted.org/packages/10/6f/1316418c3bc248bc46666ab59dfdc7260291863eba244f41e6d22c97ed40/lilit-1.1.4.tar.gz
+[2023-05-14 12:53:26] INFO root fetch - processPackages [abu-hack]: Downloading https://files.pythonhosted.org/packages/93/1a/5abee61f93122cd92572d2d9445802be0f3e5a326311463167c69bff5541/abu_hack-1.1.tar.gz
+[2023-05-14 12:53:26] INFO root fetch - processPackages [injective-py]: New version: [0.6.2.3] Old Version: [0.6.2.2]
+[2023-05-14 12:53:26] INFO root fetch - processPackages [emr-sfn-waiter]: Downloading https://files.pythonhosted.org/packages/54/27/8f4920b1ded7645cca2669718ba5858a8a23cbaeaafe62aa0130694fbea7/emr-sfn-waiter-0.0.2.tar.gz
+[2023-05-14 12:53:26] WARNING root fetch - processPackages [certora-cli-alpha-jtoman-try-catch]: Skipping package: exceeds size limit 39431635>=10485760
+[2023-05-14 12:53:26] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-jtoman-try-catch] error
+[2023-05-14 12:53:26] INFO root fetch - processPackages [cnert]: Downloading https://files.pythonhosted.org/packages/6e/92/b5afb6972da56acd838c74f9c9e94972fb4b0cb901c5a5070c992614557f/cnert-0.5.0.tar.gz
+[2023-05-14 12:53:26] INFO root fetch - processPackages [emr-sfn-waiter]: executing diffoscope
+[2023-05-14 12:53:26] INFO root fetch - processPackages [emr-sfn-waiter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emr-sfn-waiter-0.0.1.tar.gz tmp/emr-sfn-waiter-0.0.2.tar.gz --markdown 20230514/e/emr-sfn-waiter/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 12:53:27] INFO root fetch - processPackages [abu-hack]: Downloading https://files.pythonhosted.org/packages/89/6f/1494e81ce4c0b899898b493e09d39c9232a218f9472fe24973e12563645e/abu_hack-1.2.tar.gz
+[2023-05-14 12:53:27] INFO root fetch - processPackages [cnert]: Downloading https://files.pythonhosted.org/packages/05/79/9a767d725a977a78bc28f241faf259c55fa6a828b2a1a2ac6cf080f0ab6a/cnert-0.6.0.tar.gz
+[2023-05-14 12:53:27] INFO root fetch - processPackages [abu-hack]: executing diffoscope
+[2023-05-14 12:53:27] INFO root fetch - processPackages [abu-hack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/abu_hack-1.1.tar.gz tmp/abu_hack-1.2.tar.gz --markdown 20230514/a/abu-hack/1.1-1.2/diff.md --exclude *.pyd
+[2023-05-14 12:53:27] INFO root fetch - processPackages [lilit]: Downloading https://files.pythonhosted.org/packages/9f/48/d28a4b29e4df080582a8cd5bd3d8f91d3d980d615e1b0a5270ca725260fe/lilit-1.2.0.tar.gz
+[2023-05-14 12:53:27] INFO root fetch - processPackages [cnert]: executing diffoscope
+[2023-05-14 12:53:27] INFO root fetch - processPackages [cnert]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cnert-0.5.0.tar.gz tmp/cnert-0.6.0.tar.gz --markdown 20230514/c/cnert/0.5.0-0.6.0/diff.md --exclude *.pyd
+[2023-05-14 12:53:27] INFO root fetch - processPackages [injective-py]: Downloading https://files.pythonhosted.org/packages/18/45/26d6156252c0878a2901e58bbd33e0a6c89889fa1f4f62af53a344afe5f9/injective-py-0.6.2.3.tar.gz
+[2023-05-14 12:53:27] INFO root fetch - processPackages [lilit]: executing diffoscope
+[2023-05-14 12:53:27] INFO root fetch - processPackages [lilit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lilit-1.1.4.tar.gz tmp/lilit-1.2.0.tar.gz --markdown 20230514/l/lilit/1.1.4-1.2.0/diff.md --exclude *.pyd
+[2023-05-14 12:53:27] INFO root fetch - processPackages [injective-py]: executing diffoscope
+[2023-05-14 12:53:27] INFO root fetch - processPackages [injective-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/injective-py-0.6.2.2.tar.gz tmp/injective-py-0.6.2.3.tar.gz --markdown 20230514/i/injective-py/0.6.2.2-0.6.2.3/diff.md --exclude *.pyd
+[2023-05-14 12:53:28] INFO root fetch - main [MainThread]: End processing [emr-sfn-waiter]: success
+[2023-05-14 12:53:28] INFO root fetch - main [MainThread]: End processing [abu-hack]: success
+[2023-05-14 12:53:28] INFO root fetch - main [MainThread]: End processing [cnert]: success
+[2023-05-14 12:53:31] INFO root fetch - main [MainThread]: End processing [lilit]: success
+[2023-05-14 12:53:33] INFO root fetch - main [MainThread]: End processing [injective-py]: success
+[2023-05-14 12:53:33] INFO root fetch - main [MainThread]: Store serial: [18096421]
