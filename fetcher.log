@@ -8755,3 +8755,50 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 19:19:55] INFO root fetch - main [MainThread]: End processing [SantorinAI]: success
 [2023-05-14 19:19:56] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
 [2023-05-14 19:19:56] INFO root fetch - main [MainThread]: Store serial: [18098698]
+[2023-05-14 19:25:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098698]
+[2023-05-14 19:25:05] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-14 19:25:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: spanishconjugator
+[2023-05-14 19:25:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: slpkg
+[2023-05-14 19:25:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyadlml
+[2023-05-14 19:25:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: peaqevcore
+[2023-05-14 19:25:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: enochecker3
+[2023-05-14 19:25:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: serial-deserial-lib
+[2023-05-14 19:25:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: multicloud-diagrams
+[2023-05-14 19:25:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: overhave
+[2023-05-14 19:25:05] INFO root fetch - processPackages [slpkg]: New version: [4.8.3] Old Version: [4.8.2]
+[2023-05-14 19:25:05] INFO root fetch - processPackages [enochecker3]: New version: [0.8.0] Old Version: [0.7.1]
+[2023-05-14 19:25:05] WARNING root fetch - processPackages [serial-deserial-lib]: Skipping, unable to determine old version
+[2023-05-14 19:25:05] WARNING root fetch - processPackages [multicloud-diagrams]: Skipping, unable to determine old version
+[2023-05-14 19:25:05] INFO root fetch - main [MainThread]: End processing [serial-deserial-lib] error
+[2023-05-14 19:25:05] INFO root fetch - main [MainThread]: End processing [multicloud-diagrams] error
+[2023-05-14 19:25:05] INFO root fetch - processPackages [pyadlml]: New version: [0.0.7.9a0] Old Version: [0.0.7.8a0]
+[2023-05-14 19:25:05] INFO root fetch - processPackages [peaqevcore]: New version: [9.2.3] Old Version: [9.2.2]
+[2023-05-14 19:25:05] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-14 19:25:05] INFO root fetch - processPackages [overhave]: New version: [3.9.0] Old Version: [3.8.4]
+[2023-05-14 19:25:05] INFO root fetch - processPackages [slpkg]: Downloading https://files.pythonhosted.org/packages/e5/18/1444a6c3c67a5f26a7f94e7120798e67234d055e688ecdf86b989cae856d/slpkg-4.8.2.tar.gz
+[2023-05-14 19:25:05] INFO root fetch - processPackages [pyadlml]: Downloading https://files.pythonhosted.org/packages/82/b7/7e2d4ac45ac966216e93f814013574e48d559f96daa70842e56d5febe0f7/pyadlml-0.0.7.8a0.tar.gz
+[2023-05-14 19:25:05] INFO root fetch - processPackages [enochecker3]: Downloading https://files.pythonhosted.org/packages/6a/c3/208d4ee4390dfb781acc4860df8fd7fcec213a72520fe68589048d2c4e7a/enochecker3-0.7.1.tar.gz
+[2023-05-14 19:25:05] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/d3/3a/d595706eb589ecf59a8cba9b6d5b0456fc65fe7e1d2c1e2aec7feee838b8/peaqevcore-9.2.2.tar.gz
+[2023-05-14 19:25:05] INFO root fetch - processPackages [enochecker3]: Downloading https://files.pythonhosted.org/packages/fd/3e/997b17319084b2aaa72934a8e98a0163f8a60d401a76d75cdcbe0ae7c42c/enochecker3-0.8.0.tar.gz
+[2023-05-14 19:25:05] INFO root fetch - processPackages [slpkg]: Downloading https://files.pythonhosted.org/packages/16/af/a651273f41e83b0344a6241b067ae027cd36e8e9c9e5af78fa8d5a65382f/slpkg-4.8.3.tar.gz
+[2023-05-14 19:25:05] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-14 19:25:05] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230514/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-14 19:25:05] INFO root fetch - processPackages [overhave]: executing diffoscope
+[2023-05-14 19:25:05] INFO root fetch - processPackages [overhave]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/overhave-3.8.4.tar.gz tmp/overhave-3.9.0.tar.gz --markdown 20230514/o/overhave/3.8.4-3.9.0/diff.md --exclude *.pyd
+[2023-05-14 19:25:05] INFO root fetch - processPackages [slpkg]: executing diffoscope
+[2023-05-14 19:25:05] INFO root fetch - processPackages [enochecker3]: executing diffoscope
+[2023-05-14 19:25:05] INFO root fetch - processPackages [slpkg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/slpkg-4.8.2.tar.gz tmp/slpkg-4.8.3.tar.gz --markdown 20230514/s/slpkg/4.8.2-4.8.3/diff.md --exclude *.pyd
+[2023-05-14 19:25:05] INFO root fetch - processPackages [enochecker3]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enochecker3-0.7.1.tar.gz tmp/enochecker3-0.8.0.tar.gz --markdown 20230514/e/enochecker3/0.7.1-0.8.0/diff.md --exclude *.pyd
+[2023-05-14 19:25:05] INFO root fetch - processPackages [pyadlml]: Downloading https://files.pythonhosted.org/packages/d7/ea/01900e41fe1f958b999cf8f08b1ef14daf9bce9ab0e27b822602c749cbfe/pyadlml-0.0.7.9a0.tar.gz
+[2023-05-14 19:25:05] INFO root fetch - processPackages [peaqevcore]: Downloading https://files.pythonhosted.org/packages/7d/ed/173dd45b11e856f6a0a37a2fe90750405b19807684a9c94bd5e9388c29a2/peaqevcore-9.2.3.tar.gz
+[2023-05-14 19:25:06] INFO root fetch - processPackages [peaqevcore]: executing diffoscope
+[2023-05-14 19:25:06] INFO root fetch - processPackages [peaqevcore]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/peaqevcore-9.2.2.tar.gz tmp/peaqevcore-9.2.3.tar.gz --markdown 20230514/p/peaqevcore/9.2.2-9.2.3/diff.md --exclude *.pyd
+[2023-05-14 19:25:06] INFO root fetch - processPackages [pyadlml]: executing diffoscope
+[2023-05-14 19:25:06] INFO root fetch - processPackages [pyadlml]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyadlml-0.0.7.8a0.tar.gz tmp/pyadlml-0.0.7.9a0.tar.gz --markdown 20230514/p/pyadlml/0.0.7.8a0-0.0.7.9a0/diff.md --exclude *.pyd
+[2023-05-14 19:25:07] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-14 19:25:07] INFO root fetch - main [MainThread]: End processing [enochecker3]: success
+[2023-05-14 19:25:07] INFO root fetch - main [MainThread]: End processing [peaqevcore]: success
+[2023-05-14 19:25:07] INFO root fetch - main [MainThread]: End processing [pyadlml]: success
+[2023-05-14 19:25:09] INFO root fetch - main [MainThread]: End processing [slpkg]: success
+[2023-05-14 19:25:09] INFO root fetch - main [MainThread]: End processing [overhave]: success
+[2023-05-14 19:25:09] INFO root fetch - main [MainThread]: Store serial: [18098723]
