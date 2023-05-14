@@ -5714,3 +5714,55 @@
 [2023-05-14 14:17:27] INFO root fetch - main [MainThread]: End processing [flatgeobuf-pyrust]: success
 [2023-05-14 14:17:27] INFO root fetch - main [MainThread]: End processing [indecode]: success
 [2023-05-14 14:17:27] INFO root fetch - main [MainThread]: Store serial: [18096906]
+[2023-05-14 14:22:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096906]
+[2023-05-14 14:22:35] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-14 14:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: oceano-algos
+[2023-05-14 14:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: solana
+[2023-05-14 14:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: configzen
+[2023-05-14 14:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: first-package-Nada
+[2023-05-14 14:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: first-package-Ionel-Ujica
+[2023-05-14 14:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: first-package-Antonia-Munteanu
+[2023-05-14 14:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: first-package-Maria-Cristina
+[2023-05-14 14:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: first-package-Lazar-Radu
+[2023-05-14 14:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: fief-server
+[2023-05-14 14:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: pypinyin
+[2023-05-14 14:22:35] INFO root fetch - processPackages [oceano-algos]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-14 14:22:35] WARNING root fetch - processPackages [first-package-Antonia-Munteanu]: Skipping, unable to determine old version
+[2023-05-14 14:22:35] INFO root fetch - processPackages [first-package-Antonia-Munteanu]: Start processing: first-package-Razvan
+[2023-05-14 14:22:35] INFO root fetch - main [MainThread]: End processing [first-package-Antonia-Munteanu] error
+[2023-05-14 14:22:35] WARNING root fetch - processPackages [first-package-Ionel-Ujica]: Skipping, unable to determine old version
+[2023-05-14 14:22:35] WARNING root fetch - processPackages [first-package-Nada]: Skipping, unable to determine old version
+[2023-05-14 14:22:35] INFO root fetch - main [MainThread]: End processing [first-package-Ionel-Ujica] error
+[2023-05-14 14:22:35] INFO root fetch - main [MainThread]: End processing [first-package-Nada] error
+[2023-05-14 14:22:35] WARNING root fetch - processPackages [first-package-Maria-Cristina]: Skipping, unable to determine old version
+[2023-05-14 14:22:35] INFO root fetch - main [MainThread]: End processing [first-package-Maria-Cristina] error
+[2023-05-14 14:22:35] INFO root fetch - processPackages [fief-server]: New version: [0.9.0] Old Version: [0.8.2]
+[2023-05-14 14:22:35] INFO root fetch - processPackages [configzen]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 14:22:35] WARNING root fetch - processPackages [first-package-Razvan]: Skipping, unable to determine old version
+[2023-05-14 14:22:35] INFO root fetch - main [MainThread]: End processing [first-package-Razvan] error
+[2023-05-14 14:22:35] INFO root fetch - processPackages [oceano-algos]: executing diffoscope
+[2023-05-14 14:22:35] INFO root fetch - processPackages [oceano-algos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/oceano_algos-0.0.98.tar.gz tmp/oceano_algos-0.0.99.tar.gz --markdown 20230514/o/oceano-algos/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-14 14:22:35] INFO root fetch - processPackages [solana]: New version: [0.9.2] Old Version: [0.9.1]
+[2023-05-14 14:22:35] WARNING root fetch - processPackages [first-package-Lazar-Radu]: Skipping, unable to determine old version
+[2023-05-14 14:22:35] INFO root fetch - main [MainThread]: End processing [first-package-Lazar-Radu] error
+[2023-05-14 14:22:35] INFO root fetch - processPackages [pypinyin]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-14 14:22:35] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-14 14:22:35] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.8.tar.gz tmp/configzen-0.1.9.tar.gz --markdown 20230514/c/configzen/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 14:22:36] INFO root fetch - processPackages [fief-server]: Downloading https://files.pythonhosted.org/packages/01/89/8b2cbeaaf06acc6e1251eaed15d49297614efbb6ffd2e3b970e05bf7c65c/fief-server-0.8.2.tar.gz
+[2023-05-14 14:22:36] INFO root fetch - processPackages [solana]: Downloading https://files.pythonhosted.org/packages/1c/21/bb8a78df8cc4a051fa53399a11ce6ad997a3abae40bcfe7fcb7019d8038f/solana-0.9.1.tar.gz
+[2023-05-14 14:22:36] INFO root fetch - processPackages [pypinyin]: Downloading https://files.pythonhosted.org/packages/b3/86/a9419a7a55754cd4180f80c241de0c4f88ee8453920530b255368c9effc8/pypinyin-0.9.4.tar.gz
+[2023-05-14 14:22:36] INFO root fetch - processPackages [fief-server]: Downloading https://files.pythonhosted.org/packages/64/4c/11ba1a1c43bc6d0b294fe513fe818967738d8faaa77ed0dbec2df9a03d32/fief-server-0.9.0.tar.gz
+[2023-05-14 14:22:36] INFO root fetch - processPackages [solana]: Downloading https://files.pythonhosted.org/packages/6e/d0/55172890da7bb3ab0f1a025890c117bfcdeaf6f88ac4592f3fbd7de8d182/solana-0.9.2.tar.gz
+[2023-05-14 14:22:36] INFO root fetch - processPackages [solana]: executing diffoscope
+[2023-05-14 14:22:36] INFO root fetch - processPackages [solana]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/solana-0.9.1.tar.gz tmp/solana-0.9.2.tar.gz --markdown 20230514/s/solana/0.9.1-0.9.2/diff.md --exclude *.pyd
+[2023-05-14 14:22:36] INFO root fetch - processPackages [fief-server]: executing diffoscope
+[2023-05-14 14:22:36] INFO root fetch - processPackages [fief-server]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fief-server-0.8.2.tar.gz tmp/fief-server-0.9.0.tar.gz --markdown 20230514/f/fief-server/0.8.2-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 14:22:36] INFO root fetch - main [MainThread]: End processing [oceano-algos]: success
+[2023-05-14 14:22:36] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-14 14:22:37] INFO root fetch - processPackages [pypinyin]: Downloading https://files.pythonhosted.org/packages/89/41/90818998aadeb451b7c40d2a8d509c4fa3ffc9bc3d00470bee96b492ef1a/pypinyin-0.9.5.tar.gz
+[2023-05-14 14:22:37] INFO root fetch - processPackages [pypinyin]: executing diffoscope
+[2023-05-14 14:22:37] INFO root fetch - processPackages [pypinyin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypinyin-0.9.4.tar.gz tmp/pypinyin-0.9.5.tar.gz --markdown 20230514/p/pypinyin/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-14 14:22:37] INFO root fetch - main [MainThread]: End processing [solana]: success
+[2023-05-14 14:22:38] INFO root fetch - main [MainThread]: End processing [fief-server]: success
+[2023-05-14 14:22:38] INFO root fetch - main [MainThread]: End processing [pypinyin]: success
+[2023-05-14 14:22:38] INFO root fetch - main [MainThread]: Store serial: [18096941]
