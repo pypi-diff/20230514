@@ -10030,3 +10030,83 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 21:21:16] INFO root fetch - main [MainThread]: End processing [xklb]: success
 [2023-05-14 21:21:49] INFO root fetch - main [MainThread]: End processing [beancount-black]: success
 [2023-05-14 21:21:49] INFO root fetch - main [MainThread]: Store serial: [18099475]
+[2023-05-14 21:26:54] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18099475]
+[2023-05-14 21:26:58] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-14 21:26:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pytmac
+[2023-05-14 21:26:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: PatryksAutoAI
+[2023-05-14 21:26:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: redbuild
+[2023-05-14 21:26:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: joonmyung
+[2023-05-14 21:26:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: torchinfo
+[2023-05-14 21:26:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: hotsos
+[2023-05-14 21:26:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: ragas
+[2023-05-14 21:26:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: constrained-lr
+[2023-05-14 21:26:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: pyrfu
+[2023-05-14 21:26:58] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: torsposer
+[2023-05-14 21:26:59] INFO root fetch - processPackages [redbuild]: New version: [2.1.0] Old Version: [2.0.8]
+[2023-05-14 21:26:59] WARNING root fetch - processPackages [pytmac]: Skipping, unable to determine old version
+[2023-05-14 21:26:59] INFO root fetch - processPackages [pytmac]: Start processing: pyqint
+[2023-05-14 21:26:59] INFO root fetch - main [MainThread]: End processing [pytmac] error
+[2023-05-14 21:26:59] INFO root fetch - processPackages [PatryksAutoAI]: New version: [0.5.9] Old Version: [0.5.8]
+[2023-05-14 21:26:59] WARNING root fetch - processPackages [constrained-lr]: Skipping, unable to determine old version
+[2023-05-14 21:26:59] INFO root fetch - processPackages [constrained-lr]: Start processing: pysyn-data
+[2023-05-14 21:26:59] INFO root fetch - main [MainThread]: End processing [constrained-lr] error
+[2023-05-14 21:26:59] INFO root fetch - processPackages [hotsos]: New version: [1.1.13.post9] Old Version: [1.1.13.post8]
+[2023-05-14 21:26:59] INFO root fetch - processPackages [ragas]: New version: [0.0.1a6] Old Version: [0.0.1a5]
+[2023-05-14 21:26:59] INFO root fetch - processPackages [torchinfo]: New version: [1.8.0] Old Version: [1.7.2]
+[2023-05-14 21:26:59] INFO root fetch - processPackages [joonmyung]: New version: [1.4.4] Old Version: [1.4.3]
+[2023-05-14 21:26:59] INFO root fetch - processPackages [torsposer]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-05-14 21:26:59] INFO root fetch - processPackages [pyqint]: New version: [0.9.7.0] Old Version: [0.9.6.0]
+[2023-05-14 21:26:59] INFO root fetch - processPackages [pyrfu]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-14 21:26:59] INFO root fetch - processPackages [pysyn-data]: New version: [0.3.1] Old Version: [0.3]
+[2023-05-14 21:26:59] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/f9/7e/51da7affcffe93cebeec4059ed764f5b49036ad2222f72122a463c5598a7/PatryksAutoAI-0.5.8.tar.gz
+[2023-05-14 21:26:59] INFO root fetch - processPackages [redbuild]: Downloading https://files.pythonhosted.org/packages/94/31/564fccc54d9f19bfe310f005762d4b913e8a38cd5a1cee492a99b11fdfe4/redbuild-2.0.8.tar.gz
+[2023-05-14 21:26:59] INFO root fetch - processPackages [joonmyung]: Downloading https://files.pythonhosted.org/packages/b5/22/3f8d8087b3f23dba96d2ff80194fcd843f4c28a5d5b95e6d3374c1bf6c26/joonmyung-1.4.3.tar.gz
+[2023-05-14 21:26:59] INFO root fetch - processPackages [torchinfo]: Downloading https://files.pythonhosted.org/packages/d6/61/68a22f2ae01ffaeff87c2cafd0a1c2deaf5b07a743c485cc2a33118aee55/torchinfo-1.7.2.tar.gz
+[2023-05-14 21:26:59] INFO root fetch - processPackages [ragas]: Downloading https://files.pythonhosted.org/packages/48/83/e6ef3b933106ea8542bfe30a5f972b98b63cdeac506bb0d6837338735665/ragas-0.0.1a5.tar.gz
+[2023-05-14 21:26:59] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/75/2f/826f5fd0c6bf525ed3cd7199c9efaa8a431240d6c366d68fe3a9f8c34737/hotsos-1.1.13.post8.tar.gz
+[2023-05-14 21:26:59] INFO root fetch - processPackages [torsposer]: Downloading https://files.pythonhosted.org/packages/ee/0e/9587ed71d85f19aaedbdfb71fb60ed4baa96e22ad45e3a4766d42cbfdb77/torsposer-0.1.0.tar.gz
+[2023-05-14 21:26:59] INFO root fetch - processPackages [pyqint]: Downloading https://files.pythonhosted.org/packages/3d/57/4c1e7da531836ec00c669a4ace4d0cced3a797eecb1f4c84c763335cc3df/pyqint-0.9.7.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-14 21:26:59] INFO root fetch - processPackages [joonmyung]: Downloading https://files.pythonhosted.org/packages/c7/be/13df1b68d514b09cb0260aef20a74adcec1ad9f6f54f8ffc6f8c3f2fd8b7/joonmyung-1.4.4.tar.gz
+[2023-05-14 21:26:59] INFO root fetch - processPackages [pysyn-data]: executing diffoscope
+[2023-05-14 21:26:59] INFO root fetch - processPackages [pysyn-data]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysyn_data-0.3.tar.gz tmp/pysyn_data-0.3.1.tar.gz --markdown 20230514/p/pysyn-data/0.3-0.3.1/diff.md --exclude *.pyd
+[2023-05-14 21:26:59] INFO root fetch - processPackages [redbuild]: Downloading https://files.pythonhosted.org/packages/96/8d/709ef24756833585253bed6e23412b68e5b1bbd3be7b28dacd4392fbdf34/redbuild-2.1.0.tar.gz
+[2023-05-14 21:26:59] INFO root fetch - processPackages [torchinfo]: Downloading https://files.pythonhosted.org/packages/53/d9/2b811d1c0812e9ef23e6cf2dbe022becbe6c5ab065e33fd80ee05c0cd996/torchinfo-1.8.0.tar.gz
+[2023-05-14 21:26:59] INFO root fetch - processPackages [ragas]: Downloading https://files.pythonhosted.org/packages/3e/47/25c2b315b7e302dbd10cad88fa83338be88fa649280f3cb7849244e701fd/ragas-0.0.1a6.tar.gz
+[2023-05-14 21:26:59] INFO root fetch - processPackages [torsposer]: Downloading https://files.pythonhosted.org/packages/51/ae/b88adeb3111b2e4e61368ab5159b8e9a9dc2aa168310132570e74ee67d08/torsposer-1.0.0.tar.gz
+[2023-05-14 21:26:59] INFO root fetch - processPackages [pyrfu]: Downloading https://files.pythonhosted.org/packages/00/1b/a9cce0b37f300d02ea02d6a482feb6852956232b628d51133834731767bf/pyrfu-2.3.9.tar.gz
+[2023-05-14 21:26:59] INFO root fetch - processPackages [hotsos]: Downloading https://files.pythonhosted.org/packages/95/52/1124faffb6267189a377decdf47aa64828b350f49f8edf82c0b048673160/hotsos-1.1.13.post9.tar.gz
+[2023-05-14 21:26:59] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/16/d9/95a635b9267acac9c6e03b80ea7230cd3af7241abb8e920cb2ec7cc34b25/PatryksAutoAI-0.5.9.tar.gz
+[2023-05-14 21:26:59] INFO root fetch - processPackages [redbuild]: executing diffoscope
+[2023-05-14 21:26:59] INFO root fetch - processPackages [redbuild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redbuild-2.0.8.tar.gz tmp/redbuild-2.1.0.tar.gz --markdown 20230514/r/redbuild/2.0.8-2.1.0/diff.md --exclude *.pyd
+[2023-05-14 21:26:59] INFO root fetch - processPackages [joonmyung]: executing diffoscope
+[2023-05-14 21:26:59] INFO root fetch - processPackages [joonmyung]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/joonmyung-1.4.3.tar.gz tmp/joonmyung-1.4.4.tar.gz --markdown 20230514/j/joonmyung/1.4.3-1.4.4/diff.md --exclude *.pyd
+[2023-05-14 21:26:59] INFO root fetch - processPackages [pyqint]: executing diffoscope
+[2023-05-14 21:26:59] INFO root fetch - processPackages [pyqint]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyqint-0.9.6.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/pyqint-0.9.7.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230514/p/pyqint/0.9.6.0-0.9.7.0/diff.md --exclude *.pyd
+[2023-05-14 21:26:59] INFO root fetch - processPackages [PatryksAutoAI]: executing diffoscope
+[2023-05-14 21:26:59] INFO root fetch - processPackages [torsposer]: executing diffoscope
+[2023-05-14 21:26:59] INFO root fetch - processPackages [PatryksAutoAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PatryksAutoAI-0.5.8.tar.gz tmp/PatryksAutoAI-0.5.9.tar.gz --markdown 20230514/P/PatryksAutoAI/0.5.8-0.5.9/diff.md --exclude *.pyd
+[2023-05-14 21:26:59] INFO root fetch - processPackages [torsposer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torsposer-0.1.0.tar.gz tmp/torsposer-1.0.0.tar.gz --markdown 20230514/t/torsposer/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-14 21:26:59] INFO root fetch - processPackages [hotsos]: executing diffoscope
+[2023-05-14 21:26:59] INFO root fetch - processPackages [hotsos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hotsos-1.1.13.post8.tar.gz tmp/hotsos-1.1.13.post9.tar.gz --markdown 20230514/h/hotsos/1.1.13.post8-1.1.13.post9/diff.md --exclude *.pyd
+[2023-05-14 21:26:59] INFO root fetch - processPackages [torchinfo]: executing diffoscope
+[2023-05-14 21:26:59] INFO root fetch - processPackages [torchinfo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchinfo-1.7.2.tar.gz tmp/torchinfo-1.8.0.tar.gz --markdown 20230514/t/torchinfo/1.7.2-1.8.0/diff.md --exclude *.pyd
+[2023-05-14 21:26:59] INFO root fetch - processPackages [ragas]: executing diffoscope
+[2023-05-14 21:26:59] INFO root fetch - processPackages [ragas]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ragas-0.0.1a5.tar.gz tmp/ragas-0.0.1a6.tar.gz --markdown 20230514/r/ragas/0.0.1a5-0.0.1a6/diff.md --exclude *.pyd
+[2023-05-14 21:27:00] WARNING root fetch - processPackages [pyrfu]: Skipping package: exceeds size limit 10579393>=10485760
+[2023-05-14 21:27:00] INFO root fetch - processPackages [pyrfu]: Start processing: enhancedocs
+[2023-05-14 21:27:00] INFO root fetch - main [MainThread]: End processing [pyrfu] error
+[2023-05-14 21:27:00] INFO root fetch - processPackages [enhancedocs]: New version: [0.5.8] Old Version: [0.5.7]
+[2023-05-14 21:27:00] INFO root fetch - processPackages [enhancedocs]: Downloading https://files.pythonhosted.org/packages/d4/76/b9e2b3be8dc54711cd564789bc70a91791288d7fd3d3dcbdac000fd2bd80/enhancedocs-0.5.8.tar.gz
+[2023-05-14 21:27:00] INFO root fetch - processPackages [enhancedocs]: executing diffoscope
+[2023-05-14 21:27:00] INFO root fetch - processPackages [enhancedocs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enhancedocs-0.5.7.tar.gz tmp/enhancedocs-0.5.8.tar.gz --markdown 20230514/e/enhancedocs/0.5.7-0.5.8/diff.md --exclude *.pyd
+[2023-05-14 21:27:00] INFO root fetch - main [MainThread]: End processing [pysyn-data]: success
+[2023-05-14 21:27:01] INFO root fetch - main [MainThread]: End processing [redbuild]: success
+[2023-05-14 21:27:01] INFO root fetch - main [MainThread]: End processing [joonmyung]: success
+[2023-05-14 21:27:01] INFO root fetch - main [MainThread]: End processing [torsposer]: success
+[2023-05-14 21:27:01] INFO root fetch - main [MainThread]: End processing [ragas]: success
+[2023-05-14 21:27:01] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
+[2023-05-14 21:27:01] INFO root fetch - main [MainThread]: End processing [torchinfo]: success
+[2023-05-14 21:27:01] INFO root fetch - main [MainThread]: End processing [enhancedocs]: success
+[2023-05-14 21:27:02] INFO root fetch - main [MainThread]: End processing [hotsos]: success
+[2023-05-14 21:27:23] INFO root fetch - main [MainThread]: End processing [pyqint]: success
+[2023-05-14 21:27:23] INFO root fetch - main [MainThread]: Store serial: [18099524]
