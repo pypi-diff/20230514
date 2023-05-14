@@ -1718,3 +1718,34 @@
 [2023-05-14 03:53:18] INFO root fetch - main [MainThread]: End processing [itasca-stub]: success
 [2023-05-14 03:53:18] INFO root fetch - main [MainThread]: End processing [itasca-stub]: success
 [2023-05-14 03:53:18] INFO root fetch - main [MainThread]: Store serial: [18094415]
+[2023-05-14 03:58:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094415]
+[2023-05-14 03:58:27] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 03:58:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chsel
+[2023-05-14 03:58:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tap-totango
+[2023-05-14 03:58:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: itasca-stub
+[2023-05-14 03:58:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: canomaly
+[2023-05-14 03:58:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: magic-class
+[2023-05-14 03:58:27] WARNING root fetch - processPackages [chsel]: Skipping, unable to determine old version
+[2023-05-14 03:58:27] INFO root fetch - processPackages [tap-totango]: New version: [0.2.0] Old Version: [0.1.0]
+[2023-05-14 03:58:27] INFO root fetch - main [MainThread]: End processing [chsel] error
+[2023-05-14 03:58:27] INFO root fetch - processPackages [canomaly]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 03:58:27] INFO root fetch - processPackages [magic-class]: New version: [0.7.0rc1] Old Version: [0.7.0rc0]
+[2023-05-14 03:58:27] INFO root fetch - processPackages [itasca-stub]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-14 03:58:27] INFO root fetch - processPackages [itasca-stub]: executing diffoscope
+[2023-05-14 03:58:27] INFO root fetch - processPackages [itasca-stub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itasca-stub-1.0.8.tar.gz tmp/itasca-stub-1.0.9.tar.gz --markdown 20230514/i/itasca-stub/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-14 03:58:27] INFO root fetch - processPackages [tap-totango]: Downloading https://files.pythonhosted.org/packages/c1/b0/4c94ae5d2e04b517054246b649e9e118aab4aa53cf4c13f967dedc4cb59f/tap_totango-0.1.0.tar.gz
+[2023-05-14 03:58:27] INFO root fetch - processPackages [canomaly]: Downloading https://files.pythonhosted.org/packages/67/1f/7c0a46ec32da06e61afdc3310453b819221509d313ba806ebe616579a689/canomaly-0.0.1.tar.gz
+[2023-05-14 03:58:27] INFO root fetch - processPackages [magic-class]: Downloading https://files.pythonhosted.org/packages/19/b0/00e152b78b5813472befefc9b077e1eed4fdcc29ff08616d804be33f8de3/magic_class-0.7.0rc1.tar.gz
+[2023-05-14 03:58:27] INFO root fetch - processPackages [canomaly]: Downloading https://files.pythonhosted.org/packages/7c/60/c6f9ba6b98f6d4f41ada84654e839122c9c8f7b39f674ba1023955985bfd/canomaly-0.0.2.tar.gz
+[2023-05-14 03:58:27] INFO root fetch - processPackages [canomaly]: executing diffoscope
+[2023-05-14 03:58:27] INFO root fetch - processPackages [canomaly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/canomaly-0.0.1.tar.gz tmp/canomaly-0.0.2.tar.gz --markdown 20230514/c/canomaly/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 03:58:28] INFO root fetch - processPackages [tap-totango]: Downloading https://files.pythonhosted.org/packages/f2/1e/2ff4549a00029dc316eca49cc1d2e68d07822cbd3336827a5eeb3b9ea7d1/tap_totango-0.2.0.tar.gz
+[2023-05-14 03:58:28] INFO root fetch - processPackages [magic-class]: executing diffoscope
+[2023-05-14 03:58:28] INFO root fetch - processPackages [magic-class]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magic_class-0.7.0rc0.tar.gz tmp/magic_class-0.7.0rc1.tar.gz --markdown 20230514/m/magic-class/0.7.0rc0-0.7.0rc1/diff.md --exclude *.pyd
+[2023-05-14 03:58:28] INFO root fetch - processPackages [tap-totango]: executing diffoscope
+[2023-05-14 03:58:28] INFO root fetch - processPackages [tap-totango]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tap_totango-0.1.0.tar.gz tmp/tap_totango-0.2.0.tar.gz --markdown 20230514/t/tap-totango/0.1.0-0.2.0/diff.md --exclude *.pyd
+[2023-05-14 03:58:28] INFO root fetch - main [MainThread]: End processing [itasca-stub]: success
+[2023-05-14 03:58:28] INFO root fetch - main [MainThread]: End processing [canomaly]: success
+[2023-05-14 03:58:29] INFO root fetch - main [MainThread]: End processing [tap-totango]: success
+[2023-05-14 03:58:29] INFO root fetch - main [MainThread]: End processing [magic-class]: success
+[2023-05-14 03:58:29] INFO root fetch - main [MainThread]: Store serial: [18094432]
