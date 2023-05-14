@@ -7935,3 +7935,66 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 17:49:21] INFO root fetch - main [MainThread]: End processing [python-fast-grpc]: success
 [2023-05-14 17:49:22] INFO root fetch - main [MainThread]: End processing [deprl]: success
 [2023-05-14 17:49:22] INFO root fetch - main [MainThread]: Store serial: [18098173]
+[2023-05-14 17:54:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098173]
+[2023-05-14 17:54:31] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-14 17:54:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: PaPDF
+[2023-05-14 17:54:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xia-login-flask
+[2023-05-14 17:54:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pytrees-rs
+[2023-05-14 17:54:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: bgmi
+[2023-05-14 17:54:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: finderivatives
+[2023-05-14 17:54:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: projectrexa
+[2023-05-14 17:54:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: pvxslibs
+[2023-05-14 17:54:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: argrelay
+[2023-05-14 17:54:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: xia-login-flask
+[2023-05-14 17:54:31] INFO root fetch - processPackages [projectrexa]: New version: [0.0.0.2] Old Version: [0.0.0.1]
+[2023-05-14 17:54:31] INFO root fetch - processPackages [PaPDF]: New version: [1.1.6] Old Version: [1.1.5]
+[2023-05-14 17:54:31] WARNING root fetch - processPackages [finderivatives]: Skipping, unable to determine old version
+[2023-05-14 17:54:31] INFO root fetch - processPackages [argrelay]: New version: [0.0.0.dev9] Old Version: [0.0.0.dev8]
+[2023-05-14 17:54:31] INFO root fetch - processPackages [pytrees-rs]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-14 17:54:31] INFO root fetch - main [MainThread]: End processing [finderivatives] error
+[2023-05-14 17:54:31] INFO root fetch - processPackages [xia-login-flask]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-14 17:54:31] INFO root fetch - processPackages [xia-login-flask]: New version: [0.2.1] Old Version: [0.2.0]
+[2023-05-14 17:54:31] INFO root fetch - processPackages [bgmi]: New version: [5.0.0a3] Old Version: [5.0.0a2]
+[2023-05-14 17:54:31] INFO root fetch - processPackages [pvxslibs]: New version: [1.2.0a1] Old Version: [1.1.4a1]
+[2023-05-14 17:54:32] INFO root fetch - processPackages [PaPDF]: Downloading https://files.pythonhosted.org/packages/45/ec/cc62a50775124367925b5c7ac4ebfcad3e30dc6f2c6a69e20666ef872eb7/PaPDF-1.1.5-py3-none-any.whl
+[2023-05-14 17:54:32] INFO root fetch - processPackages [projectrexa]: Downloading https://files.pythonhosted.org/packages/5d/3a/04f15e3b670bee78f27f2e3e4540e0f6971014b12947870e401c99378f5d/projectrexa-0.0.0.1.tar.gz
+[2023-05-14 17:54:32] INFO root fetch - processPackages [xia-login-flask]: Downloading https://files.pythonhosted.org/packages/db/e6/463edc2059668e85a6a352f6e1170a5d177a586e583822380c6a1266018c/xia_login_flask-0.2.0-cp39-none-macosx_11_0_x86_64.whl
+[2023-05-14 17:54:32] INFO root fetch - processPackages [xia-login-flask]: Downloading https://files.pythonhosted.org/packages/db/e6/463edc2059668e85a6a352f6e1170a5d177a586e583822380c6a1266018c/xia_login_flask-0.2.0-cp39-none-macosx_11_0_x86_64.whl
+[2023-05-14 17:54:32] WARNING root fetch - processPackages [argrelay]: fallback to get urls: [0.0.0.dev8]
+[2023-05-14 17:54:32] INFO root fetch - processPackages [pytrees-rs]: Downloading https://files.pythonhosted.org/packages/a3/a4/3dd9890aadf27f920fe2d824a0fee7e972d95886ccceadd8fd465aedcef7/pytrees-rs-0.1.0.tar.gz
+[2023-05-14 17:54:32] WARNING root fetch - processPackages [argrelay]: None
+[2023-05-14 17:54:32] INFO root fetch - processPackages [pvxslibs]: Downloading https://files.pythonhosted.org/packages/10/39/5e916e6f8b2ed69b02cbff6eea8af15be42f767c8641359f172d1a816cd6/pvxslibs-1.1.4a1.tar.gz
+[2023-05-14 17:54:32] INFO root fetch - processPackages [bgmi]: Downloading https://files.pythonhosted.org/packages/58/01/28533631eafc16923633c9832f25086fd3f3efc6e88bbeaf79457948c7d4/bgmi-5.0.0a2.tar.gz
+[2023-05-14 17:54:32] WARNING root fetch - processPackages [argrelay]: None
+[2023-05-14 17:54:32] WARNING root fetch - processPackages [argrelay]: unable to get url for both version [0.0.0.dev8]
+[2023-05-14 17:54:32] WARNING root fetch - processPackages [argrelay]: None
+[2023-05-14 17:54:32] INFO root fetch - main [MainThread]: End processing [argrelay] error
+[2023-05-14 17:54:32] INFO root fetch - processPackages [PaPDF]: Downloading https://files.pythonhosted.org/packages/82/13/61af03dd8fc734f73b70e6d1545f6d70763e737bd315d32401c919b41efb/PaPDF-1.1.6.tar.gz
+[2023-05-14 17:54:32] INFO root fetch - processPackages [pytrees-rs]: Downloading https://files.pythonhosted.org/packages/1b/2a/dd54fa7efd0f924fe2ddeb894a663e80478ab1bf2d16d16f1948c156f234/pytrees-rs-0.1.1.tar.gz
+[2023-05-14 17:54:32] INFO root fetch - processPackages [projectrexa]: Downloading https://files.pythonhosted.org/packages/a8/ca/2d9966c879a4dc2f4b37a1b995f89c8d5802d6295acd8ae4d9f43e68f299/projectrexa-0.0.0.2.tar.gz
+[2023-05-14 17:54:32] INFO root fetch - processPackages [xia-login-flask]: Downloading https://files.pythonhosted.org/packages/98/72/649eb483366316d6eb9411f70369baafdf5ae0fce6470d6d372fb39970cf/xia_login_flask-0.2.1-cp39-none-macosx_11_0_x86_64.whl
+[2023-05-14 17:54:32] INFO root fetch - processPackages [xia-login-flask]: Downloading https://files.pythonhosted.org/packages/98/72/649eb483366316d6eb9411f70369baafdf5ae0fce6470d6d372fb39970cf/xia_login_flask-0.2.1-cp39-none-macosx_11_0_x86_64.whl
+[2023-05-14 17:54:32] INFO root fetch - processPackages [PaPDF]: executing diffoscope
+[2023-05-14 17:54:32] INFO root fetch - processPackages [PaPDF]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PaPDF-1.1.5-py3-none-any.whl.zip tmp/PaPDF-1.1.6.tar.gz --markdown 20230514/P/PaPDF/1.1.5-1.1.6/diff.md --exclude *.pyd
+[2023-05-14 17:54:32] INFO root fetch - processPackages [projectrexa]: executing diffoscope
+[2023-05-14 17:54:32] INFO root fetch - processPackages [projectrexa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/projectrexa-0.0.0.1.tar.gz tmp/projectrexa-0.0.0.2.tar.gz --markdown 20230514/p/projectrexa/0.0.0.1-0.0.0.2/diff.md --exclude *.pyd
+[2023-05-14 17:54:32] INFO root fetch - processPackages [pytrees-rs]: executing diffoscope
+[2023-05-14 17:54:32] INFO root fetch - processPackages [pytrees-rs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytrees-rs-0.1.0.tar.gz tmp/pytrees-rs-0.1.1.tar.gz --markdown 20230514/p/pytrees-rs/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-14 17:54:32] INFO root fetch - processPackages [bgmi]: Downloading https://files.pythonhosted.org/packages/d1/4a/c3af3c0fbeda6f4db50b75b31030a1ab818b6ff09a51ecd45d933117e975/bgmi-5.0.0a3.tar.gz
+[2023-05-14 17:54:32] INFO root fetch - processPackages [pvxslibs]: Downloading https://files.pythonhosted.org/packages/28/8d/3c5c709b7c17856d9782f9f064619d7675fdfa480397f122b9d27e1752dd/pvxslibs-1.2.0a1.tar.gz
+[2023-05-14 17:54:32] INFO root fetch - processPackages [xia-login-flask]: executing diffoscope
+[2023-05-14 17:54:32] INFO root fetch - processPackages [xia-login-flask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_login_flask-0.2.0-cp39-none-macosx_11_0_x86_64.whl.zip tmp/xia_login_flask-0.2.1-cp39-none-macosx_11_0_x86_64.whl.zip --markdown 20230514/x/xia-login-flask/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-14 17:54:32] INFO root fetch - processPackages [xia-login-flask]: executing diffoscope
+[2023-05-14 17:54:32] INFO root fetch - processPackages [xia-login-flask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_login_flask-0.2.0-cp39-none-macosx_11_0_x86_64.whl.zip tmp/xia_login_flask-0.2.1-cp39-none-macosx_11_0_x86_64.whl.zip --markdown 20230514/x/xia-login-flask/0.2.0-0.2.1/diff.md --exclude *.pyd
+[2023-05-14 17:54:32] INFO root fetch - processPackages [bgmi]: executing diffoscope
+[2023-05-14 17:54:32] INFO root fetch - processPackages [bgmi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bgmi-5.0.0a2.tar.gz tmp/bgmi-5.0.0a3.tar.gz --markdown 20230514/b/bgmi/5.0.0a2-5.0.0a3/diff.md --exclude *.pyd
+[2023-05-14 17:54:32] INFO root fetch - processPackages [pvxslibs]: executing diffoscope
+[2023-05-14 17:54:32] INFO root fetch - processPackages [pvxslibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pvxslibs-1.1.4a1.tar.gz tmp/pvxslibs-1.2.0a1.tar.gz --markdown 20230514/p/pvxslibs/1.1.4a1-1.2.0a1/diff.md --exclude *.pyd
+[2023-05-14 17:54:33] INFO root fetch - main [MainThread]: End processing [PaPDF]: success
+[2023-05-14 17:54:33] INFO root fetch - main [MainThread]: End processing [projectrexa]: success
+[2023-05-14 17:54:34] INFO root fetch - main [MainThread]: End processing [pytrees-rs]: success
+[2023-05-14 17:54:35] INFO root fetch - main [MainThread]: End processing [bgmi]: success
+[2023-05-14 17:54:35] INFO root fetch - main [MainThread]: End processing [xia-login-flask]: success
+[2023-05-14 17:54:35] INFO root fetch - main [MainThread]: End processing [xia-login-flask]: success
+[2023-05-14 17:54:36] INFO root fetch - main [MainThread]: End processing [pvxslibs]: success
+[2023-05-14 17:54:36] INFO root fetch - main [MainThread]: Store serial: [18098213]
