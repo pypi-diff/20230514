@@ -4639,3 +4639,36 @@
 [2023-05-14 11:53:43] INFO root fetch - main [MainThread]: End processing [hhcm-forest]: success
 [2023-05-14 11:53:44] INFO root fetch - main [MainThread]: End processing [trojanzoo-sphinx-theme]: success
 [2023-05-14 11:53:44] INFO root fetch - main [MainThread]: Store serial: [18096187]
+[2023-05-14 11:58:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096187]
+[2023-05-14 11:58:53] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 11:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: brocolli
+[2023-05-14 11:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: v4xyz
+[2023-05-14 11:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: local-recruitment-employer-python-backend
+[2023-05-14 11:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: compas-timber
+[2023-05-14 11:58:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: trojanzoo
+[2023-05-14 11:58:53] INFO root fetch - processPackages [brocolli]: New version: [4.0.1] Old Version: [3.0.0]
+[2023-05-14 11:58:53] INFO root fetch - processPackages [compas-timber]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-14 11:58:53] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-05-14 11:58:53] INFO root fetch - processPackages [v4xyz]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-14 11:58:53] INFO root fetch - processPackages [trojanzoo]: New version: [2.0.0] Old Version: [1.1.1]
+[2023-05-14 11:58:53] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: executing diffoscope
+[2023-05-14 11:58:53] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local-recruitment-employer-python-backend-0.0.7.tar.gz tmp/local-recruitment-employer-python-backend-0.0.9.tar.gz --markdown 20230514/l/local-recruitment-employer-python-backend/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 11:58:53] INFO root fetch - processPackages [brocolli]: Downloading https://files.pythonhosted.org/packages/3b/ab/30c2aaf41a1b5a58033d8e774b08550c54ddc352f92118186e87f4f82a0f/brocolli-3.0.0.tar.gz
+[2023-05-14 11:58:53] INFO root fetch - processPackages [trojanzoo]: Downloading https://files.pythonhosted.org/packages/1f/7a/1a303a6add663cfe16bda180a94725d0dc9cd825543b8396c28d134d5545/trojanzoo-1.1.1.tar.gz
+[2023-05-14 11:58:53] INFO root fetch - processPackages [v4xyz]: Downloading https://files.pythonhosted.org/packages/af/5c/4262c571b36a8d099efe647978c22a08c2f9a96c57010ee86f092b0f7e36/v4xyz-0.0.6.tar.gz
+[2023-05-14 11:58:53] INFO root fetch - processPackages [v4xyz]: executing diffoscope
+[2023-05-14 11:58:53] INFO root fetch - processPackages [v4xyz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/v4xyz-0.0.5.tar.gz tmp/v4xyz-0.0.6.tar.gz --markdown 20230514/v/v4xyz/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-14 11:58:53] INFO root fetch - processPackages [compas-timber]: executing diffoscope
+[2023-05-14 11:58:53] INFO root fetch - processPackages [compas-timber]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/compas_timber-0.2.8.tar.gz tmp/compas_timber-0.2.9.tar.gz --markdown 20230514/c/compas-timber/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-14 11:58:53] INFO root fetch - processPackages [brocolli]: Downloading https://files.pythonhosted.org/packages/df/c5/ba61a4e6e83747f25ff5044d21d9e7c92801b3f0a5a2b9a85e45d215518d/brocolli-4.0.1.tar.gz
+[2023-05-14 11:58:53] INFO root fetch - processPackages [brocolli]: executing diffoscope
+[2023-05-14 11:58:53] INFO root fetch - processPackages [brocolli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/brocolli-3.0.0.tar.gz tmp/brocolli-4.0.1.tar.gz --markdown 20230514/b/brocolli/3.0.0-4.0.1/diff.md --exclude *.pyd
+[2023-05-14 11:58:53] INFO root fetch - processPackages [trojanzoo]: Downloading https://files.pythonhosted.org/packages/0f/b8/deee42eedfcbde77311ecbdc577020073a9a69c7015ca0f38fb4d7ceeefc/trojanzoo-2.0.0.tar.gz
+[2023-05-14 11:58:54] INFO root fetch - processPackages [trojanzoo]: executing diffoscope
+[2023-05-14 11:58:54] INFO root fetch - processPackages [trojanzoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/trojanzoo-1.1.1.tar.gz tmp/trojanzoo-2.0.0.tar.gz --markdown 20230514/t/trojanzoo/1.1.1-2.0.0/diff.md --exclude *.pyd
+[2023-05-14 11:58:54] INFO root fetch - main [MainThread]: End processing [local-recruitment-employer-python-backend]: success
+[2023-05-14 11:58:54] INFO root fetch - main [MainThread]: End processing [v4xyz]: success
+[2023-05-14 11:58:55] INFO root fetch - main [MainThread]: End processing [compas-timber]: success
+[2023-05-14 11:58:55] INFO root fetch - main [MainThread]: End processing [brocolli]: success
+[2023-05-14 11:58:57] INFO root fetch - main [MainThread]: End processing [trojanzoo]: success
+[2023-05-14 11:58:57] INFO root fetch - main [MainThread]: Store serial: [18096201]
