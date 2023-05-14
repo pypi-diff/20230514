@@ -4577,3 +4577,35 @@
 [2023-05-14 11:43:21] INFO root fetch - main [MainThread]: End processing [code-loader]: success
 [2023-05-14 11:43:22] INFO root fetch - main [MainThread]: End processing [trojanzoo-sphinx-theme]: success
 [2023-05-14 11:43:22] INFO root fetch - main [MainThread]: Store serial: [18096158]
+[2023-05-14 11:48:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096158]
+[2023-05-14 11:48:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 11:48:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: local-recruitment-employer-python-backend
+[2023-05-14 11:48:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: tarvis-indicators-webapi
+[2023-05-14 11:48:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: code-loader
+[2023-05-14 11:48:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pdf-annotations-diff
+[2023-05-14 11:48:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-master
+[2023-05-14 11:48:31] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: New version: [0.0.9] Old Version: [0.0.7]
+[2023-05-14 11:48:31] INFO root fetch - processPackages [code-loader]: New version: [0.2.9] Old Version: [0.2.8]
+[2023-05-14 11:48:31] INFO root fetch - processPackages [pdf-annotations-diff]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 11:48:31] INFO root fetch - processPackages [tarvis-indicators-webapi]: New version: [0.9.6] Old Version: [0.9.5]
+[2023-05-14 11:48:31] INFO root fetch - processPackages [certora-cli-alpha-master]: New version: [20230514.9.47.23631] Old Version: [20230512.9.43.869128]
+[2023-05-14 11:48:31] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: executing diffoscope
+[2023-05-14 11:48:31] INFO root fetch - processPackages [local-recruitment-employer-python-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local-recruitment-employer-python-backend-0.0.7.tar.gz tmp/local-recruitment-employer-python-backend-0.0.9.tar.gz --markdown 20230514/l/local-recruitment-employer-python-backend/0.0.7-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 11:48:32] INFO root fetch - processPackages [code-loader]: executing diffoscope
+[2023-05-14 11:48:32] INFO root fetch - processPackages [code-loader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/code-loader-0.2.8.tar.gz tmp/code-loader-0.2.9.tar.gz --markdown 20230514/c/code-loader/0.2.8-0.2.9/diff.md --exclude *.pyd
+[2023-05-14 11:48:32] INFO root fetch - processPackages [tarvis-indicators-webapi]: Downloading https://files.pythonhosted.org/packages/29/60/5ce10c2b7e8911657535e45c1ead05068fed7f7c5e09c3beb4475c648862/tarvis-indicators-webapi-0.9.5.tar.gz
+[2023-05-14 11:48:32] INFO root fetch - processPackages [pdf-annotations-diff]: Downloading https://files.pythonhosted.org/packages/8e/88/9c3f0ebdf006737d115a62e1786d7f7d709146988306ea54706b90d88d52/pdf-annotations-diff-0.0.1.tar.gz
+[2023-05-14 11:48:32] INFO root fetch - processPackages [certora-cli-alpha-master]: Downloading https://files.pythonhosted.org/packages/25/76/4682dd82f26c48346573a4d840e4be8b77de273e0e1c0edc926f2ac44ccb/certora-cli-alpha-master-20230512.9.43.869128.tar.gz
+[2023-05-14 11:48:32] WARNING root fetch - processPackages [certora-cli-alpha-master]: Skipping package: exceeds size limit 39430822>=10485760
+[2023-05-14 11:48:32] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-master] error
+[2023-05-14 11:48:32] INFO root fetch - processPackages [tarvis-indicators-webapi]: Downloading https://files.pythonhosted.org/packages/aa/99/67337627e078ca2f6391b9aaa95e7740b6fcb68a8d1b36b16d406e95e506/tarvis-indicators-webapi-0.9.6.tar.gz
+[2023-05-14 11:48:32] INFO root fetch - processPackages [pdf-annotations-diff]: Downloading https://files.pythonhosted.org/packages/05/18/aafc0c7294e09781a884364abe25b9e6ba81a8bbbf4d23b32ac045e99294/pdf-annotations-diff-0.0.2.tar.gz
+[2023-05-14 11:48:32] INFO root fetch - processPackages [tarvis-indicators-webapi]: executing diffoscope
+[2023-05-14 11:48:32] INFO root fetch - processPackages [tarvis-indicators-webapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tarvis-indicators-webapi-0.9.5.tar.gz tmp/tarvis-indicators-webapi-0.9.6.tar.gz --markdown 20230514/t/tarvis-indicators-webapi/0.9.5-0.9.6/diff.md --exclude *.pyd
+[2023-05-14 11:48:32] INFO root fetch - processPackages [pdf-annotations-diff]: executing diffoscope
+[2023-05-14 11:48:32] INFO root fetch - processPackages [pdf-annotations-diff]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pdf-annotations-diff-0.0.1.tar.gz tmp/pdf-annotations-diff-0.0.2.tar.gz --markdown 20230514/p/pdf-annotations-diff/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 11:48:33] INFO root fetch - main [MainThread]: End processing [local-recruitment-employer-python-backend]: success
+[2023-05-14 11:48:33] INFO root fetch - main [MainThread]: End processing [code-loader]: success
+[2023-05-14 11:48:33] INFO root fetch - main [MainThread]: End processing [tarvis-indicators-webapi]: success
+[2023-05-14 11:48:33] INFO root fetch - main [MainThread]: End processing [pdf-annotations-diff]: success
+[2023-05-14 11:48:33] INFO root fetch - main [MainThread]: Store serial: [18096175]
