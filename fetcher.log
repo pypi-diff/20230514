@@ -5417,3 +5417,40 @@
 [2023-05-14 13:40:31] INFO root fetch - main [MainThread]: End processing [fastapi-sa-orm-filter]: success
 [2023-05-14 13:40:31] INFO root fetch - main [MainThread]: End processing [homeduino]: success
 [2023-05-14 13:40:31] INFO root fetch - main [MainThread]: Store serial: [18096675]
+[2023-05-14 13:45:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096675]
+[2023-05-14 13:45:41] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-14 13:45:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cutlery
+[2023-05-14 13:45:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: opstool
+[2023-05-14 13:45:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: datagen-tech
+[2023-05-14 13:45:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hercules-jit
+[2023-05-14 13:45:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: bigdl-dllib-spark3
+[2023-05-14 13:45:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bigdl-orca-spark3
+[2023-05-14 13:45:41] INFO root fetch - processPackages [bigdl-orca-spark3]: New version: [2.4.0b20230513] Old Version: [2.4.0b20230511]
+[2023-05-14 13:45:41] INFO root fetch - processPackages [bigdl-dllib-spark3]: New version: [2.4.0b20230513] Old Version: [2.4.0b20230511]
+[2023-05-14 13:45:41] INFO root fetch - processPackages [cutlery]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-14 13:45:41] INFO root fetch - processPackages [opstool]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-05-14 13:45:41] WARNING root fetch - processPackages [hercules-jit]: Skipping, unable to determine old version
+[2023-05-14 13:45:41] INFO root fetch - main [MainThread]: End processing [hercules-jit] error
+[2023-05-14 13:45:41] INFO root fetch - processPackages [datagen-tech]: New version: [1.9.0rc2] Old Version: [1.9.0rc1]
+[2023-05-14 13:45:41] INFO root fetch - processPackages [cutlery]: Downloading https://files.pythonhosted.org/packages/6e/20/c27741a44f0369f9ddf31789ea2bb37ca70d4b6b19b0b6e86e92eccac697/cutlery-0.0.2.tar.gz
+[2023-05-14 13:45:41] INFO root fetch - processPackages [bigdl-dllib-spark3]: Downloading https://files.pythonhosted.org/packages/b1/c6/9dc0a2180d42877238e0e7766e419b373da12c4d47ca0924dfa0daa843af/bigdl-dllib-spark3-2.4.0b20230511.tar.gz
+[2023-05-14 13:45:41] INFO root fetch - processPackages [bigdl-orca-spark3]: Downloading https://files.pythonhosted.org/packages/16/d7/da387a8060ce07c8fefb895b951babb29875e04305e30d38e81525aff152/bigdl_orca_spark3-2.4.0b20230511-py3-none-manylinux1_x86_64.whl
+[2023-05-14 13:45:41] WARNING root fetch - processPackages [bigdl-dllib-spark3]: Skipping package: exceeds size limit 61251896>=10485760
+[2023-05-14 13:45:41] WARNING root fetch - processPackages [bigdl-orca-spark3]: Skipping package: exceeds size limit 20207573>=10485760
+[2023-05-14 13:45:41] INFO root fetch - main [MainThread]: End processing [bigdl-dllib-spark3] error
+[2023-05-14 13:45:41] INFO root fetch - main [MainThread]: End processing [bigdl-orca-spark3] error
+[2023-05-14 13:45:41] INFO root fetch - processPackages [datagen-tech]: Downloading https://files.pythonhosted.org/packages/cc/d6/c742ea28a1d44f1e61fe07c6a5edd9477e0c4ad9486ff64894d9d6e01887/datagen_tech-1.9.0rc1.tar.gz
+[2023-05-14 13:45:41] INFO root fetch - processPackages [opstool]: Downloading https://files.pythonhosted.org/packages/f2/e7/3f4e607550cd33defffc210ef85fba642dcdd6a5893e741700e3446cffb7/opstool-0.8.0.tar.gz
+[2023-05-14 13:45:41] INFO root fetch - processPackages [cutlery]: Downloading https://files.pythonhosted.org/packages/d3/de/75f1e83a6c852a9f920d5713321edc6e8493b61993e7a13e8ec0a6e95c74/cutlery-0.0.3.tar.gz
+[2023-05-14 13:45:41] INFO root fetch - processPackages [cutlery]: executing diffoscope
+[2023-05-14 13:45:41] INFO root fetch - processPackages [cutlery]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cutlery-0.0.2.tar.gz tmp/cutlery-0.0.3.tar.gz --markdown 20230514/c/cutlery/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-14 13:45:41] INFO root fetch - processPackages [opstool]: Downloading https://files.pythonhosted.org/packages/69/7e/c9ace4c42504ea393c12e95f5ce8e182c3b8a7fb243d5bb2105b58b2eb4e/opstool-0.8.1.tar.gz
+[2023-05-14 13:45:42] INFO root fetch - processPackages [opstool]: executing diffoscope
+[2023-05-14 13:45:42] INFO root fetch - processPackages [opstool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opstool-0.8.0.tar.gz tmp/opstool-0.8.1.tar.gz --markdown 20230514/o/opstool/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-05-14 13:45:43] INFO root fetch - main [MainThread]: End processing [opstool]: success
+[2023-05-14 13:45:44] INFO root fetch - processPackages [datagen-tech]: Downloading https://files.pythonhosted.org/packages/ca/bc/0d1aa80739e4facd0429f21799f823c31d0198792cd0b543ca8d16c0eace/datagen_tech-1.9.0rc2.tar.gz
+[2023-05-14 13:45:44] INFO root fetch - main [MainThread]: End processing [cutlery]: success
+[2023-05-14 13:45:46] INFO root fetch - processPackages [datagen-tech]: executing diffoscope
+[2023-05-14 13:45:46] INFO root fetch - processPackages [datagen-tech]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datagen_tech-1.9.0rc1.tar.gz tmp/datagen_tech-1.9.0rc2.tar.gz --markdown 20230514/d/datagen-tech/1.9.0rc1-1.9.0rc2/diff.md --exclude *.pyd
+[2023-05-14 13:45:50] INFO root fetch - main [MainThread]: End processing [datagen-tech]: success
+[2023-05-14 13:45:50] INFO root fetch - main [MainThread]: Store serial: [18096721]
