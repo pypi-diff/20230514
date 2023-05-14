@@ -4026,3 +4026,47 @@
 [2023-05-14 10:44:37] INFO root fetch - main [MainThread]: End processing [lumigo-tracer]: success
 [2023-05-14 10:44:38] INFO root fetch - main [MainThread]: End processing [oobabot]: success
 [2023-05-14 10:44:38] INFO root fetch - main [MainThread]: Store serial: [18095804]
+[2023-05-14 10:49:42] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095804]
+[2023-05-14 10:49:46] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 10:49:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: elefantolib-fastapi
+[2023-05-14 10:49:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: Lshengpackage
+[2023-05-14 10:49:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: micro-shared-lib
+[2023-05-14 10:49:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: freeGPT
+[2023-05-14 10:49:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Inputbetter
+[2023-05-14 10:49:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: arkdata
+[2023-05-14 10:49:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: tff-nightly
+[2023-05-14 10:49:47] INFO root fetch - processPackages [Inputbetter]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-14 10:49:47] INFO root fetch - processPackages [arkdata]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-14 10:49:47] INFO root fetch - processPackages [elefantolib-fastapi]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-14 10:49:47] INFO root fetch - processPackages [freeGPT]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-14 10:49:47] WARNING root fetch - processPackages [micro-shared-lib]: Skipping, unable to determine old version
+[2023-05-14 10:49:47] INFO root fetch - processPackages [Lshengpackage]: New version: [0.3.8] Old Version: [0.3.7]
+[2023-05-14 10:49:47] INFO root fetch - main [MainThread]: End processing [micro-shared-lib] error
+[2023-05-14 10:49:47] INFO root fetch - processPackages [arkdata]: executing diffoscope
+[2023-05-14 10:49:47] INFO root fetch - processPackages [arkdata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/arkdata-1.0.8.tar.gz tmp/arkdata-1.0.9.tar.gz --markdown 20230514/a/arkdata/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-14 10:49:47] INFO root fetch - processPackages [Inputbetter]: Downloading https://files.pythonhosted.org/packages/c0/5a/f38dbf95777b6b67528472fbb1cb4fca432f85fa2217c675cf52fe8a7cf8/Inputbetter-0.2.0-py3-none-any.whl
+[2023-05-14 10:49:47] INFO root fetch - processPackages [freeGPT]: Downloading https://files.pythonhosted.org/packages/1f/12/fd60b8a1b304376d6d9f34dd3357f239ad57c41470c40560ee1b02f73c74/freeGPT-1.1.tar.gz
+[2023-05-14 10:49:47] INFO root fetch - processPackages [elefantolib-fastapi]: Downloading https://files.pythonhosted.org/packages/f2/07/6b3e9be7425fbf76391634405b8c794d7fa3a6bca7f2238da9ebe60f3483/elefantolib_fastapi-0.2.4.tar.gz
+[2023-05-14 10:49:47] INFO root fetch - processPackages [Lshengpackage]: Downloading https://files.pythonhosted.org/packages/35/4a/c94e76e858e56e270930aa4a58fb0bc05903d4bd4bb6594931ed3eeac5c8/Lshengpackage-0.3.8.tar.gz
+[2023-05-14 10:49:47] INFO root fetch - processPackages [elefantolib-fastapi]: executing diffoscope
+[2023-05-14 10:49:47] INFO root fetch - processPackages [elefantolib-fastapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/elefantolib_fastapi-0.2.3.tar.gz tmp/elefantolib_fastapi-0.2.4.tar.gz --markdown 20230514/e/elefantolib-fastapi/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-14 10:49:47] INFO root fetch - processPackages [tff-nightly]: New version: [0.0.1.dev20230514] Old Version: [0.0.1.dev20230513]
+[2023-05-14 10:49:47] INFO root fetch - processPackages [Inputbetter]: Downloading https://files.pythonhosted.org/packages/bf/97/61c4136c0805dff12e0f7c600fa842d8a2014f6bf2f494c962a560e75378/Inputbetter-0.3.0-py3-none-any.whl
+[2023-05-14 10:49:47] INFO root fetch - processPackages [Lshengpackage]: executing diffoscope
+[2023-05-14 10:49:47] INFO root fetch - processPackages [Lshengpackage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Lshengpackage-0.3.7.tar.gz tmp/Lshengpackage-0.3.8.tar.gz --markdown 20230514/L/Lshengpackage/0.3.7-0.3.8/diff.md --exclude *.pyd
+[2023-05-14 10:49:47] INFO root fetch - processPackages [freeGPT]: Downloading https://files.pythonhosted.org/packages/4e/6d/14f4d6b09444fd7245407ba4370b0e4ed873114ed48bd144f38d2ceb0f6b/freeGPT-1.0.2.tar.gz
+[2023-05-14 10:49:47] INFO root fetch - processPackages [Inputbetter]: executing diffoscope
+[2023-05-14 10:49:47] INFO root fetch - processPackages [Inputbetter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Inputbetter-0.2.0-py3-none-any.whl.zip tmp/Inputbetter-0.3.0-py3-none-any.whl.zip --markdown 20230514/I/Inputbetter/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-14 10:49:47] INFO root fetch - processPackages [tff-nightly]: Downloading https://files.pythonhosted.org/packages/61/24/a1d86f5fb1ed007a815d5f488792794db46d04eabae5ac06f3797370fdab/tff_nightly-0.0.1.dev20230513-py2.py3-none-any.whl
+[2023-05-14 10:49:47] INFO root fetch - processPackages [freeGPT]: executing diffoscope
+[2023-05-14 10:49:47] INFO root fetch - processPackages [freeGPT]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/freeGPT-1.1.tar.gz tmp/freeGPT-1.0.2.tar.gz --markdown 20230514/f/freeGPT/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-14 10:49:48] INFO root fetch - processPackages [tff-nightly]: Downloading https://files.pythonhosted.org/packages/c0/a7/034d09308a16ab01ffb0110a8afb201b230b92498774b5feeee5b870b177/tff_nightly-0.0.1.dev20230514-py2.py3-none-any.whl
+[2023-05-14 10:49:48] INFO root fetch - main [MainThread]: End processing [elefantolib-fastapi]: success
+[2023-05-14 10:49:48] INFO root fetch - processPackages [tff-nightly]: executing diffoscope
+[2023-05-14 10:49:48] INFO root fetch - processPackages [tff-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tff_nightly-0.0.1.dev20230513-py2.py3-none-any.whl.zip tmp/tff_nightly-0.0.1.dev20230514-py2.py3-none-any.whl.zip --markdown 20230514/t/tff-nightly/0.0.1.dev20230513-0.0.1.dev20230514/diff.md --exclude *.pyd
+[2023-05-14 10:49:48] INFO root fetch - main [MainThread]: End processing [Inputbetter]: success
+[2023-05-14 10:49:48] INFO root fetch - main [MainThread]: End processing [arkdata]: success
+[2023-05-14 10:49:48] INFO root fetch - main [MainThread]: End processing [freeGPT]: success
+[2023-05-14 10:49:48] INFO root fetch - main [MainThread]: End processing [Lshengpackage]: success
+[2023-05-14 10:49:51] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
+[2023-05-14 10:49:51] INFO root fetch - main [MainThread]: Store serial: [18095826]
