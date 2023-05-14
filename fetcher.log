@@ -2354,3 +2354,20 @@
 [2023-05-14 05:43:53] INFO root fetch - main [MainThread]: End processing [pyfaust]: success
 [2023-05-14 05:43:57] INFO root fetch - main [MainThread]: End processing [pyfaust-torch]: success
 [2023-05-14 05:43:57] INFO root fetch - main [MainThread]: Store serial: [18094819]
+[2023-05-14 05:49:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094819]
+[2023-05-14 05:49:13] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-14 05:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mynacode
+[2023-05-14 05:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ardilla
+[2023-05-14 05:49:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: transformers-agent-ui
+[2023-05-14 05:49:14] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-14 05:49:14] INFO root fetch - processPackages [ardilla]: New version: [0.0.9a0] Old Version: [0.0.8a0]
+[2023-05-14 05:49:14] WARNING root fetch - processPackages [transformers-agent-ui]: Skipping, unable to determine old version
+[2023-05-14 05:49:14] INFO root fetch - main [MainThread]: End processing [transformers-agent-ui] error
+[2023-05-14 05:49:14] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-05-14 05:49:14] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230514/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-14 05:49:14] INFO root fetch - processPackages [ardilla]: Downloading https://files.pythonhosted.org/packages/0a/22/f6c01a9f26450cac501bed6442868cbe74c55ed9cac8b8b6a7fbcd5f0a8d/ardilla-0.0.9a0.tar.gz
+[2023-05-14 05:49:14] INFO root fetch - processPackages [ardilla]: executing diffoscope
+[2023-05-14 05:49:14] INFO root fetch - processPackages [ardilla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ardilla-0.0.8a0.tar.gz tmp/ardilla-0.0.9a0.tar.gz --markdown 20230514/a/ardilla/0.0.8a0-0.0.9a0/diff.md --exclude *.pyd
+[2023-05-14 05:49:15] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-05-14 05:49:15] INFO root fetch - main [MainThread]: End processing [ardilla]: success
+[2023-05-14 05:49:15] INFO root fetch - main [MainThread]: Store serial: [18094831]
