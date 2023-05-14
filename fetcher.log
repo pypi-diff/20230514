@@ -8679,3 +8679,37 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 19:09:31] INFO root fetch - main [MainThread]: End processing [Zeraora]: success
 [2023-05-14 19:09:33] INFO root fetch - main [MainThread]: End processing [speech-collator]: success
 [2023-05-14 19:09:33] INFO root fetch - main [MainThread]: Store serial: [18098659]
+[2023-05-14 19:14:37] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098659]
+[2023-05-14 19:14:41] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 19:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: enochecker-test
+[2023-05-14 19:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xpip-python
+[2023-05-14 19:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: betby
+[2023-05-14 19:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: emi-calculator
+[2023-05-14 19:14:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: depend1000
+[2023-05-14 19:14:42] INFO root fetch - processPackages [emi-calculator]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-14 19:14:42] INFO root fetch - processPackages [betby]: New version: [0.2.6] Old Version: [0.2.5]
+[2023-05-14 19:14:42] INFO root fetch - processPackages [enochecker-test]: New version: [0.9.0] Old Version: [0.8.1]
+[2023-05-14 19:14:42] INFO root fetch - processPackages [xpip-python]: New version: [0.6] Old Version: [0.5]
+[2023-05-14 19:14:42] WARNING root fetch - processPackages [depend1000]: Skipping, unable to determine old version
+[2023-05-14 19:14:42] INFO root fetch - main [MainThread]: End processing [depend1000] error
+[2023-05-14 19:14:42] INFO root fetch - processPackages [emi-calculator]: Downloading https://files.pythonhosted.org/packages/f1/f9/e46c4066dc1e2299d369cd6476f0fcc720ded32985d056afda1162dbffd1/emi_calculator-1.0.1.tar.gz
+[2023-05-14 19:14:42] INFO root fetch - processPackages [betby]: Downloading https://files.pythonhosted.org/packages/f9/5a/66388cb0cb9615421a91c40f6b3435edc7fab323ed6e29792bb0e7fef78b/betby-0.2.5.tar.gz
+[2023-05-14 19:14:42] INFO root fetch - processPackages [enochecker-test]: Downloading https://files.pythonhosted.org/packages/9d/12/28835a7c193b792510a318dc8fc7e7de66af87395102174caee62f594785/enochecker_test-0.8.1.tar.gz
+[2023-05-14 19:14:42] INFO root fetch - processPackages [xpip-python]: Downloading https://files.pythonhosted.org/packages/fc/8b/f7e31aa9e92caab7d98cdde41dbd1add7f2c0a85148cd6bdd3c80475b72b/xpip-python-0.5.tar.gz
+[2023-05-14 19:14:42] INFO root fetch - processPackages [enochecker-test]: Downloading https://files.pythonhosted.org/packages/89/9f/ae6e25023d3a007a4caabbec1924670291901056e8a3d5679098617fd63a/enochecker_test-0.9.0.tar.gz
+[2023-05-14 19:14:42] INFO root fetch - processPackages [betby]: Downloading https://files.pythonhosted.org/packages/7e/a8/bf340ce20dc21ceae17b9940bffc06a2a7b738c89c963ac2117ce28aed17/betby-0.2.6.tar.gz
+[2023-05-14 19:14:42] INFO root fetch - processPackages [betby]: executing diffoscope
+[2023-05-14 19:14:42] INFO root fetch - processPackages [betby]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/betby-0.2.5.tar.gz tmp/betby-0.2.6.tar.gz --markdown 20230514/b/betby/0.2.5-0.2.6/diff.md --exclude *.pyd
+[2023-05-14 19:14:42] INFO root fetch - processPackages [emi-calculator]: Downloading https://files.pythonhosted.org/packages/19/3a/677f5e9a298e83e3ac4a8a0401f937d9cc011a6be15195f6ad9be2ccb088/emi_calculator-1.0.2.tar.gz
+[2023-05-14 19:14:42] INFO root fetch - processPackages [xpip-python]: Downloading https://files.pythonhosted.org/packages/ad/48/bcfa9a8d1c5d8217683da1007c18502d95eb27f861ef49def2d7aec66d3a/xpip-python-0.6.tar.gz
+[2023-05-14 19:14:42] INFO root fetch - processPackages [emi-calculator]: executing diffoscope
+[2023-05-14 19:14:42] INFO root fetch - processPackages [emi-calculator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emi_calculator-1.0.1.tar.gz tmp/emi_calculator-1.0.2.tar.gz --markdown 20230514/e/emi-calculator/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-14 19:14:42] INFO root fetch - processPackages [enochecker-test]: executing diffoscope
+[2023-05-14 19:14:42] INFO root fetch - processPackages [enochecker-test]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/enochecker_test-0.8.1.tar.gz tmp/enochecker_test-0.9.0.tar.gz --markdown 20230514/e/enochecker-test/0.8.1-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 19:14:42] INFO root fetch - processPackages [xpip-python]: executing diffoscope
+[2023-05-14 19:14:42] INFO root fetch - processPackages [xpip-python]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xpip-python-0.5.tar.gz tmp/xpip-python-0.6.tar.gz --markdown 20230514/x/xpip-python/0.5-0.6/diff.md --exclude *.pyd
+[2023-05-14 19:14:43] INFO root fetch - main [MainThread]: End processing [enochecker-test]: success
+[2023-05-14 19:14:43] INFO root fetch - main [MainThread]: End processing [betby]: success
+[2023-05-14 19:14:43] INFO root fetch - main [MainThread]: End processing [xpip-python]: success
+[2023-05-14 19:14:43] INFO root fetch - main [MainThread]: End processing [emi-calculator]: success
+[2023-05-14 19:14:43] INFO root fetch - main [MainThread]: Store serial: [18098670]
