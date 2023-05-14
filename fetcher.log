@@ -2197,3 +2197,48 @@
 [2023-05-14 05:17:17] INFO root fetch - main [MainThread]: End processing [GANDLF]: success
 [2023-05-14 05:17:18] INFO root fetch - main [MainThread]: End processing [aioqui]: success
 [2023-05-14 05:17:18] INFO root fetch - main [MainThread]: Store serial: [18094698]
+[2023-05-14 05:22:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094698]
+[2023-05-14 05:22:27] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-14 05:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webarchiver
+[2023-05-14 05:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: ardilla
+[2023-05-14 05:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: RolexReserver
+[2023-05-14 05:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: promptulate
+[2023-05-14 05:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: quntest
+[2023-05-14 05:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: bfactory
+[2023-05-14 05:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: webarchiver
+[2023-05-14 05:22:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: stmaterial
+[2023-05-14 05:22:27] WARNING root fetch - processPackages [RolexReserver]: Skipping, unable to determine old version
+[2023-05-14 05:22:27] INFO root fetch - main [MainThread]: End processing [RolexReserver] error
+[2023-05-14 05:22:27] INFO root fetch - processPackages [ardilla]: New version: [0.0.8a0] Old Version: [0.0.7a0]
+[2023-05-14 05:22:27] INFO root fetch - processPackages [webarchiver]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-14 05:22:27] INFO root fetch - processPackages [stmaterial]: New version: [0.0.6] Old Version: [0.0.5]
+[2023-05-14 05:22:27] INFO root fetch - processPackages [promptulate]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-14 05:22:27] WARNING root fetch - processPackages [quntest]: Skipping, unable to determine old version
+[2023-05-14 05:22:27] INFO root fetch - main [MainThread]: End processing [quntest] error
+[2023-05-14 05:22:27] INFO root fetch - processPackages [bfactory]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-14 05:22:27] INFO root fetch - processPackages [webarchiver]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-14 05:22:27] INFO root fetch - processPackages [ardilla]: Downloading https://files.pythonhosted.org/packages/1f/bb/84bb72445ba1487ec100e08dfc155e77b22a92501439cf76d45c606e2de3/ardilla-0.0.8a0.tar.gz
+[2023-05-14 05:22:27] INFO root fetch - processPackages [bfactory]: Downloading https://files.pythonhosted.org/packages/9f/38/33b1851f910cf180d77d70f58d4f42591b343a477ba9f5e781c6fb08e3cd/bfactory-0.4.1.tar.gz
+[2023-05-14 05:22:27] INFO root fetch - processPackages [promptulate]: Downloading https://files.pythonhosted.org/packages/e8/0c/b97354e44249070171644f4315f6acad9210de9e6fbdeb33cea2f6364fed/promptulate-1.0.1.tar.gz
+[2023-05-14 05:22:27] INFO root fetch - processPackages [stmaterial]: Downloading https://files.pythonhosted.org/packages/9e/80/44c98b6df99d8d78bf9104eb6e01c83575fead8ac6416470195a107071f6/stmaterial-0.0.6.tar.gz
+[2023-05-14 05:22:27] INFO root fetch - processPackages [ardilla]: executing diffoscope
+[2023-05-14 05:22:27] INFO root fetch - processPackages [ardilla]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ardilla-0.0.7a0.tar.gz tmp/ardilla-0.0.8a0.tar.gz --markdown 20230514/a/ardilla/0.0.7a0-0.0.8a0/diff.md --exclude *.pyd
+[2023-05-14 05:22:27] INFO root fetch - processPackages [stmaterial]: executing diffoscope
+[2023-05-14 05:22:27] INFO root fetch - processPackages [stmaterial]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/stmaterial-0.0.5.tar.gz tmp/stmaterial-0.0.6.tar.gz --markdown 20230514/s/stmaterial/0.0.5-0.0.6/diff.md --exclude *.pyd
+[2023-05-14 05:22:27] INFO root fetch - processPackages [webarchiver]: executing diffoscope
+[2023-05-14 05:22:27] INFO root fetch - processPackages [webarchiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webarchiver-0.8.0-py2.py3-none-any.whl.zip tmp/webarchiver-0.9.0-py2.py3-none-any.whl.zip --markdown 20230514/w/webarchiver/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 05:22:27] INFO root fetch - processPackages [bfactory]: Downloading https://files.pythonhosted.org/packages/3e/53/d8346f7576af1c337e13407690ca829ea9068123dcaad57c717598d62b20/bfactory-0.4.2.tar.gz
+[2023-05-14 05:22:27] INFO root fetch - processPackages [webarchiver]: executing diffoscope
+[2023-05-14 05:22:27] INFO root fetch - processPackages [webarchiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webarchiver-0.8.0-py2.py3-none-any.whl.zip tmp/webarchiver-0.9.0-py2.py3-none-any.whl.zip --markdown 20230514/w/webarchiver/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 05:22:27] INFO root fetch - processPackages [bfactory]: executing diffoscope
+[2023-05-14 05:22:27] INFO root fetch - processPackages [bfactory]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bfactory-0.4.1.tar.gz tmp/bfactory-0.4.2.tar.gz --markdown 20230514/b/bfactory/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-14 05:22:27] INFO root fetch - processPackages [promptulate]: Downloading https://files.pythonhosted.org/packages/66/13/c5bd6a6b5c7cdf67fe1462ffc80f6bd5adcc969f2fe6e7483596acbc263c/promptulate-1.0.2.tar.gz
+[2023-05-14 05:22:28] INFO root fetch - processPackages [promptulate]: executing diffoscope
+[2023-05-14 05:22:28] INFO root fetch - processPackages [promptulate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/promptulate-1.0.1.tar.gz tmp/promptulate-1.0.2.tar.gz --markdown 20230514/p/promptulate/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-14 05:22:29] INFO root fetch - main [MainThread]: End processing [ardilla]: success
+[2023-05-14 05:22:29] INFO root fetch - main [MainThread]: End processing [bfactory]: success
+[2023-05-14 05:22:29] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
+[2023-05-14 05:22:29] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
+[2023-05-14 05:22:29] INFO root fetch - main [MainThread]: End processing [promptulate]: success
+[2023-05-14 05:22:29] INFO root fetch - main [MainThread]: End processing [stmaterial]: success
+[2023-05-14 05:22:29] INFO root fetch - main [MainThread]: Store serial: [18094726]
