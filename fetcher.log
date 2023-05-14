@@ -11261,3 +11261,56 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 23:15:27] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
 [2023-05-14 23:15:28] INFO root fetch - main [MainThread]: End processing [lcbuilder]: success
 [2023-05-14 23:15:28] INFO root fetch - main [MainThread]: Store serial: [18100189]
+[2023-05-14 23:20:32] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18100189]
+[2023-05-14 23:20:37] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-14 23:20:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: circuitpython-tmp117
+[2023-05-14 23:20:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: swegram
+[2023-05-14 23:20:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: certora-cli-alpha-jtoman-try-catch
+[2023-05-14 23:20:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: opengpt4
+[2023-05-14 23:20:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: certora-cli-alpha-naftali-CERT-1884-prevent-solidity-func-as-summary
+[2023-05-14 23:20:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: certora-cli-alpha-naftali-CERT-2050-convert-bool-internal-summary-arguments
+[2023-05-14 23:20:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: langchain
+[2023-05-14 23:20:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cpmpy
+[2023-05-14 23:20:37] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: certora-cli-alpha-jtoman-infinite-loop-fix
+[2023-05-14 23:20:37] WARNING root fetch - processPackages [circuitpython-tmp117]: Skipping, unable to determine old version
+[2023-05-14 23:20:37] INFO root fetch - processPackages [certora-cli-alpha-naftali-CERT-1884-prevent-solidity-func-as-summary]: New version: [20230514.16.17.704482] Old Version: [20230514.10.19.133293]
+[2023-05-14 23:20:37] INFO root fetch - main [MainThread]: End processing [circuitpython-tmp117] error
+[2023-05-14 23:20:37] INFO root fetch - processPackages [swegram]: New version: [1.0.0.dev1] Old Version: [1.0.0.dev0]
+[2023-05-14 23:20:37] INFO root fetch - processPackages [certora-cli-alpha-jtoman-try-catch]: New version: [20230514.9.42.407] Old Version: [20230514.21.17.700542]
+[2023-05-14 23:20:37] INFO root fetch - processPackages [opengpt4]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-14 23:20:37] INFO root fetch - processPackages [certora-cli-alpha-naftali-CERT-2050-convert-bool-internal-summary-arguments]: New version: [20230514.15.15.294367] Old Version: [20230511.8.52.442833]
+[2023-05-14 23:20:37] INFO root fetch - processPackages [certora-cli-alpha-jtoman-infinite-loop-fix]: New version: [20230514.9.42.756705] Old Version: [20230514.11.33.262993]
+[2023-05-14 23:20:37] INFO root fetch - processPackages [certora-cli-alpha-naftali-CERT-2050-convert-bool-internal-summary-arguments]: Downloading https://files.pythonhosted.org/packages/12/03/f4d4a2c1ca49bcb15896cfed828acd4f2249178e0d9a68c856401613cfa2/certora-cli-alpha-naftali-CERT-2050_convert_bool_internal_summary_arguments-20230511.8.52.442833.tar.gz
+[2023-05-14 23:20:37] INFO root fetch - processPackages [certora-cli-alpha-jtoman-infinite-loop-fix]: Downloading https://files.pythonhosted.org/packages/c1/c9/e83160b394ba05e6d387ecbf259b1cc788ad926c1d6a2c701d371fbac2cf/certora-cli-alpha-jtoman-infinite-loop-fix-20230514.11.33.262993.tar.gz
+[2023-05-14 23:20:37] WARNING root fetch - processPackages [certora-cli-alpha-naftali-CERT-2050-convert-bool-internal-summary-arguments]: Skipping package: exceeds size limit 39424896>=10485760
+[2023-05-14 23:20:37] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-naftali-CERT-2050-convert-bool-internal-summary-arguments] error
+[2023-05-14 23:20:37] WARNING root fetch - processPackages [certora-cli-alpha-jtoman-infinite-loop-fix]: Skipping package: exceeds size limit 39431852>=10485760
+[2023-05-14 23:20:37] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-jtoman-infinite-loop-fix] error
+[2023-05-14 23:20:37] INFO root fetch - processPackages [cpmpy]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-14 23:20:37] INFO root fetch - processPackages [langchain]: New version: [0.0.99rc0] Old Version: [0.0.99]
+[2023-05-14 23:20:37] INFO root fetch - processPackages [certora-cli-alpha-jtoman-try-catch]: Downloading https://files.pythonhosted.org/packages/d1/64/519be2676ef5582edf2d6934a5fdd5ce7f283287be277e5bc787ca9c3bbf/certora-cli-alpha-jtoman-try-catch-20230514.21.17.700542.tar.gz
+[2023-05-14 23:20:37] INFO root fetch - processPackages [certora-cli-alpha-naftali-CERT-1884-prevent-solidity-func-as-summary]: Downloading https://files.pythonhosted.org/packages/ea/92/e2661df51629137d993a3b6c3114e1dd7a93347c645d254ddebdd38ece7e/certora-cli-alpha-naftali-CERT-1884_prevent_solidity_func_as_summary-20230514.10.19.133293.tar.gz
+[2023-05-14 23:20:37] WARNING root fetch - processPackages [certora-cli-alpha-naftali-CERT-1884-prevent-solidity-func-as-summary]: Skipping package: exceeds size limit 39433752>=10485760
+[2023-05-14 23:20:37] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-naftali-CERT-1884-prevent-solidity-func-as-summary] error
+[2023-05-14 23:20:37] INFO root fetch - processPackages [opengpt4]: Downloading https://files.pythonhosted.org/packages/87/a0/07c225d380bd41d39fe51d5fc5b48b30e40eee089242c543ccbbc824f365/opengpt4-0.1.3.tar.gz
+[2023-05-14 23:20:37] INFO root fetch - processPackages [swegram]: Downloading https://files.pythonhosted.org/packages/88/bf/13449faa4c9446cb28eb30cf5926ed3f21590f147a43ac61a2f528710b34/swegram-1.0.0.dev0-py3-none-any.whl
+[2023-05-14 23:20:37] INFO root fetch - processPackages [cpmpy]: Downloading https://files.pythonhosted.org/packages/41/04/5fc7ed64800ef1ab394abf9d6b4bbe414d845fa8a27a86a2e67525779e9e/cpmpy-0.9.8.tar.gz
+[2023-05-14 23:20:37] WARNING root fetch - processPackages [certora-cli-alpha-jtoman-try-catch]: Skipping package: exceeds size limit 39431686>=10485760
+[2023-05-14 23:20:37] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-jtoman-try-catch] error
+[2023-05-14 23:20:37] INFO root fetch - processPackages [langchain]: Downloading https://files.pythonhosted.org/packages/24/6a/f6c87d4ef49bae4d166fa3be99402f669acf9aa59b4d1d31342da0c57e32/langchain-0.0.99.tar.gz
+[2023-05-14 23:20:37] INFO root fetch - processPackages [opengpt4]: executing diffoscope
+[2023-05-14 23:20:37] INFO root fetch - processPackages [opengpt4]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/opengpt4-0.1.2.tar.gz tmp/opengpt4-0.1.3.tar.gz --markdown 20230514/o/opengpt4/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-14 23:20:37] INFO root fetch - processPackages [swegram]: Downloading https://files.pythonhosted.org/packages/63/7b/d8dc69ce1568c70f548a75f777287b00a56fa18bcd48c8a19fe6184a1112/swegram-1.0.0.dev1-py3-none-any.whl
+[2023-05-14 23:20:37] INFO root fetch - processPackages [cpmpy]: Downloading https://files.pythonhosted.org/packages/19/a6/662252c7f32390052145cddf9353522f852b9de3336d17869235408f578d/cpmpy-0.9.9.tar.gz
+[2023-05-14 23:20:37] INFO root fetch - processPackages [cpmpy]: executing diffoscope
+[2023-05-14 23:20:37] INFO root fetch - processPackages [cpmpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cpmpy-0.9.8.tar.gz tmp/cpmpy-0.9.9.tar.gz --markdown 20230514/c/cpmpy/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-14 23:20:38] INFO root fetch - processPackages [swegram]: executing diffoscope
+[2023-05-14 23:20:38] INFO root fetch - processPackages [langchain]: Downloading https://files.pythonhosted.org/packages/8e/d3/a01f18d4cda1e4e2cbed8c15693f649fb439aab4b94f0c2a0ed636bbe505/langchain-0.0.99rc0.tar.gz
+[2023-05-14 23:20:38] INFO root fetch - processPackages [swegram]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/swegram-1.0.0.dev0-py3-none-any.whl.zip tmp/swegram-1.0.0.dev1-py3-none-any.whl.zip --markdown 20230514/s/swegram/1.0.0.dev0-1.0.0.dev1/diff.md --exclude *.pyd
+[2023-05-14 23:20:38] INFO root fetch - processPackages [langchain]: executing diffoscope
+[2023-05-14 23:20:38] INFO root fetch - processPackages [langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/langchain-0.0.99.tar.gz tmp/langchain-0.0.99rc0.tar.gz --markdown 20230514/l/langchain/0.0.99-0.0.99rc0/diff.md --exclude *.pyd
+[2023-05-14 23:20:38] INFO root fetch - main [MainThread]: End processing [opengpt4]: success
+[2023-05-14 23:20:39] INFO root fetch - main [MainThread]: End processing [swegram]: success
+[2023-05-14 23:20:39] INFO root fetch - main [MainThread]: End processing [cpmpy]: success
+[2023-05-14 23:20:40] INFO root fetch - main [MainThread]: End processing [langchain]: success
+[2023-05-14 23:20:40] INFO root fetch - main [MainThread]: Store serial: [18100217]
