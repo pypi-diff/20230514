@@ -8216,3 +8216,63 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 18:21:18] INFO root fetch - main [MainThread]: End processing [scaled]: success
 [2023-05-14 18:21:28] INFO root fetch - main [MainThread]: End processing [ccxt]: success
 [2023-05-14 18:21:28] INFO root fetch - main [MainThread]: Store serial: [18098393]
+[2023-05-14 18:26:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098393]
+[2023-05-14 18:26:40] INFO root fetch - main [MainThread]: Found 11 changed packages
+[2023-05-14 18:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pipsqliext
+[2023-05-14 18:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jorun
+[2023-05-14 18:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cycept
+[2023-05-14 18:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: multicloud-diagrams
+[2023-05-14 18:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: importer-local
+[2023-05-14 18:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ipfindx
+[2023-05-14 18:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: bluerpc
+[2023-05-14 18:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pytessel
+[2023-05-14 18:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: feathub-nightly
+[2023-05-14 18:26:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: onvif-zeep-async
+[2023-05-14 18:26:40] WARNING root fetch - processPackages [jorun]: Skipping, unable to determine old version
+[2023-05-14 18:26:40] INFO root fetch - processPackages [jorun]: Start processing: sympy1000
+[2023-05-14 18:26:40] INFO root fetch - main [MainThread]: End processing [jorun] error
+[2023-05-14 18:26:40] INFO root fetch - processPackages [ipfindx]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-14 18:26:40] INFO root fetch - processPackages [cycept]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-14 18:26:40] INFO root fetch - processPackages [feathub-nightly]: New version: [0.1.dev20230513] Old Version: [0.1.dev20230512]
+[2023-05-14 18:26:40] INFO root fetch - processPackages [importer-local]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-14 18:26:40] INFO root fetch - processPackages [onvif-zeep-async]: New version: [3.1.4] Old Version: [3.1.3]
+[2023-05-14 18:26:40] INFO root fetch - processPackages [bluerpc]: New version: [0.2.6] Old Version: [0.0.8]
+[2023-05-14 18:26:40] INFO root fetch - processPackages [pipsqliext]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-14 18:26:40] WARNING root fetch - processPackages [multicloud-diagrams]: Skipping, unable to determine old version
+[2023-05-14 18:26:40] INFO root fetch - main [MainThread]: End processing [multicloud-diagrams] error
+[2023-05-14 18:26:40] INFO root fetch - processPackages [pytessel]: New version: [1.0.0] Old Version: [0.1.3.0]
+[2023-05-14 18:26:40] WARNING root fetch - processPackages [sympy1000]: Skipping, unable to determine old version
+[2023-05-14 18:26:40] INFO root fetch - main [MainThread]: End processing [sympy1000] error
+[2023-05-14 18:26:40] INFO root fetch - processPackages [onvif-zeep-async]: executing diffoscope
+[2023-05-14 18:26:40] INFO root fetch - processPackages [onvif-zeep-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onvif-zeep-async-3.1.3.tar.gz tmp/onvif-zeep-async-3.1.4.tar.gz --markdown 20230514/o/onvif-zeep-async/3.1.3-3.1.4/diff.md --exclude *.pyd
+[2023-05-14 18:26:40] INFO root fetch - processPackages [bluerpc]: executing diffoscope
+[2023-05-14 18:26:40] INFO root fetch - processPackages [bluerpc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bluerpc-0.0.8.tar.gz tmp/bluerpc-0.2.6.tar.gz --markdown 20230514/b/bluerpc/0.0.8-0.2.6/diff.md --exclude *.pyd
+[2023-05-14 18:26:40] INFO root fetch - processPackages [feathub-nightly]: Downloading https://files.pythonhosted.org/packages/44/f4/0d961596f452ed3a71aac8fe79ab77f1f120ae66cd1d497c83c3b5ce7649/feathub_nightly-0.1.dev20230512-py3-none-any.whl
+[2023-05-14 18:26:40] INFO root fetch - processPackages [ipfindx]: Downloading https://files.pythonhosted.org/packages/db/24/aea741934709f7696beb2891886c38b6b2add4f7c9491d187940ed13414b/ipfindx-1.0.1.tar.gz
+[2023-05-14 18:26:40] INFO root fetch - processPackages [cycept]: Downloading https://files.pythonhosted.org/packages/bb/d7/3c0adae653920e6822562846970f0ac3b26b4cdc38565f3d3f0ff283cd0b/cycept-0.0.3.tar.gz
+[2023-05-14 18:26:40] INFO root fetch - processPackages [pipsqliext]: Downloading https://files.pythonhosted.org/packages/50/3e/54534e194f8edbcff9ba465d762a6c4a1b7915c1f10fe2797a66cd007f80/pipsqliext-1.0.0.tar.gz
+[2023-05-14 18:26:40] INFO root fetch - processPackages [importer-local]: Downloading https://files.pythonhosted.org/packages/d4/07/6c4c6a605c522ac2860baccc700d255cef6ee90d8d223dbabb356a25a451/importer-local-0.0.3.tar.gz
+[2023-05-14 18:26:40] WARNING root fetch - processPackages [feathub-nightly]: Skipping package: exceeds size limit 12039460>=10485760
+[2023-05-14 18:26:40] INFO root fetch - main [MainThread]: End processing [feathub-nightly] error
+[2023-05-14 18:26:41] INFO root fetch - processPackages [ipfindx]: Downloading https://files.pythonhosted.org/packages/b8/f9/a50931bf5eceece5a3b6600f4187a719b2f05494e4ea1b73705d8bdca5cb/ipfindx-1.0.2.tar.gz
+[2023-05-14 18:26:41] INFO root fetch - processPackages [importer-local]: executing diffoscope
+[2023-05-14 18:26:41] INFO root fetch - processPackages [importer-local]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/importer-local-0.0.2.tar.gz tmp/importer-local-0.0.3.tar.gz --markdown 20230514/i/importer-local/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-14 18:26:41] INFO root fetch - processPackages [pytessel]: Downloading https://files.pythonhosted.org/packages/2a/25/c9f82a0548f71b2b584699e7f7fe3a3abf79ceee65f2e26e24f92d52a5c6/pytessel-1.0.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl
+[2023-05-14 18:26:41] INFO root fetch - processPackages [cycept]: Downloading https://files.pythonhosted.org/packages/f0/85/2d2780db9f667cde750303ac64136c9444923bcb23fb593d698b20e0464f/cycept-0.0.4.tar.gz
+[2023-05-14 18:26:41] INFO root fetch - processPackages [pipsqliext]: Downloading https://files.pythonhosted.org/packages/a6/1e/35a44527185e4e68e4cf16148084c6e032f7c62eb51d5ce6347834570e98/pipsqliext-1.1.0.tar.gz
+[2023-05-14 18:26:41] INFO root fetch - processPackages [ipfindx]: executing diffoscope
+[2023-05-14 18:26:41] INFO root fetch - processPackages [ipfindx]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipfindx-1.0.1.tar.gz tmp/ipfindx-1.0.2.tar.gz --markdown 20230514/i/ipfindx/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-14 18:26:41] INFO root fetch - processPackages [cycept]: executing diffoscope
+[2023-05-14 18:26:41] INFO root fetch - processPackages [cycept]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cycept-0.0.3.tar.gz tmp/cycept-0.0.4.tar.gz --markdown 20230514/c/cycept/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-14 18:26:41] INFO root fetch - processPackages [pytessel]: executing diffoscope
+[2023-05-14 18:26:41] INFO root fetch - processPackages [pytessel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pytessel-0.1.3.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip tmp/pytessel-1.0.0-cp39-cp39-manylinux_2_17_x86_64.manylinux2014_x86_64.whl.zip --markdown 20230514/p/pytessel/0.1.3.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-14 18:26:41] INFO root fetch - processPackages [pipsqliext]: executing diffoscope
+[2023-05-14 18:26:41] INFO root fetch - processPackages [pipsqliext]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pipsqliext-1.0.0.tar.gz tmp/pipsqliext-1.1.0.tar.gz --markdown 20230514/p/pipsqliext/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 18:26:42] INFO root fetch - main [MainThread]: End processing [bluerpc]: success
+[2023-05-14 18:26:42] INFO root fetch - main [MainThread]: End processing [importer-local]: success
+[2023-05-14 18:26:42] INFO root fetch - main [MainThread]: End processing [ipfindx]: success
+[2023-05-14 18:26:42] INFO root fetch - main [MainThread]: End processing [pipsqliext]: success
+[2023-05-14 18:26:42] INFO root fetch - main [MainThread]: End processing [pytessel]: success
+[2023-05-14 18:26:42] INFO root fetch - main [MainThread]: End processing [cycept]: success
+[2023-05-14 18:26:46] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
+[2023-05-14 18:26:46] INFO root fetch - main [MainThread]: Store serial: [18098431]
