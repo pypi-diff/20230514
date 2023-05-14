@@ -9097,3 +9097,41 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 19:56:33] INFO root fetch - main [MainThread]: End processing [wllegal]: success
 [2023-05-14 19:56:35] INFO root fetch - main [MainThread]: End processing [pvxslibs]: success
 [2023-05-14 19:56:35] INFO root fetch - main [MainThread]: Store serial: [18098886]
+[2023-05-14 20:01:40] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098886]
+[2023-05-14 20:01:45] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-14 20:01:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: fieldedge-utilities
+[2023-05-14 20:01:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: mathsym-adasneves
+[2023-05-14 20:01:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pyrms
+[2023-05-14 20:01:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: deterrers-cli
+[2023-05-14 20:01:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: get-github-code
+[2023-05-14 20:01:45] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: vedro
+[2023-05-14 20:01:45] INFO root fetch - processPackages [deterrers-cli]: New version: [0.5] Old Version: [0.4]
+[2023-05-14 20:01:45] INFO root fetch - processPackages [get-github-code]: New version: [0.2] Old Version: [0.1]
+[2023-05-14 20:01:45] INFO root fetch - processPackages [pyrms]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-14 20:01:45] INFO root fetch - processPackages [vedro]: New version: [1.9.0] Old Version: [1.8.3]
+[2023-05-14 20:01:45] WARNING root fetch - processPackages [mathsym-adasneves]: Skipping, unable to determine old version
+[2023-05-14 20:01:45] INFO root fetch - main [MainThread]: End processing [mathsym-adasneves] error
+[2023-05-14 20:01:45] INFO root fetch - processPackages [fieldedge-utilities]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-14 20:01:45] INFO root fetch - processPackages [get-github-code]: Downloading https://files.pythonhosted.org/packages/12/e2/be5a30aeabf20a26a4a85d653a5566777667fbe4c19186a9d60e8a434226/get_github_code-0.1.tar.gz
+[2023-05-14 20:01:45] INFO root fetch - processPackages [pyrms]: Downloading https://files.pythonhosted.org/packages/5a/3f/f322cbcbc8710a56b57be4ca10f0093b425a4bb4a06c04543652f00f394e/pyrms-1.0.1.tar.gz
+[2023-05-14 20:01:45] INFO root fetch - processPackages [deterrers-cli]: Downloading https://files.pythonhosted.org/packages/da/5d/f18127095f672e1f93c050d35a949f78ebf1f8bb4880c728c4ef8ce4ffa5/deterrers-cli-0.4.tar.gz
+[2023-05-14 20:01:45] INFO root fetch - processPackages [vedro]: Downloading https://files.pythonhosted.org/packages/8c/db/37efc2f60125b1e1bd23cec08885d360df669f558e679fee832bb5835188/vedro-1.8.3.tar.gz
+[2023-05-14 20:01:45] INFO root fetch - processPackages [pyrms]: executing diffoscope
+[2023-05-14 20:01:45] INFO root fetch - processPackages [pyrms]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrms-1.0.0.tar.gz tmp/pyrms-1.0.1.tar.gz --markdown 20230514/p/pyrms/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-14 20:01:45] INFO root fetch - processPackages [fieldedge-utilities]: executing diffoscope
+[2023-05-14 20:01:45] INFO root fetch - processPackages [fieldedge-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fieldedge-utilities-0.9.4.tar.gz tmp/fieldedge-utilities-0.9.5.tar.gz --markdown 20230514/f/fieldedge-utilities/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-14 20:01:45] INFO root fetch - processPackages [get-github-code]: Downloading https://files.pythonhosted.org/packages/6d/8d/cf0d3cb421793ca453a725c36de2668884a2a1d2939e835cc50d8d7da0cb/get_github_code-0.2.tar.gz
+[2023-05-14 20:01:45] INFO root fetch - processPackages [deterrers-cli]: Downloading https://files.pythonhosted.org/packages/fa/cf/9f2bf8727c19414e3e5da9f7379198cc9b4cfe7e815e6f3048c1fb1362f8/deterrers-cli-0.5.tar.gz
+[2023-05-14 20:01:46] INFO root fetch - processPackages [deterrers-cli]: executing diffoscope
+[2023-05-14 20:01:46] INFO root fetch - processPackages [deterrers-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/deterrers-cli-0.4.tar.gz tmp/deterrers-cli-0.5.tar.gz --markdown 20230514/d/deterrers-cli/0.4-0.5/diff.md --exclude *.pyd
+[2023-05-14 20:01:46] INFO root fetch - processPackages [vedro]: Downloading https://files.pythonhosted.org/packages/58/4b/cade0dd7009d66be912d34c300a83a2b8641fb3819b94f46d61608caacc6/vedro-1.9.0.tar.gz
+[2023-05-14 20:01:46] INFO root fetch - processPackages [get-github-code]: executing diffoscope
+[2023-05-14 20:01:46] INFO root fetch - processPackages [get-github-code]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/get_github_code-0.1.tar.gz tmp/get_github_code-0.2.tar.gz --markdown 20230514/g/get-github-code/0.1-0.2/diff.md --exclude *.pyd
+[2023-05-14 20:01:46] INFO root fetch - processPackages [vedro]: executing diffoscope
+[2023-05-14 20:01:46] INFO root fetch - processPackages [vedro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/vedro-1.8.3.tar.gz tmp/vedro-1.9.0.tar.gz --markdown 20230514/v/vedro/1.8.3-1.9.0/diff.md --exclude *.pyd
+[2023-05-14 20:01:46] INFO root fetch - main [MainThread]: End processing [pyrms]: success
+[2023-05-14 20:01:47] INFO root fetch - main [MainThread]: End processing [fieldedge-utilities]: success
+[2023-05-14 20:01:47] INFO root fetch - main [MainThread]: End processing [deterrers-cli]: success
+[2023-05-14 20:01:47] INFO root fetch - main [MainThread]: End processing [get-github-code]: success
+[2023-05-14 20:01:47] INFO root fetch - main [MainThread]: End processing [vedro]: success
+[2023-05-14 20:01:47] INFO root fetch - main [MainThread]: Store serial: [18098925]
