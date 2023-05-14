@@ -6858,3 +6858,53 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 16:14:04] INFO root fetch - main [MainThread]: End processing [PyQt6-Fluent-Widgets]: success
 [2023-05-14 16:14:13] INFO root fetch - main [MainThread]: End processing [hordelib]: success
 [2023-05-14 16:14:13] INFO root fetch - main [MainThread]: Store serial: [18097520]
+[2023-05-14 16:19:17] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18097520]
+[2023-05-14 16:19:22] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-14 16:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: investor8-sdk
+[2023-05-14 16:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: xia-login-flask
+[2023-05-14 16:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: skbase
+[2023-05-14 16:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: alacorder
+[2023-05-14 16:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pandp
+[2023-05-14 16:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: local-bert-python-backend
+[2023-05-14 16:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: AutoCarver
+[2023-05-14 16:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: irails
+[2023-05-14 16:19:22] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sql1000
+[2023-05-14 16:19:22] INFO root fetch - processPackages [skbase]: New version: [0.4.5] Old Version: [0.4.4]
+[2023-05-14 16:19:22] INFO root fetch - processPackages [local-bert-python-backend]: New version: [0.0.2] Old Version: [0.0.15]
+[2023-05-14 16:19:22] INFO root fetch - processPackages [irails]: New version: [1.3.9] Old Version: [1.3.8]
+[2023-05-14 16:19:22] WARNING root fetch - processPackages [pandp]: Skipping, unable to determine old version
+[2023-05-14 16:19:22] INFO root fetch - main [MainThread]: End processing [pandp] error
+[2023-05-14 16:19:22] WARNING root fetch - processPackages [sql1000]: Skipping, unable to determine old version
+[2023-05-14 16:19:22] INFO root fetch - main [MainThread]: End processing [sql1000] error
+[2023-05-14 16:19:22] INFO root fetch - processPackages [AutoCarver]: New version: [4.0.1] Old Version: [4.0.0]
+[2023-05-14 16:19:22] INFO root fetch - processPackages [xia-login-flask]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 16:19:22] INFO root fetch - processPackages [investor8-sdk]: New version: [1.1.9] Old Version: [1.1.80]
+[2023-05-14 16:19:22] INFO root fetch - processPackages [alacorder]: New version: [80.5.1] Old Version: [80.5.0]
+[2023-05-14 16:19:22] INFO root fetch - processPackages [local-bert-python-backend]: Downloading https://files.pythonhosted.org/packages/0f/d3/e4c7a1e24c36c9c5794237c92f92ff8c8bffff9b93c1f58730793520e317/local-bert-python-backend-0.0.15.tar.gz
+[2023-05-14 16:19:22] INFO root fetch - processPackages [irails]: executing diffoscope
+[2023-05-14 16:19:22] INFO root fetch - processPackages [irails]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/irails-1.3.8.tar.gz tmp/irails-1.3.9.tar.gz --markdown 20230514/i/irails/1.3.8-1.3.9/diff.md --exclude *.pyd
+[2023-05-14 16:19:22] INFO root fetch - processPackages [AutoCarver]: Downloading https://files.pythonhosted.org/packages/84/cb/183e052fea4b47157f30516fe18d5ef73d776dbed4cfaae8a37fb8f8dc01/AutoCarver-4.0.0.tar.gz
+[2023-05-14 16:19:22] INFO root fetch - processPackages [investor8-sdk]: Downloading https://files.pythonhosted.org/packages/1a/3a/ec152c5eaad5e593e9460679472f52bab816f5f4f1ced9ddb0a23ced078a/investor8-sdk-1.1.80.tar.gz
+[2023-05-14 16:19:22] INFO root fetch - processPackages [skbase]: Downloading https://files.pythonhosted.org/packages/27/8d/422aa9d457b45da2aaa26bb128c35fb8a8b801192ebae602f4e5a2f64cd4/skbase-0.4.5.tar.gz
+[2023-05-14 16:19:23] INFO root fetch - processPackages [local-bert-python-backend]: executing diffoscope
+[2023-05-14 16:19:23] INFO root fetch - processPackages [local-bert-python-backend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/local-bert-python-backend-0.0.15.tar.gz tmp/local-bert-python-backend-0.0.2.tar.gz --markdown 20230514/l/local-bert-python-backend/0.0.15-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 16:19:23] INFO root fetch - processPackages [alacorder]: Downloading https://files.pythonhosted.org/packages/44/80/4b09fb54bb0706a16a93db828af44e72d7f13bcebe2be00a6b30ed6e3cb3/alacorder-80.5.1.tar.gz
+[2023-05-14 16:19:23] INFO root fetch - processPackages [skbase]: executing diffoscope
+[2023-05-14 16:19:23] INFO root fetch - processPackages [skbase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/skbase-0.4.4.tar.gz tmp/skbase-0.4.5.tar.gz --markdown 20230514/s/skbase/0.4.4-0.4.5/diff.md --exclude *.pyd
+[2023-05-14 16:19:23] INFO root fetch - processPackages [AutoCarver]: Downloading https://files.pythonhosted.org/packages/e7/a8/4063a64e03c0f1db0c8a4b47a687a0ff02a02005b2793f4ca755c2a3176f/AutoCarver-4.0.1.tar.gz
+[2023-05-14 16:19:23] INFO root fetch - processPackages [xia-login-flask]: executing diffoscope
+[2023-05-14 16:19:23] INFO root fetch - processPackages [xia-login-flask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_login_flask-0.1.8-cp39-none-win_amd64.whl.zip tmp/xia_login_flask-0.1.9-cp39-none-win_amd64.whl.zip --markdown 20230514/x/xia-login-flask/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 16:19:23] INFO root fetch - processPackages [investor8-sdk]: executing diffoscope
+[2023-05-14 16:19:23] INFO root fetch - processPackages [investor8-sdk]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/investor8-sdk-1.1.80.tar.gz tmp/investor8-sdk-1.1.9.tar.gz --markdown 20230514/i/investor8-sdk/1.1.80-1.1.9/diff.md --exclude *.pyd
+[2023-05-14 16:19:23] INFO root fetch - processPackages [alacorder]: executing diffoscope
+[2023-05-14 16:19:23] INFO root fetch - processPackages [alacorder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/alacorder-80.5.0.tar.gz tmp/alacorder-80.5.1.tar.gz --markdown 20230514/a/alacorder/80.5.0-80.5.1/diff.md --exclude *.pyd
+[2023-05-14 16:19:23] INFO root fetch - processPackages [AutoCarver]: executing diffoscope
+[2023-05-14 16:19:23] INFO root fetch - processPackages [AutoCarver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AutoCarver-4.0.0.tar.gz tmp/AutoCarver-4.0.1.tar.gz --markdown 20230514/A/AutoCarver/4.0.0-4.0.1/diff.md --exclude *.pyd
+[2023-05-14 16:19:24] INFO root fetch - main [MainThread]: End processing [local-bert-python-backend]: success
+[2023-05-14 16:19:24] INFO root fetch - main [MainThread]: End processing [xia-login-flask]: success
+[2023-05-14 16:19:24] INFO root fetch - main [MainThread]: End processing [skbase]: success
+[2023-05-14 16:19:24] INFO root fetch - main [MainThread]: End processing [alacorder]: success
+[2023-05-14 16:19:24] INFO root fetch - main [MainThread]: End processing [irails]: success
+[2023-05-14 16:19:24] INFO root fetch - main [MainThread]: End processing [AutoCarver]: success
+[2023-05-14 16:19:31] INFO root fetch - main [MainThread]: End processing [investor8-sdk]: success
+[2023-05-14 16:19:31] INFO root fetch - main [MainThread]: Store serial: [18097555]
