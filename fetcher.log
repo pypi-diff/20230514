@@ -8324,3 +8324,40 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 18:31:57] INFO root fetch - main [MainThread]: End processing [references-parser]: success
 [2023-05-14 18:31:57] INFO root fetch - main [MainThread]: End processing [odoo-addon-stock-owner-restriction]: success
 [2023-05-14 18:31:57] INFO root fetch - main [MainThread]: Store serial: [18098450]
+[2023-05-14 18:37:01] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098450]
+[2023-05-14 18:37:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 18:37:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: leap-model-parser
+[2023-05-14 18:37:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: p4p
+[2023-05-14 18:37:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hyped
+[2023-05-14 18:37:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: jutility
+[2023-05-14 18:37:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: grzegorz
+[2023-05-14 18:37:06] INFO root fetch - processPackages [jutility]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-14 18:37:06] INFO root fetch - processPackages [p4p]: New version: [4.1.6a1] Old Version: [4.1.5a1]
+[2023-05-14 18:37:06] INFO root fetch - processPackages [grzegorz]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-14 18:37:06] INFO root fetch - processPackages [leap-model-parser]: New version: [0.1.95] Old Version: [0.1.94]
+[2023-05-14 18:37:06] INFO root fetch - processPackages [hyped]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 18:37:06] INFO root fetch - processPackages [hyped]: Downloading https://files.pythonhosted.org/packages/ce/44/ea8a88d94d4df06517c3e7b4571e30265b6624a15775b2f6dd4c574b3b3a/hyped-0.0.1.tar.gz
+[2023-05-14 18:37:06] INFO root fetch - processPackages [p4p]: Downloading https://files.pythonhosted.org/packages/e1/1d/3c75eb0f48a05345a7ecdaab9f4072a8d4ee96f3c5b0283d82726254b60f/p4p-4.1.5a1.tar.gz
+[2023-05-14 18:37:06] INFO root fetch - processPackages [leap-model-parser]: Downloading https://files.pythonhosted.org/packages/8b/63/49600c6c815ece45d78274705cea92fd9c762db4d7cd3758fe7bb2751f34/leap_model_parser-0.1.94.tar.gz
+[2023-05-14 18:37:06] INFO root fetch - processPackages [grzegorz]: Downloading https://files.pythonhosted.org/packages/de/28/633cf28d772613bcf5f490624976b3047a95237626fb856fd4cf40f33bb1/grzegorz-0.4.8.tar.gz
+[2023-05-14 18:37:06] INFO root fetch - processPackages [jutility]: Downloading https://files.pythonhosted.org/packages/e0/0b/0fd5edeb5279068828c6290e9b42be6ef09df68fed262a9600dc6ba9891e/jutility-0.0.3.tar.gz
+[2023-05-14 18:37:06] INFO root fetch - processPackages [jutility]: executing diffoscope
+[2023-05-14 18:37:06] INFO root fetch - processPackages [jutility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jutility-0.0.2.tar.gz tmp/jutility-0.0.3.tar.gz --markdown 20230514/j/jutility/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-14 18:37:06] INFO root fetch - processPackages [leap-model-parser]: Downloading https://files.pythonhosted.org/packages/9e/4c/f9b19a0e8e98d33386050c437df16fe7e209a80096d66d0d12369cc05dbe/leap_model_parser-0.1.95.tar.gz
+[2023-05-14 18:37:06] INFO root fetch - processPackages [hyped]: Downloading https://files.pythonhosted.org/packages/6a/0a/580ffd04f0852577e9d8db874f1c922f7db664fd1b14a9a372037ef4a37a/hyped-0.0.2.tar.gz
+[2023-05-14 18:37:06] INFO root fetch - processPackages [grzegorz]: Downloading https://files.pythonhosted.org/packages/13/1a/11344bd9dc4c9c4c1a0d6f920261c5735533a81e0998225beb9ee763900b/grzegorz-0.4.9.tar.gz
+[2023-05-14 18:37:06] INFO root fetch - processPackages [grzegorz]: executing diffoscope
+[2023-05-14 18:37:06] INFO root fetch - processPackages [grzegorz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/grzegorz-0.4.8.tar.gz tmp/grzegorz-0.4.9.tar.gz --markdown 20230514/g/grzegorz/0.4.8-0.4.9/diff.md --exclude *.pyd
+[2023-05-14 18:37:06] INFO root fetch - processPackages [leap-model-parser]: executing diffoscope
+[2023-05-14 18:37:06] INFO root fetch - processPackages [leap-model-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leap_model_parser-0.1.94.tar.gz tmp/leap_model_parser-0.1.95.tar.gz --markdown 20230514/l/leap-model-parser/0.1.94-0.1.95/diff.md --exclude *.pyd
+[2023-05-14 18:37:06] INFO root fetch - processPackages [p4p]: Downloading https://files.pythonhosted.org/packages/80/a8/7e2b42e9fd0d6895c2f4272bef3d03cb60e5c2dd0b394d87a1c7ce5db716/p4p-4.1.6a1.tar.gz
+[2023-05-14 18:37:06] INFO root fetch - processPackages [hyped]: executing diffoscope
+[2023-05-14 18:37:06] INFO root fetch - processPackages [hyped]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hyped-0.0.1.tar.gz tmp/hyped-0.0.2.tar.gz --markdown 20230514/h/hyped/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 18:37:07] INFO root fetch - processPackages [p4p]: executing diffoscope
+[2023-05-14 18:37:07] INFO root fetch - processPackages [p4p]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/p4p-4.1.5a1.tar.gz tmp/p4p-4.1.6a1.tar.gz --markdown 20230514/p/p4p/4.1.5a1-4.1.6a1/diff.md --exclude *.pyd
+[2023-05-14 18:37:07] INFO root fetch - main [MainThread]: End processing [jutility]: success
+[2023-05-14 18:37:07] INFO root fetch - main [MainThread]: End processing [hyped]: success
+[2023-05-14 18:37:08] INFO root fetch - main [MainThread]: End processing [leap-model-parser]: success
+[2023-05-14 18:37:08] INFO root fetch - main [MainThread]: End processing [grzegorz]: success
+[2023-05-14 18:37:08] INFO root fetch - main [MainThread]: End processing [p4p]: success
+[2023-05-14 18:37:08] INFO root fetch - main [MainThread]: Store serial: [18098484]
