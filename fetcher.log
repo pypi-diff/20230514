@@ -1890,3 +1890,33 @@
 [2023-05-14 04:24:23] INFO root fetch - main [MainThread]: End processing [kfsd]: success
 [2023-05-14 04:24:37] INFO root fetch - main [MainThread]: End processing [monai-weekly]: success
 [2023-05-14 04:24:37] INFO root fetch - main [MainThread]: Store serial: [18094505]
+[2023-05-14 04:29:41] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094505]
+[2023-05-14 04:29:46] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 04:29:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cdk8s-plus-24
+[2023-05-14 04:29:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: monailabel-weekly
+[2023-05-14 04:29:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: MyMachineLearning-Quicker-and-Easier
+[2023-05-14 04:29:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: torchkeras
+[2023-05-14 04:29:46] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: xzy-db
+[2023-05-14 04:29:46] INFO root fetch - processPackages [monailabel-weekly]: New version: [0.5.dev2320] Old Version: [0.5.dev2319]
+[2023-05-14 04:29:46] INFO root fetch - processPackages [torchkeras]: New version: [3.8.4] Old Version: [3.8.2]
+[2023-05-14 04:29:46] INFO root fetch - processPackages [xzy-db]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-14 04:29:46] WARNING root fetch - processPackages [MyMachineLearning-Quicker-and-Easier]: Skipping, unable to determine old version
+[2023-05-14 04:29:46] INFO root fetch - main [MainThread]: End processing [MyMachineLearning-Quicker-and-Easier] error
+[2023-05-14 04:29:46] INFO root fetch - processPackages [cdk8s-plus-24]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-05-14 04:29:47] INFO root fetch - processPackages [cdk8s-plus-24]: executing diffoscope
+[2023-05-14 04:29:47] INFO root fetch - processPackages [cdk8s-plus-24]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-24-2.7.8.tar.gz tmp/cdk8s-plus-24-2.7.9.tar.gz --markdown 20230514/c/cdk8s-plus-24/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-05-14 04:29:47] INFO root fetch - processPackages [torchkeras]: Downloading https://files.pythonhosted.org/packages/0c/5f/85d882345daa760ffde629f1e2bceeacc75018c44376f3dce783ffc147c8/torchkeras-3.8.2.tar.gz
+[2023-05-14 04:29:47] INFO root fetch - processPackages [xzy-db]: Downloading https://files.pythonhosted.org/packages/f7/ed/57455c91bf71e5ae57c6841aa1dab9401e5e30e4c7c17aa24aa8bcb2d4f2/xzy-db-0.0.2.tar.gz
+[2023-05-14 04:29:47] INFO root fetch - processPackages [monailabel-weekly]: Downloading https://files.pythonhosted.org/packages/02/a6/85b10c52840e594c04e75930aad4be388744339ab944fb226f606429bc2b/monailabel_weekly-0.5.dev2320-py3-none-any.whl
+[2023-05-14 04:29:47] INFO root fetch - processPackages [xzy-db]: Downloading https://files.pythonhosted.org/packages/8c/13/85a3976a624dd420e4c818b02d7d5edce300e12a4140848fe4c82cca8ee1/xzy-db-0.0.3.tar.gz
+[2023-05-14 04:29:47] INFO root fetch - processPackages [xzy-db]: executing diffoscope
+[2023-05-14 04:29:47] INFO root fetch - processPackages [xzy-db]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xzy-db-0.0.2.tar.gz tmp/xzy-db-0.0.3.tar.gz --markdown 20230514/x/xzy-db/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-14 04:29:48] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-24]: success
+[2023-05-14 04:29:48] INFO root fetch - processPackages [monailabel-weekly]: executing diffoscope
+[2023-05-14 04:29:48] INFO root fetch - processPackages [monailabel-weekly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/monailabel_weekly-0.5.dev2319-py3-none-any.whl.zip tmp/monailabel_weekly-0.5.dev2320-py3-none-any.whl.zip --markdown 20230514/m/monailabel-weekly/0.5.dev2319-0.5.dev2320/diff.md --exclude *.pyd
+[2023-05-14 04:29:48] INFO root fetch - main [MainThread]: End processing [xzy-db]: success
+[2023-05-14 04:29:49] INFO root fetch - processPackages [torchkeras]: Downloading https://files.pythonhosted.org/packages/21/fc/9adc10816f18d4e1a853068dcc65f76b588fd6a0aff6d71499664a6994f0/torchkeras-3.8.4-py3-none-any.whl
+[2023-05-14 04:29:49] WARNING root fetch - processPackages [torchkeras]: Skipping package: exceeds size limit 19721170>=10485760
+[2023-05-14 04:29:49] INFO root fetch - main [MainThread]: End processing [torchkeras] error
+[2023-05-14 04:29:56] INFO root fetch - main [MainThread]: End processing [monailabel-weekly]: success
+[2023-05-14 04:29:56] INFO root fetch - main [MainThread]: Store serial: [18094518]
