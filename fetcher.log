@@ -3049,3 +3049,39 @@
 [2023-05-14 08:08:53] INFO root fetch - main [MainThread]: End processing [Range-Announcer]: success
 [2023-05-14 08:08:58] INFO root fetch - main [MainThread]: End processing [pyg-nightly]: success
 [2023-05-14 08:08:58] INFO root fetch - main [MainThread]: Store serial: [18095268]
+[2023-05-14 08:14:02] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095268]
+[2023-05-14 08:14:06] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 08:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: AnimeCrawler
+[2023-05-14 08:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: databricks-common
+[2023-05-14 08:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: ipsw-parser
+[2023-05-14 08:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aioqui
+[2023-05-14 08:14:06] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: databricks-common
+[2023-05-14 08:14:07] INFO root fetch - processPackages [ipsw-parser]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-05-14 08:14:07] INFO root fetch - processPackages [aioqui]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-14 08:14:07] INFO root fetch - processPackages [databricks-common]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-14 08:14:07] INFO root fetch - processPackages [databricks-common]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-14 08:14:07] INFO root fetch - processPackages [AnimeCrawler]: New version: [0.2.1] Old Version: [0.2.0b0]
+[2023-05-14 08:14:07] INFO root fetch - processPackages [databricks-common]: Downloading https://files.pythonhosted.org/packages/ab/da/809cd99ecb719172f489d2531d1c2258709f8fd1940e98d1119a3ec9779e/databricks_common-0.1.0.tar.gz
+[2023-05-14 08:14:07] INFO root fetch - processPackages [aioqui]: Downloading https://files.pythonhosted.org/packages/73/01/4de65c632e40557be941d12416d518ae4076bcd52c281d07162d2e47332b/aioqui-1.1.2.tar.gz
+[2023-05-14 08:14:07] INFO root fetch - processPackages [databricks-common]: Downloading https://files.pythonhosted.org/packages/ab/da/809cd99ecb719172f489d2531d1c2258709f8fd1940e98d1119a3ec9779e/databricks_common-0.1.0.tar.gz
+[2023-05-14 08:14:07] INFO root fetch - processPackages [ipsw-parser]: Downloading https://files.pythonhosted.org/packages/94/61/dc1522603ba59e02171d331620cf24d3a811e83f21782d7e4779fd5a1294/ipsw_parser-1.1.4.tar.gz
+[2023-05-14 08:14:07] INFO root fetch - processPackages [aioqui]: executing diffoscope
+[2023-05-14 08:14:07] INFO root fetch - processPackages [aioqui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioqui-1.1.1.tar.gz tmp/aioqui-1.1.2.tar.gz --markdown 20230514/a/aioqui/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-14 08:14:07] INFO root fetch - processPackages [AnimeCrawler]: Downloading https://files.pythonhosted.org/packages/6d/57/8db78dc7f9acb089a1b0605e29a22971cb350eb21fa71b84ca7dcfdd23ce/AnimeCrawler-0.2.1.tar.gz
+[2023-05-14 08:14:07] INFO root fetch - processPackages [databricks-common]: Downloading https://files.pythonhosted.org/packages/35/64/b2c5c7764904f5f06c7511e9968c1085e3f18c235b8f382523fdebb305f3/databricks_common-0.1.1.tar.gz
+[2023-05-14 08:14:07] INFO root fetch - processPackages [databricks-common]: Downloading https://files.pythonhosted.org/packages/35/64/b2c5c7764904f5f06c7511e9968c1085e3f18c235b8f382523fdebb305f3/databricks_common-0.1.1.tar.gz
+[2023-05-14 08:14:07] INFO root fetch - processPackages [AnimeCrawler]: executing diffoscope
+[2023-05-14 08:14:07] INFO root fetch - processPackages [AnimeCrawler]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/AnimeCrawler-0.2.0b0.tar.gz tmp/AnimeCrawler-0.2.1.tar.gz --markdown 20230514/A/AnimeCrawler/0.2.0b0-0.2.1/diff.md --exclude *.pyd
+[2023-05-14 08:14:07] INFO root fetch - processPackages [databricks-common]: executing diffoscope
+[2023-05-14 08:14:07] INFO root fetch - processPackages [databricks-common]: executing diffoscope
+[2023-05-14 08:14:07] INFO root fetch - processPackages [databricks-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databricks_common-0.1.0.tar.gz tmp/databricks_common-0.1.1.tar.gz --markdown 20230514/d/databricks-common/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-14 08:14:07] INFO root fetch - processPackages [databricks-common]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/databricks_common-0.1.0.tar.gz tmp/databricks_common-0.1.1.tar.gz --markdown 20230514/d/databricks-common/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-14 08:14:07] INFO root fetch - processPackages [ipsw-parser]: Downloading https://files.pythonhosted.org/packages/19/41/b11e76279e20f6fba474ac6bd85580f58b40b901980900ffd42079a1e01e/ipsw_parser-1.1.5.tar.gz
+[2023-05-14 08:14:07] INFO root fetch - processPackages [ipsw-parser]: executing diffoscope
+[2023-05-14 08:14:07] INFO root fetch - processPackages [ipsw-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/ipsw_parser-1.1.4.tar.gz tmp/ipsw_parser-1.1.5.tar.gz --markdown 20230514/i/ipsw-parser/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-05-14 08:14:08] INFO root fetch - main [MainThread]: End processing [databricks-common]: success
+[2023-05-14 08:14:08] INFO root fetch - main [MainThread]: End processing [ipsw-parser]: success
+[2023-05-14 08:14:08] INFO root fetch - main [MainThread]: End processing [AnimeCrawler]: success
+[2023-05-14 08:14:08] INFO root fetch - main [MainThread]: End processing [databricks-common]: success
+[2023-05-14 08:14:09] INFO root fetch - main [MainThread]: End processing [aioqui]: success
+[2023-05-14 08:14:09] INFO root fetch - main [MainThread]: Store serial: [18095283]
