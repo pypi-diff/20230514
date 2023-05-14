@@ -787,3 +787,33 @@
 [2023-05-14 02:04:55] INFO root fetch - main [MainThread]: End processing [cshelph]: success
 [2023-05-14 02:05:03] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
 [2023-05-14 02:05:03] INFO root fetch - main [MainThread]: Store serial: [18093896]
+[2023-05-14 02:10:07] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093896]
+[2023-05-14 02:10:12] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 02:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jaxkern-nightly
+[2023-05-14 02:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: jaxutils-nightly
+[2023-05-14 02:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: torchlayers-nightly
+[2023-05-14 02:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk8s-redis
+[2023-05-14 02:10:12] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk-aws-discord-notifiers
+[2023-05-14 02:10:12] INFO root fetch - processPackages [jaxutils-nightly]: New version: [0.0.8.dev20230513] Old Version: [0.0.8.dev20230512]
+[2023-05-14 02:10:12] INFO root fetch - processPackages [cdk8s-redis]: New version: [0.1.99] Old Version: [0.1.98]
+[2023-05-14 02:10:12] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 02:10:12] INFO root fetch - processPackages [torchlayers-nightly]: New version: [1683936412] Old Version: [1683850002]
+[2023-05-14 02:10:12] INFO root fetch - processPackages [jaxkern-nightly]: New version: [0.dev20221222] Old Version: [0.dev20221221]
+[2023-05-14 02:10:12] INFO root fetch - processPackages [cdk8s-redis]: executing diffoscope
+[2023-05-14 02:10:12] INFO root fetch - processPackages [cdk8s-redis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-redis-0.1.98.tar.gz tmp/cdk8s-redis-0.1.99.tar.gz --markdown 20230514/c/cdk8s-redis/0.1.98-0.1.99/diff.md --exclude *.pyd
+[2023-05-14 02:10:12] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: executing diffoscope
+[2023-05-14 02:10:12] INFO root fetch - processPackages [cdk-aws-discord-notifiers]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aws-discord-notifiers-0.0.8.tar.gz tmp/cdk-aws-discord-notifiers-0.0.9.tar.gz --markdown 20230514/c/cdk-aws-discord-notifiers/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 02:10:12] INFO root fetch - processPackages [jaxutils-nightly]: Downloading https://files.pythonhosted.org/packages/c7/d8/356b6ca58eb7f43ead68a000e050a058b7598419f60c09bcb671d3e3ec9a/jaxutils-nightly-0.0.8.dev20230513.tar.gz
+[2023-05-14 02:10:12] INFO root fetch - processPackages [torchlayers-nightly]: Downloading https://files.pythonhosted.org/packages/05/48/7ddc806e3d5e3304891a7301927de2828b82c15edab47e568ff3e0991524/torchlayers-nightly-1683936412.tar.gz
+[2023-05-14 02:10:13] INFO root fetch - processPackages [torchlayers-nightly]: executing diffoscope
+[2023-05-14 02:10:13] INFO root fetch - processPackages [torchlayers-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchlayers-nightly-1683850002.tar.gz tmp/torchlayers-nightly-1683936412.tar.gz --markdown 20230514/t/torchlayers-nightly/1683850002-1683936412/diff.md --exclude *.pyd
+[2023-05-14 02:10:13] INFO root fetch - processPackages [jaxutils-nightly]: executing diffoscope
+[2023-05-14 02:10:13] INFO root fetch - processPackages [jaxutils-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxutils-nightly-0.0.8.dev20230512.tar.gz tmp/jaxutils-nightly-0.0.8.dev20230513.tar.gz --markdown 20230514/j/jaxutils-nightly/0.0.8.dev20230512-0.0.8.dev20230513/diff.md --exclude *.pyd
+[2023-05-14 02:10:13] INFO root fetch - processPackages [jaxkern-nightly]: executing diffoscope
+[2023-05-14 02:10:13] INFO root fetch - processPackages [jaxkern-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jaxkern-nightly-0.dev20221221.tar.gz tmp/jaxkern-nightly-0.dev20221222.tar.gz --markdown 20230514/j/jaxkern-nightly/0.dev20221221-0.dev20221222/diff.md --exclude *.pyd
+[2023-05-14 02:10:13] INFO root fetch - main [MainThread]: End processing [cdk8s-redis]: success
+[2023-05-14 02:10:14] INFO root fetch - main [MainThread]: End processing [cdk-aws-discord-notifiers]: success
+[2023-05-14 02:10:14] INFO root fetch - main [MainThread]: End processing [jaxutils-nightly]: success
+[2023-05-14 02:10:14] INFO root fetch - main [MainThread]: End processing [jaxkern-nightly]: success
+[2023-05-14 02:10:14] INFO root fetch - main [MainThread]: End processing [torchlayers-nightly]: success
+[2023-05-14 02:10:14] INFO root fetch - main [MainThread]: Store serial: [18093911]
