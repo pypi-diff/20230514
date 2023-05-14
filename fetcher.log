@@ -4070,3 +4070,34 @@
 [2023-05-14 10:49:48] INFO root fetch - main [MainThread]: End processing [Lshengpackage]: success
 [2023-05-14 10:49:51] INFO root fetch - main [MainThread]: End processing [tff-nightly]: success
 [2023-05-14 10:49:51] INFO root fetch - main [MainThread]: Store serial: [18095826]
+[2023-05-14 10:54:56] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095826]
+[2023-05-14 10:55:00] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 10:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: tfp-nightly
+[2023-05-14 10:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: filedbm
+[2023-05-14 10:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: docstruct
+[2023-05-14 10:55:00] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: banner-storedot
+[2023-05-14 10:55:00] INFO root fetch - processPackages [filedbm]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-14 10:55:00] INFO root fetch - processPackages [docstruct]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-14 10:55:00] INFO root fetch - processPackages [banner-storedot]: New version: [2.2.9] Old Version: [2.2.8]
+[2023-05-14 10:55:00] INFO root fetch - processPackages [tfp-nightly]: New version: [0.9.0.dev20200114] Old Version: [0.9.0.dev20200113]
+[2023-05-14 10:55:01] INFO root fetch - processPackages [filedbm]: Downloading https://files.pythonhosted.org/packages/bb/50/504c7bb1e41522ca11ce061591b778e7d78cc55d3e541f19de3408145583/filedbm-0.0.3.tar.gz
+[2023-05-14 10:55:01] INFO root fetch - processPackages [banner-storedot]: Downloading https://files.pythonhosted.org/packages/db/cf/a5f9fc89f889a07b7d1426d888f86fdfc50dcf513533ef1ecab18ec8fc47/banner-storedot-2.2.8.tar.gz
+[2023-05-14 10:55:01] INFO root fetch - processPackages [docstruct]: Downloading https://files.pythonhosted.org/packages/b6/dd/ef382a3ef2f781e571fa44b24e715c99a80570ce64432ea7959058098147/docstruct-1.0.8.tar.gz
+[2023-05-14 10:55:01] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/be/16/ebf16b1094e104257af6265eee53833e4f737ef6d11426d959009fa9952a/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl
+[2023-05-14 10:55:01] INFO root fetch - processPackages [filedbm]: Downloading https://files.pythonhosted.org/packages/42/24/929139f0eb2afee3af31cf82e6912b17ce775587f45597de49440b887fc3/filedbm-0.0.4.tar.gz
+[2023-05-14 10:55:01] INFO root fetch - processPackages [banner-storedot]: Downloading https://files.pythonhosted.org/packages/0b/43/749443560714b9b39909973273c8822150a8417342bffd9df3eb79671716/banner-storedot-2.2.9.tar.gz
+[2023-05-14 10:55:01] INFO root fetch - processPackages [docstruct]: Downloading https://files.pythonhosted.org/packages/67/cc/bf46d160e67c20e24bc07a7e2fa460e37f75a31caefaaab0b2d53bc678b2/docstruct-1.0.9.tar.gz
+[2023-05-14 10:55:01] INFO root fetch - processPackages [banner-storedot]: executing diffoscope
+[2023-05-14 10:55:01] INFO root fetch - processPackages [banner-storedot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/banner-storedot-2.2.8.tar.gz tmp/banner-storedot-2.2.9.tar.gz --markdown 20230514/b/banner-storedot/2.2.8-2.2.9/diff.md --exclude *.pyd
+[2023-05-14 10:55:01] INFO root fetch - processPackages [docstruct]: executing diffoscope
+[2023-05-14 10:55:01] INFO root fetch - processPackages [docstruct]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/docstruct-1.0.8.tar.gz tmp/docstruct-1.0.9.tar.gz --markdown 20230514/d/docstruct/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-14 10:55:01] INFO root fetch - processPackages [filedbm]: executing diffoscope
+[2023-05-14 10:55:01] INFO root fetch - processPackages [filedbm]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/filedbm-0.0.3.tar.gz tmp/filedbm-0.0.4.tar.gz --markdown 20230514/f/filedbm/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-14 10:55:01] INFO root fetch - processPackages [tfp-nightly]: Downloading https://files.pythonhosted.org/packages/f1/98/c1f5a754a26ea1f08e3558803ffb67dd65482de4f6bfadc5415573cd3cb7/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl
+[2023-05-14 10:55:02] INFO root fetch - main [MainThread]: End processing [filedbm]: success
+[2023-05-14 10:55:02] INFO root fetch - main [MainThread]: End processing [banner-storedot]: success
+[2023-05-14 10:55:02] INFO root fetch - main [MainThread]: End processing [docstruct]: success
+[2023-05-14 10:55:02] INFO root fetch - processPackages [tfp-nightly]: executing diffoscope
+[2023-05-14 10:55:02] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20230514/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/diff.md --exclude *.pyd
+[2023-05-14 10:55:20] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
+[2023-05-14 10:55:20] INFO root fetch - main [MainThread]: Store serial: [18095837]
