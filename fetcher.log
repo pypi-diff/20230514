@@ -1477,3 +1477,31 @@
 [2023-05-14 03:24:46] INFO root fetch - main [MainThread]: End processing [scotthsieh-projen-statemachine]: success
 [2023-05-14 03:24:47] INFO root fetch - main [MainThread]: End processing [pyagrum-nightly]: success
 [2023-05-14 03:24:47] INFO root fetch - main [MainThread]: Store serial: [18094284]
+[2023-05-14 03:29:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094284]
+[2023-05-14 03:29:57] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 03:29:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: jinjat
+[2023-05-14 03:29:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: django-q2
+[2023-05-14 03:29:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: lmo
+[2023-05-14 03:29:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: sweetrpg-api-core
+[2023-05-14 03:29:57] INFO root fetch - processPackages [django-q2]: New version: [1.5.3] Old Version: [1.5.2]
+[2023-05-14 03:29:57] INFO root fetch - processPackages [lmo]: New version: [0.3.0] Old Version: [0.2.1]
+[2023-05-14 03:29:57] INFO root fetch - processPackages [jinjat]: New version: [0.5] Old Version: [0.4]
+[2023-05-14 03:29:57] INFO root fetch - processPackages [sweetrpg-api-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-14 03:29:57] INFO root fetch - processPackages [jinjat]: Downloading https://files.pythonhosted.org/packages/7b/74/f64e809b073bfbff9902f063fc39cf7d3aa6e7f4895823ed12da51e6d2e1/jinjat-0.4.tar.gz
+[2023-05-14 03:29:57] INFO root fetch - processPackages [sweetrpg-api-core]: executing diffoscope
+[2023-05-14 03:29:57] INFO root fetch - processPackages [sweetrpg-api-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-api-core-0.0.98.tar.gz tmp/sweetrpg-api-core-0.0.99.tar.gz --markdown 20230514/s/sweetrpg-api-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-14 03:29:57] INFO root fetch - processPackages [django-q2]: Downloading https://files.pythonhosted.org/packages/70/b5/ae48b7d4547b8a94c87bb0c325e1c3a930f1fe9f367820c6d470231167d8/django_q2-1.5.2.tar.gz
+[2023-05-14 03:29:57] INFO root fetch - processPackages [lmo]: Downloading https://files.pythonhosted.org/packages/3d/44/7fe4a6d1324f857e060594d9e6d93387c24fef15ac6cd71dbfea596bccee/lmo-0.3.0.tar.gz
+[2023-05-14 03:29:57] INFO root fetch - processPackages [jinjat]: Downloading https://files.pythonhosted.org/packages/52/a2/3eba0b1af7dc45337b165bd8cdbcb03d6b363100e13f8232ce668205bcbe/jinjat-0.5.tar.gz
+[2023-05-14 03:29:57] INFO root fetch - processPackages [django-q2]: Downloading https://files.pythonhosted.org/packages/19/b3/3f72d347527597b51b0363b510e1b09d4de0a0ad53b17d1330f570a6da14/django_q2-1.5.3.tar.gz
+[2023-05-14 03:29:57] INFO root fetch - processPackages [jinjat]: executing diffoscope
+[2023-05-14 03:29:57] INFO root fetch - processPackages [jinjat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jinjat-0.4.tar.gz tmp/jinjat-0.5.tar.gz --markdown 20230514/j/jinjat/0.4-0.5/diff.md --exclude *.pyd
+[2023-05-14 03:29:57] INFO root fetch - processPackages [lmo]: executing diffoscope
+[2023-05-14 03:29:57] INFO root fetch - processPackages [lmo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lmo-0.2.1.tar.gz tmp/lmo-0.3.0.tar.gz --markdown 20230514/l/lmo/0.2.1-0.3.0/diff.md --exclude *.pyd
+[2023-05-14 03:29:57] INFO root fetch - processPackages [django-q2]: executing diffoscope
+[2023-05-14 03:29:57] INFO root fetch - processPackages [django-q2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django_q2-1.5.2.tar.gz tmp/django_q2-1.5.3.tar.gz --markdown 20230514/d/django-q2/1.5.2-1.5.3/diff.md --exclude *.pyd
+[2023-05-14 03:29:58] INFO root fetch - main [MainThread]: End processing [sweetrpg-api-core]: success
+[2023-05-14 03:29:58] INFO root fetch - main [MainThread]: End processing [jinjat]: success
+[2023-05-14 03:29:58] INFO root fetch - main [MainThread]: End processing [lmo]: success
+[2023-05-14 03:30:34] INFO root fetch - main [MainThread]: End processing [django-q2]: success
+[2023-05-14 03:30:34] INFO root fetch - main [MainThread]: Store serial: [18094296]
