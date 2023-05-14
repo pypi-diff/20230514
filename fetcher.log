@@ -2993,3 +2993,31 @@
 [2023-05-14 07:58:22] INFO root fetch - main [MainThread]: End processing [configzen]: success
 [2023-05-14 07:58:25] INFO root fetch - main [MainThread]: End processing [spatialgeometry]: success
 [2023-05-14 07:58:25] INFO root fetch - main [MainThread]: Store serial: [18095232]
+[2023-05-14 08:03:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095232]
+[2023-05-14 08:03:35] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 08:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aioqui
+[2023-05-14 08:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: nazo-image-utils
+[2023-05-14 08:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: gkjzjh146
+[2023-05-14 08:03:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: rpcclient
+[2023-05-14 08:03:35] INFO root fetch - processPackages [gkjzjh146]: New version: [1.5] Old Version: [1.4]
+[2023-05-14 08:03:35] INFO root fetch - processPackages [aioqui]: New version: [1.1.1] Old Version: [1.1.0]
+[2023-05-14 08:03:35] INFO root fetch - processPackages [nazo-image-utils]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 08:03:35] INFO root fetch - processPackages [rpcclient]: New version: [3.15.6] Old Version: [3.15.5]
+[2023-05-14 08:03:36] INFO root fetch - processPackages [gkjzjh146]: Downloading https://files.pythonhosted.org/packages/1a/7b/f2b3b9b979acf280a4e0b72385f69594bab51a7f97260552a58c47b29dd1/gkjzjh146-1.5.tar.gz
+[2023-05-14 08:03:36] INFO root fetch - processPackages [nazo-image-utils]: Downloading https://files.pythonhosted.org/packages/c1/b8/c88238728db6f1ca9229fcb4639ba6d30ca8263537f7fdd0430f4b3391da/nazo_image_utils-0.0.1.tar.gz
+[2023-05-14 08:03:36] INFO root fetch - processPackages [aioqui]: Downloading https://files.pythonhosted.org/packages/21/43/f4a38bc6a1f5208c89dff34e901d44cf6d990e7d4b50aacfab3b80e0e909/aioqui-1.1.1.tar.gz
+[2023-05-14 08:03:36] INFO root fetch - processPackages [gkjzjh146]: executing diffoscope
+[2023-05-14 08:03:36] INFO root fetch - processPackages [gkjzjh146]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gkjzjh146-1.4.tar.gz tmp/gkjzjh146-1.5.tar.gz --markdown 20230514/g/gkjzjh146/1.4-1.5/diff.md --exclude *.pyd
+[2023-05-14 08:03:36] INFO root fetch - processPackages [rpcclient]: Downloading https://files.pythonhosted.org/packages/fa/26/e0debe9a1ebd6208d9d0437137837e322375a692df81d501204e69e6384a/rpcclient-3.15.6.tar.gz
+[2023-05-14 08:03:36] INFO root fetch - processPackages [aioqui]: executing diffoscope
+[2023-05-14 08:03:36] INFO root fetch - processPackages [aioqui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioqui-1.1.0.tar.gz tmp/aioqui-1.1.1.tar.gz --markdown 20230514/a/aioqui/1.1.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-14 08:03:36] INFO root fetch - processPackages [nazo-image-utils]: Downloading https://files.pythonhosted.org/packages/2f/6c/648a0983e2a545477e92d4d0f12308d6dcb7710f5aa6c08f6a0c6d119762/nazo_image_utils-0.0.2.tar.gz
+[2023-05-14 08:03:36] INFO root fetch - processPackages [rpcclient]: executing diffoscope
+[2023-05-14 08:03:36] INFO root fetch - processPackages [rpcclient]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rpcclient-3.15.5.tar.gz tmp/rpcclient-3.15.6.tar.gz --markdown 20230514/r/rpcclient/3.15.5-3.15.6/diff.md --exclude *.pyd
+[2023-05-14 08:03:36] INFO root fetch - processPackages [nazo-image-utils]: executing diffoscope
+[2023-05-14 08:03:36] INFO root fetch - processPackages [nazo-image-utils]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nazo_image_utils-0.0.1.tar.gz tmp/nazo_image_utils-0.0.2.tar.gz --markdown 20230514/n/nazo-image-utils/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 08:03:37] INFO root fetch - main [MainThread]: End processing [gkjzjh146]: success
+[2023-05-14 08:03:37] INFO root fetch - main [MainThread]: End processing [nazo-image-utils]: success
+[2023-05-14 08:03:37] INFO root fetch - main [MainThread]: End processing [rpcclient]: success
+[2023-05-14 08:03:40] INFO root fetch - main [MainThread]: End processing [aioqui]: success
+[2023-05-14 08:03:40] INFO root fetch - main [MainThread]: Store serial: [18095256]
