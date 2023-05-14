@@ -9296,3 +9296,57 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 20:17:26] INFO root fetch - main [MainThread]: End processing [aioqui]: success
 [2023-05-14 20:17:27] INFO root fetch - main [MainThread]: End processing [mlfactory]: success
 [2023-05-14 20:17:27] INFO root fetch - main [MainThread]: Store serial: [18099035]
+[2023-05-14 20:22:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18099035]
+[2023-05-14 20:22:35] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-14 20:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: mathsym-adasneves
+[2023-05-14 20:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: py-madvr
+[2023-05-14 20:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: odin-format
+[2023-05-14 20:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: odoo-addon-l10n-ro-stock
+[2023-05-14 20:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cipherLV
+[2023-05-14 20:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: ImaginePy
+[2023-05-14 20:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cmake-build-extension
+[2023-05-14 20:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: pythoncoloringaddonsV2
+[2023-05-14 20:22:35] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: aioqui
+[2023-05-14 20:22:36] INFO root fetch - processPackages [mathsym-adasneves]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-14 20:22:36] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock]: New version: [16.0.0.1.0] Old Version: [15.0.2.2.0]
+[2023-05-14 20:22:36] WARNING root fetch - processPackages [odin-format]: Skipping, unable to determine old version
+[2023-05-14 20:22:36] INFO root fetch - main [MainThread]: End processing [odin-format] error
+[2023-05-14 20:22:36] INFO root fetch - processPackages [cipherLV]: New version: [0.1.3] Old Version: [0.1.2]
+[2023-05-14 20:22:36] INFO root fetch - processPackages [py-madvr]: New version: [1.3.17] Old Version: [1.3.16]
+[2023-05-14 20:22:36] INFO root fetch - processPackages [pythoncoloringaddonsV2]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-14 20:22:36] INFO root fetch - processPackages [aioqui]: New version: [1.1.7] Old Version: [1.1.6]
+[2023-05-14 20:22:36] INFO root fetch - processPackages [cmake-build-extension]: New version: [0.5.2.dev9] Old Version: [0.5.2.dev7]
+[2023-05-14 20:22:36] WARNING root fetch - processPackages [ImaginePy]: Skipping, unable to determine old version
+[2023-05-14 20:22:36] INFO root fetch - main [MainThread]: End processing [ImaginePy] error
+[2023-05-14 20:22:36] INFO root fetch - processPackages [mathsym-adasneves]: Downloading https://files.pythonhosted.org/packages/95/dd/bab554bba4c78285eecaf9879afeffe8f0a0258eaf378a1275e5294929c2/mathsym_adasneves-0.0.2.tar.gz
+[2023-05-14 20:22:36] INFO root fetch - processPackages [pythoncoloringaddonsV2]: Downloading https://files.pythonhosted.org/packages/51/8f/865fc492f9ad06329f11bef02d3cd40093eb51710fda06fcfa688fd6a6ce/pythoncoloringaddonsV2-1.0.0.tar.gz
+[2023-05-14 20:22:36] INFO root fetch - processPackages [cmake-build-extension]: Downloading https://files.pythonhosted.org/packages/c1/66/71805974df31932c541b42f3f67ae5988d26fe89d183f0a071d1ef602ab5/cmake-build-extension-0.5.2.dev9.tar.gz
+[2023-05-14 20:22:36] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock]: Downloading https://files.pythonhosted.org/packages/4d/7b/97d0799d87d8f173ebd4af6fda08e56e1f55a360136e489208259e43d53a/odoo_addon_l10n_ro_stock-15.0.2.2.0-py3-none-any.whl
+[2023-05-14 20:22:36] INFO root fetch - processPackages [py-madvr]: Downloading https://files.pythonhosted.org/packages/01/bd/183a802c8f6962ce18d63aad533776ba3fc642d052176ad45ba161b81b47/py_madvr-1.3.17.tar.gz
+[2023-05-14 20:22:36] INFO root fetch - processPackages [cipherLV]: Downloading https://files.pythonhosted.org/packages/87/34/5e6a45e3676de68dd8150e6db954597215d3359952735b0c62e3c92a7482/cipherLV-0.1.3.tar.gz
+[2023-05-14 20:22:36] INFO root fetch - processPackages [aioqui]: Downloading https://files.pythonhosted.org/packages/ae/8b/484e556dd451edda333da68bc1104336633b18c77a13cc7ab31d4be5ed20/aioqui-1.1.7.tar.gz
+[2023-05-14 20:22:36] INFO root fetch - processPackages [aioqui]: executing diffoscope
+[2023-05-14 20:22:36] INFO root fetch - processPackages [aioqui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioqui-1.1.6.tar.gz tmp/aioqui-1.1.7.tar.gz --markdown 20230514/a/aioqui/1.1.6-1.1.7/diff.md --exclude *.pyd
+[2023-05-14 20:22:36] INFO root fetch - processPackages [cmake-build-extension]: executing diffoscope
+[2023-05-14 20:22:36] INFO root fetch - processPackages [cmake-build-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmake-build-extension-0.5.2.dev7.tar.gz tmp/cmake-build-extension-0.5.2.dev9.tar.gz --markdown 20230514/c/cmake-build-extension/0.5.2.dev7-0.5.2.dev9/diff.md --exclude *.pyd
+[2023-05-14 20:22:36] INFO root fetch - processPackages [mathsym-adasneves]: Downloading https://files.pythonhosted.org/packages/50/ad/223fcef4f0fd948d358aa966ca4a2846a48e5df4a60c3ce23bc67ce6b983/mathsym_adasneves-0.0.3.tar.gz
+[2023-05-14 20:22:36] INFO root fetch - processPackages [cipherLV]: executing diffoscope
+[2023-05-14 20:22:36] INFO root fetch - processPackages [cipherLV]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cipherLV-0.1.2.tar.gz tmp/cipherLV-0.1.3.tar.gz --markdown 20230514/c/cipherLV/0.1.2-0.1.3/diff.md --exclude *.pyd
+[2023-05-14 20:22:36] INFO root fetch - processPackages [py-madvr]: executing diffoscope
+[2023-05-14 20:22:36] INFO root fetch - processPackages [py-madvr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/py_madvr-1.3.16.tar.gz tmp/py_madvr-1.3.17.tar.gz --markdown 20230514/p/py-madvr/1.3.16-1.3.17/diff.md --exclude *.pyd
+[2023-05-14 20:22:36] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock]: Downloading https://files.pythonhosted.org/packages/2d/c0/172852f60f5600497ed4d36e446b8e82ab7937bb3a60a6d25fd38cc7935d/odoo_addon_l10n_ro_stock-16.0.0.1.0-py3-none-any.whl
+[2023-05-14 20:22:36] INFO root fetch - processPackages [mathsym-adasneves]: executing diffoscope
+[2023-05-14 20:22:36] INFO root fetch - processPackages [mathsym-adasneves]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mathsym_adasneves-0.0.2.tar.gz tmp/mathsym_adasneves-0.0.3.tar.gz --markdown 20230514/m/mathsym-adasneves/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-14 20:22:36] INFO root fetch - processPackages [pythoncoloringaddonsV2]: Downloading https://files.pythonhosted.org/packages/ca/f0/7d2b60c5fa578e90c3b797f9a1fb3e342de11f370766a8295c807c64fd48/pythoncoloringaddonsV2-1.1.0.tar.gz
+[2023-05-14 20:22:36] INFO root fetch - processPackages [pythoncoloringaddonsV2]: executing diffoscope
+[2023-05-14 20:22:36] INFO root fetch - processPackages [pythoncoloringaddonsV2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythoncoloringaddonsV2-1.0.0.tar.gz tmp/pythoncoloringaddonsV2-1.1.0.tar.gz --markdown 20230514/p/pythoncoloringaddonsV2/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 20:22:36] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock]: executing diffoscope
+[2023-05-14 20:22:36] INFO root fetch - processPackages [odoo-addon-l10n-ro-stock]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/odoo_addon_l10n_ro_stock-15.0.2.2.0-py3-none-any.whl.zip tmp/odoo_addon_l10n_ro_stock-16.0.0.1.0-py3-none-any.whl.zip --markdown 20230514/o/odoo-addon-l10n-ro-stock/15.0.2.2.0-16.0.0.1.0/diff.md --exclude *.pyd
+[2023-05-14 20:22:37] INFO root fetch - main [MainThread]: End processing [cipherLV]: success
+[2023-05-14 20:22:37] INFO root fetch - main [MainThread]: End processing [py-madvr]: success
+[2023-05-14 20:22:37] INFO root fetch - main [MainThread]: End processing [mathsym-adasneves]: success
+[2023-05-14 20:22:37] INFO root fetch - main [MainThread]: End processing [pythoncoloringaddonsV2]: success
+[2023-05-14 20:22:37] INFO root fetch - main [MainThread]: End processing [odoo-addon-l10n-ro-stock]: success
+[2023-05-14 20:22:38] INFO root fetch - main [MainThread]: End processing [cmake-build-extension]: success
+[2023-05-14 20:22:39] INFO root fetch - main [MainThread]: End processing [aioqui]: success
+[2023-05-14 20:22:39] INFO root fetch - main [MainThread]: Store serial: [18099065]
