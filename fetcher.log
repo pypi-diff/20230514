@@ -6027,3 +6027,17 @@
 [2023-05-14 14:54:01] INFO root fetch - main [MainThread]: End processing [easybio]: success
 [2023-05-14 14:54:02] INFO root fetch - main [MainThread]: End processing [pureml]: success
 [2023-05-14 14:54:02] INFO root fetch - main [MainThread]: Store serial: [18097082]
+[2023-05-14 14:59:05] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18097082]
+[2023-05-14 14:59:10] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-14 14:59:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyfacer
+[2023-05-14 14:59:10] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kanodev
+[2023-05-14 14:59:10] INFO root fetch - processPackages [pyfacer]: New version: [0.0.4] Old Version: [0.0.3]
+[2023-05-14 14:59:10] INFO root fetch - processPackages [kanodev]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 14:59:10] ERROR root fetch - processPackages [kanodev]: Unable to fetch info: No such project/version 'kanodev' 0.0.1
+[2023-05-14 14:59:10] INFO root fetch - main [MainThread]: End processing [kanodev] error
+[2023-05-14 14:59:10] INFO root fetch - processPackages [pyfacer]: Downloading https://files.pythonhosted.org/packages/1c/8f/1a564c5245526eae09f5f6e474bd9a67787674839ca7674b62577b3c8433/pyfacer-0.0.3-py3-none-any.whl
+[2023-05-14 14:59:11] INFO root fetch - processPackages [pyfacer]: Downloading https://files.pythonhosted.org/packages/8e/a1/0d496c625f1a48de800d316988bb4a17ae782fb23e37d2ff224542b956b7/pyfacer-0.0.4-py3-none-any.whl
+[2023-05-14 14:59:11] INFO root fetch - processPackages [pyfacer]: executing diffoscope
+[2023-05-14 14:59:11] INFO root fetch - processPackages [pyfacer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfacer-0.0.3-py3-none-any.whl.zip tmp/pyfacer-0.0.4-py3-none-any.whl.zip --markdown 20230514/p/pyfacer/0.0.3-0.0.4/diff.md --exclude *.pyd
+[2023-05-14 14:59:12] INFO root fetch - main [MainThread]: End processing [pyfacer]: success
+[2023-05-14 14:59:12] INFO root fetch - main [MainThread]: Store serial: [18097092]
