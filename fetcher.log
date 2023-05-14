@@ -2371,3 +2371,11 @@
 [2023-05-14 05:49:15] INFO root fetch - main [MainThread]: End processing [mynacode]: success
 [2023-05-14 05:49:15] INFO root fetch - main [MainThread]: End processing [ardilla]: success
 [2023-05-14 05:49:15] INFO root fetch - main [MainThread]: Store serial: [18094831]
+[2023-05-14 05:54:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094831]
+[2023-05-14 05:54:23] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-14 05:54:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webarchiver
+[2023-05-14 05:54:24] INFO root fetch - processPackages [webarchiver]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-14 05:54:24] INFO root fetch - processPackages [webarchiver]: executing diffoscope
+[2023-05-14 05:54:24] INFO root fetch - processPackages [webarchiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webarchiver-0.8.0-py2.py3-none-any.whl.zip tmp/webarchiver-0.9.0-py2.py3-none-any.whl.zip --markdown 20230514/w/webarchiver/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 05:54:25] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
+[2023-05-14 05:54:25] INFO root fetch - main [MainThread]: Store serial: [18094836]
