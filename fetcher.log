@@ -3324,3 +3324,32 @@
 [2023-05-14 08:46:09] INFO root fetch - main [MainThread]: End processing [musiclib]: success
 [2023-05-14 08:46:54] INFO root fetch - main [MainThread]: End processing [databend]: success
 [2023-05-14 08:46:54] INFO root fetch - main [MainThread]: Store serial: [18095399]
+[2023-05-14 08:51:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095399]
+[2023-05-14 08:52:03] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 08:52:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyvantage
+[2023-05-14 08:52:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: annoworkapi
+[2023-05-14 08:52:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: PySciMath
+[2023-05-14 08:52:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: whistling
+[2023-05-14 08:52:03] INFO root fetch - processPackages [PySciMath]: New version: [1.5.3] Old Version: [1.5.2]
+[2023-05-14 08:52:03] INFO root fetch - processPackages [whistling]: New version: [1.0.0] Old Version: [0.1.0]
+[2023-05-14 08:52:03] INFO root fetch - processPackages [pyvantage]: New version: [0.0.50] Old Version: [0.0.49]
+[2023-05-14 08:52:03] INFO root fetch - processPackages [annoworkapi]: New version: [3.0.4] Old Version: [3.0.3]
+[2023-05-14 08:52:03] INFO root fetch - processPackages [pyvantage]: Downloading https://files.pythonhosted.org/packages/e5/fc/f9feb3424d8b32abc831b3f99f9f696d48565abdcd4222276c422bc49437/pyvantage-0.0.49.tar.gz
+[2023-05-14 08:52:03] INFO root fetch - processPackages [PySciMath]: Downloading https://files.pythonhosted.org/packages/dc/44/a5efda5c0f23fec0230cf3a6a5e521f2f76d7210f6f05d115c75a79825e6/PySciMath-1.5.3.tar.gz
+[2023-05-14 08:52:03] INFO root fetch - processPackages [whistling]: Downloading https://files.pythonhosted.org/packages/b4/60/052e7017596c12cda07e249f251f055d745317a475634a0884c6bbf90dab/whistling-0.1.0.tar.gz
+[2023-05-14 08:52:03] INFO root fetch - processPackages [annoworkapi]: Downloading https://files.pythonhosted.org/packages/c8/78/29c64a0e8a9e416999f7438442a64c123a3a38f546cf19243b13d1bca7f4/annoworkapi-3.0.4.tar.gz
+[2023-05-14 08:52:03] INFO root fetch - processPackages [PySciMath]: executing diffoscope
+[2023-05-14 08:52:03] INFO root fetch - processPackages [PySciMath]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PySciMath-1.5.2.tar.gz tmp/PySciMath-1.5.3.tar.gz --markdown 20230514/P/PySciMath/1.5.2-1.5.3/diff.md --exclude *.pyd
+[2023-05-14 08:52:03] INFO root fetch - processPackages [annoworkapi]: executing diffoscope
+[2023-05-14 08:52:03] INFO root fetch - processPackages [annoworkapi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/annoworkapi-3.0.3.tar.gz tmp/annoworkapi-3.0.4.tar.gz --markdown 20230514/a/annoworkapi/3.0.3-3.0.4/diff.md --exclude *.pyd
+[2023-05-14 08:52:03] INFO root fetch - processPackages [pyvantage]: Downloading https://files.pythonhosted.org/packages/08/02/36f0cec6d151683c1f529904d3205bb60e18aae0d9098126bc26d61a2bb4/pyvantage-0.0.50.tar.gz
+[2023-05-14 08:52:03] INFO root fetch - processPackages [pyvantage]: executing diffoscope
+[2023-05-14 08:52:03] INFO root fetch - processPackages [pyvantage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvantage-0.0.49.tar.gz tmp/pyvantage-0.0.50.tar.gz --markdown 20230514/p/pyvantage/0.0.49-0.0.50/diff.md --exclude *.pyd
+[2023-05-14 08:52:03] INFO root fetch - processPackages [whistling]: Downloading https://files.pythonhosted.org/packages/b1/c2/75103211e379d01738c8806817b1b9f713ffa7b41450befa5c8276ec5350/whistling-1.0.0.tar.gz
+[2023-05-14 08:52:04] INFO root fetch - processPackages [whistling]: executing diffoscope
+[2023-05-14 08:52:04] INFO root fetch - processPackages [whistling]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/whistling-0.1.0.tar.gz tmp/whistling-1.0.0.tar.gz --markdown 20230514/w/whistling/0.1.0-1.0.0/diff.md --exclude *.pyd
+[2023-05-14 08:52:04] INFO root fetch - main [MainThread]: End processing [PySciMath]: success
+[2023-05-14 08:52:04] INFO root fetch - main [MainThread]: End processing [annoworkapi]: success
+[2023-05-14 08:52:04] INFO root fetch - main [MainThread]: End processing [pyvantage]: success
+[2023-05-14 08:52:05] INFO root fetch - main [MainThread]: End processing [whistling]: success
+[2023-05-14 08:52:05] INFO root fetch - main [MainThread]: Store serial: [18095409]
