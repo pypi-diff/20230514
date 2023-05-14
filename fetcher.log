@@ -5121,3 +5121,32 @@
 [2023-05-14 13:09:14] INFO root fetch - main [MainThread]: End processing [ecida]: success
 [2023-05-14 13:09:14] INFO root fetch - main [MainThread]: End processing [indecode]: success
 [2023-05-14 13:09:14] INFO root fetch - main [MainThread]: Store serial: [18096498]
+[2023-05-14 13:14:18] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096498]
+[2023-05-14 13:14:23] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 13:14:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: carefree-drawboard
+[2023-05-14 13:14:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: acids-msprior
+[2023-05-14 13:14:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: dbt-cockroachdb
+[2023-05-14 13:14:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: shareddata
+[2023-05-14 13:14:23] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: datamultiproc
+[2023-05-14 13:14:23] INFO root fetch - processPackages [datamultiproc]: New version: [0.1.2] Old Version: [0.1.1]
+[2023-05-14 13:14:23] INFO root fetch - processPackages [acids-msprior]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-14 13:14:23] INFO root fetch - processPackages [carefree-drawboard]: New version: [0.0.1a2] Old Version: [0.0.1a1]
+[2023-05-14 13:14:23] WARNING root fetch - processPackages [dbt-cockroachdb]: Skipping, unable to determine old version
+[2023-05-14 13:14:23] INFO root fetch - main [MainThread]: End processing [dbt-cockroachdb] error
+[2023-05-14 13:14:23] INFO root fetch - processPackages [shareddata]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-14 13:14:23] INFO root fetch - processPackages [datamultiproc]: executing diffoscope
+[2023-05-14 13:14:23] INFO root fetch - processPackages [datamultiproc]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/datamultiproc-0.1.1.tar.gz tmp/datamultiproc-0.1.2.tar.gz --markdown 20230514/d/datamultiproc/0.1.1-0.1.2/diff.md --exclude *.pyd
+[2023-05-14 13:14:23] INFO root fetch - processPackages [acids-msprior]: executing diffoscope
+[2023-05-14 13:14:23] INFO root fetch - processPackages [acids-msprior]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/acids-msprior-1.0.3.tar.gz tmp/acids-msprior-1.0.4.tar.gz --markdown 20230514/a/acids-msprior/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-14 13:14:23] INFO root fetch - processPackages [shareddata]: Downloading https://files.pythonhosted.org/packages/a3/89/36663418cc430f191945f4554d0919f8804487b2ffe208a4b81eb15419ff/shareddata-2.0.8.tar.gz
+[2023-05-14 13:14:23] INFO root fetch - processPackages [carefree-drawboard]: Downloading https://files.pythonhosted.org/packages/53/16/370eadb6e4e594bd78e616624144ac8409acbfc7c407de1aecf2db33d918/carefree-drawboard-0.0.1a2.tar.gz
+[2023-05-14 13:14:23] INFO root fetch - processPackages [carefree-drawboard]: executing diffoscope
+[2023-05-14 13:14:23] INFO root fetch - processPackages [carefree-drawboard]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/carefree-drawboard-0.0.1a1.tar.gz tmp/carefree-drawboard-0.0.1a2.tar.gz --markdown 20230514/c/carefree-drawboard/0.0.1a1-0.0.1a2/diff.md --exclude *.pyd
+[2023-05-14 13:14:23] INFO root fetch - processPackages [shareddata]: Downloading https://files.pythonhosted.org/packages/c9/f9/61fa61a22abefea2b892306bbb73a62ed0a1a79371960e7ef36dd8fd83b5/shareddata-2.0.9.tar.gz
+[2023-05-14 13:14:23] INFO root fetch - processPackages [shareddata]: executing diffoscope
+[2023-05-14 13:14:23] INFO root fetch - processPackages [shareddata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shareddata-2.0.8.tar.gz tmp/shareddata-2.0.9.tar.gz --markdown 20230514/s/shareddata/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-14 13:14:24] INFO root fetch - main [MainThread]: End processing [datamultiproc]: success
+[2023-05-14 13:14:24] INFO root fetch - main [MainThread]: End processing [acids-msprior]: success
+[2023-05-14 13:14:25] INFO root fetch - main [MainThread]: End processing [shareddata]: success
+[2023-05-14 13:14:25] INFO root fetch - main [MainThread]: End processing [carefree-drawboard]: success
+[2023-05-14 13:14:25] INFO root fetch - main [MainThread]: Store serial: [18096513]
