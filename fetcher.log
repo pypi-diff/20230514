@@ -11168,3 +11168,96 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 23:10:13] INFO root fetch - main [MainThread]: End processing [kynaylibs]: success
 [2023-05-14 23:10:14] INFO root fetch - main [MainThread]: End processing [nitrado]: success
 [2023-05-14 23:10:14] INFO root fetch - main [MainThread]: Store serial: [18100127]
+[2023-05-14 23:15:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18100127]
+[2023-05-14 23:15:24] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-14 23:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yetl-framework
+[2023-05-14 23:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: kpi-dashapp-demo
+[2023-05-14 23:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: xklb
+[2023-05-14 23:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: nitrado
+[2023-05-14 23:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cookiestream
+[2023-05-14 23:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: multicloud-diagrams
+[2023-05-14 23:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fmpy-qi
+[2023-05-14 23:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: kynaylibs
+[2023-05-14 23:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: bw-projects
+[2023-05-14 23:15:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: bytez
+[2023-05-14 23:15:24] INFO root fetch - processPackages [nitrado]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-14 23:15:24] INFO root fetch - processPackages [fmpy-qi]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-14 23:15:24] INFO root fetch - processPackages [xklb]: New version: [1.27.4] Old Version: [1.27.3]
+[2023-05-14 23:15:24] INFO root fetch - processPackages [multicloud-diagrams]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-14 23:15:24] INFO root fetch - processPackages [kynaylibs]: New version: [7.0.9] Old Version: [7.0.8]
+[2023-05-14 23:15:24] INFO root fetch - processPackages [bytez]: New version: [0.1.9] Old Version: [0.1.81]
+[2023-05-14 23:15:24] INFO root fetch - processPackages [nitrado]: executing diffoscope
+[2023-05-14 23:15:24] WARNING root fetch - processPackages [cookiestream]: Skipping, unable to determine old version
+[2023-05-14 23:15:24] INFO root fetch - processPackages [cookiestream]: Start processing: nitrado
+[2023-05-14 23:15:24] INFO root fetch - processPackages [nitrado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nitrado-1.0.8.tar.gz tmp/nitrado-1.0.9.tar.gz --markdown 20230514/n/nitrado/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-14 23:15:24] INFO root fetch - main [MainThread]: End processing [cookiestream] error
+[2023-05-14 23:15:24] INFO root fetch - processPackages [yetl-framework]: New version: [1.3.6] Old Version: [1.3.5]
+[2023-05-14 23:15:24] WARNING root fetch - processPackages [kpi-dashapp-demo]: Skipping, unable to determine old version
+[2023-05-14 23:15:24] INFO root fetch - processPackages [kpi-dashapp-demo]: Start processing: kirzner-serializer
+[2023-05-14 23:15:24] INFO root fetch - main [MainThread]: End processing [kpi-dashapp-demo] error
+[2023-05-14 23:15:24] INFO root fetch - processPackages [bw-projects]: New version: [1.0.0] Old Version: [0.1]
+[2023-05-14 23:15:24] INFO root fetch - processPackages [xklb]: executing diffoscope
+[2023-05-14 23:15:24] INFO root fetch - processPackages [xklb]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xklb-1.27.3.tar.gz tmp/xklb-1.27.4.tar.gz --markdown 20230514/x/xklb/1.27.3-1.27.4/diff.md --exclude *.pyd
+[2023-05-14 23:15:24] INFO root fetch - processPackages [nitrado]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-14 23:15:24] INFO root fetch - processPackages [kynaylibs]: Downloading https://files.pythonhosted.org/packages/48/3d/13a168285ebed811ddaf3a141fa3b8d10329b746a707d0fd11758bf59dc0/kynaylibs-7.0.8.tar.gz
+[2023-05-14 23:15:24] INFO root fetch - processPackages [bytez]: Downloading https://files.pythonhosted.org/packages/1f/12/bf0744fcea76d83f3d3601b6c06e82a8fc5142f1cd79e340a9e4be585e40/bytez-0.1.81.tar.gz
+[2023-05-14 23:15:24] INFO root fetch - processPackages [fmpy-qi]: Downloading https://files.pythonhosted.org/packages/62/0c/a8642be1d941f4dfaa34e601a26f40b94ec3c3e82d67c0aefa845b2c4c34/fmpy_qi-0.1.4.tar.gz
+[2023-05-14 23:15:24] INFO root fetch - processPackages [multicloud-diagrams]: Downloading https://files.pythonhosted.org/packages/9f/94/e2b578449a0e4becf6364df19545929250473dbfd453a5c6acc17e4b1851/multicloud_diagrams-0.2.3.tar.gz
+[2023-05-14 23:15:24] INFO root fetch - processPackages [nitrado]: executing diffoscope
+[2023-05-14 23:15:24] INFO root fetch - processPackages [nitrado]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/nitrado-1.0.8.tar.gz tmp/nitrado-1.0.9.tar.gz --markdown 20230514/n/nitrado/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-14 23:15:24] WARNING root fetch - processPackages [kirzner-serializer]: Skipping, unable to determine old version
+[2023-05-14 23:15:24] INFO root fetch - processPackages [kirzner-serializer]: Start processing: gitblog2
+[2023-05-14 23:15:24] INFO root fetch - main [MainThread]: End processing [kirzner-serializer] error
+[2023-05-14 23:15:24] INFO root fetch - processPackages [gitblog2]: New version: [1.3.2] Old Version: [1.3.1]
+[2023-05-14 23:15:24] INFO root fetch - processPackages [bw-projects]: Downloading https://files.pythonhosted.org/packages/b1/f8/74d051dfebf57c3db6c9f5209c64b6b953da9d0ee2577b47c9344a5852d5/bw_projects-0.1.tar.gz
+[2023-05-14 23:15:24] INFO root fetch - processPackages [fmpy-qi]: executing diffoscope
+[2023-05-14 23:15:24] INFO root fetch - processPackages [fmpy-qi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fmpy_qi-0.1.3.tar.gz tmp/fmpy_qi-0.1.4.tar.gz --markdown 20230514/f/fmpy-qi/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-14 23:15:24] INFO root fetch - processPackages [multicloud-diagrams]: executing diffoscope
+[2023-05-14 23:15:24] INFO root fetch - processPackages [multicloud-diagrams]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/multicloud_diagrams-0.2.2.tar.gz tmp/multicloud_diagrams-0.2.3.tar.gz --markdown 20230514/m/multicloud-diagrams/0.2.2-0.2.3/diff.md --exclude *.pyd
+[2023-05-14 23:15:24] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-14 23:15:24] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.81.tar.gz tmp/bytez-0.1.9.tar.gz --markdown 20230514/b/bytez/0.1.81-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 23:15:24] INFO root fetch - processPackages [yetl-framework]: Downloading https://files.pythonhosted.org/packages/21/9b/44f2cb2cc54f329961015bb1db1726ba33ca48b15f25194e2fc7c0378bf7/yetl-framework-1.3.6.tar.gz
+[2023-05-14 23:15:24] INFO root fetch - processPackages [gitblog2]: Downloading https://files.pythonhosted.org/packages/05/88/7b6e04af04f49f0a22c9ef10014fd1270046a03036658381d7dc03d3a347/gitblog2-1.3.1.tar.gz
+[2023-05-14 23:15:24] INFO root fetch - processPackages [kynaylibs]: Downloading https://files.pythonhosted.org/packages/d0/45/af4214ccd54ec6ac5a1d16755705053c7f01d85c8276c8b396468d90b50b/kynaylibs-7.0.9.tar.gz
+[2023-05-14 23:15:24] INFO root fetch - processPackages [bw-projects]: Downloading https://files.pythonhosted.org/packages/67/34/bba847356e5a6e31925795d8daae26e99ac8723843621bd47bc8f9a0e64c/bw_projects-1.0.0.tar.gz
+[2023-05-14 23:15:24] INFO root fetch - processPackages [yetl-framework]: executing diffoscope
+[2023-05-14 23:15:24] INFO root fetch - processPackages [yetl-framework]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yetl-framework-1.3.5.tar.gz tmp/yetl-framework-1.3.6.tar.gz --markdown 20230514/y/yetl-framework/1.3.5-1.3.6/diff.md --exclude *.pyd
+[2023-05-14 23:15:24] INFO root fetch - processPackages [kynaylibs]: executing diffoscope
+[2023-05-14 23:15:24] INFO root fetch - processPackages [kynaylibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kynaylibs-7.0.8.tar.gz tmp/kynaylibs-7.0.9.tar.gz --markdown 20230514/k/kynaylibs/7.0.8-7.0.9/diff.md --exclude *.pyd
+[2023-05-14 23:15:24] INFO root fetch - processPackages [bw-projects]: executing diffoscope
+[2023-05-14 23:15:24] INFO root fetch - processPackages [bw-projects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bw_projects-0.1.tar.gz tmp/bw_projects-1.0.0.tar.gz --markdown 20230514/b/bw-projects/0.1-1.0.0/diff.md --exclude *.pyd
+[2023-05-14 23:15:24] INFO root fetch - processPackages [gitblog2]: Downloading https://files.pythonhosted.org/packages/99/6c/9823c851f5c50edf8317d608c0b45638f5292ad7cbc3657b2e5754b1d370/gitblog2-1.3.2.tar.gz
+[2023-05-14 23:15:24] INFO root fetch - processPackages [gitblog2]: executing diffoscope
+[2023-05-14 23:15:24] INFO root fetch - processPackages [gitblog2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gitblog2-1.3.1.tar.gz tmp/gitblog2-1.3.2.tar.gz --markdown 20230514/g/gitblog2/1.3.1-1.3.2/diff.md --exclude *.pyd
+[2023-05-14 23:15:25] INFO root fetch - processPackages [nitrado]: Start processing: cyberdrop-dl
+[2023-05-14 23:15:25] INFO root fetch - main [MainThread]: End processing [nitrado]: success
+[2023-05-14 23:15:25] INFO root fetch - processPackages [bytez]: Start processing: benchmarx
+[2023-05-14 23:15:25] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-14 23:15:25] INFO root fetch - processPackages [multicloud-diagrams]: Start processing: magyar
+[2023-05-14 23:15:25] INFO root fetch - main [MainThread]: End processing [multicloud-diagrams]: success
+[2023-05-14 23:15:25] INFO root fetch - processPackages [cyberdrop-dl]: New version: [4.2.22] Old Version: [4.2.21]
+[2023-05-14 23:15:25] INFO root fetch - processPackages [magyar]: New version: [3.0.4] Old Version: [3.0.3]
+[2023-05-14 23:15:25] WARNING root fetch - processPackages [benchmarx]: Skipping, unable to determine old version
+[2023-05-14 23:15:25] INFO root fetch - processPackages [benchmarx]: Start processing: lcbuilder
+[2023-05-14 23:15:25] INFO root fetch - main [MainThread]: End processing [benchmarx] error
+[2023-05-14 23:15:26] INFO root fetch - main [MainThread]: End processing [fmpy-qi]: success
+[2023-05-14 23:15:26] INFO root fetch - processPackages [magyar]: executing diffoscope
+[2023-05-14 23:15:26] INFO root fetch - processPackages [magyar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magyar-3.0.3.tar.gz tmp/magyar-3.0.4.tar.gz --markdown 20230514/m/magyar/3.0.3-3.0.4/diff.md --exclude *.pyd
+[2023-05-14 23:15:26] INFO root fetch - processPackages [lcbuilder]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-14 23:15:26] INFO root fetch - processPackages [cyberdrop-dl]: Downloading https://files.pythonhosted.org/packages/d8/05/c6724a6d737ca2a02552e3283ed354472a44d755010ef15488e86aec29e4/cyberdrop-dl-4.2.22.tar.gz
+[2023-05-14 23:15:26] INFO root fetch - processPackages [lcbuilder]: Downloading https://files.pythonhosted.org/packages/f4/7f/fe7e2a3a797ae2569375c4260501908dc35c2a523d3e7f89eb1769068c3a/lcbuilder-0.9.8.tar.gz
+[2023-05-14 23:15:26] INFO root fetch - main [MainThread]: End processing [xklb]: success
+[2023-05-14 23:15:26] INFO root fetch - main [MainThread]: End processing [bw-projects]: success
+[2023-05-14 23:15:26] INFO root fetch - processPackages [cyberdrop-dl]: executing diffoscope
+[2023-05-14 23:15:26] INFO root fetch - processPackages [cyberdrop-dl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cyberdrop-dl-4.2.21.tar.gz tmp/cyberdrop-dl-4.2.22.tar.gz --markdown 20230514/c/cyberdrop-dl/4.2.21-4.2.22/diff.md --exclude *.pyd
+[2023-05-14 23:15:26] INFO root fetch - main [MainThread]: End processing [kynaylibs]: success
+[2023-05-14 23:15:26] INFO root fetch - main [MainThread]: End processing [nitrado]: success
+[2023-05-14 23:15:26] INFO root fetch - main [MainThread]: End processing [gitblog2]: success
+[2023-05-14 23:15:26] INFO root fetch - processPackages [lcbuilder]: Downloading https://files.pythonhosted.org/packages/31/8f/6990e76cc8de8a1377d1e6653c8950226902239559275c6b11838d5cb379/lcbuilder-0.9.9.tar.gz
+[2023-05-14 23:15:26] INFO root fetch - main [MainThread]: End processing [yetl-framework]: success
+[2023-05-14 23:15:26] INFO root fetch - processPackages [lcbuilder]: executing diffoscope
+[2023-05-14 23:15:26] INFO root fetch - processPackages [lcbuilder]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lcbuilder-0.9.8.tar.gz tmp/lcbuilder-0.9.9.tar.gz --markdown 20230514/l/lcbuilder/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-14 23:15:27] INFO root fetch - main [MainThread]: End processing [magyar]: success
+[2023-05-14 23:15:27] INFO root fetch - main [MainThread]: End processing [cyberdrop-dl]: success
+[2023-05-14 23:15:28] INFO root fetch - main [MainThread]: End processing [lcbuilder]: success
+[2023-05-14 23:15:28] INFO root fetch - main [MainThread]: Store serial: [18100189]
