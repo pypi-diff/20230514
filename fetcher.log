@@ -9135,3 +9135,42 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 20:01:47] INFO root fetch - main [MainThread]: End processing [get-github-code]: success
 [2023-05-14 20:01:47] INFO root fetch - main [MainThread]: End processing [vedro]: success
 [2023-05-14 20:01:47] INFO root fetch - main [MainThread]: Store serial: [18098925]
+[2023-05-14 20:06:51] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098925]
+[2023-05-14 20:06:56] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 20:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: samadb
+[2023-05-14 20:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: iso3166-updates
+[2023-05-14 20:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cmake-build-extension
+[2023-05-14 20:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pro-sports-transactions
+[2023-05-14 20:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: fluidfoam
+[2023-05-14 20:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: teelebot
+[2023-05-14 20:06:56] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: piperider-nightly
+[2023-05-14 20:06:56] INFO root fetch - processPackages [fluidfoam]: New version: [0.2.4] Old Version: [0.2.3]
+[2023-05-14 20:06:56] INFO root fetch - processPackages [teelebot]: New version: [2.3.0] Old Version: [2.2.0]
+[2023-05-14 20:06:56] INFO root fetch - processPackages [cmake-build-extension]: New version: [0.5.2.dev7] Old Version: [0.5.2.dev5]
+[2023-05-14 20:06:56] WARNING root fetch - processPackages [samadb]: Skipping, unable to determine old version
+[2023-05-14 20:06:56] INFO root fetch - main [MainThread]: End processing [samadb] error
+[2023-05-14 20:06:56] INFO root fetch - processPackages [iso3166-updates]: New version: [1.1.0] Old Version: [1.0.1]
+[2023-05-14 20:06:57] INFO root fetch - processPackages [teelebot]: executing diffoscope
+[2023-05-14 20:06:57] INFO root fetch - processPackages [teelebot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/teelebot-2.2.0-py3-none-any.whl.zip tmp/teelebot-2.3.0-py3-none-any.whl.zip --markdown 20230514/t/teelebot/2.2.0-2.3.0/diff.md --exclude *.pyd
+[2023-05-14 20:06:57] WARNING root fetch - processPackages [pro-sports-transactions]: Skipping, unable to determine old version
+[2023-05-14 20:06:57] INFO root fetch - main [MainThread]: End processing [pro-sports-transactions] error
+[2023-05-14 20:06:57] INFO root fetch - processPackages [piperider-nightly]: New version: [0.9.0.20220921] Old Version: [0.9.0.20220920]
+[2023-05-14 20:06:57] INFO root fetch - processPackages [cmake-build-extension]: executing diffoscope
+[2023-05-14 20:06:57] INFO root fetch - processPackages [cmake-build-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmake-build-extension-0.5.2.dev5.tar.gz tmp/cmake-build-extension-0.5.2.dev7.tar.gz --markdown 20230514/c/cmake-build-extension/0.5.2.dev5-0.5.2.dev7/diff.md --exclude *.pyd
+[2023-05-14 20:06:57] INFO root fetch - processPackages [fluidfoam]: Downloading https://files.pythonhosted.org/packages/97/63/f46d713bfb595799f1fbcd21e0bcad7b85587dcd493068a8cad7dfe7d73f/fluidfoam-0.2.3-py3-none-any.whl
+[2023-05-14 20:06:57] INFO root fetch - processPackages [piperider-nightly]: Downloading https://files.pythonhosted.org/packages/ed/93/38dc4b24d947f1ec271781bdb47a50b77ff762d7a701730c6786ca4ec303/piperider-nightly-0.9.0.20220920.tar.gz
+[2023-05-14 20:06:57] INFO root fetch - processPackages [iso3166-updates]: Downloading https://files.pythonhosted.org/packages/98/b7/5ce0fba98f8661ec764066926cdc193dd8a1fe9f3d280fcf34b09c0b107e/iso3166-updates-1.1.0.tar.gz
+[2023-05-14 20:06:57] INFO root fetch - processPackages [fluidfoam]: Downloading https://files.pythonhosted.org/packages/00/52/7c413b2bad50127f54695dccfcad73a85bfb87466b9246652584212407f4/fluidfoam-0.2.4.tar.gz
+[2023-05-14 20:06:57] INFO root fetch - processPackages [iso3166-updates]: executing diffoscope
+[2023-05-14 20:06:57] INFO root fetch - processPackages [iso3166-updates]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iso3166-updates-1.0.1.tar.gz tmp/iso3166-updates-1.1.0.tar.gz --markdown 20230514/i/iso3166-updates/1.0.1-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 20:06:57] INFO root fetch - processPackages [fluidfoam]: executing diffoscope
+[2023-05-14 20:06:57] INFO root fetch - processPackages [fluidfoam]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fluidfoam-0.2.3-py3-none-any.whl.zip tmp/fluidfoam-0.2.4.tar.gz --markdown 20230514/f/fluidfoam/0.2.3-0.2.4/diff.md --exclude *.pyd
+[2023-05-14 20:06:58] INFO root fetch - main [MainThread]: End processing [cmake-build-extension]: success
+[2023-05-14 20:06:58] INFO root fetch - main [MainThread]: End processing [teelebot]: success
+[2023-05-14 20:06:58] INFO root fetch - main [MainThread]: End processing [iso3166-updates]: success
+[2023-05-14 20:06:58] INFO root fetch - main [MainThread]: End processing [fluidfoam]: success
+[2023-05-14 20:06:59] INFO root fetch - processPackages [piperider-nightly]: Downloading https://files.pythonhosted.org/packages/a4/47/99354233feb8a6a201731f0992c5656ca2eb5728a26eae7fd09fc5e04b4c/piperider-nightly-0.9.0.20220921.tar.gz
+[2023-05-14 20:07:00] INFO root fetch - processPackages [piperider-nightly]: executing diffoscope
+[2023-05-14 20:07:00] INFO root fetch - processPackages [piperider-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/piperider-nightly-0.9.0.20220920.tar.gz tmp/piperider-nightly-0.9.0.20220921.tar.gz --markdown 20230514/p/piperider-nightly/0.9.0.20220920-0.9.0.20220921/diff.md --exclude *.pyd
+[2023-05-14 20:07:02] INFO root fetch - main [MainThread]: End processing [piperider-nightly]: success
+[2023-05-14 20:07:02] INFO root fetch - main [MainThread]: Store serial: [18098959]
