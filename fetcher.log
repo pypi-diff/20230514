@@ -8713,3 +8713,45 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 19:14:43] INFO root fetch - main [MainThread]: End processing [xpip-python]: success
 [2023-05-14 19:14:43] INFO root fetch - main [MainThread]: End processing [emi-calculator]: success
 [2023-05-14 19:14:43] INFO root fetch - main [MainThread]: Store serial: [18098670]
+[2023-05-14 19:19:49] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098670]
+[2023-05-14 19:19:53] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-14 19:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: depend1000
+[2023-05-14 19:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: piicli
+[2023-05-14 19:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: homeassistant
+[2023-05-14 19:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: hydrogibs
+[2023-05-14 19:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: onvif-zeep-async
+[2023-05-14 19:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: fieldedge-utilities
+[2023-05-14 19:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: SantorinAI
+[2023-05-14 19:19:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: spanishconjugator
+[2023-05-14 19:19:53] INFO root fetch - processPackages [fieldedge-utilities]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-14 19:19:53] WARNING root fetch - processPackages [depend1000]: Skipping, unable to determine old version
+[2023-05-14 19:19:53] INFO root fetch - main [MainThread]: End processing [depend1000] error
+[2023-05-14 19:19:53] WARNING root fetch - processPackages [piicli]: Skipping, unable to determine old version
+[2023-05-14 19:19:53] INFO root fetch - main [MainThread]: End processing [piicli] error
+[2023-05-14 19:19:53] INFO root fetch - processPackages [SantorinAI]: New version: [1.2.3] Old Version: [1.2.2]
+[2023-05-14 19:19:53] INFO root fetch - processPackages [homeassistant]: New version: [2023.5.3] Old Version: [2023.5.2]
+[2023-05-14 19:19:53] INFO root fetch - processPackages [onvif-zeep-async]: New version: [3.1.5] Old Version: [3.1.4]
+[2023-05-14 19:19:53] INFO root fetch - processPackages [spanishconjugator]: New version: [2.3.999] Old Version: [2.3.998]
+[2023-05-14 19:19:54] INFO root fetch - processPackages [hydrogibs]: New version: [0.3.1] Old Version: [0.3.0]
+[2023-05-14 19:19:54] INFO root fetch - processPackages [fieldedge-utilities]: executing diffoscope
+[2023-05-14 19:19:54] INFO root fetch - processPackages [fieldedge-utilities]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fieldedge-utilities-0.9.4.tar.gz tmp/fieldedge-utilities-0.9.5.tar.gz --markdown 20230514/f/fieldedge-utilities/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-14 19:19:54] INFO root fetch - processPackages [SantorinAI]: executing diffoscope
+[2023-05-14 19:19:54] INFO root fetch - processPackages [SantorinAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SantorinAI-1.2.2.tar.gz tmp/SantorinAI-1.2.3.tar.gz --markdown 20230514/S/SantorinAI/1.2.2-1.2.3/diff.md --exclude *.pyd
+[2023-05-14 19:19:54] INFO root fetch - processPackages [spanishconjugator]: executing diffoscope
+[2023-05-14 19:19:54] INFO root fetch - processPackages [spanishconjugator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spanishconjugator-2.3.998.tar.gz tmp/spanishconjugator-2.3.999.tar.gz --markdown 20230514/s/spanishconjugator/2.3.998-2.3.999/diff.md --exclude *.pyd
+[2023-05-14 19:19:54] INFO root fetch - processPackages [homeassistant]: Downloading https://files.pythonhosted.org/packages/77/98/aea8912a35018593e0b12e5448193d0e4653afb80bd8ce467d0ebc7404bd/homeassistant-2023.5.2.tar.gz
+[2023-05-14 19:19:54] INFO root fetch - processPackages [hydrogibs]: Downloading https://files.pythonhosted.org/packages/22/f8/87956eb7b7d59c6a48a25f28952722de65d57f19ee978c4915d513e53676/hydrogibs-0.3.0.tar.gz
+[2023-05-14 19:19:54] INFO root fetch - processPackages [onvif-zeep-async]: Downloading https://files.pythonhosted.org/packages/3c/05/63d24186dc9f1a871c113976a6ad533b17a17636f38bb3bcb80e24e68b04/onvif-zeep-async-3.1.5.tar.gz
+[2023-05-14 19:19:54] WARNING root fetch - processPackages [homeassistant]: Skipping package: exceeds size limit 13804544>=10485760
+[2023-05-14 19:19:54] INFO root fetch - main [MainThread]: End processing [homeassistant] error
+[2023-05-14 19:19:54] INFO root fetch - processPackages [onvif-zeep-async]: executing diffoscope
+[2023-05-14 19:19:54] INFO root fetch - processPackages [onvif-zeep-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onvif-zeep-async-3.1.4.tar.gz tmp/onvif-zeep-async-3.1.5.tar.gz --markdown 20230514/o/onvif-zeep-async/3.1.4-3.1.5/diff.md --exclude *.pyd
+[2023-05-14 19:19:54] INFO root fetch - processPackages [hydrogibs]: Downloading https://files.pythonhosted.org/packages/5d/75/5ce43bfb41f51be9b09c8298f875bb594a8232da9bd026e4565e45b17679/hydrogibs-0.3.1.tar.gz
+[2023-05-14 19:19:54] INFO root fetch - processPackages [hydrogibs]: executing diffoscope
+[2023-05-14 19:19:54] INFO root fetch - processPackages [hydrogibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hydrogibs-0.3.0.tar.gz tmp/hydrogibs-0.3.1.tar.gz --markdown 20230514/h/hydrogibs/0.3.0-0.3.1/diff.md --exclude *.pyd
+[2023-05-14 19:19:55] INFO root fetch - main [MainThread]: End processing [spanishconjugator]: success
+[2023-05-14 19:19:55] INFO root fetch - main [MainThread]: End processing [fieldedge-utilities]: success
+[2023-05-14 19:19:55] INFO root fetch - main [MainThread]: End processing [hydrogibs]: success
+[2023-05-14 19:19:55] INFO root fetch - main [MainThread]: End processing [SantorinAI]: success
+[2023-05-14 19:19:56] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
+[2023-05-14 19:19:56] INFO root fetch - main [MainThread]: Store serial: [18098698]
