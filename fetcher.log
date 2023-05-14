@@ -4791,3 +4791,44 @@
 [2023-05-14 12:21:11] INFO root fetch - main [MainThread]: End processing [pulumi-proxmoxve]: success
 [2023-05-14 12:21:11] INFO root fetch - main [MainThread]: End processing [mathslib]: success
 [2023-05-14 12:21:11] INFO root fetch - main [MainThread]: Store serial: [18096273]
+[2023-05-14 12:26:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096273]
+[2023-05-14 12:26:21] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-14 12:26:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: reytool
+[2023-05-14 12:26:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: configzen
+[2023-05-14 12:26:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: few-shot-priming
+[2023-05-14 12:26:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pddl-plus-parser
+[2023-05-14 12:26:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: embedders
+[2023-05-14 12:26:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: alexfitter
+[2023-05-14 12:26:21] INFO root fetch - processPackages [configzen]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 12:26:21] INFO root fetch - processPackages [reytool]: New version: [0.99] Old Version: [0.98]
+[2023-05-14 12:26:21] WARNING root fetch - processPackages [alexfitter]: Skipping, unable to determine old version
+[2023-05-14 12:26:21] INFO root fetch - main [MainThread]: End processing [alexfitter] error
+[2023-05-14 12:26:21] INFO root fetch - processPackages [embedders]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 12:26:21] INFO root fetch - processPackages [pddl-plus-parser]: New version: [3.3.9] Old Version: [3.3.8]
+[2023-05-14 12:26:21] INFO root fetch - processPackages [few-shot-priming]: New version: [0.0.99] Old Version: [0.0.96]
+[2023-05-14 12:26:21] INFO root fetch - processPackages [reytool]: Downloading https://files.pythonhosted.org/packages/f7/1b/12dc89a309309c9361d59a38462b453a322b261239fade997e196d798838/reytool-0.98-py3-none-any.whl
+[2023-05-14 12:26:21] INFO root fetch - processPackages [reytool]: Downloading https://files.pythonhosted.org/packages/f3/55/5da881836b0a141d1b9cfbb9118f95b0a7873ba578976b4a1a7cf3718b49/reytool-0.99-py3-none-any.whl
+[2023-05-14 12:26:21] INFO root fetch - processPackages [reytool]: executing diffoscope
+[2023-05-14 12:26:21] INFO root fetch - processPackages [reytool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/reytool-0.98-py3-none-any.whl.zip tmp/reytool-0.99-py3-none-any.whl.zip --markdown 20230514/r/reytool/0.98-0.99/diff.md --exclude *.pyd
+[2023-05-14 12:26:21] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/ed/46/d2113b0df638e06458530acd5d5697ddcc7579a86535c9180e415a052f86/configzen-0.1.8.tar.gz
+[2023-05-14 12:26:21] INFO root fetch - processPackages [pddl-plus-parser]: Downloading https://files.pythonhosted.org/packages/a0/34/48f37bbf68815f77288fe00532dab20c6517e553de323396c72c2c68f849/pddl-plus-parser-3.3.8.tar.gz
+[2023-05-14 12:26:21] INFO root fetch - processPackages [embedders]: Downloading https://files.pythonhosted.org/packages/fd/94/69c2a2d2b115e4f11b11778f907c6fa2566a7dac73f8c9ef467968da86cd/embedders-0.0.8-py2.py3-none-any.whl
+[2023-05-14 12:26:21] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/d5/95/d70c95da3e78b71d35838af276daf5b2f53394c4c9a44fa5dd8f2aa64498/few_shot_priming-0.0.96-py3-none-any.whl
+[2023-05-14 12:26:21] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/05/50/55029642d210b49e9bba076000db5d27338dacf47b5b40ffd65a4a3ef518/configzen-0.1.9.tar.gz
+[2023-05-14 12:26:21] INFO root fetch - processPackages [embedders]: Downloading https://files.pythonhosted.org/packages/46/10/fa27ef14040a6a776e41175dbf9d0bbc0521302aced322422c81625e194b/embedders-0.0.9-py2.py3-none-any.whl
+[2023-05-14 12:26:22] INFO root fetch - processPackages [few-shot-priming]: Downloading https://files.pythonhosted.org/packages/1e/e8/6368ab93b7135424a35ce07aac4de4056a38a1ae6f862ed63a5a79a4dce6/few_shot_priming-0.0.99-py3-none-any.whl
+[2023-05-14 12:26:22] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-14 12:26:22] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.8.tar.gz tmp/configzen-0.1.9.tar.gz --markdown 20230514/c/configzen/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 12:26:22] INFO root fetch - processPackages [embedders]: executing diffoscope
+[2023-05-14 12:26:22] INFO root fetch - processPackages [embedders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/embedders-0.0.8-py2.py3-none-any.whl.zip tmp/embedders-0.0.9-py2.py3-none-any.whl.zip --markdown 20230514/e/embedders/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 12:26:22] INFO root fetch - processPackages [pddl-plus-parser]: Downloading https://files.pythonhosted.org/packages/ff/6b/9170a5879f6fb9002a9189f45be2bc2f6e7e848b856eac61b7878d907ee9/pddl-plus-parser-3.3.9.tar.gz
+[2023-05-14 12:26:22] INFO root fetch - processPackages [few-shot-priming]: executing diffoscope
+[2023-05-14 12:26:22] INFO root fetch - processPackages [few-shot-priming]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/few_shot_priming-0.0.96-py3-none-any.whl.zip tmp/few_shot_priming-0.0.99-py3-none-any.whl.zip --markdown 20230514/f/few-shot-priming/0.0.96-0.0.99/diff.md --exclude *.pyd
+[2023-05-14 12:26:22] INFO root fetch - processPackages [pddl-plus-parser]: executing diffoscope
+[2023-05-14 12:26:22] INFO root fetch - processPackages [pddl-plus-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pddl-plus-parser-3.3.8.tar.gz tmp/pddl-plus-parser-3.3.9.tar.gz --markdown 20230514/p/pddl-plus-parser/3.3.8-3.3.9/diff.md --exclude *.pyd
+[2023-05-14 12:26:22] INFO root fetch - main [MainThread]: End processing [reytool]: success
+[2023-05-14 12:26:23] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-14 12:26:23] INFO root fetch - main [MainThread]: End processing [few-shot-priming]: success
+[2023-05-14 12:26:23] INFO root fetch - main [MainThread]: End processing [embedders]: success
+[2023-05-14 12:26:23] INFO root fetch - main [MainThread]: End processing [pddl-plus-parser]: success
+[2023-05-14 12:26:23] INFO root fetch - main [MainThread]: Store serial: [18096289]
