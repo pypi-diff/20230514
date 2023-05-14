@@ -6362,3 +6362,48 @@
 [2023-05-14 15:37:15] INFO root fetch - main [MainThread]: End processing [amazoncaptcha]: success
 [2023-05-14 15:37:15] INFO root fetch - main [MainThread]: End processing [TDhelper]: success
 [2023-05-14 15:37:15] INFO root fetch - main [MainThread]: Store serial: [18097277]
+[2023-05-14 15:42:19] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18097277]
+[2023-05-14 15:42:24] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-14 15:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SantoriAI
+[2023-05-14 15:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: txt2ebook
+[2023-05-14 15:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: csvsdataset
+[2023-05-14 15:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: SantorinAI
+[2023-05-14 15:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: syncdsgen
+[2023-05-14 15:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: xia-login-flask
+[2023-05-14 15:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: dokuwikidumper
+[2023-05-14 15:42:24] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: tf-nightly-intel
+[2023-05-14 15:42:24] WARNING root fetch - processPackages [SantoriAI]: Skipping, unable to determine old version
+[2023-05-14 15:42:24] INFO root fetch - main [MainThread]: End processing [SantoriAI] error
+[2023-05-14 15:42:24] INFO root fetch - processPackages [txt2ebook]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 15:42:24] INFO root fetch - processPackages [csvsdataset]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-14 15:42:24] INFO root fetch - processPackages [SantorinAI]: New version: [1.1.1] Old Version: [1.0.0]
+[2023-05-14 15:42:24] INFO root fetch - processPackages [dokuwikidumper]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 15:42:24] INFO root fetch - processPackages [xia-login-flask]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 15:42:24] INFO root fetch - processPackages [tf-nightly-intel]: New version: [2.14.0.dev20230513] Old Version: [2.14.0.dev20230512]
+[2023-05-14 15:42:24] INFO root fetch - processPackages [syncdsgen]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 15:42:25] INFO root fetch - processPackages [dokuwikidumper]: executing diffoscope
+[2023-05-14 15:42:25] INFO root fetch - processPackages [dokuwikidumper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dokuwikidumper-0.1.8.tar.gz tmp/dokuwikidumper-0.1.9.tar.gz --markdown 20230514/d/dokuwikidumper/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 15:42:25] INFO root fetch - processPackages [txt2ebook]: Downloading https://files.pythonhosted.org/packages/7c/c4/d60a564f3da745273bfa35e59033388d7e8d9e9554261bd419d45d8071c7/txt2ebook-0.1.8.tar.gz
+[2023-05-14 15:42:25] INFO root fetch - processPackages [SantorinAI]: Downloading https://files.pythonhosted.org/packages/bf/ef/f19219bc7b3e0242d192597656320b727aeb69af59a8fb3de6aa95500563/SantorinAI-1.0.0.tar.gz
+[2023-05-14 15:42:25] INFO root fetch - processPackages [tf-nightly-intel]: Downloading https://files.pythonhosted.org/packages/be/d2/01e5b7d25d1cb27650b844abe2dbb277d0882f25ab17c8fc025f759fc5fa/tf_nightly_intel-2.14.0.dev20230512-cp39-cp39-win_amd64.whl
+[2023-05-14 15:42:25] WARNING root fetch - processPackages [tf-nightly-intel]: Skipping package: exceeds size limit 180594868>=10485760
+[2023-05-14 15:42:25] INFO root fetch - main [MainThread]: End processing [tf-nightly-intel] error
+[2023-05-14 15:42:25] INFO root fetch - processPackages [csvsdataset]: Downloading https://files.pythonhosted.org/packages/2f/68/5783c252f382958b0e6024998d49d32b256b07d3f6baa6d426b131f2c42a/csvsdataset-0.0.6.tar.gz
+[2023-05-14 15:42:25] WARNING root fetch - processPackages [csvsdataset]: Skipping package: exceeds size limit 35038087>=10485760
+[2023-05-14 15:42:25] INFO root fetch - main [MainThread]: End processing [csvsdataset] error
+[2023-05-14 15:42:25] INFO root fetch - processPackages [SantorinAI]: Downloading https://files.pythonhosted.org/packages/3f/ff/191e30da84877e988ce7910925d5d1d8698e1c339cb4cd18aae31879fe64/SantorinAI-1.1.1.tar.gz
+[2023-05-14 15:42:25] INFO root fetch - processPackages [xia-login-flask]: executing diffoscope
+[2023-05-14 15:42:25] INFO root fetch - processPackages [xia-login-flask]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xia_login_flask-0.1.8-cp39-none-win_amd64.whl.zip tmp/xia_login_flask-0.1.9-cp39-none-win_amd64.whl.zip --markdown 20230514/x/xia-login-flask/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 15:42:25] INFO root fetch - processPackages [SantorinAI]: executing diffoscope
+[2023-05-14 15:42:25] INFO root fetch - processPackages [SantorinAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SantorinAI-1.0.0.tar.gz tmp/SantorinAI-1.1.1.tar.gz --markdown 20230514/S/SantorinAI/1.0.0-1.1.1/diff.md --exclude *.pyd
+[2023-05-14 15:42:25] INFO root fetch - processPackages [syncdsgen]: executing diffoscope
+[2023-05-14 15:42:25] INFO root fetch - processPackages [syncdsgen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/syncdsgen-0.0.8.tar.gz tmp/syncdsgen-0.0.9.tar.gz --markdown 20230514/s/syncdsgen/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 15:42:25] INFO root fetch - processPackages [txt2ebook]: Downloading https://files.pythonhosted.org/packages/2a/b8/8ad395f87b8f7685da9b3f389de9870183f09446c9f0624dfed431e3b9b8/txt2ebook-0.1.9.tar.gz
+[2023-05-14 15:42:25] INFO root fetch - processPackages [txt2ebook]: executing diffoscope
+[2023-05-14 15:42:25] INFO root fetch - processPackages [txt2ebook]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/txt2ebook-0.1.8.tar.gz tmp/txt2ebook-0.1.9.tar.gz --markdown 20230514/t/txt2ebook/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 15:42:26] INFO root fetch - main [MainThread]: End processing [dokuwikidumper]: success
+[2023-05-14 15:42:26] INFO root fetch - main [MainThread]: End processing [xia-login-flask]: success
+[2023-05-14 15:42:26] INFO root fetch - main [MainThread]: End processing [syncdsgen]: success
+[2023-05-14 15:42:26] INFO root fetch - main [MainThread]: End processing [txt2ebook]: success
+[2023-05-14 15:42:26] INFO root fetch - main [MainThread]: End processing [SantorinAI]: success
+[2023-05-14 15:42:26] INFO root fetch - main [MainThread]: Store serial: [18097303]
