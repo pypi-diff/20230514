@@ -2659,3 +2659,23 @@
 [2023-05-14 06:56:40] INFO root fetch - main [MainThread]: End processing [configzen]: success
 [2023-05-14 06:56:41] INFO root fetch - main [MainThread]: End processing [Lshengpackage]: success
 [2023-05-14 06:56:41] INFO root fetch - main [MainThread]: Store serial: [18095006]
+[2023-05-14 07:01:44] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095006]
+[2023-05-14 07:01:49] INFO root fetch - main [MainThread]: Found 3 changed packages
+[2023-05-14 07:01:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aioqui
+[2023-05-14 07:01:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: configzen
+[2023-05-14 07:01:49] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tflite-runtime-nightly
+[2023-05-14 07:01:49] INFO root fetch - processPackages [configzen]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-14 07:01:49] INFO root fetch - processPackages [aioqui]: New version: [1.0.8] Old Version: [1.0.7]
+[2023-05-14 07:01:49] INFO root fetch - processPackages [tflite-runtime-nightly]: New version: [2.14.0.dev20230512] Old Version: [2.14.0.dev20230510]
+[2023-05-14 07:01:50] INFO root fetch - processPackages [tflite-runtime-nightly]: executing diffoscope
+[2023-05-14 07:01:50] INFO root fetch - processPackages [tflite-runtime-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tflite_runtime_nightly-2.14.0.dev20230510-cp39-cp39-manylinux2014_x86_64.whl.zip tmp/tflite_runtime_nightly-2.14.0.dev20230512-cp39-cp39-manylinux2014_x86_64.whl.zip --markdown 20230514/t/tflite-runtime-nightly/2.14.0.dev20230510-2.14.0.dev20230512/diff.md --exclude *.pyd
+[2023-05-14 07:01:50] INFO root fetch - processPackages [configzen]: Downloading https://files.pythonhosted.org/packages/ef/25/6b933f1b9647213b58af2015036389a15f5551f8a139e7e47e4c72fe2f7f/configzen-0.1.5.tar.gz
+[2023-05-14 07:01:50] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-14 07:01:50] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.4.tar.gz tmp/configzen-0.1.5.tar.gz --markdown 20230514/c/configzen/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-14 07:01:50] INFO root fetch - processPackages [aioqui]: Downloading https://files.pythonhosted.org/packages/69/6c/1e914661e09ffe96d2687feb63b8e8e59c54fab034a6f57f1b813ba18d3a/aioqui-1.0.8.tar.gz
+[2023-05-14 07:01:50] INFO root fetch - processPackages [aioqui]: executing diffoscope
+[2023-05-14 07:01:50] INFO root fetch - processPackages [aioqui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioqui-1.0.7.tar.gz tmp/aioqui-1.0.8.tar.gz --markdown 20230514/a/aioqui/1.0.7-1.0.8/diff.md --exclude *.pyd
+[2023-05-14 07:01:51] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-14 07:01:52] INFO root fetch - main [MainThread]: End processing [aioqui]: success
+[2023-05-14 07:02:21] INFO root fetch - main [MainThread]: End processing [tflite-runtime-nightly]: success
+[2023-05-14 07:02:21] INFO root fetch - main [MainThread]: Store serial: [18095018]
