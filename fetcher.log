@@ -6407,3 +6407,44 @@
 [2023-05-14 15:42:26] INFO root fetch - main [MainThread]: End processing [txt2ebook]: success
 [2023-05-14 15:42:26] INFO root fetch - main [MainThread]: End processing [SantorinAI]: success
 [2023-05-14 15:42:26] INFO root fetch - main [MainThread]: Store serial: [18097303]
+[2023-05-14 15:47:31] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18097303]
+[2023-05-14 15:47:36] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-14 15:47:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: wireprobe
+[2023-05-14 15:47:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: QakePip
+[2023-05-14 15:47:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: SantorinAI
+[2023-05-14 15:47:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: flaretool
+[2023-05-14 15:47:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: lilit
+[2023-05-14 15:47:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: certora-cli-alpha-sitvanit-no-payable-bug
+[2023-05-14 15:47:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: hordelib
+[2023-05-14 15:47:36] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: autokattis
+[2023-05-14 15:47:36] WARNING root fetch - processPackages [QakePip]: Skipping, unable to determine old version
+[2023-05-14 15:47:36] WARNING root fetch - processPackages [wireprobe]: Skipping, unable to determine old version
+[2023-05-14 15:47:36] INFO root fetch - main [MainThread]: End processing [QakePip] error
+[2023-05-14 15:47:36] INFO root fetch - main [MainThread]: End processing [wireprobe] error
+[2023-05-14 15:47:36] INFO root fetch - processPackages [flaretool]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 15:47:37] WARNING root fetch - processPackages [certora-cli-alpha-sitvanit-no-payable-bug]: Skipping, unable to determine old version
+[2023-05-14 15:47:37] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-sitvanit-no-payable-bug] error
+[2023-05-14 15:47:37] INFO root fetch - processPackages [SantorinAI]: New version: [1.1.2] Old Version: [1.1.1]
+[2023-05-14 15:47:37] INFO root fetch - processPackages [lilit]: New version: [1.2.1] Old Version: [1.2.0]
+[2023-05-14 15:47:37] INFO root fetch - processPackages [autokattis]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-05-14 15:47:37] INFO root fetch - processPackages [hordelib]: New version: [0.9.5] Old Version: [0.9.2]
+[2023-05-14 15:47:37] INFO root fetch - processPackages [flaretool]: executing diffoscope
+[2023-05-14 15:47:37] INFO root fetch - processPackages [flaretool]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/flaretool-0.1.8.tar.gz tmp/flaretool-0.1.9-py3-none-any.whl.zip --markdown 20230514/f/flaretool/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 15:47:37] INFO root fetch - processPackages [hordelib]: Downloading https://files.pythonhosted.org/packages/fd/a2/adcbb07401fbedfb5e142d1a138de62bf94227ad2e238ea5a5b6eb5033f4/hordelib-0.9.2.tar.gz
+[2023-05-14 15:47:37] INFO root fetch - processPackages [autokattis]: executing diffoscope
+[2023-05-14 15:47:37] INFO root fetch - processPackages [autokattis]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autokattis-1.4.1.tar.gz tmp/autokattis-1.4.2.tar.gz --markdown 20230514/a/autokattis/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-05-14 15:47:37] INFO root fetch - processPackages [SantorinAI]: Downloading https://files.pythonhosted.org/packages/59/7d/1fb6653d526546ed98055d123f719026c99628e541becf56d2176a5eb22e/SantorinAI-1.1.2.tar.gz
+[2023-05-14 15:47:37] INFO root fetch - processPackages [lilit]: Downloading https://files.pythonhosted.org/packages/98/b5/a5c2d0e20ec2512dc0c92cbe5e23d3f6deac7d397f7a25ecc2512a8a9adf/lilit-1.2.1.tar.gz
+[2023-05-14 15:47:37] INFO root fetch - processPackages [SantorinAI]: executing diffoscope
+[2023-05-14 15:47:37] INFO root fetch - processPackages [SantorinAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/SantorinAI-1.1.1.tar.gz tmp/SantorinAI-1.1.2.tar.gz --markdown 20230514/S/SantorinAI/1.1.1-1.1.2/diff.md --exclude *.pyd
+[2023-05-14 15:47:37] INFO root fetch - processPackages [lilit]: executing diffoscope
+[2023-05-14 15:47:37] INFO root fetch - processPackages [lilit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lilit-1.2.0.tar.gz tmp/lilit-1.2.1.tar.gz --markdown 20230514/l/lilit/1.2.0-1.2.1/diff.md --exclude *.pyd
+[2023-05-14 15:47:38] INFO root fetch - main [MainThread]: End processing [flaretool]: success
+[2023-05-14 15:47:38] INFO root fetch - main [MainThread]: End processing [autokattis]: success
+[2023-05-14 15:47:38] INFO root fetch - main [MainThread]: End processing [SantorinAI]: success
+[2023-05-14 15:47:38] INFO root fetch - main [MainThread]: End processing [lilit]: success
+[2023-05-14 15:47:38] INFO root fetch - processPackages [hordelib]: Downloading https://files.pythonhosted.org/packages/9c/6a/e948a22abe1306f081d00e441c84b24d63987802f65e7372d1c5dc75061a/hordelib-0.9.5.tar.gz
+[2023-05-14 15:47:40] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-05-14 15:47:40] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-0.9.2.tar.gz tmp/hordelib-0.9.5.tar.gz --markdown 20230514/h/hordelib/0.9.2-0.9.5/diff.md --exclude *.pyd
+[2023-05-14 15:47:49] INFO root fetch - main [MainThread]: End processing [hordelib]: success
+[2023-05-14 15:47:49] INFO root fetch - main [MainThread]: Store serial: [18097343]
