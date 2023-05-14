@@ -8840,3 +8840,33 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 19:30:21] INFO root fetch - main [MainThread]: End processing [pygim-common]: success
 [2023-05-14 19:30:22] INFO root fetch - main [MainThread]: End processing [pyadlml]: success
 [2023-05-14 19:30:22] INFO root fetch - main [MainThread]: Store serial: [18098741]
+[2023-05-14 19:35:26] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098741]
+[2023-05-14 19:35:31] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 19:35:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: chainlit
+[2023-05-14 19:35:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onvif-zeep-async
+[2023-05-14 19:35:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: labmate
+[2023-05-14 19:35:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cmake-build-extension
+[2023-05-14 19:35:31] INFO root fetch - processPackages [onvif-zeep-async]: New version: [3.1.7] Old Version: [3.1.6]
+[2023-05-14 19:35:31] INFO root fetch - processPackages [chainlit]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-14 19:35:32] INFO root fetch - processPackages [labmate]: New version: [0.6.1] Old Version: [0.6.0]
+[2023-05-14 19:35:32] INFO root fetch - processPackages [cmake-build-extension]: New version: [0.5.2.dev5] Old Version: [0.5.2.dev3]
+[2023-05-14 19:35:32] INFO root fetch - processPackages [onvif-zeep-async]: Downloading https://files.pythonhosted.org/packages/85/c1/473b8bf1a3dc6d4a54147d7ec35eec892a5ec163177a56c233d8c9b83715/onvif-zeep-async-3.1.6.tar.gz
+[2023-05-14 19:35:32] INFO root fetch - processPackages [chainlit]: Downloading https://files.pythonhosted.org/packages/e1/c2/8076db35c358d5300197af57be6ac06afe0efc20bfd50a147ceeb9e0c884/chainlit-0.1.0.tar.gz
+[2023-05-14 19:35:32] INFO root fetch - processPackages [cmake-build-extension]: Downloading https://files.pythonhosted.org/packages/bb/d7/953d9076ab738a2dbfdb6037af4bbbeb82cf46e4cf790b9ada8882a7c65b/cmake-build-extension-0.5.2.dev3.tar.gz
+[2023-05-14 19:35:32] INFO root fetch - processPackages [labmate]: Downloading https://files.pythonhosted.org/packages/a3/74/88f776034e367277626d1e7170045cc225c3022000d5dc55714381ee88e0/labmate-0.6.1.tar.gz
+[2023-05-14 19:35:32] INFO root fetch - processPackages [onvif-zeep-async]: Downloading https://files.pythonhosted.org/packages/4a/2e/039432fb63211019e556a35bcfaae416fc4b7dd12e974d4cd3ef8d34c1f0/onvif-zeep-async-3.1.7.tar.gz
+[2023-05-14 19:35:32] INFO root fetch - processPackages [chainlit]: Downloading https://files.pythonhosted.org/packages/3f/21/aa00c8d3374877a7184580b6aed2017bcf245d705ea56dd9cb0efbe79f7a/chainlit-0.1.1.tar.gz
+[2023-05-14 19:35:32] INFO root fetch - processPackages [cmake-build-extension]: Downloading https://files.pythonhosted.org/packages/77/4c/6ca4cbb7960482771fcebde12f8a4032c86a844575b146165c805a6064e9/cmake-build-extension-0.5.2.dev5.tar.gz
+[2023-05-14 19:35:32] INFO root fetch - processPackages [onvif-zeep-async]: executing diffoscope
+[2023-05-14 19:35:32] INFO root fetch - processPackages [onvif-zeep-async]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onvif-zeep-async-3.1.6.tar.gz tmp/onvif-zeep-async-3.1.7.tar.gz --markdown 20230514/o/onvif-zeep-async/3.1.6-3.1.7/diff.md --exclude *.pyd
+[2023-05-14 19:35:32] INFO root fetch - processPackages [chainlit]: executing diffoscope
+[2023-05-14 19:35:32] INFO root fetch - processPackages [chainlit]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/chainlit-0.1.0.tar.gz tmp/chainlit-0.1.1.tar.gz --markdown 20230514/c/chainlit/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-14 19:35:32] INFO root fetch - processPackages [labmate]: executing diffoscope
+[2023-05-14 19:35:32] INFO root fetch - processPackages [labmate]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/labmate-0.6.0.tar.gz tmp/labmate-0.6.1.tar.gz --markdown 20230514/l/labmate/0.6.0-0.6.1/diff.md --exclude *.pyd
+[2023-05-14 19:35:32] INFO root fetch - processPackages [cmake-build-extension]: executing diffoscope
+[2023-05-14 19:35:32] INFO root fetch - processPackages [cmake-build-extension]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cmake-build-extension-0.5.2.dev3.tar.gz tmp/cmake-build-extension-0.5.2.dev5.tar.gz --markdown 20230514/c/cmake-build-extension/0.5.2.dev3-0.5.2.dev5/diff.md --exclude *.pyd
+[2023-05-14 19:35:33] INFO root fetch - main [MainThread]: End processing [chainlit]: success
+[2023-05-14 19:35:33] INFO root fetch - main [MainThread]: End processing [cmake-build-extension]: success
+[2023-05-14 19:35:33] INFO root fetch - main [MainThread]: End processing [labmate]: success
+[2023-05-14 19:35:34] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
+[2023-05-14 19:35:34] INFO root fetch - main [MainThread]: Store serial: [18098753]
