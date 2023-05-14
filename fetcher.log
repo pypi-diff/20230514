@@ -759,3 +759,31 @@
 [2023-05-14 01:59:42] INFO root fetch - main [MainThread]: End processing [attune-project-api]: success
 [2023-05-14 01:59:45] INFO root fetch - main [MainThread]: End processing [geocontour]: success
 [2023-05-14 01:59:45] INFO root fetch - main [MainThread]: Store serial: [18093884]
+[2023-05-14 02:04:48] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18093884]
+[2023-05-14 02:04:53] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 02:04:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: shellcrafter
+[2023-05-14 02:04:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: torchdatasets-nightly
+[2023-05-14 02:04:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cshelph
+[2023-05-14 02:04:53] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mct-nightly
+[2023-05-14 02:04:53] INFO root fetch - processPackages [cshelph]: New version: [2.8.0] Old Version: [2.7.0]
+[2023-05-14 02:04:53] INFO root fetch - processPackages [shellcrafter]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-14 02:04:53] INFO root fetch - processPackages [torchdatasets-nightly]: New version: [1683936161] Old Version: [1683849796]
+[2023-05-14 02:04:53] INFO root fetch - processPackages [mct-nightly]: New version: [1.8.0.9052023.post348] Old Version: [1.8.0.9042023.post411]
+[2023-05-14 02:04:53] INFO root fetch - processPackages [cshelph]: Downloading https://files.pythonhosted.org/packages/d4/2b/152cff14448acf16dae93d99d9f4d62558a37d114975867becb0f146a262/cshelph-2.7.0.tar.gz
+[2023-05-14 02:04:53] INFO root fetch - processPackages [mct-nightly]: executing diffoscope
+[2023-05-14 02:04:53] INFO root fetch - processPackages [mct-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mct-nightly-1.8.0.9042023.post411.tar.gz tmp/mct-nightly-1.8.0.9052023.post348.tar.gz --markdown 20230514/m/mct-nightly/1.8.0.9042023.post411-1.8.0.9052023.post348/diff.md --exclude *.pyd
+[2023-05-14 02:04:53] INFO root fetch - processPackages [shellcrafter]: Downloading https://files.pythonhosted.org/packages/15/e2/37f224f4b58920c939c3cd16545a4988f2e138ca26dae630345168addf05/shellcrafter-1.0.3.tar.gz
+[2023-05-14 02:04:53] INFO root fetch - processPackages [torchdatasets-nightly]: Downloading https://files.pythonhosted.org/packages/a0/1c/e2b3a7b0f4ed67046a21246f134b27d0c9cca9f004299e183b5f28fbb0a3/torchdatasets-nightly-1683936161.tar.gz
+[2023-05-14 02:04:54] INFO root fetch - processPackages [torchdatasets-nightly]: executing diffoscope
+[2023-05-14 02:04:54] INFO root fetch - processPackages [torchdatasets-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/torchdatasets-nightly-1683849796.tar.gz tmp/torchdatasets-nightly-1683936161.tar.gz --markdown 20230514/t/torchdatasets-nightly/1683849796-1683936161/diff.md --exclude *.pyd
+[2023-05-14 02:04:54] INFO root fetch - processPackages [cshelph]: Downloading https://files.pythonhosted.org/packages/6d/ed/60a03b1c141333017fcfdbb6ed888285dfafd7457e357fddf94dcdc3f669/cshelph-2.8.0.tar.gz
+[2023-05-14 02:04:54] INFO root fetch - processPackages [shellcrafter]: Downloading https://files.pythonhosted.org/packages/20/fd/63768aa380e4d55e825b88578b5d295efe0b38865d49c39989d790eca2be/shellcrafter-1.0.4.tar.gz
+[2023-05-14 02:04:54] INFO root fetch - processPackages [shellcrafter]: executing diffoscope
+[2023-05-14 02:04:54] INFO root fetch - processPackages [shellcrafter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shellcrafter-1.0.3.tar.gz tmp/shellcrafter-1.0.4.tar.gz --markdown 20230514/s/shellcrafter/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-14 02:04:54] INFO root fetch - processPackages [cshelph]: executing diffoscope
+[2023-05-14 02:04:54] INFO root fetch - processPackages [cshelph]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cshelph-2.7.0.tar.gz tmp/cshelph-2.8.0.tar.gz --markdown 20230514/c/cshelph/2.7.0-2.8.0/diff.md --exclude *.pyd
+[2023-05-14 02:04:55] INFO root fetch - main [MainThread]: End processing [torchdatasets-nightly]: success
+[2023-05-14 02:04:55] INFO root fetch - main [MainThread]: End processing [shellcrafter]: success
+[2023-05-14 02:04:55] INFO root fetch - main [MainThread]: End processing [cshelph]: success
+[2023-05-14 02:05:03] INFO root fetch - main [MainThread]: End processing [mct-nightly]: success
+[2023-05-14 02:05:03] INFO root fetch - main [MainThread]: Store serial: [18093896]
