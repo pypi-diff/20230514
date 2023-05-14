@@ -2493,3 +2493,12 @@
 [2023-05-14 06:20:22] INFO root fetch - processPackages [django-mcq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-mcq-0.2.tar.gz tmp/django-mcq-0.3.tar.gz --markdown 20230514/d/django-mcq/0.2-0.3/diff.md --exclude *.pyd
 [2023-05-14 06:20:23] INFO root fetch - main [MainThread]: End processing [django-mcq]: success
 [2023-05-14 06:20:23] INFO root fetch - main [MainThread]: Store serial: [18094915]
+[2023-05-14 06:25:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094915]
+[2023-05-14 06:25:32] INFO root fetch - main [MainThread]: Found 1 changed packages
+[2023-05-14 06:25:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: aioqui
+[2023-05-14 06:25:32] INFO root fetch - processPackages [aioqui]: New version: [1.0.5] Old Version: [1.0.3]
+[2023-05-14 06:25:32] INFO root fetch - processPackages [aioqui]: Downloading https://files.pythonhosted.org/packages/f8/33/38b876d89af6f32dfed0b577079c0ae7c68e9c61ee9c997093ec5af67424/aioqui-1.0.5.tar.gz
+[2023-05-14 06:25:32] INFO root fetch - processPackages [aioqui]: executing diffoscope
+[2023-05-14 06:25:32] INFO root fetch - processPackages [aioqui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioqui-1.0.3.tar.gz tmp/aioqui-1.0.5.tar.gz --markdown 20230514/a/aioqui/1.0.3-1.0.5/diff.md --exclude *.pyd
+[2023-05-14 06:25:35] INFO root fetch - main [MainThread]: End processing [aioqui]: success
+[2023-05-14 06:25:35] INFO root fetch - main [MainThread]: Store serial: [18094920]
