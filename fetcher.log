@@ -10188,3 +10188,74 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 21:43:03] INFO root fetch - main [MainThread]: End processing [airlift]: success
 [2023-05-14 21:43:04] INFO root fetch - main [MainThread]: End processing [nglui]: success
 [2023-05-14 21:43:04] INFO root fetch - main [MainThread]: Store serial: [18099582]
+[2023-05-14 21:48:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18099582]
+[2023-05-14 21:48:14] INFO root fetch - main [MainThread]: Found 12 changed packages
+[2023-05-14 21:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: yokkaichi
+[2023-05-14 21:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: leuci-pol
+[2023-05-14 21:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: hordelib
+[2023-05-14 21:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: xtrack
+[2023-05-14 21:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: get-file-type
+[2023-05-14 21:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: PatryksAutoAI
+[2023-05-14 21:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: be-micropython-nextion
+[2023-05-14 21:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: constrainedlr
+[2023-05-14 21:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: sphinxext-altair
+[2023-05-14 21:48:14] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: leuci-map
+[2023-05-14 21:48:14] INFO root fetch - processPackages [yokkaichi]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-05-14 21:48:14] INFO root fetch - processPackages [xtrack]: New version: [0.9.5] Old Version: [0.9.4]
+[2023-05-14 21:48:14] INFO root fetch - processPackages [sphinxext-altair]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-14 21:48:14] INFO root fetch - processPackages [leuci-pol]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 21:48:14] INFO root fetch - processPackages [be-micropython-nextion]: New version: [0.15.2] Old Version: [0.15.1]
+[2023-05-14 21:48:14] WARNING root fetch - processPackages [constrainedlr]: Skipping, unable to determine old version
+[2023-05-14 21:48:14] INFO root fetch - processPackages [constrainedlr]: Start processing: bytez
+[2023-05-14 21:48:14] INFO root fetch - main [MainThread]: End processing [constrainedlr] error
+[2023-05-14 21:48:14] WARNING root fetch - processPackages [get-file-type]: Skipping, unable to determine old version
+[2023-05-14 21:48:14] INFO root fetch - processPackages [get-file-type]: Start processing: async-websocket-client
+[2023-05-14 21:48:14] INFO root fetch - main [MainThread]: End processing [get-file-type] error
+[2023-05-14 21:48:14] INFO root fetch - processPackages [hordelib]: New version: [1.0.2] Old Version: [1.0.1]
+[2023-05-14 21:48:14] INFO root fetch - processPackages [PatryksAutoAI]: New version: [0.6.0] Old Version: [0.5.9]
+[2023-05-14 21:48:14] INFO root fetch - processPackages [leuci-map]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 21:48:14] INFO root fetch - processPackages [bytez]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 21:48:14] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-14 21:48:14] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.8.tar.gz tmp/bytez-0.1.9.tar.gz --markdown 20230514/b/bytez/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 21:48:14] INFO root fetch - processPackages [PatryksAutoAI]: Downloading https://files.pythonhosted.org/packages/be/6d/b075b84d1483a149cf8b2971bf0f33ac0dc9b1a93f81953fa690a3cc2e43/PatryksAutoAI-0.6.0.tar.gz
+[2023-05-14 21:48:14] INFO root fetch - processPackages [hordelib]: Downloading https://files.pythonhosted.org/packages/8f/0a/438306d029e9e5a2a5c05db0e5ef01c63c2d96d6b36686d5a7830d152ad4/hordelib-1.0.2.tar.gz
+[2023-05-14 21:48:14] INFO root fetch - processPackages [sphinxext-altair]: Downloading https://files.pythonhosted.org/packages/ed/8b/26d90266e3432e0c78212a9fd53830ef276b63c4b857fec1c61c14534a45/sphinxext_altair-0.1.0.tar.gz
+[2023-05-14 21:48:14] INFO root fetch - processPackages [be-micropython-nextion]: Downloading https://files.pythonhosted.org/packages/6b/da/cbf64626651d4d4cdcfdc3ea4462e14cff610164bd443f9aa605666035ef/be-micropython-nextion-0.15.2.tar.gz
+[2023-05-14 21:48:14] INFO root fetch - processPackages [leuci-map]: Downloading https://files.pythonhosted.org/packages/d7/f9/d814c86bcb6551942e72559977ffd7788e9a2d159c055fc5698defcc15da/leuci-map-0.1.8.tar.gz
+[2023-05-14 21:48:14] INFO root fetch - processPackages [xtrack]: Downloading https://files.pythonhosted.org/packages/8a/c3/e19b3d04ca1e27256466963f0323b5925c96b787f5066e5229a7c6b8db3a/xtrack-0.9.4.tar.gz
+[2023-05-14 21:48:14] INFO root fetch - processPackages [be-micropython-nextion]: executing diffoscope
+[2023-05-14 21:48:14] INFO root fetch - processPackages [be-micropython-nextion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/be-micropython-nextion-0.15.1.tar.gz tmp/be-micropython-nextion-0.15.2.tar.gz --markdown 20230514/b/be-micropython-nextion/0.15.1-0.15.2/diff.md --exclude *.pyd
+[2023-05-14 21:48:14] INFO root fetch - processPackages [leuci-pol]: executing diffoscope
+[2023-05-14 21:48:14] INFO root fetch - processPackages [leuci-pol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leuci-pol-0.0.8.tar.gz tmp/leuci-pol-0.0.9.tar.gz --markdown 20230514/l/leuci-pol/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 21:48:14] INFO root fetch - processPackages [PatryksAutoAI]: executing diffoscope
+[2023-05-14 21:48:14] INFO root fetch - processPackages [PatryksAutoAI]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/PatryksAutoAI-0.5.9.tar.gz tmp/PatryksAutoAI-0.6.0.tar.gz --markdown 20230514/P/PatryksAutoAI/0.5.9-0.6.0/diff.md --exclude *.pyd
+[2023-05-14 21:48:14] INFO root fetch - processPackages [hordelib]: executing diffoscope
+[2023-05-14 21:48:14] INFO root fetch - processPackages [hordelib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hordelib-1.0.1.tar.gz tmp/hordelib-1.0.2.tar.gz --markdown 20230514/h/hordelib/1.0.1-1.0.2/diff.md --exclude *.pyd
+[2023-05-14 21:48:14] INFO root fetch - processPackages [async-websocket-client]: New version: [0.0.0a6] Old Version: [0.0.0a5]
+[2023-05-14 21:48:14] INFO root fetch - processPackages [yokkaichi]: Downloading https://files.pythonhosted.org/packages/88/77/d076ed18daf3eb489d6f2d44e34d93e95d971f3249c8b171ec0a8cc8cc01/yokkaichi-1.4.2.tar.gz
+[2023-05-14 21:48:15] INFO root fetch - processPackages [yokkaichi]: executing diffoscope
+[2023-05-14 21:48:15] INFO root fetch - processPackages [yokkaichi]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/yokkaichi-1.4.1.tar.gz tmp/yokkaichi-1.4.2.tar.gz --markdown 20230514/y/yokkaichi/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-05-14 21:48:15] INFO root fetch - processPackages [sphinxext-altair]: Downloading https://files.pythonhosted.org/packages/88/c6/f0d9a0be818b9bf6afe35a4ebd8ff423b6576d78c3d8f192ec3673f6b087/sphinxext_altair-0.1.1.tar.gz
+[2023-05-14 21:48:15] INFO root fetch - processPackages [sphinxext-altair]: executing diffoscope
+[2023-05-14 21:48:15] INFO root fetch - processPackages [sphinxext-altair]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sphinxext_altair-0.1.0.tar.gz tmp/sphinxext_altair-0.1.1.tar.gz --markdown 20230514/s/sphinxext-altair/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-14 21:48:15] INFO root fetch - processPackages [async-websocket-client]: Downloading https://files.pythonhosted.org/packages/16/6a/a49b4b64421858ab4731431558309c502a5b2fa398dfed804caa5827d533/async_websocket_client-0.0.0a5.tar.gz
+[2023-05-14 21:48:15] INFO root fetch - processPackages [leuci-map]: Downloading https://files.pythonhosted.org/packages/ef/bd/8215fa42b8399ed3a3bbe6d8cb906b7c7f4767bbb786d85e8172c4dbf877/leuci-map-0.1.9.tar.gz
+[2023-05-14 21:48:15] INFO root fetch - processPackages [xtrack]: Downloading https://files.pythonhosted.org/packages/46/38/dad135658362d6eec72747f7f0ae41cf43b0d0fb26e948ac142a49dfcec8/xtrack-0.9.5.tar.gz
+[2023-05-14 21:48:15] INFO root fetch - processPackages [leuci-map]: executing diffoscope
+[2023-05-14 21:48:15] INFO root fetch - processPackages [leuci-map]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leuci-map-0.1.8.tar.gz tmp/leuci-map-0.1.9.tar.gz --markdown 20230514/l/leuci-map/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 21:48:15] INFO root fetch - processPackages [xtrack]: executing diffoscope
+[2023-05-14 21:48:15] INFO root fetch - processPackages [xtrack]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/xtrack-0.9.4.tar.gz tmp/xtrack-0.9.5.tar.gz --markdown 20230514/x/xtrack/0.9.4-0.9.5/diff.md --exclude *.pyd
+[2023-05-14 21:48:15] INFO root fetch - processPackages [async-websocket-client]: Downloading https://files.pythonhosted.org/packages/3e/db/70ac580bce05e16992c7b85b68afc47a740f8d1255f618883e498e7b3eb0/async_websocket_client-0.0.0a6.tar.gz
+[2023-05-14 21:48:15] INFO root fetch - processPackages [async-websocket-client]: executing diffoscope
+[2023-05-14 21:48:15] INFO root fetch - processPackages [async-websocket-client]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/async_websocket_client-0.0.0a5.tar.gz tmp/async_websocket_client-0.0.0a6.tar.gz --markdown 20230514/a/async-websocket-client/0.0.0a5-0.0.0a6/diff.md --exclude *.pyd
+[2023-05-14 21:48:16] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-14 21:48:16] INFO root fetch - main [MainThread]: End processing [sphinxext-altair]: success
+[2023-05-14 21:48:16] INFO root fetch - main [MainThread]: End processing [yokkaichi]: success
+[2023-05-14 21:48:16] INFO root fetch - main [MainThread]: End processing [leuci-pol]: success
+[2023-05-14 21:48:16] INFO root fetch - main [MainThread]: End processing [leuci-map]: success
+[2023-05-14 21:48:16] INFO root fetch - main [MainThread]: End processing [be-micropython-nextion]: success
+[2023-05-14 21:48:16] INFO root fetch - main [MainThread]: End processing [async-websocket-client]: success
+[2023-05-14 21:48:17] INFO root fetch - main [MainThread]: End processing [PatryksAutoAI]: success
+[2023-05-14 21:48:27] INFO root fetch - main [MainThread]: End processing [hordelib]: success
+[2023-05-14 21:48:51] INFO root fetch - main [MainThread]: End processing [xtrack]: success
+[2023-05-14 21:48:51] INFO root fetch - main [MainThread]: Store serial: [18099620]
