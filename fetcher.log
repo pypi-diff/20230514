@@ -1920,3 +1920,44 @@
 [2023-05-14 04:29:49] INFO root fetch - main [MainThread]: End processing [torchkeras] error
 [2023-05-14 04:29:56] INFO root fetch - main [MainThread]: End processing [monailabel-weekly]: success
 [2023-05-14 04:29:56] INFO root fetch - main [MainThread]: Store serial: [18094518]
+[2023-05-14 04:35:00] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094518]
+[2023-05-14 04:35:05] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 04:35:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: iam-actions
+[2023-05-14 04:35:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk8s-plus-26
+[2023-05-14 04:35:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: qunqunpdf
+[2023-05-14 04:35:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: onnx2tf
+[2023-05-14 04:35:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk8s-plus-25
+[2023-05-14 04:35:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyalphasign
+[2023-05-14 04:35:05] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: rapidocr-web
+[2023-05-14 04:35:05] INFO root fetch - processPackages [iam-actions]: New version: [1.2.20230514] Old Version: [1.2.20230513]
+[2023-05-14 04:35:05] INFO root fetch - processPackages [cdk8s-plus-26]: New version: [2.3.9] Old Version: [2.3.8]
+[2023-05-14 04:35:05] INFO root fetch - processPackages [qunqunpdf]: New version: [1.2] Old Version: [1.1]
+[2023-05-14 04:35:05] INFO root fetch - processPackages [rapidocr-web]: New version: [0.1.5] Old Version: [0.1.4]
+[2023-05-14 04:35:05] WARNING root fetch - processPackages [pyalphasign]: Skipping, unable to determine old version
+[2023-05-14 04:35:05] INFO root fetch - main [MainThread]: End processing [pyalphasign] error
+[2023-05-14 04:35:05] INFO root fetch - processPackages [cdk8s-plus-25]: New version: [2.7.9] Old Version: [2.7.8]
+[2023-05-14 04:35:05] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-14 04:35:05] INFO root fetch - processPackages [cdk8s-plus-25]: executing diffoscope
+[2023-05-14 04:35:05] INFO root fetch - processPackages [cdk8s-plus-25]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-25-2.7.8.tar.gz tmp/cdk8s-plus-25-2.7.9.tar.gz --markdown 20230514/c/cdk8s-plus-25/2.7.8-2.7.9/diff.md --exclude *.pyd
+[2023-05-14 04:35:05] INFO root fetch - processPackages [rapidocr-web]: Downloading https://files.pythonhosted.org/packages/af/77/b5eff8456f7c80ca78465a14333394183ab3cd667ed1867da04966fcf12d/rapidocr_web-0.1.4-py3-none-any.whl
+[2023-05-14 04:35:05] INFO root fetch - processPackages [qunqunpdf]: Downloading https://files.pythonhosted.org/packages/5a/f2/52c5819a973fc9d289fe261bf9a3310fcc9871019b85b2790f158a321c16/qunqunpdf-1.1.tar.gz
+[2023-05-14 04:35:05] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2023-05-14 04:35:05] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.8.tar.gz tmp/onnx2tf-1.9.9.tar.gz --markdown 20230514/o/onnx2tf/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-14 04:35:05] INFO root fetch - processPackages [iam-actions]: Downloading https://files.pythonhosted.org/packages/e0/ad/051326bd6bcfa853e3cf16684b3069e1f22b9027fbd50be6c4133179f7c3/iam_actions-1.2.20230514.tar.gz
+[2023-05-14 04:35:05] INFO root fetch - processPackages [cdk8s-plus-26]: executing diffoscope
+[2023-05-14 04:35:05] INFO root fetch - processPackages [cdk8s-plus-26]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-plus-26-2.3.8.tar.gz tmp/cdk8s-plus-26-2.3.9.tar.gz --markdown 20230514/c/cdk8s-plus-26/2.3.8-2.3.9/diff.md --exclude *.pyd
+[2023-05-14 04:35:05] INFO root fetch - processPackages [iam-actions]: executing diffoscope
+[2023-05-14 04:35:05] INFO root fetch - processPackages [iam-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/iam_actions-1.2.20230513.tar.gz tmp/iam_actions-1.2.20230514.tar.gz --markdown 20230514/i/iam-actions/1.2.20230513-1.2.20230514/diff.md --exclude *.pyd
+[2023-05-14 04:35:05] INFO root fetch - processPackages [rapidocr-web]: Downloading https://files.pythonhosted.org/packages/aa/c6/384ba1f893a1467c284ba2fb0ce3f4547e1b586d197be5c1e69285e2c331/rapidocr_web-0.1.5-py3-none-any.whl
+[2023-05-14 04:35:05] INFO root fetch - processPackages [qunqunpdf]: Downloading https://files.pythonhosted.org/packages/d2/7b/b0df2b10aef851180aefa281bfd34a77b94121b56492188307dfa6e28ab6/qunqunpdf-1.2.tar.gz
+[2023-05-14 04:35:05] INFO root fetch - processPackages [rapidocr-web]: executing diffoscope
+[2023-05-14 04:35:05] INFO root fetch - processPackages [rapidocr-web]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapidocr_web-0.1.4-py3-none-any.whl.zip tmp/rapidocr_web-0.1.5-py3-none-any.whl.zip --markdown 20230514/r/rapidocr-web/0.1.4-0.1.5/diff.md --exclude *.pyd
+[2023-05-14 04:35:06] INFO root fetch - processPackages [qunqunpdf]: executing diffoscope
+[2023-05-14 04:35:06] INFO root fetch - processPackages [qunqunpdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qunqunpdf-1.1.tar.gz tmp/qunqunpdf-1.2.tar.gz --markdown 20230514/q/qunqunpdf/1.1-1.2/diff.md --exclude *.pyd
+[2023-05-14 04:35:06] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-25]: success
+[2023-05-14 04:35:07] INFO root fetch - main [MainThread]: End processing [rapidocr-web]: success
+[2023-05-14 04:35:07] INFO root fetch - main [MainThread]: End processing [cdk8s-plus-26]: success
+[2023-05-14 04:35:07] INFO root fetch - main [MainThread]: End processing [qunqunpdf]: success
+[2023-05-14 04:35:07] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2023-05-14 04:35:08] INFO root fetch - main [MainThread]: End processing [iam-actions]: success
+[2023-05-14 04:35:08] INFO root fetch - main [MainThread]: Store serial: [18094549]
