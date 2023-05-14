@@ -2722,3 +2722,48 @@
 [2023-05-14 07:07:37] INFO root fetch - main [MainThread]: End processing [tflite-model-maker-nightly]: success
 [2023-05-14 07:10:26] INFO root fetch - main [MainThread]: End processing [multi-model-server]: success
 [2023-05-14 07:10:26] INFO root fetch - main [MainThread]: Store serial: [18095043]
+[2023-05-14 07:15:30] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095043]
+[2023-05-14 07:15:34] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 07:15:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: selenextra
+[2023-05-14 07:15:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pylabel
+[2023-05-14 07:15:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: rapid-pe
+[2023-05-14 07:15:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aioqui
+[2023-05-14 07:15:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyfileindex
+[2023-05-14 07:15:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: shopcloud-django-authenticator
+[2023-05-14 07:15:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: octodns-bind
+[2023-05-14 07:15:34] INFO root fetch - processPackages [aioqui]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-14 07:15:34] INFO root fetch - processPackages [selenextra]: New version: [1.0.4] Old Version: [1.0.3]
+[2023-05-14 07:15:34] INFO root fetch - processPackages [pyfileindex]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 07:15:34] INFO root fetch - processPackages [octodns-bind]: New version: [0.0.3] Old Version: [0.0.2]
+[2023-05-14 07:15:34] INFO root fetch - processPackages [shopcloud-django-authenticator]: New version: [1.9.0] Old Version: [1.8.0]
+[2023-05-14 07:15:34] INFO root fetch - processPackages [pylabel]: New version: [0.1a12] Old Version: [0.1.9]
+[2023-05-14 07:15:34] INFO root fetch - processPackages [rapid-pe]: New version: [0.1.1.dev20230514] Old Version: [0.1.1.dev20230513]
+[2023-05-14 07:15:35] INFO root fetch - processPackages [shopcloud-django-authenticator]: executing diffoscope
+[2023-05-14 07:15:35] INFO root fetch - processPackages [shopcloud-django-authenticator]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/shopcloud-django-authenticator-1.8.0.tar.gz tmp/shopcloud-django-authenticator-1.9.0.tar.gz --markdown 20230514/s/shopcloud-django-authenticator/1.8.0-1.9.0/diff.md --exclude *.pyd
+[2023-05-14 07:15:35] INFO root fetch - processPackages [octodns-bind]: Downloading https://files.pythonhosted.org/packages/a8/2c/7b9394fd9396f255955dda2fae24f98ec4e5337a712411e77466cb9ea5f7/octodns-bind-0.0.2.tar.gz
+[2023-05-14 07:15:35] INFO root fetch - processPackages [pyfileindex]: executing diffoscope
+[2023-05-14 07:15:35] INFO root fetch - processPackages [pyfileindex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfileindex-0.0.8.tar.gz tmp/pyfileindex-0.0.9.tar.gz --markdown 20230514/p/pyfileindex/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 07:15:35] INFO root fetch - processPackages [aioqui]: Downloading https://files.pythonhosted.org/packages/38/44/be41c54645c3a5c9eaba043368b11e83deefb89d41b36e100a5f21643777/aioqui-1.0.9.tar.gz
+[2023-05-14 07:15:35] INFO root fetch - processPackages [pylabel]: Downloading https://files.pythonhosted.org/packages/72/a5/98b5111370df7ce6263ebbe58d4637317f6b6910a0416ba5247c7d597dcf/pylabel-0.1.9.tar.gz
+[2023-05-14 07:15:35] INFO root fetch - processPackages [selenextra]: Downloading https://files.pythonhosted.org/packages/4a/8f/0ceb4a2b20d2f0e6deff76505903d7292b162a1d4de4cbccf908c0b0cf14/selenextra-1.0.4.tar.gz
+[2023-05-14 07:15:35] INFO root fetch - processPackages [selenextra]: executing diffoscope
+[2023-05-14 07:15:35] INFO root fetch - processPackages [selenextra]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/selenextra-1.0.3.tar.gz tmp/selenextra-1.0.4.tar.gz --markdown 20230514/s/selenextra/1.0.3-1.0.4/diff.md --exclude *.pyd
+[2023-05-14 07:15:35] INFO root fetch - processPackages [aioqui]: executing diffoscope
+[2023-05-14 07:15:35] INFO root fetch - processPackages [aioqui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioqui-1.0.8.tar.gz tmp/aioqui-1.0.9.tar.gz --markdown 20230514/a/aioqui/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-14 07:15:35] INFO root fetch - processPackages [rapid-pe]: Downloading https://files.pythonhosted.org/packages/92/aa/f4f9835775dd67f0cbf9a1c179610f682ba8ce2450b7a9d5ace005242720/rapid_pe-0.1.1.dev20230514.tar.gz
+[2023-05-14 07:15:35] INFO root fetch - processPackages [pylabel]: Downloading https://files.pythonhosted.org/packages/05/6a/002b3a9216c113eead172a41914d74e6b73a7f5a9d7e8675195698e22079/pylabel-0.1a12.tar.gz
+[2023-05-14 07:15:35] INFO root fetch - processPackages [octodns-bind]: Downloading https://files.pythonhosted.org/packages/de/73/37b2e5525191b678abea441bc2fa24f8b637955ace711dcde3903710e463/octodns-bind-0.0.3.tar.gz
+[2023-05-14 07:15:35] INFO root fetch - processPackages [rapid-pe]: executing diffoscope
+[2023-05-14 07:15:35] INFO root fetch - processPackages [rapid-pe]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/rapid_pe-0.1.1.dev20230513.tar.gz tmp/rapid_pe-0.1.1.dev20230514.tar.gz --markdown 20230514/r/rapid-pe/0.1.1.dev20230513-0.1.1.dev20230514/diff.md --exclude *.pyd
+[2023-05-14 07:15:35] INFO root fetch - processPackages [pylabel]: executing diffoscope
+[2023-05-14 07:15:35] INFO root fetch - processPackages [pylabel]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pylabel-0.1.9.tar.gz tmp/pylabel-0.1a12.tar.gz --markdown 20230514/p/pylabel/0.1.9-0.1a12/diff.md --exclude *.pyd
+[2023-05-14 07:15:35] INFO root fetch - processPackages [octodns-bind]: executing diffoscope
+[2023-05-14 07:15:35] INFO root fetch - processPackages [octodns-bind]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/octodns-bind-0.0.2.tar.gz tmp/octodns-bind-0.0.3.tar.gz --markdown 20230514/o/octodns-bind/0.0.2-0.0.3/diff.md --exclude *.pyd
+[2023-05-14 07:15:36] INFO root fetch - main [MainThread]: End processing [pyfileindex]: success
+[2023-05-14 07:15:36] INFO root fetch - main [MainThread]: End processing [shopcloud-django-authenticator]: success
+[2023-05-14 07:15:36] INFO root fetch - main [MainThread]: End processing [pylabel]: success
+[2023-05-14 07:15:36] INFO root fetch - main [MainThread]: End processing [selenextra]: success
+[2023-05-14 07:15:36] INFO root fetch - main [MainThread]: End processing [octodns-bind]: success
+[2023-05-14 07:15:36] INFO root fetch - main [MainThread]: End processing [rapid-pe]: success
+[2023-05-14 07:15:39] INFO root fetch - main [MainThread]: End processing [aioqui]: success
+[2023-05-14 07:15:39] INFO root fetch - main [MainThread]: Store serial: [18095074]
