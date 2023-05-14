@@ -2912,3 +2912,84 @@
 [2023-05-14 07:52:30] INFO root fetch - main [MainThread]: End processing [nonebot-plugin-bilibilibot]: success
 [2023-05-14 07:53:09] INFO root fetch - main [MainThread]: End processing [checkov]: success
 [2023-05-14 07:53:09] INFO root fetch - main [MainThread]: Store serial: [18095157]
+[2023-05-14 07:58:13] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095157]
+[2023-05-14 07:58:18] INFO root fetch - main [MainThread]: Found 13 changed packages
+[2023-05-14 07:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: genius-chatbot
+[2023-05-14 07:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: emr-sfn-waiter
+[2023-05-14 07:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: media-manager
+[2023-05-14 07:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tvdcn
+[2023-05-14 07:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: autosend
+[2023-05-14 07:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pyvantage
+[2023-05-14 07:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: spatialgeometry
+[2023-05-14 07:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: gkjzjh146
+[2023-05-14 07:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: html2notion
+[2023-05-14 07:58:18] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: e6data-python-connector
+[2023-05-14 07:58:18] INFO root fetch - processPackages [autosend]: New version: [0.0.2] Old Version: [0.0.1]
+[2023-05-14 07:58:18] INFO root fetch - processPackages [genius-chatbot]: New version: [0.5.0] Old Version: [0.4.0]
+[2023-05-14 07:58:18] INFO root fetch - processPackages [emr-sfn-waiter]: New version: [0.0.1] Old Version: [0.0.0]
+[2023-05-14 07:58:18] WARNING root fetch - processPackages [tvdcn]: Skipping, unable to determine old version
+[2023-05-14 07:58:18] INFO root fetch - processPackages [tvdcn]: Start processing: bridgecrew
+[2023-05-14 07:58:18] INFO root fetch - main [MainThread]: End processing [tvdcn] error
+[2023-05-14 07:58:18] INFO root fetch - processPackages [e6data-python-connector]: New version: [1.0.3] Old Version: [1.0.2]
+[2023-05-14 07:58:18] INFO root fetch - processPackages [media-manager]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-14 07:58:18] INFO root fetch - processPackages [spatialgeometry]: New version: [1.1.0] Old Version: [1.0.3]
+[2023-05-14 07:58:18] INFO root fetch - processPackages [gkjzjh146]: New version: [1.4] Old Version: [1.3]
+[2023-05-14 07:58:18] INFO root fetch - processPackages [pyvantage]: New version: [0.0.48] Old Version: [0.0.47]
+[2023-05-14 07:58:18] INFO root fetch - processPackages [html2notion]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 07:58:18] INFO root fetch - processPackages [genius-chatbot]: Downloading https://files.pythonhosted.org/packages/4e/c5/ed9aa1f82d72b3ff7fbeaca46a2957035a7f354e43bf7ef58b9da128a44f/genius_chatbot-0.4.0-py2.py3-none-any.whl
+[2023-05-14 07:58:18] INFO root fetch - processPackages [autosend]: Downloading https://files.pythonhosted.org/packages/13/4f/4b1d973003fcbe20d6d200754eb68552822464617a5c7df64c81aa4918d0/autosend-0.0.1.win-amd64.zip
+[2023-05-14 07:58:18] INFO root fetch - processPackages [e6data-python-connector]: Downloading https://files.pythonhosted.org/packages/47/4f/0a3698cd28dcbed1f13de5e0540f9be13cc70afafd286409b9a952f5730d/e6data-python-connector-1.0.2.tar.gz
+[2023-05-14 07:58:18] INFO root fetch - processPackages [emr-sfn-waiter]: Downloading https://files.pythonhosted.org/packages/5e/b7/88335fae971bae0421d3ffc32b3007d058405b366666958f7bc69329a174/emr-sfn-waiter-0.0.0.tar.gz
+[2023-05-14 07:58:18] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/75/11/acc8a436463477db369c803d9007e03acdd0b43a677cd0cbb78b7ea5b3bb/media_manager-0.8.0-py2.py3-none-any.whl
+[2023-05-14 07:58:18] INFO root fetch - processPackages [gkjzjh146]: Downloading https://files.pythonhosted.org/packages/7a/5e/45a1aa5aab7c609c739dd0f4f411a9dec42e241d21d5aee52aa570c7e4ce/gkjzjh146-1.4.tar.gz
+[2023-05-14 07:58:18] INFO root fetch - processPackages [pyvantage]: Downloading https://files.pythonhosted.org/packages/63/d0/835faa5b769d3c0b4ec938c67c964b8c3ac5e7a9aa1c3b84a253203f8bf6/pyvantage-0.0.48.tar.gz
+[2023-05-14 07:58:18] INFO root fetch - processPackages [spatialgeometry]: Downloading https://files.pythonhosted.org/packages/57/ca/4c3eff96e84c820e6427d9ae0983cfae9be0df515bc2bf1182777da3996c/spatialgeometry-1.0.3.tar.gz
+[2023-05-14 07:58:18] INFO root fetch - processPackages [bridgecrew]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-14 07:58:19] INFO root fetch - processPackages [gkjzjh146]: executing diffoscope
+[2023-05-14 07:58:19] INFO root fetch - processPackages [gkjzjh146]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gkjzjh146-1.3.tar.gz tmp/gkjzjh146-1.4.tar.gz --markdown 20230514/g/gkjzjh146/1.3-1.4/diff.md --exclude *.pyd
+[2023-05-14 07:58:19] INFO root fetch - processPackages [pyvantage]: executing diffoscope
+[2023-05-14 07:58:19] INFO root fetch - processPackages [pyvantage]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyvantage-0.0.47.tar.gz tmp/pyvantage-0.0.48.tar.gz --markdown 20230514/p/pyvantage/0.0.47-0.0.48/diff.md --exclude *.pyd
+[2023-05-14 07:58:19] INFO root fetch - processPackages [html2notion]: Downloading https://files.pythonhosted.org/packages/73/08/3dcdaf3432c25a282ca5539b6e4eac08871a891c8f118d8e6b98a7d03ea4/html2notion-0.1.9.tar.gz
+[2023-05-14 07:58:19] INFO root fetch - processPackages [emr-sfn-waiter]: Downloading https://files.pythonhosted.org/packages/b5/91/dfc1e1b94b298c2f1f300b1b15ae08138c927fcb2c443956e0a7a24ee14f/emr-sfn-waiter-0.0.1.tar.gz
+[2023-05-14 07:58:19] INFO root fetch - processPackages [autosend]: Downloading https://files.pythonhosted.org/packages/88/3b/60924b906e692173f0b2a34d8cd6586861c0a69b2aba9f1dcbc2d8b4798f/autosend-0.0.2.win-amd64.zip
+[2023-05-14 07:58:19] INFO root fetch - processPackages [e6data-python-connector]: Downloading https://files.pythonhosted.org/packages/42/c8/7d7638f47ebe3b6f8b3309f770aaf05de5b81e094b1d1224532b034f3efa/e6data-python-connector-1.0.3.tar.gz
+[2023-05-14 07:58:19] INFO root fetch - processPackages [genius-chatbot]: Downloading https://files.pythonhosted.org/packages/8e/fd/1b96c4b8c12294163010f6e8e0e2b726e0e41910220cf4a02704d707c12e/genius_chatbot-0.5.0-py2.py3-none-any.whl
+[2023-05-14 07:58:19] INFO root fetch - processPackages [html2notion]: executing diffoscope
+[2023-05-14 07:58:19] INFO root fetch - processPackages [html2notion]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/html2notion-0.1.8.tar.gz tmp/html2notion-0.1.9.tar.gz --markdown 20230514/h/html2notion/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 07:58:19] INFO root fetch - processPackages [media-manager]: Downloading https://files.pythonhosted.org/packages/9b/a7/1155a373b195bebb88c0274982964c45aecd8d7206b2f4731838007628fd/media_manager-0.9.0-py2.py3-none-any.whl
+[2023-05-14 07:58:19] INFO root fetch - processPackages [e6data-python-connector]: executing diffoscope
+[2023-05-14 07:58:19] INFO root fetch - processPackages [e6data-python-connector]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/e6data-python-connector-1.0.2.tar.gz tmp/e6data-python-connector-1.0.3.tar.gz --markdown 20230514/e/e6data-python-connector/1.0.2-1.0.3/diff.md --exclude *.pyd
+[2023-05-14 07:58:19] INFO root fetch - processPackages [genius-chatbot]: executing diffoscope
+[2023-05-14 07:58:19] INFO root fetch - processPackages [genius-chatbot]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/genius_chatbot-0.4.0-py2.py3-none-any.whl.zip tmp/genius_chatbot-0.5.0-py2.py3-none-any.whl.zip --markdown 20230514/g/genius-chatbot/0.4.0-0.5.0/diff.md --exclude *.pyd
+[2023-05-14 07:58:19] INFO root fetch - processPackages [spatialgeometry]: Downloading https://files.pythonhosted.org/packages/dc/eb/bb4ffca23cc02a29de9fe59d239c7065ef44de22333a7e8b6341e79ee47b/spatialgeometry-1.1.0.tar.gz
+[2023-05-14 07:58:19] INFO root fetch - processPackages [media-manager]: executing diffoscope
+[2023-05-14 07:58:19] INFO root fetch - processPackages [media-manager]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/media_manager-0.8.0-py2.py3-none-any.whl.zip tmp/media_manager-0.9.0-py2.py3-none-any.whl.zip --markdown 20230514/m/media-manager/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 07:58:19] INFO root fetch - processPackages [emr-sfn-waiter]: executing diffoscope
+[2023-05-14 07:58:19] INFO root fetch - processPackages [emr-sfn-waiter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/emr-sfn-waiter-0.0.0.tar.gz tmp/emr-sfn-waiter-0.0.1.tar.gz --markdown 20230514/e/emr-sfn-waiter/0.0.0-0.0.1/diff.md --exclude *.pyd
+[2023-05-14 07:58:19] INFO root fetch - processPackages [autosend]: executing diffoscope
+[2023-05-14 07:58:19] INFO root fetch - processPackages [autosend]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autosend-0.0.1.win-amd64.zip tmp/autosend-0.0.2.win-amd64.zip --markdown 20230514/a/autosend/0.0.1-0.0.2/diff.md --exclude *.pyd
+[2023-05-14 07:58:19] INFO root fetch - processPackages [bridgecrew]: executing diffoscope
+[2023-05-14 07:58:19] INFO root fetch - processPackages [bridgecrew]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bridgecrew-2.3.98.tar.gz tmp/bridgecrew-2.3.99.tar.gz --markdown 20230514/b/bridgecrew/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-14 07:58:19] INFO root fetch - processPackages [spatialgeometry]: executing diffoscope
+[2023-05-14 07:58:19] INFO root fetch - processPackages [spatialgeometry]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spatialgeometry-1.0.3.tar.gz tmp/spatialgeometry-1.1.0.tar.gz --markdown 20230514/s/spatialgeometry/1.0.3-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 07:58:20] INFO root fetch - processPackages [gkjzjh146]: Start processing: aiuv
+[2023-05-14 07:58:20] INFO root fetch - main [MainThread]: End processing [gkjzjh146]: success
+[2023-05-14 07:58:20] INFO root fetch - processPackages [aiuv]: New version: [0.6] Old Version: [0.5]
+[2023-05-14 07:58:20] INFO root fetch - processPackages [pyvantage]: Start processing: configzen
+[2023-05-14 07:58:20] INFO root fetch - main [MainThread]: End processing [pyvantage]: success
+[2023-05-14 07:58:20] INFO root fetch - processPackages [aiuv]: executing diffoscope
+[2023-05-14 07:58:20] INFO root fetch - processPackages [aiuv]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aiuv-0.5.tar.gz tmp/aiuv-0.6.tar.gz --markdown 20230514/a/aiuv/0.5-0.6/diff.md --exclude *.pyd
+[2023-05-14 07:58:20] INFO root fetch - processPackages [configzen]: New version: [0.1.6] Old Version: [0.1.5]
+[2023-05-14 07:58:20] INFO root fetch - processPackages [configzen]: executing diffoscope
+[2023-05-14 07:58:20] INFO root fetch - processPackages [configzen]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/configzen-0.1.5.tar.gz tmp/configzen-0.1.6.tar.gz --markdown 20230514/c/configzen/0.1.5-0.1.6/diff.md --exclude *.pyd
+[2023-05-14 07:58:20] INFO root fetch - main [MainThread]: End processing [genius-chatbot]: success
+[2023-05-14 07:58:20] INFO root fetch - main [MainThread]: End processing [media-manager]: success
+[2023-05-14 07:58:21] INFO root fetch - main [MainThread]: End processing [emr-sfn-waiter]: success
+[2023-05-14 07:58:21] INFO root fetch - main [MainThread]: End processing [autosend]: success
+[2023-05-14 07:58:21] INFO root fetch - main [MainThread]: End processing [bridgecrew]: success
+[2023-05-14 07:58:21] INFO root fetch - main [MainThread]: End processing [html2notion]: success
+[2023-05-14 07:58:21] INFO root fetch - main [MainThread]: End processing [e6data-python-connector]: success
+[2023-05-14 07:58:21] INFO root fetch - main [MainThread]: End processing [aiuv]: success
+[2023-05-14 07:58:22] INFO root fetch - main [MainThread]: End processing [configzen]: success
+[2023-05-14 07:58:25] INFO root fetch - main [MainThread]: End processing [spatialgeometry]: success
+[2023-05-14 07:58:25] INFO root fetch - main [MainThread]: Store serial: [18095232]
