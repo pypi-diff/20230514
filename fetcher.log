@@ -7694,3 +7694,50 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 17:20:17] INFO root fetch - main [MainThread]: End processing [gma]: success
 [2023-05-14 17:20:17] INFO root fetch - main [MainThread]: End processing [onvif-zeep-async]: success
 [2023-05-14 17:20:17] INFO root fetch - main [MainThread]: Store serial: [18098017]
+[2023-05-14 17:25:22] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098017]
+[2023-05-14 17:25:27] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-14 17:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: lanarky
+[2023-05-14 17:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pythoncoloraddonV2
+[2023-05-14 17:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: aioqui
+[2023-05-14 17:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: tkfly
+[2023-05-14 17:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: vollseg
+[2023-05-14 17:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: pythoncoloraddonV2
+[2023-05-14 17:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: fastapi-async-langchain
+[2023-05-14 17:25:27] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: dymoval
+[2023-05-14 17:25:27] WARNING root fetch - processPackages [lanarky]: Skipping, unable to determine old version
+[2023-05-14 17:25:27] INFO root fetch - main [MainThread]: End processing [lanarky] error
+[2023-05-14 17:25:27] INFO root fetch - processPackages [tkfly]: New version: [0.1.0a8] Old Version: [0.1.0a7]
+[2023-05-14 17:25:27] INFO root fetch - processPackages [pythoncoloraddonV2]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-14 17:25:27] INFO root fetch - processPackages [pythoncoloraddonV2]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-14 17:25:27] INFO root fetch - processPackages [aioqui]: New version: [1.1.5] Old Version: [1.1.4]
+[2023-05-14 17:25:27] INFO root fetch - processPackages [vollseg]: New version: [8.0.0] Old Version: [7.0.0]
+[2023-05-14 17:25:27] INFO root fetch - processPackages [vollseg]: Downloading https://files.pythonhosted.org/packages/49/5e/9558410d2a3b0f12598784a6541087a52cb9eac28650e25b7d767e2c56b0/vollseg-7.0.0.tar.gz
+[2023-05-14 17:25:27] INFO root fetch - processPackages [fastapi-async-langchain]: New version: [0.5.5] Old Version: [0.5.4]
+[2023-05-14 17:25:27] WARNING root fetch - processPackages [dymoval]: Skipping, unable to determine old version
+[2023-05-14 17:25:27] INFO root fetch - main [MainThread]: End processing [dymoval] error
+[2023-05-14 17:25:27] WARNING root fetch - processPackages [vollseg]: Skipping package: exceeds size limit 29985919>=10485760
+[2023-05-14 17:25:27] INFO root fetch - main [MainThread]: End processing [vollseg] error
+[2023-05-14 17:25:28] INFO root fetch - processPackages [pythoncoloraddonV2]: Downloading https://files.pythonhosted.org/packages/cc/0d/6abeac10c625ee41b1ea107d979cd1286ec086e5b1700e695b286d214775/pythoncoloraddonV2-1.0.0.tar.gz
+[2023-05-14 17:25:28] INFO root fetch - processPackages [pythoncoloraddonV2]: Downloading https://files.pythonhosted.org/packages/cc/0d/6abeac10c625ee41b1ea107d979cd1286ec086e5b1700e695b286d214775/pythoncoloraddonV2-1.0.0.tar.gz
+[2023-05-14 17:25:28] INFO root fetch - processPackages [tkfly]: Downloading https://files.pythonhosted.org/packages/07/e1/d28744fdeebce9f87c7c8b3a1925521760d6696e63e4c4434b673e8da4d4/tkfly-0.1.0a7.tar.gz
+[2023-05-14 17:25:28] INFO root fetch - processPackages [aioqui]: Downloading https://files.pythonhosted.org/packages/58/43/05f84df731d249a3972bff2dfecd15f0d98f3ae229f83ee6e4727cbf9763/aioqui-1.1.4.tar.gz
+[2023-05-14 17:25:28] WARNING root fetch - processPackages [tkfly]: Skipping package: exceeds size limit 97003586>=10485760
+[2023-05-14 17:25:28] INFO root fetch - main [MainThread]: End processing [tkfly] error
+[2023-05-14 17:25:28] INFO root fetch - processPackages [fastapi-async-langchain]: Downloading https://files.pythonhosted.org/packages/9f/ed/858abd5966a55ef0ba95907649f338059c371245addf86f11cec421d09b0/fastapi_async_langchain-0.5.4.tar.gz
+[2023-05-14 17:25:28] INFO root fetch - processPackages [pythoncoloraddonV2]: Downloading https://files.pythonhosted.org/packages/cd/95/571751f33d6db5c6ee16f45db3833ca0c9937be45a7e0356815b28d20f1e/pythoncoloraddonV2-1.1.0.tar.gz
+[2023-05-14 17:25:28] INFO root fetch - processPackages [pythoncoloraddonV2]: Downloading https://files.pythonhosted.org/packages/cd/95/571751f33d6db5c6ee16f45db3833ca0c9937be45a7e0356815b28d20f1e/pythoncoloraddonV2-1.1.0.tar.gz
+[2023-05-14 17:25:28] INFO root fetch - processPackages [aioqui]: Downloading https://files.pythonhosted.org/packages/92/e4/1bc52d475cc8ff4ff5d95f593ada8505f5287509df2cda0dcab0fc24cb53/aioqui-1.1.5.tar.gz
+[2023-05-14 17:25:28] INFO root fetch - processPackages [fastapi-async-langchain]: Downloading https://files.pythonhosted.org/packages/20/de/9aff1d6b39954ffbbd41e2717d9d563fadba4e3e7bf178adcb0bac63b600/fastapi_async_langchain-0.5.5.tar.gz
+[2023-05-14 17:25:28] INFO root fetch - processPackages [pythoncoloraddonV2]: executing diffoscope
+[2023-05-14 17:25:28] INFO root fetch - processPackages [pythoncoloraddonV2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythoncoloraddonV2-1.0.0.tar.gz tmp/pythoncoloraddonV2-1.1.0.tar.gz --markdown 20230514/p/pythoncoloraddonV2/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 17:25:28] INFO root fetch - processPackages [pythoncoloraddonV2]: executing diffoscope
+[2023-05-14 17:25:28] INFO root fetch - processPackages [pythoncoloraddonV2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythoncoloraddonV2-1.0.0.tar.gz tmp/pythoncoloraddonV2-1.1.0.tar.gz --markdown 20230514/p/pythoncoloraddonV2/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 17:25:28] INFO root fetch - processPackages [aioqui]: executing diffoscope
+[2023-05-14 17:25:28] INFO root fetch - processPackages [aioqui]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aioqui-1.1.4.tar.gz tmp/aioqui-1.1.5.tar.gz --markdown 20230514/a/aioqui/1.1.4-1.1.5/diff.md --exclude *.pyd
+[2023-05-14 17:25:28] INFO root fetch - processPackages [fastapi-async-langchain]: executing diffoscope
+[2023-05-14 17:25:28] INFO root fetch - processPackages [fastapi-async-langchain]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/fastapi_async_langchain-0.5.4.tar.gz tmp/fastapi_async_langchain-0.5.5.tar.gz --markdown 20230514/f/fastapi-async-langchain/0.5.4-0.5.5/diff.md --exclude *.pyd
+[2023-05-14 17:25:29] INFO root fetch - main [MainThread]: End processing [pythoncoloraddonV2]: success
+[2023-05-14 17:25:29] INFO root fetch - main [MainThread]: End processing [pythoncoloraddonV2]: success
+[2023-05-14 17:25:29] INFO root fetch - main [MainThread]: End processing [fastapi-async-langchain]: success
+[2023-05-14 17:25:30] INFO root fetch - main [MainThread]: End processing [aioqui]: success
+[2023-05-14 17:25:30] INFO root fetch - main [MainThread]: Store serial: [18098048]
