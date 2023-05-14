@@ -11508,3 +11508,28 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 23:46:42] INFO root fetch - main [MainThread]: End processing [django-axes]: success
 [2023-05-14 23:46:43] INFO root fetch - main [MainThread]: End processing [oceanum]: success
 [2023-05-14 23:46:43] INFO root fetch - main [MainThread]: Store serial: [18100310]
+[2023-05-14 23:51:47] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18100310]
+[2023-05-14 23:51:52] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 23:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: kynaylibs
+[2023-05-14 23:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: magyar
+[2023-05-14 23:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: myra
+[2023-05-14 23:51:52] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: snowball-extractor
+[2023-05-14 23:51:52] INFO root fetch - processPackages [magyar]: New version: [3.0.6] Old Version: [3.0.5]
+[2023-05-14 23:51:52] INFO root fetch - processPackages [kynaylibs]: New version: [7.1.2] Old Version: [7.1.1]
+[2023-05-14 23:51:52] WARNING root fetch - processPackages [myra]: Skipping, unable to determine old version
+[2023-05-14 23:51:52] INFO root fetch - main [MainThread]: End processing [myra] error
+[2023-05-14 23:51:52] INFO root fetch - processPackages [snowball-extractor]: New version: [1.0.5] Old Version: [1.0.3]
+[2023-05-14 23:51:52] INFO root fetch - processPackages [magyar]: Downloading https://files.pythonhosted.org/packages/93/ea/a5a2816972948afa1636a7f02822f24e6cf832c8fd2e76e83bb26a44c1d1/magyar-3.0.5.tar.gz
+[2023-05-14 23:51:52] INFO root fetch - processPackages [kynaylibs]: Downloading https://files.pythonhosted.org/packages/9c/f5/d962efaaade065365e58ca68990f2b3d5ae38b3e5544c32755870702b970/kynaylibs-7.1.2.tar.gz
+[2023-05-14 23:51:52] INFO root fetch - processPackages [snowball-extractor]: Downloading https://files.pythonhosted.org/packages/a7/c6/2b84a640d20a1c9f10e802c0170dc2629e456b9980951aae8cb8d6348f73/snowball-extractor-1.0.5.tar.gz
+[2023-05-14 23:51:52] INFO root fetch - processPackages [snowball-extractor]: executing diffoscope
+[2023-05-14 23:51:52] INFO root fetch - processPackages [snowball-extractor]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/snowball-extractor-1.0.3.tar.gz tmp/snowball-extractor-1.0.5.tar.gz --markdown 20230514/s/snowball-extractor/1.0.3-1.0.5/diff.md --exclude *.pyd
+[2023-05-14 23:51:52] INFO root fetch - processPackages [kynaylibs]: executing diffoscope
+[2023-05-14 23:51:52] INFO root fetch - processPackages [kynaylibs]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kynaylibs-7.1.1.tar.gz tmp/kynaylibs-7.1.2.tar.gz --markdown 20230514/k/kynaylibs/7.1.1-7.1.2/diff.md --exclude *.pyd
+[2023-05-14 23:51:52] INFO root fetch - processPackages [magyar]: Downloading https://files.pythonhosted.org/packages/cf/43/24e64de203c13d92909f67a9d0f968d39541981d7a5f4260c1e2a29ad69a/magyar-3.0.6.tar.gz
+[2023-05-14 23:51:53] INFO root fetch - processPackages [magyar]: executing diffoscope
+[2023-05-14 23:51:53] INFO root fetch - processPackages [magyar]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/magyar-3.0.5.tar.gz tmp/magyar-3.0.6.tar.gz --markdown 20230514/m/magyar/3.0.5-3.0.6/diff.md --exclude *.pyd
+[2023-05-14 23:51:54] INFO root fetch - main [MainThread]: End processing [snowball-extractor]: success
+[2023-05-14 23:51:54] INFO root fetch - main [MainThread]: End processing [kynaylibs]: success
+[2023-05-14 23:51:54] INFO root fetch - main [MainThread]: End processing [magyar]: success
+[2023-05-14 23:51:54] INFO root fetch - main [MainThread]: Store serial: [18100324]
