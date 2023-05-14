@@ -5150,3 +5150,38 @@
 [2023-05-14 13:14:25] INFO root fetch - main [MainThread]: End processing [shareddata]: success
 [2023-05-14 13:14:25] INFO root fetch - main [MainThread]: End processing [carefree-drawboard]: success
 [2023-05-14 13:14:25] INFO root fetch - main [MainThread]: Store serial: [18096513]
+[2023-05-14 13:19:29] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096513]
+[2023-05-14 13:19:34] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-14 13:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: SalatikSer
+[2023-05-14 13:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dbt-cockroachdb
+[2023-05-14 13:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: onnx2tf
+[2023-05-14 13:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: decentralizedroutines
+[2023-05-14 13:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: indecode
+[2023-05-14 13:19:34] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: tb-nightly
+[2023-05-14 13:19:34] WARNING root fetch - processPackages [dbt-cockroachdb]: Skipping, unable to determine old version
+[2023-05-14 13:19:34] INFO root fetch - main [MainThread]: End processing [dbt-cockroachdb] error
+[2023-05-14 13:19:34] INFO root fetch - processPackages [indecode]: New version: [1.4.6] Old Version: [1.4.5]
+[2023-05-14 13:19:34] WARNING root fetch - processPackages [SalatikSer]: Skipping, unable to determine old version
+[2023-05-14 13:19:34] INFO root fetch - main [MainThread]: End processing [SalatikSer] error
+[2023-05-14 13:19:34] INFO root fetch - processPackages [decentralizedroutines]: New version: [2.0.7] Old Version: [2.0.6]
+[2023-05-14 13:19:34] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-14 13:19:34] INFO root fetch - processPackages [tb-nightly]: New version: [2.9.0a20220502] Old Version: [2.9.0a20220501]
+[2023-05-14 13:19:34] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/cc/bf/76bb32cf070e37f4b777ed5596c5d082fb60a1bfc06e9463401d07021a8a/tb_nightly-2.9.0a20220501-py3-none-any.whl
+[2023-05-14 13:19:34] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2023-05-14 13:19:34] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.8.tar.gz tmp/onnx2tf-1.9.9.tar.gz --markdown 20230514/o/onnx2tf/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-14 13:19:34] INFO root fetch - processPackages [indecode]: Downloading https://files.pythonhosted.org/packages/e8/7b/39ab725512b44f8e74448ee6fed2350ee9480015a6b96094b3dfad3c8009/indecode-1.4.5-py3-none-any.whl
+[2023-05-14 13:19:34] INFO root fetch - processPackages [decentralizedroutines]: Downloading https://files.pythonhosted.org/packages/8c/33/34d06241f81d2cbe2d972b55e16ed405136b21130810c90b9ac6268df94c/decentralizedroutines-2.0.6.tar.gz
+[2023-05-14 13:19:35] INFO root fetch - processPackages [indecode]: Downloading https://files.pythonhosted.org/packages/c9/9d/f4457517555a455eadfd9141fa1cc9556e3fbcc4fe44af63cae353f2962d/indecode-1.4.6-py3-none-any.whl
+[2023-05-14 13:19:35] INFO root fetch - processPackages [decentralizedroutines]: Downloading https://files.pythonhosted.org/packages/83/5c/d64848b26d2ef0c0086f93f0679296b742a8b4249bb28b5775e41d48c7b1/decentralizedroutines-2.0.7.tar.gz
+[2023-05-14 13:19:35] INFO root fetch - processPackages [indecode]: executing diffoscope
+[2023-05-14 13:19:35] INFO root fetch - processPackages [indecode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indecode-1.4.5-py3-none-any.whl.zip tmp/indecode-1.4.6-py3-none-any.whl.zip --markdown 20230514/i/indecode/1.4.5-1.4.6/diff.md --exclude *.pyd
+[2023-05-14 13:19:35] INFO root fetch - processPackages [decentralizedroutines]: executing diffoscope
+[2023-05-14 13:19:35] INFO root fetch - processPackages [decentralizedroutines]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/decentralizedroutines-2.0.6.tar.gz tmp/decentralizedroutines-2.0.7.tar.gz --markdown 20230514/d/decentralizedroutines/2.0.6-2.0.7/diff.md --exclude *.pyd
+[2023-05-14 13:19:36] INFO root fetch - processPackages [tb-nightly]: Downloading https://files.pythonhosted.org/packages/68/8e/03bca092830a4abf26a80c7387b02478c5f948656cb79d63c1bffab65c00/tb_nightly-2.9.0a20220502-py3-none-any.whl
+[2023-05-14 13:19:36] INFO root fetch - main [MainThread]: End processing [indecode]: success
+[2023-05-14 13:19:36] INFO root fetch - main [MainThread]: End processing [decentralizedroutines]: success
+[2023-05-14 13:19:36] INFO root fetch - processPackages [tb-nightly]: executing diffoscope
+[2023-05-14 13:19:36] INFO root fetch - processPackages [tb-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tb_nightly-2.9.0a20220501-py3-none-any.whl.zip tmp/tb_nightly-2.9.0a20220502-py3-none-any.whl.zip --markdown 20230514/t/tb-nightly/2.9.0a20220501-2.9.0a20220502/diff.md --exclude *.pyd
+[2023-05-14 13:19:37] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2023-05-14 13:19:41] INFO root fetch - main [MainThread]: End processing [tb-nightly]: success
+[2023-05-14 13:19:41] INFO root fetch - main [MainThread]: Store serial: [18096530]
