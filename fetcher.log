@@ -10377,3 +10377,47 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 21:59:18] INFO root fetch - main [MainThread]: End processing [pytest-logikal]: success
 [2023-05-14 21:59:18] INFO root fetch - main [MainThread]: End processing [aleksis-app-chronos]: success
 [2023-05-14 21:59:18] INFO root fetch - main [MainThread]: Store serial: [18099679]
+[2023-05-14 22:04:23] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18099679]
+[2023-05-14 22:04:28] INFO root fetch - main [MainThread]: Found 8 changed packages
+[2023-05-14 22:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: bytez
+[2023-05-14 22:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: streetview
+[2023-05-14 22:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bytez
+[2023-05-14 22:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: heyoo
+[2023-05-14 22:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyrobox
+[2023-05-14 22:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: file-and-string-encryption
+[2023-05-14 22:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: twitter-api-py
+[2023-05-14 22:04:28] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: bytez
+[2023-05-14 22:04:28] INFO root fetch - processPackages [bytez]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 22:04:28] INFO root fetch - processPackages [pyrobox]: New version: [0.8.1] Old Version: [0.8.0]
+[2023-05-14 22:04:28] INFO root fetch - processPackages [twitter-api-py]: New version: [0.7.0] Old Version: [0.6.3]
+[2023-05-14 22:04:28] WARNING root fetch - processPackages [file-and-string-encryption]: Skipping, unable to determine old version
+[2023-05-14 22:04:28] WARNING root fetch - processPackages [streetview]: Skipping, unable to determine old version
+[2023-05-14 22:04:28] INFO root fetch - main [MainThread]: End processing [file-and-string-encryption] error
+[2023-05-14 22:04:28] INFO root fetch - main [MainThread]: End processing [streetview] error
+[2023-05-14 22:04:28] INFO root fetch - processPackages [heyoo]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 22:04:28] INFO root fetch - processPackages [bytez]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 22:04:28] INFO root fetch - processPackages [bytez]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 22:04:28] INFO root fetch - processPackages [pyrobox]: Downloading https://files.pythonhosted.org/packages/a6/52/835b68b143cd2ffb70426026bfd4287c69300ea019e88e94965c8d65a455/pyrobox-0.8.0.tar.gz
+[2023-05-14 22:04:28] INFO root fetch - processPackages [heyoo]: Downloading https://files.pythonhosted.org/packages/7d/04/5abedb817956763e38e8264b2918b8222ae4be19f2d737513d9348ed442a/heyoo-0.0.8-py3-none-any.whl
+[2023-05-14 22:04:28] INFO root fetch - processPackages [twitter-api-py]: Downloading https://files.pythonhosted.org/packages/04/27/6e5054f86a501499ff42d496df1b847f049678049f6b3fdeb643bc49cfe7/twitter_api_py-0.7.0.tar.gz
+[2023-05-14 22:04:28] INFO root fetch - processPackages [twitter-api-py]: executing diffoscope
+[2023-05-14 22:04:28] INFO root fetch - processPackages [twitter-api-py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/twitter_api_py-0.6.3.tar.gz tmp/twitter_api_py-0.7.0.tar.gz --markdown 20230514/t/twitter-api-py/0.6.3-0.7.0/diff.md --exclude *.pyd
+[2023-05-14 22:04:28] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-14 22:04:28] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.8.tar.gz tmp/bytez-0.1.9.tar.gz --markdown 20230514/b/bytez/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 22:04:28] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-14 22:04:28] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.8.tar.gz tmp/bytez-0.1.9.tar.gz --markdown 20230514/b/bytez/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 22:04:28] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-14 22:04:28] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.8.tar.gz tmp/bytez-0.1.9.tar.gz --markdown 20230514/b/bytez/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 22:04:28] INFO root fetch - processPackages [heyoo]: Downloading https://files.pythonhosted.org/packages/e4/05/c0ee7188cdf205b6c93b80f3717fd272a563c3edf58880451bb8475292f8/heyoo-0.0.9-py3-none-any.whl
+[2023-05-14 22:04:28] INFO root fetch - processPackages [heyoo]: executing diffoscope
+[2023-05-14 22:04:28] INFO root fetch - processPackages [heyoo]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/heyoo-0.0.8-py3-none-any.whl.zip tmp/heyoo-0.0.9-py3-none-any.whl.zip --markdown 20230514/h/heyoo/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 22:04:28] INFO root fetch - processPackages [pyrobox]: Downloading https://files.pythonhosted.org/packages/ad/18/225f36fed5ef3f11e71e1ba2bf6b3e773d48ed6643912c623865150752f4/pyrobox-0.8.1.tar.gz
+[2023-05-14 22:04:28] INFO root fetch - processPackages [pyrobox]: executing diffoscope
+[2023-05-14 22:04:28] INFO root fetch - processPackages [pyrobox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyrobox-0.8.0.tar.gz tmp/pyrobox-0.8.1.tar.gz --markdown 20230514/p/pyrobox/0.8.0-0.8.1/diff.md --exclude *.pyd
+[2023-05-14 22:04:29] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-14 22:04:29] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-14 22:04:29] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-14 22:04:29] INFO root fetch - main [MainThread]: End processing [heyoo]: success
+[2023-05-14 22:04:29] INFO root fetch - main [MainThread]: End processing [pyrobox]: success
+[2023-05-14 22:04:30] INFO root fetch - main [MainThread]: End processing [twitter-api-py]: success
+[2023-05-14 22:04:30] INFO root fetch - main [MainThread]: Store serial: [18099706]
