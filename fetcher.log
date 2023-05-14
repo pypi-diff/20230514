@@ -4101,3 +4101,35 @@
 [2023-05-14 10:55:02] INFO root fetch - processPackages [tfp-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tfp_nightly-0.9.0.dev20200113-py2.py3-none-any.whl.zip tmp/tfp_nightly-0.9.0.dev20200114-py2.py3-none-any.whl.zip --markdown 20230514/t/tfp-nightly/0.9.0.dev20200113-0.9.0.dev20200114/diff.md --exclude *.pyd
 [2023-05-14 10:55:20] INFO root fetch - main [MainThread]: End processing [tfp-nightly]: success
 [2023-05-14 10:55:20] INFO root fetch - main [MainThread]: Store serial: [18095837]
+[2023-05-14 11:00:24] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095837]
+[2023-05-14 11:00:29] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 11:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: watex
+[2023-05-14 11:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pydflow
+[2023-05-14 11:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pysqlipackagesV2
+[2023-05-14 11:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pysqlipackagesV2
+[2023-05-14 11:00:29] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: Inputbetter
+[2023-05-14 11:00:29] INFO root fetch - processPackages [watex]: New version: [0.2.3] Old Version: [0.2.2]
+[2023-05-14 11:00:29] INFO root fetch - processPackages [pysqlipackagesV2]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-14 11:00:29] INFO root fetch - processPackages [pydflow]: New version: [1.6.99] Old Version: [1.6.98]
+[2023-05-14 11:00:29] INFO root fetch - processPackages [pysqlipackagesV2]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-14 11:00:29] INFO root fetch - processPackages [Inputbetter]: New version: [0.3.0] Old Version: [0.2.0]
+[2023-05-14 11:00:29] INFO root fetch - processPackages [Inputbetter]: executing diffoscope
+[2023-05-14 11:00:29] INFO root fetch - processPackages [Inputbetter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Inputbetter-0.2.0-py3-none-any.whl.zip tmp/Inputbetter-0.3.0-py3-none-any.whl.zip --markdown 20230514/I/Inputbetter/0.2.0-0.3.0/diff.md --exclude *.pyd
+[2023-05-14 11:00:29] INFO root fetch - processPackages [pysqlipackagesV2]: Downloading https://files.pythonhosted.org/packages/6e/ad/9d72e09d976546ac90384cfa651a6d7742f7377883e86425611b34950e2e/pysqlipackagesV2-1.0.0.tar.gz
+[2023-05-14 11:00:29] INFO root fetch - processPackages [pysqlipackagesV2]: Downloading https://files.pythonhosted.org/packages/6e/ad/9d72e09d976546ac90384cfa651a6d7742f7377883e86425611b34950e2e/pysqlipackagesV2-1.0.0.tar.gz
+[2023-05-14 11:00:29] INFO root fetch - processPackages [watex]: Downloading https://files.pythonhosted.org/packages/5b/a5/0225b71662e4da0f44b4fa7b39f0a6e356037515f06d9b16837fb98899c7/watex-0.2.2.tar.gz
+[2023-05-14 11:00:29] INFO root fetch - processPackages [pysqlipackagesV2]: Downloading https://files.pythonhosted.org/packages/cf/4f/22f6d41d3b5e60d6812e86f4d11e1148359063421a62b7cbcfa3cd18632f/pysqlipackagesV2-1.1.0.tar.gz
+[2023-05-14 11:00:29] INFO root fetch - processPackages [pysqlipackagesV2]: Downloading https://files.pythonhosted.org/packages/cf/4f/22f6d41d3b5e60d6812e86f4d11e1148359063421a62b7cbcfa3cd18632f/pysqlipackagesV2-1.1.0.tar.gz
+[2023-05-14 11:00:29] WARNING root fetch - processPackages [watex]: Skipping package: exceeds size limit 10633852>=10485760
+[2023-05-14 11:00:29] INFO root fetch - main [MainThread]: End processing [watex] error
+[2023-05-14 11:00:29] INFO root fetch - processPackages [pydflow]: executing diffoscope
+[2023-05-14 11:00:29] INFO root fetch - processPackages [pydflow]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pydflow-1.6.98.tar.gz tmp/pydflow-1.6.99.tar.gz --markdown 20230514/p/pydflow/1.6.98-1.6.99/diff.md --exclude *.pyd
+[2023-05-14 11:00:29] INFO root fetch - processPackages [pysqlipackagesV2]: executing diffoscope
+[2023-05-14 11:00:29] INFO root fetch - processPackages [pysqlipackagesV2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysqlipackagesV2-1.0.0.tar.gz tmp/pysqlipackagesV2-1.1.0.tar.gz --markdown 20230514/p/pysqlipackagesV2/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 11:00:29] INFO root fetch - processPackages [pysqlipackagesV2]: executing diffoscope
+[2023-05-14 11:00:29] INFO root fetch - processPackages [pysqlipackagesV2]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pysqlipackagesV2-1.0.0.tar.gz tmp/pysqlipackagesV2-1.1.0.tar.gz --markdown 20230514/p/pysqlipackagesV2/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 11:00:30] INFO root fetch - main [MainThread]: End processing [Inputbetter]: success
+[2023-05-14 11:00:30] INFO root fetch - main [MainThread]: End processing [pysqlipackagesV2]: success
+[2023-05-14 11:00:30] INFO root fetch - main [MainThread]: End processing [pysqlipackagesV2]: success
+[2023-05-14 11:00:30] INFO root fetch - main [MainThread]: End processing [pydflow]: success
+[2023-05-14 11:00:30] INFO root fetch - main [MainThread]: Store serial: [18095853]
