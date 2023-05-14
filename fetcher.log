@@ -3414,3 +3414,69 @@
 [2023-05-14 09:02:28] INFO root fetch - processPackages [spotPython]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/spotPython-0.0.8.tar.gz tmp/spotPython-0.0.9.tar.gz --markdown 20230514/s/spotPython/0.0.8-0.0.9/diff.md --exclude *.pyd
 [2023-05-14 09:02:30] INFO root fetch - main [MainThread]: End processing [spotPython]: success
 [2023-05-14 09:02:30] INFO root fetch - main [MainThread]: Store serial: [18095437]
+[2023-05-14 09:07:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18095437]
+[2023-05-14 09:07:41] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-14 09:07:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: Kekik
+[2023-05-14 09:07:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: onnx2tf
+[2023-05-14 09:07:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: tf-models-nightly
+[2023-05-14 09:07:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: Kekik
+[2023-05-14 09:07:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: language-formatters-pre-commit-hooks
+[2023-05-14 09:07:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: Kekik
+[2023-05-14 09:07:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: starling-beancount
+[2023-05-14 09:07:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-05-14 09:07:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: eia-odin-pkg-rioatmadja2018
+[2023-05-14 09:07:41] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1684048046] Old Version: [0.1.1684048039]
+[2023-05-14 09:07:41] INFO root fetch - processPackages [starling-beancount]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-05-14 09:07:41] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: New version: [0.1.1684048046] Old Version: [0.1.1684048039]
+[2023-05-14 09:07:41] INFO root fetch - processPackages [Kekik]: New version: [1.3.0] Old Version: [1.2.9]
+[2023-05-14 09:07:41] INFO root fetch - processPackages [language-formatters-pre-commit-hooks]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-05-14 09:07:41] INFO root fetch - processPackages [Kekik]: New version: [1.3.0] Old Version: [1.2.9]
+[2023-05-14 09:07:41] INFO root fetch - processPackages [Kekik]: New version: [1.3.0] Old Version: [1.2.9]
+[2023-05-14 09:07:41] INFO root fetch - processPackages [onnx2tf]: New version: [1.9.9] Old Version: [1.9.8]
+[2023-05-14 09:07:41] INFO root fetch - processPackages [tf-models-nightly]: New version: [2.9.0.dev20220920] Old Version: [2.9.0.dev20220919]
+[2023-05-14 09:07:41] INFO root fetch - processPackages [tf-models-nightly]: Downloading https://files.pythonhosted.org/packages/73/e9/06af7a12cda1722ec668213b9e91a8a2e918011d3ef8e9a98146ee4f76ef/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl
+[2023-05-14 09:07:41] INFO root fetch - processPackages [onnx2tf]: Downloading https://files.pythonhosted.org/packages/6f/b3/519ee148592d2531639c5f3c1434df000ecf2c24a5b55b61cba8fd4767f9/onnx2tf-1.9.8.tar.gz
+[2023-05-14 09:07:41] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/89/31/986778a7301ad82fede68ec7b88670cca58199a507a107ec052aa70825c2/eia-odin-pkg-rioatmadja2018-0.1.1684048039.tar.gz
+[2023-05-14 09:07:41] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/89/31/986778a7301ad82fede68ec7b88670cca58199a507a107ec052aa70825c2/eia-odin-pkg-rioatmadja2018-0.1.1684048039.tar.gz
+[2023-05-14 09:07:41] INFO root fetch - processPackages [Kekik]: Downloading https://files.pythonhosted.org/packages/d7/bd/f16b12bea49706e54179b7cebc1ab82325edec9e187e74c554e297962e17/Kekik-1.2.9.tar.gz
+[2023-05-14 09:07:41] INFO root fetch - processPackages [Kekik]: Downloading https://files.pythonhosted.org/packages/d7/bd/f16b12bea49706e54179b7cebc1ab82325edec9e187e74c554e297962e17/Kekik-1.2.9.tar.gz
+[2023-05-14 09:07:41] INFO root fetch - processPackages [Kekik]: Downloading https://files.pythonhosted.org/packages/d7/bd/f16b12bea49706e54179b7cebc1ab82325edec9e187e74c554e297962e17/Kekik-1.2.9.tar.gz
+[2023-05-14 09:07:41] INFO root fetch - processPackages [starling-beancount]: Downloading https://files.pythonhosted.org/packages/ea/86/384e0a04507514d015a9ff4f256a4efd4018829e1e517c880a8c7ab85c60/starling-beancount-1.1.1.tar.gz
+[2023-05-14 09:07:41] INFO root fetch - processPackages [language-formatters-pre-commit-hooks]: Downloading https://files.pythonhosted.org/packages/9d/85/a581ec59b7a15c4908bf0553815e7ad7ddaa29631bc0819af017155117a6/language_formatters_pre_commit_hooks-2.8.0.tar.gz
+[2023-05-14 09:07:41] INFO root fetch - processPackages [onnx2tf]: Downloading https://files.pythonhosted.org/packages/0e/df/e0c6978b06db6c5c04de100ecbe0bbb281caed31c4dd88663e61e36ca571/onnx2tf-1.9.9.tar.gz
+[2023-05-14 09:07:41] INFO root fetch - processPackages [tf-models-nightly]: Downloading https://files.pythonhosted.org/packages/e2/76/79c5fb2cd23f346ee912b9c289c2a9bab6fc8d178658f931ac9a023224c6/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl
+[2023-05-14 09:07:42] INFO root fetch - processPackages [Kekik]: Downloading https://files.pythonhosted.org/packages/1b/d2/5d99912d818cb910a5f19d6ba22144c3764bbf6f7a3eaf7401c59c798aa4/Kekik-1.3.0.tar.gz
+[2023-05-14 09:07:42] INFO root fetch - processPackages [Kekik]: Downloading https://files.pythonhosted.org/packages/1b/d2/5d99912d818cb910a5f19d6ba22144c3764bbf6f7a3eaf7401c59c798aa4/Kekik-1.3.0.tar.gz
+[2023-05-14 09:07:42] INFO root fetch - processPackages [Kekik]: Downloading https://files.pythonhosted.org/packages/1b/d2/5d99912d818cb910a5f19d6ba22144c3764bbf6f7a3eaf7401c59c798aa4/Kekik-1.3.0.tar.gz
+[2023-05-14 09:07:42] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/8a/7b/c617928900522e5e93d0a1d43df8dd47ae1cde09398f45ff370193a9597a/eia_odin_pkg_rioatmadja2018-0.1.1684048046-py3-none-any.whl
+[2023-05-14 09:07:42] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: Downloading https://files.pythonhosted.org/packages/8a/7b/c617928900522e5e93d0a1d43df8dd47ae1cde09398f45ff370193a9597a/eia_odin_pkg_rioatmadja2018-0.1.1684048046-py3-none-any.whl
+[2023-05-14 09:07:42] INFO root fetch - processPackages [starling-beancount]: Downloading https://files.pythonhosted.org/packages/79/ce/75f1f94f8f85831ec822c4690bbb5d4f59c2aea3227a07518edbd9e3cff0/starling-beancount-1.2.0.tar.gz
+[2023-05-14 09:07:42] INFO root fetch - processPackages [onnx2tf]: executing diffoscope
+[2023-05-14 09:07:42] INFO root fetch - processPackages [onnx2tf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/onnx2tf-1.9.8.tar.gz tmp/onnx2tf-1.9.9.tar.gz --markdown 20230514/o/onnx2tf/1.9.8-1.9.9/diff.md --exclude *.pyd
+[2023-05-14 09:07:42] INFO root fetch - processPackages [language-formatters-pre-commit-hooks]: Downloading https://files.pythonhosted.org/packages/24/48/726065ad5c22e0e884411d223131a9a76faacf3d8b2311a1a732dc88aab3/language_formatters_pre_commit_hooks-2.9.0.tar.gz
+[2023-05-14 09:07:42] INFO root fetch - processPackages [Kekik]: executing diffoscope
+[2023-05-14 09:07:42] INFO root fetch - processPackages [Kekik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Kekik-1.2.9.tar.gz tmp/Kekik-1.3.0.tar.gz --markdown 20230514/K/Kekik/1.2.9-1.3.0/diff.md --exclude *.pyd
+[2023-05-14 09:07:42] INFO root fetch - processPackages [Kekik]: executing diffoscope
+[2023-05-14 09:07:42] INFO root fetch - processPackages [Kekik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Kekik-1.2.9.tar.gz tmp/Kekik-1.3.0.tar.gz --markdown 20230514/K/Kekik/1.2.9-1.3.0/diff.md --exclude *.pyd
+[2023-05-14 09:07:42] INFO root fetch - processPackages [Kekik]: executing diffoscope
+[2023-05-14 09:07:42] INFO root fetch - processPackages [Kekik]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Kekik-1.2.9.tar.gz tmp/Kekik-1.3.0.tar.gz --markdown 20230514/K/Kekik/1.2.9-1.3.0/diff.md --exclude *.pyd
+[2023-05-14 09:07:42] INFO root fetch - processPackages [starling-beancount]: executing diffoscope
+[2023-05-14 09:07:42] INFO root fetch - processPackages [starling-beancount]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/starling-beancount-1.1.1.tar.gz tmp/starling-beancount-1.2.0.tar.gz --markdown 20230514/s/starling-beancount/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-05-14 09:07:42] INFO root fetch - processPackages [language-formatters-pre-commit-hooks]: executing diffoscope
+[2023-05-14 09:07:42] INFO root fetch - processPackages [language-formatters-pre-commit-hooks]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/language_formatters_pre_commit_hooks-2.8.0.tar.gz tmp/language_formatters_pre_commit_hooks-2.9.0.tar.gz --markdown 20230514/l/language-formatters-pre-commit-hooks/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-05-14 09:07:42] INFO root fetch - processPackages [tf-models-nightly]: executing diffoscope
+[2023-05-14 09:07:42] INFO root fetch - processPackages [tf-models-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/tf_models_nightly-2.9.0.dev20220919-py2.py3-none-any.whl.zip tmp/tf_models_nightly-2.9.0.dev20220920-py2.py3-none-any.whl.zip --markdown 20230514/t/tf-models-nightly/2.9.0.dev20220919-2.9.0.dev20220920/diff.md --exclude *.pyd
+[2023-05-14 09:07:42] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-05-14 09:07:42] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1684048039.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1684048046-py3-none-any.whl.zip --markdown 20230514/e/eia-odin-pkg-rioatmadja2018/0.1.1684048039-0.1.1684048046/diff.md --exclude *.pyd
+[2023-05-14 09:07:42] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: executing diffoscope
+[2023-05-14 09:07:42] INFO root fetch - processPackages [eia-odin-pkg-rioatmadja2018]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/eia-odin-pkg-rioatmadja2018-0.1.1684048039.tar.gz tmp/eia_odin_pkg_rioatmadja2018-0.1.1684048046-py3-none-any.whl.zip --markdown 20230514/e/eia-odin-pkg-rioatmadja2018/0.1.1684048039-0.1.1684048046/diff.md --exclude *.pyd
+[2023-05-14 09:07:43] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-05-14 09:07:43] INFO root fetch - main [MainThread]: End processing [Kekik]: success
+[2023-05-14 09:07:43] INFO root fetch - main [MainThread]: End processing [eia-odin-pkg-rioatmadja2018]: success
+[2023-05-14 09:07:43] INFO root fetch - main [MainThread]: End processing [starling-beancount]: success
+[2023-05-14 09:07:44] INFO root fetch - main [MainThread]: End processing [language-formatters-pre-commit-hooks]: success
+[2023-05-14 09:07:44] INFO root fetch - main [MainThread]: End processing [Kekik]: success
+[2023-05-14 09:07:44] INFO root fetch - main [MainThread]: End processing [Kekik]: success
+[2023-05-14 09:07:46] INFO root fetch - main [MainThread]: End processing [onnx2tf]: success
+[2023-05-14 09:07:54] INFO root fetch - main [MainThread]: End processing [tf-models-nightly]: success
+[2023-05-14 09:07:54] INFO root fetch - main [MainThread]: Store serial: [18095462]
