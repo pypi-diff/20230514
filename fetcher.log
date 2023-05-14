@@ -1444,3 +1444,36 @@
 [2023-05-14 03:19:35] INFO root fetch - main [MainThread]: End processing [hypothesis]: success
 [2023-05-14 03:19:35] INFO root fetch - main [MainThread]: End processing [cdk-sops-secrets]: success
 [2023-05-14 03:19:35] INFO root fetch - main [MainThread]: Store serial: [18094249]
+[2023-05-14 03:24:39] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094249]
+[2023-05-14 03:24:43] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 03:24:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: neuroboros
+[2023-05-14 03:24:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: pyagrum-nightly
+[2023-05-14 03:24:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-lambda-layer-curl
+[2023-05-14 03:24:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: scotthsieh-projen-statemachine
+[2023-05-14 03:24:43] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: t2f
+[2023-05-14 03:24:43] INFO root fetch - processPackages [neuroboros]: New version: [0.1.1a0] Old Version: [0.0.1]
+[2023-05-14 03:24:43] INFO root fetch - processPackages [t2f]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-14 03:24:43] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-14 03:24:43] INFO root fetch - processPackages [cdk-lambda-layer-curl]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-14 03:24:43] INFO root fetch - processPackages [pyagrum-nightly]: New version: [1.8.0.9.dev202305131683703926] Old Version: [1.8.0.9.dev202305121683703926]
+[2023-05-14 03:24:44] INFO root fetch - processPackages [t2f]: Downloading https://files.pythonhosted.org/packages/c1/3d/a2687e545a1d745c8e9e6af2212a6ab38ec7adfb493fce96d7853eebb3d0/t2f-0.1.0.tar.gz
+[2023-05-14 03:24:44] INFO root fetch - processPackages [cdk-lambda-layer-curl]: executing diffoscope
+[2023-05-14 03:24:44] INFO root fetch - processPackages [cdk-lambda-layer-curl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-lambda-layer-curl-2.0.98.tar.gz tmp/cdk-lambda-layer-curl-2.0.99.tar.gz --markdown 20230514/c/cdk-lambda-layer-curl/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-14 03:24:44] INFO root fetch - processPackages [neuroboros]: Downloading https://files.pythonhosted.org/packages/f7/aa/ea3d902527c42e7c9281c95030a1fbb81463c9b581f5cfe9819db23cadd5/neuroboros-0.0.1.tar.gz
+[2023-05-14 03:24:44] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: executing diffoscope
+[2023-05-14 03:24:44] INFO root fetch - processPackages [scotthsieh-projen-statemachine]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/scotthsieh_projen_statemachine-2.0.98.tar.gz tmp/scotthsieh_projen_statemachine-2.0.99.tar.gz --markdown 20230514/s/scotthsieh-projen-statemachine/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-14 03:24:44] INFO root fetch - processPackages [pyagrum-nightly]: Downloading https://files.pythonhosted.org/packages/b8/90/ab106f614ea09a8a80b70c4ce2cb4b3872834d6f73b2b1d4482143a4cf38/pyAgrum_nightly-1.8.0.9.dev202305131683703926-cp39-cp39-win_amd64.whl
+[2023-05-14 03:24:44] INFO root fetch - processPackages [neuroboros]: Downloading https://files.pythonhosted.org/packages/df/dc/dc8220231e8dee6db3c93cb0150553b8356e6bd999cb8922468a90759ea2/neuroboros-0.1.1a0.tar.gz
+[2023-05-14 03:24:44] INFO root fetch - processPackages [t2f]: Downloading https://files.pythonhosted.org/packages/e1/48/b3b131ba55b2fadcdeb849e5a71b85b479ea33e80bb5f703a1f8297e7e45/t2f-0.1.1.tar.gz
+[2023-05-14 03:24:44] INFO root fetch - processPackages [neuroboros]: executing diffoscope
+[2023-05-14 03:24:44] INFO root fetch - processPackages [neuroboros]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/neuroboros-0.0.1.tar.gz tmp/neuroboros-0.1.1a0.tar.gz --markdown 20230514/n/neuroboros/0.0.1-0.1.1a0/diff.md --exclude *.pyd
+[2023-05-14 03:24:44] INFO root fetch - processPackages [t2f]: executing diffoscope
+[2023-05-14 03:24:44] INFO root fetch - processPackages [t2f]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/t2f-0.1.0.tar.gz tmp/t2f-0.1.1.tar.gz --markdown 20230514/t/t2f/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-14 03:24:44] INFO root fetch - processPackages [pyagrum-nightly]: executing diffoscope
+[2023-05-14 03:24:44] INFO root fetch - processPackages [pyagrum-nightly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyAgrum_nightly-1.8.0.9.dev202305121683703926-cp311-cp311-manylinux2014_aarch64.whl.zip tmp/pyAgrum_nightly-1.8.0.9.dev202305131683703926-cp39-cp39-win_amd64.whl.zip --markdown 20230514/p/pyagrum-nightly/1.8.0.9.dev202305121683703926-1.8.0.9.dev202305131683703926/diff.md --exclude *.pyd
+[2023-05-14 03:24:45] INFO root fetch - main [MainThread]: End processing [neuroboros]: success
+[2023-05-14 03:24:45] INFO root fetch - main [MainThread]: End processing [t2f]: success
+[2023-05-14 03:24:45] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-curl]: success
+[2023-05-14 03:24:46] INFO root fetch - main [MainThread]: End processing [scotthsieh-projen-statemachine]: success
+[2023-05-14 03:24:47] INFO root fetch - main [MainThread]: End processing [pyagrum-nightly]: success
+[2023-05-14 03:24:47] INFO root fetch - main [MainThread]: Store serial: [18094284]
