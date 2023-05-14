@@ -7741,3 +7741,64 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 17:25:29] INFO root fetch - main [MainThread]: End processing [fastapi-async-langchain]: success
 [2023-05-14 17:25:30] INFO root fetch - main [MainThread]: End processing [aioqui]: success
 [2023-05-14 17:25:30] INFO root fetch - main [MainThread]: Store serial: [18098048]
+[2023-05-14 17:30:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18098048]
+[2023-05-14 17:30:40] INFO root fetch - main [MainThread]: Found 9 changed packages
+[2023-05-14 17:30:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pyVLMP
+[2023-05-14 17:30:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qpro
+[2023-05-14 17:30:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: westat
+[2023-05-14 17:30:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: runningz
+[2023-05-14 17:30:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: topologicpy
+[2023-05-14 17:30:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: certora-cli-alpha-gilad-CERT-1843-keep-canon-symbol-prefixes
+[2023-05-14 17:30:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: kappadata
+[2023-05-14 17:30:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: finlogic
+[2023-05-14 17:30:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: osxphotos
+[2023-05-14 17:30:40] INFO root fetch - processPackages [pyVLMP]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-14 17:30:40] INFO root fetch - processPackages [qpro]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-14 17:30:40] INFO root fetch - processPackages [westat]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 17:30:40] INFO root fetch - processPackages [runningz]: New version: [0.11.2] Old Version: [0.11.1]
+[2023-05-14 17:30:40] INFO root fetch - processPackages [topologicpy]: New version: [0.4.9] Old Version: [0.4.8]
+[2023-05-14 17:30:40] INFO root fetch - processPackages [certora-cli-alpha-gilad-CERT-1843-keep-canon-symbol-prefixes]: New version: [20230514.15.28.926758] Old Version: [20230514.14.39.312381]
+[2023-05-14 17:30:40] INFO root fetch - processPackages [finlogic]: New version: [0.4.2] Old Version: [0.4.1]
+[2023-05-14 17:30:40] INFO root fetch - processPackages [kappadata]: New version: [1.2.9] Old Version: [1.2.8]
+[2023-05-14 17:30:40] INFO root fetch - processPackages [kappadata]: executing diffoscope
+[2023-05-14 17:30:40] INFO root fetch - processPackages [kappadata]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/kappadata-1.2.8.tar.gz tmp/kappadata-1.2.9.tar.gz --markdown 20230514/k/kappadata/1.2.8-1.2.9/diff.md --exclude *.pyd
+[2023-05-14 17:30:40] INFO root fetch - processPackages [osxphotos]: New version: [0.60.1] Old Version: [0.60.0]
+[2023-05-14 17:30:40] INFO root fetch - processPackages [qpro]: Downloading https://files.pythonhosted.org/packages/79/0c/ae4338de3999182a858cc231bcc608283ff7dea051e3f13ac8f354bd5ebc/Qpro-0.9.8.tar.gz
+[2023-05-14 17:30:40] INFO root fetch - processPackages [certora-cli-alpha-gilad-CERT-1843-keep-canon-symbol-prefixes]: Downloading https://files.pythonhosted.org/packages/b0/08/a6b00ef975062e87aecb99a99f7f59f7f853bf59cc477dc5db35be0f5b0e/certora-cli-alpha-gilad-CERT-1843-keep-canon-symbol-prefixes-20230514.14.39.312381.tar.gz
+[2023-05-14 17:30:40] INFO root fetch - processPackages [pyVLMP]: Downloading https://files.pythonhosted.org/packages/56/73/408752cd77d6bb3ab29d796fdf325595cfa3a192a9d1b43bf31a317acb37/pyVLMP-1.0.6.tar.gz
+[2023-05-14 17:30:40] INFO root fetch - processPackages [westat]: Downloading https://files.pythonhosted.org/packages/1b/c1/e5ec77ac37a7132d64d4fdef5fcd8ddcb492653509c5fc5e56667fa29e05/westat-0.1.8.tar.gz
+[2023-05-14 17:30:40] INFO root fetch - processPackages [runningz]: Downloading https://files.pythonhosted.org/packages/f6/2f/7bd29494cd2de6ac52ef30853214f0f81c537babf2c3918cc05daffe17f6/runningz-0.11.1-py39-none-any.whl
+[2023-05-14 17:30:40] INFO root fetch - processPackages [topologicpy]: Downloading https://files.pythonhosted.org/packages/15/86/57531994fc339da6f12a8b31d70791471b40b34a717f26ba7d8fd2452a79/topologicpy-0.4.8.tar.gz
+[2023-05-14 17:30:40] INFO root fetch - processPackages [finlogic]: Downloading https://files.pythonhosted.org/packages/1f/32/03f6dca8b4e35f2115a22265e4c0b16d26672f768a34054b70770fb9b09a/finlogic-0.4.1.tar.gz
+[2023-05-14 17:30:40] WARNING root fetch - processPackages [certora-cli-alpha-gilad-CERT-1843-keep-canon-symbol-prefixes]: Skipping package: exceeds size limit 39431212>=10485760
+[2023-05-14 17:30:40] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-gilad-CERT-1843-keep-canon-symbol-prefixes] error
+[2023-05-14 17:30:40] INFO root fetch - processPackages [pyVLMP]: executing diffoscope
+[2023-05-14 17:30:40] INFO root fetch - processPackages [pyVLMP]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyVLMP-1.0.5.tar.gz tmp/pyVLMP-1.0.6.tar.gz --markdown 20230514/p/pyVLMP/1.0.5-1.0.6/diff.md --exclude *.pyd
+[2023-05-14 17:30:40] INFO root fetch - processPackages [osxphotos]: Downloading https://files.pythonhosted.org/packages/2e/d9/ca568e74ffceda0fec25c5c390172796c87aa415582200153e27ced70421/osxphotos-0.60.0.tar.gz
+[2023-05-14 17:30:40] INFO root fetch - processPackages [finlogic]: Downloading https://files.pythonhosted.org/packages/8a/f2/fd1e3485bae6ea18f8aac667266bfecb4b2b6c0ebf4350b0ec3b9a7a9d93/finlogic-0.4.2.tar.gz
+[2023-05-14 17:30:40] INFO root fetch - processPackages [runningz]: Downloading https://files.pythonhosted.org/packages/d6/f5/0685591b1e1f306a111bd02911f344b21a4ccb1172a93cf38835b53667c2/runningz-0.11.2-py39-none-any.whl
+[2023-05-14 17:30:40] INFO root fetch - processPackages [topologicpy]: Downloading https://files.pythonhosted.org/packages/c5/85/1c4479b468dd8447a392da1fb4879881f139f70892e1015a6f377c4cea2b/topologicpy-0.4.9.tar.gz
+[2023-05-14 17:30:40] INFO root fetch - processPackages [finlogic]: executing diffoscope
+[2023-05-14 17:30:40] INFO root fetch - processPackages [finlogic]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/finlogic-0.4.1.tar.gz tmp/finlogic-0.4.2.tar.gz --markdown 20230514/f/finlogic/0.4.1-0.4.2/diff.md --exclude *.pyd
+[2023-05-14 17:30:40] WARNING root fetch - processPackages [topologicpy]: Skipping package: exceeds size limit 34020520>=10485760
+[2023-05-14 17:30:40] INFO root fetch - main [MainThread]: End processing [topologicpy] error
+[2023-05-14 17:30:40] INFO root fetch - processPackages [qpro]: Downloading https://files.pythonhosted.org/packages/aa/c4/523582425967c77f08b8cca8ee3166cb8b4b7376b1eaf112114a93155488/Qpro-0.9.9.tar.gz
+[2023-05-14 17:30:40] INFO root fetch - processPackages [runningz]: executing diffoscope
+[2023-05-14 17:30:40] INFO root fetch - processPackages [runningz]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/runningz-0.11.1-py39-none-any.whl.zip tmp/runningz-0.11.2-py39-none-any.whl.zip --markdown 20230514/r/runningz/0.11.1-0.11.2/diff.md --exclude *.pyd
+[2023-05-14 17:30:41] INFO root fetch - processPackages [qpro]: executing diffoscope
+[2023-05-14 17:30:41] INFO root fetch - processPackages [qpro]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/Qpro-0.9.8.tar.gz tmp/Qpro-0.9.9.tar.gz --markdown 20230514/q/qpro/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-14 17:30:41] INFO root fetch - processPackages [osxphotos]: Downloading https://files.pythonhosted.org/packages/99/bf/5822d7667730ed584406211e3f8051c4ded46361a8a1b371ba5eaf0554fb/osxphotos-0.60.1.tar.gz
+[2023-05-14 17:30:41] INFO root fetch - processPackages [westat]: Downloading https://files.pythonhosted.org/packages/4a/4d/b6ef220a906ddeda6cfa07a012ae2137848ef821a44dfb29a746d68e6aae/westat-0.1.9.tar.gz
+[2023-05-14 17:30:41] INFO root fetch - processPackages [osxphotos]: executing diffoscope
+[2023-05-14 17:30:41] INFO root fetch - processPackages [osxphotos]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/osxphotos-0.60.0.tar.gz tmp/osxphotos-0.60.1.tar.gz --markdown 20230514/o/osxphotos/0.60.0-0.60.1/diff.md --exclude *.pyd
+[2023-05-14 17:30:41] INFO root fetch - processPackages [westat]: executing diffoscope
+[2023-05-14 17:30:41] INFO root fetch - processPackages [westat]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/westat-0.1.8.tar.gz tmp/westat-0.1.9.tar.gz --markdown 20230514/w/westat/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 17:30:41] INFO root fetch - main [MainThread]: End processing [pyVLMP]: success
+[2023-05-14 17:30:42] INFO root fetch - main [MainThread]: End processing [finlogic]: success
+[2023-05-14 17:30:42] INFO root fetch - main [MainThread]: End processing [qpro]: success
+[2023-05-14 17:30:42] INFO root fetch - main [MainThread]: End processing [runningz]: success
+[2023-05-14 17:30:42] INFO root fetch - main [MainThread]: End processing [kappadata]: success
+[2023-05-14 17:30:48] INFO root fetch - main [MainThread]: End processing [osxphotos]: success
+[2023-05-14 17:33:41] ERROR root fetch - processPackages [westat]: Timeout during execution of pkgdiff
+[2023-05-14 17:33:41] INFO root fetch - main [MainThread]: End processing [westat] error
+[2023-05-14 17:33:41] INFO root fetch - main [MainThread]: Store serial: [18098076]
