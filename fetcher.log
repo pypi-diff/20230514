@@ -1675,3 +1675,46 @@
 [2023-05-14 03:48:07] INFO root fetch - main [MainThread]: End processing [hypofuzz]: success
 [2023-05-14 03:48:07] INFO root fetch - main [MainThread]: End processing [cdk-lambda-layer-wget]: success
 [2023-05-14 03:48:07] INFO root fetch - main [MainThread]: Store serial: [18094393]
+[2023-05-14 03:53:11] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094393]
+[2023-05-14 03:53:16] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 03:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: hoyo-daily-logins-helper
+[2023-05-14 03:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: qunqunpdf
+[2023-05-14 03:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: itasca-stub
+[2023-05-14 03:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: pyfileindex
+[2023-05-14 03:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: itasca-stub
+[2023-05-14 03:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: custardpy
+[2023-05-14 03:53:16] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: webarchiver
+[2023-05-14 03:53:16] INFO root fetch - processPackages [custardpy]: New version: [0.4.1] Old Version: [0.4.0]
+[2023-05-14 03:53:16] INFO root fetch - processPackages [hoyo-daily-logins-helper]: New version: [2.2.1] Old Version: [2.2.0]
+[2023-05-14 03:53:16] INFO root fetch - processPackages [webarchiver]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-14 03:53:16] INFO root fetch - processPackages [itasca-stub]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-14 03:53:16] ERROR root fetch - processPackages [qunqunpdf]: Unable to get metadata: No such project 'qunqunpdf'
+[2023-05-14 03:53:16] INFO root fetch - main [MainThread]: End processing [qunqunpdf] error
+[2023-05-14 03:53:16] INFO root fetch - processPackages [itasca-stub]: New version: [1.0.9] Old Version: [1.0.8]
+[2023-05-14 03:53:16] INFO root fetch - processPackages [pyfileindex]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 03:53:16] INFO root fetch - processPackages [itasca-stub]: Downloading https://files.pythonhosted.org/packages/48/f3/5cba999f1efe433988dda5e714bf254ff5524612478fa99bee304109a7ef/itasca-stub-1.0.8.tar.gz
+[2023-05-14 03:53:16] INFO root fetch - processPackages [itasca-stub]: Downloading https://files.pythonhosted.org/packages/48/f3/5cba999f1efe433988dda5e714bf254ff5524612478fa99bee304109a7ef/itasca-stub-1.0.8.tar.gz
+[2023-05-14 03:53:16] INFO root fetch - processPackages [hoyo-daily-logins-helper]: Downloading https://files.pythonhosted.org/packages/d0/5a/d2cb4b3786d7fc327515f65abe028c1133f8d4cf659a5b636da1f1fcb2ce/hoyo-daily-logins-helper-2.2.1.tar.gz
+[2023-05-14 03:53:16] INFO root fetch - processPackages [custardpy]: Downloading https://files.pythonhosted.org/packages/ac/72/8aa24b855dc68c75528b1a3e1c50d79358475c55a9f788d9a0bb401d2f22/custardpy-0.4.1-py3-none-any.whl
+[2023-05-14 03:53:16] INFO root fetch - processPackages [pyfileindex]: Downloading https://files.pythonhosted.org/packages/5f/21/67c10fdd6b248acf8359d3ca5b7cef5c98d6d237edf3ebf4644706764783/pyfileindex-0.0.9.tar.gz
+[2023-05-14 03:53:17] INFO root fetch - processPackages [hoyo-daily-logins-helper]: executing diffoscope
+[2023-05-14 03:53:17] INFO root fetch - processPackages [hoyo-daily-logins-helper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/hoyo-daily-logins-helper-2.2.0.tar.gz tmp/hoyo-daily-logins-helper-2.2.1.tar.gz --markdown 20230514/h/hoyo-daily-logins-helper/2.2.0-2.2.1/diff.md --exclude *.pyd
+[2023-05-14 03:53:17] INFO root fetch - processPackages [custardpy]: executing diffoscope
+[2023-05-14 03:53:17] INFO root fetch - processPackages [custardpy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/custardpy-0.4.0-py3-none-any.whl.zip tmp/custardpy-0.4.1-py3-none-any.whl.zip --markdown 20230514/c/custardpy/0.4.0-0.4.1/diff.md --exclude *.pyd
+[2023-05-14 03:53:17] INFO root fetch - processPackages [webarchiver]: executing diffoscope
+[2023-05-14 03:53:17] INFO root fetch - processPackages [webarchiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webarchiver-0.8.0-py2.py3-none-any.whl.zip tmp/webarchiver-0.9.0-py2.py3-none-any.whl.zip --markdown 20230514/w/webarchiver/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 03:53:17] INFO root fetch - processPackages [pyfileindex]: executing diffoscope
+[2023-05-14 03:53:17] INFO root fetch - processPackages [pyfileindex]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pyfileindex-0.0.8.tar.gz tmp/pyfileindex-0.0.9.tar.gz --markdown 20230514/p/pyfileindex/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 03:53:17] INFO root fetch - processPackages [itasca-stub]: Downloading https://files.pythonhosted.org/packages/d0/b8/92cdb5d8e303655bd94ec6389efa1273cde307ce67e95360b966a3e3a96a/itasca-stub-1.0.9.tar.gz
+[2023-05-14 03:53:17] INFO root fetch - processPackages [itasca-stub]: Downloading https://files.pythonhosted.org/packages/d0/b8/92cdb5d8e303655bd94ec6389efa1273cde307ce67e95360b966a3e3a96a/itasca-stub-1.0.9.tar.gz
+[2023-05-14 03:53:17] INFO root fetch - processPackages [itasca-stub]: executing diffoscope
+[2023-05-14 03:53:17] INFO root fetch - processPackages [itasca-stub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itasca-stub-1.0.8.tar.gz tmp/itasca-stub-1.0.9.tar.gz --markdown 20230514/i/itasca-stub/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-14 03:53:17] INFO root fetch - processPackages [itasca-stub]: executing diffoscope
+[2023-05-14 03:53:17] INFO root fetch - processPackages [itasca-stub]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/itasca-stub-1.0.8.tar.gz tmp/itasca-stub-1.0.9.tar.gz --markdown 20230514/i/itasca-stub/1.0.8-1.0.9/diff.md --exclude *.pyd
+[2023-05-14 03:53:18] INFO root fetch - main [MainThread]: End processing [pyfileindex]: success
+[2023-05-14 03:53:18] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
+[2023-05-14 03:53:18] INFO root fetch - main [MainThread]: End processing [hoyo-daily-logins-helper]: success
+[2023-05-14 03:53:18] INFO root fetch - main [MainThread]: End processing [custardpy]: success
+[2023-05-14 03:53:18] INFO root fetch - main [MainThread]: End processing [itasca-stub]: success
+[2023-05-14 03:53:18] INFO root fetch - main [MainThread]: End processing [itasca-stub]: success
+[2023-05-14 03:53:18] INFO root fetch - main [MainThread]: Store serial: [18094415]
