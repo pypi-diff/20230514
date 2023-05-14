@@ -2480,3 +2480,16 @@
 [2023-05-14 06:15:11] INFO root fetch - main [MainThread]: End processing [canomaly]: success
 [2023-05-14 06:15:12] INFO root fetch - main [MainThread]: End processing [aioqui]: success
 [2023-05-14 06:15:12] INFO root fetch - main [MainThread]: Store serial: [18094900]
+[2023-05-14 06:20:16] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094900]
+[2023-05-14 06:20:21] INFO root fetch - main [MainThread]: Found 2 changed packages
+[2023-05-14 06:20:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: django-mcq
+[2023-05-14 06:20:21] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: s27a-jbq
+[2023-05-14 06:20:21] WARNING root fetch - processPackages [s27a-jbq]: Skipping, unable to determine old version
+[2023-05-14 06:20:21] INFO root fetch - main [MainThread]: End processing [s27a-jbq] error
+[2023-05-14 06:20:21] INFO root fetch - processPackages [django-mcq]: New version: [0.3] Old Version: [0.2]
+[2023-05-14 06:20:21] INFO root fetch - processPackages [django-mcq]: Downloading https://files.pythonhosted.org/packages/94/89/ec9513cc7b4f1e57db475a65ab380d624e3f3ddbeb0cd83b6faf739b20f6/django-mcq-0.2.tar.gz
+[2023-05-14 06:20:21] INFO root fetch - processPackages [django-mcq]: Downloading https://files.pythonhosted.org/packages/ba/83/4ca5386fc12cc34f2f861f790ed7fc83d1f58d2ac338c40bdfc79b962faf/django-mcq-0.3.tar.gz
+[2023-05-14 06:20:22] INFO root fetch - processPackages [django-mcq]: executing diffoscope
+[2023-05-14 06:20:22] INFO root fetch - processPackages [django-mcq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/django-mcq-0.2.tar.gz tmp/django-mcq-0.3.tar.gz --markdown 20230514/d/django-mcq/0.2-0.3/diff.md --exclude *.pyd
+[2023-05-14 06:20:23] INFO root fetch - main [MainThread]: End processing [django-mcq]: success
+[2023-05-14 06:20:23] INFO root fetch - main [MainThread]: Store serial: [18094915]
