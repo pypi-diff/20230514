@@ -10110,3 +10110,34 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 21:27:02] INFO root fetch - main [MainThread]: End processing [hotsos]: success
 [2023-05-14 21:27:23] INFO root fetch - main [MainThread]: End processing [pyqint]: success
 [2023-05-14 21:27:23] INFO root fetch - main [MainThread]: Store serial: [18099524]
+[2023-05-14 21:32:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18099524]
+[2023-05-14 21:32:32] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 21:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: leuci-pol
+[2023-05-14 21:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: bytez
+[2023-05-14 21:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bytez
+[2023-05-14 21:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: redbuild
+[2023-05-14 21:32:32] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: sesg
+[2023-05-14 21:32:32] INFO root fetch - processPackages [leuci-pol]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 21:32:32] INFO root fetch - processPackages [redbuild]: New version: [2.1.1] Old Version: [2.1.0]
+[2023-05-14 21:32:32] INFO root fetch - processPackages [bytez]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 21:32:32] INFO root fetch - processPackages [bytez]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 21:32:32] INFO root fetch - processPackages [sesg]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 21:32:32] INFO root fetch - processPackages [sesg]: Downloading https://files.pythonhosted.org/packages/32/a5/c948ce4c33581a843a2c081120906c27c689f26208e8d99c3228f95c9c33/sesg-0.0.8.tar.gz
+[2023-05-14 21:32:32] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-14 21:32:32] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.8.tar.gz tmp/bytez-0.1.9.tar.gz --markdown 20230514/b/bytez/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 21:32:32] INFO root fetch - processPackages [bytez]: executing diffoscope
+[2023-05-14 21:32:32] INFO root fetch - processPackages [bytez]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bytez-0.1.8.tar.gz tmp/bytez-0.1.9.tar.gz --markdown 20230514/b/bytez/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 21:32:32] INFO root fetch - processPackages [redbuild]: Downloading https://files.pythonhosted.org/packages/e2/4d/a660b27341466d8eb93d8e3afcfa0dbb7cd16083d8756d2ecc7f43f22a06/redbuild-2.1.1.tar.gz
+[2023-05-14 21:32:32] INFO root fetch - processPackages [redbuild]: executing diffoscope
+[2023-05-14 21:32:32] INFO root fetch - processPackages [redbuild]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redbuild-2.1.0.tar.gz tmp/redbuild-2.1.1.tar.gz --markdown 20230514/r/redbuild/2.1.0-2.1.1/diff.md --exclude *.pyd
+[2023-05-14 21:32:32] INFO root fetch - processPackages [sesg]: Downloading https://files.pythonhosted.org/packages/b0/99/29404871db61302e769d5573a523b07920080eb0de82ce589685af7d2da5/sesg-0.0.9.tar.gz
+[2023-05-14 21:32:33] INFO root fetch - processPackages [sesg]: executing diffoscope
+[2023-05-14 21:32:33] INFO root fetch - processPackages [sesg]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sesg-0.0.8.tar.gz tmp/sesg-0.0.9.tar.gz --markdown 20230514/s/sesg/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 21:32:33] INFO root fetch - processPackages [leuci-pol]: executing diffoscope
+[2023-05-14 21:32:33] INFO root fetch - processPackages [leuci-pol]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/leuci-pol-0.0.8.tar.gz tmp/leuci-pol-0.0.9.tar.gz --markdown 20230514/l/leuci-pol/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 21:32:33] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-14 21:32:33] INFO root fetch - main [MainThread]: End processing [bytez]: success
+[2023-05-14 21:32:34] INFO root fetch - main [MainThread]: End processing [redbuild]: success
+[2023-05-14 21:32:34] INFO root fetch - main [MainThread]: End processing [sesg]: success
+[2023-05-14 21:32:34] INFO root fetch - main [MainThread]: End processing [leuci-pol]: success
+[2023-05-14 21:32:34] INFO root fetch - main [MainThread]: Store serial: [18099540]
