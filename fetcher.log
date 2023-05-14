@@ -4832,3 +4832,39 @@
 [2023-05-14 12:26:23] INFO root fetch - main [MainThread]: End processing [embedders]: success
 [2023-05-14 12:26:23] INFO root fetch - main [MainThread]: End processing [pddl-plus-parser]: success
 [2023-05-14 12:26:23] INFO root fetch - main [MainThread]: Store serial: [18096289]
+[2023-05-14 12:31:27] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096289]
+[2023-05-14 12:31:31] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 12:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pypipr
+[2023-05-14 12:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: om-quant-fin
+[2023-05-14 12:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: classiq
+[2023-05-14 12:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: aec-cli
+[2023-05-14 12:31:31] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: elemeta
+[2023-05-14 12:31:31] INFO root fetch - processPackages [aec-cli]: New version: [2.9.0] Old Version: [2.8.0]
+[2023-05-14 12:31:31] INFO root fetch - processPackages [om-quant-fin]: New version: [1.0.0] Old Version: [0.1.4]
+[2023-05-14 12:31:31] INFO root fetch - processPackages [pypipr]: New version: [0.1.9] Old Version: [0.1.81]
+[2023-05-14 12:31:31] INFO root fetch - processPackages [elemeta]: New version: [1.0.6] Old Version: [1.0.5]
+[2023-05-14 12:31:31] INFO root fetch - processPackages [classiq]: New version: [0.9.3] Old Version: [0.9.1]
+[2023-05-14 12:31:32] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/cf/e5/0331aa5cbbf79f55c08da8a2f3ee3fe66472beadbdc2375ae997b0c864c2/pypipr-0.1.81.tar.gz
+[2023-05-14 12:31:32] INFO root fetch - processPackages [om-quant-fin]: Downloading https://files.pythonhosted.org/packages/39/8c/e3faee0db4e32ad36e8f1dfa41d34d20cd2100e322b18be3260d18cfb1cf/om_quant_fin-0.1.4.tar.gz
+[2023-05-14 12:31:32] INFO root fetch - processPackages [aec-cli]: Downloading https://files.pythonhosted.org/packages/29/1c/27a67ad831deacda13aa1be18018dcc8a50fcff9443465b64932d61c6946/aec-cli-2.8.0.tar.gz
+[2023-05-14 12:31:32] INFO root fetch - processPackages [elemeta]: Downloading https://files.pythonhosted.org/packages/e7/4c/ce078c5f50789ec6f03662a4b1a1de241da0b61773d534b2c38b84790f15/elemeta-1.0.5.tar.gz
+[2023-05-14 12:31:32] INFO root fetch - processPackages [classiq]: Downloading https://files.pythonhosted.org/packages/62/bd/a743e4141094b0e9dc17aeac1cedfe15efc910502e7411611d5cdf9d1878/classiq-0.9.1-py3-none-any.whl
+[2023-05-14 12:31:32] WARNING root fetch - processPackages [elemeta]: Skipping package: exceeds size limit 30399206>=10485760
+[2023-05-14 12:31:32] INFO root fetch - main [MainThread]: End processing [elemeta] error
+[2023-05-14 12:31:32] INFO root fetch - processPackages [pypipr]: Downloading https://files.pythonhosted.org/packages/32/cd/c83422ecc5ba1244068c6dfd0f5e7f794651ea68108be50ec4a3d8392b72/pypipr-0.1.9.tar.gz
+[2023-05-14 12:31:32] INFO root fetch - processPackages [om-quant-fin]: Downloading https://files.pythonhosted.org/packages/e8/7c/f3fae3802ffa1caab010b439e9f975e49e84448afc871c279b8537e51579/om_quant_fin-1.0.0.tar.gz
+[2023-05-14 12:31:32] INFO root fetch - processPackages [om-quant-fin]: executing diffoscope
+[2023-05-14 12:31:32] INFO root fetch - processPackages [om-quant-fin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/om_quant_fin-0.1.4.tar.gz tmp/om_quant_fin-1.0.0.tar.gz --markdown 20230514/o/om-quant-fin/0.1.4-1.0.0/diff.md --exclude *.pyd
+[2023-05-14 12:31:32] INFO root fetch - processPackages [pypipr]: executing diffoscope
+[2023-05-14 12:31:32] INFO root fetch - processPackages [pypipr]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pypipr-0.1.81.tar.gz tmp/pypipr-0.1.9.tar.gz --markdown 20230514/p/pypipr/0.1.81-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 12:31:32] INFO root fetch - processPackages [aec-cli]: Downloading https://files.pythonhosted.org/packages/e2/4d/725c63212eaa9157ce91d9bedb7be9bc545bd42d58ced39aa73460e6601b/aec-cli-2.9.0.tar.gz
+[2023-05-14 12:31:32] INFO root fetch - processPackages [aec-cli]: executing diffoscope
+[2023-05-14 12:31:32] INFO root fetch - processPackages [aec-cli]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/aec-cli-2.8.0.tar.gz tmp/aec-cli-2.9.0.tar.gz --markdown 20230514/a/aec-cli/2.8.0-2.9.0/diff.md --exclude *.pyd
+[2023-05-14 12:31:32] INFO root fetch - processPackages [classiq]: Downloading https://files.pythonhosted.org/packages/e5/eb/9b39365fd2d7c2027f6610a884229059149ab9a3395be331767306762c07/classiq-0.9.3-py3-none-any.whl
+[2023-05-14 12:31:32] INFO root fetch - processPackages [classiq]: executing diffoscope
+[2023-05-14 12:31:32] INFO root fetch - processPackages [classiq]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/classiq-0.9.1-py3-none-any.whl.zip tmp/classiq-0.9.3-py3-none-any.whl.zip --markdown 20230514/c/classiq/0.9.1-0.9.3/diff.md --exclude *.pyd
+[2023-05-14 12:31:33] INFO root fetch - main [MainThread]: End processing [om-quant-fin]: success
+[2023-05-14 12:31:33] INFO root fetch - main [MainThread]: End processing [pypipr]: success
+[2023-05-14 12:31:33] INFO root fetch - main [MainThread]: End processing [aec-cli]: success
+[2023-05-14 12:31:34] INFO root fetch - main [MainThread]: End processing [classiq]: success
+[2023-05-14 12:31:34] INFO root fetch - main [MainThread]: Store serial: [18096304]
