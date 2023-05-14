@@ -1079,3 +1079,96 @@
 [2023-05-14 02:26:32] INFO root fetch - main [MainThread]: End processing [cdk-docker-image-deployment]: success
 [2023-05-14 02:26:32] INFO root fetch - main [MainThread]: End processing [aws-cdk.asset-node-proxy-agent-v5]: success
 [2023-05-14 02:26:32] INFO root fetch - main [MainThread]: Store serial: [18094056]
+[2023-05-14 02:31:36] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094056]
+[2023-05-14 02:31:41] INFO root fetch - main [MainThread]: Found 17 changed packages
+[2023-05-14 02:31:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: sweetrpg-library-objects
+[2023-05-14 02:31:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cdk-certbot-dns-route53
+[2023-05-14 02:31:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: cdk-serverless-clamscan
+[2023-05-14 02:31:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: cdk-secret-manager-wrapper-layer
+[2023-05-14 02:31:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: cdk8s-image
+[2023-05-14 02:31:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: cdk-certbot-dns-route53
+[2023-05-14 02:31:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: cdk-tweet-queue
+[2023-05-14 02:31:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: cdk8s-jenkins
+[2023-05-14 02:31:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: autotraders
+[2023-05-14 02:31:41] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: prettyformatter
+[2023-05-14 02:31:41] INFO root fetch - processPackages [sweetrpg-library-objects]: New version: [0.0.86] Old Version: [0.0.85]
+[2023-05-14 02:31:41] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-14 02:31:41] INFO root fetch - processPackages [autotraders]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-14 02:31:41] INFO root fetch - processPackages [cdk-certbot-dns-route53]: New version: [2.1.99] Old Version: [2.1.98]
+[2023-05-14 02:31:41] INFO root fetch - processPackages [cdk-certbot-dns-route53]: New version: [2.1.99] Old Version: [2.1.98]
+[2023-05-14 02:31:41] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: executing diffoscope
+[2023-05-14 02:31:41] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-secret-manager-wrapper-layer-2.0.98.tar.gz tmp/cdk-secret-manager-wrapper-layer-2.0.99.tar.gz --markdown 20230514/c/cdk-secret-manager-wrapper-layer/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-14 02:31:41] INFO root fetch - processPackages [cdk8s-jenkins]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-14 02:31:41] INFO root fetch - processPackages [cdk8s-image]: New version: [0.2.99] Old Version: [0.2.98]
+[2023-05-14 02:31:41] INFO root fetch - processPackages [cdk-tweet-queue]: New version: [2.0.99] Old Version: [2.0.98]
+[2023-05-14 02:31:41] INFO root fetch - processPackages [cdk-serverless-clamscan]: New version: [2.4.99] Old Version: [2.4.98]
+[2023-05-14 02:31:41] INFO root fetch - processPackages [autotraders]: Downloading https://files.pythonhosted.org/packages/75/de/2640b955ae5d0012ac84be72a64a78d5d066e7f281a3fe61302b0a3cc130/autotraders-1.0.1.tar.gz
+[2023-05-14 02:31:41] INFO root fetch - processPackages [prettyformatter]: New version: [2.0.9] Old Version: [2.0.8]
+[2023-05-14 02:31:41] INFO root fetch - processPackages [autotraders]: executing diffoscope
+[2023-05-14 02:31:41] INFO root fetch - processPackages [autotraders]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/autotraders-1.0.0.tar.gz tmp/autotraders-1.0.1.tar.gz --markdown 20230514/a/autotraders/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-14 02:31:41] INFO root fetch - processPackages [sweetrpg-library-objects]: executing diffoscope
+[2023-05-14 02:31:41] INFO root fetch - processPackages [sweetrpg-library-objects]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-library-objects-0.0.85.tar.gz tmp/sweetrpg-library-objects-0.0.86.tar.gz --markdown 20230514/s/sweetrpg-library-objects/0.0.85-0.0.86/diff.md --exclude *.pyd
+[2023-05-14 02:31:42] INFO root fetch - processPackages [prettyformatter]: Downloading https://files.pythonhosted.org/packages/d4/e4/9806d52e4a53e61582a902786c9d57c99ef676f46e74ce5f00d8c847c614/prettyformatter-2.0.8.tar.gz
+[2023-05-14 02:31:42] INFO root fetch - processPackages [cdk-certbot-dns-route53]: executing diffoscope
+[2023-05-14 02:31:42] INFO root fetch - processPackages [cdk-certbot-dns-route53]: executing diffoscope
+[2023-05-14 02:31:42] INFO root fetch - processPackages [cdk-certbot-dns-route53]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-certbot-dns-route53-2.1.98.tar.gz tmp/cdk-certbot-dns-route53-2.1.99.tar.gz --markdown 20230514/c/cdk-certbot-dns-route53/2.1.98-2.1.99/diff.md --exclude *.pyd
+[2023-05-14 02:31:42] INFO root fetch - processPackages [cdk-certbot-dns-route53]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-certbot-dns-route53-2.1.98.tar.gz tmp/cdk-certbot-dns-route53-2.1.99.tar.gz --markdown 20230514/c/cdk-certbot-dns-route53/2.1.98-2.1.99/diff.md --exclude *.pyd
+[2023-05-14 02:31:42] INFO root fetch - processPackages [cdk8s-jenkins]: executing diffoscope
+[2023-05-14 02:31:42] INFO root fetch - processPackages [cdk8s-jenkins]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-jenkins-0.0.98.tar.gz tmp/cdk8s-jenkins-0.0.99.tar.gz --markdown 20230514/c/cdk8s-jenkins/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-14 02:31:42] INFO root fetch - processPackages [cdk-serverless-clamscan]: executing diffoscope
+[2023-05-14 02:31:42] INFO root fetch - processPackages [cdk-serverless-clamscan]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-serverless-clamscan-2.4.98.tar.gz tmp/cdk-serverless-clamscan-2.4.99.tar.gz --markdown 20230514/c/cdk-serverless-clamscan/2.4.98-2.4.99/diff.md --exclude *.pyd
+[2023-05-14 02:31:42] INFO root fetch - processPackages [cdk8s-image]: executing diffoscope
+[2023-05-14 02:31:42] INFO root fetch - processPackages [cdk8s-image]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk8s-image-0.2.98.tar.gz tmp/cdk8s-image-0.2.99.tar.gz --markdown 20230514/c/cdk8s-image/0.2.98-0.2.99/diff.md --exclude *.pyd
+[2023-05-14 02:31:42] INFO root fetch - processPackages [cdk-tweet-queue]: executing diffoscope
+[2023-05-14 02:31:42] INFO root fetch - processPackages [cdk-tweet-queue]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-tweet-queue-2.0.98.tar.gz tmp/cdk-tweet-queue-2.0.99.tar.gz --markdown 20230514/c/cdk-tweet-queue/2.0.98-2.0.99/diff.md --exclude *.pyd
+[2023-05-14 02:31:42] INFO root fetch - processPackages [prettyformatter]: Downloading https://files.pythonhosted.org/packages/89/43/247b03e56e854178cfce11a97e5da4705562c47b814564353436859308a5/prettyformatter-2.0.9.tar.gz
+[2023-05-14 02:31:42] INFO root fetch - processPackages [prettyformatter]: executing diffoscope
+[2023-05-14 02:31:42] INFO root fetch - processPackages [prettyformatter]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prettyformatter-2.0.8.tar.gz tmp/prettyformatter-2.0.9.tar.gz --markdown 20230514/p/prettyformatter/2.0.8-2.0.9/diff.md --exclude *.pyd
+[2023-05-14 02:31:43] INFO root fetch - processPackages [cdk-secret-manager-wrapper-layer]: Start processing: sweetrpg-web-core
+[2023-05-14 02:31:43] INFO root fetch - main [MainThread]: End processing [cdk-secret-manager-wrapper-layer]: success
+[2023-05-14 02:31:43] INFO root fetch - processPackages [sweetrpg-web-core]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-14 02:31:43] INFO root fetch - processPackages [autotraders]: Start processing: azapy
+[2023-05-14 02:31:43] INFO root fetch - main [MainThread]: End processing [autotraders]: success
+[2023-05-14 02:31:43] INFO root fetch - processPackages [sweetrpg-web-core]: executing diffoscope
+[2023-05-14 02:31:43] INFO root fetch - processPackages [sweetrpg-web-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/sweetrpg-web-core-0.0.98.tar.gz tmp/sweetrpg-web-core-0.0.99.tar.gz --markdown 20230514/s/sweetrpg-web-core/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-14 02:31:43] INFO root fetch - processPackages [azapy]: New version: [1.2.0] Old Version: [1.1.1]
+[2023-05-14 02:31:43] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Start processing: cdk-ecs-service-extensions
+[2023-05-14 02:31:43] INFO root fetch - main [MainThread]: End processing [cdk-certbot-dns-route53]: success
+[2023-05-14 02:31:43] INFO root fetch - processPackages [cdk-ecs-service-extensions]: New version: [2.0.1a9] Old Version: [2.0.1a8]
+[2023-05-14 02:31:43] INFO root fetch - processPackages [cdk-ecs-service-extensions]: executing diffoscope
+[2023-05-14 02:31:43] INFO root fetch - processPackages [cdk-ecs-service-extensions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-ecs-service-extensions-2.0.1a8.tar.gz tmp/cdk-ecs-service-extensions-2.0.1a9.tar.gz --markdown 20230514/c/cdk-ecs-service-extensions/2.0.1a8-2.0.1a9/diff.md --exclude *.pyd
+[2023-05-14 02:31:43] INFO root fetch - processPackages [azapy]: Downloading https://files.pythonhosted.org/packages/8d/7f/53f84c6c6d31e51a48c8e327b628edda2adfc10afba70b148f674ae9c59d/azapy-1.1.1.tar.gz
+[2023-05-14 02:31:43] INFO root fetch - processPackages [cdk8s-image]: Start processing: cdk-gitlab-runner
+[2023-05-14 02:31:43] INFO root fetch - main [MainThread]: End processing [cdk8s-image]: success
+[2023-05-14 02:31:43] INFO root fetch - processPackages [cdk-gitlab-runner]: New version: [2.1.99] Old Version: [2.1.98]
+[2023-05-14 02:31:43] INFO root fetch - processPackages [azapy]: Downloading https://files.pythonhosted.org/packages/7c/91/f1fca890014da4c880f900a2b01d9f9619e24bb0c52e473527fa901ee5a3/azapy-1.2.0.tar.gz
+[2023-05-14 02:31:43] INFO root fetch - processPackages [prettyformatter]: Start processing: cdktf-github-actions
+[2023-05-14 02:31:43] INFO root fetch - main [MainThread]: End processing [prettyformatter]: success
+[2023-05-14 02:31:43] INFO root fetch - processPackages [cdk-certbot-dns-route53]: Start processing: cdk-aurora-globaldatabase
+[2023-05-14 02:31:43] INFO root fetch - main [MainThread]: End processing [cdk-certbot-dns-route53]: success
+[2023-05-14 02:31:43] INFO root fetch - processPackages [cdk-gitlab-runner]: executing diffoscope
+[2023-05-14 02:31:43] INFO root fetch - processPackages [cdk-gitlab-runner]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-gitlab-runner-2.1.98.tar.gz tmp/cdk-gitlab-runner-2.1.99.tar.gz --markdown 20230514/c/cdk-gitlab-runner/2.1.98-2.1.99/diff.md --exclude *.pyd
+[2023-05-14 02:31:43] INFO root fetch - processPackages [cdktf-github-actions]: New version: [0.0.99] Old Version: [0.0.98]
+[2023-05-14 02:31:43] INFO root fetch - processPackages [cdk-tweet-queue]: Start processing: cdktf-proxmox
+[2023-05-14 02:31:43] INFO root fetch - main [MainThread]: End processing [cdk-tweet-queue]: success
+[2023-05-14 02:31:44] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: New version: [2.3.99] Old Version: [2.3.98]
+[2023-05-14 02:31:44] INFO root fetch - processPackages [cdktf-proxmox]: New version: [0.0.9] Old Version: [0.0.8]
+[2023-05-14 02:31:44] INFO root fetch - processPackages [azapy]: executing diffoscope
+[2023-05-14 02:31:44] INFO root fetch - processPackages [azapy]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/azapy-1.1.1.tar.gz tmp/azapy-1.2.0.tar.gz --markdown 20230514/a/azapy/1.1.1-1.2.0/diff.md --exclude *.pyd
+[2023-05-14 02:31:44] INFO root fetch - processPackages [cdktf-github-actions]: executing diffoscope
+[2023-05-14 02:31:44] INFO root fetch - processPackages [cdktf-github-actions]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-github-actions-0.0.98.tar.gz tmp/cdktf-github-actions-0.0.99.tar.gz --markdown 20230514/c/cdktf-github-actions/0.0.98-0.0.99/diff.md --exclude *.pyd
+[2023-05-14 02:31:44] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: executing diffoscope
+[2023-05-14 02:31:44] INFO root fetch - processPackages [cdk-aurora-globaldatabase]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdk-aurora-globaldatabase-2.3.98.tar.gz tmp/cdk-aurora-globaldatabase-2.3.99.tar.gz --markdown 20230514/c/cdk-aurora-globaldatabase/2.3.98-2.3.99/diff.md --exclude *.pyd
+[2023-05-14 02:31:44] INFO root fetch - main [MainThread]: End processing [sweetrpg-library-objects]: success
+[2023-05-14 02:31:44] INFO root fetch - processPackages [cdktf-proxmox]: executing diffoscope
+[2023-05-14 02:31:44] INFO root fetch - processPackages [cdktf-proxmox]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cdktf-proxmox-0.0.8.tar.gz tmp/cdktf-proxmox-0.0.9.tar.gz --markdown 20230514/c/cdktf-proxmox/0.0.8-0.0.9/diff.md --exclude *.pyd
+[2023-05-14 02:31:44] INFO root fetch - main [MainThread]: End processing [cdk-serverless-clamscan]: success
+[2023-05-14 02:31:44] INFO root fetch - main [MainThread]: End processing [cdk8s-jenkins]: success
+[2023-05-14 02:31:44] INFO root fetch - main [MainThread]: End processing [sweetrpg-web-core]: success
+[2023-05-14 02:31:45] INFO root fetch - main [MainThread]: End processing [cdk-gitlab-runner]: success
+[2023-05-14 02:31:45] INFO root fetch - main [MainThread]: End processing [cdktf-github-actions]: success
+[2023-05-14 02:31:45] INFO root fetch - main [MainThread]: End processing [cdk-aurora-globaldatabase]: success
+[2023-05-14 02:31:45] INFO root fetch - main [MainThread]: End processing [cdktf-proxmox]: success
+[2023-05-14 02:31:45] INFO root fetch - main [MainThread]: End processing [azapy]: success
+[2023-05-14 02:31:46] INFO root fetch - main [MainThread]: End processing [cdk-ecs-service-extensions]: success
+[2023-05-14 02:31:46] INFO root fetch - main [MainThread]: Store serial: [18094108]
