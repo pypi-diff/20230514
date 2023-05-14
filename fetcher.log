@@ -9916,3 +9916,68 @@ SystemError: ../Objects/codeobject.c:250: bad argument to internal function
 [2023-05-14 21:10:44] INFO root fetch - main [MainThread]: End processing [edc-subject-dashboard]: success
 [2023-05-14 21:10:44] INFO root fetch - main [MainThread]: End processing [odoo12-addon-pos-empty-home]: success
 [2023-05-14 21:10:44] INFO root fetch - main [MainThread]: Store serial: [18099425]
+[2023-05-14 21:15:52] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18099425]
+[2023-05-14 21:15:57] INFO root fetch - main [MainThread]: Found 10 changed packages
+[2023-05-14 21:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: e-qsl
+[2023-05-14 21:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: cli-command-parser
+[2023-05-14 21:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: coc.py
+[2023-05-14 21:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: redisgraph-bulk-loader
+[2023-05-14 21:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: jutility
+[2023-05-14 21:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: gpt-index
+[2023-05-14 21:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: llama-index
+[2023-05-14 21:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_7]: Start processing: certora-cli-alpha-oz-docker-json5
+[2023-05-14 21:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_8]: Start processing: cluedin
+[2023-05-14 21:15:57] INFO root fetch - processPackages [ThreadPoolExecutor-0_9]: Start processing: prefect-soda-core
+[2023-05-14 21:15:57] INFO root fetch - processPackages [cli-command-parser]: New version: [2023.5.8] Old Version: [2023.5.2]
+[2023-05-14 21:15:57] INFO root fetch - processPackages [jutility]: New version: [0.0.7] Old Version: [0.0.6]
+[2023-05-14 21:15:57] INFO root fetch - processPackages [cluedin]: New version: [2.0.0rc1] Old Version: [1.0.0]
+[2023-05-14 21:15:57] INFO root fetch - processPackages [certora-cli-alpha-oz-docker-json5]: New version: [20230514.5.51.278588] Old Version: [20230514.14.24.681507]
+[2023-05-14 21:15:57] INFO root fetch - processPackages [cli-command-parser]: Downloading https://files.pythonhosted.org/packages/d1/47/a116a349180e6edd870329e2e195638747985d61354ca1409e6cba7c79e5/cli_command_parser-2023.5.2.tar.gz
+[2023-05-14 21:15:57] INFO root fetch - processPackages [e-qsl]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 21:15:57] INFO root fetch - processPackages [gpt-index]: New version: [0.6.7] Old Version: [0.6.6]
+[2023-05-14 21:15:57] INFO root fetch - processPackages [prefect-soda-core]: New version: [0.1.4] Old Version: [0.1.3]
+[2023-05-14 21:15:57] INFO root fetch - processPackages [jutility]: executing diffoscope
+[2023-05-14 21:15:57] INFO root fetch - processPackages [jutility]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/jutility-0.0.6.tar.gz tmp/jutility-0.0.7.tar.gz --markdown 20230514/j/jutility/0.0.6-0.0.7/diff.md --exclude *.pyd
+[2023-05-14 21:15:57] INFO root fetch - processPackages [cluedin]: executing diffoscope
+[2023-05-14 21:15:57] INFO root fetch - processPackages [coc.py]: New version: [2.4.0] Old Version: [2.3.1]
+[2023-05-14 21:15:57] INFO root fetch - processPackages [redisgraph-bulk-loader]: New version: [0.9.9] Old Version: [0.9.8]
+[2023-05-14 21:15:57] INFO root fetch - processPackages [llama-index]: New version: [0.6.7] Old Version: [0.6.6]
+[2023-05-14 21:15:57] INFO root fetch - processPackages [cluedin]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cluedin-1.0.0.tar.gz tmp/cluedin-2.0.0rc1.tar.gz --markdown 20230514/c/cluedin/1.0.0-2.0.0rc1/diff.md --exclude *.pyd
+[2023-05-14 21:15:57] INFO root fetch - processPackages [cli-command-parser]: Downloading https://files.pythonhosted.org/packages/10/48/2b27aa422b6f0dbb99734a5f88529d39c4c21e3f4d10632cabaa8bec532f/cli_command_parser-2023.5.8.tar.gz
+[2023-05-14 21:15:57] INFO root fetch - processPackages [certora-cli-alpha-oz-docker-json5]: Downloading https://files.pythonhosted.org/packages/60/ec/882c8b763e235ad470d1c34fb0f5f1cd10035fe1f18ad7f6e083b7ef5736/certora-cli-alpha-oz-docker-json5-20230514.14.24.681507.tar.gz
+[2023-05-14 21:15:57] INFO root fetch - processPackages [cli-command-parser]: executing diffoscope
+[2023-05-14 21:15:57] INFO root fetch - processPackages [cli-command-parser]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cli_command_parser-2023.5.2.tar.gz tmp/cli_command_parser-2023.5.8.tar.gz --markdown 20230514/c/cli-command-parser/2023.5.2-2023.5.8/diff.md --exclude *.pyd
+[2023-05-14 21:15:57] WARNING root fetch - processPackages [certora-cli-alpha-oz-docker-json5]: Skipping package: exceeds size limit 39430828>=10485760
+[2023-05-14 21:15:57] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-oz-docker-json5] error
+[2023-05-14 21:15:57] INFO root fetch - processPackages [e-qsl]: Downloading https://files.pythonhosted.org/packages/1d/e4/f98965ad46a5e52221c2dcd82f071628344eaebbb5dda2e663e2f69749cc/e-qsl-0.1.8.tar.gz
+[2023-05-14 21:15:57] INFO root fetch - processPackages [coc.py]: Downloading https://files.pythonhosted.org/packages/3e/e9/2c1ab426b46958e184832ca841eb4998ded862a9d6ced6d2560a1e90cc07/coc.py-2.3.1.tar.gz
+[2023-05-14 21:15:57] INFO root fetch - processPackages [prefect-soda-core]: Downloading https://files.pythonhosted.org/packages/0a/d5/0cba92d4884a3d3e5859e2b9a4a114af5667ef0d18510f856a56e1edfb19/prefect-soda-core-0.1.3.tar.gz
+[2023-05-14 21:15:57] INFO root fetch - processPackages [redisgraph-bulk-loader]: Downloading https://files.pythonhosted.org/packages/47/d6/a3d97d6267482eda47a0aa29f58f29667d8f69be92c8aa7fda7f47f22196/redisgraph-bulk-loader-0.9.8.tar.gz
+[2023-05-14 21:15:57] INFO root fetch - processPackages [llama-index]: Downloading https://files.pythonhosted.org/packages/30/56/351e6c4c40d08c9ae05dae6f6f14ab324248a61fce9773f6c64ee08bcdd4/llama_index-0.6.7.tar.gz
+[2023-05-14 21:15:57] INFO root fetch - processPackages [e-qsl]: Downloading https://files.pythonhosted.org/packages/53/3b/0affc5c6730054741a521330a3878a5d86a23d03e6c4b7b6222c10bf04b1/e-qsl-0.1.9.tar.gz
+[2023-05-14 21:15:57] INFO root fetch - processPackages [gpt-index]: Downloading https://files.pythonhosted.org/packages/4f/65/44cc2f6a501a5f84e283de1cef6d2d967fb09412127c812e413bf5c91d85/gpt_index-0.6.7.tar.gz
+[2023-05-14 21:15:57] INFO root fetch - processPackages [coc.py]: Downloading https://files.pythonhosted.org/packages/a2/81/c829ac521b7864342d96708e17056a54a1928111f5ac1878ec66ac084ab7/coc.py-2.4.0.tar.gz
+[2023-05-14 21:15:57] INFO root fetch - processPackages [e-qsl]: executing diffoscope
+[2023-05-14 21:15:57] INFO root fetch - processPackages [e-qsl]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/e-qsl-0.1.8.tar.gz tmp/e-qsl-0.1.9.tar.gz --markdown 20230514/e/e-qsl/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 21:15:57] INFO root fetch - processPackages [llama-index]: executing diffoscope
+[2023-05-14 21:15:57] INFO root fetch - processPackages [llama-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/llama_index-0.6.6.tar.gz tmp/llama_index-0.6.7.tar.gz --markdown 20230514/l/llama-index/0.6.6-0.6.7/diff.md --exclude *.pyd
+[2023-05-14 21:15:57] INFO root fetch - processPackages [prefect-soda-core]: Downloading https://files.pythonhosted.org/packages/d0/07/f62f18f4a52e66e95a79940db466e2bcd2088978fbb8ce2be0d22e33d719/prefect-soda-core-0.1.4.tar.gz
+[2023-05-14 21:15:58] INFO root fetch - processPackages [gpt-index]: executing diffoscope
+[2023-05-14 21:15:58] INFO root fetch - processPackages [gpt-index]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/gpt_index-0.6.6.tar.gz tmp/gpt_index-0.6.7.tar.gz --markdown 20230514/g/gpt-index/0.6.6-0.6.7/diff.md --exclude *.pyd
+[2023-05-14 21:15:58] INFO root fetch - processPackages [redisgraph-bulk-loader]: Downloading https://files.pythonhosted.org/packages/a0/fe/a0525880169526c2032dfa68cc2babeb0f853e11a9e469497390044fec9d/redisgraph-bulk-loader-0.9.9.tar.gz
+[2023-05-14 21:15:58] INFO root fetch - processPackages [coc.py]: executing diffoscope
+[2023-05-14 21:15:58] INFO root fetch - processPackages [coc.py]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/coc.py-2.3.1.tar.gz tmp/coc.py-2.4.0.tar.gz --markdown 20230514/c/coc.py/2.3.1-2.4.0/diff.md --exclude *.pyd
+[2023-05-14 21:15:58] INFO root fetch - processPackages [prefect-soda-core]: executing diffoscope
+[2023-05-14 21:15:58] INFO root fetch - processPackages [prefect-soda-core]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/prefect-soda-core-0.1.3.tar.gz tmp/prefect-soda-core-0.1.4.tar.gz --markdown 20230514/p/prefect-soda-core/0.1.3-0.1.4/diff.md --exclude *.pyd
+[2023-05-14 21:15:58] INFO root fetch - processPackages [redisgraph-bulk-loader]: executing diffoscope
+[2023-05-14 21:15:58] INFO root fetch - processPackages [redisgraph-bulk-loader]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/redisgraph-bulk-loader-0.9.8.tar.gz tmp/redisgraph-bulk-loader-0.9.9.tar.gz --markdown 20230514/r/redisgraph-bulk-loader/0.9.8-0.9.9/diff.md --exclude *.pyd
+[2023-05-14 21:15:58] INFO root fetch - main [MainThread]: End processing [jutility]: success
+[2023-05-14 21:15:58] INFO root fetch - main [MainThread]: End processing [cluedin]: success
+[2023-05-14 21:15:59] INFO root fetch - main [MainThread]: End processing [e-qsl]: success
+[2023-05-14 21:15:59] INFO root fetch - main [MainThread]: End processing [cli-command-parser]: success
+[2023-05-14 21:15:59] INFO root fetch - main [MainThread]: End processing [prefect-soda-core]: success
+[2023-05-14 21:15:59] INFO root fetch - main [MainThread]: End processing [redisgraph-bulk-loader]: success
+[2023-05-14 21:16:00] INFO root fetch - main [MainThread]: End processing [coc.py]: success
+[2023-05-14 21:16:01] INFO root fetch - main [MainThread]: End processing [llama-index]: success
+[2023-05-14 21:16:03] INFO root fetch - main [MainThread]: End processing [gpt-index]: success
+[2023-05-14 21:16:03] INFO root fetch - main [MainThread]: Store serial: [18099454]
