@@ -2097,3 +2097,35 @@
 [2023-05-14 05:01:35] INFO root fetch - main [MainThread]: End processing [duckdb] error
 [2023-05-14 05:01:40] INFO root fetch - main [MainThread]: End processing [chalkpy]: success
 [2023-05-14 05:01:40] INFO root fetch - main [MainThread]: Store serial: [18094631]
+[2023-05-14 05:06:43] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094631]
+[2023-05-14 05:06:48] INFO root fetch - main [MainThread]: Found 6 changed packages
+[2023-05-14 05:06:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: webarchiver
+[2023-05-14 05:06:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: featurizerai
+[2023-05-14 05:06:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: appa
+[2023-05-14 05:06:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: dispest
+[2023-05-14 05:06:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: pyusel-dispest
+[2023-05-14 05:06:48] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: qunqunpdf
+[2023-05-14 05:06:48] INFO root fetch - processPackages [featurizerai]: New version: [1.7.0] Old Version: [1.6.9]
+[2023-05-14 05:06:48] INFO root fetch - processPackages [webarchiver]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-14 05:06:48] INFO root fetch - processPackages [appa]: New version: [0.1.1] Old Version: [0.1.0]
+[2023-05-14 05:06:48] ERROR root fetch - processPackages [dispest]: Unable to get metadata: No such project 'dispest'
+[2023-05-14 05:06:48] INFO root fetch - main [MainThread]: End processing [dispest] error
+[2023-05-14 05:06:48] INFO root fetch - processPackages [qunqunpdf]: New version: [1.3] Old Version: [1.2]
+[2023-05-14 05:06:48] WARNING root fetch - processPackages [pyusel-dispest]: Skipping, unable to determine old version
+[2023-05-14 05:06:48] INFO root fetch - main [MainThread]: End processing [pyusel-dispest] error
+[2023-05-14 05:06:48] INFO root fetch - processPackages [webarchiver]: executing diffoscope
+[2023-05-14 05:06:48] INFO root fetch - processPackages [webarchiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webarchiver-0.8.0-py2.py3-none-any.whl.zip tmp/webarchiver-0.9.0-py2.py3-none-any.whl.zip --markdown 20230514/w/webarchiver/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 05:06:48] INFO root fetch - processPackages [qunqunpdf]: executing diffoscope
+[2023-05-14 05:06:48] INFO root fetch - processPackages [qunqunpdf]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/qunqunpdf-1.2.tar.gz tmp/qunqunpdf-1.3.tar.gz --markdown 20230514/q/qunqunpdf/1.2-1.3/diff.md --exclude *.pyd
+[2023-05-14 05:06:48] INFO root fetch - processPackages [featurizerai]: Downloading https://files.pythonhosted.org/packages/fa/e8/04b01b13fcc1628f92baa59b354c62ffce0328c572673a12d1e9a97973c6/featurizerai-1.7.0.tar.gz
+[2023-05-14 05:06:48] INFO root fetch - processPackages [appa]: Downloading https://files.pythonhosted.org/packages/4f/e0/d83934e55a45791d817cec013f91ab88b16f168e648661ac3480400de101/appa-0.1.0.tar.gz
+[2023-05-14 05:06:49] INFO root fetch - processPackages [featurizerai]: executing diffoscope
+[2023-05-14 05:06:49] INFO root fetch - processPackages [featurizerai]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/featurizerai-1.6.9.tar.gz tmp/featurizerai-1.7.0.tar.gz --markdown 20230514/f/featurizerai/1.6.9-1.7.0/diff.md --exclude *.pyd
+[2023-05-14 05:06:49] INFO root fetch - main [MainThread]: End processing [qunqunpdf]: success
+[2023-05-14 05:06:50] INFO root fetch - main [MainThread]: End processing [featurizerai]: success
+[2023-05-14 05:06:50] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
+[2023-05-14 05:06:50] INFO root fetch - processPackages [appa]: Downloading https://files.pythonhosted.org/packages/50/8b/1c0c9e2fd98ebdce18a1a86c34c42498a5f8fafd3a45fb6c2b131e244da5/appa-0.1.1.tar.gz
+[2023-05-14 05:06:53] INFO root fetch - processPackages [appa]: executing diffoscope
+[2023-05-14 05:06:53] INFO root fetch - processPackages [appa]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/appa-0.1.0.tar.gz tmp/appa-0.1.1.tar.gz --markdown 20230514/a/appa/0.1.0-0.1.1/diff.md --exclude *.pyd
+[2023-05-14 05:06:55] INFO root fetch - main [MainThread]: End processing [appa]: success
+[2023-05-14 05:06:55] INFO root fetch - main [MainThread]: Store serial: [18094652]
