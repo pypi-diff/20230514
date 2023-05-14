@@ -2286,3 +2286,31 @@
 [2023-05-14 05:32:53] INFO root fetch - processPackages [cloudpathlib]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/cloudpathlib-0.8.0.tar.gz tmp/cloudpathlib-0.9.0.tar.gz --markdown 20230514/c/cloudpathlib/0.8.0-0.9.0/diff.md --exclude *.pyd
 [2023-05-14 05:32:54] INFO root fetch - main [MainThread]: End processing [cloudpathlib]: success
 [2023-05-14 05:32:54] INFO root fetch - main [MainThread]: Store serial: [18094767]
+[2023-05-14 05:37:58] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18094767]
+[2023-05-14 05:38:03] INFO root fetch - main [MainThread]: Found 5 changed packages
+[2023-05-14 05:38:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: starrysky1005714
+[2023-05-14 05:38:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: meerschaum
+[2023-05-14 05:38:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: meerschaum
+[2023-05-14 05:38:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: mynacode
+[2023-05-14 05:38:03] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: webarchiver
+[2023-05-14 05:38:03] WARNING root fetch - processPackages [starrysky1005714]: Skipping, unable to determine old version
+[2023-05-14 05:38:03] INFO root fetch - processPackages [webarchiver]: New version: [0.9.0] Old Version: [0.8.0]
+[2023-05-14 05:38:03] INFO root fetch - main [MainThread]: End processing [starrysky1005714] error
+[2023-05-14 05:38:03] INFO root fetch - processPackages [mynacode]: New version: [1.0.99] Old Version: [1.0.98]
+[2023-05-14 05:38:03] INFO root fetch - processPackages [meerschaum]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-05-14 05:38:03] INFO root fetch - processPackages [meerschaum]: New version: [1.6.9] Old Version: [1.6.8]
+[2023-05-14 05:38:03] INFO root fetch - processPackages [webarchiver]: executing diffoscope
+[2023-05-14 05:38:03] INFO root fetch - processPackages [webarchiver]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/webarchiver-0.8.0-py2.py3-none-any.whl.zip tmp/webarchiver-0.9.0-py2.py3-none-any.whl.zip --markdown 20230514/w/webarchiver/0.8.0-0.9.0/diff.md --exclude *.pyd
+[2023-05-14 05:38:03] INFO root fetch - processPackages [mynacode]: executing diffoscope
+[2023-05-14 05:38:03] INFO root fetch - processPackages [mynacode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/mynacode-1.0.98-py3-none-any.whl.zip tmp/mynacode-1.0.99-py3-none-any.whl.zip --markdown 20230514/m/mynacode/1.0.98-1.0.99/diff.md --exclude *.pyd
+[2023-05-14 05:38:04] INFO root fetch - processPackages [meerschaum]: Downloading https://files.pythonhosted.org/packages/e7/a5/daf418e71bd16350c5ee45dedb45a0d0d3f4e01cfff517a1cb6e26ffcb96/meerschaum-1.6.9.tar.gz
+[2023-05-14 05:38:04] INFO root fetch - processPackages [meerschaum]: Downloading https://files.pythonhosted.org/packages/e7/a5/daf418e71bd16350c5ee45dedb45a0d0d3f4e01cfff517a1cb6e26ffcb96/meerschaum-1.6.9.tar.gz
+[2023-05-14 05:38:04] INFO root fetch - main [MainThread]: End processing [mynacode]: success
+[2023-05-14 05:38:04] INFO root fetch - processPackages [meerschaum]: executing diffoscope
+[2023-05-14 05:38:04] INFO root fetch - processPackages [meerschaum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meerschaum-1.6.8.tar.gz tmp/meerschaum-1.6.9.tar.gz --markdown 20230514/m/meerschaum/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-05-14 05:38:04] INFO root fetch - processPackages [meerschaum]: executing diffoscope
+[2023-05-14 05:38:04] INFO root fetch - processPackages [meerschaum]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/meerschaum-1.6.8.tar.gz tmp/meerschaum-1.6.9.tar.gz --markdown 20230514/m/meerschaum/1.6.8-1.6.9/diff.md --exclude *.pyd
+[2023-05-14 05:38:04] INFO root fetch - main [MainThread]: End processing [webarchiver]: success
+[2023-05-14 05:38:06] INFO root fetch - main [MainThread]: End processing [meerschaum]: success
+[2023-05-14 05:38:06] INFO root fetch - main [MainThread]: End processing [meerschaum]: success
+[2023-05-14 05:38:06] INFO root fetch - main [MainThread]: Store serial: [18094786]
