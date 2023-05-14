@@ -4918,3 +4918,39 @@
 [2023-05-14 12:41:56] INFO root fetch - main [MainThread]: End processing [feathers]: success
 [2023-05-14 12:42:31] INFO root fetch - main [MainThread]: End processing [streamlit-kpi]: success
 [2023-05-14 12:42:31] INFO root fetch - main [MainThread]: Store serial: [18096340]
+[2023-05-14 12:47:35] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18096340]
+[2023-05-14 12:47:40] INFO root fetch - main [MainThread]: Found 7 changed packages
+[2023-05-14 12:47:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: cython-dev-tools
+[2023-05-14 12:47:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: indecode
+[2023-05-14 12:47:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: bgutils-hddly
+[2023-05-14 12:47:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: lixinger
+[2023-05-14 12:47:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_4]: Start processing: abu-hack
+[2023-05-14 12:47:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_5]: Start processing: p-js-rs
+[2023-05-14 12:47:40] INFO root fetch - processPackages [ThreadPoolExecutor-0_6]: Start processing: certora-cli-alpha-omer-CERT-945-inside-assert-the-assumptions-are-not-affect-assert-cast
+[2023-05-14 12:47:40] WARNING root fetch - processPackages [abu-hack]: Skipping, unable to determine old version
+[2023-05-14 12:47:40] INFO root fetch - main [MainThread]: End processing [abu-hack] error
+[2023-05-14 12:47:40] INFO root fetch - processPackages [indecode]: New version: [1.4.2] Old Version: [1.4.1]
+[2023-05-14 12:47:40] WARNING root fetch - processPackages [cython-dev-tools]: Skipping, unable to determine old version
+[2023-05-14 12:47:40] INFO root fetch - main [MainThread]: End processing [cython-dev-tools] error
+[2023-05-14 12:47:40] INFO root fetch - processPackages [bgutils-hddly]: New version: [1.1.9] Old Version: [1.1.8]
+[2023-05-14 12:47:40] INFO root fetch - processPackages [lixinger]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 12:47:40] WARNING root fetch - processPackages [p-js-rs]: Skipping, unable to determine old version
+[2023-05-14 12:47:40] INFO root fetch - main [MainThread]: End processing [p-js-rs] error
+[2023-05-14 12:47:40] INFO root fetch - processPackages [certora-cli-alpha-omer-CERT-945-inside-assert-the-assumptions-are-not-affect-assert-cast]: New version: [20230514.10.47.767328] Old Version: [20230508.9.40.291183]
+[2023-05-14 12:47:40] INFO root fetch - processPackages [indecode]: Downloading https://files.pythonhosted.org/packages/a5/ca/d2d20d4b32ed7304753204355694a7b82ba0ec79bff70c0e469b1a8df49b/indecode-1.4.2-py3-none-any.whl
+[2023-05-14 12:47:40] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/07/22/a69a45ea0621e457373043238ae8172d597dde38054d258752459d22fd6a/bgutils_hddly-1.1.8-py3-none-any.whl
+[2023-05-14 12:47:41] INFO root fetch - processPackages [indecode]: executing diffoscope
+[2023-05-14 12:47:41] INFO root fetch - processPackages [certora-cli-alpha-omer-CERT-945-inside-assert-the-assumptions-are-not-affect-assert-cast]: Downloading https://files.pythonhosted.org/packages/90/f7/e9f700dd37b736e56123a8f75f556ec9a5817ca6f62f7d5cd353ac6a979a/certora-cli-alpha-omer-CERT-945-inside-assert-the-assumptions-are-not-affect-assert_cast-20230508.9.40.291183.tar.gz
+[2023-05-14 12:47:41] INFO root fetch - processPackages [indecode]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/indecode-1.4.1-py3-none-any.whl.zip tmp/indecode-1.4.2-py3-none-any.whl.zip --markdown 20230514/i/indecode/1.4.1-1.4.2/diff.md --exclude *.pyd
+[2023-05-14 12:47:41] INFO root fetch - processPackages [lixinger]: Downloading https://files.pythonhosted.org/packages/1e/35/f944798fea6e0b10d26cd12f5f07e0255c34eb90610bf7c309a2d6035fba/lixinger-0.1.9.tar.gz
+[2023-05-14 12:47:41] WARNING root fetch - processPackages [certora-cli-alpha-omer-CERT-945-inside-assert-the-assumptions-are-not-affect-assert-cast]: Skipping package: exceeds size limit 38474811>=10485760
+[2023-05-14 12:47:41] INFO root fetch - main [MainThread]: End processing [certora-cli-alpha-omer-CERT-945-inside-assert-the-assumptions-are-not-affect-assert-cast] error
+[2023-05-14 12:47:41] INFO root fetch - processPackages [bgutils-hddly]: Downloading https://files.pythonhosted.org/packages/68/b8/73eaefe5a7f9214b0aa5443f4083f56d3a6492768411b1a003302b66bf45/bgutils_hddly-1.1.9.tar.gz
+[2023-05-14 12:47:41] INFO root fetch - processPackages [lixinger]: executing diffoscope
+[2023-05-14 12:47:41] INFO root fetch - processPackages [lixinger]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/lixinger-0.1.8.tar.gz tmp/lixinger-0.1.9.tar.gz --markdown 20230514/l/lixinger/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 12:47:41] INFO root fetch - processPackages [bgutils-hddly]: executing diffoscope
+[2023-05-14 12:47:41] INFO root fetch - processPackages [bgutils-hddly]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/bgutils_hddly-1.1.8-py3-none-any.whl.zip tmp/bgutils_hddly-1.1.9.tar.gz --markdown 20230514/b/bgutils-hddly/1.1.8-1.1.9/diff.md --exclude *.pyd
+[2023-05-14 12:47:42] INFO root fetch - main [MainThread]: End processing [indecode]: success
+[2023-05-14 12:47:42] INFO root fetch - main [MainThread]: End processing [lixinger]: success
+[2023-05-14 12:48:17] INFO root fetch - main [MainThread]: End processing [bgutils-hddly]: success
+[2023-05-14 12:48:17] INFO root fetch - main [MainThread]: Store serial: [18096369]
