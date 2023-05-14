@@ -6223,3 +6223,34 @@
 [2023-05-14 15:21:04] INFO root fetch - main [MainThread]: End processing [nbdev-apl]: success
 [2023-05-14 15:21:04] INFO root fetch - main [MainThread]: End processing [nbdev-django]: success
 [2023-05-14 15:21:04] INFO root fetch - main [MainThread]: Store serial: [18097201]
+[2023-05-14 15:26:09] INFO root fetch - main [MainThread]: Get Changelog since Serial: [18097201]
+[2023-05-14 15:26:13] INFO root fetch - main [MainThread]: Found 4 changed packages
+[2023-05-14 15:26:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_0]: Start processing: pythonsqlitedbmodules
+[2023-05-14 15:26:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_1]: Start processing: dokuwikidumper
+[2023-05-14 15:26:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_2]: Start processing: pythonsqlitedbmodules
+[2023-05-14 15:26:13] INFO root fetch - processPackages [ThreadPoolExecutor-0_3]: Start processing: persian-num2words
+[2023-05-14 15:26:13] INFO root fetch - processPackages [persian-num2words]: New version: [1.0.1] Old Version: [1.0.0]
+[2023-05-14 15:26:13] INFO root fetch - processPackages [pythonsqlitedbmodules]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-14 15:26:13] INFO root fetch - processPackages [pythonsqlitedbmodules]: New version: [1.1.0] Old Version: [1.0.0]
+[2023-05-14 15:26:13] INFO root fetch - processPackages [dokuwikidumper]: New version: [0.1.9] Old Version: [0.1.8]
+[2023-05-14 15:26:14] INFO root fetch - processPackages [dokuwikidumper]: Downloading https://files.pythonhosted.org/packages/8a/77/6dec3b11bf518fac347215309f743f5b619907f701930657ce67b1a56294/dokuwikidumper-0.1.8.tar.gz
+[2023-05-14 15:26:14] INFO root fetch - processPackages [pythonsqlitedbmodules]: Downloading https://files.pythonhosted.org/packages/fa/80/dc853aba44c117988479efa47ac82d086791efa9e28b274c7fe4a4132e8d/pythonsqlitedbmodules-1.0.0.tar.gz
+[2023-05-14 15:26:14] INFO root fetch - processPackages [pythonsqlitedbmodules]: Downloading https://files.pythonhosted.org/packages/fa/80/dc853aba44c117988479efa47ac82d086791efa9e28b274c7fe4a4132e8d/pythonsqlitedbmodules-1.0.0.tar.gz
+[2023-05-14 15:26:14] INFO root fetch - processPackages [persian-num2words]: Downloading https://files.pythonhosted.org/packages/17/3c/b286be785a0f1bca373a5ccc74c2df536f3da46cac333c0d7372426f8c6c/persian_num2words-1.0.0.tar.gz
+[2023-05-14 15:26:14] INFO root fetch - processPackages [dokuwikidumper]: Downloading https://files.pythonhosted.org/packages/8e/0b/c59e9f31ad583ecbb464b66cbce93ebe16efa5f9597f9aea718ec09587fb/dokuwikidumper-0.1.9.tar.gz
+[2023-05-14 15:26:14] INFO root fetch - processPackages [dokuwikidumper]: executing diffoscope
+[2023-05-14 15:26:14] INFO root fetch - processPackages [dokuwikidumper]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/dokuwikidumper-0.1.8.tar.gz tmp/dokuwikidumper-0.1.9.tar.gz --markdown 20230514/d/dokuwikidumper/0.1.8-0.1.9/diff.md --exclude *.pyd
+[2023-05-14 15:26:14] INFO root fetch - processPackages [persian-num2words]: Downloading https://files.pythonhosted.org/packages/e4/9b/73f33d550bfa94891fa92c696fa08a4a343a770069da3698d2043c6f070f/persian_num2words-1.0.1.tar.gz
+[2023-05-14 15:26:14] INFO root fetch - processPackages [pythonsqlitedbmodules]: Downloading https://files.pythonhosted.org/packages/96/54/88f2a7fa3463fb2bb2fc006aea093133155a90fd71d17c651dc32950afd7/pythonsqlitedbmodules-1.1.0.tar.gz
+[2023-05-14 15:26:14] INFO root fetch - processPackages [pythonsqlitedbmodules]: Downloading https://files.pythonhosted.org/packages/96/54/88f2a7fa3463fb2bb2fc006aea093133155a90fd71d17c651dc32950afd7/pythonsqlitedbmodules-1.1.0.tar.gz
+[2023-05-14 15:26:14] INFO root fetch - processPackages [pythonsqlitedbmodules]: executing diffoscope
+[2023-05-14 15:26:14] INFO root fetch - processPackages [pythonsqlitedbmodules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythonsqlitedbmodules-1.0.0.tar.gz tmp/pythonsqlitedbmodules-1.1.0.tar.gz --markdown 20230514/p/pythonsqlitedbmodules/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 15:26:14] INFO root fetch - processPackages [pythonsqlitedbmodules]: executing diffoscope
+[2023-05-14 15:26:14] INFO root fetch - processPackages [pythonsqlitedbmodules]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/pythonsqlitedbmodules-1.0.0.tar.gz tmp/pythonsqlitedbmodules-1.1.0.tar.gz --markdown 20230514/p/pythonsqlitedbmodules/1.0.0-1.1.0/diff.md --exclude *.pyd
+[2023-05-14 15:26:14] INFO root fetch - processPackages [persian-num2words]: executing diffoscope
+[2023-05-14 15:26:14] INFO root fetch - processPackages [persian-num2words]: podman run --user 0:0 --rm -w /home/abi/fetcher -v /home/abi/fetcher/tmp:/home/abi/fetcher/tmp:ro -v /home/abi/fetcher/20230514:/home/abi/fetcher/20230514:rw registry.salsa.debian.org/reproducible-builds/diffoscope --no-progress tmp/persian_num2words-1.0.0.tar.gz tmp/persian_num2words-1.0.1.tar.gz --markdown 20230514/p/persian-num2words/1.0.0-1.0.1/diff.md --exclude *.pyd
+[2023-05-14 15:26:15] INFO root fetch - main [MainThread]: End processing [dokuwikidumper]: success
+[2023-05-14 15:26:15] INFO root fetch - main [MainThread]: End processing [pythonsqlitedbmodules]: success
+[2023-05-14 15:26:15] INFO root fetch - main [MainThread]: End processing [pythonsqlitedbmodules]: success
+[2023-05-14 15:26:51] INFO root fetch - main [MainThread]: End processing [persian-num2words]: success
+[2023-05-14 15:26:51] INFO root fetch - main [MainThread]: Store serial: [18097216]
